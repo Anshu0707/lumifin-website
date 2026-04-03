@@ -1,0 +1,25 @@
+<svg id="lumifin-logo" width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&amp;display=swap');
+                    </style>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8E2DE2;stop-opacity:1"/>
+                        <stop offset="100%" style="stop-color:#670FC5;stop-opacity:1"/>
+                    </linearGradient>
+                </defs>
+                
+                <g transform="translate(10, 10)">
+                    <path d="M0,15 L0,5 A5,5 0 0,1 5,0 L15,0" fill="none" stroke="#670FC5" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M45,0 L55,0 A5,5 0 0,1 60,5 L60,15" fill="none" stroke="#670FC5" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M60,45 L60,55 A5,5 0 0,1 55,60 L45,60" fill="none" stroke="#670FC5" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M15,60 L5,60 A5,5 0 0,1 0,55 L0,45" fill="none" stroke="#670FC5" stroke-width="4" stroke-linecap="round"/>
+                    
+                    <path d="M20,15 L20,35 Q20,45 30,45 L45,35" fill="none" stroke="url(#grad1)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="45" cy="20" r="4" fill="#670FC5"/>
+                </g>
+
+                <text x="85" y="52" font-family="'Outfit', sans-serif" font-weight="700" font-size="42" fill="#2d3748">
+                    lumi<tspan fill="#670FC5">fin</tspan>
+                </text>
+            </svg>
