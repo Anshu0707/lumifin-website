@@ -9,50 +9,58 @@ const team = [
     name: "Pierre Lahbhabi",
     role: "CEO",
     img: "/PIERRE.png",
-    objectPosition: "center 20%"
+    objectPosition: "center 20%",
+    linkedin: "https://www.linkedin.com/in/pierre-lahbabi/"
   },
   {
     name: "Gaurav Bansal",
     role: "COO",
     img: "/GAURAV.png",
-    objectPosition: "center 15%"
+    objectPosition: "center 15%",
+    linkedin: "https://www.linkedin.com/in/gaurav-b-52728b11/"
   },
   {
     name: "Kinshuk Kukreti",
     role: "CTO",
     img: "/KINSHUK.png",
-    objectPosition: "center 15%"
+    objectPosition: "center 15%",
+    linkedin: "https://www.linkedin.com/in/kinshuk-k-1269a999/"
   },
   {
     name: "Narendra Kumar",
     role: "Technical Lead",
-    img: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&fit=crop&q=80&w=400&h=400",
-    objectPosition: "center 20%"
+    img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23d1d5db'/%3E%3Ccircle cx='200' cy='150' r='60' fill='%239ca3af'/%3E%3Cellipse cx='200' cy='320' rx='100' ry='80' fill='%239ca3af'/%3E%3C/svg%3E",
+    objectPosition: "center 20%",
+    linkedin: "https://www.linkedin.com/in/kinshuk-k-1269a999/"
   },
   {
     name: "Subhrat Tripathi",
     role: "Product Manager",
     img: "/SHUBRAT.png",
-    objectPosition: "center 25%"
+    objectPosition: "center 25%",
+    linkedin: "https://www.linkedin.com/in/subhrattripathi071/"
   },
   {
     name: "Tanvi Nag",
     role: "Product Analyst",
-    img: "/TANVI.png",
+    img: "/Tanvi-2.png",
     objectPosition: "center 10%",
-    scale: "scale-[1.3]"
+    scale: "",
+    linkedin: "https://www.linkedin.com/in/tanvinag28/"
   },
   {
     name: "Muskan Chawla",
     role: "Software Engineer",
     img: "/MUSKAN.png",
-    objectPosition: "center 30%"
+    objectPosition: "center 30%",
+    linkedin: "https://www.linkedin.com/in/muskan115/"
   },
   {
     name: "Anshuman Naithani",
     role: "Software Engineer",
     img: "/ANSHUMAN.png",
-    objectPosition: "center 30%"
+    objectPosition: "center 30%",
+    linkedin: "https://www.linkedin.com/in/anshuman-naithani/"
   }
 ];
 
@@ -95,7 +103,7 @@ export default function TeamPage() {
                   referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href="#" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
+                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
                     <Linkedin className="w-5 h-5" />
                   </a>
                 </div>
