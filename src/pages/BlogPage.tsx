@@ -2,8 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Calendar, User, ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Calendar, User } from 'lucide-react';
 
 const posts = [
   {
@@ -13,7 +12,6 @@ const posts = [
     date: "March 28, 2026",
     author: "Pierre Lahbhabi",
     category: "Fintech",
-    img: "https://images.unsplash.com/photo-1556742049-02e45fcd87b9?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 2,
@@ -22,7 +20,6 @@ const posts = [
     date: "March 20, 2026",
     author: "Tanvi Nag",
     category: "Travel",
-    img: "https://images.unsplash.com/photo-1508004526068-462737ad2698?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: 3,
@@ -31,7 +28,6 @@ const posts = [
     date: "March 15, 2026",
     author: "Gaurav Bansal",
     category: "Company",
-    img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
@@ -65,20 +61,12 @@ export default function BlogPage() {
               transition={{ delay: index * 0.1 }}
               className="group cursor-pointer"
             >
-              <div className="relative aspect-[16/10] rounded-[2.5rem] overflow-hidden mb-8 shadow-xl group-hover:shadow-2xl transition-all">
-                <img 
-                  src={post.img} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  referrerPolicy="no-referrer"
-                />
-                <div className="absolute top-6 left-6">
-                  <span className="bg-white/90 backdrop-blur-md text-primary px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase shadow-sm">
-                    {post.category}
-                  </span>
-                </div>
+              <div className="mb-4">
+                <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase">
+                  {post.category}
+                </span>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center gap-6 text-slate-400 text-xs font-bold uppercase tracking-widest">
                   <span className="flex items-center gap-2">
@@ -97,9 +85,6 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
                 
-                <div className="pt-4 flex items-center gap-2 text-primary font-black uppercase tracking-widest text-sm group-hover:gap-4 transition-all">
-                  Read More <ArrowRight className="w-5 h-5" />
-                </div>
               </div>
             </motion.article>
           ))}

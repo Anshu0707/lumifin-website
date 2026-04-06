@@ -21,8 +21,8 @@
   --color-on-error-container: #510017;
   --color-inverse-on-surface: #9a9d9f;
   --color-secondary-container: #e5c6ff;
-  --color-primary-fixed: #9396ff;
-  --color-primary: #6366F1;
+  --color-primary-fixed: #8F3ED0;
+  --color-primary: #670FC5;
   --color-surface-bright: #f5f7f9;
   --color-background: #ffffff;
   --color-on-primary: #ffffff;
@@ -31,17 +31,17 @@
   --color-on-secondary-container: #6900b4;
   --color-primary-container: #9396ff;
   --color-on-surface: #1a1c1e;
-  --color-primary-dim: #4f46e5;
+  --color-primary-dim: #5309A8;
   --color-on-secondary: #ffffff;
   --color-surface-container-highest: #d9dde0;
   --color-on-tertiary: #e9f4ff;
   --color-on-surface-variant: #475569;
   --color-error: #b41340;
   --color-surface-container-low: #f8fafc;
-  --color-secondary: #6366f1;
+  --color-secondary: #670FC5;
   --color-outline-variant: #abadaf;
   --color-tertiary-fixed: #40bbff;
-  --color-surface-tint: #6366F1;
+  --color-surface-tint: #670FC5;
 
   --radius-DEFAULT: 0.5rem;
   --radius-lg: 0.75rem;
@@ -62,7 +62,7 @@
     backdrop-filter: blur(20px);
   }
   .hero-gradient {
-    background: linear-gradient(135deg, #6366F1, #818cf8);
+    background: linear-gradient(135deg, #670FC5, #9B4DDB);
   }
   .text-editorial {
     letter-spacing: -0.04em;
@@ -81,10 +81,11 @@
   }
 
   @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-33.333%, 0, 0); }
   }
   .animate-scroll {
-    animation: scroll 40s linear infinite;
+    animation: scroll 5s linear infinite;
+    will-change: transform;
   }
 }

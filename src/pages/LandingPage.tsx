@@ -26,7 +26,7 @@ export default function LandingPage() {
   const [activeStep, setActiveStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
   const journeyRef = useRef<HTMLDivElement>(null);
-  const lastScrollTime = useRef(0);
+  const scrollZonesRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
@@ -40,23 +40,22 @@ export default function LandingPage() {
       });
     };
 
+    // Scroll-driven step detection based on scroll position within the journey container
     const handleScroll = () => {
       revealOnScroll();
 
       if (!journeyRef.current) return;
-
-      const now = Date.now();
-      if (now - lastScrollTime.current < 1000) return; // Slow down scroll switching
-
       const rect = journeyRef.current.getBoundingClientRect();
-      const sectionHeight = rect.height;
-      const scrollPos = window.scrollY + window.innerHeight / 2;
       const sectionTop = rect.top + window.scrollY;
+      const scrollableHeight = rect.height - window.innerHeight;
+      const scrollIntoSection = window.scrollY - sectionTop;
 
-      if (scrollPos > sectionTop && scrollPos < sectionTop + sectionHeight) {
-        // We are in the journey section
-        // This is a simple heuristic, we can improve it
-      }
+      if (scrollIntoSection < 0 || scrollIntoSection > scrollableHeight) return;
+
+      const progress = scrollIntoSection / scrollableHeight;
+      const stepCount = scrollZonesRef.current.length || 4;
+      const newStep = Math.min(stepCount - 1, Math.floor(progress * stepCount));
+      setActiveStep(newStep);
     };
 
     // Handle hash on mount
@@ -70,7 +69,7 @@ export default function LandingPage() {
       }
     }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     revealOnScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -956,34 +955,22 @@ export default function LandingPage() {
       {/* Logo Marquee Section */}
       <section className="py-20 border-y border-slate-100 overflow-hidden bg-white">
         <div className="flex whitespace-nowrap animate-scroll">
-          <div className="flex items-center gap-24 px-12">
-            {["InstaPay", "KHQR", "PromptPay", "QRIS", "VietQR", "DuitNow"].map(
-              (logo, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all cursor-default"
-                >
-                  <span className="text-2xl font-black tracking-tighter text-slate-900 italic">
-                    {logo}
-                  </span>
-                </div>
-              ),
-            )}
-          </div>
-          <div className="flex items-center gap-24 px-12">
-            {["InstaPay", "KHQR", "PromptPay", "QRIS", "VietQR", "DuitNow"].map(
-              (logo, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all cursor-default"
-                >
-                  <span className="text-2xl font-black tracking-tighter text-slate-900 italic">
-                    {logo}
-                  </span>
-                </div>
-              ),
-            )}
-          </div>
+          {[0, 1, 2].map((copy) => (
+            <div key={copy} className="flex items-center gap-24 px-12 shrink-0">
+              {["InstaPay", "KHQR", "PromptPay", "QRIS", "VietQR", "DuitNow"].map(
+                (logo, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all cursor-default"
+                  >
+                    <span className="text-2xl font-black tracking-tighter text-slate-900 italic">
+                      {logo}
+                    </span>
+                  </div>
+                ),
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
@@ -1152,63 +1139,130 @@ export default function LandingPage() {
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
               The User Journey
             </span>
-            <h2 className="text-6xl font-black tracking-tighter text-slate-900">
+            <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">
               From your bank in Europe to any QR in Asia
             </h2>
-            <p className="text-slate-500 text-xl font-medium">
+            <p className="text-slate-500 text-lg md:text-xl font-medium">
               Four simple steps to financial freedom.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row items-center gap-24">
-            <div className="w-full lg:w-1/2 flex justify-center">
-              <div className="relative w-[340px] h-[680px] bg-slate-900 rounded-[4rem] p-4 shadow-[0_60px_120px_-20px_rgba(99,102,241,0.3)] border-[10px] border-slate-900 overflow-hidden animate-float">
-                <div className="bg-white h-full w-full rounded-[3rem] flex flex-col relative overflow-hidden">
+
+          {/* Scroll-driven journey: tall container creates scroll room, sticky overlay reacts to position */}
+          <div className="relative" style={{ height: `${steps.length * 150}vh` }} ref={(el) => { if (el) journeyRef.current = el; }}>
+            {/* Sticky phone + step card - stays visible while user scrolls through the tall container */}
+            <div className="sticky top-24 z-10">
+              {/* Step indicator dots */}
+              <div className="flex gap-2 mb-4 md:mb-6 justify-center">
+                {steps.map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => {
+                      setActiveStep(i);
+                      // Scroll to corresponding position in the journey container
+                      if (journeyRef.current) {
+                        const sectionTop = journeyRef.current.getBoundingClientRect().top + window.scrollY;
+                        const scrollableHeight = journeyRef.current.offsetHeight - window.innerHeight;
+                        const targetScroll = sectionTop + (i / steps.length) * scrollableHeight;
+                        window.scrollTo({ top: targetScroll, behavior: "smooth" });
+                      }
+                    }}
+                    className={`rounded-full transition-all duration-500 ${activeStep === i ? "w-8 h-2 md:w-10 md:h-2.5 bg-primary" : "w-2 h-2 md:w-2.5 md:h-2.5 bg-slate-300 hover:bg-slate-400"}`}
+                  />
+                ))}
+              </div>
+
+              {/* Desktop: phone left, card on right */}
+              <div className="hidden lg:flex items-center justify-center gap-12">
+                {/* Phone mockup - desktop */}
+                <div className="relative w-[300px] h-[580px] bg-slate-900 rounded-[3.5rem] p-3 shadow-[0_60px_120px_-20px_rgba(103,15,197,0.3)] border-[8px] border-slate-900 overflow-hidden shrink-0">
+                  <div className="bg-white h-full w-full rounded-[3rem] flex flex-col relative overflow-hidden">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={activeStep}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.4 }}
+                        className="flex-1 flex flex-col h-full"
+                      >
+                        {steps[activeStep].mockup}
+                      </motion.div>
+                    </AnimatePresence>
+                  </div>
+                </div>
+
+                {/* Right card - always on right */}
+                <div className="w-[340px]">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeStep}
-                      initial={{ opacity: 0, x: 20 }}
+                      initial={{ opacity: 0, x: 30 }}
                       animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, x: -20 }}
+                      exit={{ opacity: 0, x: 30 }}
                       transition={{ duration: 0.4 }}
-                      className="flex-1 flex flex-col h-full"
+                      className="flex gap-6 p-8 rounded-[2.5rem] bg-white border-2 border-primary/20 shadow-lg"
                     >
-                      {steps[activeStep].mockup}
+                      <div className="w-14 h-14 rounded-2xl flex items-center justify-center shrink-0 font-black text-xl bg-primary text-white shadow-xl shadow-primary/20">
+                        {steps[activeStep].step}
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-black text-primary mb-2">
+                          {steps[activeStep].title}
+                        </h3>
+                        <p className="text-slate-500 font-medium text-base leading-relaxed">
+                          {steps[activeStep].desc}
+                        </p>
+                      </div>
                     </motion.div>
                   </AnimatePresence>
                 </div>
               </div>
-            </div>
-            <div className="w-full lg:w-1/2 space-y-8">
-              {steps.map((item, i) => (
-                <div
-                  key={i}
-                  className={`flex gap-8 p-8 rounded-[2.5rem] transition-all duration-500 cursor-pointer border-2 ${activeStep === i ? "bg-indigo-50/50 border-primary/20 shadow-sm" : "bg-transparent border-transparent hover:bg-slate-50"}`}
-                  onClick={() => {
-                    setActiveStep(i);
-                    lastScrollTime.current = Date.now();
-                  }}
-                  onMouseEnter={() => {
-                    setActiveStep(i);
-                    lastScrollTime.current = Date.now();
-                  }}
-                >
-                  <div
-                    className={`w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 font-black text-2xl shadow-xl transition-all duration-500 ${activeStep === i ? "bg-primary text-white shadow-primary/20 scale-110" : "bg-slate-100 text-slate-900 shadow-sm"}`}
-                  >
-                    {item.step}
-                  </div>
-                  <div>
-                    <h3
-                      className={`text-2xl font-black mb-3 transition-colors duration-500 ${activeStep === i ? "text-primary" : "text-slate-900"}`}
-                    >
-                      {item.title}
-                    </h3>
-                    <p className="text-slate-500 font-medium text-lg leading-relaxed">
-                      {item.desc}
-                    </p>
+
+              {/* Mobile: phone centered with card below */}
+              <div className="lg:hidden flex flex-col items-center">
+                <div className="relative w-[200px] h-[380px] bg-slate-900 rounded-[2.5rem] p-2 shadow-[0_40px_80px_-20px_rgba(103,15,197,0.3)] border-[6px] border-slate-900 overflow-hidden">
+                  <div className="bg-white h-full w-full rounded-[2rem] flex flex-col relative overflow-hidden">
+                    <AnimatePresence mode="wait">
+                      <motion.div
+                        key={activeStep}
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -10 }}
+                        transition={{ duration: 0.4 }}
+                        className="flex-1 flex flex-col h-full"
+                      >
+                        {steps[activeStep].mockup}
+                      </motion.div>
+                    </AnimatePresence>
                   </div>
                 </div>
-              ))}
+
+                {/* Mobile step card below phone */}
+                <div className="w-full max-w-md mt-6 px-4">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={activeStep}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
+                      transition={{ duration: 0.4 }}
+                      className="flex gap-4 p-5 rounded-2xl bg-white border-2 border-primary/20 shadow-lg"
+                    >
+                      <div className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 font-black text-base bg-primary text-white shadow-xl shadow-primary/20">
+                        {steps[activeStep].step}
+                      </div>
+                      <div>
+                        <h3 className="text-base font-black text-primary mb-1">
+                          {steps[activeStep].title}
+                        </h3>
+                        <p className="text-slate-500 font-medium text-xs leading-relaxed">
+                          {steps[activeStep].desc}
+                        </p>
+                      </div>
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
+              </div>
             </div>
           </div>
         </div>
