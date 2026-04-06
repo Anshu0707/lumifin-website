@@ -119,7 +119,7 @@ export default function TeamPage() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-40 p-16 rounded-[4rem] bg-slate-900 text-white text-center space-y-8"
+          className="mt-40 p-16 rounded-[4rem] bg-slate-900 text-white text-center space-y-8 scroll-mt-24"
         >
           <h2 className="text-5xl font-black tracking-tighter">Want to join the mission?</h2>
           <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto">
