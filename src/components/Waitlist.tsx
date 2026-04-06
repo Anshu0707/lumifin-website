@@ -3,13 +3,31 @@ import { motion } from "motion/react";
 
 export default function Waitlist() {
   const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle waitlist submission
-    console.log("Waitlist submission:", email);
-    setEmail("");
-    alert("Thank you for joining the waitlist!");
+    setStatus("submitting");
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "waitlist",
+          email,
+        }).toString(),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -42,25 +60,48 @@ export default function Waitlist() {
             adventure.
           </p>
 
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mt-12"
-          >
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="flex-1 px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
-            />
-            <button
-              type="submit"
-              className="hero-gradient text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all"
+          {status === "success" ? (
+            <p className="text-primary font-bold text-xl mt-12">
+              Thank you for joining the waitlist!
+            </p>
+          ) : (
+            <form
+              name="waitlist"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mt-12"
             >
-              Join Waitlist
-            </button>
-          </form>
+              <input type="hidden" name="form-name" value="waitlist" />
+              <p className="hidden">
+                <label>
+                  Don't fill this out: <input name="bot-field" />
+                </label>
+              </p>
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email address"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="flex-1 px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+              />
+              <button
+                type="submit"
+                disabled={status === "submitting"}
+                className="hero-gradient text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all disabled:opacity-70"
+              >
+                {status === "submitting" ? "Submitting..." : "Join Waitlist"}
+              </button>
+              {status === "error" && (
+                <p className="text-red-500 font-medium text-sm mt-2 sm:mt-0 sm:self-center">
+                  Something went wrong. Please try again.
+                </p>
+              )}
+            </form>
+          )}
         </motion.div>
       </div>
     </section>
