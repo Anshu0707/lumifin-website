@@ -125,9 +125,9 @@ export default function TeamPage() {
           <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto">
             We're always looking for talented individuals who share our passion for travel and financial innovation.
           </p>
-          <button className="hero-gradient text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all">
+          <a href="mailto:hr@lumifin.io" className="inline-block hero-gradient text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all">
             Apply
-          </button>
+          </a>
         </motion.section>
       </main>
       
