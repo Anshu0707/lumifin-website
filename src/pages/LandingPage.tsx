@@ -1337,12 +1337,12 @@ export default function LandingPage() {
               {
                 title: "Daily Tours",
                 desc: "Book curated island hopping or city walks with verified local guides, all paid seamlessly via QR.",
-                img: "https://lh3.googleusercontent.com/aida/ADBb0uhQo80tJxbFG1G3IgpeIBnemTEqmJ9T8OoggoeHRAp38bfMO_ANSnPvlY9_oYlA4dJ9zGNg7FJUfqywwhZ7HAyXgX51z_hu1L2xBMUGFrpSX1hN9OF_ytJCCm9UndLT560lcBrGPqvzQY9f5bkff09Pcyv-LQYa7WwpN1Qr1qb7dOYXEclChFY5BnjscK1-wPdu85SVqfsDh_L3hhzT76JxhfeVOL69KN1Ba2o43wNVmyMLcb00C5lgfUwHdXSFWEtkOSIzMdwBeQ",
+                img: "/Daily Tours.png",
               },
               {
                 title: "Restaurants",
                 desc: "Discover hand-picked local dining gems. Use Lumi to unlock exclusive member-only offers and authentic flavors.",
-                img: "https://lh3.googleusercontent.com/aida/ADBb0ugypqcWFwJPhglO8aaMF6b0cDEsuEmW1yrqvj0C3GjlB76u2IPwhnqoP7dFc_5pk3qwmMYAhd3Ce__2knPE1xQXVl7IbUIesZRaLNuCcC6NTMlqIFJSxMIEt0oUqywFo4B1MrSlxytFbb1RgogRNqXBrBf8YdtJXOtQfnBQLjvJdWK_oWKIZ-cE4RByiHkdxtwoY9BONG2JhHkSy0i01eRXe7LF2Wwx7lrdlUXDXA7DEF_TfFJZTpMkya9Kw0HLmAC2g7kt9Tey",
+                img: "/Restaurant.png",
               },
             ].map((service, i) => (
               <div
