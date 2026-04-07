@@ -6,23 +6,23 @@ import { Linkedin, Twitter, Mail } from 'lucide-react';
 
 const team = [
   {
-    name: "Pierre Lahbhabi",
+    name: "Pierre Lahbabi",
     role: "CEO",
-    img: "/PIERRE.png",
+    img: "/assets/team/PIERRE.png",
     objectPosition: "center 20%",
     linkedin: "https://www.linkedin.com/in/pierre-lahbabi/"
   },
   {
     name: "Gaurav Bansal",
     role: "COO",
-    img: "/GAURAV.png",
+    img: "/assets/team/GAURAV.png",
     objectPosition: "center 15%",
     linkedin: "https://www.linkedin.com/in/gaurav-b-52728b11/"
   },
   {
     name: "Kinshuk Kukreti",
     role: "CTO",
-    img: "/KINSHUK.png",
+    img: "/assets/team/KINSHUK.png",
     objectPosition: "center 15%",
     linkedin: "https://www.linkedin.com/in/kinshuk-k-1269a999/"
   },
@@ -36,14 +36,14 @@ const team = [
   {
     name: "Subhrat Tripathi",
     role: "Product Manager",
-    img: "/SHUBRAT.png",
+    img: "/assets/team/SHUBRAT.png",
     objectPosition: "center 25%",
     linkedin: "https://www.linkedin.com/in/subhrattripathi071/"
   },
   {
     name: "Tanvi Nag",
     role: "Product Analyst",
-    img: "/Tanvi-2.png",
+    img: "/assets/team/Tanvi-2.png",
     objectPosition: "center 10%",
     scale: "",
     linkedin: "https://www.linkedin.com/in/tanvinag28/"
@@ -51,14 +51,14 @@ const team = [
   {
     name: "Muskan Chawla",
     role: "Software Engineer",
-    img: "/MUSKAN.png",
+    img: "/assets/team/MUSKAN.png",
     objectPosition: "center 30%",
     linkedin: "https://www.linkedin.com/in/muskan115/"
   },
   {
     name: "Anshuman Naithani",
     role: "Software Engineer",
-    img: "/ANSHUMAN.png",
+    img: "/assets/team/ANSHUMAN.png",
     objectPosition: "center 30%",
     linkedin: "https://www.linkedin.com/in/anshuman-naithani/"
   }

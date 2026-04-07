@@ -10,7 +10,7 @@ const posts = [
     title: "The Future of Payments in South East Asia",
     excerpt: "How QR codes are revolutionizing the way travelers spend money across the region.",
     date: "March 28, 2026",
-    author: "Pierre Lahbhabi",
+    author: "Pierre Lahbabi",
     category: "Fintech",
   },
   {

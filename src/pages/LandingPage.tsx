@@ -82,9 +82,9 @@ export default function LandingPage() {
       icon: <Wallet className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/Add Funds Cropped.jpg"
+          src="/assets/screens/Add Funds Cropped.jpg"
           alt="Fund Wallet"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-[0.90]"
         />
       ),
     },
@@ -803,9 +803,9 @@ export default function LandingPage() {
       icon: <CheckCircle2 className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/QR Scan 1.2.png"
+          src="/assets/screens/QR Scan 1.2.png"
           alt="Verify Amount"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover scale-[0.92]"
         />
       ),
     },
@@ -816,9 +816,9 @@ export default function LandingPage() {
       icon: <Check className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/QR Scan 1.5.png"
+          src="/assets/screens/QR Scan 1.5.png"
           alt="Success"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain scale-[0.97]"
         />
       ),
     },
@@ -877,7 +877,7 @@ export default function LandingPage() {
       {/* Coverage Section */}
       <section
         id="destinations"
-        className="py-32 px-8 max-w-7xl mx-auto reveal"
+        className="py-32 px-8 max-w-7xl mx-auto reveal dot-grid"
       >
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="space-y-6">
@@ -941,7 +941,7 @@ export default function LandingPage() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-8 left-8 text-white">
+              <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-4 text-white">
                 <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
                   {country.network}
                 </p>
@@ -1096,7 +1096,7 @@ export default function LandingPage() {
             <div className="lg:col-span-2">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-[4rem] rotate-6 scale-95 blur-2xl"></div>
-                <div className="relative bg-white p-12 rounded-[4rem] shadow-2xl border border-white/50 backdrop-blur-sm">
+                <div className="relative bg-white/60 p-12 rounded-[4rem] shadow-2xl border border-white/40 backdrop-blur-xl">
                   <div className="space-y-6">
                     <div className="w-16 h-16 rounded-2xl hero-gradient flex items-center justify-center text-white shadow-xl shadow-primary/30 mb-8">
                       <BadgeCheck className="w-8 h-8" />
@@ -1133,7 +1133,7 @@ export default function LandingPage() {
       </section>
 
       {/* User Journey Section */}
-      <section id="journey" ref={journeyRef} className="py-32 bg-white reveal">
+      <section id="journey" ref={journeyRef} className="py-32 bg-white reveal dot-grid">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-24 space-y-4">
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
@@ -1174,7 +1174,7 @@ export default function LandingPage() {
               {/* Desktop: phone left, card on right */}
               <div className="hidden lg:flex items-center justify-center gap-12">
                 {/* Phone mockup - desktop */}
-                <div className="relative w-[300px] h-[580px] bg-slate-900 rounded-[3.5rem] p-3 shadow-[0_60px_120px_-20px_rgba(103,15,197,0.3)] border-[8px] border-slate-900 overflow-hidden shrink-0">
+                <div className="relative w-[300px] h-[580px] bg-slate-900 rounded-[3.5rem] p-1.5 shadow-[0_60px_120px_-20px_rgba(103,15,197,0.3)] border-[3px] border-slate-900 overflow-hidden shrink-0">
                   <div className="bg-white h-full w-full rounded-[3rem] flex flex-col relative overflow-hidden">
                     <AnimatePresence mode="wait">
                       <motion.div
@@ -1192,7 +1192,7 @@ export default function LandingPage() {
                 </div>
 
                 {/* Right card - always on right */}
-                <div className="w-[340px]">
+                <div className="w-[480px]">
                   <AnimatePresence mode="wait">
                     <motion.div
                       key={activeStep}
@@ -1220,7 +1220,7 @@ export default function LandingPage() {
 
               {/* Mobile: phone centered with card below */}
               <div className="lg:hidden flex flex-col items-center">
-                <div className="relative w-[200px] h-[380px] bg-slate-900 rounded-[2.5rem] p-2 shadow-[0_40px_80px_-20px_rgba(103,15,197,0.3)] border-[6px] border-slate-900 overflow-hidden">
+                <div className="relative w-[200px] h-[380px] bg-slate-900 rounded-[2.5rem] p-1 shadow-[0_40px_80px_-20px_rgba(103,15,197,0.3)] border-[2px] border-slate-900 overflow-hidden">
                   <div className="bg-white h-full w-full rounded-[2rem] flex flex-col relative overflow-hidden">
                     <AnimatePresence mode="wait">
                       <motion.div
@@ -1287,7 +1287,7 @@ export default function LandingPage() {
               <PiggyBank className="w-6 h-6" />
             </div>
             <p className="text-2xl md:text-3xl font-black tracking-tighter text-slate-900">
-              Avoid losing up to <span className="text-primary">€100</span> per{" "}
+              Avoid losing up to <span className="text-primary">€120</span> per{" "}
               <span className="text-primary">€1,000</span>
             </p>
             <div className="absolute -inset-1 bg-primary/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
@@ -1299,7 +1299,6 @@ export default function LandingPage() {
               <tr className="text-slate-400 text-[11px] uppercase tracking-[0.2em]">
                 <th className="p-10 font-black">Provider</th>
                 <th className="p-10 font-black">Fee Structure</th>
-                <th className="p-10 font-black">MERCHANT SURCHARGING</th>
                 <th className="p-10 font-black text-right">
                   Total Cost to Customer
                 </th>
@@ -1312,31 +1311,36 @@ export default function LandingPage() {
                   Lumi
                 </td>
                 <td className="p-10 text-primary font-black text-lg">
-                  2% FX Fee
+                  2% fee
                 </td>
-                <td className="p-10 text-primary font-black text-lg">0%</td>
                 <td className="p-10 text-primary font-black text-3xl text-right">
                   €1,020
                 </td>
               </tr>
               {[
                 {
-                  name: "Airport Exchange (Cash)",
-                  fee: "12% FX Spread",
+                  name: "Airport exchange (cash)",
+                  fee: "10% FX spread",
                   surcharge: "0%",
-                  total: "€1,120",
+                  total: "€1,100",
                 },
                 {
-                  name: "ATM Cash Withdrawal",
-                  fee: "3% FX + €7.5 Fee",
+                  name: "ATM cash withdrawal",
+                  fee: "7,5 EUR + 3%",
                   surcharge: "0%",
-                  total: "€1,037.5",
+                  total: "€1,060",
                 },
                 {
-                  name: "Traditional Bank Card",
-                  fee: "2.5% FX Markup",
-                  surcharge: "2.00%",
-                  total: "€1,045",
+                  name: "Card payment",
+                  fee: "0,2 EUR + 3%",
+                  surcharge: "0%",
+                  total: "€1,064",
+                },
+                {
+                  name: "Card with currency conversion",
+                  fee: "8% on top",
+                  surcharge: "0%",
+                  total: "€1,144",
                 },
               ].map((row, i) => (
                 <tr
@@ -1348,9 +1352,6 @@ export default function LandingPage() {
                     {row.name}
                   </td>
                   <td className="p-10 text-slate-500 font-medium">{row.fee}</td>
-                  <td className="p-10 text-slate-500 font-medium">
-                    {row.surcharge}
-                  </td>
                   <td className="p-10 font-black text-slate-900 text-right">
                     {row.total}
                   </td>
@@ -1391,12 +1392,12 @@ export default function LandingPage() {
               {
                 title: "Daily Tours",
                 desc: "Book curated island hopping or city walks with verified local guides, all paid seamlessly via QR.",
-                img: "/Daily Tours.png",
+                img: "/assets/places/Daily Tours.png",
               },
               {
                 title: "Restaurants",
                 desc: "Discover hand-picked local dining gems. Use Lumi to unlock exclusive member-only offers and authentic flavors.",
-                img: "/Restaurant.png",
+                img: "/assets/places/Restaurant.png",
               },
             ].map((service, i) => (
               <div
