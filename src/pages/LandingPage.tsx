@@ -816,9 +816,9 @@ export default function LandingPage() {
       icon: <Check className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/assets/screens/QR Scan 1.5.png"
+          src="/assets/screens/QR Scan 1.5 1.png"
           alt="Success"
-          className="w-full h-full object-contain scale-[0.97]"
+          className="w-full h-full object-contain scale-[1.07]"
         />
       ),
     },
@@ -1305,7 +1305,7 @@ export default function LandingPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              <tr className="bg-indigo-100/50 border-2 border-primary/20 shadow-inner relative z-10">
+              <tr className="bg-white shadow-[inset_4px_0_0_0_#670FC5,0_10px_40px_-15px_rgba(103,15,197,0.4)] relative z-10">
                 <td className="p-10 font-black text-primary flex items-center gap-4">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>{" "}
                   Lumi
