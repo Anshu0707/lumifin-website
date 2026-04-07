@@ -21,64 +21,82 @@ export default function PrivacyPage() {
               Privacy Policy
             </h1>
             <p className="text-xl text-slate-500 font-medium leading-relaxed">
-              Last updated: April 3, 2026
+              Effective Date: January 2026
             </p>
           </div>
-          
+
           <div className="prose prose-slate max-w-none space-y-8 text-slate-600 font-medium leading-relaxed">
+            <p>
+              Lumifin (“we”, “our”, “us”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and safeguard your personal information when you visit our website <a href="https://www.lumifin.io" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.lumifin.io</a> or use our services.
+            </p>
+
             <section className="space-y-4">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tight">1. Introduction</h2>
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">1. Information We Collect</h2>
               <p>
-                LumiFin ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and website.
+                We may collect personal information such as your name, email address, phone number, and any information you provide when registering or contacting us. We also automatically collect technical information including IP address, browser type, device information, operating system, and usage data when you interact with our platform.
               </p>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tight">2. Information We Collect</h2>
-              <p>
-                We collect information that you provide directly to us, such as when you create an account, verify your identity, or contact support. This may include:
-              </p>
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">2. How We Use Your Information</h2>
+              <p>We use your information to:</p>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Personal identification information (Name, email address, phone number).</li>
-                <li>Government-issued identification documents for KYC compliance.</li>
-                <li>Financial information related to your transactions and linked bank accounts.</li>
-                <li>Device information and usage data.</li>
+                <li>Provide, operate, and improve our services</li>
+                <li>Communicate with you regarding updates and support</li>
+                <li>Process transactions and verify identities</li>
+                <li>Ensure security and prevent fraud</li>
+                <li>Comply with legal and regulatory requirements</li>
               </ul>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tight">3. How We Use Your Information</h2>
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">3. Data Sharing</h2>
               <p>
-                We use the information we collect to:
+                We do not sell or rent your personal information. We may share your data with trusted third-party service providers such as payment partners, analytics providers, and infrastructure vendors solely for the purpose of operating our services, under strict confidentiality agreements.
               </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Provide, maintain, and improve our services.</li>
-                <li>Process transactions and send related information.</li>
-                <li>Verify your identity and prevent fraud.</li>
-                <li>Comply with legal and regulatory requirements.</li>
-                <li>Communicate with you about products, services, and events.</li>
-              </ul>
             </section>
 
             <section className="space-y-4">
               <h2 className="text-3xl font-black text-slate-900 tracking-tight">4. Data Security</h2>
               <p>
-                We use industry-standard security measures, including encryption and secure authentication methods, to protect your personal information. However, no method of transmission over the internet or electronic storage is 100% secure.
+                We use appropriate technical and organizational security measures to protect your personal information from unauthorized access, alteration, or misuse.
               </p>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tight">5. Your Rights</h2>
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">5. User Rights</h2>
               <p>
-                Depending on your location, you may have certain rights regarding your personal information, including the right to access, correct, or delete your data.
+                You have the right to request access, correction, or deletion of your personal information. You may also withdraw consent where applicable by contacting us.
               </p>
             </section>
 
             <section className="space-y-4">
-              <h2 className="text-3xl font-black text-slate-900 tracking-tight">6. Contact Us</h2>
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">6. Data Retention</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us at privacy@lumifin.io.
+                We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by law.
               </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">7. International Data Transfers</h2>
+              <p>
+                Your data may be transferred to and processed in countries outside your country of residence, which may have different data protection laws.
+              </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">8. Updates to This Policy</h2>
+              <p>
+                We may update this Privacy Policy from time to time. Any changes will be reflected on this page with a revised effective date.
+              </p>
+            </section>
+
+            <section className="space-y-4">
+              <h2 className="text-3xl font-black text-slate-900 tracking-tight">9. Contact Us</h2>
+              <p>
+                If you have any questions or concerns regarding this Privacy Policy, please contact us at:
+              </p>
+              <p>Email: info@lumifin.io</p>
             </section>
           </div>
         </motion.div>
