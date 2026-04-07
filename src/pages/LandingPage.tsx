@@ -818,7 +818,7 @@ export default function LandingPage() {
         <img
           src="/assets/screens/QR Scan 1.5 1.png"
           alt="Success"
-          className="w-full h-full object-contain scale-[1.07]"
+          className="w-full h-full object-contain scale-[1.14]"
         />
       ),
     },
