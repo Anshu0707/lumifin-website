@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const location = useLocation();
   const isHome = location.pathname === "/";
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useTranslation();
 
   const scrollToSection = (id: string) => {
     setMobileOpen(false);
@@ -26,39 +29,39 @@ export default function Header() {
         onClick={() => scrollToSection("destinations")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        Destinations
+        {t("header.destinations")}
       </button>
       <button
         onClick={() => scrollToSection("journey")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        User Journey
+        {t("header.userJourney")}
       </button>
       <button
         onClick={() => scrollToSection("fees")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        Fee Transparency
+        {t("header.feeTransparency")}
       </button>
       <button
         onClick={() => scrollToSection("services")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        Services
+        {t("header.services")}
       </button>
       <Link
         to="/team"
         onClick={() => setMobileOpen(false)}
         className="hover:text-primary transition-colors normal-case"
       >
-        About Us
+        {t("header.aboutUs")}
       </Link>
       <Link
         to="/faq"
         onClick={() => setMobileOpen(false)}
         className="hover:text-primary transition-colors"
       >
-        FAQ
+        {t("header.faq")}
       </Link>
     </>
   );
@@ -69,13 +72,16 @@ export default function Header() {
         <Link to="/" className="flex items-center">
           <Logo className="w-40 max-h-16" />
         </Link>
-        <div className="hidden md:flex items-center gap-10 text-[12px] font-bold tracking-widest uppercase text-slate-500">
+        <div className="hidden lg:flex items-center gap-10 text-[12px] font-bold tracking-widest uppercase text-slate-500">
           {navItems}
+          <LanguageToggle />
         </div>
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-4 lg:hidden">
+          <LanguageToggle className="text-[12px] font-bold tracking-widest uppercase" />
           <button
             className="text-slate-700"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? t("header.closeMenu") : t("header.openMenu")}
           >
             {mobileOpen ? (
               <X className="w-6 h-6" />
@@ -86,7 +92,7 @@ export default function Header() {
         </div>
       </nav>
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-8 py-6 flex flex-col items-center gap-5 text-[12px] font-bold tracking-widest uppercase text-slate-500">
+        <div className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-8 py-6 flex flex-col items-center gap-5 text-[12px] font-bold tracking-widest uppercase text-slate-500">
           {navItems}
         </div>
       )}

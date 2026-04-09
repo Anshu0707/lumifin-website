@@ -1,5 +1,6 @@
 import React from 'react';
-import { faqs } from '../constants/faqs';
+import { useTranslation } from 'react-i18next';
+import { getFaqs } from '../constants/faqs';
 import { ChevronDown, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
@@ -7,10 +8,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function FAQPage() {
+  const { t } = useTranslation();
+  const faqs = getFaqs(t);
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+
       <main className="pt-40 pb-32 px-8 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,19 +22,19 @@ export default function FAQPage() {
           className="space-y-12"
         >
           <Link to="/" className="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase hover:gap-4 transition-all">
-            <ArrowLeft className="w-4 h-4" /> Back to Home
+            <ArrowLeft className="w-4 h-4" /> {t('faqPage.backHome')}
           </Link>
-          
+
           <div className="space-y-6">
-            <span className="text-primary font-bold text-xs tracking-widest uppercase">Support & Information</span>
+            <span className="text-primary font-bold text-xs tracking-widest uppercase">{t('faqPage.eyebrow')}</span>
             <h1 className="text-7xl font-black tracking-tighter text-slate-900 leading-[0.9]">
-              Frequently Asked Questions
+              {t('faqPage.title')}
             </h1>
             <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-2xl">
-              Everything you need to know about Lumi, our digital wallet, and how we're redefining travel in South East Asia.
+              {t('faqPage.subtitle')}
             </p>
           </div>
-          
+
           <div className="space-y-6 pt-12">
             {faqs.map((faq, index) => (
               <motion.details
@@ -53,7 +56,7 @@ export default function FAQPage() {
           </div>
         </motion.div>
       </main>
-      
+
       <Footer />
     </div>
   );

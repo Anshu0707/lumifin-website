@@ -17,12 +17,14 @@ import {
   Check,
   X,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
 
 export default function LandingPage() {
+  const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
   const journeyRef = useRef<HTMLDivElement>(null);
@@ -77,21 +79,21 @@ export default function LandingPage() {
   const steps = [
     {
       step: 1,
-      title: "Fund Your Wallet",
-      desc: "Add money to your Lumi wallet in your home currency. Quick, secure, and ready to use anywhere.",
+      title: t("journey.steps.1.title"),
+      desc: t("journey.steps.1.desc"),
       icon: <Wallet className="text-primary w-12 h-12" />,
       mockup: (
         <img
           src="/assets/screens/Add Funds Cropped.jpg"
-          alt="Fund Wallet"
+          alt={t("journey.steps.1.alt")}
           className="w-full h-full object-cover scale-[0.90]"
         />
       ),
     },
     {
       step: 2,
-      title: "Scan QR Code",
-      desc: "Lumi supports all major local QR payment standards across South East Asia. Just point and scan at any street stall or mall.",
+      title: t("journey.steps.2.title"),
+      desc: t("journey.steps.2.desc"),
       icon: <QrCode className="text-primary w-12 h-12" />,
       mockup: (
         <div className="w-full h-full bg-gradient-to-b from-slate-900 to-slate-800 flex flex-col">
@@ -798,26 +800,26 @@ export default function LandingPage() {
     },
     {
       step: 3,
-      title: "Verify Amount",
-      desc: "See the exact amount both in local currency and in your home currency instantly. No guesswork or hidden margins.",
+      title: t("journey.steps.3.title"),
+      desc: t("journey.steps.3.desc"),
       icon: <CheckCircle2 className="text-primary w-12 h-12" />,
       mockup: (
         <img
           src="/assets/screens/QR Scan 1.2.png"
-          alt="Verify Amount"
+          alt={t("journey.steps.3.alt")}
           className="w-full h-full object-cover scale-[0.92]"
         />
       ),
     },
     {
       step: 4,
-      title: "Success!",
-      desc: "Instant confirmation sent to the merchant. Walk away with a digital receipt and zero stress.",
+      title: t("journey.steps.4.title"),
+      desc: t("journey.steps.4.desc"),
       icon: <Check className="text-primary w-12 h-12" />,
       mockup: (
         <img
           src="/assets/screens/QR Scan 1.5 1.png"
-          alt="Success"
+          alt={t("journey.steps.4.alt")}
           className="w-full h-full object-contain scale-[1.14]"
         />
       ),
@@ -841,22 +843,21 @@ export default function LandingPage() {
         </div>
         <div className="relative z-10 text-center px-6 max-w-5xl">
           <span className="inline-flex items-center bg-white/20 backdrop-blur-md text-white border border-white/30 px-5 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase mb-8">
-            Redefining SOUTH EAST Asia Travel
+            {t("hero.badge")}
           </span>
           <h1 className="text-7xl md:text-[110px] font-black text-white text-editorial leading-[0.85] mb-10 tracking-tighter">
-            Pay Like a <br />
-            <span className="text-primary-fixed italic">Local</span>.
+            {t("hero.titleLine1")} <br />
+            <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            Seamlessly navigate South East Asia and beyond with instant QR
-            payments.
+            {t("hero.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button
               onClick={() => setShowVideo(true)}
               className="hero-gradient text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all"
             >
-              View Demo
+              {t("hero.viewDemo")}
             </button>
             <button
               onClick={() => {
@@ -865,7 +866,7 @@ export default function LandingPage() {
               }}
               className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-white/20 transition-all"
             >
-              Join the Waitlist
+              {t("hero.joinWaitlist")}
             </button>
           </div>
         </div>
@@ -882,49 +883,48 @@ export default function LandingPage() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div className="space-y-6">
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
-              Regional Network
+              {t("coverage.eyebrow")}
             </span>
             <h2 className="text-6xl font-black tracking-tighter text-slate-900">
-              6 Countries. One App.
+              {t("coverage.title")}
             </h2>
             <p className="text-slate-500 max-w-xl text-lg font-medium">
-              From the street food of Bangkok to the boutiques of Vietnam,
-              LumiFin ensures your payments never fail.{" "}
-              <span className="text-primary font-bold">COMING SOON IN</span>
+              {t("coverage.descPrefix")}{" "}
+              <span className="text-primary font-bold">{t("coverage.comingSoon")}</span>
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {[
             {
-              name: "Thailand",
+              name: t("coverage.countries.thailand"),
               network: "PromptPay",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCADyKo_l8AkIwVsjIh0QFbFynTbtTTQGXE_82jvwwmf7HI1rUAxvo2gjS0XLGEIakqz70jBMljXEYZZjTXZlt84HPQ6D9AjeF5h_jUQy52xRGIGB9AkSF8ckqeuv-NfY-9ts9W3lkU7joA2dpRs8hvPBOkPBnYtEOjDDyx-6AUbFaR_veWBqMbqzbeudVq76Del8xfFq3l1i3tJ2T6-jP35gq3rNgKepTuY6pcLZduGmJRHe8GlyZfbuSW5Kj-5NIBGjeSKpwgnT0_",
             },
             {
-              name: "Indonesia",
+              name: t("coverage.countries.indonesia"),
               network: "QRIS",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8ThdfhEs4iFj6rS3rzGySJ2URSwRMt3kO_tDRErE7zSdoyBDatO8rg2yOzvEiEP_gjJbcZRRlk2QG6ln1GeqpkflS7k_81SrSEZo-du91aBcAdGAkCVNfwIZB5bZxYZHH0yxPNjDIPwOSqJjp9nsAu0tJGFWBoKsz6Uw5dzWaaG9kTjTSxp1u9PlM9UFL01VfcdgQfivJxl5YOVKy9Tx_VSO7xkhFEoyqr9BU1VdGEtqCxkwTPvP5LVKgolUIjEcuP1r3ketchI2o",
               offset: true,
             },
             {
-              name: "Vietnam",
+              name: t("coverage.countries.vietnam"),
               network: "VietQR",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBp0TIju-96DY_xjqr3kNDc5nGwTSRs9Mk8SclesK06t4vH_Lu079tXN9wiD1CbHNWlsNeoyk5L9MGlkDrLN-dWuvEowE1nKzjiC0ML44Y1J51xQkXHb0XV7iS7WdrdJZdBSTH3V2xcHTNcYsqJlIPdrwaKp3qGYPLSelTdNh7NujqzLVcgHkFzeWJ1EwPzoTu1oh7FqtTavzuZhuFlv1kgJrby7zvU6l_d6UuHgJOt2nvDtFn0xoClUXwdpAwV_yj05egAaQoqeuvZ",
             },
             {
-              name: "Malaysia",
+              name: t("coverage.countries.malaysia"),
               network: "DuitNow",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC76seS9t7V8_AffElBUw7eS5o31U4F_9k_lzMjW-9F6z5mOy7Tl0sRKVCaO5RuRbGhENvxlrYjm41fjzGg0DHal8XTb3juGGNS4VDa2Yn5ehwN4AL8TXy2orc5H-d5yl1TlSk22Yf9Y-OxFr6kbG66cT_LjvSKmI_npSzN-ZpLuoeDUlS7qisoGy54sonVpkb83k7f7M5YOIzF8czWSXsZOmy3Isb1LTtnE3oGsj2PzIfUX1RkDz-RpzXz9hLiVsivExIGeJYY09c4",
               offset: true,
             },
             {
-              name: "Cambodia",
+              name: t("coverage.countries.cambodia"),
               network: "KHQR",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_uKLa5un5fdEDTmXrAVPEI4NQHt510tdOM43-EF_ECZpvGA3EjHxhP1YPciKIgYl40D07XHoNvyY2iaa-SRTl4AFUFSnxl7pFdljro6P7p7NGS5KZ0Js4XCzAvj6IPC843k7vMjp76zXsolf0HroYN3VQyRYLVRERa7wGrJf0c_fIdLOGQ2nvlQUDljC-M-MTV_adHX7qlgA9OH9DDrFmwXZnhkzZJTohejfqDJsC_Cxm1SHGNPrZ6U4NzdUJL956A0l8i-ArwdY",
             },
             {
-              name: "Philippines",
+              name: t("coverage.countries.philippines"),
               network: "InstaPay",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_z_9AB6QwWo7um_GLFpnHmMo_ULSMKz6wB3M84GannKibvEEhFU-1ekomBHwAlhlVHhOU4iMvjYEpySS9gPfMU3q4CdDFabgtMyYB2984o0MbX_IVoxw9Nv_PFN9v1a03-eqhbvdgWCI9hR2ZN8CotqemumhqZhDglCM8tqYBBziwFfuBiOHj4hcwtv7xRDMjsBFeNz4sY4y_CLThPYeCHJzOncBWA-aMZSzDnCUwOT-BcHN1aSi50QpkUEQw0a-BuJ5xlvN6278",
               offset: true,
@@ -991,17 +991,13 @@ export default function LandingPage() {
           </div>
           <div className="space-y-10">
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
-              Our Mission
+              {t("mission.eyebrow")}
             </span>
             <h2 className="text-6xl font-black tracking-tighter text-slate-900 leading-[0.9]">
-              Borders Shouldn't Define Your Freedom.
+              {t("mission.title")}
             </h2>
             <p className="text-xl text-slate-500 font-medium leading-relaxed">
-              Lumi was born from a simple observation: modern travelers are
-              forced to choose between inflated exchange rates, cash or
-              traditional cards, and none of these options are truly
-              satisfactory. Travelers lack access to the most efficient payment
-              method in the region: mobile QR payments.
+              {t("mission.body")}
             </p>
             <div className="space-y-8 mt-10">
               <div className="flex items-start gap-6">
@@ -1010,11 +1006,10 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-slate-900">
-                    Your Phone Is Your Wallet
+                    {t("mission.features.phoneWallet.title")}
                   </h4>
                   <p className="text-slate-500 font-medium">
-                    No Cash. No Cards. Just Your Mobile. Make payments instantly
-                    using only your mobile; simple and seamless.
+                    {t("mission.features.phoneWallet.desc")}
                   </p>
                 </div>
               </div>
@@ -1024,11 +1019,10 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-slate-900">
-                    Instant and Transparent
+                    {t("mission.features.instantTransparent.title")}
                   </h4>
                   <p className="text-slate-500 font-medium">
-                    Zero hidden fees, instant visibility on FX rate. You know
-                    exactly what you pay.
+                    {t("mission.features.instantTransparent.desc")}
                   </p>
                 </div>
               </div>
@@ -1038,11 +1032,10 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-slate-900">
-                    Pay Everywhere
+                    {t("mission.features.payEverywhere.title")}
                   </h4>
                   <p className="text-slate-500 font-medium">
-                    Access to 25M+ local merchants, bringing truly inclusive
-                    payments to every corner.
+                    {t("mission.features.payEverywhere.desc")}
                   </p>
                 </div>
               </div>
@@ -1052,11 +1045,10 @@ export default function LandingPage() {
                 </div>
                 <div>
                   <h4 className="text-xl font-bold text-slate-900">
-                    Travel Now Pay Later
+                    {t("mission.features.travelNowPayLater.title")}
                   </h4>
                   <p className="text-slate-500 font-medium">
-                    Enjoy your holiday without the stress. Upload your wallet
-                    and pay back in easy installments.
+                    {t("mission.features.travelNowPayLater.desc")}
                   </p>
                 </div>
               </div>
@@ -1076,21 +1068,13 @@ export default function LandingPage() {
           <div className="grid lg:grid-cols-5 gap-16 items-center">
             <div className="lg:col-span-3 space-y-8">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase mb-4">
-                <HeartHandshake className="w-5 h-5" /> TRUST, BUILT IN :)
+                <HeartHandshake className="w-5 h-5" /> {t("whyLumi.badge")}
               </div>
               <h2 className="text-6xl font-black tracking-tighter text-slate-900 leading-[0.9]">
-                Why Lumi?
+                {t("whyLumi.title")}
               </h2>
               <p className="text-2xl text-slate-800 font-semibold leading-relaxed">
-                Lumi is designed to give you complete confidence in every
-                transaction. Founded by experienced bankers and backed by
-                European investors, we bring deep financial expertise and
-                long-term trust to everything we do. As a European company
-                working with regulated partners across Europe and Asia, we meet
-                high standards of security and compliance to protect your funds
-                and money movements. Combined with instant payments, transparent
-                pricing, and a large acceptance network, Lumi delivers a payment
-                experience you can rely on anywhere.
+                {t("whyLumi.body")}
               </p>
             </div>
             <div className="lg:col-span-2">
@@ -1102,25 +1086,25 @@ export default function LandingPage() {
                       <BadgeCheck className="w-8 h-8" />
                     </div>
                     <h3 className="text-2xl font-black text-slate-900 mb-6">
-                      Your money is in safe hands
+                      {t("whyLumi.cardTitle")}
                     </h3>
                     <ul className="space-y-6">
                       <li className="flex items-center gap-3">
                         <CheckCircle2 className="text-emerald-500 w-6 h-6" />
                         <span className="font-bold text-slate-700 text-lg">
-                          EU Regulated Set-up
+                          {t("whyLumi.cardItem1")}
                         </span>
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle2 className="text-emerald-500 w-6 h-6" />
                         <span className="font-bold text-slate-700 text-lg">
-                          SEPA Bank Transfer
+                          {t("whyLumi.cardItem2")}
                         </span>
                       </li>
                       <li className="flex items-center gap-3">
                         <CheckCircle2 className="text-emerald-500 w-6 h-6" />
                         <span className="font-bold text-slate-700 text-lg">
-                          KYC and AML Check
+                          {t("whyLumi.cardItem3")}
                         </span>
                       </li>
                     </ul>
@@ -1137,13 +1121,13 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-24 space-y-4">
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
-              The User Journey
+              {t("journey.eyebrow")}
             </span>
             <h2 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-900">
-              From your bank in Europe to any QR in Asia
+              {t("journey.title")}
             </h2>
             <p className="text-slate-500 text-lg md:text-xl font-medium">
-              Four simple steps to financial freedom.
+              {t("journey.subtitle")}
             </p>
           </div>
 
@@ -1272,13 +1256,13 @@ export default function LandingPage() {
       <section id="fees" className="py-32 max-w-5xl mx-auto px-8 reveal">
         <div className="text-center mb-20 space-y-4">
           <span className="text-primary font-bold text-xs tracking-widest uppercase">
-            Fee Transparency
+            {t("fees.eyebrow")}
           </span>
           <h2 className="text-6xl font-black tracking-tighter text-slate-900">
-            No Secrets, Just Savings.
+            {t("fees.title")}
           </h2>
           <p className="text-slate-500 text-xl font-medium">
-            A typical €1000 overall spend comparison.
+            {t("fees.subtitle")}
           </p>
         </div>
         <div className="mb-12 flex justify-center">
@@ -1287,8 +1271,8 @@ export default function LandingPage() {
               <PiggyBank className="w-6 h-6" />
             </div>
             <p className="text-2xl md:text-3xl font-black tracking-tighter text-slate-900">
-              Avoid losing up to <span className="text-primary">€120</span> per{" "}
-              <span className="text-primary">€1,000</span>
+              {t("fees.savingsPrefix")} <span className="text-primary">{t("fees.savingsAmount")}</span> {t("fees.savingsMiddle")}{" "}
+              <span className="text-primary">{t("fees.savingsPer")}</span>
             </p>
             <div className="absolute -inset-1 bg-primary/20 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
           </div>
@@ -1297,10 +1281,10 @@ export default function LandingPage() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="text-slate-400 text-[11px] uppercase tracking-[0.2em]">
-                <th className="p-10 font-black">Provider</th>
-                <th className="p-10 font-black whitespace-nowrap">Fee Structure + Possible Surcharging</th>
+                <th className="p-10 font-black">{t("fees.table.provider")}</th>
+                <th className="p-10 font-black whitespace-nowrap">{t("fees.table.feeStructure")}</th>
                 <th className="p-10 font-black text-right">
-                  Total Cost to Customer
+                  {t("fees.table.totalCost")}
                 </th>
               </tr>
             </thead>
@@ -1308,39 +1292,39 @@ export default function LandingPage() {
               <tr className="bg-white shadow-[inset_4px_0_0_0_#670FC5,0_10px_40px_-15px_rgba(103,15,197,0.4)] relative z-10">
                 <td className="p-10 font-black text-primary flex items-center gap-4">
                   <div className="w-3 h-3 rounded-full bg-primary animate-pulse"></div>{" "}
-                  Lumi
+                  {t("fees.table.lumi")}
                 </td>
                 <td className="p-10 text-primary font-black text-lg">
-                  2% fee
+                  {t("fees.table.lumiFee")}
                 </td>
                 <td className="p-10 text-primary font-black text-3xl text-right">
-                  €1,020
+                  {t("fees.table.lumiTotal")}
                 </td>
               </tr>
               {[
                 {
-                  name: "Airport exchange (cash)",
-                  fee: "10% FX spread",
+                  name: t("fees.table.rows.airport.name"),
+                  fee: t("fees.table.rows.airport.fee"),
                   surcharge: "0%",
-                  total: "€1,100",
+                  total: t("fees.table.rows.airport.total"),
                 },
                 {
-                  name: "ATM cash withdrawal",
-                  fee: "7,5 EUR + 3%",
+                  name: t("fees.table.rows.atm.name"),
+                  fee: t("fees.table.rows.atm.fee"),
                   surcharge: "0%",
-                  total: "€1,060",
+                  total: t("fees.table.rows.atm.total"),
                 },
                 {
-                  name: "Card payment",
-                  fee: "0,2 EUR + 3%",
+                  name: t("fees.table.rows.card.name"),
+                  fee: t("fees.table.rows.card.fee"),
                   surcharge: "0%",
-                  total: "€1,064",
+                  total: t("fees.table.rows.card.total"),
                 },
                 {
-                  name: "Card with currency conversion",
-                  fee: "8% on top",
+                  name: t("fees.table.rows.cardFx.name"),
+                  fee: t("fees.table.rows.cardFx.fee"),
                   surcharge: "0%",
-                  total: "€1,144",
+                  total: t("fees.table.rows.cardFx.total"),
                 },
               ].map((row, i) => (
                 <tr
@@ -1371,32 +1355,31 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
             <div className="space-y-6">
               <span className="text-primary font-bold uppercase tracking-widest text-xs">
-                CURATED FOR EVERY TRAVELER
+                {t("services.eyebrow")}
               </span>
               <h2 className="text-6xl font-black tracking-tighter">
-                Beyond Payments.
+                {t("services.title")}
               </h2>
               <p className="text-slate-400 max-w-xl text-lg font-medium">
-                Go beyond payments with travel essentials like eSIM, curated
-                experiences, and access to the best local offers.
+                {t("services.subtitle")}
               </p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                title: "eSIM",
-                desc: "Activate local 5G data plans instantly. Stay connected the moment you land with zero physical cards.",
+                title: t("services.items.esim.title"),
+                desc: t("services.items.esim.desc"),
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwzVHvzHYttICyFrNdszimbmzYe9sz8oUTdBs1ivHWlBmFgFLUfc8mXN_E6zjshSRZM5dA4Stb7-1y66wjDtPmysz6odGUfQZApggzTBeRD8TDR9y3YaaJR7HLmEvQQbUjynapyQF-geu7K6btTr7D0XLcsRUve4eBnUnRiAOfCxP3UDh-LBHiB-7ayQlMcz5IngOo1dZqo0-ydKJ3p40S3g_xIF7LOc8RVc_ebukJ8oESet-7sI30_hoSYDMFovUvE8W_0bcUloU",
               },
               {
-                title: "Daily Tours",
-                desc: "Book curated island hopping or city walks with verified local guides, all paid seamlessly via QR.",
+                title: t("services.items.tours.title"),
+                desc: t("services.items.tours.desc"),
                 img: "/assets/places/Daily Tours.png",
               },
               {
-                title: "Restaurants",
-                desc: "Discover hand-picked local dining gems. Use Lumi to unlock exclusive member-only offers and authentic flavors.",
+                title: t("services.items.restaurants.title"),
+                desc: t("services.items.restaurants.desc"),
                 img: "/assets/places/Restaurant.png",
               },
             ].map((service, i) => (
@@ -1430,30 +1413,30 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20 space-y-6">
             <span className="text-primary font-bold text-xs tracking-widest uppercase">
-              Verified Experiences
+              {t("stories.eyebrow")}
             </span>
             <h2 className="text-6xl font-black tracking-tighter text-slate-900">
-              Nomad Stories
+              {t("stories.title")}
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
               {
-                name: "Sarah Jenkins",
-                role: "Digital Strategist",
-                text: "At my last stay in Vietnam, I got stuck in a taxi with no cash and no payment option. If only I could have Lumi to pay via QR.",
+                name: t("stories.items.sarah.name"),
+                role: t("stories.items.sarah.role"),
+                text: t("stories.items.sarah.text"),
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDxxaYlCue15ExINB1Eu0MXZsSUMemjww82ZQRMcbbxkngWgFcCG_nMsoHzBFlvoqIxbxsJsEyErd3AFHl5MqaUxoWns9s5Gscarxf47XDxQSHe-dPOdEdeOBggLYK3STphuxxkxC2YktHwZ7ut660cYODBKU0VP691xlFrhUUizY7AC_i7Eva0tgqC_iCSPGwImTNfCt6Z0mGpreB7V6XjTw3auBU6DK9O8eIYSUCQ9oXnbmiZUPLhzFQ7aO_ksiG6XJSEzgTIKNpn",
               },
               {
-                name: "Marcus Thorne",
-                role: "PAYMENT EXPERT",
-                text: "Lumi could seriously disrupt traditional credit cards. The fees are lower and the experience is smoother. This is the future of travel payments",
+                name: t("stories.items.marcus.name"),
+                role: t("stories.items.marcus.role"),
+                text: t("stories.items.marcus.text"),
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDeuPPxhFWp5XX-gqCubs4K5TRKnl9ntjJyJu4QyzMMrReGFKa7abX2kN_KpavsAcVKa9HpfjGs4o_1LiOnVMXLBAPDrapUJ6AMOfgMtGFEJfzbUCA0G1o29TXm695v42gzfORer1OYKxjVrryYotwFvF85r4TxaAMH3dX7xFZAxjPCU7mgqBlkpOskZnf0x0yAcHeAWtKRkDcNUEUgQppYjfE1PfhBylIjFlsnaxn_bNyUeGX76hE1srteug0BdP4ZeC4nFDPL4ly2",
               },
               {
-                name: "Elena Rossi",
-                role: "Solo Traveler",
-                text: "I am staying each year a few weeks in Thailand but without a bank account, I cannot pay via Promptpay. Lumi is solving this problem.",
+                name: t("stories.items.elena.name"),
+                role: t("stories.items.elena.role"),
+                text: t("stories.items.elena.text"),
                 img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvUSkns_xTlr6Hm7dyXWn8_3uli-mLdhleXfrE1WK-g7pHBjEU-JWaW9JNAPqVN3e-9aw5j1PrrOESZTeX7Olgmi1Fl-3xM67bhgbPRkwO3OZZKRZ_ITmk-ZGtCmmNKitzuoLx0k7PUePzSpxtm-ES19RIJURuEDvyR5SeI3AIjm5-M1QmPR0yuCtW4UumKxdrkOlWQeyOisBRNF22IY0HaWHi4zE_K3nRz24HvGur7pMBhzm1U7EzT-Op6RUsIy7KoYr0dWWGlnkL",
               },
             ].map((story, i) => (
@@ -1526,7 +1509,7 @@ export default function LandingPage() {
               </button>
               <iframe
                 src="https://www.youtube.com/embed/gHqVe2BwsWM?autoplay=1"
-                title="Lumi Demo Video"
+                title={t("hero.videoTitle")}
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

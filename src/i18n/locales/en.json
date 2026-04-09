@@ -1,0 +1,399 @@
+{
+  "common": {
+    "language": "Language",
+    "languageEnglish": "English",
+    "languageFrench": "French",
+    "switchToEnglish": "Switch to English",
+    "switchToFrench": "Switch to French"
+  },
+  "header": {
+    "destinations": "Destinations",
+    "userJourney": "User Journey",
+    "feeTransparency": "Fee Transparency",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "faq": "FAQ",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "tagline": "Redefining South East Asia travel with seamless, instant QR payments.",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "careers": "Careers",
+    "blog": "Blog",
+    "support": "Support",
+    "faq": "FAQ",
+    "privacyPolicy": "Privacy Policy",
+    "contact": "Contact",
+    "email": "E-mail",
+    "franceOffice": "France office",
+    "franceAddressLine1": "50 rue Anatole France",
+    "franceAddressLine2": "92290 Chatenay-Malabry",
+    "franceAddressLine3": "France",
+    "indiaOffice": "India office",
+    "indiaAddressLine1": "A 812, Anthurium, Sector 73",
+    "indiaAddressLine2": "Noida, UP (India)",
+    "connect": "Connect",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "copyright": "© 2026 LumiFin SAS. All rights reserved.",
+    "brandNote": "Lumi is a brand of Lumifin SAS, a technology provider."
+  },
+  "faqSection": {
+    "eyebrow": "Support & Information",
+    "title": "FAQ",
+    "subtitle": "Everything you need to know about Lumi.",
+    "moreFaqs": "More FAQs"
+  },
+  "waitlist": {
+    "eyebrow": "Exclusive Offer",
+    "titleBefore": "Join the waitlist for",
+    "amount": "€ 20",
+    "titleAfter": "travel credit.",
+    "subtitle": "Be the first to experience Lumi and get a head start on your next adventure.",
+    "success": "Thank you for joining the waitlist!",
+    "emailPlaceholder": "Enter your email address",
+    "submit": "Join Waitlist",
+    "submitting": "Submitting...",
+    "error": "Something went wrong. Please try again.",
+    "botFieldLabel": "Don't fill this out:"
+  },
+  "hero": {
+    "badge": "Redefining SOUTH EAST Asia Travel",
+    "titleLine1": "Pay Like a",
+    "titleLine2": "Local",
+    "subtitle": "Seamlessly navigate South East Asia and beyond with instant QR payments.",
+    "viewDemo": "View Demo",
+    "joinWaitlist": "Join the Waitlist",
+    "videoTitle": "Lumi Demo Video",
+    "closeVideo": "Close video"
+  },
+  "coverage": {
+    "eyebrow": "Regional Network",
+    "title": "6 Countries. One App.",
+    "descPrefix": "From the street food of Bangkok to the boutiques of Vietnam, LumiFin ensures your payments never fail.",
+    "comingSoon": "COMING SOON IN",
+    "countries": {
+      "thailand": "Thailand",
+      "indonesia": "Indonesia",
+      "vietnam": "Vietnam",
+      "malaysia": "Malaysia",
+      "cambodia": "Cambodia",
+      "philippines": "Philippines"
+    }
+  },
+  "mission": {
+    "eyebrow": "Our Mission",
+    "title": "Borders Shouldn't Define Your Freedom.",
+    "body": "Lumi was born from a simple observation: modern travelers are forced to choose between inflated exchange rates, cash or traditional cards, and none of these options are truly satisfactory. Travelers lack access to the most efficient payment method in the region: mobile QR payments.",
+    "features": {
+      "phoneWallet": {
+        "title": "Your Phone Is Your Wallet",
+        "desc": "No Cash. No Cards. Just Your Mobile. Make payments instantly using only your mobile; simple and seamless."
+      },
+      "instantTransparent": {
+        "title": "Instant and Transparent",
+        "desc": "Zero hidden fees, instant visibility on FX rate. You know exactly what you pay."
+      },
+      "payEverywhere": {
+        "title": "Pay Everywhere",
+        "desc": "Access to 25M+ local merchants, bringing truly inclusive payments to every corner."
+      },
+      "travelNowPayLater": {
+        "title": "Travel Now Pay Later",
+        "desc": "Enjoy your holiday without the stress. Upload your wallet and pay back in easy installments."
+      }
+    }
+  },
+  "whyLumi": {
+    "badge": "TRUST, BUILT IN :)",
+    "title": "Why Lumi?",
+    "body": "Lumi is designed to give you complete confidence in every transaction. Founded by experienced bankers and backed by European investors, we bring deep financial expertise and long-term trust to everything we do. As a European company working with regulated partners across Europe and Asia, we meet high standards of security and compliance to protect your funds and money movements. Combined with instant payments, transparent pricing, and a large acceptance network, Lumi delivers a payment experience you can rely on anywhere.",
+    "cardTitle": "Your money is in safe hands",
+    "cardItem1": "EU Regulated Set-up",
+    "cardItem2": "SEPA Bank Transfer",
+    "cardItem3": "KYC and AML Check"
+  },
+  "journey": {
+    "eyebrow": "The User Journey",
+    "title": "From your bank in Europe to any QR in Asia",
+    "subtitle": "Four simple steps to financial freedom.",
+    "steps": {
+      "1": {
+        "title": "Fund Your Wallet",
+        "desc": "Add money to your Lumi wallet in your home currency. Quick, secure, and ready to use anywhere.",
+        "alt": "Fund Wallet"
+      },
+      "2": {
+        "title": "Scan QR Code",
+        "desc": "Lumi supports all major local QR payment standards across South East Asia. Just point and scan at any street stall or mall."
+      },
+      "3": {
+        "title": "Verify Amount",
+        "desc": "See the exact amount both in local currency and in your home currency instantly. No guesswork or hidden margins.",
+        "alt": "Verify Amount"
+      },
+      "4": {
+        "title": "Success!",
+        "desc": "Instant confirmation sent to the merchant. Walk away with a digital receipt and zero stress.",
+        "alt": "Success"
+      }
+    }
+  },
+  "fees": {
+    "eyebrow": "Fee Transparency",
+    "title": "No Secrets, Just Savings.",
+    "subtitle": "A typical €1000 overall spend comparison.",
+    "savingsPrefix": "Avoid losing up to",
+    "savingsMiddle": "per",
+    "savingsAmount": "€120",
+    "savingsPer": "€1,000",
+    "table": {
+      "provider": "Provider",
+      "feeStructure": "Fee Structure + Possible Surcharging",
+      "totalCost": "Total Cost to Customer",
+      "lumi": "Lumi",
+      "lumiFee": "2% fee",
+      "lumiTotal": "€1,020",
+      "rows": {
+        "airport": {
+          "name": "Airport exchange (cash)",
+          "fee": "10% FX spread",
+          "total": "€1,100"
+        },
+        "atm": {
+          "name": "ATM cash withdrawal",
+          "fee": "7,5 EUR + 3%",
+          "total": "€1,060"
+        },
+        "card": {
+          "name": "Card payment",
+          "fee": "0,2 EUR + 3%",
+          "total": "€1,064"
+        },
+        "cardFx": {
+          "name": "Card with currency conversion",
+          "fee": "8% on top",
+          "total": "€1,144"
+        }
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "CURATED FOR EVERY TRAVELER",
+    "title": "Beyond Payments.",
+    "subtitle": "Go beyond payments with travel essentials like eSIM, curated experiences, and access to the best local offers.",
+    "items": {
+      "esim": {
+        "title": "eSIM",
+        "desc": "Activate local 5G data plans instantly. Stay connected the moment you land with zero physical cards."
+      },
+      "tours": {
+        "title": "Daily Tours",
+        "desc": "Book curated island hopping or city walks with verified local guides, all paid seamlessly via QR."
+      },
+      "restaurants": {
+        "title": "Restaurants",
+        "desc": "Discover hand-picked local dining gems. Use Lumi to unlock exclusive member-only offers and authentic flavors."
+      }
+    }
+  },
+  "stories": {
+    "eyebrow": "Verified Experiences",
+    "title": "Nomad Stories",
+    "items": {
+      "sarah": {
+        "name": "Sarah Jenkins",
+        "role": "Digital Strategist",
+        "text": "At my last stay in Vietnam, I got stuck in a taxi with no cash and no payment option. If only I could have Lumi to pay via QR."
+      },
+      "marcus": {
+        "name": "Marcus Thorne",
+        "role": "PAYMENT EXPERT",
+        "text": "Lumi could seriously disrupt traditional credit cards. The fees are lower and the experience is smoother. This is the future of travel payments"
+      },
+      "elena": {
+        "name": "Elena Rossi",
+        "role": "Solo Traveler",
+        "text": "I am staying each year a few weeks in Thailand but without a bank account, I cannot pay via Promptpay. Lumi is solving this problem."
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "The Minds Behind Lumi",
+    "titleBefore": "Meet the",
+    "titleHighlight": "Visionaries",
+    "titleAfter": ".",
+    "subtitle": "A diverse team of bankers, engineers, and travelers dedicated to breaking down financial borders.",
+    "careersTitle": "Want to join the mission?",
+    "careersBody": "We're always looking for talented individuals who share our passion for travel and financial innovation.",
+    "apply": "Apply",
+    "roles": {
+      "ceo": "CEO",
+      "coo": "COO",
+      "cto": "CTO",
+      "technicalLead": "Technical Lead",
+      "productManager": "Product Manager",
+      "productAnalyst": "Product Analyst",
+      "softwareEngineer": "Software Engineer"
+    }
+  },
+  "faqPage": {
+    "backHome": "Back to Home",
+    "eyebrow": "Support & Information",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about Lumi, our digital wallet, and how we're redefining travel in South East Asia."
+  },
+  "blog": {
+    "eyebrow": "Lumi Insights",
+    "titleBefore": "The",
+    "titleHighlight": "Lumi",
+    "titleAfter": "Blog.",
+    "subtitle": "Stories about travel, fintech, and the future of borderless payments in South East Asia.",
+    "newsletterTitle": "Stay in the loop",
+    "newsletterBody": "Get the latest travel tips and fintech news delivered straight to your inbox.",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "categories": {
+      "fintech": "Fintech",
+      "travel": "Travel",
+      "company": "Company"
+    },
+    "posts": {
+      "future": {
+        "title": "The Future of Payments in South East Asia",
+        "excerpt": "How QR codes are revolutionizing the way travelers spend money across the region.",
+        "date": "March 28, 2026"
+      },
+      "bangkok": {
+        "title": "5 Hidden Gems in Bangkok You Can Pay for with Lumi",
+        "excerpt": "From secret street food stalls to boutique galleries, discover the best of Bangkok.",
+        "date": "March 20, 2026"
+      },
+      "founder": {
+        "title": "Why We Built Lumi: A Founder's Story",
+        "excerpt": "The personal experiences that led us to create a borderless payment solution.",
+        "date": "March 15, 2026"
+      }
+    }
+  },
+  "privacy": {
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "effectiveDate": "Effective Date: January 2026",
+    "intro": "Lumifin (\"we\", \"our\", \"us\") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, store, and safeguard your personal information when you visit our website <1>www.lumifin.io</1> or use our services.",
+    "section1": {
+      "title": "1. Information We Collect",
+      "body": "We may collect personal information such as your name, email address, phone number, and any information you provide when registering or contacting us. We also automatically collect technical information including IP address, browser type, device information, operating system, and usage data when you interact with our platform."
+    },
+    "section2": {
+      "title": "2. How We Use Your Information",
+      "intro": "We use your information to:",
+      "item1": "Provide, operate, and improve our services",
+      "item2": "Communicate with you regarding updates and support",
+      "item3": "Process transactions and verify identities",
+      "item4": "Ensure security and prevent fraud",
+      "item5": "Comply with legal and regulatory requirements"
+    },
+    "section3": {
+      "title": "3. Data Sharing",
+      "body": "We do not sell or rent your personal information. We may share your data with trusted third-party service providers such as payment partners, analytics providers, and infrastructure vendors solely for the purpose of operating our services, under strict confidentiality agreements."
+    },
+    "section4": {
+      "title": "4. Data Security",
+      "body": "We use appropriate technical and organizational security measures to protect your personal information from unauthorized access, alteration, or misuse."
+    },
+    "section5": {
+      "title": "5. User Rights",
+      "body": "You have the right to request access, correction, or deletion of your personal information. You may also withdraw consent where applicable by contacting us."
+    },
+    "section6": {
+      "title": "6. Data Retention",
+      "body": "We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy or as required by law."
+    },
+    "section7": {
+      "title": "7. International Data Transfers",
+      "body": "Your data may be transferred to and processed in countries outside your country of residence, which may have different data protection laws."
+    },
+    "section8": {
+      "title": "8. Updates to This Policy",
+      "body": "We may update this Privacy Policy from time to time. Any changes will be reflected on this page with a revised effective date."
+    },
+    "section9": {
+      "title": "9. Contact Us",
+      "body": "If you have any questions or concerns regarding this Privacy Policy, please contact us at:",
+      "email": "Email: info@lumifin.io"
+    }
+  },
+  "faqs": {
+    "q1": {
+      "question": "What is Lumi?",
+      "answer": "Lumi is a digital wallet that lets you pay at local merchants across Southeast Asia using QR codes. You can pay in your own currency while Lumi handles the conversion instantly at checkout."
+    },
+    "q2": {
+      "question": "Where can I use Lumi?",
+      "answer": "Lumi is accepted at millions of merchants across Southeast Asia, including Thailand, Vietnam, and Indonesia, wherever supported QR payment networks are available."
+    },
+    "q3": {
+      "question": "How do I pay with Lumi?",
+      "answer": "Simply open the app, scan the merchant's QR code, enter the amount if required, and confirm the payment using your secure mPIN or biometric authentication."
+    },
+    "q4": {
+      "question": "Do I need to convert currency before paying?",
+      "answer": "No. Lumi automatically converts your payment into the local currency in real time, so you can pay seamlessly without any manual conversion."
+    },
+    "q5": {
+      "question": "What exchange rate does Lumi use?",
+      "answer": "Lumi shows you the live exchange rate and final amount before you confirm your payment, so you always know exactly what you're paying."
+    },
+    "q6": {
+      "question": "Are there any fees?",
+      "answer": "Lumi is transparent about pricing. Any applicable fees, including currency conversion and payment processing fees, are clearly displayed before you complete a transaction."
+    },
+    "q7": {
+      "question": "How do I add money to my Lumi wallet?",
+      "answer": "You can add funds through supported payment methods directly within the app. Credit tranfers and direct connections with European bank accounts are supported. The process is simple and most deposits are completed instantly."
+    },
+    "q8": {
+      "question": "How long do payments take?",
+      "answer": "Payments are processed in seconds once confirmed, provided you have an active internet connection. You and the merchant receive the payment confirmation in realt time."
+    },
+    "q9": {
+      "question": "Is Lumi secure?",
+      "answer": "Yes. Lumi uses industry-standard security measures, including encryption, identity verification, and secure authentication methods like mPIN and biometrics to protect your account."
+    },
+    "q10": {
+      "question": "Why do I need to verify my identity?",
+      "answer": "Identity verification helps keep your account secure and allows Lumi to comply with financial regulations, ensuring a safe and reliable payment experience."
+    },
+    "q11": {
+      "question": "What documents are required for verification?",
+      "answer": "You'll need to provide a valid government-issued ID, such as a passport or national ID card. In some cases, a selfie may be required for verification."
+    },
+    "q12": {
+      "question": "Can I withdraw money from my Lumi wallet?",
+      "answer": "Yes. You can withdraw funds to a supported bank account or payment method, depending on your location."
+    },
+    "q13": {
+      "question": "How long do withdrawals take?",
+      "answer": "Withdrawal times vary based on the method used, ranging from a few minutes to a few business days."
+    },
+    "q14": {
+      "question": "Can I see my transaction history?",
+      "answer": "Yes. All your payments and transactions are available immediately in the app, so you can track your spending anytime."
+    },
+    "q15": {
+      "question": "What happens if I make a wrong payment?",
+      "answer": "Payments are usually processed instantly and cannot be reversed automatically. If you encounter an issue, you can contact the merchant or Lumi support for assistance."
+    },
+    "q16": {
+      "question": "How is my money safeguarded?",
+      "answer": "Your money is always handled by regulated banking and payment partners — never held directly by Lumi. We work with trusted, licensed institutions across Europe and Asia that follow strict regulatory standards to ensure your funds are protected at every step."
+    },
+    "q17": {
+      "question": "Is Lumi a bank?",
+      "answer": "No, Lumi is not a bank. Lumi is a brand of Lumifin SAS, a technology provider. All payment services and fund movements are carried out by fully regulated partners in Europe and Asia, who are licensed and supervised by financial authorities."
+    }
+  }
+}

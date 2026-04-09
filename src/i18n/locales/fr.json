@@ -1,0 +1,399 @@
+{
+  "common": {
+    "language": "Langue",
+    "languageEnglish": "Anglais",
+    "languageFrench": "Français",
+    "switchToEnglish": "Passer en anglais",
+    "switchToFrench": "Passer en français"
+  },
+  "header": {
+    "destinations": "Destinations",
+    "userJourney": "Parcours utilisateur",
+    "feeTransparency": "Transparence des frais",
+    "services": "Services",
+    "aboutUs": "À propos",
+    "faq": "FAQ",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "footer": {
+    "tagline": "Nous réinventons le voyage en South East Asia grâce à des paiements par QR code instantanés et fluides.",
+    "company": "Entreprise",
+    "aboutUs": "À propos",
+    "careers": "Carrières",
+    "blog": "Blog",
+    "support": "Support",
+    "faq": "FAQ",
+    "privacyPolicy": "Politique de confidentialité",
+    "contact": "Contact",
+    "email": "E-mail",
+    "franceOffice": "Bureau France",
+    "franceAddressLine1": "50 rue Anatole France",
+    "franceAddressLine2": "92290 Chatenay-Malabry",
+    "franceAddressLine3": "France",
+    "indiaOffice": "Bureau Inde",
+    "indiaAddressLine1": "A 812, Anthurium, Sector 73",
+    "indiaAddressLine2": "Noida, UP (Inde)",
+    "connect": "Suivez-nous",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "copyright": "© 2026 LumiFin SAS. Tous droits réservés.",
+    "brandNote": "Lumi est une marque de Lumifin SAS, fournisseur de technologie."
+  },
+  "faqSection": {
+    "eyebrow": "Support et informations",
+    "title": "FAQ",
+    "subtitle": "Tout ce que vous devez savoir sur Lumi.",
+    "moreFaqs": "Plus de questions"
+  },
+  "waitlist": {
+    "eyebrow": "Offre exclusive",
+    "titleBefore": "Rejoignez la liste d'attente pour",
+    "amount": "€ 20",
+    "titleAfter": "de crédit voyage.",
+    "subtitle": "Soyez parmi les premiers à découvrir Lumi et prenez une longueur d'avance pour votre prochaine aventure.",
+    "success": "Merci de rejoindre notre liste d'attente !",
+    "emailPlaceholder": "Saisissez votre adresse e-mail",
+    "submit": "Rejoindre la liste",
+    "submitting": "Envoi en cours...",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "botFieldLabel": "Ne remplissez pas ce champ :"
+  },
+  "hero": {
+    "badge": "Nous réinventons le voyage en South East Asia",
+    "titleLine1": "Payez comme un",
+    "titleLine2": "Local",
+    "subtitle": "Parcourez South East Asia et au-delà en toute simplicité grâce aux paiements par QR code instantanés.",
+    "viewDemo": "Voir la démo",
+    "joinWaitlist": "Rejoindre la liste d'attente",
+    "videoTitle": "Vidéo de démo Lumi",
+    "closeVideo": "Fermer la vidéo"
+  },
+  "coverage": {
+    "eyebrow": "Réseau régional",
+    "title": "6 pays. Une seule app.",
+    "descPrefix": "De la street food de Bangkok aux boutiques du Vietnam, LumiFin garantit que vos paiements aboutissent toujours.",
+    "comingSoon": "BIENTÔT DISPONIBLE DANS",
+    "countries": {
+      "thailand": "Thaïlande",
+      "indonesia": "Indonésie",
+      "vietnam": "Vietnam",
+      "malaysia": "Malaisie",
+      "cambodia": "Cambodge",
+      "philippines": "Philippines"
+    }
+  },
+  "mission": {
+    "eyebrow": "Notre mission",
+    "title": "Les frontières ne devraient pas définir votre liberté.",
+    "body": "Lumi est né d'un constat simple : les voyageurs d'aujourd'hui sont contraints de choisir entre des taux de change gonflés, l'argent liquide ou les cartes traditionnelles — aucune de ces options n'est réellement satisfaisante. Les voyageurs n'ont pas accès au moyen de paiement le plus efficace de la région : les paiements mobiles par QR code.",
+    "features": {
+      "phoneWallet": {
+        "title": "Votre téléphone est votre portefeuille",
+        "desc": "Pas d'argent liquide. Pas de cartes. Juste votre mobile. Effectuez vos paiements instantanément avec votre seul téléphone : simple et fluide."
+      },
+      "instantTransparent": {
+        "title": "Instantané et transparent",
+        "desc": "Aucuns frais cachés, visibilité immédiate sur le taux de change. Vous savez exactement ce que vous payez."
+      },
+      "payEverywhere": {
+        "title": "Payez partout",
+        "desc": "Accédez à plus de 25 millions de commerçants locaux, pour des paiements véritablement inclusifs dans chaque recoin."
+      },
+      "travelNowPayLater": {
+        "title": "Voyagez maintenant, payez plus tard",
+        "desc": "Profitez de vos vacances sans stress. Rechargez votre portefeuille et remboursez en mensualités simples."
+      }
+    }
+  },
+  "whyLumi": {
+    "badge": "LA CONFIANCE INTÉGRÉE :)",
+    "title": "Pourquoi Lumi ?",
+    "body": "Lumi est conçu pour vous donner une confiance totale à chaque transaction. Fondés par des banquiers expérimentés et soutenus par des investisseurs européens, nous apportons une expertise financière approfondie et une confiance durable à tout ce que nous entreprenons. En tant qu'entreprise européenne collaborant avec des partenaires régulés en Europe et en Asie, nous respectons des standards élevés de sécurité et de conformité pour protéger vos fonds et vos flux financiers. Associé à des paiements instantanés, à une tarification transparente et à un large réseau d'acceptation, Lumi offre une expérience de paiement fiable partout.",
+    "cardTitle": "Votre argent est entre de bonnes mains",
+    "cardItem1": "Cadre réglementaire européen",
+    "cardItem2": "Virement bancaire SEPA",
+    "cardItem3": "Contrôles KYC et AML"
+  },
+  "journey": {
+    "eyebrow": "Le parcours utilisateur",
+    "title": "De votre banque en Europe à n'importe quel QR en Asie",
+    "subtitle": "Quatre étapes simples vers la liberté financière.",
+    "steps": {
+      "1": {
+        "title": "Approvisionnez votre portefeuille",
+        "desc": "Ajoutez de l'argent à votre portefeuille Lumi dans votre devise d'origine. Rapide, sécurisé et prêt à l'emploi partout.",
+        "alt": "Approvisionner le portefeuille"
+      },
+      "2": {
+        "title": "Scannez le QR code",
+        "desc": "Lumi prend en charge tous les principaux standards de paiement par QR code en South East Asia. Il suffit de pointer et de scanner dans n'importe quel stand de rue ou centre commercial."
+      },
+      "3": {
+        "title": "Vérifiez le montant",
+        "desc": "Consultez instantanément le montant exact en devise locale et dans votre devise d'origine. Aucune approximation, aucune marge cachée.",
+        "alt": "Vérifier le montant"
+      },
+      "4": {
+        "title": "C'est réussi !",
+        "desc": "Confirmation instantanée envoyée au commerçant. Repartez avec un reçu numérique et zéro stress.",
+        "alt": "Succès"
+      }
+    }
+  },
+  "fees": {
+    "eyebrow": "Transparence des frais",
+    "title": "Sans secret, rien que des économies.",
+    "subtitle": "Comparaison pour une dépense globale typique de €1000.",
+    "savingsPrefix": "Évitez de perdre jusqu'à",
+    "savingsMiddle": "pour",
+    "savingsAmount": "€120",
+    "savingsPer": "€1,000",
+    "table": {
+      "provider": "Fournisseur",
+      "feeStructure": "Structure des frais + surcharges éventuelles",
+      "totalCost": "Coût total pour le client",
+      "lumi": "Lumi",
+      "lumiFee": "2 % de frais",
+      "lumiTotal": "€1,020",
+      "rows": {
+        "airport": {
+          "name": "Change à l'aéroport (espèces)",
+          "fee": "10 % d'écart sur le change",
+          "total": "€1,100"
+        },
+        "atm": {
+          "name": "Retrait au distributeur (DAB)",
+          "fee": "7,5 EUR + 3 %",
+          "total": "€1,060"
+        },
+        "card": {
+          "name": "Paiement par carte",
+          "fee": "0,2 EUR + 3 %",
+          "total": "€1,064"
+        },
+        "cardFx": {
+          "name": "Carte avec conversion de devise",
+          "fee": "8 % supplémentaires",
+          "total": "€1,144"
+        }
+      }
+    }
+  },
+  "services": {
+    "eyebrow": "UNE SÉLECTION POUR CHAQUE VOYAGEUR",
+    "title": "Au-delà des paiements.",
+    "subtitle": "Allez au-delà des paiements avec les essentiels du voyage : eSIM, expériences sélectionnées et accès aux meilleures offres locales.",
+    "items": {
+      "esim": {
+        "title": "eSIM",
+        "desc": "Activez instantanément des forfaits de données 5G locales. Restez connecté dès votre atterrissage, sans aucune carte physique."
+      },
+      "tours": {
+        "title": "Excursions quotidiennes",
+        "desc": "Réservez des excursions entre îles ou des balades urbaines avec des guides locaux vérifiés, le tout payé facilement par QR code."
+      },
+      "restaurants": {
+        "title": "Restaurants",
+        "desc": "Découvrez des adresses locales triées sur le volet. Utilisez Lumi pour débloquer des offres exclusives réservées aux membres et savourer des saveurs authentiques."
+      }
+    }
+  },
+  "stories": {
+    "eyebrow": "Expériences vérifiées",
+    "title": "Récits de nomades",
+    "items": {
+      "sarah": {
+        "name": "Sarah Jenkins",
+        "role": "Stratège numérique",
+        "text": "Lors de mon dernier séjour au Vietnam, je me suis retrouvée bloquée dans un taxi sans argent liquide ni moyen de paiement. Si seulement j'avais pu utiliser Lumi pour payer par QR code."
+      },
+      "marcus": {
+        "name": "Marcus Thorne",
+        "role": "EXPERT EN PAIEMENTS",
+        "text": "Lumi pourrait vraiment bouleverser les cartes de crédit traditionnelles. Les frais sont plus bas et l'expérience est plus fluide. C'est l'avenir des paiements pour les voyageurs."
+      },
+      "elena": {
+        "name": "Elena Rossi",
+        "role": "Voyageuse solo",
+        "text": "Je passe chaque année quelques semaines en Thaïlande, mais sans compte bancaire local je ne peux pas payer via PromptPay. Lumi résout ce problème."
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Les esprits derrière Lumi",
+    "titleBefore": "Rencontrez les",
+    "titleHighlight": "Visionnaires",
+    "titleAfter": ".",
+    "subtitle": "Une équipe diverse de banquiers, d'ingénieurs et de voyageurs, déterminée à faire tomber les frontières financières.",
+    "careersTitle": "Envie de rejoindre l'aventure ?",
+    "careersBody": "Nous recherchons en permanence des talents qui partagent notre passion pour le voyage et l'innovation financière.",
+    "apply": "Postuler",
+    "roles": {
+      "ceo": "Directeur général",
+      "coo": "Directeur des opérations",
+      "cto": "Directeur technique",
+      "technicalLead": "Responsable technique",
+      "productManager": "Chef de produit",
+      "productAnalyst": "Analyste produit",
+      "softwareEngineer": "Ingénieur logiciel"
+    }
+  },
+  "faqPage": {
+    "backHome": "Retour à l'accueil",
+    "eyebrow": "Support et informations",
+    "title": "Questions fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur Lumi, notre portefeuille numérique, et notre manière de réinventer le voyage en South East Asia."
+  },
+  "blog": {
+    "eyebrow": "Les actus Lumi",
+    "titleBefore": "Le blog",
+    "titleHighlight": "Lumi",
+    "titleAfter": ".",
+    "subtitle": "Des histoires sur le voyage, la fintech et l'avenir des paiements sans frontières en South East Asia.",
+    "newsletterTitle": "Restez informé",
+    "newsletterBody": "Recevez les derniers conseils voyage et actualités fintech directement dans votre boîte de réception.",
+    "emailPlaceholder": "Votre adresse e-mail",
+    "subscribe": "S'abonner",
+    "categories": {
+      "fintech": "Fintech",
+      "travel": "Voyage",
+      "company": "Entreprise"
+    },
+    "posts": {
+      "future": {
+        "title": "L'avenir des paiements en South East Asia",
+        "excerpt": "Comment les QR codes révolutionnent la manière dont les voyageurs dépensent leur argent dans la région.",
+        "date": "28 mars 2026"
+      },
+      "bangkok": {
+        "title": "5 pépites cachées à Bangkok à payer avec Lumi",
+        "excerpt": "Des stands de street food secrets aux galeries boutiques, découvrez le meilleur de Bangkok.",
+        "date": "20 mars 2026"
+      },
+      "founder": {
+        "title": "Pourquoi nous avons créé Lumi : l'histoire d'un fondateur",
+        "excerpt": "Les expériences personnelles qui nous ont conduits à créer une solution de paiement sans frontières.",
+        "date": "15 mars 2026"
+      }
+    }
+  },
+  "privacy": {
+    "eyebrow": "Mentions légales",
+    "title": "Politique de confidentialité",
+    "effectiveDate": "Date d'entrée en vigueur : janvier 2026",
+    "intro": "Lumifin (« nous », « notre », « nos ») s'engage à protéger votre vie privée. La présente politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous visitez notre site <1>www.lumifin.io</1> ou utilisez nos services.",
+    "section1": {
+      "title": "1. Informations que nous collectons",
+      "body": "Nous pouvons collecter des informations personnelles telles que votre nom, votre adresse e-mail, votre numéro de téléphone et toute information que vous fournissez lors de votre inscription ou de vos échanges avec nous. Nous collectons également automatiquement des informations techniques, notamment l'adresse IP, le type de navigateur, les informations relatives à l'appareil, le système d'exploitation et les données d'utilisation lorsque vous interagissez avec notre plateforme."
+    },
+    "section2": {
+      "title": "2. Comment nous utilisons vos informations",
+      "intro": "Nous utilisons vos informations pour :",
+      "item1": "Fournir, exploiter et améliorer nos services",
+      "item2": "Communiquer avec vous au sujet des mises à jour et du support",
+      "item3": "Traiter les transactions et vérifier les identités",
+      "item4": "Garantir la sécurité et prévenir la fraude",
+      "item5": "Respecter les obligations légales et réglementaires"
+    },
+    "section3": {
+      "title": "3. Partage des données",
+      "body": "Nous ne vendons ni ne louons vos informations personnelles. Nous pouvons partager vos données avec des prestataires tiers de confiance, tels que nos partenaires de paiement, nos fournisseurs d'analyse et nos prestataires d'infrastructure, uniquement dans le but d'exploiter nos services et dans le cadre d'accords stricts de confidentialité."
+    },
+    "section4": {
+      "title": "4. Sécurité des données",
+      "body": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées afin de protéger vos informations personnelles contre tout accès, modification ou utilisation abusive non autorisés."
+    },
+    "section5": {
+      "title": "5. Droits des utilisateurs",
+      "body": "Vous disposez du droit d'accéder à vos informations personnelles, de les rectifier ou d'en demander la suppression. Vous pouvez également retirer votre consentement, le cas échéant, en nous contactant."
+    },
+    "section6": {
+      "title": "6. Conservation des données",
+      "body": "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire à la réalisation des finalités décrites dans la présente politique, ou selon les exigences légales applicables."
+    },
+    "section7": {
+      "title": "7. Transferts internationaux de données",
+      "body": "Vos données peuvent être transférées et traitées dans des pays situés en dehors de votre pays de résidence, lesquels peuvent appliquer des lois de protection des données différentes."
+    },
+    "section8": {
+      "title": "8. Mises à jour de cette politique",
+      "body": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date d'entrée en vigueur révisée."
+    },
+    "section9": {
+      "title": "9. Nous contacter",
+      "body": "Pour toute question ou préoccupation concernant cette politique de confidentialité, veuillez nous contacter à l'adresse suivante :",
+      "email": "E-mail : info@lumifin.io"
+    }
+  },
+  "faqs": {
+    "q1": {
+      "question": "Qu'est-ce que Lumi ?",
+      "answer": "Lumi est un portefeuille numérique qui vous permet de payer chez les commerçants locaux de South East Asia grâce aux QR codes. Vous payez dans votre propre devise et Lumi se charge de la conversion instantanément au moment du paiement."
+    },
+    "q2": {
+      "question": "Où puis-je utiliser Lumi ?",
+      "answer": "Lumi est accepté chez des millions de commerçants en South East Asia, notamment en Thaïlande, au Vietnam et en Indonésie, partout où les réseaux de paiement par QR code pris en charge sont disponibles."
+    },
+    "q3": {
+      "question": "Comment payer avec Lumi ?",
+      "answer": "Il vous suffit d'ouvrir l'application, de scanner le QR code du commerçant, de saisir le montant si nécessaire, puis de confirmer le paiement à l'aide de votre mPIN sécurisé ou de l'authentification biométrique."
+    },
+    "q4": {
+      "question": "Dois-je convertir ma devise avant de payer ?",
+      "answer": "Non. Lumi convertit automatiquement votre paiement dans la devise locale en temps réel, afin que vous puissiez régler vos achats sans aucune conversion manuelle."
+    },
+    "q5": {
+      "question": "Quel taux de change Lumi utilise-t-il ?",
+      "answer": "Lumi vous affiche le taux de change en temps réel et le montant final avant que vous ne confirmiez votre paiement, de sorte que vous savez toujours exactement ce que vous payez."
+    },
+    "q6": {
+      "question": "Y a-t-il des frais ?",
+      "answer": "Lumi est transparent sur sa tarification. Les éventuels frais applicables, y compris les frais de conversion de devise et les frais de traitement des paiements, sont clairement affichés avant la finalisation de chaque transaction."
+    },
+    "q7": {
+      "question": "Comment puis-je recharger mon portefeuille Lumi ?",
+      "answer": "Vous pouvez ajouter des fonds via les moyens de paiement pris en charge directement depuis l'application. Les virements et les connexions directes avec les comptes bancaires européens sont pris en charge. Le processus est simple et la plupart des dépôts sont instantanés."
+    },
+    "q8": {
+      "question": "Combien de temps prennent les paiements ?",
+      "answer": "Les paiements sont traités en quelques secondes une fois confirmés, à condition que vous disposiez d'une connexion Internet active. Vous et le commerçant recevez la confirmation du paiement en temps réel."
+    },
+    "q9": {
+      "question": "Lumi est-il sécurisé ?",
+      "answer": "Oui. Lumi met en œuvre des mesures de sécurité conformes aux normes du secteur, notamment le chiffrement, la vérification d'identité et des méthodes d'authentification sécurisées comme le mPIN et la biométrie, afin de protéger votre compte."
+    },
+    "q10": {
+      "question": "Pourquoi dois-je vérifier mon identité ?",
+      "answer": "La vérification d'identité contribue à sécuriser votre compte et permet à Lumi de se conformer aux réglementations financières, pour une expérience de paiement sûre et fiable."
+    },
+    "q11": {
+      "question": "Quels documents sont nécessaires pour la vérification ?",
+      "answer": "Vous devrez fournir une pièce d'identité officielle en cours de validité, telle qu'un passeport ou une carte nationale d'identité. Dans certains cas, un selfie peut également être demandé pour la vérification."
+    },
+    "q12": {
+      "question": "Puis-je retirer de l'argent de mon portefeuille Lumi ?",
+      "answer": "Oui. Vous pouvez transférer vos fonds vers un compte bancaire ou un moyen de paiement pris en charge, selon votre pays de résidence."
+    },
+    "q13": {
+      "question": "Combien de temps prennent les retraits ?",
+      "answer": "Les délais de retrait varient selon la méthode utilisée, allant de quelques minutes à quelques jours ouvrés."
+    },
+    "q14": {
+      "question": "Puis-je consulter l'historique de mes transactions ?",
+      "answer": "Oui. Tous vos paiements et transactions sont immédiatement disponibles dans l'application, vous permettant de suivre vos dépenses à tout moment."
+    },
+    "q15": {
+      "question": "Que se passe-t-il si j'effectue un paiement erroné ?",
+      "answer": "Les paiements sont généralement traités instantanément et ne peuvent pas être annulés automatiquement. En cas de problème, vous pouvez contacter le commerçant ou le support Lumi pour obtenir de l'aide."
+    },
+    "q16": {
+      "question": "Comment mon argent est-il protégé ?",
+      "answer": "Votre argent est toujours géré par des partenaires bancaires et de paiement régulés — il n'est jamais détenu directement par Lumi. Nous collaborons avec des institutions agréées et de confiance en Europe et en Asie, qui respectent des normes réglementaires strictes afin de garantir la protection de vos fonds à chaque étape."
+    },
+    "q17": {
+      "question": "Lumi est-il une banque ?",
+      "answer": "Non, Lumi n'est pas une banque. Lumi est une marque de Lumifin SAS, un fournisseur de technologie. Tous les services de paiement et mouvements de fonds sont assurés par des partenaires pleinement régulés en Europe et en Asie, agréés et supervisés par les autorités financières."
+    }
+  }
+}

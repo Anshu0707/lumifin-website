@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
+import { useTranslation } from "react-i18next";
 
 export default function Waitlist() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const { t } = useTranslation();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,23 +48,22 @@ export default function Waitlist() {
           className="space-y-10"
         >
           <span className="text-primary font-bold text-xs tracking-widest uppercase">
-            Exclusive Offer
+            {t("waitlist.eyebrow")}
           </span>
           <h2 className="text-6xl font-black tracking-tighter text-slate-900 leading-[0.9]">
-            Join the waitlist for{" "}
+            {t("waitlist.titleBefore")}{" "}
             <span className="text-primary italic tracking-normal mr-2">
-              € 20
+              {t("waitlist.amount")}
             </span>
-            <span className="tracking-normal">travel credit.</span>
+            <span className="tracking-normal">{t("waitlist.titleAfter")}</span>
           </h2>
           <p className="text-xl text-slate-500 font-medium leading-relaxed">
-            Be the first to experience Lumi and get a head start on your next
-            adventure.
+            {t("waitlist.subtitle")}
           </p>
 
           {status === "success" ? (
             <p className="text-primary font-bold text-xl mt-12">
-              Thank you for joining the waitlist!
+              {t("waitlist.success")}
             </p>
           ) : (
             <form
@@ -76,13 +77,13 @@ export default function Waitlist() {
               <input type="hidden" name="form-name" value="waitlist" />
               <p className="hidden">
                 <label>
-                  Don't fill this out: <input name="bot-field" />
+                  {t("waitlist.botFieldLabel")} <input name="bot-field" />
                 </label>
               </p>
               <input
                 type="email"
                 name="email"
-                placeholder="Enter your email address"
+                placeholder={t("waitlist.emailPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -93,11 +94,11 @@ export default function Waitlist() {
                 disabled={status === "submitting"}
                 className="hero-gradient text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all disabled:opacity-70"
               >
-                {status === "submitting" ? "Submitting..." : "Join Waitlist"}
+                {status === "submitting" ? t("waitlist.submitting") : t("waitlist.submit")}
               </button>
               {status === "error" && (
                 <p className="text-red-500 font-medium text-sm mt-2 sm:mt-0 sm:self-center">
-                  Something went wrong. Please try again.
+                  {t("waitlist.error")}
                 </p>
               )}
             </form>
