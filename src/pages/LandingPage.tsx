@@ -1298,7 +1298,7 @@ export default function LandingPage() {
             <thead>
               <tr className="text-slate-400 text-[11px] uppercase tracking-[0.2em]">
                 <th className="p-10 font-black">Provider</th>
-                <th className="p-10 font-black">Fee Structure</th>
+                <th className="p-10 font-black whitespace-nowrap">Fee Structure + Possible Surcharging</th>
                 <th className="p-10 font-black text-right">
                   Total Cost to Customer
                 </th>

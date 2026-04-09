@@ -64,12 +64,14 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-10 text-[12px] font-bold tracking-widest uppercase text-slate-500">
           {navItems}
         </div>
+        <div className="flex items-center gap-4 md:hidden">
         <button
-          className="md:hidden text-slate-700"
+          className="text-slate-700"
           onClick={() => setMobileOpen(!mobileOpen)}
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
+        </div>
       </nav>
       {mobileOpen && (
         <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-8 py-6 flex flex-col items-center gap-5 text-[12px] font-bold tracking-widest uppercase text-slate-500">
