@@ -46,10 +46,18 @@ export default function Header() {
       >
         Services
       </button>
-      <Link to="/team" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">
+      <Link
+        to="/team"
+        onClick={() => setMobileOpen(false)}
+        className="hover:text-primary transition-colors normal-case"
+      >
         About Us
       </Link>
-      <Link to="/faq" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors">
+      <Link
+        to="/faq"
+        onClick={() => setMobileOpen(false)}
+        className="hover:text-primary transition-colors"
+      >
         FAQ
       </Link>
     </>
@@ -65,12 +73,16 @@ export default function Header() {
           {navItems}
         </div>
         <div className="flex items-center gap-4 md:hidden">
-        <button
-          className="text-slate-700"
-          onClick={() => setMobileOpen(!mobileOpen)}
-        >
-          {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+          <button
+            className="text-slate-700"
+            onClick={() => setMobileOpen(!mobileOpen)}
+          >
+            {mobileOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
         </div>
       </nav>
       {mobileOpen && (

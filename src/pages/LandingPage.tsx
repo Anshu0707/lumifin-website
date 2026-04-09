@@ -941,7 +941,7 @@ export default function LandingPage() {
                 referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-5 py-4 text-white">
+              <div className="absolute bottom-6 left-6 right-6 text-white">
                 <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
                   {country.network}
                 </p>
