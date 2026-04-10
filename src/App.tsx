@@ -12,14 +12,12 @@ import PrivacyPage from './pages/PrivacyPage';
 import BlogPage from './pages/BlogPage';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
-import PaintCursor from './components/PaintCursor';
 
 export default function App() {
   return (
     <Router>
       <ScrollToTop />
       <ScrollProgress />
-      <PaintCursor />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/faq" element={<FAQPage />} />
