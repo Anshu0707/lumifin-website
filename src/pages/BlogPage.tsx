@@ -1,14 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Calendar, User } from 'lucide-react';
 
 const POSTS = [
-  { id: 1, key: 'future', author: 'Pierre Lahbabi', categoryKey: 'fintech' },
-  { id: 2, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'travel' },
-  { id: 3, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'company' },
+  { id: 1, key: 'future', author: 'Pierre Lahbabi', categoryKey: 'fintech', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png' },
+  { id: 2, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
+  { id: 3, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'company', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
 ] as const;
 
 export default function BlogPage() {
@@ -41,8 +42,20 @@ export default function BlogPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="group cursor-pointer"
+              className="group cursor-pointer relative"
             >
+              {post.href && (
+                <Link to={post.href} className="absolute inset-0 z-10" aria-label={t(`blog.posts.${post.key}.title`)} />
+              )}
+              {post.image && (
+                <div className="mb-6 rounded-2xl overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={t(`blog.posts.${post.key}.title`)}
+                    className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
               <div className="mb-4">
                 <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-black tracking-widest uppercase">
                   {t(`blog.categories.${post.categoryKey}`)}
