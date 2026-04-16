@@ -17,7 +17,7 @@
     "closeMenu": "Fermer le menu"
   },
   "footer": {
-    "tagline": "Nous réinventons le voyage en South East Asia grâce à des paiements par QR code instantanés et fluides.",
+    "tagline": "Nous réinventons le voyage en Sud-Est et au-delà grâce à des paiements par QR code instantanés et fluides.",
     "company": "Entreprise",
     "aboutUs": "À propos",
     "careers": "Carrières",
@@ -50,7 +50,7 @@
     "eyebrow": "Offre exclusive",
     "titleBefore": "Rejoignez la liste d'attente pour",
     "amount": "€ 20",
-    "titleAfter": "de crédit voyage.",
+    "titleAfter": "de delete voyage.",
     "subtitle": "Soyez parmi les premiers à découvrir Lumi et prenez une longueur d'avance pour votre prochaine aventure.",
     "success": "Merci de rejoindre notre liste d'attente !",
     "emailPlaceholder": "Saisissez votre adresse e-mail",
@@ -60,7 +60,7 @@
     "botFieldLabel": "Ne remplissez pas ce champ :"
   },
   "hero": {
-    "badge": "Nous réinventons le voyage en South East Asia",
+    "badge": "Nous réinventons le voyage en Sud-Est et au-delà",
     "titleLine1": "Payez comme un",
     "titleLine2": "Local",
     "subtitle": "Parcourez l'Asie du Sud-Est et au-delà en toute simplicité grâce aux paiements par QR code instantanés.",
@@ -143,7 +143,7 @@
   },
   "fees": {
     "eyebrow": "Transparence des frais",
-    "title": "Sans secret, rien que des économies.",
+    "title": "Aucun secret, rien que des économies.",
     "subtitle": "Comparaison pour une dépense globale typique de €1000.",
     "savingsPrefix": "Évitez de perdre jusqu'à",
     "savingsMiddle": "pour",
