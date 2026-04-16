@@ -53,17 +53,20 @@ export default function GlobeHero() {
   useEffect(() => {
     if (!globeRef.current) return;
     const controls = globeRef.current.controls();
-    controls.autoRotate = false;   // disable default Y-axis (left/right) rotation
+    controls.autoRotate = false;
     controls.enableZoom = false;
-    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.44 }, 0); // zoomed in 20%
-
-    // Find the ThreeGlobe Group in the scene (arcs/points/rings are its children)
-    const scene = globeRef.current.scene();
-    const globeGroup = scene.children.find((c: any) => c.isGroup);
+    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.44 }, 0);
 
     let frame: number;
+    let globeGroup: any = null;
+
     const tick = () => {
-      if (globeGroup) globeGroup.rotation.x -= 0.0005; // slow bottom-to-top roll
+      // Resolve the group lazily — scene may not be populated on first render
+      if (!globeGroup && globeRef.current) {
+        const scene = globeRef.current.scene();
+        globeGroup = scene?.children.find((c: any) => c.isGroup);
+      }
+      if (globeGroup) globeGroup.rotation.x -= 0.0005;
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
