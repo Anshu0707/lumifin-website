@@ -23,8 +23,8 @@ const CITIES = [
   { lat: 14.5995,  lng: 120.9842, name: 'Manila',       country: 'Philippines' },
 ];
 
-// Payment flow arcs — only between supported-country cities
-const ARCS = [
+// Base payment-flow corridors — only between supported-country cities
+const ARCS_BASE = [
   { startLat: 13.7563, startLng: 100.5018, endLat: 3.1390,   endLng: 101.6869 },  // Bangkok → KL
   { startLat: 3.1390,  startLng: 101.6869, endLat: -6.2088,  endLng: 106.8456 },  // KL → Jakarta
   { startLat: -6.2088, startLng: 106.8456, endLat: -8.4095,  endLng: 115.1889 },  // Jakarta → Bali
@@ -33,6 +33,12 @@ const ARCS = [
   { startLat: 10.8231, startLng: 106.6297, endLat: 14.5995,  endLng: 120.9842 },  // HCM → Manila
   { startLat: 13.7563, startLng: 100.5018, endLat: 14.5995,  endLng: 120.9842 },  // Bangkok → Manila
   { startLat: -6.2088, startLng: 106.8456, endLat: 14.5995,  endLng: 120.9842 },  // Jakarta → Manila
+];
+
+// Double-layer arcs: wide soft purple glow + thin bright core (fibre-optic look)
+const ARCS = [
+  ...ARCS_BASE.map((a, i) => ({ ...a, _layer: 'glow', _i: i })),
+  ...ARCS_BASE.map((a, i) => ({ ...a, _layer: 'core', _i: i })),
 ];
 
 // Country names as they appear in the ne_110m GeoJSON dataset
@@ -111,6 +117,53 @@ export default function GlobeHero() {
       : 'rgba(80,30,150,0.05)';
   }, []);
 
+  // HTML label factory — renders a sharp, typography-quality city pill into 3D space
+  const cityLabel = useCallback((d: any) => {
+    const el = document.createElement('div');
+    el.style.pointerEvents = 'none';
+    el.style.transform = 'translate(-50%, -140%)';
+    el.innerHTML = `
+      <div style="
+        display:flex;align-items:center;gap:6px;
+        padding:4px 10px;border-radius:999px;
+        background:rgba(10,2,20,0.72);
+        border:1px solid rgba(192,132,252,0.35);
+        backdrop-filter:blur(6px);
+        box-shadow:0 4px 14px rgba(103,15,197,0.35), 0 0 0 1px rgba(255,255,255,0.04) inset;
+        font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;
+        font-size:11px;font-weight:700;letter-spacing:0.02em;
+        color:#f5f3ff;white-space:nowrap;
+      ">
+        <span style="
+          width:6px;height:6px;border-radius:999px;
+          background:#c084fc;
+          box-shadow:0 0 8px rgba(192,132,252,0.9);
+        "></span>
+        ${d.name}
+      </div>
+    `;
+    return el;
+  }, []);
+
+  const arcColor = useCallback((d: any) =>
+    d._layer === 'glow'
+      ? ['rgba(168,85,247,0)', 'rgba(192,132,252,0.45)', 'rgba(168,85,247,0)']
+      : ['rgba(255,255,255,0)', 'rgba(255,255,255,1)',  'rgba(255,255,255,0)']
+  , []);
+
+  const arcStroke = useCallback((d: any) =>
+    d._layer === 'glow' ? 2.6 : 0.45
+  , []);
+
+  const arcDashAnimateTime = useCallback((d: any) =>
+    // slight offset between layers so the bright core leads the glow
+    d._layer === 'glow' ? 2400 : 2000
+  , []);
+
+  const arcAltitude = useCallback((d: any) =>
+    d._layer === 'glow' ? 0.26 : 0.25
+  , []);
+
   const active = COUNTRIES_INFO[activeIdx];
 
   return (
@@ -135,18 +188,20 @@ export default function GlobeHero() {
         hexPolygonMargin={0.5}
         hexPolygonColor={hexColor}
 
-        // Flying payment-flow arcs — only between supported cities
+        // Flying payment-flow arcs — layered glow + bright core
         arcsData={ARCS}
         arcStartLat={(d: any) => d.startLat}
         arcStartLng={(d: any) => d.startLng}
         arcEndLat={(d: any) => d.endLat}
         arcEndLng={(d: any) => d.endLng}
-        arcColor={() => ['rgba(103,15,197,0)', 'rgba(216,180,254,0.9)', 'rgba(103,15,197,0)']}
-        arcAltitude={0.25}
-        arcStroke={0.7}
-        arcDashLength={0.4}
-        arcDashGap={0.18}
-        arcDashAnimateTime={2000}
+        arcColor={arcColor}
+        arcStroke={arcStroke}
+        arcAltitude={arcAltitude}
+        arcDashLength={0.38}
+        arcDashGap={0.2}
+        arcDashInitialGap={(d: any) => (d._i * 0.12) % 1}
+        arcDashAnimateTime={arcDashAnimateTime}
+        arcsTransitionDuration={0}
 
         // Continuous radar-pulse rings at each supported city
         ringsData={CITIES}
@@ -163,18 +218,15 @@ export default function GlobeHero() {
         pointLng={(d: any) => d.lng}
         pointColor={() => '#f3e8ff'}
         pointAltitude={0.02}
-        pointRadius={0.5}
+        pointRadius={0.55}
         pointsMerge={false}
 
-        // City labels
-        labelsData={CITIES}
-        labelLat={(d: any) => d.lat}
-        labelLng={(d: any) => d.lng}
-        labelText={(d: any) => d.name}
-        labelSize={0.45}
-        labelColor={() => 'rgba(255,255,255,0.72)'}
-        labelDotRadius={0.25}
-        labelAltitude={0.018}
+        // Crisp HTML city labels (proper typography, zoom-independent legibility)
+        htmlElementsData={CITIES}
+        htmlLat={(d: any) => d.lat}
+        htmlLng={(d: any) => d.lng}
+        htmlAltitude={0.03}
+        htmlElement={cityLabel}
       />
 
       {/* Active country + network pill */}
