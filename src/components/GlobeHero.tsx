@@ -1,44 +1,59 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion } from 'motion/react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import Globe from 'react-globe.gl';
 
-// Payment flow arcs — Southeast Asian supported corridors only
-const ARCS = [
-  { startLat: 13.7563, startLng: 100.5018, endLat: 1.3521,   endLng: 103.8198, label: 'Bangkok → Singapore',        currency: 'S$' },
-  { startLat: 1.3521,  startLng: 103.8198, endLat: 3.1390,   endLng: 101.6869, label: 'Singapore → Kuala Lumpur',   currency: 'RM' },
-  { startLat: 3.1390,  startLng: 101.6869, endLat: -6.2088,  endLng: 106.8456, label: 'Kuala Lumpur → Jakarta',     currency: 'Rp' },
-  { startLat: -6.2088, startLng: 106.8456, endLat: -8.4095,  endLng: 115.1889, label: 'Jakarta → Bali',             currency: 'Rp' },
-  { startLat: 13.7563, startLng: 100.5018, endLat: 11.5624,  endLng: 104.9160, label: 'Bangkok → Phnom Penh',       currency: '៛' },
-  { startLat: 11.5624, startLng: 104.9160, endLat: 10.8231,  endLng: 106.6297, label: 'Phnom Penh → Ho Chi Minh',   currency: '₫' },
-  { startLat: 10.8231, startLng: 106.6297, endLat: 1.3521,   endLng: 103.8198, label: 'Ho Chi Minh → Singapore',    currency: 'S$' },
-  { startLat: 1.3521,  startLng: 103.8198, endLat: 14.5995,  endLng: 120.9842, label: 'Singapore → Manila',         currency: '₱' },
+// Supported countries + their local instant-payment networks
+const COUNTRIES_INFO = [
+  { name: 'Thailand',    network: 'PromptPay' },
+  { name: 'Indonesia',   network: 'QRIS' },
+  { name: 'Vietnam',     network: 'VietQR' },
+  { name: 'Malaysia',    network: 'DuitNow' },
+  { name: 'Cambodia',    network: 'KHQR' },
+  { name: 'Philippines', network: 'InstaPay' },
 ];
 
-// City dots — only countries we support
+// City dots — only cities inside supported countries
 const CITIES = [
-  { lat: 13.7563,  lng: 100.5018, name: 'Bangkok',      color: '#a855f7' },
-  { lat: -8.4095,  lng: 115.1889, name: 'Bali',         color: '#670FC5' },
-  { lat: 1.3521,   lng: 103.8198, name: 'Singapore',    color: '#a855f7' },
-  { lat: 10.8231,  lng: 106.6297, name: 'Ho Chi Minh',  color: '#670FC5' },
-  { lat: 3.1390,   lng: 101.6869, name: 'Kuala Lumpur', color: '#a855f7' },
-  { lat: 14.5995,  lng: 120.9842, name: 'Manila',       color: '#670FC5' },
-  { lat: -6.2088,  lng: 106.8456, name: 'Jakarta',      color: '#a855f7' },
-  { lat: 11.5624,  lng: 104.9160, name: 'Phnom Penh',   color: '#9333ea' },
+  { lat: 13.7563,  lng: 100.5018, name: 'Bangkok',      country: 'Thailand' },
+  { lat: -8.4095,  lng: 115.1889, name: 'Bali',         country: 'Indonesia' },
+  { lat: -6.2088,  lng: 106.8456, name: 'Jakarta',      country: 'Indonesia' },
+  { lat: 10.8231,  lng: 106.6297, name: 'Ho Chi Minh',  country: 'Vietnam' },
+  { lat: 3.1390,   lng: 101.6869, name: 'Kuala Lumpur', country: 'Malaysia' },
+  { lat: 11.5624,  lng: 104.9160, name: 'Phnom Penh',   country: 'Cambodia' },
+  { lat: 14.5995,  lng: 120.9842, name: 'Manila',       country: 'Philippines' },
 ];
+
+// Country names as they appear in the ne_110m GeoJSON dataset
+const SUPPORTED = new Set([
+  'Thailand', 'Indonesia', 'Vietnam', 'Viet Nam',
+  'Malaysia', 'Cambodia', 'Philippines',
+]);
 
 export default function GlobeHero() {
   const globeRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ w: 600, h: 600 });
-  const [activeArc, setActiveArc] = useState(0);
+  const [countries, setCountries] = useState<any>({ features: [] });
+  const [activeIdx, setActiveIdx] = useState(0);
+
+  // Load world countries GeoJSON for hex polygon overlay
+  useEffect(() => {
+    fetch(
+      'https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson'
+    )
+      .then(r => r.json())
+      .then(setCountries)
+      .catch(() => {});
+  }, []);
 
   // Resize observer
   useEffect(() => {
     const update = () => {
       if (containerRef.current) {
-        const w = containerRef.current.offsetWidth;
-        const h = containerRef.current.offsetHeight;
-        setSize({ w, h });
+        setSize({
+          w: containerRef.current.offsetWidth,
+          h: containerRef.current.offsetHeight,
+        });
       }
     };
     update();
@@ -46,19 +61,17 @@ export default function GlobeHero() {
     return () => window.removeEventListener('resize', update);
   }, []);
 
-  // Vertical (bottom-to-top) rotation via direct globe group X-axis spin
+  // Vertical (bottom-to-top) rotation
   useEffect(() => {
     if (!globeRef.current) return;
     const controls = globeRef.current.controls();
     controls.autoRotate = false;
     controls.enableZoom = false;
-    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.22 }, 0); // +15% zoom
+    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.22 }, 0);
 
     let frame: number;
     let globeGroup: any = null;
-
     const tick = () => {
-      // Resolve the group lazily — scene may not be populated on first render
       if (!globeGroup && globeRef.current) {
         const scene = globeRef.current.scene();
         globeGroup = scene?.children.find((c: any) => c.isGroup);
@@ -70,74 +83,94 @@ export default function GlobeHero() {
     return () => cancelAnimationFrame(frame);
   }, []);
 
-  // Cycle active arc for the label display
+  // Cycle active country for the bottom pill
   useEffect(() => {
-    const t = setInterval(() => setActiveArc(p => (p + 1) % ARCS.length), 2200);
+    const t = setInterval(() => setActiveIdx(p => (p + 1) % COUNTRIES_INFO.length), 2200);
     return () => clearInterval(t);
   }, []);
 
-  const arc = ARCS[activeArc];
+  // Supported countries glow purple; rest are barely visible
+  const hexColor = useCallback((feat: any) => {
+    const name: string = feat?.properties?.NAME ?? feat?.properties?.NAME_EN ?? '';
+    const nameLong: string = feat?.properties?.NAME_LONG ?? '';
+    return (SUPPORTED.has(name) || SUPPORTED.has(nameLong))
+      ? 'rgba(168,85,247,0.55)'
+      : 'rgba(80,30,150,0.06)';
+  }, []);
+
+  const active = COUNTRIES_INFO[activeIdx];
 
   return (
     <div ref={containerRef} className="relative w-full h-full overflow-visible">
-      {/* Shift globe down ~8% of container height so the top doesn't crop */}
       <div style={{ transform: 'translateY(8%)' }}>
-      <Globe
-        ref={globeRef}
-        width={size.w}
-        height={size.h}
-        backgroundColor="rgba(0,0,0,0)"
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-        atmosphereColor="#670FC5"
-        atmosphereAltitude={0.18}
-        // Arcs (payment flows)
-        arcsData={ARCS}
-        arcStartLat={(d: any) => d.startLat}
-        arcStartLng={(d: any) => d.startLng}
-        arcEndLat={(d: any) => d.endLat}
-        arcEndLng={(d: any) => d.endLng}
-        arcColor={() => ['rgba(103,15,197,0)', 'rgba(168,85,247,0.9)', 'rgba(103,15,197,0)']}
-        arcAltitude={0.25}
-        arcStroke={0.6}
-        arcDashLength={0.4}
-        arcDashGap={0.2}
-        arcDashAnimateTime={2000}
-        // City dots
-        pointsData={CITIES}
-        pointLat={(d: any) => d.lat}
-        pointLng={(d: any) => d.lng}
-        pointColor={(d: any) => d.color}
-        pointAltitude={0.01}
-        pointRadius={0.4}
-        pointsMerge={false}
-        // City labels
-        labelsData={CITIES}
-        labelLat={(d: any) => d.lat}
-        labelLng={(d: any) => d.lng}
-        labelText={(d: any) => d.name}
-        labelSize={0.55}
-        labelColor={() => 'rgba(255,255,255,0.7)'}
-        labelDotRadius={0.3}
-        labelAltitude={0.015}
-      />
+        <Globe
+          ref={globeRef}
+          width={size.w}
+          height={size.h}
+          backgroundColor="rgba(0,0,0,0)"
+          globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+          bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+          atmosphereColor="#670FC5"
+          atmosphereAltitude={0.18}
+
+          // Supported-country hex overlay (glowing purple)
+          hexPolygonsData={countries.features}
+          hexPolygonResolution={3}
+          hexPolygonMargin={0.5}
+          hexPolygonColor={hexColor}
+
+          // Continuous radar-pulse rings — immersive, replaces flying arcs
+          ringsData={CITIES}
+          ringLat={(d: any) => d.lat}
+          ringLng={(d: any) => d.lng}
+          ringColor={() => (t: number) => `rgba(192,132,252,${Math.max(0, 0.9 * (1 - t * 1.1))})`}
+          ringMaxRadius={5.5}
+          ringPropagationSpeed={3.5}
+          ringRepeatPeriod={1100}
+
+          // Bright city dots
+          pointsData={CITIES}
+          pointLat={(d: any) => d.lat}
+          pointLng={(d: any) => d.lng}
+          pointColor={() => '#f3e8ff'}
+          pointAltitude={0.02}
+          pointRadius={0.55}
+          pointsMerge={false}
+
+          // City labels
+          labelsData={CITIES}
+          labelLat={(d: any) => d.lat}
+          labelLng={(d: any) => d.lng}
+          labelText={(d: any) => d.name}
+          labelSize={0.5}
+          labelColor={() => 'rgba(255,255,255,0.72)'}
+          labelDotRadius={0.25}
+          labelAltitude={0.018}
+        />
       </div>
 
-      {/* Active payment label */}
-      <motion.div
-        key={activeArc}
-        initial={{ opacity: 0, y: 8 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.4 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-3 text-center"
-      >
-        <p className="text-[10px] text-white/50 font-black uppercase tracking-widest mb-0.5">
-          Live Transfer
-        </p>
-        <p className="text-sm font-black text-white">{arc.label}</p>
-        <p className="text-xs text-primary font-bold mt-0.5">Zero markup · Instant</p>
-      </motion.div>
+      {/* Active country + network pill */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeIdx}
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ duration: 0.35 }}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-5 py-3 whitespace-nowrap"
+        >
+          <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse shrink-0" />
+          <div className="text-left">
+            <p className="text-[10px] text-white/50 font-black uppercase tracking-widest leading-none">Live in</p>
+            <p className="text-sm font-black text-white leading-tight mt-1">{active.name}</p>
+          </div>
+          <span className="w-px h-8 bg-white/20" />
+          <div className="text-left">
+            <p className="text-[10px] text-primary font-black uppercase tracking-widest leading-none">Network</p>
+            <p className="text-sm font-black text-white leading-tight mt-1">{active.network}</p>
+          </div>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
