@@ -24,7 +24,6 @@ const CITIES = [
   { lat: 1.3521,   lng: 103.8198, name: 'Singapore',    network: 'PayNow' },
 ];
 
-// SEA country names in the ne_110m dataset
 const SEA = new Set([
   'Thailand', 'Singapore', 'Malaysia', 'Indonesia',
   'Vietnam', 'Viet Nam', 'Philippines', 'Cambodia',
@@ -37,9 +36,8 @@ export default function GlobeHero() {
   const [size, setSize] = useState({ w: 600, h: 600 });
   const [countries, setCountries] = useState<any>({ features: [] });
   const [activeIdx, setActiveIdx] = useState(0);
-  const [ready, setReady] = useState(false);
 
-  // Load countries GeoJSON for holographic hex-polygon globe
+  // Load country polygons for hex overlay
   useEffect(() => {
     fetch(
       'https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson'
@@ -64,25 +62,16 @@ export default function GlobeHero() {
     return () => window.removeEventListener('resize', update);
   }, []);
 
-  // Globe init — match sphere color to page bg so edges dissolve into background
-  const handleGlobeReady = useCallback(() => {
+  // Controls + camera (same reliable pattern as before)
+  useEffect(() => {
     if (!globeRef.current) return;
-    const ctrl = globeRef.current.controls();
-    ctrl.autoRotate = true;
-    ctrl.autoRotateSpeed = 0.15;
-    ctrl.enableZoom = false;
+    globeRef.current.controls().autoRotate = true;
+    globeRef.current.controls().autoRotateSpeed = 0.15;
+    globeRef.current.controls().enableZoom = false;
     globeRef.current.pointOfView({ lat: 5, lng: 112, altitude: 0.4 }, 0);
-
-    // Page bg ends near #06020F — match sphere so the circular edge disappears
-    const mat = globeRef.current.globeMaterial();
-    mat.color.setHex(0x04000e);
-    mat.emissive.setHex(0x0d0025);
-    mat.emissiveIntensity = 0.3;
-
-    setReady(true);
   }, []);
 
-  // Cycle active city for status badge
+  // Cycle active city badge
   useEffect(() => {
     const timer = setInterval(() => setActiveIdx(p => (p + 1) % CITIES.length), 2200);
     return () => clearInterval(timer);
@@ -91,66 +80,63 @@ export default function GlobeHero() {
   const hexColor = useCallback((feat: any) => {
     const name: string = feat?.properties?.NAME ?? feat?.properties?.NAME_EN ?? '';
     return SEA.has(name)
-      ? 'rgba(139,92,246,0.45)'  // SEA countries — visible purple
-      : 'rgba(50,15,90,0.08)';   // rest of world — barely visible
+      ? 'rgba(139,92,246,0.55)'  // SEA — bright purple hex overlay
+      : 'rgba(50,15,90,0.08)';   // rest — barely visible
   }, []);
 
   return (
     <div ref={containerRef} className="relative w-full h-full">
-      {/* Fade in only after material is applied — prevents white-sphere flash */}
-      <div
-        className="transition-opacity duration-700"
-        style={{ opacity: ready ? 1 : 0 }}
-      >
-        <Globe
-          ref={globeRef}
-          width={size.w}
-          height={size.h}
-          backgroundColor="rgba(0,0,0,0)"
-          globeImageUrl=""
-          showAtmosphere
-          atmosphereColor="#1a0838"   // matches page bg purple — edge bleeds into bg
-          atmosphereAltitude={0.1}
-          onGlobeReady={handleGlobeReady}
+      <Globe
+        ref={globeRef}
+        width={size.w}
+        height={size.h}
+        backgroundColor="rgba(0,0,0,0)"
 
-          // Holographic hex-polygon country grid
-          hexPolygonsData={countries.features}
-          hexPolygonResolution={3}
-          hexPolygonMargin={0.65}
-          hexPolygonColor={hexColor}
+        // Dark satellite texture — proven reliable
+        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
 
-          // Payment flow arcs
-          arcsData={ARCS}
-          arcStartLat={(d: any) => d.startLat}
-          arcStartLng={(d: any) => d.startLng}
-          arcEndLat={(d: any) => d.endLat}
-          arcEndLng={(d: any) => d.endLng}
-          arcColor={() => ['rgba(139,92,246,0)', 'rgba(232,210,255,0.95)', 'rgba(139,92,246,0)']}
-          arcAltitude={0.12}
-          arcStroke={1.1}
-          arcDashLength={0.35}
-          arcDashGap={0.05}
-          arcDashAnimateTime={1600}
+        // Atmosphere color matches page bg purple — edge bleeds into background
+        showAtmosphere
+        atmosphereColor="#1a0838"
+        atmosphereAltitude={0.1}
 
-          // City dots
-          pointsData={CITIES}
-          pointLat={(d: any) => d.lat}
-          pointLng={(d: any) => d.lng}
-          pointColor={() => '#e9d5ff'}
-          pointAltitude={0.02}
-          pointRadius={0.65}
-          pointsMerge={false}
+        // Hex polygon country overlay (tech / holographic feel)
+        hexPolygonsData={countries.features}
+        hexPolygonResolution={3}
+        hexPolygonMargin={0.65}
+        hexPolygonColor={hexColor}
 
-          // Radar-pulse rings
-          ringsData={CITIES}
-          ringLat={(d: any) => d.lat}
-          ringLng={(d: any) => d.lng}
-          ringColor={() => (t: number) => `rgba(167,139,250,${Math.max(0, 0.75 * (1 - t * 1.2))})`}
-          ringMaxRadius={4.5}
-          ringPropagationSpeed={2.8}
-          ringRepeatPeriod={1200}
-        />
-      </div>
+        // Payment flow arcs
+        arcsData={ARCS}
+        arcStartLat={(d: any) => d.startLat}
+        arcStartLng={(d: any) => d.startLng}
+        arcEndLat={(d: any) => d.endLat}
+        arcEndLng={(d: any) => d.endLng}
+        arcColor={() => ['rgba(139,92,246,0)', 'rgba(232,210,255,0.95)', 'rgba(139,92,246,0)']}
+        arcAltitude={0.12}
+        arcStroke={1.1}
+        arcDashLength={0.35}
+        arcDashGap={0.05}
+        arcDashAnimateTime={1600}
+
+        // City dots
+        pointsData={CITIES}
+        pointLat={(d: any) => d.lat}
+        pointLng={(d: any) => d.lng}
+        pointColor={() => '#e9d5ff'}
+        pointAltitude={0.02}
+        pointRadius={0.65}
+        pointsMerge={false}
+
+        // Radar-pulse rings
+        ringsData={CITIES}
+        ringLat={(d: any) => d.lat}
+        ringLng={(d: any) => d.lng}
+        ringColor={() => (t: number) => `rgba(167,139,250,${Math.max(0, 0.75 * (1 - t * 1.2))})`}
+        ringMaxRadius={4.5}
+        ringPropagationSpeed={2.8}
+        ringRepeatPeriod={1200}
+      />
 
       {/* Network status badge */}
       <AnimatePresence mode="wait">
