@@ -2,19 +2,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'motion/react';
 import Globe from 'react-globe.gl';
 
-// Payment flow arcs between Southeast Asian cities + Europe
+// Payment flow arcs — Southeast Asian supported corridors only
 const ARCS = [
-  { startLat: 48.8566, startLng: 2.3522,   endLat: 13.7563, endLng: 100.5018, label: 'Paris → Bangkok',      currency: '฿' },
-  { startLat: 48.8566, startLng: 2.3522,   endLat: -8.4095,  endLng: 115.1889, label: 'Paris → Bali',         currency: 'Rp' },
-  { startLat: 51.5074, startLng: -0.1278,  endLat: 1.3521,   endLng: 103.8198, label: 'London → Singapore',   currency: 'S$' },
-  { startLat: 52.5200, startLng: 13.4050,  endLat: 10.8231,  endLng: 106.6297, label: 'Berlin → Ho Chi Minh', currency: '₫' },
-  { startLat: 48.8566, startLng: 2.3522,   endLat: 3.1390,   endLng: 101.6869, label: 'Paris → KL',           currency: 'RM' },
-  { startLat: 51.5074, startLng: -0.1278,  endLat: 14.5995,  endLng: 120.9842, label: 'London → Manila',      currency: '₱' },
-  { startLat: 52.5200, startLng: 13.4050,  endLat: -6.2088,  endLng: 106.8456, label: 'Berlin → Jakarta',     currency: 'Rp' },
-  { startLat: 48.8566, startLng: 2.3522,   endLat: 11.5624,  endLng: 104.9160, label: 'Paris → Phnom Penh',   currency: '฿' },
+  { startLat: 13.7563, startLng: 100.5018, endLat: 1.3521,   endLng: 103.8198, label: 'Bangkok → Singapore',        currency: 'S$' },
+  { startLat: 1.3521,  startLng: 103.8198, endLat: 3.1390,   endLng: 101.6869, label: 'Singapore → Kuala Lumpur',   currency: 'RM' },
+  { startLat: 3.1390,  startLng: 101.6869, endLat: -6.2088,  endLng: 106.8456, label: 'Kuala Lumpur → Jakarta',     currency: 'Rp' },
+  { startLat: -6.2088, startLng: 106.8456, endLat: -8.4095,  endLng: 115.1889, label: 'Jakarta → Bali',             currency: 'Rp' },
+  { startLat: 13.7563, startLng: 100.5018, endLat: 11.5624,  endLng: 104.9160, label: 'Bangkok → Phnom Penh',       currency: '៛' },
+  { startLat: 11.5624, startLng: 104.9160, endLat: 10.8231,  endLng: 106.6297, label: 'Phnom Penh → Ho Chi Minh',   currency: '₫' },
+  { startLat: 10.8231, startLng: 106.6297, endLat: 1.3521,   endLng: 103.8198, label: 'Ho Chi Minh → Singapore',    currency: 'S$' },
+  { startLat: 1.3521,  startLng: 103.8198, endLat: 14.5995,  endLng: 120.9842, label: 'Singapore → Manila',         currency: '₱' },
 ];
 
-// City dots
+// City dots — only countries we support
 const CITIES = [
   { lat: 13.7563,  lng: 100.5018, name: 'Bangkok',      color: '#a855f7' },
   { lat: -8.4095,  lng: 115.1889, name: 'Bali',         color: '#670FC5' },
@@ -24,9 +24,6 @@ const CITIES = [
   { lat: 14.5995,  lng: 120.9842, name: 'Manila',       color: '#670FC5' },
   { lat: -6.2088,  lng: 106.8456, name: 'Jakarta',      color: '#a855f7' },
   { lat: 11.5624,  lng: 104.9160, name: 'Phnom Penh',   color: '#9333ea' },
-  { lat: 48.8566,  lng: 2.3522,   name: 'Paris',        color: '#c084fc' },
-  { lat: 51.5074,  lng: -0.1278,  name: 'London',       color: '#c084fc' },
-  { lat: 52.5200,  lng: 13.4050,  name: 'Berlin',       color: '#c084fc' },
 ];
 
 export default function GlobeHero() {
@@ -82,8 +79,9 @@ export default function GlobeHero() {
   const arc = ARCS[activeArc];
 
   return (
-    <div ref={containerRef} className="relative w-full h-full">
-      {/* Globe */}
+    <div ref={containerRef} className="relative w-full h-full overflow-visible">
+      {/* Shift globe down ~8% of container height so the top doesn't crop */}
+      <div style={{ transform: 'translateY(8%)' }}>
       <Globe
         ref={globeRef}
         width={size.w}
@@ -123,6 +121,7 @@ export default function GlobeHero() {
         labelDotRadius={0.3}
         labelAltitude={0.015}
       />
+      </div>
 
       {/* Active payment label */}
       <motion.div
