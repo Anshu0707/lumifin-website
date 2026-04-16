@@ -27,6 +27,7 @@ export default function LandingPage() {
   const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
+  const [phoneScreen, setPhoneScreen] = useState(0);
   const journeyRef = useRef<HTMLDivElement>(null);
   const scrollZonesRef = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -74,6 +75,13 @@ export default function LandingPage() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     revealOnScroll();
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setPhoneScreen((prev) => (prev + 1) % 3);
+    }, 2800);
+    return () => clearInterval(timer);
   }, []);
 
   const steps = [
@@ -830,48 +838,338 @@ export default function LandingPage() {
     <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img
-            alt="Cinematic aerial view"
-            className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCHioVLgm-I7vY0esq7II6hPpcDBRhm3BgftQY8ZDTH0bNMOmPksNlMOW1VIG-Elwtq3JPQ2erK2e8EeeBlAMo3EJeich0bUPqbuwTETMGThcbIHXxHTvNyovfPgEjX6ACRcQ1cWtHdX5ubIkiC3tkCDckJXtHkl497BZndFKqaiy9nP5Jpn8smXuDu7PdAbDekl4_CILESdMdpI_ofUhYE4eJpP5GhHDcUFIEHktIcfCnqrf8uKEEaOiDIuTruLraa4Rl_KuLb7jF"
-            referrerPolicy="no-referrer"
+      {/* Hero Section — Dark Redesign */}
+      <section
+        className="relative h-screen min-h-[700px] flex items-center overflow-hidden"
+        style={{
+          background:
+            "radial-gradient(ellipse at 30% 90%, #1a0838 0%, #06020F 55%, #0a0212 100%)",
+        }}
+      >
+        {/* Background decoration */}
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+          <div
+            className="absolute inset-0 opacity-[0.06]"
+            style={{
+              backgroundImage:
+                "linear-gradient(rgba(103,15,197,1) 1px, transparent 1px), linear-gradient(90deg, rgba(103,15,197,1) 1px, transparent 1px)",
+              backgroundSize: "60px 60px",
+            }}
           />
-          <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
+          <motion.div
+            animate={{ opacity: [0.35, 0.65, 0.35], scale: [1, 1.06, 1] }}
+            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute -bottom-48 left-1/2 -translate-x-1/2 w-[1100px] h-[700px] rounded-full"
+            style={{
+              background:
+                "radial-gradient(ellipse, rgba(103,15,197,0.45) 0%, rgba(103,15,197,0.08) 55%, transparent 70%)",
+              filter: "blur(80px)",
+            }}
+          />
+          <motion.div
+            animate={{ x: [0, 28, 0], y: [0, -22, 0] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute top-1/4 left-[8%] w-4 h-4 rounded-full bg-primary/50 blur-sm"
+          />
+          <motion.div
+            animate={{ x: [0, -18, 0], y: [0, 30, 0] }}
+            transition={{ duration: 9, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            className="absolute top-1/3 right-[10%] w-3 h-3 rounded-full bg-purple-400/40 blur-sm"
+          />
+          <motion.div
+            animate={{ x: [0, 14, 0], y: [0, -26, 0] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            className="absolute bottom-1/4 left-1/3 w-5 h-5 rounded-full bg-primary/30 blur-md"
+          />
         </div>
-        <div className="relative z-10 text-center px-6 max-w-5xl">
-          <span className="inline-flex items-center bg-white/20 backdrop-blur-md text-white border border-white/30 px-5 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase mb-8">
-            {t("hero.badge")}
-          </span>
-          <h1 className="text-7xl md:text-[110px] font-black text-white text-editorial leading-[0.85] mb-10 tracking-tighter">
-            {t("hero.titleLine1")} <br />
-            <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-            {t("hero.subtitle")}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button
-              onClick={() => setShowVideo(true)}
-              className="hero-gradient text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all"
+
+        {/* Main layout: text left + phone right */}
+        <div className="relative z-10 w-full flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-16 px-8 lg:px-16 max-w-7xl mx-auto pt-20">
+
+          {/* Text content — left */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left"
+          >
+            <span className="inline-flex items-center bg-white/10 backdrop-blur-md text-white border border-white/20 px-5 py-2 rounded-full text-[12px] font-bold tracking-widest uppercase mb-6">
+              {t("hero.badge")}
+            </span>
+            <h1 className="text-5xl md:text-6xl xl:text-[78px] font-black text-white leading-[0.88] mb-6 tracking-tighter">
+              {t("hero.titleLine1")} <br />
+              <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
+            </h1>
+            <p className="text-base lg:text-lg text-white/70 mb-8 max-w-md font-medium leading-relaxed">
+              {t("hero.subtitle")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button
+                onClick={() => setShowVideo(true)}
+                className="hero-gradient text-white px-8 py-4 rounded-2xl font-black text-base shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all"
+              >
+                {t("hero.viewDemo")}
+              </button>
+              <button
+                onClick={() => {
+                  const element = document.getElementById("waitlist");
+                  if (element) element.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-2xl font-black text-base hover:bg-white/20 transition-all"
+              >
+                {t("hero.joinWaitlist")}
+              </button>
+            </div>
+          </motion.div>
+
+          {/* Phone mockup — right (desktop only) */}
+          <div className="hidden lg:flex flex-1 items-center justify-center relative">
+            {/* Floating notification — left of phone */}
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 1.4, duration: 0.7 }}
+              className="absolute left-0 xl:left-4 top-[22%] z-20"
             >
-              {t("hero.viewDemo")}
-            </button>
-            <button
-              onClick={() => {
-                const element = document.getElementById("waitlist");
-                if (element) element.scrollIntoView({ behavior: "smooth" });
+              <motion.div
+                animate={{ y: [-7, 7, -7] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-4 py-3 shadow-xl shadow-black/40"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-green-400/20 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-green-400" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-black text-white/90">Payment Sent!</p>
+                    <p className="text-[10px] text-white/50 font-medium whitespace-nowrap">
+                      Borcelle Coffee · ฿ 120
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Floating rate card — right of phone */}
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 2, duration: 0.7 }}
+              className="absolute right-0 xl:right-4 top-[14%] z-20"
+            >
+              <motion.div
+                animate={{ y: [7, -7, 7] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl px-4 py-3 shadow-xl shadow-black/40"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-primary/30 flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-4 h-4 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] text-white/50 font-black uppercase tracking-wide whitespace-nowrap">
+                      Live Rate
+                    </p>
+                    <p className="text-xs font-black text-white/90 whitespace-nowrap">
+                      1 EUR = 38.20 ฿
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+
+            {/* Phone frame */}
+            <motion.div
+              animate={{ y: [-10, 10, -10] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+              className="relative z-10"
+              style={{
+                filter:
+                  "drop-shadow(0 0 70px rgba(103,15,197,0.55)) drop-shadow(0 30px 60px rgba(0,0,0,0.7))",
               }}
-              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-white/20 transition-all"
             >
-              {t("hero.joinWaitlist")}
-            </button>
+              <div
+                className="w-[210px] h-[430px] xl:w-[240px] xl:h-[480px] rounded-[44px] p-[2px]"
+                style={{
+                  background:
+                    "linear-gradient(135deg, rgba(103,15,197,0.9) 0%, rgba(200,170,255,0.25) 40%, rgba(103,15,197,0.5) 100%)",
+                }}
+              >
+                <div className="w-full h-full rounded-[42px] overflow-hidden bg-[#08041A] relative">
+                  {/* Dynamic Island */}
+                  <div className="absolute top-3 left-1/2 -translate-x-1/2 w-24 h-[26px] bg-black rounded-full z-30 flex items-center justify-center gap-2">
+                    <div className="w-2 h-2 rounded-full bg-[#1a1a1a]" />
+                    <div className="w-3 h-3 rounded-full bg-[#111]" />
+                  </div>
+
+                  <AnimatePresence mode="wait">
+                    {phoneScreen === 0 && (
+                      <motion.div
+                        key="home"
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{ duration: 0.4 }}
+                        className="absolute inset-0 pt-14 px-4 overflow-hidden"
+                      >
+                        <div className="flex items-center justify-between mb-4">
+                          <div>
+                            <p className="text-white/35 text-[8px] font-black tracking-[0.3em] uppercase">
+                              LUMIFIN
+                            </p>
+                            <p className="text-white text-sm font-black">Good Morning ✦</p>
+                          </div>
+                          <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/20 flex items-center justify-center">
+                            <User className="w-4 h-4 text-primary" />
+                          </div>
+                        </div>
+                        <div
+                          className="rounded-2xl p-4 mb-3"
+                          style={{ background: "linear-gradient(135deg, #670FC5 0%, #3b0764 100%)" }}
+                        >
+                          <p className="text-white/50 text-[8px] font-black uppercase tracking-widest mb-1">
+                            Travel Balance
+                          </p>
+                          <p className="text-white text-xl font-black">€ 1,250.00</p>
+                          <div className="flex gap-1.5 mt-2.5">
+                            {[
+                              { label: "THB", val: "48,250" },
+                              { label: "IDR", val: "21.4M" },
+                              { label: "VND", val: "32.1M" },
+                            ].map((c) => (
+                              <div key={c.label} className="flex-1 bg-white/15 rounded-xl px-1.5 py-1.5 text-center">
+                                <p className="text-white/50 text-[6px] uppercase tracking-widest">{c.label}</p>
+                                <p className="text-white text-[10px] font-black">{c.val}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                        <p className="text-white/30 text-[8px] font-black uppercase tracking-widest mb-1.5">Recent</p>
+                        {[
+                          { name: "Borcelle Coffee", amount: "-฿ 120", icon: "☕" },
+                          { name: "Grab Ride", amount: "-฿ 85", icon: "🛵" },
+                          { name: "Top Up", amount: "+€ 200", positive: true, icon: "💳" },
+                        ].map((tx, i) => (
+                          <motion.div
+                            key={i}
+                            initial={{ opacity: 0, x: -8 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ delay: i * 0.12 + 0.2 }}
+                            className="flex items-center justify-between py-2 border-b border-white/[0.06]"
+                          >
+                            <div className="flex items-center gap-2">
+                              <span className="text-sm">{tx.icon}</span>
+                              <p className="text-white/75 text-[11px] font-bold">{tx.name}</p>
+                            </div>
+                            <p className={`text-[11px] font-black ${tx.positive ? "text-green-400" : "text-white/60"}`}>
+                              {tx.amount}
+                            </p>
+                          </motion.div>
+                        ))}
+                      </motion.div>
+                    )}
+
+                    {phoneScreen === 1 && (
+                      <motion.div
+                        key="scan"
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -12 }}
+                        transition={{ duration: 0.4 }}
+                        className="absolute inset-0 bg-[#05020F] flex flex-col"
+                      >
+                        <div className="flex items-center gap-2.5 px-4 pt-14 pb-3">
+                          <div className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
+                            <svg className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                            </svg>
+                          </div>
+                          <span className="text-white font-black text-sm">Scan & Pay</span>
+                        </div>
+                        <div className="flex-1 flex flex-col items-center justify-center px-8">
+                          <div className="w-40 h-40 relative">
+                            <div className="absolute top-0 left-0 w-7 h-7 border-t-[3px] border-l-[3px] rounded-tl-lg" style={{ borderColor: "#670FC5" }} />
+                            <div className="absolute top-0 right-0 w-7 h-7 border-t-[3px] border-r-[3px] rounded-tr-lg" style={{ borderColor: "#670FC5" }} />
+                            <div className="absolute bottom-0 left-0 w-7 h-7 border-b-[3px] border-l-[3px] rounded-bl-lg" style={{ borderColor: "#670FC5" }} />
+                            <div className="absolute bottom-0 right-0 w-7 h-7 border-b-[3px] border-r-[3px] rounded-br-lg" style={{ borderColor: "#670FC5" }} />
+                            <motion.div
+                              animate={{ top: ["8%", "85%", "8%"] }}
+                              transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                              className="absolute left-2 right-2 h-[2px]"
+                              style={{ background: "linear-gradient(to right, transparent, #670FC5, transparent)" }}
+                            />
+                            <div className="absolute inset-4 bg-white/5 rounded-lg flex items-center justify-center">
+                              <QrCode className="w-14 h-14 text-white/15" />
+                            </div>
+                          </div>
+                          <p className="text-white/35 text-[10px] text-center mt-5 font-medium">
+                            Point at any QR code to pay
+                          </p>
+                        </div>
+                      </motion.div>
+                    )}
+
+                    {phoneScreen === 2 && (
+                      <motion.div
+                        key="success"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 1.05 }}
+                        transition={{ duration: 0.4 }}
+                        className="absolute inset-0 bg-[#05020F] flex flex-col items-center justify-center"
+                      >
+                        <motion.div
+                          initial={{ scale: 0 }}
+                          animate={{ scale: 1 }}
+                          transition={{ delay: 0.15, type: "spring", stiffness: 180 }}
+                          className="w-20 h-20 rounded-full bg-green-400/15 flex items-center justify-center mb-5"
+                        >
+                          <motion.div
+                            initial={{ scale: 0 }}
+                            animate={{ scale: 1 }}
+                            transition={{ delay: 0.35, type: "spring", stiffness: 280 }}
+                            className="w-12 h-12 rounded-full bg-green-400 flex items-center justify-center"
+                          >
+                            <Check className="w-6 h-6 text-white" strokeWidth={3} />
+                          </motion.div>
+                        </motion.div>
+                        <motion.p
+                          initial={{ opacity: 0, y: 8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.5 }}
+                          className="text-white font-black text-lg mb-1"
+                        >
+                          Payment Sent!
+                        </motion.p>
+                        <motion.p
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          transition={{ delay: 0.65 }}
+                          className="text-white/40 text-xs font-medium mb-6"
+                        >
+                          Borcelle Coffee, Bangkok
+                        </motion.p>
+                        <motion.div
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.75 }}
+                          className="bg-white/[0.06] border border-white/10 rounded-2xl px-7 py-4 text-center"
+                        >
+                          <p className="text-white/35 text-[8px] uppercase tracking-widest mb-1">You Paid</p>
+                          <p className="text-white text-2xl font-black">฿ 120</p>
+                          <p className="text-primary text-[10px] font-black mt-1.5">≈ € 3.14 · Zero markup</p>
+                        </motion.div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="text-white w-8 h-8" />
+
+        <div className="absolute bottom-5 left-1/2 -translate-x-1/2 animate-bounce z-10">
+          <ChevronDown className="text-white/40 w-7 h-7" />
         </div>
       </section>
 
