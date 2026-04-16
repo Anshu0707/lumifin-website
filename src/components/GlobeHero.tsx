@@ -23,6 +23,18 @@ const CITIES = [
   { lat: 14.5995,  lng: 120.9842, name: 'Manila',       country: 'Philippines' },
 ];
 
+// Payment flow arcs — only between supported-country cities
+const ARCS = [
+  { startLat: 13.7563, startLng: 100.5018, endLat: 3.1390,   endLng: 101.6869 },  // Bangkok → KL
+  { startLat: 3.1390,  startLng: 101.6869, endLat: -6.2088,  endLng: 106.8456 },  // KL → Jakarta
+  { startLat: -6.2088, startLng: 106.8456, endLat: -8.4095,  endLng: 115.1889 },  // Jakarta → Bali
+  { startLat: 13.7563, startLng: 100.5018, endLat: 11.5624,  endLng: 104.9160 },  // Bangkok → Phnom Penh
+  { startLat: 11.5624, startLng: 104.9160, endLat: 10.8231,  endLng: 106.6297 },  // Phnom Penh → HCM
+  { startLat: 10.8231, startLng: 106.6297, endLat: 14.5995,  endLng: 120.9842 },  // HCM → Manila
+  { startLat: 13.7563, startLng: 100.5018, endLat: 14.5995,  endLng: 120.9842 },  // Bangkok → Manila
+  { startLat: -6.2088, startLng: 106.8456, endLat: 14.5995,  endLng: 120.9842 },  // Jakarta → Manila
+];
+
 // Country names as they appear in the ne_110m GeoJSON dataset
 const SUPPORTED = new Set([
   'Thailand', 'Indonesia', 'Vietnam', 'Viet Nam',
@@ -67,7 +79,8 @@ export default function GlobeHero() {
     const controls = globeRef.current.controls();
     controls.autoRotate = false;
     controls.enableZoom = false;
-    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.22 }, 0);
+    // Zoomed out enough to show the whole sphere without cropping
+    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.9 }, 0);
 
     let frame: number;
     let globeGroup: any = null;
@@ -95,59 +108,74 @@ export default function GlobeHero() {
     const nameLong: string = feat?.properties?.NAME_LONG ?? '';
     return (SUPPORTED.has(name) || SUPPORTED.has(nameLong))
       ? 'rgba(168,85,247,0.55)'
-      : 'rgba(80,30,150,0.06)';
+      : 'rgba(80,30,150,0.05)';
   }, []);
 
   const active = COUNTRIES_INFO[activeIdx];
 
   return (
-    <div ref={containerRef} className="relative w-full h-full overflow-visible">
-      <div style={{ transform: 'translateY(8%)' }}>
-        <Globe
-          ref={globeRef}
-          width={size.w}
-          height={size.h}
-          backgroundColor="rgba(0,0,0,0)"
-          globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-          bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-          atmosphereColor="#670FC5"
-          atmosphereAltitude={0.18}
+    <div ref={containerRef} className="relative w-full h-full">
+      <Globe
+        ref={globeRef}
+        width={size.w}
+        height={size.h}
+        backgroundColor="rgba(0,0,0,0)"
+        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
 
-          // Supported-country hex overlay (glowing purple)
-          hexPolygonsData={countries.features}
-          hexPolygonResolution={3}
-          hexPolygonMargin={0.5}
-          hexPolygonColor={hexColor}
+        // Atmosphere matches the page background purple so the sphere
+        // edge bleeds into the hero gradient instead of creating a hard circle
+        showAtmosphere
+        atmosphereColor="#1a0838"
+        atmosphereAltitude={0.22}
 
-          // Continuous radar-pulse rings — immersive, replaces flying arcs
-          ringsData={CITIES}
-          ringLat={(d: any) => d.lat}
-          ringLng={(d: any) => d.lng}
-          ringColor={() => (t: number) => `rgba(192,132,252,${Math.max(0, 0.9 * (1 - t * 1.1))})`}
-          ringMaxRadius={5.5}
-          ringPropagationSpeed={3.5}
-          ringRepeatPeriod={1100}
+        // Supported-country hex overlay (glowing purple)
+        hexPolygonsData={countries.features}
+        hexPolygonResolution={3}
+        hexPolygonMargin={0.5}
+        hexPolygonColor={hexColor}
 
-          // Bright city dots
-          pointsData={CITIES}
-          pointLat={(d: any) => d.lat}
-          pointLng={(d: any) => d.lng}
-          pointColor={() => '#f3e8ff'}
-          pointAltitude={0.02}
-          pointRadius={0.55}
-          pointsMerge={false}
+        // Flying payment-flow arcs — only between supported cities
+        arcsData={ARCS}
+        arcStartLat={(d: any) => d.startLat}
+        arcStartLng={(d: any) => d.startLng}
+        arcEndLat={(d: any) => d.endLat}
+        arcEndLng={(d: any) => d.endLng}
+        arcColor={() => ['rgba(103,15,197,0)', 'rgba(216,180,254,0.9)', 'rgba(103,15,197,0)']}
+        arcAltitude={0.25}
+        arcStroke={0.7}
+        arcDashLength={0.4}
+        arcDashGap={0.18}
+        arcDashAnimateTime={2000}
 
-          // City labels
-          labelsData={CITIES}
-          labelLat={(d: any) => d.lat}
-          labelLng={(d: any) => d.lng}
-          labelText={(d: any) => d.name}
-          labelSize={0.5}
-          labelColor={() => 'rgba(255,255,255,0.72)'}
-          labelDotRadius={0.25}
-          labelAltitude={0.018}
-        />
-      </div>
+        // Continuous radar-pulse rings at each supported city
+        ringsData={CITIES}
+        ringLat={(d: any) => d.lat}
+        ringLng={(d: any) => d.lng}
+        ringColor={() => (t: number) => `rgba(192,132,252,${Math.max(0, 0.8 * (1 - t * 1.2))})`}
+        ringMaxRadius={4}
+        ringPropagationSpeed={3}
+        ringRepeatPeriod={1300}
+
+        // Bright city dots
+        pointsData={CITIES}
+        pointLat={(d: any) => d.lat}
+        pointLng={(d: any) => d.lng}
+        pointColor={() => '#f3e8ff'}
+        pointAltitude={0.02}
+        pointRadius={0.5}
+        pointsMerge={false}
+
+        // City labels
+        labelsData={CITIES}
+        labelLat={(d: any) => d.lat}
+        labelLng={(d: any) => d.lng}
+        labelText={(d: any) => d.name}
+        labelSize={0.45}
+        labelColor={() => 'rgba(255,255,255,0.72)'}
+        labelDotRadius={0.25}
+        labelAltitude={0.018}
+      />
 
       {/* Active country + network pill */}
       <AnimatePresence mode="wait">
