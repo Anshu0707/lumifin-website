@@ -1425,19 +1425,16 @@ export default function LandingPage() {
                 name: t("stories.items.sarah.name"),
                 role: t("stories.items.sarah.role"),
                 text: t("stories.items.sarah.text"),
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDxxaYlCue15ExINB1Eu0MXZsSUMemjww82ZQRMcbbxkngWgFcCG_nMsoHzBFlvoqIxbxsJsEyErd3AFHl5MqaUxoWns9s5Gscarxf47XDxQSHe-dPOdEdeOBggLYK3STphuxxkxC2YktHwZ7ut660cYODBKU0VP691xlFrhUUizY7AC_i7Eva0tgqC_iCSPGwImTNfCt6Z0mGpreB7V6XjTw3auBU6DK9O8eIYSUCQ9oXnbmiZUPLhzFQ7aO_ksiG6XJSEzgTIKNpn",
               },
               {
                 name: t("stories.items.marcus.name"),
                 role: t("stories.items.marcus.role"),
                 text: t("stories.items.marcus.text"),
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDeuPPxhFWp5XX-gqCubs4K5TRKnl9ntjJyJu4QyzMMrReGFKa7abX2kN_KpavsAcVKa9HpfjGs4o_1LiOnVMXLBAPDrapUJ6AMOfgMtGFEJfzbUCA0G1o29TXm695v42gzfORer1OYKxjVrryYotwFvF85r4TxaAMH3dX7xFZAxjPCU7mgqBlkpOskZnf0x0yAcHeAWtKRkDcNUEUgQppYjfE1PfhBylIjFlsnaxn_bNyUeGX76hE1srteug0BdP4ZeC4nFDPL4ly2",
               },
               {
                 name: t("stories.items.elena.name"),
                 role: t("stories.items.elena.role"),
                 text: t("stories.items.elena.text"),
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCvUSkns_xTlr6Hm7dyXWn8_3uli-mLdhleXfrE1WK-g7pHBjEU-JWaW9JNAPqVN3e-9aw5j1PrrOESZTeX7Olgmi1Fl-3xM67bhgbPRkwO3OZZKRZ_ITmk-ZGtCmmNKitzuoLx0k7PUePzSpxtm-ES19RIJURuEDvyR5SeI3AIjm5-M1QmPR0yuCtW4UumKxdrkOlWQeyOisBRNF22IY0HaWHi4zE_K3nRz24HvGur7pMBhzm1U7EzT-Op6RUsIy7KoYr0dWWGlnkL",
               },
             ].map((story, i) => (
               <div
@@ -1455,12 +1452,10 @@ export default function LandingPage() {
                   </p>
                 </div>
                 <div className="flex items-center gap-5">
-                  <div className="w-14 h-14 rounded-full bg-slate-200 overflow-hidden">
-                    <img
-                      alt={story.name}
-                      src={story.img}
-                      className="w-full h-full object-cover"
-                      referrerPolicy="no-referrer"
+                  <div className="w-14 h-14 rounded-full bg-slate-200 overflow-hidden flex items-center justify-center">
+                    <User
+                      aria-label={story.name}
+                      className="w-8 h-8 text-slate-400"
                     />
                   </div>
                   <div>
