@@ -929,7 +929,6 @@ export default function LandingPage() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="hidden lg:block flex-1 h-[520px] xl:h-[580px] relative"
-            style={{ filter: "drop-shadow(0 0 80px rgba(103,15,197,0.4))" }}
           >
             <GlobeHero />
           </motion.div>

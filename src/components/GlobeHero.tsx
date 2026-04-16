@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { motion } from 'motion/react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import Globe from 'react-globe.gl';
 
 const ARCS = [
@@ -24,12 +24,32 @@ const CITIES = [
   { lat: 1.3521,   lng: 103.8198, name: 'Singapore',    network: 'PayNow' },
 ];
 
+// SEA country names in the ne_110m dataset
+const SEA = new Set([
+  'Thailand', 'Singapore', 'Malaysia', 'Indonesia',
+  'Vietnam', 'Viet Nam', 'Philippines', 'Cambodia',
+  'Myanmar', 'Laos', 'Lao PDR', 'Brunei',
+]);
+
 export default function GlobeHero() {
   const globeRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ w: 600, h: 600 });
-  const [activeArc, setActiveArc] = useState(0);
+  const [countries, setCountries] = useState<any>({ features: [] });
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [ready, setReady] = useState(false);
 
+  // Load countries GeoJSON for holographic hex-polygon globe
+  useEffect(() => {
+    fetch(
+      'https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson'
+    )
+      .then(r => r.json())
+      .then(setCountries)
+      .catch(() => {});
+  }, []);
+
+  // Responsive sizing
   useEffect(() => {
     const update = () => {
       if (containerRef.current) {
@@ -44,92 +64,112 @@ export default function GlobeHero() {
     return () => window.removeEventListener('resize', update);
   }, []);
 
-  useEffect(() => {
+  // Globe init — match sphere color to page bg so edges dissolve into background
+  const handleGlobeReady = useCallback(() => {
     if (!globeRef.current) return;
-    globeRef.current.controls().autoRotate = true;
-    globeRef.current.controls().autoRotateSpeed = 0.15; // cinematic slow drift
-    globeRef.current.controls().enableZoom = false;
+    const ctrl = globeRef.current.controls();
+    ctrl.autoRotate = true;
+    ctrl.autoRotateSpeed = 0.15;
+    ctrl.enableZoom = false;
     globeRef.current.pointOfView({ lat: 5, lng: 112, altitude: 0.4 }, 0);
+
+    // Page bg ends near #06020F — match sphere so the circular edge disappears
+    const mat = globeRef.current.globeMaterial();
+    mat.color.setHex(0x04000e);
+    mat.emissive.setHex(0x0d0025);
+    mat.emissiveIntensity = 0.3;
+
+    setReady(true);
   }, []);
 
+  // Cycle active city for status badge
   useEffect(() => {
-    const timer = setInterval(() => setActiveArc(p => (p + 1) % ARCS.length), 2400);
+    const timer = setInterval(() => setActiveIdx(p => (p + 1) % CITIES.length), 2200);
     return () => clearInterval(timer);
   }, []);
 
-  const arc = ARCS[activeArc];
+  const hexColor = useCallback((feat: any) => {
+    const name: string = feat?.properties?.NAME ?? feat?.properties?.NAME_EN ?? '';
+    return SEA.has(name)
+      ? 'rgba(139,92,246,0.45)'  // SEA countries — visible purple
+      : 'rgba(50,15,90,0.08)';   // rest of world — barely visible
+  }, []);
 
   return (
     <div ref={containerRef} className="relative w-full h-full">
-      <Globe
-        ref={globeRef}
-        width={size.w}
-        height={size.h}
-        backgroundColor="rgba(0,0,0,0)"
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-        atmosphereColor="#2e1065"
-        atmosphereAltitude={0.1}
-
-        // Payment flow arcs
-        arcsData={ARCS}
-        arcStartLat={(d: any) => d.startLat}
-        arcStartLng={(d: any) => d.startLng}
-        arcEndLat={(d: any) => d.endLat}
-        arcEndLng={(d: any) => d.endLng}
-        arcColor={() => ['rgba(103,15,197,0)', 'rgba(216,180,254,0.85)', 'rgba(103,15,197,0)']}
-        arcAltitude={0.12}
-        arcStroke={0.65}
-        arcDashLength={0.55}
-        arcDashGap={0.1}
-        arcDashAnimateTime={2000}
-
-        // Bright city dots
-        pointsData={CITIES}
-        pointLat={(d: any) => d.lat}
-        pointLng={(d: any) => d.lng}
-        pointColor={() => '#e9d5ff'}
-        pointAltitude={0.015}
-        pointRadius={0.55}
-        pointsMerge={false}
-
-        // Radar-pulse rings — only the supported city areas pulse
-        ringsData={CITIES}
-        ringLat={(d: any) => d.lat}
-        ringLng={(d: any) => d.lng}
-        ringColor={() => (t: number) => `rgba(168,85,247,${Math.max(0, 1 - t * 1.4)})`}
-        ringMaxRadius={3.5}
-        ringPropagationSpeed={2.5}
-        ringRepeatPeriod={1300}
-
-        // City name labels
-        labelsData={CITIES}
-        labelLat={(d: any) => d.lat}
-        labelLng={(d: any) => d.lng}
-        labelText={(d: any) => d.name}
-        labelSize={0.55}
-        labelColor={() => 'rgba(255,255,255,0.88)'}
-        labelDotRadius={0.3}
-        labelAltitude={0.018}
-      />
-
-      {/* Active route pill */}
-      <motion.div
-        key={activeArc}
-        initial={{ opacity: 0, y: 6 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.35 }}
-        className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-black/40 backdrop-blur-xl border border-white/15 rounded-2xl px-5 py-3 text-center whitespace-nowrap"
+      {/* Fade in only after material is applied — prevents white-sphere flash */}
+      <div
+        className="transition-opacity duration-700"
+        style={{ opacity: ready ? 1 : 0 }}
       >
-        <p className="text-[9px] text-white/40 font-black uppercase tracking-[0.2em] mb-0.5">
-          Live Transfer
-        </p>
-        <p className="text-sm font-black text-white/90">{arc.label}</p>
-        <p className="text-[10px] text-purple-400 font-semibold mt-0.5 tracking-wide">
-          Zero markup · Instant
-        </p>
-      </motion.div>
+        <Globe
+          ref={globeRef}
+          width={size.w}
+          height={size.h}
+          backgroundColor="rgba(0,0,0,0)"
+          globeImageUrl=""
+          showAtmosphere
+          atmosphereColor="#1a0838"   // matches page bg purple — edge bleeds into bg
+          atmosphereAltitude={0.1}
+          onGlobeReady={handleGlobeReady}
+
+          // Holographic hex-polygon country grid
+          hexPolygonsData={countries.features}
+          hexPolygonResolution={3}
+          hexPolygonMargin={0.65}
+          hexPolygonColor={hexColor}
+
+          // Payment flow arcs
+          arcsData={ARCS}
+          arcStartLat={(d: any) => d.startLat}
+          arcStartLng={(d: any) => d.startLng}
+          arcEndLat={(d: any) => d.endLat}
+          arcEndLng={(d: any) => d.endLng}
+          arcColor={() => ['rgba(139,92,246,0)', 'rgba(232,210,255,0.95)', 'rgba(139,92,246,0)']}
+          arcAltitude={0.12}
+          arcStroke={1.1}
+          arcDashLength={0.35}
+          arcDashGap={0.05}
+          arcDashAnimateTime={1600}
+
+          // City dots
+          pointsData={CITIES}
+          pointLat={(d: any) => d.lat}
+          pointLng={(d: any) => d.lng}
+          pointColor={() => '#e9d5ff'}
+          pointAltitude={0.02}
+          pointRadius={0.65}
+          pointsMerge={false}
+
+          // Radar-pulse rings
+          ringsData={CITIES}
+          ringLat={(d: any) => d.lat}
+          ringLng={(d: any) => d.lng}
+          ringColor={() => (t: number) => `rgba(167,139,250,${Math.max(0, 0.75 * (1 - t * 1.2))})`}
+          ringMaxRadius={4.5}
+          ringPropagationSpeed={2.8}
+          ringRepeatPeriod={1200}
+        />
+      </div>
+
+      {/* Network status badge */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeIdx}
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -6 }}
+          transition={{ duration: 0.3 }}
+          className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-white/5 backdrop-blur-xl border border-violet-500/20 rounded-2xl px-4 py-2.5 whitespace-nowrap"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse shrink-0" />
+          <span className="text-xs font-bold text-violet-300 uppercase tracking-widest">
+            {CITIES[activeIdx].network}
+          </span>
+          <span className="w-px h-3 bg-white/15" />
+          <span className="text-sm font-semibold text-white">{CITIES[activeIdx].name}</span>
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 }
