@@ -8,8 +8,8 @@ import { Calendar, User } from 'lucide-react';
 
 const POSTS = [
   { id: 1, key: 'future', author: 'Pierre Lahbabi', categoryKey: 'fintech', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png' },
-  { id: 2, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
-  { id: 3, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'company', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
+  { id: 2, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'company', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
+  { id: 3, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
 ] as const;
 
 export default function BlogPage() {

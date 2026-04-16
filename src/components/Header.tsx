@@ -63,10 +63,7 @@ export default function Header() {
       >
         {t("header.faq")}
       </Link>
-      {/* TO RE-ENABLE BLOG: Replace the span below with: <Link to="/blog" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">Blogs</Link> */}
-      <span onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case cursor-pointer">
-        Blogs
-      </span>
+      <Link to="/blog" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">Blogs</Link>
     </>
   );
 

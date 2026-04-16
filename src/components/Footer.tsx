@@ -22,8 +22,7 @@ export default function Footer() {
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to="/team" className="hover:text-primary transition-colors">{t('footer.aboutUs')}</Link></li>
             <li><Link to="/team#careers" className="hover:text-primary transition-colors">{t('footer.careers')}</Link></li>
-            {/* TO RE-ENABLE BLOG: Replace the span below with: <Link to="/blog" className="hover:text-primary transition-colors">{t('footer.blog')}</Link> */}
-            <li><span className="hover:text-primary transition-colors cursor-pointer">{t('footer.blog')}</span></li>
+            <li><Link to="/blog" className="hover:text-primary transition-colors">{t('footer.blog')}</Link></li>
           </ul>
         </div>
 

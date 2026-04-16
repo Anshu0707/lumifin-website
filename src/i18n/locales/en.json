@@ -262,18 +262,18 @@
     },
     "posts": {
       "future": {
-        "title": "The Future of Payments in South East Asia",
-        "excerpt": "How QR codes are revolutionizing the way travelers spend money across the region.",
+        "title": "Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia",
+        "excerpt": "Everyone told me to bring cash. Here's what they didn't tell me.",
         "date": "March 28, 2026"
       },
       "bangkok": {
-        "title": "5 Hidden Gems in Bangkok You Can Pay for with Lumi",
-        "excerpt": "From secret street food stalls to boutique galleries, discover the best of Bangkok.",
+        "title": "Why We Built Lumi — and the two moments I can't stop thinking about",
+        "excerpt": "This isn't a polished origin story. It's just what actually happened.",
         "date": "March 20, 2026"
       },
       "founder": {
-        "title": "Why We Built Lumi: A Founder's Story",
-        "excerpt": "The personal experiences that led us to create a borderless payment solution.",
+        "title": "QRIS Decoded: Indonesia's Standardized QR Payment System and What It Means for European Travelers",
+        "excerpt": "With over 56 million merchants and 6 billion transactions, QRIS is how Indonesia pays. And as a European visitor, you're currently locked out of it.",
         "date": "March 15, 2026"
       }
     }
