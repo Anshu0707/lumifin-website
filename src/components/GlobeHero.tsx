@@ -52,7 +52,7 @@ export default function GlobeHero() {
     const controls = globeRef.current.controls();
     controls.autoRotate = false;
     controls.enableZoom = false;
-    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.44 }, 0);
+    globeRef.current.pointOfView({ lat: 10, lng: 95, altitude: 1.22 }, 0); // +15% zoom
 
     let frame: number;
     let globeGroup: any = null;
