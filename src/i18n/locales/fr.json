@@ -13,6 +13,8 @@
     "services": "Services",
     "aboutUs": "À propos",
     "faq": "FAQ",
+    "blogs": "Blogs",
+    "workWithUs": "Nous rejoindre",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu"
   },
@@ -229,6 +231,7 @@
     "careersTitle": "Envie de rejoindre l'aventure ?",
     "careersBody": "Nous recherchons en permanence des talents qui partagent notre passion pour le voyage et l'innovation financière.",
     "apply": "Postuler",
+    "seeOpenPositions": "Voir les postes ouverts",
     "roles": {
       "ceo": "Directeur général",
       "coo": "Directeur des opérations",
@@ -543,6 +546,89 @@
       "blockquote3": "Si la réponse est non, nous n'avons pas encore fini.",
       "p24": "Si vous avez déjà été bloqué du mauvais côté d'un paiement cassé — en tant que client ou vendeur — j'aimerais vraiment en entendre parler.",
       "closing": "— Fondateur de Lumi"
+    }
+  },
+  "careers": {
+    "eyebrow": "Carrières",
+    "title": "Rejoignez",
+    "titleHighlight": "l'équipe",
+    "subtitle": "Rejoignez une fintech en phase de démarrage qui réinvente la façon dont l'argent circule entre l'Europe et l'Asie.",
+    "badgeRemote": "Télétravail",
+    "badgeFrance": "France",
+    "allRemote": "Tous les postes sont en télétravail et ouverts aux candidats basés en France.",
+    "reachOut": "Aucun poste ne vous correspond ? Contactez-nous quand même — nous serions ravis d'échanger avec vous.",
+    "applyNow": "Postuler",
+    "jobs": {
+      "internship": {
+        "title": "Stage — Associé(e) du Fondateur",
+        "tagline": "Rejoignez l'équipe fondatrice et contribuez à façonner l'avenir des paiements transfrontaliers dès le premier jour.",
+        "type": "Stage",
+        "location": "Télétravail — France",
+        "sections": {
+          "aboutLumifin": "À propos de Lumifin",
+          "aboutLumifinContent": "Lumifin est une fintech en phase de démarrage qui vise à réinventer les paiements transfrontaliers entre l'Europe et l'Asie. Fondée par un diplômé de l'École Polytechnique avec une vaste expérience en finance, technologie et opérations internationales, l'entreprise construit un service qui rend les transferts internationaux aussi simples et transparents qu'un paiement local. Notre approche combine des rails de paiement blockchain, des stablecoins réglementés, et une forte attention à l'expérience utilisateur et à la conformité réglementaire.",
+          "theRole": "Le poste",
+          "theRoleContent": "Nous opérons à l'intersection de l'infrastructure financière, des opérations internationales et du design de produits numériques. Rejoindre Lumifin, c'est entrer dans un environnement dynamique où les décisions sont prises rapidement, les problèmes sont abordés de front, et chaque membre de l'équipe a un impact réel. En tant qu'Associé(e) du Fondateur, vous travaillerez directement avec le fondateur sur la stratégie, les opérations, le produit et la croissance.",
+          "whatYoullDo": "Ce que vous ferez",
+          "whatYoullDoItems": [
+            "Mener des études de marché et des analyses concurrentielles pour identifier les opportunités dans les paiements transfrontaliers",
+            "Soutenir le développement et l'exécution de stratégies de mise sur le marché en Europe et en Asie du Sud-Est",
+            "Contribuer à la construction de partenariats avec des commerçants locaux, des fournisseurs de paiement et des canaux de distribution",
+            "Contribuer au développement produit en recueillant les retours utilisateurs et en les traduisant en insights actionnables",
+            "Assister dans les relations investisseurs, les pitch decks et la préparation des levées de fonds",
+            "Prendre en charge des projets opérationnels clés — de la recherche réglementaire aux workflows d'onboarding"
+          ],
+          "whatWereLookingFor": "Ce que nous recherchons",
+          "whatWereLookingForItems": [
+            "Actuellement inscrit(e) ou récemment diplômé(e) d'une université de premier plan (commerce, ingénierie ou domaine connexe)",
+            "Solides compétences analytiques et en résolution de problèmes avec un biais pour l'action",
+            "Intérêt sincère pour la fintech, les paiements ou les marchés émergents",
+            "À l'aise dans un environnement rapide et ambigu avec peu de structure",
+            "Excellentes compétences en communication en anglais (le français est un plus)",
+            "Mentalité d'auto-entrepreneur — vous n'attendez pas qu'on vous dise quoi faire"
+          ],
+          "whyJoinUs": "Pourquoi nous rejoindre",
+          "whyJoinUsContent": "Ce n'est pas un stage classique où vous observez quelqu'un ou gérez des tâches administratives. Vous serez intégré(e) à l'équipe fondatrice, travaillant sur des problèmes qui façonnent directement la trajectoire de l'entreprise. Vous acquerrez une expérience directe dans la construction d'une fintech de zéro — du produit et de la stratégie à la levée de fonds et aux opérations. Si vous cherchez de vraies responsabilités et la chance d'avoir un impact tangible tôt dans votre carrière, c'est ici."
+        }
+      },
+      "gtm": {
+        "title": "Expert Go-to-Market (GTM)",
+        "tagline": "Dirigez notre stratégie de lancement et pilotez l'acquisition d'utilisateurs en Europe et en Asie du Sud-Est.",
+        "type": "Flexible (conseil, rôle opérationnel, co-fondateur potentiel)",
+        "location": "Télétravail — France",
+        "sections": {
+          "aboutProduct": "Le produit",
+          "aboutProductContent": "Notre solution est un service de paiement conçu pour les voyageurs européens en Asie du Sud-Est. Il leur permet d'effectuer des paiements à moindre coût en utilisant les systèmes de paiement par QR code locaux largement adoptés dans la région. Avec Lumifin, les voyageurs peuvent payer comme les locaux, en utilisant uniquement leur téléphone — sans espèces, sans carte — chez n'importe quel commerçant, et à un coût nettement inférieur aux alternatives existantes.",
+          "targetSegments": "Segments cibles",
+          "targetSegmentsItems": [
+            "Étudiants",
+            "Expatriés",
+            "Nomades numériques",
+            "Retraités",
+            "Personnes rendant visite à leur famille ou amis dans la région",
+            "Voyageurs avec des liens personnels ou professionnels continus"
+          ],
+          "userExperience": "Expérience utilisateur",
+          "userExperienceContent": "Ils téléchargent l'application, créent un compte, vérifient leur identité et rechargent un portefeuille via leur banque. Ils peuvent ensuite effectuer des paiements instantanément en scannant les QR codes locaux en Thaïlande, au Vietnam, en Indonésie, avec d'autres pays à suivre.",
+          "yourRole": "Votre rôle",
+          "yourRoleItems": [
+            "Challenger et affiner notre stratégie Go-to-Market",
+            "Exécuter le plan pour stimuler l'acquisition d'utilisateurs",
+            "Orchestrer plusieurs canaux d'acquisition : marketing en ligne, activation hors ligne et partenariats",
+            "Mettre en valeur les avantages du service sur les points de contact pertinents qui touchent les voyageurs fréquents",
+            "Soutenir les initiatives promotionnelles avec les commerçants locaux en Europe (pré-départ) et en Asie du Sud-Est (sur le terrain)"
+          ],
+          "whatWereLookingFor": "Ce que nous recherchons",
+          "whatWereLookingForItems": [
+            "Expérience pratique dans le lancement de produits grand public en environnement start-up",
+            "Un solide bilan dans la construction et la mise à l'échelle d'une base d'utilisateurs importante",
+            "La capacité d'apporter les meilleures pratiques, des insights sur ce qui fonctionne (et ce qui ne fonctionne pas)",
+            "Une discipline d'exécution rigoureuse à toutes les étapes du processus GTM"
+          ],
+          "collaboration": "Collaboration",
+          "collaborationContent": "Les modalités de collaboration sont flexibles (conseil, rôle opérationnel, co-fondateur potentiel, etc.) et peuvent être adaptées aux préférences et à la disponibilité de la personne. Nous sommes particulièrement intéressés par des profils capables d'apporter structure, excellence d'exécution et expérience pratique pour nous aider à évoluer efficacement et avec succès."
+        }
+      }
     }
   }
 }

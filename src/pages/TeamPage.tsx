@@ -133,7 +133,7 @@ export default function TeamPage() {
               {t('team.apply')}
             </a>
             <Link to="/careers" className="inline-block text-slate-400 hover:text-white font-bold text-sm tracking-widest uppercase transition-colors">
-              See Open Positions &rarr;
+              {t('team.seeOpenPositions')} &rarr;
             </Link>
           </div>
         </motion.section>
