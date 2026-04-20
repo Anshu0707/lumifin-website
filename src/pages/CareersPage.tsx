@@ -178,6 +178,12 @@ export default function CareersPage() {
         >
           <p>All positions are remote and open to candidates based in France.</p>
           <p className="mt-1">Don't see a role that fits? Reach out anyway — we'd love to hear from you.</p>
+          <a
+            href="mailto:careers@lumifin.io"
+            className="inline-block mt-4 text-primary hover:text-primary/80 font-bold text-sm tracking-widest uppercase transition-colors"
+          >
+            careers@lumifin.io &rarr;
+          </a>
         </motion.div>
       </main>
 
