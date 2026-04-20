@@ -63,7 +63,12 @@ export default function Header() {
       >
         {t("header.faq")}
       </Link>
-      <Link to="/blog" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">Blogs</Link>
+      <Link to="/blog" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">
+        Blogs
+      </Link>
+      <Link to="/careers" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">
+        Work With Us
+      </Link>
     </>
   );
 

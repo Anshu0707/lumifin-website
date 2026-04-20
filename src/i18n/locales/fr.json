@@ -256,9 +256,12 @@
     "emailPlaceholder": "Votre adresse e-mail",
     "subscribe": "S'abonner",
     "categories": {
+      "all": "Tous",
       "fintech": "Fintech",
       "travel": "Voyage",
-      "company": "Entreprise"
+      "company": "Entreprise",
+      "purpose": "Notre Mission",
+      "payments": "Paiements"
     },
     "posts": {
       "future": {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -6,14 +6,21 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Calendar, User } from 'lucide-react';
 
+const categories = ["all", "travel", "purpose", "payments"] as const;
+
 const POSTS = [
-  { id: 1, key: 'future', author: 'Pierre Lahbabi', categoryKey: 'fintech', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png' },
-  { id: 2, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'company', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
-  { id: 3, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
+  { id: 1, key: 'future', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png' },
+  { id: 2, key: 'founder', author: 'Gaurav Bansal', categoryKey: 'purpose', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
+  { id: 3, key: 'bangkok', author: 'Tanvi Nag', categoryKey: 'payments', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
 ] as const;
 
 export default function BlogPage() {
   const { t } = useTranslation();
+  const [activeCategory, setActiveCategory] = useState<string>("all");
+
+  const filteredPosts = activeCategory === "all"
+    ? POSTS
+    : POSTS.filter((p) => p.categoryKey === activeCategory);
 
   return (
     <div className="min-h-screen bg-white">
@@ -24,7 +31,7 @@ export default function BlogPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center space-y-6 mb-24"
+          className="text-center space-y-6 mb-16"
         >
           <span className="text-primary font-bold text-xs tracking-widest uppercase">{t('blog.eyebrow')}</span>
           <h1 className="text-7xl font-black tracking-tighter text-slate-900 leading-[0.9]">
@@ -35,8 +42,29 @@ export default function BlogPage() {
           </p>
         </motion.div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="flex justify-center gap-3 mb-16"
+        >
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-6 py-2.5 rounded-full text-xs font-black tracking-widest uppercase transition-all ${
+                activeCategory === cat
+                  ? "hero-gradient text-white shadow-lg shadow-primary/20"
+                  : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+              }`}
+            >
+              {t(`blog.categories.${cat}`)}
+            </button>
+          ))}
+        </motion.div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-          {POSTS.map((post, index) => (
+          {filteredPosts.map((post, index) => (
             <motion.article
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
@@ -95,7 +123,7 @@ export default function BlogPage() {
           <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">
             {t('blog.newsletterBody')}
           </p>
-          <div className="max-w-md mx-auto flex gap-4">
+          <div className="max-w-md mx-auto flex flex-col md:flex-row gap-4">
             <input
               type="email"
               placeholder={t('blog.emailPlaceholder')}

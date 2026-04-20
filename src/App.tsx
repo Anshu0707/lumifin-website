@@ -13,6 +13,7 @@ import BlogPage from './pages/BlogPage';
 import WhyWeBuiltLumiPage from './pages/WhyWeBuiltLumiPage';
 import CashIsKingPage from './pages/CashIsKingPage';
 import QrisDecodedPage from './pages/QrisDecodedPage';
+import CareersPage from './pages/CareersPage';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
 
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
         <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
         <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
+        <Route path="/careers" element={<CareersPage />} />
         {/* Fallback for other routes mentioned in footer */}
         <Route path="*" element={<LandingPage />} />
       </Routes>
