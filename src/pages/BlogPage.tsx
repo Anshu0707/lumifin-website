@@ -11,7 +11,7 @@ const categories = ["all", "travel", "purpose", "payments"] as const;
 const POSTS = [
   { id: 1, key: 'future', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png' },
   { id: 2, key: 'bangkok', author: 'Gaurav Bansal', categoryKey: 'purpose', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png' },
-  { id: 3, key: 'founder', author: 'Tanvi Nag', categoryKey: 'payments', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
+  { id: 3, key: 'founder', author: 'Pierre Lahbabi', categoryKey: 'payments', href: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png' },
 ] as const;
 
 export default function BlogPage() {
