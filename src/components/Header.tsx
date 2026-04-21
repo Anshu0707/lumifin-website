@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MoreHorizontal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import Logo from "./Logo";
 import LanguageToggle from "./LanguageToggle";
@@ -9,10 +9,13 @@ export default function Header() {
   const location = useLocation();
   const isHome = location.pathname === "/";
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
   const scrollToSection = (id: string) => {
     setMobileOpen(false);
+    setMoreOpen(false);
     if (isHome) {
       const element = document.getElementById(id);
       if (element) {
@@ -23,7 +26,18 @@ export default function Header() {
     }
   };
 
-  const navItems = (
+  // Close "more" dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (moreRef.current && !moreRef.current.contains(e.target as Node)) {
+        setMoreOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const primaryNav = (
     <>
       <button
         onClick={() => scrollToSection("destinations")}
@@ -35,38 +49,45 @@ export default function Header() {
         onClick={() => scrollToSection("journey")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        {t("header.userJourney")}
+        {t("header.howItWorks")}
       </button>
       <button
         onClick={() => scrollToSection("fees")}
         className="hover:text-primary transition-colors cursor-pointer"
       >
-        {t("header.feeTransparency")}
-      </button>
-      <button
-        onClick={() => scrollToSection("services")}
-        className="hover:text-primary transition-colors cursor-pointer"
-      >
-        {t("header.services")}
+        {t("header.pricing")}
       </button>
       <Link
         to="/team"
         onClick={() => setMobileOpen(false)}
         className="hover:text-primary transition-colors normal-case"
       >
-        {t("header.aboutUs")}
+        {t("header.about")}
       </Link>
+    </>
+  );
+
+  const secondaryNav = (
+    <>
       <Link
         to="/faq"
-        onClick={() => setMobileOpen(false)}
+        onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
         className="hover:text-primary transition-colors"
       >
         {t("header.faq")}
       </Link>
-      <Link to="/blog" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">
+      <Link
+        to="/blog"
+        onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
+        className="hover:text-primary transition-colors normal-case"
+      >
         {t("header.blogs")}
       </Link>
-      <Link to="/careers" onClick={() => setMobileOpen(false)} className="hover:text-primary transition-colors normal-case">
+      <Link
+        to="/careers"
+        onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
+        className="hover:text-primary transition-colors normal-case"
+      >
         {t("header.workWithUs")}
       </Link>
     </>
@@ -79,7 +100,24 @@ export default function Header() {
           <Logo className="w-40 max-h-16" />
         </Link>
         <div className="hidden lg:flex items-center gap-10 text-[12px] font-bold tracking-widest uppercase text-slate-500">
-          {navItems}
+          {primaryNav}
+
+          {/* More dropdown for secondary nav */}
+          <div ref={moreRef} className="relative">
+            <button
+              onClick={() => setMoreOpen(!moreOpen)}
+              className="hover:text-primary transition-colors cursor-pointer flex items-center gap-1"
+              aria-label="More"
+            >
+              <MoreHorizontal className="w-5 h-5" />
+            </button>
+            {moreOpen && (
+              <div className="absolute right-0 top-full mt-3 bg-white/95 backdrop-blur-xl border border-slate-100 rounded-2xl shadow-xl py-4 px-6 flex flex-col gap-4 min-w-[180px] text-[12px] font-bold tracking-widest uppercase text-slate-500">
+                {secondaryNav}
+              </div>
+            )}
+          </div>
+
           <LanguageToggle />
         </div>
         <div className="flex items-center gap-4 lg:hidden">
@@ -99,7 +137,8 @@ export default function Header() {
       </nav>
       {mobileOpen && (
         <div className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-slate-100 px-8 py-6 flex flex-col items-center gap-5 text-[12px] font-bold tracking-widest uppercase text-slate-500">
-          {navItems}
+          {primaryNav}
+          {secondaryNav}
         </div>
       )}
     </header>

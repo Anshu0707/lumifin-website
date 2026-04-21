@@ -8,6 +8,9 @@
   },
   "header": {
     "destinations": "Destinations",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "about": "À propos",
     "userJourney": "Parcours utilisateur",
     "feeTransparency": "Transparence des frais",
     "services": "Services",
