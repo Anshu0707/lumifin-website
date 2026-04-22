@@ -16,11 +16,11 @@ export default function QrisDecodedPage() {
         title="QRIS Decoded — Indonesia's QR Payment System for European Travelers"
         description="56 million merchants, 6 billion transactions — QRIS is how Indonesia pays. Here's why European tourists are locked out, and what's changing."
         canonical="/blog/qris-decoded"
-        ogImage="/assets/blog/qris-decoded-cover.png"
+        ogImage="/assets/blog/qris-decoded-cover.webp"
         ogType="article"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'QRIS Decoded', url: '/blog/qris-decoded' }]),
-          articleSchema({ title: 'QRIS Decoded: Indonesia\'s Standardized QR Payment System', description: 'What QRIS means for European travelers in Indonesia.', url: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png', author: 'Pierre Lahbabi', datePublished: '2026-03-10' }),
+          articleSchema({ title: 'QRIS Decoded: Indonesia\'s Standardized QR Payment System', description: 'What QRIS means for European travelers in Indonesia.', url: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.webp', author: 'Pierre Lahbabi', datePublished: '2026-03-10' }),
         ]}
       />
       <Header />
@@ -65,8 +65,11 @@ export default function QrisDecodedPage() {
 
             <div className="mt-10 rounded-3xl overflow-hidden">
               <img
-                src="/assets/blog/qris-decoded-cover.png"
+                src="/assets/blog/qris-decoded-cover.webp"
                 alt={t('blogPosts.qrisDecoded.imgAlt')}
+                loading="lazy"
+                width={1600}
+                height={900}
                 className="w-full h-auto object-cover"
               />
             </div>

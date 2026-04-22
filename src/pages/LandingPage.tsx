@@ -85,7 +85,7 @@ export default function LandingPage() {
       icon: <Wallet className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/assets/screens/Add Funds Cropped.jpg"
+          src="/assets/screens/Add Funds Cropped.webp"
           alt={t("journey.steps.1.alt")}
           className="w-full h-full object-cover scale-[0.90]"
         />
@@ -806,7 +806,7 @@ export default function LandingPage() {
       icon: <CheckCircle2 className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/assets/screens/QR Scan 1.2.png"
+          src="/assets/screens/QR Scan 1.2.webp"
           alt={t("journey.steps.3.alt")}
           className="w-full h-full object-cover scale-[0.92]"
         />
@@ -819,7 +819,7 @@ export default function LandingPage() {
       icon: <Check className="text-primary w-12 h-12" />,
       mockup: (
         <img
-          src="/assets/screens/QR Scan 1.5 1.png"
+          src="/assets/screens/QR Scan 1.5 1.webp"
           alt={t("journey.steps.4.alt")}
           className="w-full h-full object-contain scale-[1.14]"
         />
@@ -1382,12 +1382,12 @@ export default function LandingPage() {
               {
                 title: t("services.items.tours.title"),
                 desc: t("services.items.tours.desc"),
-                img: "/assets/places/Daily Tours.png",
+                img: "/assets/places/Daily Tours.webp",
               },
               {
                 title: t("services.items.restaurants.title"),
                 desc: t("services.items.restaurants.desc"),
-                img: "/assets/places/Restaurant.png",
+                img: "/assets/places/Restaurant.webp",
               },
             ].map((service, i) => (
               <div

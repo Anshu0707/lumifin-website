@@ -11,21 +11,21 @@ const team = [
   {
     name: "Pierre Lahbabi",
     roleKey: "ceo",
-    img: "/assets/team/PIERRE.png",
+    img: "/assets/team/PIERRE.webp",
     objectPosition: "center 20%",
     linkedin: "https://www.linkedin.com/in/pierre-lahbabi/"
   },
   {
     name: "Gaurav Bansal",
     roleKey: "coo",
-    img: "/assets/team/GAURAV.png",
+    img: "/assets/team/GAURAV.webp",
     objectPosition: "center 15%",
     linkedin: "https://www.linkedin.com/in/gaurav-b-52728b11/"
   },
   {
     name: "Kinshuk Kukreti",
     roleKey: "cto",
-    img: "/assets/team/KINSHUK.png",
+    img: "/assets/team/KINSHUK.webp",
     objectPosition: "center 15%",
     linkedin: "https://www.linkedin.com/in/kinshuk-k-1269a999/"
   },
@@ -39,14 +39,14 @@ const team = [
   {
     name: "Subhrat Tripathi",
     roleKey: "productManager",
-    img: "/assets/team/SHUBRAT.png",
+    img: "/assets/team/SHUBRAT.webp",
     objectPosition: "center 25%",
     linkedin: "https://www.linkedin.com/in/subhrattripathi071/"
   },
   {
     name: "Tanvi Nag",
     roleKey: "productAnalyst",
-    img: "/assets/team/Tanvi-2.png",
+    img: "/assets/team/Tanvi-2.webp",
     objectPosition: "center 10%",
     scale: "",
     linkedin: "https://www.linkedin.com/in/tanvinag28/"
@@ -54,14 +54,14 @@ const team = [
   {
     name: "Muskan Chawla",
     roleKey: "softwareEngineer",
-    img: "/assets/team/MUSKAN.png",
+    img: "/assets/team/MUSKAN.webp",
     objectPosition: "center 30%",
     linkedin: "https://www.linkedin.com/in/muskan115/"
   },
   {
     name: "Anshuman Naithani",
     roleKey: "softwareEngineer",
-    img: "/assets/team/ANSHUMAN.png",
+    img: "/assets/team/ANSHUMAN.webp",
     objectPosition: "center 30%",
     linkedin: "https://www.linkedin.com/in/anshuman-naithani/"
   }
@@ -108,6 +108,9 @@ export default function TeamPage() {
                 <img
                   src={member.img}
                   alt={member.name}
+                  loading="lazy"
+                  width={400}
+                  height={400}
                   style={{ objectPosition: member.objectPosition }}
                   className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${('scale' in member && member.scale) || ''}`}
                   referrerPolicy="no-referrer"

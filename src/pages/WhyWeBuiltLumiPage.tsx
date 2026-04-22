@@ -16,11 +16,11 @@ export default function WhyWeBuiltLumiPage() {
         title="Why We Built Lumi — A Founder's Story"
         description="The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumifin."
         canonical="/blog/why-we-built-lumi"
-        ogImage="/assets/blog/why-we-built-lumi-cover.png"
+        ogImage="/assets/blog/why-we-built-lumi-cover.webp"
         ogType="article"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'Why We Built Lumi', url: '/blog/why-we-built-lumi' }]),
-          articleSchema({ title: 'Why We Built Lumi — A Founder\'s Story', description: 'The personal experiences that led to building a borderless payment solution.', url: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png', author: 'Gaurav Bansal', datePublished: '2026-03-15' }),
+          articleSchema({ title: 'Why We Built Lumi — A Founder\'s Story', description: 'The personal experiences that led to building a borderless payment solution.', url: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.webp', author: 'Gaurav Bansal', datePublished: '2026-03-15' }),
         ]}
       />
       <Header />
@@ -65,8 +65,11 @@ export default function WhyWeBuiltLumiPage() {
 
             <div className="mt-10 rounded-3xl overflow-hidden">
               <img
-                src="/assets/blog/why-we-built-lumi-cover.png"
+                src="/assets/blog/why-we-built-lumi-cover.webp"
                 alt={t('blogPosts.whyWeBuiltLumi.imgAlt')}
+                loading="lazy"
+                width={1600}
+                height={900}
                 className="w-full h-auto object-cover"
               />
             </div>

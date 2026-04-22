@@ -3,38 +3,44 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import FAQPage from './pages/FAQPage';
-import TeamPage from './pages/TeamPage';
-import PrivacyPage from './pages/PrivacyPage';
-import BlogPage from './pages/BlogPage';
-import WhyWeBuiltLumiPage from './pages/WhyWeBuiltLumiPage';
-import CashIsKingPage from './pages/CashIsKingPage';
-import QrisDecodedPage from './pages/QrisDecodedPage';
-import CareersPage from './pages/CareersPage';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
+
+// Eager-load the landing page (critical path)
+import LandingPage from './pages/LandingPage';
+
+// Lazy-load all other pages for code splitting
+const FAQPage = lazy(() => import('./pages/FAQPage'));
+const TeamPage = lazy(() => import('./pages/TeamPage'));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const WhyWeBuiltLumiPage = lazy(() => import('./pages/WhyWeBuiltLumiPage'));
+const CashIsKingPage = lazy(() => import('./pages/CashIsKingPage'));
+const QrisDecodedPage = lazy(() => import('./pages/QrisDecodedPage'));
+const CareersPage = lazy(() => import('./pages/CareersPage'));
 
 export default function App() {
   return (
     <Router>
       <ScrollToTop />
       <ScrollProgress />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/faq" element={<FAQPage />} />
-        <Route path="/team" element={<TeamPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
-        <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
-        <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
-        <Route path="/careers" element={<CareersPage />} />
-        {/* Fallback for other routes mentioned in footer */}
-        <Route path="*" element={<LandingPage />} />
-      </Routes>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
+          <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
+          <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          {/* Fallback for other routes mentioned in footer */}
+          <Route path="*" element={<LandingPage />} />
+        </Routes>
+      </Suspense>
     </Router>
   );
 }

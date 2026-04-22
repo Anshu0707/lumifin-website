@@ -16,11 +16,11 @@ export default function CashIsKingPage() {
         title="Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia"
         description="Exchange rate traps, ATM fees, pickpocketing risks — the hidden costs of carrying cash in Southeast Asia that nobody warns you about."
         canonical="/blog/cash-is-king"
-        ogImage="/assets/blog/cash-is-king-cover.png"
+        ogImage="/assets/blog/cash-is-king-cover.webp"
         ogType="article"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'Cash Is King?', url: '/blog/cash-is-king' }]),
-          articleSchema({ title: 'Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia', description: 'The hidden costs of carrying cash in Southeast Asia.', url: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png', author: 'Tanvi Nag', datePublished: '2026-03-20' }),
+          articleSchema({ title: 'Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia', description: 'The hidden costs of carrying cash in Southeast Asia.', url: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.webp', author: 'Tanvi Nag', datePublished: '2026-03-20' }),
         ]}
       />
       <Header />
@@ -65,8 +65,11 @@ export default function CashIsKingPage() {
 
             <div className="mt-10 rounded-3xl overflow-hidden">
               <img
-                src="/assets/blog/cash-is-king-cover.png"
+                src="/assets/blog/cash-is-king-cover.webp"
                 alt={t('blogPosts.cashIsKing.imgAlt')}
+                loading="lazy"
+                width={1600}
+                height={900}
                 className="w-full h-auto object-cover"
               />
             </div>
