@@ -3,11 +3,18 @@ import { motion } from 'motion/react';
 import { Trans, useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema } from '../components/SEO';
 
 export default function PrivacyPage() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Privacy Policy"
+        description="How Lumifin collects, uses, and protects your personal data. GDPR-compliant privacy practices for our payment service."
+        canonical="/privacy"
+        structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy' }])}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-8 max-w-4xl mx-auto">

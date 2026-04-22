@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
 export default function WhyWeBuiltLumiPage() {
@@ -11,6 +12,17 @@ export default function WhyWeBuiltLumiPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Why We Built Lumi — A Founder's Story"
+        description="The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumifin."
+        canonical="/blog/why-we-built-lumi"
+        ogImage="/assets/blog/why-we-built-lumi-cover.png"
+        ogType="article"
+        structuredData={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'Why We Built Lumi', url: '/blog/why-we-built-lumi' }]),
+          articleSchema({ title: 'Why We Built Lumi — A Founder\'s Story', description: 'The personal experiences that led to building a borderless payment solution.', url: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.png', author: 'Gaurav Bansal', datePublished: '2026-03-15' }),
+        ]}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-6 md:px-8">

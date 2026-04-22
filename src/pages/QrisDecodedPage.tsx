@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
 export default function QrisDecodedPage() {
@@ -11,6 +12,17 @@ export default function QrisDecodedPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="QRIS Decoded — Indonesia's QR Payment System for European Travelers"
+        description="56 million merchants, 6 billion transactions — QRIS is how Indonesia pays. Here's why European tourists are locked out, and what's changing."
+        canonical="/blog/qris-decoded"
+        ogImage="/assets/blog/qris-decoded-cover.png"
+        ogType="article"
+        structuredData={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'QRIS Decoded', url: '/blog/qris-decoded' }]),
+          articleSchema({ title: 'QRIS Decoded: Indonesia\'s Standardized QR Payment System', description: 'What QRIS means for European travelers in Indonesia.', url: '/blog/qris-decoded', image: '/assets/blog/qris-decoded-cover.png', author: 'Pierre Lahbabi', datePublished: '2026-03-10' }),
+        ]}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-6 md:px-8">

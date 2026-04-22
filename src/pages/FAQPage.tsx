@@ -6,12 +6,23 @@ import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema, faqSchema } from '../components/SEO';
 
 export default function FAQPage() {
   const { t } = useTranslation();
   const faqs = getFaqs(t);
+  const faqItems = faqs.map((f: { question: string; answer: string }) => ({ question: f.question, answer: f.answer }));
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="FAQ — Frequently Asked Questions"
+        description="Everything you need to know about Lumifin: how QR payments work, fees, supported countries, security, and getting started."
+        canonical="/faq"
+        structuredData={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'FAQ', url: '/faq' }]),
+          faqSchema(faqItems),
+        ]}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-8 max-w-4xl mx-auto">

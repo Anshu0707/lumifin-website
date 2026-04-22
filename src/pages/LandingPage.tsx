@@ -22,6 +22,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
+import SEO, { organizationSchema, websiteSchema } from "../components/SEO";
 
 export default function LandingPage() {
   const { t } = useTranslation();
@@ -828,6 +829,12 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Lumifin — Pay Like a Local in Southeast Asia"
+        description="Travel to Thailand, Vietnam and Indonesia without cash or card fees. Scan local QR codes and pay instantly with Lumifin. Zero hidden fees."
+        canonical="/"
+        structuredData={[organizationSchema, websiteSchema]}
+      />
       <Header />
 
       {/* Hero Section */}

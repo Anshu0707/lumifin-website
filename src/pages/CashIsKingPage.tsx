@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
 export default function CashIsKingPage() {
@@ -11,6 +12,17 @@ export default function CashIsKingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia"
+        description="Exchange rate traps, ATM fees, pickpocketing risks — the hidden costs of carrying cash in Southeast Asia that nobody warns you about."
+        canonical="/blog/cash-is-king"
+        ogImage="/assets/blog/cash-is-king-cover.png"
+        ogType="article"
+        structuredData={[
+          breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }, { name: 'Cash Is King?', url: '/blog/cash-is-king' }]),
+          articleSchema({ title: 'Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia', description: 'The hidden costs of carrying cash in Southeast Asia.', url: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.png', author: 'Tanvi Nag', datePublished: '2026-03-20' }),
+        ]}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-6 md:px-8">

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema } from '../components/SEO';
 import { Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -70,6 +71,12 @@ export default function TeamPage() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="About Us — Meet the Team Behind Lumifin"
+        description="Meet the team building Lumifin: bankers, engineers, and travellers dedicated to making cross-border payments simple for Europeans in Southeast Asia."
+        canonical="/team"
+        structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'About Us', url: '/team' }])}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-8 max-w-7xl mx-auto">

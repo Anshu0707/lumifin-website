@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema } from '../components/SEO';
 import { Calendar, User } from 'lucide-react';
 
 const categories = ["all", "travel", "purpose", "payments"] as const;
@@ -24,6 +25,12 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Blog — Travel Tips, Fintech Insights & Payment Guides"
+        description="Stories about travel money, QR payments, and fintech innovation in Southeast Asia. Tips for European travellers visiting Thailand, Vietnam, and Indonesia."
+        canonical="/blog"
+        structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }])}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-8 max-w-7xl mx-auto">

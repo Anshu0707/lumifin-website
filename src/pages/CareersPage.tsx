@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO, { breadcrumbSchema } from '../components/SEO';
 import { MapPin, Briefcase, X, Wifi } from 'lucide-react';
 
 const JOB_KEYS = ['internship', 'gtm'] as const;
@@ -33,6 +34,12 @@ export default function CareersPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEO
+        title="Work With Us — Careers at Lumifin"
+        description="Join Lumifin: an early-stage fintech reinventing cross-border payments between Europe and Asia. Remote roles based in France."
+        canonical="/careers"
+        structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Careers', url: '/careers' }])}
+      />
       <Header />
 
       <main className="pt-40 pb-32 px-8 max-w-5xl mx-auto">
