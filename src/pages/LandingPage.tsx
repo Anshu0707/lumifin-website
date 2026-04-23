@@ -1351,6 +1351,24 @@ export default function LandingPage() {
             </tbody>
           </table>
         </div>
+
+        {/* Pricing FAQ */}
+        <div className="mt-16 space-y-6">
+          <h3 className="text-2xl font-black text-slate-900 text-center">{t("fees.faqTitle")}</h3>
+          <div className="space-y-4 max-w-3xl mx-auto">
+            {(['q1', 'q2', 'q3'] as const).map((key) => (
+              <details key={key} className="group border border-slate-200 rounded-2xl overflow-hidden">
+                <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 hover:text-primary transition-colors">
+                  {t(`fees.faqs.${key}.question`)}
+                  <ChevronDown className="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" />
+                </summary>
+                <p className="px-6 pb-6 text-slate-500 font-medium leading-relaxed">
+                  {t(`fees.faqs.${key}.answer`)}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Services Section */}

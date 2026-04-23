@@ -52,6 +52,15 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
+      {/* Hreflang — same URL structure for both languages */}
+      {canonicalUrl && (
+        <>
+          <link rel="alternate" hrefLang="en" href={canonicalUrl} />
+          <link rel="alternate" hrefLang="fr" href={canonicalUrl} />
+          <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
+        </>
+      )}
+
       {/* Structured Data */}
       {schemaArray.map((schema, i) => (
         <script key={i} type="application/ld+json">

@@ -20,6 +20,9 @@ const WhyWeBuiltLumiPage = lazy(() => import('./pages/WhyWeBuiltLumiPage'));
 const CashIsKingPage = lazy(() => import('./pages/CashIsKingPage'));
 const QrisDecodedPage = lazy(() => import('./pages/QrisDecodedPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
+const SecurityPage = lazy(() => import('./pages/SecurityPage'));
+const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
+const TravelMoneyVietnamPage = lazy(() => import('./pages/TravelMoneyVietnamPage'));
 
 export default function App() {
   return (
@@ -37,6 +40,9 @@ export default function App() {
           <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
           <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
           <Route path="/careers" element={<CareersPage />} />
+        <Route path="/security" element={<SecurityPage />} />
+        <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
+        <Route path="/travel-money/vietnam" element={<TravelMoneyVietnamPage />} />
           {/* Fallback for other routes mentioned in footer */}
           <Route path="*" element={<LandingPage />} />
         </Routes>

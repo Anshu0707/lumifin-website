@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AuthorBio from '../components/AuthorBio';
 import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
@@ -218,6 +219,8 @@ export default function QrisDecodedPage() {
               </p>
             </div>
           </motion.div>
+
+          <AuthorBio authorName="Pierre Lahbabi" />
         </article>
       </main>
 

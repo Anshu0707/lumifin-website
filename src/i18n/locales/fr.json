@@ -40,6 +40,10 @@
     "indiaAddressLine1": "A 812, Anthurium, Sector 73",
     "indiaAddressLine2": "Noida, UP (Inde)",
     "connect": "Suivez-nous",
+    "security": "Sécurité",
+    "guides": "Guides de voyage",
+    "thailand": "Payer en Thaïlande",
+    "vietnam": "Payer au Vietnam",
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "copyright": "© 2026 LumiFin SAS. Tous droits réservés.",
@@ -182,6 +186,21 @@
           "fee": "8 % supplémentaires",
           "total": "€1,144"
         }
+      }
+    },
+    "faqTitle": "Questions sur les tarifs",
+    "faqs": {
+      "q1": {
+        "question": "Y a-t-il des frais cachés avec Lumifin ?",
+        "answer": "Non. Vous payez des frais transparents de 2 % par transaction — c'est tout. Pas de frais d'abonnement, pas de frais de retrait, pas de majoration sur la conversion de devises. Le taux affiché est le taux appliqué."
+      },
+      "q2": {
+        "question": "Comment le taux de Lumifin se compare-t-il à celui de ma banque ?",
+        "answer": "Les banques européennes facturent généralement 1,5 à 3 % de frais de transaction à l'étranger plus une marge de change de 2 à 5 %. Avec les bureaux de change des aéroports, l'écart peut atteindre 8 à 10 %. Lumifin utilise des taux proches de l'interbancaire avec un seul frais de 2 %, vous faisant économiser jusqu'à 120 € par tranche de 1 000 € dépensés."
+      },
+      "q3": {
+        "question": "Y a-t-il un montant minimum ou maximum par paiement ?",
+        "answer": "Vous pouvez effectuer des paiements à partir de 1 €. Il n'y a pas de montant minimum requis. Les limites maximales dépendent de votre niveau de vérification de compte et des réglementations locales."
       }
     }
   },
@@ -633,5 +652,30 @@
         }
       }
     }
+  },
+  "security": {
+    "eyebrow": "Confiance et sécurité",
+    "titleBefore": "Votre argent est en",
+    "titleHighlight": "sécurité",
+    "subtitle": "Nous utilisons une sécurité de niveau bancaire pour protéger chaque transaction et chaque octet de vos données personnelles.",
+    "features": {
+      "encryption": "Chiffrement de bout en bout",
+      "encryptionDesc": "Toutes les données en transit sont chiffrées avec TLS 1.3. Les données sensibles au repos sont chiffrées avec AES-256. Vos informations de paiement ne transitent jamais en clair sur nos serveurs.",
+      "authentication": "Authentification à deux facteurs",
+      "authenticationDesc": "Chaque compte est protégé par la 2FA. L'authentification biométrique (Face ID, empreinte digitale) est prise en charge sur tous les appareils modernes pour un accès rapide et sécurisé.",
+      "privacy": "Protection de la vie privée dès la conception",
+      "privacyDesc": "Nous ne collectons que le strict nécessaire, ne vendons jamais vos données et vous donnons un contrôle total sur vos informations. Conçu pour la conformité RGPD dès le premier jour.",
+      "infrastructure": "Infrastructure sécurisée",
+      "infrastructureDesc": "Nos systèmes fonctionnent sur une infrastructure cloud de niveau entreprise avec protection DDoS, détection automatisée des menaces et surveillance 24h/24.",
+      "compliance": "Conformité réglementaire",
+      "complianceDesc": "Lumifin opère dans le cadre réglementaire européen. Nous travaillons avec des partenaires financiers agréés pour garantir une conformité totale avec les réglementations sur les services de paiement."
+    },
+    "dataProtectionTitle": "Protection des données",
+    "dataProtectionBody": "En tant qu'entreprise française, Lumifin est pleinement soumise au Règlement Général sur la Protection des Données (RGPD) et au contrôle de la CNIL. Nous appliquons le principe de minimisation des données : nous ne collectons que les informations strictement nécessaires à la fourniture de notre service. Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles à tout moment.",
+    "regulatoryTitle": "Cadre réglementaire",
+    "regulatoryBody": "Lumifin SAS est immatriculée en France et opère en conformité avec les réglementations financières européennes applicables. Notre traitement des paiements est assuré par des partenaires financiers agréés et réglementés. Nous nous engageons à maintenir les normes les plus élevées en matière de lutte contre le blanchiment d'argent (LCB) et de connaissance du client (KYC).",
+    "reportTitle": "Signaler un problème de sécurité",
+    "reportBody": "Si vous découvrez une vulnérabilité de sécurité potentielle, veuillez la signaler de manière responsable à",
+    "lastUpdated": "Dernière mise à jour : mars 2026"
   }
 }

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AuthorBio from '../components/AuthorBio';
 import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
@@ -178,6 +179,8 @@ export default function WhyWeBuiltLumiPage() {
 
             <p className="pt-6 text-xl font-black text-slate-900">{t('blogPosts.whyWeBuiltLumi.closing')}</p>
           </motion.div>
+
+          <AuthorBio authorName="Gaurav Bansal" />
         </article>
       </main>
 

@@ -31,6 +31,7 @@ export default function Footer() {
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to="/faq" className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
+            <li><Link to="/security" className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
           </ul>
         </div>
 

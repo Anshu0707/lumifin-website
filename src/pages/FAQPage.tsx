@@ -66,6 +66,7 @@ export default function FAQPage() {
             ))}
           </div>
         </motion.div>
+        <p className="mt-12 text-center text-sm text-slate-400 font-medium">Last updated: March 2026</p>
       </main>
 
       <Footer />
