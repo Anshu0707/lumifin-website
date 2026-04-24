@@ -1,4 +1,4 @@
-/* Font loaded via index.html <link> for performance */
+/* Font self-hosted via @fontsource */
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));

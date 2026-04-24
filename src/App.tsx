@@ -23,6 +23,10 @@ const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
 const TravelMoneyVietnamPage = lazy(() => import('./pages/TravelMoneyVietnamPage'));
+const TravelMoneyIndonesiaPage = lazy(() => import('./pages/TravelMoneyIndonesiaPage'));
+const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
+const ComparePage = lazy(() => import('./pages/ComparePage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export default function App() {
   return (
@@ -43,8 +47,10 @@ export default function App() {
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
         <Route path="/travel-money/vietnam" element={<TravelMoneyVietnamPage />} />
-          {/* Fallback for other routes mentioned in footer */}
-          <Route path="*" element={<LandingPage />} />
+        <Route path="/travel-money/indonesia" element={<TravelMoneyIndonesiaPage />} />
+        <Route path="/travel-money" element={<TravelMoneyPage />} />
+        <Route path="/compare" element={<ComparePage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
     </Router>
