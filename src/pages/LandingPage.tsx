@@ -18,6 +18,7 @@ import {
   X,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQSection";
@@ -907,17 +908,20 @@ export default function LandingPage() {
               name: t("coverage.countries.thailand"),
               network: "PromptPay",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCADyKo_l8AkIwVsjIh0QFbFynTbtTTQGXE_82jvwwmf7HI1rUAxvo2gjS0XLGEIakqz70jBMljXEYZZjTXZlt84HPQ6D9AjeF5h_jUQy52xRGIGB9AkSF8ckqeuv-NfY-9ts9W3lkU7joA2dpRs8hvPBOkPBnYtEOjDDyx-6AUbFaR_veWBqMbqzbeudVq76Del8xfFq3l1i3tJ2T6-jP35gq3rNgKepTuY6pcLZduGmJRHe8GlyZfbuSW5Kj-5NIBGjeSKpwgnT0_",
-            },
-            {
-              name: t("coverage.countries.indonesia"),
-              network: "QRIS",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8ThdfhEs4iFj6rS3rzGySJ2URSwRMt3kO_tDRErE7zSdoyBDatO8rg2yOzvEiEP_gjJbcZRRlk2QG6ln1GeqpkflS7k_81SrSEZo-du91aBcAdGAkCVNfwIZB5bZxYZHH0yxPNjDIPwOSqJjp9nsAu0tJGFWBoKsz6Uw5dzWaaG9kTjTSxp1u9PlM9UFL01VfcdgQfivJxl5YOVKy9Tx_VSO7xkhFEoyqr9BU1VdGEtqCxkwTPvP5LVKgolUIjEcuP1r3ketchI2o",
-              offset: true,
+              href: "/travel-money/thailand",
             },
             {
               name: t("coverage.countries.vietnam"),
               network: "VietQR",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBp0TIju-96DY_xjqr3kNDc5nGwTSRs9Mk8SclesK06t4vH_Lu079tXN9wiD1CbHNWlsNeoyk5L9MGlkDrLN-dWuvEowE1nKzjiC0ML44Y1J51xQkXHb0XV7iS7WdrdJZdBSTH3V2xcHTNcYsqJlIPdrwaKp3qGYPLSelTdNh7NujqzLVcgHkFzeWJ1EwPzoTu1oh7FqtTavzuZhuFlv1kgJrby7zvU6l_d6UuHgJOt2nvDtFn0xoClUXwdpAwV_yj05egAaQoqeuvZ",
+              offset: true,
+              href: "/travel-money/vietnam",
+            },
+            {
+              name: t("coverage.countries.indonesia"),
+              network: "QRIS",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8ThdfhEs4iFj6rS3rzGySJ2URSwRMt3kO_tDRErE7zSdoyBDatO8rg2yOzvEiEP_gjJbcZRRlk2QG6ln1GeqpkflS7k_81SrSEZo-du91aBcAdGAkCVNfwIZB5bZxYZHH0yxPNjDIPwOSqJjp9nsAu0tJGFWBoKsz6Uw5dzWaaG9kTjTSxp1u9PlM9UFL01VfcdgQfivJxl5YOVKy9Tx_VSO7xkhFEoyqr9BU1VdGEtqCxkwTPvP5LVKgolUIjEcuP1r3ketchI2o",
+              href: "/travel-money/indonesia",
             },
             {
               name: t("coverage.countries.malaysia"),
@@ -936,26 +940,35 @@ export default function LandingPage() {
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_z_9AB6QwWo7um_GLFpnHmMo_ULSMKz6wB3M84GannKibvEEhFU-1ekomBHwAlhlVHhOU4iMvjYEpySS9gPfMU3q4CdDFabgtMyYB2984o0MbX_IVoxw9Nv_PFN9v1a03-eqhbvdgWCI9hR2ZN8CotqemumhqZhDglCM8tqYBBziwFfuBiOHj4hcwtv7xRDMjsBFeNz4sY4y_CLThPYeCHJzOncBWA-aMZSzDnCUwOT-BcHN1aSi50QpkUEQw0a-BuJ5xlvN6278",
               offset: true,
             },
-          ].map((country, i) => (
-            <div
-              key={i}
-              className={`group relative overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer ${country.offset ? "lg:mt-12" : ""}`}
-            >
-              <img
-                alt={country.name}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                src={country.img}
-                referrerPolicy="no-referrer"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-6 left-6 right-6 text-white">
-                <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
-                  {country.network}
-                </p>
-                <h4 className="text-2xl font-black">{country.name}</h4>
+          ].map((country, i) => {
+            const cardInner = (
+              <>
+                <img
+                  alt={country.name}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  src={country.img}
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 right-6 text-white">
+                  <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
+                    {country.network}
+                  </p>
+                  <h4 className="text-2xl font-black">{country.name}</h4>
+                </div>
+              </>
+            );
+            const cardClass = `group relative overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${country.offset ? "lg:mt-12" : ""}`;
+            return country.href ? (
+              <Link key={i} to={country.href} className={cardClass} aria-label={country.name}>
+                {cardInner}
+              </Link>
+            ) : (
+              <div key={i} className={cardClass}>
+                {cardInner}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
