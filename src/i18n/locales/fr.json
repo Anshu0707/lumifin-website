@@ -677,5 +677,283 @@
     "reportTitle": "Signaler un problème de sécurité",
     "reportBody": "Si vous découvrez une vulnérabilité de sécurité potentielle, veuillez la signaler de manière responsable à",
     "lastUpdated": "Dernière mise à jour : mars 2026"
+  },
+  "travelMoney": {
+    "common": {
+      "lastUpdated": "Dernière mise à jour : mars 2026",
+      "joinWaitlist": "Rejoindre la liste d'attente",
+      "readGuide": "Lire le guide",
+      "backToDestinations": "Toutes les destinations",
+      "backToHome": "Accueil",
+      "guideEyebrow": "Guide voyage et argent"
+    },
+    "pillar": {
+      "eyebrow": "Guides argent et voyage",
+      "titleBefore": "Payez comme un",
+      "titleHighlight": "local",
+      "titleAfter": "en Asie du Sud-Est.",
+      "subtitle": "Les voyageurs européens perdent 50–150 € par voyage en frais de DAB, mauvais taux de change et risques liés aux espèces. Lumifin vous connecte aux systèmes de paiement par QR locaux — vous payez en monnaie locale à des taux proches de l'interbancaire, instantanément.",
+      "problem": {
+        "cashTitle": "Le cash coûte cher",
+        "cashDesc": "Les bureaux de change d'aéroport prennent 8–10 % de marge. Les DAB ajoutent des frais fixes plus la marge de votre banque. Vous perdez de l'argent à chaque retrait.",
+        "cardsTitle": "La carte coûte plus que vous pensez",
+        "cardsDesc": "1,5–3 % de frais à l'étranger, plus une marge de change cachée. Et la plupart des commerçants locaux ne l'acceptent même pas.",
+        "riskTitle": "Le cash, c'est risqué",
+        "riskDesc": "Pas de protection anti-fraude, pas de remboursement, pas de recours. Volé ou perdu = perdu. Trimballer beaucoup de cash en zone touristique est dangereux."
+      },
+      "howTitle": "Comment fonctionne Lumifin",
+      "howSubtitle": "Trois étapes. Pas de cash. Pas de TPE. Pas de frais cachés.",
+      "steps": {
+        "topUpTitle": "Rechargez",
+        "topUpDesc": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin. Quelques secondes.",
+        "scanTitle": "Scannez",
+        "scanDesc": "Scannez n'importe quel QR code local — PromptPay en Thaïlande, VietQR au Vietnam, QRIS en Indonésie.",
+        "payTitle": "Payez",
+        "payDesc": "Le paiement passe instantanément en monnaie locale à des taux proches de l'interbancaire. Vous voyez le montant en euros en temps réel."
+      },
+      "chooseDestination": "Choisissez votre destination",
+      "compareTitle": "Comment Lumifin se compare-t-il ?",
+      "compareSubtitle": "Voyez comment nous nous comparons à Revolut, Wise et aux banques traditionnelles pour voyager en Asie du Sud-Est.",
+      "compareCta": "Voir la comparaison",
+      "labels": {
+        "currency": "Devise",
+        "qrSystem": "Système QR",
+        "atmFee": "Frais DAB",
+        "qrAdoption": "Adoption QR"
+      },
+      "corridors": {
+        "thailandHighlight": "70M+ utilisateurs QR",
+        "vietnamHighlight": "QR à plus forte croissance en ASE",
+        "indonesiaHighlight": "56M+ commerçants"
+      }
+    },
+    "thailand": {
+      "title": "Payer en Thaïlande en tant que voyageur européen",
+      "titleHighlight": "Thaïlande",
+      "subtitle": "Tout ce qu'il faut savoir pour convertir EUR en THB, éviter les frais cachés, et payer comme un local par QR code à travers la Thaïlande.",
+      "stats": {
+        "currency": "THB (Baht)",
+        "atmFee": "220 THB (~5,50 €)",
+        "cardAcceptance": "Faible hors villes",
+        "qrAdoption": "70M+ utilisateurs",
+        "labels": {
+          "currency": "Devise",
+          "atmFee": "Frais DAB",
+          "cardAcceptance": "Acceptation carte",
+          "qrAdoption": "Adoption QR"
+        }
+      },
+      "problemTitle": "Le problème du paiement en Thaïlande pour un Européen",
+      "problemP1": "L'économie thaïlandaise tourne sur deux choses : le cash et PromptPay. Les cartes bancaires européennes sont acceptées dans les hôtels, centres commerciaux et certains restaurants — mais la grande majorité du commerce quotidien se passe ailleurs. Street food, tuk-tuks, marchés locaux, temples, blanchisseries — presque aucun n'accepte les cartes étrangères.",
+      "problemP2": "Il vous reste donc les DAB (220 THB de frais par retrait, plus la marge de votre banque) ou les bureaux de change (3–8 % moins bons que le vrai taux). Sur deux semaines, un voyageur européen perd 50–150 € rien qu'en frictions de paiement.",
+      "compareTitle": "Comparaison des moyens de paiement en Thaïlande",
+      "tableHeaders": {
+        "method": "Méthode",
+        "fee": "Frais",
+        "rate": "Taux",
+        "speed": "Vitesse"
+      },
+      "comparisons": {
+        "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (quand accepté)" },
+        "atm": { "method": "Retrait DAB", "fee": "5,50 €+ par retrait", "rate": "Interbancaire + marge", "speed": "5–10 min (trouver DAB)" },
+        "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+      },
+      "howTitle": "Comment Lumifin fonctionne en Thaïlande",
+      "steps": {
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "scan": "Scannez n'importe quel QR PromptPay chez les commerçants thaïlandais — de la street food aux supermarchés.",
+        "pay": "Le paiement passe instantanément en bahts à des taux proches de l'interbancaire. C'est tout."
+      },
+      "stepLabels": {
+        "topUp": "Rechargez",
+        "scan": "Scannez",
+        "pay": "Payez"
+      },
+      "faqTitle": "Questions fréquentes",
+      "faqs": {
+        "q1": { "q": "Puis-je utiliser ma carte bancaire européenne en Thaïlande ?", "a": "Oui, mais attendez-vous à 1,5–3 % de frais de change plus des taux défavorables. L'acceptation de la carte est limitée hors hôtels et zones touristiques. La plupart des vendeurs locaux, stands de street food et transports utilisent QR ou cash." },
+        "q2": { "q": "Qu'est-ce que PromptPay ?", "a": "PromptPay est le système de paiement par QR national thaïlandais, utilisé par plus de 70 millions de personnes. Il permet des virements instantanés entre comptes bancaires et est accepté par des millions de commerçants — du 7-Eleven aux vendeurs de rue. Lumifin permet aux voyageurs européens d'accéder directement à PromptPay." },
+        "q3": { "q": "Combien coûtent les retraits DAB en Thaïlande ?", "a": "Les DAB thaïlandais facturent 220 THB (~5,50 €) par retrait, plus 1,5–3 % ajoutés par votre banque européenne. Avec des plafonds de 20 000–30 000 THB, ça monte vite sur un séjour de plusieurs semaines." },
+        "q4": { "q": "Vaut-il mieux changer ses euros en France ou en Thaïlande ?", "a": "Aucun n'est idéal. Les bureaux d'aéroport offrent de mauvais taux des deux côtés. Les bureaux de Bangkok comme SuperRich sont meilleurs mais peu pratiques. Lumifin vous donne des taux proches de l'interbancaire directement via votre téléphone — sans change physique." },
+        "q5": { "q": "Comment Lumifin fonctionne en Thaïlande ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez votre portefeuille depuis votre compte bancaire européen. Puis scannez n'importe quel QR PromptPay pour payer instantanément en bahts — à des taux bien meilleurs que les cartes ou bureaux de change." }
+      },
+      "ctaTitle": "Prêt à payer comme un local en Thaïlande ?",
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+    },
+    "vietnam": {
+      "title": "Payer au Vietnam en tant que voyageur européen",
+      "titleHighlight": "Vietnam",
+      "subtitle": "Naviguez les millions de dongs, évitez les pièges des DAB, et payez comme un local à travers le Vietnam — du Vieux Quartier de Hanoï à la street food de Ho Chi Minh-Ville.",
+      "stats": {
+        "currency": "VND (Dong)",
+        "exchange": "~27 000 VND",
+        "cardAcceptance": "Très faible",
+        "qrAdoption": "En forte croissance",
+        "labels": {
+          "currency": "Devise",
+          "exchange": "1 EUR",
+          "cardAcceptance": "Acceptation carte",
+          "qrAdoption": "Adoption QR"
+        }
+      },
+      "problemTitle": "Pourquoi payer au Vietnam est difficile pour un Européen",
+      "problemP1": "Le Vietnam est l'un des pays les plus dépendants du cash en Asie du Sud-Est pour les touristes. Les TPE sont rares hors hôtels internationaux. La devise — le dong vietnamien — vient en coupures qui rendent le calcul mental compliqué : un billet de 500 000 VND ressemble à un de 20 000 VND, et la différence est d'environ 18 €.",
+      "problemP2": "Les DAB ont des plafonds bas (souvent juste 2 000 000 VND / ~74 €), donc plusieurs retraits par semaine — chacun avec des frais. Pendant ce temps, le Vietnamien derrière vous scanne un QR et paie en 2 secondes.",
+      "compareTitle": "Comparaison des moyens de paiement au Vietnam",
+      "comparisons": {
+        "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (rare acceptation)" },
+        "atm": { "method": "Retrait DAB", "fee": "0,80–2 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
+        "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Variable selon lieu", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+      },
+      "howTitle": "Comment Lumifin fonctionne au Vietnam",
+      "steps": {
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "scan": "Scannez n'importe quel QR VietQR chez les commerçants vietnamiens — cafés, boutiques, marchés, partout.",
+        "pay": "Le paiement passe instantanément en dongs vietnamiens. Vous voyez le montant en euros en temps réel."
+      },
+      "faqTitle": "Questions fréquentes",
+      "faqs": {
+        "q1": { "q": "Puis-je utiliser ma carte bancaire européenne au Vietnam ?", "a": "Seulement dans les hôtels haut de gamme, restaurants internationaux, et certains centres commerciaux. La grande majorité du commerce vietnamien — des stands de pho aux taxis-motos — fonctionne en cash ou QR uniquement. Comptez 1,5–3 % de frais où la carte est acceptée." },
+        "q2": { "q": "Qu'est-ce que VietQR ?", "a": "VietQR est le standard national de paiement par QR du Vietnam, reliant plus de 40 banques et e-wallets. Il permet des virements instantanés en scannant un seul QR. L'adoption a explosé depuis 2023, avec des millions de commerçants — y compris vendeurs de rue et petites boutiques." },
+        "q3": { "q": "Combien coûtent les retraits DAB au Vietnam ?", "a": "Les DAB vietnamiens facturent 22 000–55 000 VND (~0,80–2 €) par retrait, avec des plafonds de 2 000 000–5 000 000 VND par transaction. Votre banque européenne ajoute 1,5–3 %. Vous aurez peut-être besoin de 2–3 retraits par jour pour vos dépenses de base." },
+        "q4": { "q": "Pourquoi les montants en dong sont-ils si déroutants ?", "a": "Parce que 1 EUR ≈ 27 000 VND. Les transactions quotidiennes sont en millions de dongs — un repas peut coûter 85 000 VND, un hôtel 1 500 000 VND. Il faut s'habituer pour éviter les erreurs coûteuses. Lumifin vous montre l'équivalent en euros en temps réel." },
+        "q5": { "q": "Comment Lumifin fonctionne au Vietnam ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR VietQR pour payer instantanément en dongs — à des taux proches de l'interbancaire. Pas de comptage de billets, pas de chasse au DAB, pas de confusion sur les coupures." }
+      },
+      "ctaTitle": "Prêt à payer comme un local au Vietnam ?",
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+    },
+    "indonesia": {
+      "title": "Payer en Indonésie en tant que voyageur européen",
+      "titleHighlight": "Indonésie",
+      "subtitle": "56 millions de commerçants acceptent QRIS. Zéro n'accepte votre carte bancaire européenne. Voici comment combler l'écart — de Bali à Java en passant par Komodo.",
+      "stats": {
+        "currency": "IDR (Roupie)",
+        "exchange": "~17 000 IDR",
+        "qrMerchants": "56M+",
+        "atmFee": "1,70–2,80 €",
+        "labels": {
+          "currency": "Devise",
+          "exchange": "1 EUR",
+          "qrMerchants": "Commerçants QRIS",
+          "atmFee": "Frais DAB"
+        }
+      },
+      "problemTitle": "Pourquoi le paiement en Indonésie est cassé pour les Européens",
+      "problemP1": "L'Indonésie a sauté l'étape du cash avec QRIS — un système unifié de paiement par QR qui marche partout, des centres commerciaux modernes de Jakarta au plus petit kaki lima de Yogyakarta. Mais ce système a été bâti pour les utilisateurs locaux. Pour scanner un QR QRIS, il faut soit un compte bancaire indonésien, soit un e-wallet local comme GoPay — les deux nécessitent une pièce d'identité locale.",
+      "problemP2": "En tant que touriste européen, il vous reste les DAB (avec des plafonds aussi bas que 1 250 000 IDR / ~70 €), les bureaux de change (où les arnaques sont fréquentes dans les zones touristiques comme Kuta), ou votre carte bancaire dans la poignée d'endroits qui l'acceptent. Pendant ce temps, chaque Indonésien autour de vous tape sur son téléphone et s'en va.",
+      "compareTitle": "Comparaison des moyens de paiement en Indonésie",
+      "comparisons": {
+        "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (acceptation limitée)" },
+        "atm": { "method": "Retrait DAB", "fee": "1,70–2,80 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
+        "cash": { "method": "Bureau de change", "fee": "3–10 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+      },
+      "howTitle": "Comment Lumifin fonctionne en Indonésie",
+      "steps": {
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "scan": "Scannez n'importe quel QR QRIS — warungs, cafés, boutiques, chauffeurs Grab, partout dans l'archipel.",
+        "pay": "Le paiement passe instantanément en roupies indonésiennes. Vous voyez l'équivalent en euros en temps réel."
+      },
+      "faqTitle": "Questions fréquentes",
+      "faqs": {
+        "q1": { "q": "Puis-je utiliser ma carte bancaire européenne en Indonésie ?", "a": "Seulement dans les hôtels, restaurants haut de gamme, et centres commerciaux des grandes villes. La grande majorité du commerce indonésien — warungs, ojeks, boutiques locales, marchés — fonctionne avec QRIS (paiements QR) ou cash. Comptez 1,5–3 % de frais où la carte est acceptée." },
+        "q2": { "q": "Qu'est-ce que QRIS ?", "a": "QRIS (Quick Response Code Indonesian Standard) est le système national unifié de paiement par QR de l'Indonésie, lancé par Bank Indonesia en 2019. Il connecte tous les principaux e-wallets (GoPay, OVO, Dana, ShopeePay) et banques sous un seul standard. Plus de 56 millions de commerçants l'acceptent — des centres commerciaux de Jakarta aux warungs de bord de route à Yogyakarta." },
+        "q3": { "q": "Combien coûtent les retraits DAB en Indonésie ?", "a": "Les DAB indonésiens facturent 30 000–50 000 IDR (~1,70–2,80 €) par retrait. Les plafonds sont généralement 1 250 000–2 500 000 IDR par transaction (~70–140 €). Votre banque européenne ajoute 1,5–3 %. Plusieurs retraits par semaine montent vite." },
+        "q4": { "q": "Pourquoi les Européens ne peuvent pas utiliser QRIS directement ?", "a": "QRIS nécessite soit un compte bancaire indonésien (qui demande un permis de résidence KITAS), soit un e-wallet local comme GoPay/OVO (qui demande un numéro de téléphone et une pièce d'identité indonésiens). Les touristes européens n'ont accès à aucun des deux. Lumifin comble cet écart." },
+        "q5": { "q": "Comment Lumifin fonctionne en Indonésie ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR QRIS pour payer instantanément en roupies — à des taux proches de l'interbancaire. Marche dans n'importe lequel des 56+ millions de commerçants QRIS de l'archipel." }
+      },
+      "ctaTitle": "Prêt à payer comme un local en Indonésie ?",
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+    }
+  },
+  "compare": {
+    "eyebrow": "Comparaison",
+    "titleBefore": "Lumifin vs",
+    "titleHighlight": "les autres",
+    "subtitle": "Revolut et Wise sont d'excellents produits — mais ils n'ont pas été conçus pour payer dans un stand de street food thaïlandais ou un warung balinais. Voici comment les options se comparent vraiment pour voyager en Asie du Sud-Est.",
+    "disclaimer": "* Les frais Revolut varient selon le forfait (Standard, Plus, Premium, Metal). Le change gratuit a des plafonds mensuels sur les forfaits Standard. Tarifs en mars 2026.",
+    "lastUpdated": "Dernière mise à jour : mars 2026. Informations basées sur les tarifs publics. Vérifiez les tarifs actuels sur le site de chaque fournisseur.",
+    "headers": {
+      "feature": "Caractéristique",
+      "lumifin": "Lumifin",
+      "revolut": "Revolut",
+      "wise": "Wise",
+      "bank": "Banque trad."
+    },
+    "categories": {
+      "fees": "Frais et taux",
+      "coverage": "Couverture Asie du Sud-Est",
+      "ux": "Expérience utilisateur"
+    },
+    "rows": {
+      "transactionFee": "Frais de transaction",
+      "exchangeRate": "Taux de change",
+      "weekendFx": "Surcoût FX week-end",
+      "atmFee": "Frais retrait DAB",
+      "hiddenConv": "Conversion de devise cachée",
+      "thailand": "Thaïlande (PromptPay)",
+      "vietnam": "Vietnam (VietQR)",
+      "indonesia": "Indonésie (QRIS)",
+      "qrPayments": "Paiements par QR locaux",
+      "streetVendor": "Paiements vendeur de rue / marché",
+      "cardTerminal": "TPE requis",
+      "noCash": "Fonctionne sans cash",
+      "noLocalAccount": "Pas de compte bancaire local requis",
+      "realtimeEur": "Équivalent EUR affiché en temps réel",
+      "designedSea": "Conçu pour voyager en ASE"
+    },
+    "values": {
+      "lumifinFee": "2 %",
+      "revolutFee": "0–2,5 %*",
+      "wiseFee": "0,4–1,5 %",
+      "bankFee": "1,5–3 %",
+      "lumifinRate": "Proche interbancaire",
+      "revolutRate": "Interbancaire (semaine)",
+      "wiseRate": "Mid-market",
+      "bankRate": "Marge banque (2–5 %)",
+      "lumifinWeekend": "Non",
+      "revolutWeekend": "1–2 % de surcharge",
+      "wiseWeekend": "Non",
+      "bankWeekend": "Inclus dans la marge",
+      "lumifinAtm": "N/A (QR uniquement)",
+      "revolutAtm": "Gratuit jusqu'au plafond*",
+      "wiseAtm": "1,50 € + 1,75 %",
+      "bankAtm": "3–7 € + frais local",
+      "lumifinHidden": "Jamais",
+      "revolutHidden": "Possible le week-end",
+      "wiseHidden": "Jamais",
+      "bankHidden": "Fréquent"
+    },
+    "bottomLineTitle": "En résumé",
+    "bottomLineP1": "Revolut et Wise sont excellents pour les pays avec une large acceptation de la carte — Europe, États-Unis, Australie. Mais en Thaïlande, au Vietnam et en Indonésie, la majorité du commerce quotidien se passe dans des endroits sans TPE. Vendeurs de street food, chauffeurs de tuk-tuk, marchés locaux, petits cafés — c'est là que vous voulez vraiment dépenser, et aucun n'accepte votre carte Revolut.",
+    "bottomLineP2": "Lumifin est conçu spécifiquement pour ce besoin. Au lieu d'essayer de forcer une carte dans une économie cashless, QR-first, nous vous connectons directement aux rails de paiement locaux — PromptPay, VietQR, QRIS — utilisés par des millions de locaux chaque jour. Vous pouvez payer là où ils paient, à des taux comparables aux meilleures fintechs, sans porter de cash ni espérer un TPE.",
+    "ctaTitle": "Prêt à essayer la façon plus intelligente de payer en Asie du Sud-Est ?",
+    "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans friction de paiement.",
+    "ctaButton": "Rejoindre la liste d'attente"
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "description": "La page que vous cherchez n'existe pas. Retournez à l'accueil ou explorez nos guides de paiement voyage.",
+    "heading": "Cette page s'est perdue en chemin",
+    "subheading": "Comme du cash dans un bureau de change à Bangkok, cette page semble avoir disparu. On vous remet sur la bonne voie.",
+    "home": "Accueil",
+    "blog": "Blog",
+    "faq": "FAQ"
+  },
+  "authors": {
+    "gaurav": {
+      "role": "COO, Lumifin",
+      "bio": "Gaurav apporte une vaste expérience en finance et opérations internationales. Il a co-fondé Lumifin pour résoudre les défis de paiement transfrontalier qu'il a vécus en voyageant à travers l'Asie du Sud-Est."
+    },
+    "tanvi": {
+      "role": "Product Analyst, Lumifin",
+      "bio": "Tanvi se concentre sur la recherche utilisateur et la stratégie produit chez Lumifin. Elle écrit sur les défis réels de paiement que rencontrent les voyageurs européens en Asie du Sud-Est."
+    },
+    "pierre": {
+      "role": "CEO, Lumifin",
+      "bio": "Pierre est diplômé de l'École Polytechnique avec une expertise approfondie en fintech et marchés émergents. Il a fondé Lumifin pour combler le fossé entre les voyageurs européens et les systèmes de paiement locaux en Asie."
+    }
   }
 }

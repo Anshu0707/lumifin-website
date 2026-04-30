@@ -677,5 +677,283 @@
     "reportTitle": "Report a Security Issue",
     "reportBody": "If you discover a potential security vulnerability, please report it responsibly to",
     "lastUpdated": "Last updated: March 2026"
+  },
+  "travelMoney": {
+    "common": {
+      "lastUpdated": "Last updated: March 2026",
+      "joinWaitlist": "Join the Waitlist",
+      "readGuide": "Read guide",
+      "backToDestinations": "All Destinations",
+      "backToHome": "Home",
+      "guideEyebrow": "Travel Money Guide"
+    },
+    "pillar": {
+      "eyebrow": "Travel Money Guides",
+      "titleBefore": "Pay like a",
+      "titleHighlight": "local",
+      "titleAfter": "in Southeast Asia.",
+      "subtitle": "European travellers lose €50–150 per trip on ATM fees, bad exchange rates, and cash risks. Lumifin connects you to local QR payment systems — so you pay in local currency at near-interbank rates, instantly.",
+      "problem": {
+        "cashTitle": "Cash is expensive",
+        "cashDesc": "Airport exchanges charge 8–10% spreads. ATMs add flat fees + your bank's markup. You lose money every time you access your own money.",
+        "cardsTitle": "Cards cost more than you think",
+        "cardsDesc": "1.5–3% foreign transaction fees, plus currency conversion markups hidden in the fine print. And most local merchants don't accept them anyway.",
+        "riskTitle": "Cash carries real risk",
+        "riskDesc": "No fraud protection, no chargeback, no dispute. If it's stolen or lost, it's gone. Carrying large amounts in tourist areas is a liability."
+      },
+      "howTitle": "How Lumifin works",
+      "howSubtitle": "Three steps. No cash. No card machines. No hidden fees.",
+      "steps": {
+        "topUpTitle": "Top up",
+        "topUpDesc": "Add euros from your European bank account to your Lumifin wallet. Takes seconds.",
+        "scanTitle": "Scan",
+        "scanDesc": "Scan any local QR code — PromptPay in Thailand, VietQR in Vietnam, QRIS in Indonesia.",
+        "payTitle": "Pay",
+        "payDesc": "Payment settles instantly in local currency at near-interbank rates. You see the euro amount in real-time."
+      },
+      "chooseDestination": "Choose your destination",
+      "compareTitle": "How does Lumifin compare?",
+      "compareSubtitle": "See how we stack up against Revolut, Wise, and traditional banks for Southeast Asia travel.",
+      "compareCta": "View Comparison",
+      "labels": {
+        "currency": "Currency",
+        "qrSystem": "QR System",
+        "atmFee": "ATM Fee",
+        "qrAdoption": "QR Adoption"
+      },
+      "corridors": {
+        "thailandHighlight": "70M+ QR users",
+        "vietnamHighlight": "Fastest QR growth in SEA",
+        "indonesiaHighlight": "56M+ merchants"
+      }
+    },
+    "thailand": {
+      "title": "Paying in Thailand as a European Traveller",
+      "titleHighlight": "Thailand",
+      "subtitle": "Everything you need to know about converting EUR to THB, avoiding hidden fees, and paying like a local with QR codes across Thailand.",
+      "stats": {
+        "currency": "THB (Baht)",
+        "atmFee": "220 THB (~€5.50)",
+        "cardAcceptance": "Low outside cities",
+        "qrAdoption": "70M+ users",
+        "labels": {
+          "currency": "Currency",
+          "atmFee": "ATM fee",
+          "cardAcceptance": "Card acceptance",
+          "qrAdoption": "QR adoption"
+        }
+      },
+      "problemTitle": "The problem with paying in Thailand as a European",
+      "problemP1": "Thailand's economy runs on two things: cash and PromptPay. European bank cards are accepted at hotels, malls, and some restaurants — but the vast majority of daily commerce happens outside those places. Street food, tuk-tuks, local markets, temples, laundry services — almost none of these accept foreign cards.",
+      "problemP2": "That leaves you with ATMs (220 THB fee per withdrawal, plus your bank's markup) or currency exchange booths (3–8% worse than the real rate). Over a two-week trip, a typical European traveller loses €50–150 just in payment friction.",
+      "compareTitle": "How payment methods compare in Thailand",
+      "tableHeaders": {
+        "method": "Method",
+        "fee": "Fee",
+        "rate": "Rate",
+        "speed": "Speed"
+      },
+      "comparisons": {
+        "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (where accepted)" },
+        "atm": { "method": "ATM withdrawal", "fee": "€5.50+ per withdrawal", "rate": "Interbank + markup", "speed": "5–10 min (find ATM)" },
+        "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies wildly", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+      },
+      "howTitle": "How Lumifin works in Thailand",
+      "steps": {
+        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "scan": "Scan any PromptPay QR code at Thai merchants — from street food to supermarkets.",
+        "pay": "Payment goes through instantly in Thai baht at near-interbank rates. Done."
+      },
+      "stepLabels": {
+        "topUp": "Top up",
+        "scan": "Scan",
+        "pay": "Pay"
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqs": {
+        "q1": { "q": "Can I use my European bank card in Thailand?", "a": "Yes, but expect 1.5–3% foreign transaction fees plus unfavorable exchange rates. Card acceptance is limited outside hotels and tourist areas. Most local vendors, street food stalls, and transport use QR payments or cash." },
+        "q2": { "q": "What is PromptPay?", "a": "PromptPay is Thailand's national QR payment system, used by over 70 million people. It enables instant transfers between bank accounts and is accepted at millions of merchants — from 7-Eleven to street vendors. Lumifin lets European travelers access PromptPay directly." },
+        "q3": { "q": "How much do ATM withdrawals cost in Thailand?", "a": "Thai ATMs charge a flat fee of 220 THB (~€5.50) per withdrawal, plus your European bank typically adds 1.5–3% on top. With withdrawal limits of 20,000–30,000 THB, costs add up quickly over a multi-week trip." },
+        "q4": { "q": "Is it better to exchange euros to baht in France or Thailand?", "a": "Neither is ideal. Airport exchanges in both countries offer poor rates. Bangkok exchanges like SuperRich are better but inconvenient. Lumifin gives you near-interbank rates directly through your phone — no physical exchange needed." },
+        "q5": { "q": "How does Lumifin work in Thailand?", "a": "Download the app, verify your identity, and top up your wallet from your European bank account. Then scan any PromptPay QR code at Thai merchants to pay instantly in baht — at rates significantly better than cards or cash exchanges." }
+      },
+      "ctaTitle": "Ready to pay like a local in Thailand?",
+      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+    },
+    "vietnam": {
+      "title": "Paying in Vietnam as a European Traveller",
+      "titleHighlight": "Vietnam",
+      "subtitle": "Navigate the millions of dong, avoid ATM traps, and pay like a local across Vietnam — from Hanoi's Old Quarter to Ho Chi Minh City's street food scene.",
+      "stats": {
+        "currency": "VND (Dong)",
+        "exchange": "~27,000 VND",
+        "cardAcceptance": "Very low",
+        "qrAdoption": "Fast-growing",
+        "labels": {
+          "currency": "Currency",
+          "exchange": "1 EUR",
+          "cardAcceptance": "Card acceptance",
+          "qrAdoption": "QR adoption"
+        }
+      },
+      "problemTitle": "Why paying in Vietnam is hard for Europeans",
+      "problemP1": "Vietnam is one of the most cash-dependent countries in Southeast Asia for tourists. Card terminals are rare outside international hotels. The currency — Vietnamese dong — comes in denominations that make mental arithmetic a challenge: a 500,000 VND note looks similar to a 20,000 VND note, and the difference is about €18.",
+      "problemP2": "ATMs have low withdrawal limits (often just 2,000,000 VND / ~€74), meaning you'll need multiple transactions per week — each with fees. Meanwhile, the Vietnamese person behind you in line scans a QR code and pays in 2 seconds.",
+      "compareTitle": "How payment methods compare in Vietnam",
+      "comparisons": {
+        "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (rare acceptance)" },
+        "atm": { "method": "ATM withdrawal", "fee": "€0.80–€2 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
+        "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies by location", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+      },
+      "howTitle": "How Lumifin works in Vietnam",
+      "steps": {
+        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "scan": "Scan any VietQR code at Vietnamese merchants — cafes, shops, markets, everywhere.",
+        "pay": "Payment settles instantly in Vietnamese dong. You see the euro amount in real-time."
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqs": {
+        "q1": { "q": "Can I use my European bank card in Vietnam?", "a": "Only at upscale hotels, international restaurants, and some shopping centres. The vast majority of Vietnamese commerce — from pho stalls to motorbike taxis — is cash or QR only. Expect 1.5–3% foreign transaction fees where cards are accepted." },
+        "q2": { "q": "What is VietQR?", "a": "VietQR is Vietnam's national QR code payment standard, connecting over 40 banks and e-wallets. It enables instant transfers by scanning a single QR code. Adoption has exploded since 2023, with millions of merchants now accepting it — including street vendors and small shops." },
+        "q3": { "q": "How much do ATM withdrawals cost in Vietnam?", "a": "Vietnamese ATMs charge 22,000–55,000 VND (~€0.80–€2) per withdrawal, with limits of 2,000,000–5,000,000 VND per transaction. Your European bank adds 1.5–3% on top. You may need 2–3 withdrawals per day for basic expenses." },
+        "q4": { "q": "Why are Vietnamese dong amounts so confusing?", "a": "Because 1 EUR ≈ 27,000 VND. Daily transactions are in the millions of dong — a meal might cost 85,000 VND, a hotel 1,500,000 VND. It takes practice to avoid costly mistakes. Lumifin shows you the euro equivalent in real-time." },
+        "q5": { "q": "How does Lumifin work in Vietnam?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any VietQR code to pay instantly in dong — at near-interbank rates. No cash counting, no ATM hunting, no denomination confusion." }
+      },
+      "ctaTitle": "Ready to pay like a local in Vietnam?",
+      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+    },
+    "indonesia": {
+      "title": "Paying in Indonesia as a European Traveller",
+      "titleHighlight": "Indonesia",
+      "subtitle": "56 million merchants accept QRIS. Zero of them accept your European bank card. Here's how to bridge the gap — from Bali to Java to Komodo.",
+      "stats": {
+        "currency": "IDR (Rupiah)",
+        "exchange": "~17,000 IDR",
+        "qrMerchants": "56M+",
+        "atmFee": "€1.70–€2.80",
+        "labels": {
+          "currency": "Currency",
+          "exchange": "1 EUR",
+          "qrMerchants": "QRIS merchants",
+          "atmFee": "ATM fee"
+        }
+      },
+      "problemTitle": "Why paying in Indonesia is broken for Europeans",
+      "problemP1": "Indonesia has leapfrogged cash with QRIS — a unified QR payment system that works at everything from Jakarta's modern malls to the smallest kaki lima food cart in Yogyakarta. But this system was built for domestic users. To scan a QRIS code, you need either an Indonesian bank account or a local e-wallet like GoPay — both require local ID.",
+      "problemP2": "As a European tourist, you're stuck with ATMs (with withdrawal limits as low as 1,250,000 IDR / ~€70), money changers (where scams are common in tourist areas like Kuta), or your bank card at the handful of places that accept it. Meanwhile, every Indonesian around you is tapping their phone and walking away.",
+      "compareTitle": "How payment methods compare in Indonesia",
+      "comparisons": {
+        "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (limited acceptance)" },
+        "atm": { "method": "ATM withdrawal", "fee": "€1.70–€2.80 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
+        "cash": { "method": "Money changer", "fee": "3–10% spread", "rate": "Highly variable", "speed": "15–30 min" },
+        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+      },
+      "howTitle": "How Lumifin works in Indonesia",
+      "steps": {
+        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "scan": "Scan any QRIS code — warungs, cafes, shops, grab drivers, everywhere across the archipelago.",
+        "pay": "Payment settles instantly in Indonesian rupiah. You see the euro equivalent in real-time."
+      },
+      "faqTitle": "Frequently asked questions",
+      "faqs": {
+        "q1": { "q": "Can I use my European bank card in Indonesia?", "a": "Only at hotels, upscale restaurants, and malls in major cities. The vast majority of Indonesian commerce — warungs, ojeks, local shops, markets — runs on QRIS (QR payments) or cash. Expect 1.5–3% foreign transaction fees where cards are accepted." },
+        "q2": { "q": "What is QRIS?", "a": "QRIS (Quick Response Code Indonesian Standard) is Indonesia's national unified QR payment system, launched by Bank Indonesia in 2019. It connects all major e-wallets (GoPay, OVO, Dana, ShopeePay) and banks under one standard. Over 56 million merchants accept it — from Jakarta malls to roadside warungs in Yogyakarta." },
+        "q3": { "q": "How much do ATM withdrawals cost in Indonesia?", "a": "Indonesian ATMs charge 30,000–50,000 IDR (~€1.70–€2.80) per withdrawal. Limits are typically 1,250,000–2,500,000 IDR per transaction (~€70–€140). Your European bank adds 1.5–3% on top. Multiple withdrawals per week add up fast." },
+        "q4": { "q": "Why can't Europeans use QRIS directly?", "a": "QRIS requires either a local Indonesian bank account (needs a KITAS residence permit) or a local e-wallet like GoPay/OVO (needs an Indonesian phone number and ID). European tourists can't access either. Lumifin bridges this gap." },
+        "q5": { "q": "How does Lumifin work in Indonesia?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any QRIS code to pay instantly in rupiah — at near-interbank rates. Works at any of the 56+ million QRIS merchants across the archipelago." }
+      },
+      "ctaTitle": "Ready to pay like a local in Indonesia?",
+      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+    }
+  },
+  "compare": {
+    "eyebrow": "Comparison",
+    "titleBefore": "Lumifin vs",
+    "titleHighlight": "the rest",
+    "subtitle": "Revolut and Wise are great products — but they weren't built for paying at a Thai street food stall or a Balinese warung. Here's how the options actually compare for Southeast Asia travel.",
+    "disclaimer": "* Revolut fees vary by plan (Standard, Plus, Premium, Metal). Free FX has monthly limits on Standard plans. Rates as of March 2026.",
+    "lastUpdated": "Last updated: March 2026. Information based on publicly available pricing. Verify current rates on each provider's website.",
+    "headers": {
+      "feature": "Feature",
+      "lumifin": "Lumifin",
+      "revolut": "Revolut",
+      "wise": "Wise",
+      "bank": "Trad. Bank"
+    },
+    "categories": {
+      "fees": "Fees & Rates",
+      "coverage": "Southeast Asia Coverage",
+      "ux": "User Experience"
+    },
+    "rows": {
+      "transactionFee": "Transaction fee",
+      "exchangeRate": "Exchange rate",
+      "weekendFx": "Weekend FX markup",
+      "atmFee": "ATM withdrawal fee",
+      "hiddenConv": "Hidden currency conversion",
+      "thailand": "Thailand (PromptPay)",
+      "vietnam": "Vietnam (VietQR)",
+      "indonesia": "Indonesia (QRIS)",
+      "qrPayments": "Local QR code payments",
+      "streetVendor": "Street vendor / market payments",
+      "cardTerminal": "Card terminal required",
+      "noCash": "Works without cash",
+      "noLocalAccount": "No local bank account needed",
+      "realtimeEur": "Real-time EUR equivalent shown",
+      "designedSea": "Designed for SEA travel"
+    },
+    "values": {
+      "lumifinFee": "2%",
+      "revolutFee": "0–2.5%*",
+      "wiseFee": "0.4–1.5%",
+      "bankFee": "1.5–3%",
+      "lumifinRate": "Near interbank",
+      "revolutRate": "Interbank (weekdays)",
+      "wiseRate": "Mid-market",
+      "bankRate": "Bank markup (2–5%)",
+      "lumifinWeekend": "No",
+      "revolutWeekend": "1–2% surcharge",
+      "wiseWeekend": "No",
+      "bankWeekend": "Included in spread",
+      "lumifinAtm": "N/A (QR only)",
+      "revolutAtm": "Free up to limit*",
+      "wiseAtm": "€1.50 + 1.75%",
+      "bankAtm": "€3–7 + local fee",
+      "lumifinHidden": "Never",
+      "revolutHidden": "Possible on weekends",
+      "wiseHidden": "Never",
+      "bankHidden": "Common"
+    },
+    "bottomLineTitle": "The bottom line",
+    "bottomLineP1": "Revolut and Wise are excellent for countries with widespread card acceptance — Europe, the US, Australia. But in Thailand, Vietnam, and Indonesia, the majority of daily commerce happens at places that don't have card terminals. Street food vendors, tuk-tuk drivers, local markets, small cafes — these are the places you actually want to spend money, and none of them accept your Revolut card.",
+    "bottomLineP2": "Lumifin is purpose-built for this gap. Instead of trying to force a card into a cashless, QR-first economy, we connect you directly to the local payment rails — PromptPay, VietQR, QRIS — that millions of locals use every day. That means you can pay anywhere they can, at rates comparable to the best fintechs, without carrying cash or hoping for a card terminal.",
+    "ctaTitle": "Ready to try the smarter way to pay in Southeast Asia?",
+    "ctaSubtitle": "Join the Lumifin waitlist and be among the first to travel without payment friction.",
+    "ctaButton": "Join the Waitlist"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist. Head back to Lumifin's homepage or explore our travel payment guides.",
+    "heading": "This page got lost in transit",
+    "subheading": "Just like cash at a Bangkok exchange booth, this page seems to have disappeared. Let's get you back on track.",
+    "home": "Home",
+    "blog": "Blog",
+    "faq": "FAQ"
+  },
+  "authors": {
+    "gaurav": {
+      "role": "COO, Lumifin",
+      "bio": "Gaurav brings extensive experience in finance and international operations. He co-founded Lumifin to solve the cross-border payment challenges he experienced firsthand while travelling across Southeast Asia."
+    },
+    "tanvi": {
+      "role": "Product Analyst, Lumifin",
+      "bio": "Tanvi focuses on user research and product strategy at Lumifin. She writes about the real-world payment challenges European travellers face in Southeast Asia."
+    },
+    "pierre": {
+      "role": "CEO, Lumifin",
+      "bio": "Pierre is an École Polytechnique graduate with deep expertise in fintech and emerging markets. He founded Lumifin to bridge the gap between European travellers and local payment systems in Asia."
+    }
   }
 }

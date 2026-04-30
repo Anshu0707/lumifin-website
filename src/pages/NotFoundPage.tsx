@@ -1,17 +1,20 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
-import { ArrowLeft, Home, BookOpen, HelpCircle } from 'lucide-react';
+import { Home, BookOpen, HelpCircle } from 'lucide-react';
 
 export default function NotFoundPage() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Page Not Found"
-        description="The page you're looking for doesn't exist. Head back to Lumifin's homepage or explore our travel payment guides."
+        title={t('notFound.title')}
+        description={t('notFound.description')}
         noindex={true}
       />
       <Header />
@@ -25,10 +28,10 @@ export default function NotFoundPage() {
         >
           <p className="text-8xl font-black text-primary">404</p>
           <h1 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900">
-            This page got lost in transit
+            {t('notFound.heading')}
           </h1>
           <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-lg mx-auto">
-            Just like cash at a Bangkok exchange booth, this page seems to have disappeared. Let's get you back on track.
+            {t('notFound.subheading')}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -36,19 +39,19 @@ export default function NotFoundPage() {
               to="/"
               className="inline-flex items-center gap-2 hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all"
             >
-              <Home className="w-4 h-4" /> Home
+              <Home className="w-4 h-4" /> {t('notFound.home')}
             </Link>
             <Link
               to="/blog"
               className="inline-flex items-center gap-2 bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-black hover:bg-slate-200 transition-all"
             >
-              <BookOpen className="w-4 h-4" /> Blog
+              <BookOpen className="w-4 h-4" /> {t('notFound.blog')}
             </Link>
             <Link
               to="/faq"
               className="inline-flex items-center gap-2 bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-black hover:bg-slate-200 transition-all"
             >
-              <HelpCircle className="w-4 h-4" /> FAQ
+              <HelpCircle className="w-4 h-4" /> {t('notFound.faq')}
             </Link>
           </div>
         </motion.div>
