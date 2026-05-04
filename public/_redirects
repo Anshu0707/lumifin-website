@@ -1,1 +1,10 @@
-/*    /index.html   200
+# Intentionally empty.
+#
+# Previously: /*    /index.html   200  (SPA-fallback)
+# That caused soft 404s — every unknown URL returned 200 with the homepage,
+# which is bad for SEO and confused crawlers.
+#
+# Now: prerender produces dist/<route>/index.html for every known route AND
+# dist/404.html for unknown routes. Netlify's file-based routing handles
+# known routes, and Netlify auto-serves 404.html with HTTP 404 status for
+# anything else.

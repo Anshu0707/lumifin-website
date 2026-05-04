@@ -20,22 +20,26 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, '..', 'dist');
 
 // Routes mirror src/App.tsx. Keep this in sync when adding pages.
+// Each entry: { path, out } where `out` is the dist file relative to dist/.
 const routes = [
-  '/',
-  '/faq',
-  '/team',
-  '/privacy',
-  '/blog',
-  '/blog/why-we-built-lumi',
-  '/blog/cash-is-king',
-  '/blog/qris-decoded',
-  '/careers',
-  '/security',
-  '/travel-money',
-  '/travel-money/thailand',
-  '/travel-money/vietnam',
-  '/travel-money/indonesia',
-  '/compare',
+  { path: '/', out: 'index.html' },
+  { path: '/faq', out: 'faq/index.html' },
+  { path: '/team', out: 'team/index.html' },
+  { path: '/privacy', out: 'privacy/index.html' },
+  { path: '/blog', out: 'blog/index.html' },
+  { path: '/blog/why-we-built-lumi', out: 'blog/why-we-built-lumi/index.html' },
+  { path: '/blog/cash-is-king', out: 'blog/cash-is-king/index.html' },
+  { path: '/blog/qris-decoded', out: 'blog/qris-decoded/index.html' },
+  { path: '/careers', out: 'careers/index.html' },
+  { path: '/security', out: 'security/index.html' },
+  { path: '/travel-money', out: 'travel-money/index.html' },
+  { path: '/travel-money/thailand', out: 'travel-money/thailand/index.html' },
+  { path: '/travel-money/vietnam', out: 'travel-money/vietnam/index.html' },
+  { path: '/travel-money/indonesia', out: 'travel-money/indonesia/index.html' },
+  { path: '/compare', out: 'compare/index.html' },
+  // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
+  // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
+  { path: '/__404__', out: '404.html' },
 ];
 
 /**
@@ -158,10 +162,17 @@ async function main() {
   const port = server.address().port;
   const baseUrl = `http://127.0.0.1:${port}`;
 
-  // 2. Launch headless Chrome
+  // 2. Launch headless Chrome with French locale.
+  // Lumifin's primary audience is French — prerender body content in French
+  // (i18n picks up the locale via navigator.language + Accept-Language).
+  // Runtime i18n still switches to English for English-browser users.
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--lang=fr-FR',
+    ],
   });
 
   const start = Date.now();
@@ -170,8 +181,20 @@ async function main() {
 
   try {
     for (const route of routes) {
-      const url = `${baseUrl}${route}`;
+      const url = `${baseUrl}${route.path}`;
       const page = await browser.newPage();
+
+      // Force French locale so i18next-browser-languagedetector picks "fr".
+      // Detection order in src/i18n/config.ts: localStorage → navigator → htmlTag.
+      // Setting localStorage before page load short-circuits to French immediately.
+      await page.setExtraHTTPHeaders({ 'Accept-Language': 'fr-FR,fr;q=0.9' });
+      await page.evaluateOnNewDocument(() => {
+        try {
+          localStorage.setItem('lumifin_lang', 'fr');
+        } catch {
+          // localStorage may be unavailable in some prerender contexts; ignore.
+        }
+      });
 
       // Block analytics / external trackers so prerender doesn't hang on them
       await page.setRequestInterception(true);
@@ -192,14 +215,14 @@ async function main() {
         const rawHtml = await page.content();
         const html = dedupeHeadTags(rawHtml);
 
-        const outDir = route === '/' ? distDir : path.join(distDir, route);
-        await fs.mkdir(outDir, { recursive: true });
-        await fs.writeFile(path.join(outDir, 'index.html'), html, 'utf8');
+        const outPath = path.join(distDir, route.out);
+        await fs.mkdir(path.dirname(outPath), { recursive: true });
+        await fs.writeFile(outPath, html, 'utf8');
 
-        console.log(`  ✓ ${route}`);
+        console.log(`  ✓ ${route.path} → ${route.out}`);
         success++;
       } catch (err) {
-        console.error(`  ✗ ${route} — ${err.message}`);
+        console.error(`  ✗ ${route.path} — ${err.message}`);
         failed++;
       } finally {
         await page.close();

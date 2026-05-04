@@ -1,0 +1,34 @@
+# Lumifin
+
+> Lumifin is a French fintech that lets European travellers pay like a local in Southeast Asia by scanning local QR codes (PromptPay in Thailand, VietQR in Vietnam, QRIS in Indonesia) directly from a EUR account, with zero hidden fees and no FX markup.
+
+Lumifin is operated by LumiFin SAS, headquartered at 50 rue Anatole France, 92290 Châtenay-Malabry, France. The product is currently waitlist-only and aimed at Europeans travelling to Thailand, Vietnam, and Indonesia.
+
+## Key pages
+
+- [Home](https://lumifin.io/): Product overview, hero, waitlist signup
+- [FAQ](https://lumifin.io/faq): How QR payments work, fees, supported countries, security, account onboarding
+- [Team](https://lumifin.io/team): Founders and team behind Lumifin
+- [Security](https://lumifin.io/security): Bank-grade encryption, GDPR compliance, two-factor authentication
+- [Compare](https://lumifin.io/compare): How Lumifin differs from Revolut, Wise, and traditional bank cards
+- [Careers](https://lumifin.io/careers): Open roles
+- [Privacy](https://lumifin.io/privacy): GDPR-compliant privacy policy
+
+## Travel-money pillar
+
+- [Travel money in SE Asia (overview)](https://lumifin.io/travel-money)
+- [Paying in Thailand](https://lumifin.io/travel-money/thailand): EUR → THB, PromptPay QR, fees
+- [Paying in Vietnam](https://lumifin.io/travel-money/vietnam): EUR → VND, VietQR, fees
+- [Paying in Indonesia](https://lumifin.io/travel-money/indonesia): EUR → IDR, QRIS, fees
+
+## Blog
+
+- [Why we built Lumi](https://lumifin.io/blog/why-we-built-lumi): Founder story
+- [Cash is king?](https://lumifin.io/blog/cash-is-king): The hidden costs of carrying cash in SE Asia
+- [QRIS decoded](https://lumifin.io/blog/qris-decoded): Indonesia's QR payment system explained for European travellers
+- [All posts](https://lumifin.io/blog)
+
+## Optional
+
+- [Sitemap (XML)](https://lumifin.io/sitemap.xml)
+- [robots.txt](https://lumifin.io/robots.txt)
