@@ -26,6 +26,8 @@ const TravelMoneyVietnamPage = lazy(() => import('./pages/TravelMoneyVietnamPage
 const TravelMoneyIndonesiaPage = lazy(() => import('./pages/TravelMoneyIndonesiaPage'));
 const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
+const MentionsLegalesPage = lazy(() => import('./pages/MentionsLegalesPage'));
+const CguPage = lazy(() => import('./pages/CguPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export default function App() {
@@ -50,6 +52,8 @@ export default function App() {
         <Route path="/travel-money/indonesia" element={<TravelMoneyIndonesiaPage />} />
         <Route path="/travel-money" element={<TravelMoneyPage />} />
         <Route path="/compare" element={<ComparePage />} />
+        <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
+        <Route path="/cgu" element={<CguPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

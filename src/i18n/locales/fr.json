@@ -30,6 +30,8 @@
     "support": "Support",
     "faq": "FAQ",
     "privacyPolicy": "Politique de confidentialité",
+    "mentionsLegales": "Mentions légales",
+    "cgu": "CGU",
     "contact": "Contact",
     "email": "E-mail",
     "franceOffice": "Bureau France",
@@ -376,6 +378,114 @@
       "title": "9. Nous contacter",
       "body": "Pour toute question ou préoccupation concernant cette politique de confidentialité, veuillez nous contacter à l'adresse suivante :",
       "email": "E-mail : info@lumifin.io"
+    }
+  },
+  "mentionsLegales": {
+    "seo": {
+      "title": "Mentions légales",
+      "description": "Mentions légales du site lumifin.io : éditeur, hébergement, propriété intellectuelle. Informations conformes à la loi LCEN."
+    },
+    "eyebrow": "Mentions légales",
+    "title": "Mentions légales",
+    "effectiveDate": "Dernière mise à jour : [À COMPLÉTER : date]",
+    "intro": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), il est précisé aux utilisateurs du site lumifin.io l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
+    "editor": {
+      "title": "1. Éditeur du site",
+      "intro": "Le site lumifin.io est édité par :",
+      "name": "Raison sociale : LumiFin SAS",
+      "form": "Forme juridique : [À COMPLÉTER : forme juridique exacte, ex. « Société par Actions Simplifiée »]",
+      "capital": "Capital social : [À COMPLÉTER : montant en euros]",
+      "address": "Siège social : 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+      "siren": "SIREN : [À COMPLÉTER : numéro SIREN à 9 chiffres]",
+      "rcs": "RCS : [À COMPLÉTER : ville d'immatriculation et numéro RCS]",
+      "vat": "TVA intracommunautaire : [À COMPLÉTER si applicable, ex. « FR00000000000 »]",
+      "director": "Directeur de la publication : [À COMPLÉTER : nom et prénom du représentant légal]",
+      "email": "E-mail de contact : info@lumifin.io"
+    },
+    "hosting": {
+      "title": "2. Hébergeur",
+      "intro": "Le site lumifin.io est hébergé par :",
+      "name": "Raison sociale : Netlify, Inc.",
+      "address": "Adresse : 44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis",
+      "website": "Site web : https://www.netlify.com"
+    },
+    "ip": {
+      "title": "3. Propriété intellectuelle",
+      "body": "L'ensemble du contenu du site lumifin.io (textes, images, logos, marques, vidéos, design, code source) est la propriété exclusive de LumiFin SAS ou de ses partenaires, et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, transmission ou exploitation, totale ou partielle, du site ou de son contenu, par quelque procédé que ce soit et sur quelque support que ce soit, est interdite sans autorisation écrite préalable de LumiFin SAS et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle."
+    },
+    "data": {
+      "title": "4. Données personnelles",
+      "body": "Le traitement des données personnelles collectées via le site est décrit en détail dans notre <1>Politique de confidentialité</1>. Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi française « Informatique et Libertés », vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation du traitement, d'opposition et de portabilité de vos données. Pour exercer ces droits, contactez-nous à info@lumifin.io."
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "body": "Le site lumifin.io utilise des cookies strictement nécessaires à son bon fonctionnement. [À COMPLÉTER si des cookies analytiques ou publicitaires sont déployés : description des cookies, finalités, durée de conservation, et mention du bandeau de consentement conforme à la recommandation CNIL.]"
+    },
+    "links": {
+      "title": "6. Liens hypertextes",
+      "body": "Le site peut contenir des liens vers des sites tiers. LumiFin SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leur fonctionnement ou leur politique de confidentialité."
+    },
+    "liability": {
+      "title": "7. Responsabilité",
+      "body": "LumiFin SAS s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur le site, mais ne peut garantir l'absence d'erreurs ou d'omissions. L'utilisateur est seul responsable de l'usage qu'il fait des informations disponibles sur le site et reconnaît avoir reçu toutes les informations nécessaires concernant le service proposé."
+    },
+    "law": {
+      "title": "8. Droit applicable et juridiction compétente",
+      "body": "Les présentes mentions légales sont régies par le droit français. En cas de litige, et après échec de toute tentative de résolution amiable, les tribunaux français seront seuls compétents."
+    },
+    "contact": {
+      "title": "9. Contact",
+      "body": "Pour toute question relative aux présentes mentions légales, vous pouvez nous contacter par e-mail à info@lumifin.io ou par courrier à l'adresse du siège social mentionnée ci-dessus."
+    }
+  },
+  "cgu": {
+    "seo": {
+      "title": "Conditions Générales d'Utilisation",
+      "description": "Conditions Générales d'Utilisation du site lumifin.io. Règles d'accès, propriété intellectuelle, responsabilités et droit applicable."
+    },
+    "eyebrow": "Mentions légales",
+    "title": "Conditions Générales d'Utilisation",
+    "effectiveDate": "Dernière mise à jour : [À COMPLÉTER : date]",
+    "intro": "Les présentes Conditions Générales d'Utilisation (« CGU ») définissent les règles d'utilisation du site lumifin.io édité par LumiFin SAS (ci-après « Lumi », « nous », « notre », « nos »). En accédant au site, vous acceptez sans réserve l'intégralité des présentes CGU.",
+    "section1": {
+      "title": "1. Objet",
+      "body": "Les présentes CGU ont pour objet de définir les conditions d'accès et d'utilisation du site lumifin.io (ci-après « le Site »). Le Site présente les services de paiement Lumi destinés aux voyageurs européens en Asie du Sud-Est et permet aux visiteurs de s'inscrire à la liste d'attente."
+    },
+    "section2": {
+      "title": "2. Acceptation des CGU",
+      "body": "L'utilisation du Site emporte acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas tout ou partie de ces conditions, vous êtes invité à ne pas utiliser le Site. Les CGU peuvent être modifiées à tout moment ; la version en vigueur est celle accessible en ligne à la date de votre visite."
+    },
+    "section3": {
+      "title": "3. Accès au site",
+      "body": "Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. Tous les coûts liés à l'accès au Site (matériel informatique, logiciels, connexion Internet, etc.) sont à la charge exclusive de l'utilisateur. LumiFin SAS s'efforce de maintenir le Site accessible 24h/24 et 7j/7, mais peut être amenée à interrompre l'accès pour des raisons de maintenance ou de mise à jour, sans que cela puisse engager sa responsabilité."
+    },
+    "section4": {
+      "title": "4. Liste d'attente et inscription",
+      "body": "Le Site permet aux utilisateurs de s'inscrire à la liste d'attente Lumi en fournissant leur adresse e-mail. L'inscription est gratuite et n'emporte aucune obligation de souscription au service Lumi lors de son lancement commercial. LumiFin SAS se réserve le droit de refuser ou de suspendre l'inscription d'un utilisateur sans motif particulier."
+    },
+    "section5": {
+      "title": "5. Propriété intellectuelle",
+      "body": "Tous les éléments du Site (textes, images, logos, marques, vidéos, design, code source) sont protégés par les lois sur la propriété intellectuelle et appartiennent à LumiFin SAS ou à ses partenaires. Toute reproduction, distribution, modification, exploitation ou utilisation, totale ou partielle, sans autorisation écrite préalable est strictement interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle."
+    },
+    "section6": {
+      "title": "6. Données personnelles",
+      "body": "Les conditions de collecte, de traitement et de protection des données personnelles sont détaillées dans notre <1>Politique de confidentialité</1>, qui fait partie intégrante des présentes CGU. En utilisant le Site, vous reconnaissez avoir pris connaissance de cette politique."
+    },
+    "section7": {
+      "title": "7. Responsabilité",
+      "body": "LumiFin SAS s'efforce d'assurer l'exactitude des informations diffusées sur le Site, mais ne peut garantir leur exhaustivité ou leur absence d'erreurs. Le Site peut contenir des liens vers des sites tiers sur le contenu desquels LumiFin SAS n'exerce aucun contrôle et décline toute responsabilité. La responsabilité de LumiFin SAS ne saurait être engagée pour les dommages directs ou indirects résultant de l'utilisation du Site, sauf en cas de faute lourde ou intentionnelle."
+    },
+    "section8": {
+      "title": "8. Modification des CGU",
+      "body": "LumiFin SAS se réserve le droit de modifier les présentes CGU à tout moment afin de les adapter aux évolutions du Site, du service ou de la réglementation applicable. Les modifications entrent en vigueur dès leur publication sur le Site. Il appartient à l'utilisateur de consulter régulièrement les CGU pour en prendre connaissance."
+    },
+    "section9": {
+      "title": "9. Droit applicable et juridiction compétente",
+      "body": "Les présentes CGU sont régies par le droit français. En cas de litige, et après échec de toute tentative de résolution amiable, les tribunaux français seront seuls compétents, conformément aux règles de procédure civile applicables."
+    },
+    "section10": {
+      "title": "10. Contact",
+      "body": "Pour toute question relative aux présentes CGU, vous pouvez nous contacter par e-mail à info@lumifin.io ou par courrier postal à l'adresse du siège social indiquée dans nos mentions légales."
     }
   },
   "faqs": {

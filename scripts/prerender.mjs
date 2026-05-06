@@ -41,6 +41,8 @@ const routes = [
   { path: '/travel-money/vietnam', out: 'travel-money/vietnam.html' },
   { path: '/travel-money/indonesia', out: 'travel-money/indonesia.html' },
   { path: '/compare', out: 'compare.html' },
+  { path: '/mentions-legales', out: 'mentions-legales.html' },
+  { path: '/cgu', out: 'cgu.html' },
   // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
   // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
   { path: '/__404__', out: '404.html' },

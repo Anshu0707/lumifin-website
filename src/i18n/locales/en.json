@@ -30,6 +30,8 @@
     "support": "Support",
     "faq": "FAQ",
     "privacyPolicy": "Privacy Policy",
+    "mentionsLegales": "Legal Notice",
+    "cgu": "Terms of Use",
     "contact": "Contact",
     "email": "E-mail",
     "franceOffice": "France office",
@@ -376,6 +378,114 @@
       "title": "9. Contact Us",
       "body": "If you have any questions or concerns regarding this Privacy Policy, please contact us at:",
       "email": "Email: info@lumifin.io"
+    }
+  },
+  "mentionsLegales": {
+    "seo": {
+      "title": "Legal Notice",
+      "description": "Legal notice for lumifin.io: publisher details, hosting, intellectual property. Information published in accordance with the French LCEN."
+    },
+    "eyebrow": "Legal",
+    "title": "Legal Notice",
+    "effectiveDate": "Last updated: [TO COMPLETE: date]",
+    "intro": "In accordance with French Law no. 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN), this page identifies the parties involved in the publication and operation of the lumifin.io website.",
+    "editor": {
+      "title": "1. Site Publisher",
+      "intro": "The lumifin.io website is published by:",
+      "name": "Company name: LumiFin SAS",
+      "form": "Legal form: [TO COMPLETE: e.g. \"Société par Actions Simplifiée (SAS)\"]",
+      "capital": "Share capital: [TO COMPLETE: amount in euros]",
+      "address": "Registered office: 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+      "siren": "SIREN: [TO COMPLETE: 9-digit SIREN number]",
+      "rcs": "Trade register (RCS): [TO COMPLETE: city and registration number]",
+      "vat": "Intra-community VAT: [TO COMPLETE if applicable, e.g. \"FR00000000000\"]",
+      "director": "Publication director: [TO COMPLETE: name of legal representative]",
+      "email": "Contact email: info@lumifin.io"
+    },
+    "hosting": {
+      "title": "2. Host",
+      "intro": "The lumifin.io website is hosted by:",
+      "name": "Company name: Netlify, Inc.",
+      "address": "Address: 44 Montgomery Street, Suite 300, San Francisco, CA 94104, United States",
+      "website": "Website: https://www.netlify.com"
+    },
+    "ip": {
+      "title": "3. Intellectual Property",
+      "body": "All content on the lumifin.io website (text, images, logos, trademarks, videos, design, source code) is the exclusive property of LumiFin SAS or its partners and is protected by French and international intellectual property laws. Any reproduction, representation, modification, publication, transmission or exploitation, in whole or in part, of the website or its content, by any means and on any medium, is prohibited without the prior written consent of LumiFin SAS and would constitute infringement under articles L.335-2 et seq. of the French Intellectual Property Code."
+    },
+    "data": {
+      "title": "4. Personal Data",
+      "body": "The processing of personal data collected via the website is described in detail in our <1>Privacy Policy</1>. In accordance with the General Data Protection Regulation (GDPR) and the French Data Protection Act, you have the right to access, rectify, erase, restrict processing, object to processing, and to data portability. To exercise these rights, contact us at info@lumifin.io."
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "body": "The lumifin.io website uses cookies that are strictly necessary for its operation. [TO COMPLETE if analytics or advertising cookies are deployed: description of cookies, purposes, retention periods, and reference to the consent banner in line with French CNIL guidance.]"
+    },
+    "links": {
+      "title": "6. Hyperlinks",
+      "body": "The website may contain links to third-party sites. LumiFin SAS exercises no control over these sites and disclaims any liability for their content, operation or privacy policies."
+    },
+    "liability": {
+      "title": "7. Liability",
+      "body": "LumiFin SAS strives to ensure the accuracy and timeliness of the information published on the website but cannot guarantee the absence of errors or omissions. Users are solely responsible for the use they make of the information available on the website."
+    },
+    "law": {
+      "title": "8. Applicable Law and Jurisdiction",
+      "body": "This legal notice is governed by French law. In the event of a dispute, and after any attempt at amicable resolution has failed, French courts shall have exclusive jurisdiction."
+    },
+    "contact": {
+      "title": "9. Contact",
+      "body": "For any question regarding this legal notice, please contact us by email at info@lumifin.io or by post at the registered office address mentioned above."
+    }
+  },
+  "cgu": {
+    "seo": {
+      "title": "Terms of Use",
+      "description": "Terms of Use for lumifin.io: rules of access, intellectual property, liability, and applicable law."
+    },
+    "eyebrow": "Legal",
+    "title": "Terms of Use",
+    "effectiveDate": "Last updated: [TO COMPLETE: date]",
+    "intro": "These Terms of Use (\"Terms\") govern your use of the lumifin.io website published by LumiFin SAS (hereinafter \"Lumi\", \"we\", \"our\", \"us\"). By accessing the website, you accept these Terms in full.",
+    "section1": {
+      "title": "1. Purpose",
+      "body": "These Terms set out the conditions for accessing and using the lumifin.io website (the \"Site\"). The Site presents Lumi's payment services for European travellers in Southeast Asia and allows visitors to join the waitlist."
+    },
+    "section2": {
+      "title": "2. Acceptance of the Terms",
+      "body": "Use of the Site implies full and unreserved acceptance of these Terms. If you do not accept all or part of these Terms, you are invited not to use the Site. The Terms may be modified at any time; the version in force is the one available online at the time of your visit."
+    },
+    "section3": {
+      "title": "3. Access to the Site",
+      "body": "The Site is freely accessible to any user with internet access. All costs related to accessing the Site (computer hardware, software, internet connection, etc.) are borne exclusively by the user. LumiFin SAS strives to keep the Site available 24/7 but may interrupt access for maintenance or update reasons, without incurring liability."
+    },
+    "section4": {
+      "title": "4. Waitlist and Sign-up",
+      "body": "The Site allows users to sign up for the Lumi waitlist by providing their email address. Sign-up is free and creates no obligation to subscribe to the Lumi service when it launches commercially. LumiFin SAS reserves the right to refuse or suspend a user's sign-up without specific reason."
+    },
+    "section5": {
+      "title": "5. Intellectual Property",
+      "body": "All elements of the Site (text, images, logos, trademarks, videos, design, source code) are protected by intellectual property laws and belong to LumiFin SAS or its partners. Any reproduction, distribution, modification, exploitation or use, in whole or in part, without prior written authorisation is strictly prohibited and would constitute infringement under articles L.335-2 et seq. of the French Intellectual Property Code."
+    },
+    "section6": {
+      "title": "6. Personal Data",
+      "body": "The terms for collecting, processing, and protecting personal data are detailed in our <1>Privacy Policy</1>, which forms an integral part of these Terms. By using the Site, you acknowledge that you have read this policy."
+    },
+    "section7": {
+      "title": "7. Liability",
+      "body": "LumiFin SAS strives to ensure the accuracy of the information published on the Site but cannot guarantee its completeness or absence of errors. The Site may contain links to third-party sites over whose content LumiFin SAS exercises no control and disclaims all liability. LumiFin SAS shall not be liable for any direct or indirect damages resulting from the use of the Site, except in cases of gross or intentional fault."
+    },
+    "section8": {
+      "title": "8. Changes to the Terms",
+      "body": "LumiFin SAS reserves the right to modify these Terms at any time to reflect changes to the Site, the service or applicable law. Modifications take effect upon publication on the Site. Users are responsible for regularly reviewing the Terms."
+    },
+    "section9": {
+      "title": "9. Applicable Law and Jurisdiction",
+      "body": "These Terms are governed by French law. In the event of a dispute, and after any attempt at amicable resolution has failed, French courts shall have exclusive jurisdiction."
+    },
+    "section10": {
+      "title": "10. Contact",
+      "body": "For any question regarding these Terms, please contact us by email at info@lumifin.io or by post at the registered office address mentioned in our Legal Notice."
     }
   },
   "faqs": {
