@@ -1,4 +1,11 @@
 {
+  "cookieConsent": {
+    "banner": "Bandeau de consentement aux cookies",
+    "body": "Nous utilisons des cookies analytiques pour comprendre comment vous utilisez notre site et l'améliorer. Aucun cookie publicitaire.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "learnMore": "En savoir plus"
+  },
   "common": {
     "language": "Langue",
     "languageEnglish": "Anglais",

@@ -7,6 +7,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
+import CookieConsent from './components/CookieConsent';
 
 // Eager-load the landing page (critical path)
 import LandingPage from './pages/LandingPage';
@@ -57,6 +58,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+      <CookieConsent />
     </Router>
   );
 }

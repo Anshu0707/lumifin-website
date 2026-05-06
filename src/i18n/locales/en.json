@@ -1,4 +1,11 @@
 {
+  "cookieConsent": {
+    "banner": "Cookie consent banner",
+    "body": "We use analytics cookies to understand how you use our site and improve it. No advertising cookies.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "learnMore": "Learn more"
+  },
   "common": {
     "language": "Language",
     "languageEnglish": "English",
