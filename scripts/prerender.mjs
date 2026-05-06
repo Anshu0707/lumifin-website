@@ -21,22 +21,26 @@ const distDir = path.resolve(__dirname, '..', 'dist');
 
 // Routes mirror src/App.tsx. Keep this in sync when adding pages.
 // Each entry: { path, out } where `out` is the dist file relative to dist/.
+//
+// Output convention: <route>.html (NOT <route>/index.html). This avoids
+// Netlify's automatic /faq → /faq/ trailing-slash 301 redirect — Netlify
+// serves <route>.html directly at the no-slash URL, matching our canonicals.
 const routes = [
   { path: '/', out: 'index.html' },
-  { path: '/faq', out: 'faq/index.html' },
-  { path: '/team', out: 'team/index.html' },
-  { path: '/privacy', out: 'privacy/index.html' },
-  { path: '/blog', out: 'blog/index.html' },
-  { path: '/blog/why-we-built-lumi', out: 'blog/why-we-built-lumi/index.html' },
-  { path: '/blog/cash-is-king', out: 'blog/cash-is-king/index.html' },
-  { path: '/blog/qris-decoded', out: 'blog/qris-decoded/index.html' },
-  { path: '/careers', out: 'careers/index.html' },
-  { path: '/security', out: 'security/index.html' },
-  { path: '/travel-money', out: 'travel-money/index.html' },
-  { path: '/travel-money/thailand', out: 'travel-money/thailand/index.html' },
-  { path: '/travel-money/vietnam', out: 'travel-money/vietnam/index.html' },
-  { path: '/travel-money/indonesia', out: 'travel-money/indonesia/index.html' },
-  { path: '/compare', out: 'compare/index.html' },
+  { path: '/faq', out: 'faq.html' },
+  { path: '/team', out: 'team.html' },
+  { path: '/privacy', out: 'privacy.html' },
+  { path: '/blog', out: 'blog.html' },
+  { path: '/blog/why-we-built-lumi', out: 'blog/why-we-built-lumi.html' },
+  { path: '/blog/cash-is-king', out: 'blog/cash-is-king.html' },
+  { path: '/blog/qris-decoded', out: 'blog/qris-decoded.html' },
+  { path: '/careers', out: 'careers.html' },
+  { path: '/security', out: 'security.html' },
+  { path: '/travel-money', out: 'travel-money.html' },
+  { path: '/travel-money/thailand', out: 'travel-money/thailand.html' },
+  { path: '/travel-money/vietnam', out: 'travel-money/vietnam.html' },
+  { path: '/travel-money/indonesia', out: 'travel-money/indonesia.html' },
+  { path: '/compare', out: 'compare.html' },
   // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
   // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
   { path: '/__404__', out: '404.html' },
@@ -152,9 +156,11 @@ function dedupeHeadTags(html) {
 }
 
 async function main() {
-  // 1. Spin up a tiny static server with SPA fallback
+  // 1. Spin up a tiny static server with SPA fallback.
+  // `extensions: ['html']` lets express resolve /faq → dist/faq.html so the
+  // Puppeteer pass works against the same flat-file layout Netlify will serve.
   const app = express();
-  app.use(express.static(distDir, { index: false }));
+  app.use(express.static(distDir, { index: false, extensions: ['html'] }));
   app.get(/.*/, (_req, res) => res.sendFile(path.join(distDir, 'index.html')));
   const server = await new Promise((resolve) => {
     const s = app.listen(0, '127.0.0.1', () => resolve(s));
