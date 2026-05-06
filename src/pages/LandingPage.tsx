@@ -23,7 +23,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
-import SEO, { organizationSchema, websiteSchema } from "../components/SEO";
+import SEO, { organizationSchema, websiteSchema, softwareApplicationSchema } from "../components/SEO";
 
 export default function LandingPage() {
   const { t } = useTranslation();
@@ -834,7 +834,7 @@ export default function LandingPage() {
         title={t('landing.seo.title')}
         description={t('landing.seo.description')}
         canonical="/"
-        structuredData={[organizationSchema, websiteSchema]}
+        structuredData={[organizationSchema, websiteSchema, softwareApplicationSchema]}
       />
       <Header />
 
@@ -842,7 +842,7 @@ export default function LandingPage() {
       <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            alt="Cinematic aerial view"
+            alt={t("hero.imgAlt")}
             className="w-full h-full object-cover"
             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCHioVLgm-I7vY0esq7II6hPpcDBRhm3BgftQY8ZDTH0bNMOmPksNlMOW1VIG-Elwtq3JPQ2erK2e8EeeBlAMo3EJeich0bUPqbuwTETMGThcbIHXxHTvNyovfPgEjX6ACRcQ1cWtHdX5ubIkiC3tkCDckJXtHkl497BZndFKqaiy9nP5Jpn8smXuDu7PdAbDekl4_CILESdMdpI_ofUhYE4eJpP5GhHDcUFIEHktIcfCnqrf8uKEEaOiDIuTruLraa4Rl_KuLb7jF"
             referrerPolicy="no-referrer"
@@ -1001,7 +1001,7 @@ export default function LandingPage() {
             <div className="absolute -top-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-[80px] group-hover:bg-primary/20 transition-all"></div>
             <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl relative z-10">
               <img
-                alt="Lively SE Asian night market"
+                alt={t("mission.imgAlt")}
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaEq9eYXoQVkKhvfkYgm6Ohg9imOHFSt8qf64AZgeD92i45IkJCAaJSEsez0E1Zv2rOonRYwYGEIwVuaV3jfN4eh5wkTUmFtl3DXHiogmhaZ1hqCiRkAGfBG5Ev4mcd2FxUAXsTYWLHn8CwpSvhpQXAe-nXWZJiNppcoJ7F5CBr4vckEb_5rpq9_7WBXymDXJm5WKsL06GvUJGIAF5P2jJ0yh8LQqdMKeezFZjnlm9SF5w2-GZWPqVZyMKXhT5GKn3sqvbGTs-AzM"
                 referrerPolicy="no-referrer"

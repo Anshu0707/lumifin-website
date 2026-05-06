@@ -101,6 +101,31 @@ export const websiteSchema = {
   url: BASE_URL,
 };
 
+export const softwareApplicationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Lumi',
+  applicationCategory: 'FinanceApplication',
+  applicationSubCategory: 'Mobile Payment',
+  operatingSystem: 'iOS, Android',
+  description:
+    'Mobile payment app for European travellers in Southeast Asia. Pay at any local merchant by scanning their QR code (PromptPay, VietQR, QRIS) directly from a EUR account, with zero hidden fees and no FX markup.',
+  url: BASE_URL,
+  publisher: {
+    '@type': 'Organization',
+    name: 'Lumifin',
+    url: BASE_URL,
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'EUR',
+    availability: 'https://schema.org/PreOrder',
+    description: 'Free to join the waitlist',
+  },
+  inLanguage: ['fr', 'en'],
+};
+
 export function breadcrumbSchema(items: { name: string; url: string }[]) {
   return {
     '@context': 'https://schema.org',

@@ -75,6 +75,7 @@
     }
   },
   "hero": {
+    "imgAlt": "Vue aérienne d'une côte d'Asie du Sud-Est au coucher du soleil",
     "badge": "Le paiement voyage, réinventé",
     "titleLine1": "Payez comme un",
     "titleLine2": "Local",
@@ -99,6 +100,7 @@
     }
   },
   "mission": {
+    "imgAlt": "Marché de nuit animé en Asie du Sud-Est",
     "eyebrow": "Notre mission",
     "title": "Vos voyages ne devraient pas vous coûter plus cher.",
     "body": "Un constat simple : quand vous voyagez en Asie du Sud-Est, vous payez trop cher. Taux de change défavorables, commissions bancaires, frais de retrait... Pourtant, les locaux paient en un instant avec leur téléphone — via QR code, sans frais. Lumi vous donne accès à ce même réseau.",

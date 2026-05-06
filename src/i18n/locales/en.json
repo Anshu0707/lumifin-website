@@ -75,6 +75,7 @@
     }
   },
   "hero": {
+    "imgAlt": "Aerial view of a Southeast Asian coastline at sunset",
     "badge": "Redefining SOUTH EAST Asia Travel",
     "titleLine1": "Pay Like a",
     "titleLine2": "Local",
@@ -99,6 +100,7 @@
     }
   },
   "mission": {
+    "imgAlt": "Lively Southeast Asian night market",
     "eyebrow": "Our Mission",
     "title": "Borders Shouldn't Define Your Freedom.",
     "body": "Lumi was born from a simple observation: modern travelers are forced to choose between inflated exchange rates, cash or traditional cards, and none of these options are truly satisfactory. Travelers lack access to the most efficient payment method in the region: mobile QR payments.",
