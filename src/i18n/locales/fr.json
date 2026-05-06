@@ -52,15 +52,15 @@
   "faqSection": {
     "eyebrow": "Support et informations",
     "title": "FAQ",
-    "subtitle": "Tout ce que vous devez savoir sur Lumi.",
+    "subtitle": "Vos questions, nos réponses.",
     "moreFaqs": "Plus de questions"
   },
   "waitlist": {
     "eyebrow": "Offre exclusive",
-    "titleBefore": "Rejoignez la liste d'attente pour",
+    "titleBefore": "Inscrivez-vous et recevez",
     "amount": "20 €",
-    "titleAfter": "de crédit.",
-    "subtitle": "Soyez parmi les premiers à découvrir Lumi et prenez une longueur d'avance pour votre prochaine aventure.",
+    "titleAfter": "de crédit offert.",
+    "subtitle": "Rejoignez Lumi en avant-première et commencez votre prochain voyage avec 20 € offerts.",
     "success": "Merci de rejoindre notre liste d'attente !",
     "emailPlaceholder": "Saisissez votre adresse e-mail",
     "submit": "Rejoindre la liste",
@@ -75,11 +75,11 @@
     }
   },
   "hero": {
-    "badge": "Nous réinventons le voyage en Asie du Sud-Est et au-delà",
+    "badge": "Le paiement voyage, réinventé",
     "titleLine1": "Payez comme un",
     "titleLine2": "Local",
-    "subtitle": "Parcourez l'Asie du Sud-Est et au-delà en toute simplicité grâce aux paiements par QR code instantanés.",
-    "viewDemo": "Voir la démo",
+    "subtitle": "Voyagez en Asie du Sud-Est et payez partout grâce à votre téléphone. Simple, instantané, sans frais cachés.",
+    "viewDemo": "Découvrir Lumi",
     "joinWaitlist": "Rejoindre la liste d'attente",
     "videoTitle": "Vidéo de démo Lumi",
     "closeVideo": "Fermer la vidéo"
@@ -100,31 +100,31 @@
   },
   "mission": {
     "eyebrow": "Notre mission",
-    "title": "Les frontières ne devraient pas définir votre liberté.",
-    "body": "Lumi est né d'un constat simple : les voyageurs d'aujourd'hui sont contraints de choisir entre des taux de change excessifs, l'argent liquide ou les cartes traditionnelles — aucune de ces options n'est réellement satisfaisante. Les voyageurs n'ont pas accès au moyen de paiement le plus efficace de la région : les paiements mobiles par QR code.",
+    "title": "Vos voyages ne devraient pas vous coûter plus cher.",
+    "body": "Un constat simple : quand vous voyagez en Asie du Sud-Est, vous payez trop cher. Taux de change défavorables, commissions bancaires, frais de retrait... Pourtant, les locaux paient en un instant avec leur téléphone — via QR code, sans frais. Lumi vous donne accès à ce même réseau.",
     "features": {
       "phoneWallet": {
-        "title": "Votre téléphone est votre portefeuille",
-        "desc": "Pas d'argent liquide. Pas de cartes. Juste votre mobile. Effectuez vos paiements instantanément avec votre seul téléphone : simple et fluide."
+        "title": "Tout est dans votre téléphone",
+        "desc": "Pas de liquide, pas de carte à chercher. Ouvrez Lumi, scannez, c'est payé. Aussi simple qu'un achat en France."
       },
       "instantTransparent": {
-        "title": "Instantané et transparent",
-        "desc": "Aucuns frais cachés, visibilité immédiate sur le taux de change. Vous savez exactement ce que vous payez."
+        "title": "Zéro surprise sur la note",
+        "desc": "Le taux de change s'affiche avant chaque paiement. Un seul frais de 2 %, affiché noir sur blanc. Pas de mauvaise surprise au retour."
       },
       "payEverywhere": {
-        "title": "Payez partout",
-        "desc": "Accédez à plus de 25 millions de commerçants locaux, pour des paiements acceptés partout, même dans les coins les plus reculés."
+        "title": "25 millions de commerçants",
+        "desc": "Du restaurant de rue au grand magasin : partout où les locaux paient par QR code, Lumi fonctionne aussi."
       },
       "travelNowPayLater": {
-        "title": "Voyagez maintenant, payez plus tard",
-        "desc": "Profitez de vos vacances sans stress. Rechargez votre portefeuille et remboursez en mensualités simples."
+        "title": "Partez maintenant, payez à votre rythme",
+        "desc": "Rechargez votre portefeuille Lumi et étalez le remboursement en plusieurs fois. Pas d'intérêts cachés."
       }
     }
   },
   "whyLumi": {
-    "badge": "LA CONFIANCE, EN STANDARD",
-    "title": "Pourquoi Lumi ?",
-    "body": "Lumi est conçu pour vous donner une confiance totale à chaque transaction. Fondés par des banquiers expérimentés et soutenus par des investisseurs européens, nous apportons une expertise financière approfondie et une confiance durable à tout ce que nous entreprenons. En tant qu'entreprise européenne collaborant avec des partenaires régulés en Europe et en Asie, nous respectons des standards élevés de sécurité et de conformité pour protéger vos fonds et vos flux financiers. Associé à des paiements instantanés, à une tarification transparente et à un large réseau d'acceptation, Lumi offre une expérience de paiement fiable partout.",
+    "badge": "CONÇU POUR LA CONFIANCE",
+    "title": "Pourquoi choisir Lumi ?",
+    "body": "Lumi est fondé par des professionnels de la banque et de la finance, et soutenu par des investisseurs européens. En tant qu'entreprise française, nous respectons les normes les plus strictes en matière de protection des fonds et de conformité réglementaire — en Europe comme en Asie.",
     "cardTitle": "Votre argent est entre de bonnes mains",
     "cardItem1": "Cadre réglementaire européen",
     "cardItem2": "Virement bancaire SEPA",
@@ -234,9 +234,9 @@
     "title": "Témoignages",
     "items": {
       "sarah": {
-        "name": "Sarah Jenkins",
+        "name": "Sarah J.",
         "role": "Consultante digitale",
-        "text": "Lors de mon dernier séjour au Vietnam, je me suis retrouvée bloquée dans un taxi sans argent liquide ni moyen de paiement. Si seulement j'avais pu utiliser Lumi pour payer par QR code."
+        "text": "Au Vietnam, j'ai passé mon temps à chercher des distributeurs et à négocier en liquide. Une appli comme Lumi m'aurait changé la vie là-bas."
       },
       "marcus": {
         "name": "Marcus Thorne",
@@ -244,18 +244,18 @@
         "text": "Lumi pourrait vraiment bouleverser les cartes de crédit traditionnelles. Les frais sont plus bas et l'expérience est plus fluide. C'est l'avenir des paiements pour les voyageurs."
       },
       "elena": {
-        "name": "Elena Rossi",
-        "role": "Voyageuse solo",
-        "text": "Je passe chaque année quelques semaines en Thaïlande, mais sans compte bancaire local je ne peux pas payer via PromptPay. Lumi résout ce problème."
+        "name": "Elena R.",
+        "role": "Voyageuse régulière",
+        "text": "Chaque année en Thaïlande, je vois les locaux payer en deux secondes avec PromptPay. Avec Lumi, je pourrai enfin faire pareil sans ouvrir un compte sur place."
       }
     }
   },
   "team": {
-    "eyebrow": "Les esprits derrière Lumi",
-    "titleBefore": "Rencontrez les",
-    "titleHighlight": "Visionnaires",
+    "eyebrow": "L'équipe",
+    "titleBefore": "Les gens",
+    "titleHighlight": "derrière Lumi",
     "titleAfter": ".",
-    "subtitle": "Une équipe diverse de banquiers, d'ingénieurs et de voyageurs, déterminée à faire tomber les frontières financières.",
+    "subtitle": "Banquiers, ingénieurs, voyageurs — une équipe qui construit le paiement de demain pour les voyageurs d'aujourd'hui.",
     "careersTitle": "Envie de rejoindre l'aventure ?",
     "careersBody": "Nous recherchons en permanence des talents qui partagent notre passion pour le voyage et l'innovation financière.",
     "apply": "Postuler",
@@ -363,7 +363,7 @@
   "faqs": {
     "q1": {
       "question": "Qu'est-ce que Lumi ?",
-      "answer": "Lumi est un portefeuille numérique qui vous permet de payer chez les commerçants locaux d'Asie du Sud-Est grâce aux QR codes. Vous payez dans votre propre devise et Lumi se charge de la conversion instantanément au moment du paiement."
+      "answer": "Lumi est une application de paiement pour les voyageurs en Asie du Sud-Est. Scannez un QR code chez n'importe quel commerçant local, payez en euros depuis votre portefeuille Lumi — la conversion se fait instantanément au meilleur taux."
     },
     "q2": {
       "question": "Où puis-je utiliser Lumi ?",
@@ -378,8 +378,8 @@
       "answer": "Non. Lumi convertit automatiquement votre paiement dans la devise locale en temps réel, afin que vous puissiez régler vos achats sans aucune conversion manuelle."
     },
     "q5": {
-      "question": "Quel taux de change Lumi utilise-t-il ?",
-      "answer": "Lumi vous affiche le taux de change en temps réel et le montant final avant que vous ne confirmiez votre paiement, de sorte que vous savez toujours exactement ce que vous payez."
+      "question": "Quel taux de change est appliqué ?",
+      "answer": "Lumi utilise un taux proche du taux interbancaire. Avant chaque paiement, le montant exact en euros et en devise locale s'affiche sur votre écran. Pas de surprise."
     },
     "q6": {
       "question": "Y a-t-il des frais ?",
