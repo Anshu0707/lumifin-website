@@ -1,174 +1,125 @@
 # Pending Work — Lumifin Website
 
-A running list of outstanding tasks from the SEO/GEO audit and follow-up reviews.
-Last updated: 2026-05-05.
+SEO / GEO / localization status, last updated 2026-05-05.
 
 ---
 
-## 1. Verify the last two deploys are actually live
+## ✅ What's already shipped
 
-Before doing anything else, confirm the prerender + 404 fixes from commits
-`decf96a` and `b7deb59` are working in production.
+These are live on lumifin.io after the recent commits. No further action needed.
 
-Run these against the live site:
-
-```bash
-# Should return HTTP/2 404 (not 200)
-curl -I https://lumifin.io/this-does-not-exist
-
-# Should return Markdown (not the SPA shell)
-curl https://lumifin.io/llms.txt
-
-# Should return real FAQ HTML with FAQ-specific title and content
-curl -A "GPTBot" https://lumifin.io/faq | head -40
-
-# Should show <html lang="fr">
-curl -s https://lumifin.io/ | grep '<html'
-```
-
-If any of these still look broken, check the Netlify build log first
-(Puppeteer install can occasionally fail and silently fall back to the
-old SPA shell).
+- **Per-route canonicals** — every page links to its own URL.
+- **Crawler-visible HTML** — Puppeteer prerender produces real `dist/<route>/index.html` for every route. AI crawlers (GPTBot, ClaudeBot, PerplexityBot, etc.) now see real content, not the empty SPA shell.
+- **robots.txt** — explicit `Allow:` rules for GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, Applebot-Extended, CCBot.
+- **llms.txt** — Markdown sitemap for AI crawlers.
+- **Soft 404 fix** — unknown URLs return HTTP 404, not 200 + homepage.
+- **Unique titles / descriptions / OG / Twitter tags per page** — via the `<SEO>` component, baked into static HTML.
+- **JSON-LD structured data** — Organization, WebSite, FAQPage, Article, Breadcrumb schemas live.
+- **`<html lang="fr">`** — primary audience flagged correctly.
+- **French body content prerendered** — Puppeteer runs in French locale.
+- **Homepage SEO title/description in French** — moved to i18n, FR audience sees French title in browser tab and search results.
+- **French localization audit fixes** — untranslated text, grammar, calques, currency formatting, brand-name consistency.
+- **French copy rewrite guide applied** — hero, mission, value props, trust, FAQ, testimonials, team, CTAs all rewritten to sound natively French.
 
 ---
 
-## 2. Mentions légales + CGU pages — *legally required (LCEN)*
+## 🔴 P0 — Must do before launch
 
+### 1. Mentions légales + CGU pages *(legally required by LCEN)*
 French law requires every commercial website to publish:
-
-- **Mentions légales** (legal notice) — company name, SIREN, address,
-  director's name, hosting provider's contact info.
+- **Mentions légales** (legal notice) — company name, SIREN, address, director, hosting provider.
 - **CGU** (Conditions Générales d'Utilisation) — terms of use.
 
-Currently `/privacy` exists but the other two are missing from the sitemap
-and footer.
+`/privacy` exists but the other two are missing. **Blocker for going live with a real waitlist.**
 
-### What I need from you
+**What I need from you**: either (a) the legal text from your lawyer, or (b) approval to scaffold from a generic French SaaS template with placeholders. Once content is in hand, ~30 min to wire up.
 
-Pick one:
+### 2. Translate SEO meta strings on all other pages
+The homepage SEO title/description is now French. **Other 14 pages still serve English `<title>` and `<meta description>` to French Google searches** — biggest remaining SEO miss for the French audience.
 
-- **(a)** You write the text (or your lawyer does), and send it over.
-- **(b)** Authorize me to scaffold the pages with a generic French SaaS
-  template that has placeholders for the LumiFin SAS specifics (SIREN,
-  hosting provider, etc.), so you can fill them in. Get a lawyer to vet
-  before going live with real users.
+Pages affected: FAQ, team, privacy, blog, blog posts (×3), careers, security, travel-money (×4), compare, 404.
 
-### Once content exists
-
-I can wire up:
-
-- New routes in `src/App.tsx`: `/mentions-legales`, `/cgu`
-- New components: `src/pages/MentionsLegalesPage.tsx`, `src/pages/CguPage.tsx`
-- Footer links pointing to both
-- Sitemap entries in `public/sitemap.xml`
-- Add both routes to the prerender list in `scripts/prerender.mjs`
-- Translate via the existing i18n setup if you want EN versions too
-
-Estimated effort once text is in hand: ~30 min.
+**No input needed** — I can do this end-to-end (~45 min). Just say go.
 
 ---
 
-## 3. Analytics setup
+## 🟡 P1 — Strongly recommended
 
-Currently no analytics or tracking is live. Google Search Console *is*
-verified (via `public/googlefd1fc77406a5591d.html`), but there's nothing
-collecting visitor data, conversions, or funnel metrics.
+### 3. Analytics
+Currently zero tracking. Google Search Console is verified (via the `googlefd1fc77406a5591d.html` file) but nothing is collecting visitor data.
 
-### What I need from you
-
-**Decide on a provider.** Trade-offs:
-
-| Option | Cost | Cookie banner needed? | Setup effort |
+| Provider | Cost | Cookie banner | Setup |
 |---|---|---|---|
-| **Plausible** | ~€9/mo | No (no PII) | Easiest, ~5 min |
-| **GA4** | Free | Yes (CNIL-compliant banner) | ~30 min + banner work |
-| **Both** | €9/mo | Yes (GA needs the banner) | ~45 min |
-| **None for now** | — | — | — |
+| **Plausible** | ~€9/mo | No | ~5 min |
+| **GA4** | Free | Yes (CNIL-compliant banner) | ~30 min |
+| **Both** | €9/mo | Yes | ~45 min |
 
-Recommendation given Lumifin is French B2C and GDPR scrutiny is real:
-Plausible alone is probably the right call until you actually need GA4's
-audience features.
+Recommendation given Lumifin is French B2C: **Plausible alone**. Solid privacy story, no banner friction, no GDPR complications. Can add GA4 later when you need audience features.
 
-### Bonus — Bing Webmaster Tools
+**What I need from you**: pick a provider; if Plausible, share the script snippet they give you on signup.
 
-Adding this is one meta tag in `index.html`. ~30 seconds once you grab
-the verify code from https://www.bing.com/webmasters. Worth doing —
-small but free SEO surface area.
+### 4. Bing Webmaster Tools verification
+Quick win. ~30 seconds once you grab the verify code from https://www.bing.com/webmasters. Adds Bing as a search engine source.
 
----
+### 5. Sitemap re-check
+`public/sitemap.xml` exists but should be verified that all 15 prerendered routes are listed and that lastmod dates make sense. Not auto-generated currently.
 
-## 4. Translate SEO meta strings into French
+**No input needed** — 10 min to audit and refresh.
 
-**This is the highest-impact remaining SEO improvement.**
+### 6. Open Graph image audit
+The OG image is `https://lumifin.io/assets/preview/og-wa.jpg`, declared as 1920×1080. Best practice for social shares (LinkedIn, X, WhatsApp) is 1200×630, under 1MB. Worth confirming the file is actually that size and uses the right aspect ratio.
 
-The prerendered body content is now French, but the `<title>`,
-`<meta description>`, `og:title`, etc. are still hardcoded English in each
-page component. So a French Google searcher sees:
-
-- Body: French ✓
-- Title in search results: "FAQ — Frequently Asked Questions | Lumifin" ✗
-
-For the French audience this is a noticeable miss.
-
-### What needs to happen
-
-Each page (e.g., `src/pages/FAQPage.tsx`) currently has:
-
-```tsx
-<SEO
-  title="FAQ — Frequently Asked Questions"
-  description="Everything you need to know about Lumifin..."
-  canonical="/faq"
-/>
-```
-
-Move those strings into `src/i18n/locales/{en,fr}.json` and reference them
-via `t()`:
-
-```tsx
-<SEO
-  title={t('faqPage.seo.title')}
-  description={t('faqPage.seo.description')}
-  canonical="/faq"
-/>
-```
-
-15 pages × ~3 strings each = ~45 strings to translate. Estimated effort:
-~45 min for the wiring, plus translation time (or use DeepL).
-
-No input needed from you — I can do this end-to-end. Just say the word.
+**No input needed** — 15 min to inspect and re-export if needed.
 
 ---
 
-## 5. Sanity-check hydration warnings
+## 🟢 P2 — Nice to have
 
-Open the live site in a Chrome incognito window with DevTools open, switch
-to the Console tab, and reload a few pages. We're now serving prerendered
-HTML in French to a browser that may detect English — React might log
-hydration mismatch warnings.
+### 7. Bilingual URLs with hreflang
+Right now both EN and FR serve from the same URL (e.g., `/faq`). The prerender is French; English visitors get a brief flash of French before JS swaps to English. The "right" way is `/fr/faq` and `/en/faq` with `hreflang` tags pointing each at the other.
 
-If you see warnings: send me a screenshot, I'll fix.
-If clean: no action needed.
+This is a bigger restructure (touches App.tsx routing, prerender, sitemap, every internal link). Defer until you have actual EN traffic worth optimizing for.
 
-5-minute check.
+### 8. Native French copywriter pass
+The localization audit and rewrite guide both flagged this: a native copywriter should sanity-check the rewritten copy and adjust for brand voice. Especially:
+- Hero tagline and mission statement (highest visibility)
+- Testimonials (still feel synthetic)
+
+Not a code task — needs an actual copywriter. Probably 2–4 hours of their time.
+
+### 9. Hydration warning sanity check
+With prerender-FR / runtime-EN-detection mix, React might log hydration mismatch warnings in the console. Open lumifin.io in incognito with DevTools → Console open, click around, screenshot any warnings. **Send to me, 5 min to fix.**
+
+### 10. Image alt-text audit
+Wasn't part of the SEO audit but standard practice. Hero, mockups, blog post images, team photos. Helps accessibility *and* image-search SEO. ~30 min if I do it.
+
+### 11. Schema additions
+The audit hinted at `SoftwareApplication` schema being missing (Lumi is technically a software/app product). Adding it would help Google understand the product type. ~15 min.
+
+### 12. Bump Puppeteer to v24+
+Current v23 is past its support window. Pure housekeeping; works fine today. ~5 min.
+
+### 13. "Step 1 displayed twice" *(from localization audit)*
+Couldn't reproduce in code — likely a runtime visual artifact. **Send a screenshot from the live site once Netlify finishes the latest deploy and I'll fix.**
 
 ---
 
-## 6. Future / nice-to-have (not urgent)
+## Quick-reference: which commits did what
 
-- **Bilingual URLs** (`/fr/faq`, `/en/faq` with hreflang). The "right" way
-  to serve both languages — gives English users prerendered English
-  content instead of a French→English flip. Bigger project, not blocking.
-- **Bump Puppeteer to v24+** — current v23 is past its support window.
-  Pure housekeeping; works fine today.
-- **Image alt text audit** — was not part of the GEO audit but standard
-  practice for accessibility and image-search SEO.
-- **Performance pass** — Lighthouse, LCP, JS bundle splitting beyond
-  what's there now. Not urgent given the site is already light.
+- `dd8c1c0` — Initial PENDING_WORK doc
+- `dd4a1a0` — French localization audit fixes (P0/P1/P2)
+- `ddb6067` — EN footer "Blogs" → "Blog"
+- `8af4d03`, `48da71e` — Netlify build command (Puppeteer + Chromium install)
+- `abcd25e` — French copy rewrite guide applied (sections 1–8)
 
 ---
 
-## Quick reference — recent commits
+## Recommended order if you tackle these
 
-- `decf96a` — Prerender all routes + AI crawler rules
-- `b7deb59` — Soft-404 fix, llms.txt, lang="fr", French prerender locale
+1. **Mentions légales + CGU** (legal blocker)
+2. **SEO meta on all pages** (biggest SEO win you haven't picked up yet)
+3. **Plausible analytics** (5-min setup, lets you measure everything that comes next)
+4. **Bing verification** (30 sec)
+5. **Sitemap + OG image audit** (defensive cleanup)
+6. **Native copywriter pass** (when budget permits)
+7. **Bilingual URLs** (when EN traffic justifies it)
