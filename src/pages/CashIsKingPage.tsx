@@ -14,8 +14,8 @@ export default function CashIsKingPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia"
-        description="Exchange rate traps, ATM fees, pickpocketing risks — the hidden costs of carrying cash in Southeast Asia that nobody warns you about."
+        title={t('blogPosts.cashIsKing.seo.title')}
+        description={t('blogPosts.cashIsKing.seo.description')}
         canonical="/blog/cash-is-king"
         ogImage="/assets/blog/cash-is-king-cover.webp"
         ogType="article"

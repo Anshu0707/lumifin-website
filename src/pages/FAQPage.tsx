@@ -15,8 +15,8 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="FAQ — Frequently Asked Questions"
-        description="Everything you need to know about Lumifin: how QR payments work, fees, supported countries, security, and getting started."
+        title={t('faqPage.seo.title')}
+        description={t('faqPage.seo.description')}
         canonical="/faq"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'FAQ', url: '/faq' }]),

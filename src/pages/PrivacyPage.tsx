@@ -10,8 +10,8 @@ export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Privacy Policy"
-        description="How Lumifin collects, uses, and protects your personal data. GDPR-compliant privacy practices for our payment service."
+        title={t('privacy.seo.title')}
+        description={t('privacy.seo.description')}
         canonical="/privacy"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Privacy Policy', url: '/privacy' }])}
       />

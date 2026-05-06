@@ -35,8 +35,8 @@ export default function CareersPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Work With Us — Careers at Lumifin"
-        description="Join Lumifin: an early-stage fintech reinventing cross-border payments between Europe and Asia. Remote roles based in France."
+        title={t('careers.seo.title')}
+        description={t('careers.seo.description')}
         canonical="/careers"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Careers', url: '/careers' }])}
       />

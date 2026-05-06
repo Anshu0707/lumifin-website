@@ -251,6 +251,10 @@
     }
   },
   "team": {
+    "seo": {
+      "title": "L'équipe — Les gens derrière Lumi",
+      "description": "Banquiers, ingénieurs, voyageurs : l'équipe qui construit Lumi pour les voyageurs européens en Asie du Sud-Est."
+    },
     "eyebrow": "L'équipe",
     "titleBefore": "Les gens",
     "titleHighlight": "derrière Lumi",
@@ -271,12 +275,20 @@
     }
   },
   "faqPage": {
+    "seo": {
+      "title": "FAQ — Questions fréquentes",
+      "description": "Tout ce qu'il faut savoir sur Lumi : paiements par QR code, tarifs, pays couverts, sécurité, et premiers pas."
+    },
     "backHome": "Retour à l'accueil",
     "eyebrow": "Support et informations",
     "title": "Questions fréquentes",
     "subtitle": "Tout ce que vous devez savoir sur Lumi, notre portefeuille numérique, et notre manière de réinventer le voyage en Asie du Sud-Est."
   },
   "blog": {
+    "seo": {
+      "title": "Blog — Conseils voyage et fintech",
+      "description": "Conseils sur les paiements à l'étranger, le QR code et la fintech en Asie du Sud-Est. Pour les voyageurs européens en Thaïlande, Vietnam et Indonésie."
+    },
     "eyebrow": "Les actus Lumi",
     "titleBefore": "Le blog",
     "titleHighlight": "Lumi",
@@ -313,6 +325,10 @@
     }
   },
   "privacy": {
+    "seo": {
+      "title": "Politique de confidentialité",
+      "description": "Comment Lumi collecte, utilise et protège vos données personnelles. Pratiques conformes au RGPD pour notre service de paiement."
+    },
     "eyebrow": "Mentions légales",
     "title": "Politique de confidentialité",
     "effectiveDate": "Date d'entrée en vigueur : janvier 2026",
@@ -432,6 +448,10 @@
   },
   "blogPosts": {
     "cashIsKing": {
+      "seo": {
+        "title": "Cash is King ? Les vrais problèmes du liquide en Asie du Sud-Est",
+        "description": "Taux défavorables, frais de DAB, risques de vol : les coûts cachés du liquide en Thaïlande, Vietnam et Indonésie."
+      },
       "backToBlog": "Retour au blog",
       "category": "Voyage · Argent · Asie du Sud-Est",
       "title": "L'argent liquide, c'est roi ? Les vrais problèmes liés à voyager avec du cash en Thaïlande, au Vietnam et en Indonésie",
@@ -478,6 +498,10 @@
       "closing": "Parce que payer pour quelque chose, n'importe où dans le monde, ne devrait pas être aussi compliqué."
     },
     "qrisDecoded": {
+      "seo": {
+        "title": "QRIS expliqué — Le système de paiement QR indonésien",
+        "description": "56 millions de commerçants, 6 milliards de transactions : QRIS, c'est comme ça que l'Indonésie paie. Pourquoi les touristes européens en sont exclus."
+      },
       "backToBlog": "Retour au blog",
       "category": "Paiements QR 101",
       "title": "QRIS Décrypté : le système de paiement QR standardisé de l'Indonésie et ce que cela signifie pour les voyageurs européens",
@@ -530,6 +554,10 @@
       "ctaBody": "Rejoignez la liste d'accès anticipé Lumi sur"
     },
     "whyWeBuiltLumi": {
+      "seo": {
+        "title": "Pourquoi nous avons créé Lumi — L'histoire d'un fondateur",
+        "description": "Deux moments qui ont tout changé : un trajet en taxi à Kuala Lumpur, un artiste dans le nord de la Thaïlande. L'histoire derrière Lumi."
+      },
       "backToBlog": "Retour au blog",
       "category": "Note du fondateur",
       "titleBefore": "Pourquoi nous avons créé ",
@@ -577,6 +605,10 @@
     }
   },
   "careers": {
+    "seo": {
+      "title": "Carrières — Rejoignez l'équipe Lumi",
+      "description": "Rejoignez Lumi : une fintech qui réinvente les paiements transfrontaliers entre l'Europe et l'Asie. Postes à distance basés en France."
+    },
     "eyebrow": "Carrières",
     "title": "Rejoignez",
     "titleHighlight": "l'équipe",
@@ -660,6 +692,10 @@
     }
   },
   "security": {
+    "seo": {
+      "title": "Sécurité — Comment Lumi protège votre argent et vos données",
+      "description": "Chiffrement de niveau bancaire, authentification à deux facteurs, conformité RGPD, infrastructure régulée. Comment Lumi sécurise vos paiements et vos données."
+    },
     "eyebrow": "Confiance et sécurité",
     "titleBefore": "Votre argent est en",
     "titleHighlight": "sécurité",

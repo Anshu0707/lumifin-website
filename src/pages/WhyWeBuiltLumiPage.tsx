@@ -14,8 +14,8 @@ export default function WhyWeBuiltLumiPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Why We Built Lumi — A Founder's Story"
-        description="The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumifin."
+        title={t('blogPosts.whyWeBuiltLumi.seo.title')}
+        description={t('blogPosts.whyWeBuiltLumi.seo.description')}
         canonical="/blog/why-we-built-lumi"
         ogImage="/assets/blog/why-we-built-lumi-cover.webp"
         ogType="article"

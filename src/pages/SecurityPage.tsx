@@ -21,8 +21,8 @@ export default function SecurityPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Security — How Lumifin Protects Your Money and Data"
-        description="Bank-grade encryption, two-factor authentication, GDPR compliance, and regulated infrastructure. Learn how Lumifin keeps your payments and personal data safe."
+        title={t('security.seo.title')}
+        description={t('security.seo.description')}
         canonical="/security"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Security', url: '/security' }])}
       />

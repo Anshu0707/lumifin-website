@@ -14,8 +14,8 @@ export default function QrisDecodedPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="QRIS Decoded — Indonesia's QR Payment System for European Travelers"
-        description="56 million merchants, 6 billion transactions — QRIS is how Indonesia pays. Here's why European tourists are locked out, and what's changing."
+        title={t('blogPosts.qrisDecoded.seo.title')}
+        description={t('blogPosts.qrisDecoded.seo.description')}
         canonical="/blog/qris-decoded"
         ogImage="/assets/blog/qris-decoded-cover.webp"
         ogType="article"

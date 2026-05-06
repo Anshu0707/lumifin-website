@@ -26,8 +26,8 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="Blog — Travel Tips, Fintech Insights & Payment Guides"
-        description="Stories about travel money, QR payments, and fintech innovation in Southeast Asia. Tips for European travellers visiting Thailand, Vietnam, and Indonesia."
+        title={t('blog.seo.title')}
+        description={t('blog.seo.description')}
         canonical="/blog"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Blog', url: '/blog' }])}
       />

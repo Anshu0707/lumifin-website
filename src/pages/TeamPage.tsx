@@ -72,8 +72,8 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-white">
       <SEO
-        title="About Us — Meet the Team Behind Lumifin"
-        description="Meet the team building Lumifin: bankers, engineers, and travellers dedicated to making cross-border payments simple for Europeans in Southeast Asia."
+        title={t('team.seo.title')}
+        description={t('team.seo.description')}
         canonical="/team"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'About Us', url: '/team' }])}
       />

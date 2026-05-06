@@ -251,6 +251,10 @@
     }
   },
   "team": {
+    "seo": {
+      "title": "About Us — Meet the Team Behind Lumifin",
+      "description": "Meet the team building Lumifin: bankers, engineers, and travellers dedicated to making cross-border payments simple for Europeans in Southeast Asia."
+    },
     "eyebrow": "The Minds Behind Lumi",
     "titleBefore": "Meet the",
     "titleHighlight": "Visionaries",
@@ -271,12 +275,20 @@
     }
   },
   "faqPage": {
+    "seo": {
+      "title": "FAQ — Frequently Asked Questions",
+      "description": "Everything you need to know about Lumifin: how QR payments work, fees, supported countries, security, and getting started."
+    },
     "backHome": "Back to Home",
     "eyebrow": "Support & Information",
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about Lumi, our digital wallet, and how we're redefining travel in South East Asia."
   },
   "blog": {
+    "seo": {
+      "title": "Blog — Travel Tips, Fintech Insights & Payment Guides",
+      "description": "Stories about travel money, QR payments, and fintech innovation in Southeast Asia. Tips for European travellers visiting Thailand, Vietnam, and Indonesia."
+    },
     "eyebrow": "Lumi Insights",
     "titleBefore": "The",
     "titleHighlight": "Lumi",
@@ -313,6 +325,10 @@
     }
   },
   "privacy": {
+    "seo": {
+      "title": "Privacy Policy",
+      "description": "How Lumifin collects, uses, and protects your personal data. GDPR-compliant privacy practices for our payment service."
+    },
     "eyebrow": "Legal",
     "title": "Privacy Policy",
     "effectiveDate": "Effective Date: January 2026",
@@ -432,6 +448,10 @@
   },
   "blogPosts": {
     "cashIsKing": {
+      "seo": {
+        "title": "Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia",
+        "description": "Exchange rate traps, ATM fees, pickpocketing risks — the hidden costs of carrying cash in Southeast Asia that nobody warns you about."
+      },
       "backToBlog": "Back to Blog",
       "category": "Travel · Money · Southeast Asia",
       "title": "Cash Is King? The Real Problems with Carrying Cash in Thailand, Vietnam, and Indonesia",
@@ -478,6 +498,10 @@
       "closing": "Because paying for something, anywhere in the world, shouldn't be this hard."
     },
     "qrisDecoded": {
+      "seo": {
+        "title": "QRIS Decoded — Indonesia's QR Payment System for European Travelers",
+        "description": "56 million merchants, 6 billion transactions — QRIS is how Indonesia pays. Here's why European tourists are locked out, and what's changing."
+      },
       "backToBlog": "Back to Blog",
       "category": "QR Payments 101",
       "title": "QRIS Decoded: Indonesia's Standardized QR Payment System and What It Means for European Travelers",
@@ -530,6 +554,10 @@
       "ctaBody": "Join the Lumifin early access list at"
     },
     "whyWeBuiltLumi": {
+      "seo": {
+        "title": "Why We Built Lumi — A Founder's Story",
+        "description": "The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumifin."
+      },
       "backToBlog": "Back to Blog",
       "category": "Founder's Note",
       "titleBefore": "Why We Built ",
@@ -577,6 +605,10 @@
     }
   },
   "careers": {
+    "seo": {
+      "title": "Work With Us — Careers at Lumifin",
+      "description": "Join Lumifin: an early-stage fintech reinventing cross-border payments between Europe and Asia. Remote roles based in France."
+    },
     "eyebrow": "Careers",
     "title": "Work With",
     "titleHighlight": "Us",
@@ -660,6 +692,10 @@
     }
   },
   "security": {
+    "seo": {
+      "title": "Security — How Lumifin Protects Your Money and Data",
+      "description": "Bank-grade encryption, two-factor authentication, GDPR compliance, and regulated infrastructure. Learn how Lumifin keeps your payments and personal data safe."
+    },
     "eyebrow": "Trust & Security",
     "titleBefore": "Your money is",
     "titleHighlight": "safe",
