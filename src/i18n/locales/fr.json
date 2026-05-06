@@ -26,7 +26,7 @@
     "company": "Entreprise",
     "aboutUs": "À propos",
     "careers": "Carrières",
-    "blog": "Blogs",
+    "blog": "Blog",
     "support": "Support",
     "faq": "FAQ",
     "privacyPolicy": "Politique de confidentialité",
@@ -47,7 +47,7 @@
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
     "copyright": "© 2026 LumiFin SAS. Tous droits réservés.",
-    "brandNote": "Lumi est une marque de Lumifin SAS, fournisseur de technologie."
+    "brandNote": "Lumi est une marque de LumiFin SAS, fournisseur de technologie."
   },
   "faqSection": {
     "eyebrow": "Support et informations",
@@ -58,7 +58,7 @@
   "waitlist": {
     "eyebrow": "Offre exclusive",
     "titleBefore": "Rejoignez la liste d'attente pour",
-    "amount": "€ 20",
+    "amount": "20 €",
     "titleAfter": "de crédit.",
     "subtitle": "Soyez parmi les premiers à découvrir Lumi et prenez une longueur d'avance pour votre prochaine aventure.",
     "success": "Merci de rejoindre notre liste d'attente !",
@@ -68,8 +68,14 @@
     "error": "Une erreur est survenue. Veuillez réessayer.",
     "botFieldLabel": "Ne remplissez pas ce champ :"
   },
+  "landing": {
+    "seo": {
+      "title": "Lumifin — Payez comme un local en Asie du Sud-Est",
+      "description": "Voyagez en Thaïlande, au Vietnam et en Indonésie sans frais d'espèces ni de carte. Scannez les QR codes locaux et payez instantanément avec Lumi. Zéro frais cachés."
+    }
+  },
   "hero": {
-    "badge": "Nous réinventons le voyage en Sud-Est et au-delà",
+    "badge": "Nous réinventons le voyage en Asie du Sud-Est et au-delà",
     "titleLine1": "Payez comme un",
     "titleLine2": "Local",
     "subtitle": "Parcourez l'Asie du Sud-Est et au-delà en toute simplicité grâce aux paiements par QR code instantanés.",
@@ -81,7 +87,7 @@
   "coverage": {
     "eyebrow": "Réseau régional",
     "title": "6 pays. Une seule app.",
-    "descPrefix": "De la street food de Bangkok aux boutiques du Vietnam, LumiFin garantit que vos paiements aboutissent toujours.",
+    "descPrefix": "De la street food de Bangkok aux boutiques du Vietnam, Lumi garantit que vos paiements aboutissent toujours.",
     "comingSoon": "BIENTÔT DISPONIBLE DANS",
     "countries": {
       "thailand": "Thaïlande",
@@ -95,7 +101,7 @@
   "mission": {
     "eyebrow": "Notre mission",
     "title": "Les frontières ne devraient pas définir votre liberté.",
-    "body": "Lumi est né d'un constat simple : les voyageurs d'aujourd'hui sont contraints de choisir entre des taux de change gonflés, l'argent liquide ou les cartes traditionnelles — aucune de ces options n'est réellement satisfaisante. Les voyageurs n'ont pas accès au moyen de paiement le plus efficace de la région : les paiements mobiles par QR code.",
+    "body": "Lumi est né d'un constat simple : les voyageurs d'aujourd'hui sont contraints de choisir entre des taux de change excessifs, l'argent liquide ou les cartes traditionnelles — aucune de ces options n'est réellement satisfaisante. Les voyageurs n'ont pas accès au moyen de paiement le plus efficace de la région : les paiements mobiles par QR code.",
     "features": {
       "phoneWallet": {
         "title": "Votre téléphone est votre portefeuille",
@@ -107,7 +113,7 @@
       },
       "payEverywhere": {
         "title": "Payez partout",
-        "desc": "Accédez à plus de 25 millions de commerçants locaux, pour des paiements véritablement inclusifs dans chaque recoin."
+        "desc": "Accédez à plus de 25 millions de commerçants locaux, pour des paiements acceptés partout, même dans les coins les plus reculés."
       },
       "travelNowPayLater": {
         "title": "Voyagez maintenant, payez plus tard",
@@ -116,7 +122,7 @@
     }
   },
   "whyLumi": {
-    "badge": "LA CONFIANCE INTÉGRÉE :)",
+    "badge": "LA CONFIANCE, EN STANDARD",
     "title": "Pourquoi Lumi ?",
     "body": "Lumi est conçu pour vous donner une confiance totale à chaque transaction. Fondés par des banquiers expérimentés et soutenus par des investisseurs européens, nous apportons une expertise financière approfondie et une confiance durable à tout ce que nous entreprenons. En tant qu'entreprise européenne collaborant avec des partenaires régulés en Europe et en Asie, nous respectons des standards élevés de sécurité et de conformité pour protéger vos fonds et vos flux financiers. Associé à des paiements instantanés, à une tarification transparente et à un large réseau d'acceptation, Lumi offre une expérience de paiement fiable partout.",
     "cardTitle": "Votre argent est entre de bonnes mains",
@@ -127,7 +133,7 @@
   "journey": {
     "eyebrow": "Le parcours utilisateur",
     "title": "De votre banque en Europe à n'importe quel QR en Asie",
-    "subtitle": "Quatre étapes simples vers la liberté financière.",
+    "subtitle": "Quatre étapes simples pour payer partout.",
     "steps": {
       "1": {
         "title": "Approvisionnez votre portefeuille",
@@ -136,7 +142,7 @@
       },
       "2": {
         "title": "Scannez le QR code",
-        "desc": "Lumi prend en charge tous les principaux standards de paiement par QR code en South East Asia. Il suffit de pointer et de scanner dans n'importe quel stand de rue ou centre commercial."
+        "desc": "Lumi prend en charge tous les principaux standards de paiement par QR code en Asie du Sud-Est. Il suffit de pointer et de scanner dans n'importe quel stand de rue ou centre commercial."
       },
       "3": {
         "title": "Vérifiez le montant",
@@ -153,50 +159,50 @@
   "fees": {
     "eyebrow": "Transparence des frais",
     "title": "Aucun secret, rien que des économies.",
-    "subtitle": "Comparaison pour une dépense globale typique de €1000.",
+    "subtitle": "Comparaison pour une dépense globale typique de 1 000 €.",
     "savingsPrefix": "Évitez de perdre jusqu'à",
     "savingsMiddle": "pour",
-    "savingsAmount": "€120",
-    "savingsPer": "€1,000",
+    "savingsAmount": "120 €",
+    "savingsPer": "1 000 €",
     "table": {
       "provider": "Fournisseur",
       "feeStructure": "Structure des frais + surcharges éventuelles",
       "totalCost": "Coût total pour le client",
       "lumi": "Lumi",
       "lumiFee": "2 % de frais",
-      "lumiTotal": "€1,020",
+      "lumiTotal": "1 020 €",
       "rows": {
         "airport": {
           "name": "Change à l'aéroport (espèces)",
           "fee": "10 % d'écart sur le change",
-          "total": "€1,100"
+          "total": "1 100 €"
         },
         "atm": {
           "name": "Retrait au distributeur (DAB)",
-          "fee": "7,5 EUR + 3 %",
-          "total": "€1,060"
+          "fee": "7,50 € + 3 %",
+          "total": "1 060 €"
         },
         "card": {
           "name": "Paiement par carte",
-          "fee": "0,2 EUR + 3 %",
-          "total": "€1,064"
+          "fee": "0,20 € + 3 %",
+          "total": "1 064 €"
         },
         "cardFx": {
           "name": "Carte avec conversion de devise",
           "fee": "8 % supplémentaires",
-          "total": "€1,144"
+          "total": "1 144 €"
         }
       }
     },
     "faqTitle": "Questions sur les tarifs",
     "faqs": {
       "q1": {
-        "question": "Y a-t-il des frais cachés avec Lumifin ?",
+        "question": "Y a-t-il des frais cachés avec Lumi ?",
         "answer": "Non. Vous payez des frais transparents de 2 % par transaction — c'est tout. Pas de frais d'abonnement, pas de frais de retrait, pas de majoration sur la conversion de devises. Le taux affiché est le taux appliqué."
       },
       "q2": {
-        "question": "Comment le taux de Lumifin se compare-t-il à celui de ma banque ?",
-        "answer": "Les banques européennes facturent généralement 1,5 à 3 % de frais de transaction à l'étranger plus une marge de change de 2 à 5 %. Avec les bureaux de change des aéroports, l'écart peut atteindre 8 à 10 %. Lumifin utilise des taux proches de l'interbancaire avec un seul frais de 2 %, vous faisant économiser jusqu'à 120 € par tranche de 1 000 € dépensés."
+        "question": "Comment le taux de Lumi se compare-t-il à celui de ma banque ?",
+        "answer": "Les banques européennes facturent généralement 1,5 à 3 % de frais de transaction à l'étranger plus une marge de change de 2 à 5 %. Avec les bureaux de change des aéroports, l'écart peut atteindre 8 à 10 %. Lumi utilise des taux proches de l'interbancaire avec un seul frais de 2 %, vous faisant économiser jusqu'à 120 € par tranche de 1 000 € dépensés."
       },
       "q3": {
         "question": "Y a-t-il un montant minimum ou maximum par paiement ?",
@@ -225,11 +231,11 @@
   },
   "stories": {
     "eyebrow": "Expériences vérifiées",
-    "title": "Récits de nomades",
+    "title": "Témoignages",
     "items": {
       "sarah": {
         "name": "Sarah Jenkins",
-        "role": "Stratège numérique",
+        "role": "Consultante digitale",
         "text": "Lors de mon dernier séjour au Vietnam, je me suis retrouvée bloquée dans un taxi sans argent liquide ni moyen de paiement. Si seulement j'avais pu utiliser Lumi pour payer par QR code."
       },
       "marcus": {
@@ -268,14 +274,14 @@
     "backHome": "Retour à l'accueil",
     "eyebrow": "Support et informations",
     "title": "Questions fréquentes",
-    "subtitle": "Tout ce que vous devez savoir sur Lumi, notre portefeuille numérique, et notre manière de réinventer le voyage en South East Asia."
+    "subtitle": "Tout ce que vous devez savoir sur Lumi, notre portefeuille numérique, et notre manière de réinventer le voyage en Asie du Sud-Est."
   },
   "blog": {
     "eyebrow": "Les actus Lumi",
     "titleBefore": "Le blog",
     "titleHighlight": "Lumi",
     "titleAfter": ".",
-    "subtitle": "Des histoires sur le voyage, la fintech et l'avenir des paiements sans frontières en South East Asia.",
+    "subtitle": "Des histoires sur le voyage, la fintech et l'avenir des paiements sans frontières en Asie du Sud-Est.",
     "newsletterTitle": "Restez informé",
     "newsletterBody": "Recevez les derniers conseils voyage et actualités fintech directement dans votre boîte de réception.",
     "emailPlaceholder": "Votre adresse e-mail",
@@ -310,7 +316,7 @@
     "eyebrow": "Mentions légales",
     "title": "Politique de confidentialité",
     "effectiveDate": "Date d'entrée en vigueur : janvier 2026",
-    "intro": "Lumifin (« nous », « notre », « nos ») s'engage à protéger votre vie privée. La présente politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous visitez notre site <1>www.lumifin.io</1> ou utilisez nos services.",
+    "intro": "Lumi (« nous », « notre », « nos ») s'engage à protéger votre vie privée. La présente politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous visitez notre site <1>www.lumifin.io</1> ou utilisez nos services.",
     "section1": {
       "title": "1. Informations que nous collectons",
       "body": "Nous pouvons collecter des informations personnelles telles que votre nom, votre adresse e-mail, votre numéro de téléphone et toute information que vous fournissez lors de votre inscription ou de vos échanges avec nous. Nous collectons également automatiquement des informations techniques, notamment l'adresse IP, le type de navigateur, les informations relatives à l'appareil, le système d'exploitation et les données d'utilisation lorsque vous interagissez avec notre plateforme."
@@ -357,11 +363,11 @@
   "faqs": {
     "q1": {
       "question": "Qu'est-ce que Lumi ?",
-      "answer": "Lumi est un portefeuille numérique qui vous permet de payer chez les commerçants locaux de South East Asia grâce aux QR codes. Vous payez dans votre propre devise et Lumi se charge de la conversion instantanément au moment du paiement."
+      "answer": "Lumi est un portefeuille numérique qui vous permet de payer chez les commerçants locaux d'Asie du Sud-Est grâce aux QR codes. Vous payez dans votre propre devise et Lumi se charge de la conversion instantanément au moment du paiement."
     },
     "q2": {
       "question": "Où puis-je utiliser Lumi ?",
-      "answer": "Lumi est accepté chez des millions de commerçants en South East Asia, notamment en Thaïlande, au Vietnam et en Indonésie, partout où les réseaux de paiement par QR code pris en charge sont disponibles."
+      "answer": "Lumi est accepté chez des millions de commerçants en Asie du Sud-Est, notamment en Thaïlande, au Vietnam et en Indonésie, partout où les réseaux de paiement par QR code pris en charge sont disponibles."
     },
     "q3": {
       "question": "Comment payer avec Lumi ?",
@@ -421,7 +427,7 @@
     },
     "q17": {
       "question": "Lumi est-il une banque ?",
-      "answer": "Non, Lumi n'est pas une banque. Lumi est une marque de Lumifin SAS, un fournisseur de technologie. Tous les services de paiement et mouvements de fonds sont assurés par des partenaires pleinement régulés en Europe et en Asie, agréés et supervisés par les autorités financières."
+      "answer": "Non, Lumi n'est pas une banque. Lumi est une marque de LumiFin SAS, un fournisseur de technologie. Tous les services de paiement et mouvements de fonds sont assurés par des partenaires pleinement régulés en Europe et en Asie, agréés et supervisés par les autorités financières."
     }
   },
   "blogPosts": {
@@ -476,7 +482,7 @@
       "category": "Paiements QR 101",
       "title": "QRIS Décrypté : le système de paiement QR standardisé de l'Indonésie et ce que cela signifie pour les voyageurs européens",
       "subtitle": "Avec plus de 56 millions de commerçants et 6 milliards de transactions, le QRIS est le mode de paiement de l'Indonésie. Et en tant que visiteur européen, vous en êtes actuellement exclu.",
-      "author": "Lumifin",
+      "author": "Lumi",
       "readTime": "7 min de lecture",
       "dateLabel": "Mars 2026",
       "imgAlt": "Système de paiement QR QRIS en Indonésie",
@@ -514,14 +520,14 @@
       "h5": "QRIS transfrontalier : des progrès, mais pas encore pour l'Europe",
       "p9": "Bank Indonesia s'est activement engagée à étendre le QRIS à l'international — mais principalement en Asie. Grâce à l'initiative de liaison de paiements transfrontaliers de l'ASEAN, le QRIS se connecte désormais avec PromptPay en Thaïlande, DuitNow en Malaisie, PayNow à Singapour, et plusieurs autres systèmes régionaux. En août 2025, le QRIS a été lancé au Japon, et la Corée du Sud le rejoindra en avril 2026.",
       "p10": "Cela signifie qu'un touriste thaïlandais à Bali peut scanner un code QRIS et payer avec son application bancaire thaïlandaise. Un Singapourien peut faire de même. Mais un voyageur français, allemand ou néerlandais ? Aucune voie n'existe encore.",
-      "blockquote1": "C'est précisément ce fossé que des solutions comme Lumifin sont conçues pour combler.",
+      "blockquote1": "C'est précisément ce fossé que des solutions comme Lumi sont conçues pour combler.",
       "p11": "Donner aux voyageurs européens accès à l'infrastructure de paiement QR locale sans avoir besoin d'un compte bancaire ou d'un portefeuille électronique local.",
       "h6": "Ce que cela signifie pour votre prochain voyage en Indonésie",
       "p12": "Si vous prévoyez de visiter l'Indonésie — que ce soit pour deux semaines de vacances à Bali, un mois de télétravail à Canggu, ou un voyage d'affaires à Jakarta — comprendre le QRIS est essentiel. Ce n'est pas une « option » de paiement en Indonésie ; c'est de plus en plus la norme. De nombreux petits commerçants, services de transport et même des vendeurs de marché préfèrent désormais ou acceptent exclusivement le QRIS plutôt que le cash.",
       "p13": "La bonne nouvelle : l'infrastructure est mature, sécurisée et régulée par Bank Indonesia. La technologie fonctionne parfaitement. La seule pièce manquante est l'accès pour les visiteurs internationaux venant de l'extérieur de l'Asie.",
-      "blockquote2": "Et c'est exactement ce sur quoi nous travaillons chez Lumifin. Restez connectés.",
+      "blockquote2": "Et c'est exactement ce sur quoi nous travaillons chez Lumi. Restez connectés.",
       "ctaTitle": "Vous voulez être le premier Européen à payer avec des QR codes en Indonésie ?",
-      "ctaBody": "Rejoignez la liste d'accès anticipé Lumifin sur"
+      "ctaBody": "Rejoignez la liste d'accès anticipé Lumi sur"
     },
     "whyWeBuiltLumi": {
       "backToBlog": "Retour au blog",
@@ -587,10 +593,10 @@
         "type": "Stage",
         "location": "Télétravail — France",
         "sections": {
-          "aboutLumifin": "À propos de Lumifin",
-          "aboutLumifinContent": "Lumifin est une fintech en phase de démarrage qui vise à réinventer les paiements transfrontaliers entre l'Europe et l'Asie. Fondée par un diplômé de l'École Polytechnique avec une vaste expérience en finance, technologie et opérations internationales, l'entreprise construit un service qui rend les transferts internationaux aussi simples et transparents qu'un paiement local. Notre approche combine des rails de paiement blockchain, des stablecoins réglementés, et une forte attention à l'expérience utilisateur et à la conformité réglementaire.",
+          "aboutLumi": "À propos de Lumi",
+          "aboutLumiContent": "Lumi est une fintech en phase de démarrage qui vise à réinventer les paiements transfrontaliers entre l'Europe et l'Asie. Fondée par un diplômé de l'École Polytechnique avec une vaste expérience en finance, technologie et opérations internationales, l'entreprise construit un service qui rend les transferts internationaux aussi simples et transparents qu'un paiement local. Notre approche combine des rails de paiement blockchain, des stablecoins réglementés, et une forte attention à l'expérience utilisateur et à la conformité réglementaire.",
           "theRole": "Le poste",
-          "theRoleContent": "Nous opérons à l'intersection de l'infrastructure financière, des opérations internationales et du design de produits numériques. Rejoindre Lumifin, c'est entrer dans un environnement dynamique où les décisions sont prises rapidement, les problèmes sont abordés de front, et chaque membre de l'équipe a un impact réel. En tant qu'Associé(e) du Fondateur, vous travaillerez directement avec le fondateur sur la stratégie, les opérations, le produit et la croissance.",
+          "theRoleContent": "Nous opérons à l'intersection de l'infrastructure financière, des opérations internationales et du design de produits numériques. Rejoindre Lumi, c'est entrer dans un environnement dynamique où les décisions sont prises rapidement, les problèmes sont abordés de front, et chaque membre de l'équipe a un impact réel. En tant qu'Associé(e) du Fondateur, vous travaillerez directement avec le fondateur sur la stratégie, les opérations, le produit et la croissance.",
           "whatYoullDo": "Ce que vous ferez",
           "whatYoullDoItems": [
             "Mener des études de marché et des analyses concurrentielles pour identifier les opportunités dans les paiements transfrontaliers",
@@ -620,7 +626,7 @@
         "location": "Télétravail — France",
         "sections": {
           "aboutProduct": "Le produit",
-          "aboutProductContent": "Notre solution est un service de paiement conçu pour les voyageurs européens en Asie du Sud-Est. Il leur permet d'effectuer des paiements à moindre coût en utilisant les systèmes de paiement par QR code locaux largement adoptés dans la région. Avec Lumifin, les voyageurs peuvent payer comme les locaux, en utilisant uniquement leur téléphone — sans espèces, sans carte — chez n'importe quel commerçant, et à un coût nettement inférieur aux alternatives existantes.",
+          "aboutProductContent": "Notre solution est un service de paiement conçu pour les voyageurs européens en Asie du Sud-Est. Il leur permet d'effectuer des paiements à moindre coût en utilisant les systèmes de paiement par QR code locaux largement adoptés dans la région. Avec Lumi, les voyageurs peuvent payer comme les locaux, en utilisant uniquement leur téléphone — sans espèces, sans carte — chez n'importe quel commerçant, et à un coût nettement inférieur aux alternatives existantes.",
           "targetSegments": "Segments cibles",
           "targetSegmentsItems": [
             "Étudiants",
@@ -668,12 +674,12 @@
       "infrastructure": "Infrastructure sécurisée",
       "infrastructureDesc": "Nos systèmes fonctionnent sur une infrastructure cloud de niveau entreprise avec protection DDoS, détection automatisée des menaces et surveillance 24h/24.",
       "compliance": "Conformité réglementaire",
-      "complianceDesc": "Lumifin opère dans le cadre réglementaire européen. Nous travaillons avec des partenaires financiers agréés pour garantir une conformité totale avec les réglementations sur les services de paiement."
+      "complianceDesc": "Lumi opère dans le cadre réglementaire européen. Nous travaillons avec des partenaires financiers agréés pour garantir une conformité totale avec les réglementations sur les services de paiement."
     },
     "dataProtectionTitle": "Protection des données",
-    "dataProtectionBody": "En tant qu'entreprise française, Lumifin est pleinement soumise au Règlement Général sur la Protection des Données (RGPD) et au contrôle de la CNIL. Nous appliquons le principe de minimisation des données : nous ne collectons que les informations strictement nécessaires à la fourniture de notre service. Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles à tout moment.",
+    "dataProtectionBody": "En tant qu'entreprise française, Lumi est pleinement soumise au Règlement Général sur la Protection des Données (RGPD) et au contrôle de la CNIL. Nous appliquons le principe de minimisation des données : nous ne collectons que les informations strictement nécessaires à la fourniture de notre service. Vous pouvez demander l'accès, la correction ou la suppression de vos données personnelles à tout moment.",
     "regulatoryTitle": "Cadre réglementaire",
-    "regulatoryBody": "Lumifin SAS est immatriculée en France et opère en conformité avec les réglementations financières européennes applicables. Notre traitement des paiements est assuré par des partenaires financiers agréés et réglementés. Nous nous engageons à maintenir les normes les plus élevées en matière de lutte contre le blanchiment d'argent (LCB) et de connaissance du client (KYC).",
+    "regulatoryBody": "LumiFin SAS est immatriculée en France et opère en conformité avec les réglementations financières européennes applicables. Notre traitement des paiements est assuré par des partenaires financiers agréés et réglementés. Nous nous engageons à maintenir les normes les plus élevées en matière de lutte contre le blanchiment d'argent (LCB) et de connaissance du client (KYC).",
     "reportTitle": "Signaler un problème de sécurité",
     "reportBody": "Si vous découvrez une vulnérabilité de sécurité potentielle, veuillez la signaler de manière responsable à",
     "lastUpdated": "Dernière mise à jour : mars 2026"
@@ -693,7 +699,7 @@
       "titleBefore": "Payez comme un",
       "titleHighlight": "local",
       "titleAfter": "en Asie du Sud-Est.",
-      "subtitle": "Les voyageurs européens perdent 50–150 € par voyage en frais de DAB, mauvais taux de change et risques liés aux espèces. Lumifin vous connecte aux systèmes de paiement par QR locaux — vous payez en monnaie locale à des taux proches de l'interbancaire, instantanément.",
+      "subtitle": "Les voyageurs européens perdent 50–150 € par voyage en frais de DAB, mauvais taux de change et risques liés aux espèces. Lumi vous connecte aux systèmes de paiement par QR locaux — vous payez en monnaie locale à des taux proches de l'interbancaire, instantanément.",
       "problem": {
         "cashTitle": "Le cash coûte cher",
         "cashDesc": "Les bureaux de change d'aéroport prennent 8–10 % de marge. Les DAB ajoutent des frais fixes plus la marge de votre banque. Vous perdez de l'argent à chaque retrait.",
@@ -702,18 +708,18 @@
         "riskTitle": "Le cash, c'est risqué",
         "riskDesc": "Pas de protection anti-fraude, pas de remboursement, pas de recours. Volé ou perdu = perdu. Trimballer beaucoup de cash en zone touristique est dangereux."
       },
-      "howTitle": "Comment fonctionne Lumifin",
+      "howTitle": "Comment fonctionne Lumi",
       "howSubtitle": "Trois étapes. Pas de cash. Pas de TPE. Pas de frais cachés.",
       "steps": {
         "topUpTitle": "Rechargez",
-        "topUpDesc": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin. Quelques secondes.",
+        "topUpDesc": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumi. Quelques secondes.",
         "scanTitle": "Scannez",
         "scanDesc": "Scannez n'importe quel QR code local — PromptPay en Thaïlande, VietQR au Vietnam, QRIS en Indonésie.",
         "payTitle": "Payez",
         "payDesc": "Le paiement passe instantanément en monnaie locale à des taux proches de l'interbancaire. Vous voyez le montant en euros en temps réel."
       },
       "chooseDestination": "Choisissez votre destination",
-      "compareTitle": "Comment Lumifin se compare-t-il ?",
+      "compareTitle": "Comment Lumi se compare-t-il ?",
       "compareSubtitle": "Voyez comment nous nous comparons à Revolut, Wise et aux banques traditionnelles pour voyager en Asie du Sud-Est.",
       "compareCta": "Voir la comparaison",
       "labels": {
@@ -758,11 +764,11 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (quand accepté)" },
         "atm": { "method": "Retrait DAB", "fee": "5,50 €+ par retrait", "rate": "Interbancaire + marge", "speed": "5–10 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
-      "howTitle": "Comment Lumifin fonctionne en Thaïlande",
+      "howTitle": "Comment Lumi fonctionne en Thaïlande",
       "steps": {
-        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumi.",
         "scan": "Scannez n'importe quel QR PromptPay chez les commerçants thaïlandais — de la street food aux supermarchés.",
         "pay": "Le paiement passe instantanément en bahts à des taux proches de l'interbancaire. C'est tout."
       },
@@ -774,13 +780,13 @@
       "faqTitle": "Questions fréquentes",
       "faqs": {
         "q1": { "q": "Puis-je utiliser ma carte bancaire européenne en Thaïlande ?", "a": "Oui, mais attendez-vous à 1,5–3 % de frais de change plus des taux défavorables. L'acceptation de la carte est limitée hors hôtels et zones touristiques. La plupart des vendeurs locaux, stands de street food et transports utilisent QR ou cash." },
-        "q2": { "q": "Qu'est-ce que PromptPay ?", "a": "PromptPay est le système de paiement par QR national thaïlandais, utilisé par plus de 70 millions de personnes. Il permet des virements instantanés entre comptes bancaires et est accepté par des millions de commerçants — du 7-Eleven aux vendeurs de rue. Lumifin permet aux voyageurs européens d'accéder directement à PromptPay." },
+        "q2": { "q": "Qu'est-ce que PromptPay ?", "a": "PromptPay est le système de paiement par QR national thaïlandais, utilisé par plus de 70 millions de personnes. Il permet des virements instantanés entre comptes bancaires et est accepté par des millions de commerçants — du 7-Eleven aux vendeurs de rue. Lumi permet aux voyageurs européens d'accéder directement à PromptPay." },
         "q3": { "q": "Combien coûtent les retraits DAB en Thaïlande ?", "a": "Les DAB thaïlandais facturent 220 THB (~5,50 €) par retrait, plus 1,5–3 % ajoutés par votre banque européenne. Avec des plafonds de 20 000–30 000 THB, ça monte vite sur un séjour de plusieurs semaines." },
-        "q4": { "q": "Vaut-il mieux changer ses euros en France ou en Thaïlande ?", "a": "Aucun n'est idéal. Les bureaux d'aéroport offrent de mauvais taux des deux côtés. Les bureaux de Bangkok comme SuperRich sont meilleurs mais peu pratiques. Lumifin vous donne des taux proches de l'interbancaire directement via votre téléphone — sans change physique." },
-        "q5": { "q": "Comment Lumifin fonctionne en Thaïlande ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez votre portefeuille depuis votre compte bancaire européen. Puis scannez n'importe quel QR PromptPay pour payer instantanément en bahts — à des taux bien meilleurs que les cartes ou bureaux de change." }
+        "q4": { "q": "Vaut-il mieux changer ses euros en France ou en Thaïlande ?", "a": "Aucun n'est idéal. Les bureaux d'aéroport offrent de mauvais taux des deux côtés. Les bureaux de Bangkok comme SuperRich sont meilleurs mais peu pratiques. Lumi vous donne des taux proches de l'interbancaire directement via votre téléphone — sans change physique." },
+        "q5": { "q": "Comment Lumi fonctionne en Thaïlande ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez votre portefeuille depuis votre compte bancaire européen. Puis scannez n'importe quel QR PromptPay pour payer instantanément en bahts — à des taux bien meilleurs que les cartes ou bureaux de change." }
       },
       "ctaTitle": "Prêt à payer comme un local en Thaïlande ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
     },
     "vietnam": {
       "title": "Payer au Vietnam en tant que voyageur européen",
@@ -806,11 +812,11 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (rare acceptation)" },
         "atm": { "method": "Retrait DAB", "fee": "0,80–2 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Variable selon lieu", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
-      "howTitle": "Comment Lumifin fonctionne au Vietnam",
+      "howTitle": "Comment Lumi fonctionne au Vietnam",
       "steps": {
-        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumi.",
         "scan": "Scannez n'importe quel QR VietQR chez les commerçants vietnamiens — cafés, boutiques, marchés, partout.",
         "pay": "Le paiement passe instantanément en dongs vietnamiens. Vous voyez le montant en euros en temps réel."
       },
@@ -819,11 +825,11 @@
         "q1": { "q": "Puis-je utiliser ma carte bancaire européenne au Vietnam ?", "a": "Seulement dans les hôtels haut de gamme, restaurants internationaux, et certains centres commerciaux. La grande majorité du commerce vietnamien — des stands de pho aux taxis-motos — fonctionne en cash ou QR uniquement. Comptez 1,5–3 % de frais où la carte est acceptée." },
         "q2": { "q": "Qu'est-ce que VietQR ?", "a": "VietQR est le standard national de paiement par QR du Vietnam, reliant plus de 40 banques et e-wallets. Il permet des virements instantanés en scannant un seul QR. L'adoption a explosé depuis 2023, avec des millions de commerçants — y compris vendeurs de rue et petites boutiques." },
         "q3": { "q": "Combien coûtent les retraits DAB au Vietnam ?", "a": "Les DAB vietnamiens facturent 22 000–55 000 VND (~0,80–2 €) par retrait, avec des plafonds de 2 000 000–5 000 000 VND par transaction. Votre banque européenne ajoute 1,5–3 %. Vous aurez peut-être besoin de 2–3 retraits par jour pour vos dépenses de base." },
-        "q4": { "q": "Pourquoi les montants en dong sont-ils si déroutants ?", "a": "Parce que 1 EUR ≈ 27 000 VND. Les transactions quotidiennes sont en millions de dongs — un repas peut coûter 85 000 VND, un hôtel 1 500 000 VND. Il faut s'habituer pour éviter les erreurs coûteuses. Lumifin vous montre l'équivalent en euros en temps réel." },
-        "q5": { "q": "Comment Lumifin fonctionne au Vietnam ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR VietQR pour payer instantanément en dongs — à des taux proches de l'interbancaire. Pas de comptage de billets, pas de chasse au DAB, pas de confusion sur les coupures." }
+        "q4": { "q": "Pourquoi les montants en dong sont-ils si déroutants ?", "a": "Parce que 1 EUR ≈ 27 000 VND. Les transactions quotidiennes sont en millions de dongs — un repas peut coûter 85 000 VND, un hôtel 1 500 000 VND. Il faut s'habituer pour éviter les erreurs coûteuses. Lumi vous montre l'équivalent en euros en temps réel." },
+        "q5": { "q": "Comment Lumi fonctionne au Vietnam ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR VietQR pour payer instantanément en dongs — à des taux proches de l'interbancaire. Pas de comptage de billets, pas de chasse au DAB, pas de confusion sur les coupures." }
       },
       "ctaTitle": "Prêt à payer comme un local au Vietnam ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
     },
     "indonesia": {
       "title": "Payer en Indonésie en tant que voyageur européen",
@@ -849,11 +855,11 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (acceptation limitée)" },
         "atm": { "method": "Retrait DAB", "fee": "1,70–2,80 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–10 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
-      "howTitle": "Comment Lumifin fonctionne en Indonésie",
+      "howTitle": "Comment Lumi fonctionne en Indonésie",
       "steps": {
-        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumifin.",
+        "topUp": "Ajoutez des euros depuis votre compte bancaire européen vers votre portefeuille Lumi.",
         "scan": "Scannez n'importe quel QR QRIS — warungs, cafés, boutiques, chauffeurs Grab, partout dans l'archipel.",
         "pay": "Le paiement passe instantanément en roupies indonésiennes. Vous voyez l'équivalent en euros en temps réel."
       },
@@ -862,23 +868,23 @@
         "q1": { "q": "Puis-je utiliser ma carte bancaire européenne en Indonésie ?", "a": "Seulement dans les hôtels, restaurants haut de gamme, et centres commerciaux des grandes villes. La grande majorité du commerce indonésien — warungs, ojeks, boutiques locales, marchés — fonctionne avec QRIS (paiements QR) ou cash. Comptez 1,5–3 % de frais où la carte est acceptée." },
         "q2": { "q": "Qu'est-ce que QRIS ?", "a": "QRIS (Quick Response Code Indonesian Standard) est le système national unifié de paiement par QR de l'Indonésie, lancé par Bank Indonesia en 2019. Il connecte tous les principaux e-wallets (GoPay, OVO, Dana, ShopeePay) et banques sous un seul standard. Plus de 56 millions de commerçants l'acceptent — des centres commerciaux de Jakarta aux warungs de bord de route à Yogyakarta." },
         "q3": { "q": "Combien coûtent les retraits DAB en Indonésie ?", "a": "Les DAB indonésiens facturent 30 000–50 000 IDR (~1,70–2,80 €) par retrait. Les plafonds sont généralement 1 250 000–2 500 000 IDR par transaction (~70–140 €). Votre banque européenne ajoute 1,5–3 %. Plusieurs retraits par semaine montent vite." },
-        "q4": { "q": "Pourquoi les Européens ne peuvent pas utiliser QRIS directement ?", "a": "QRIS nécessite soit un compte bancaire indonésien (qui demande un permis de résidence KITAS), soit un e-wallet local comme GoPay/OVO (qui demande un numéro de téléphone et une pièce d'identité indonésiens). Les touristes européens n'ont accès à aucun des deux. Lumifin comble cet écart." },
-        "q5": { "q": "Comment Lumifin fonctionne en Indonésie ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR QRIS pour payer instantanément en roupies — à des taux proches de l'interbancaire. Marche dans n'importe lequel des 56+ millions de commerçants QRIS de l'archipel." }
+        "q4": { "q": "Pourquoi les Européens ne peuvent pas utiliser QRIS directement ?", "a": "QRIS nécessite soit un compte bancaire indonésien (qui demande un permis de résidence KITAS), soit un e-wallet local comme GoPay/OVO (qui demande un numéro de téléphone et une pièce d'identité indonésiens). Les touristes européens n'ont accès à aucun des deux. Lumi comble cet écart." },
+        "q5": { "q": "Comment Lumi fonctionne en Indonésie ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR QRIS pour payer instantanément en roupies — à des taux proches de l'interbancaire. Marche dans n'importe lequel des 56+ millions de commerçants QRIS de l'archipel." }
       },
       "ctaTitle": "Prêt à payer comme un local en Indonésie ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
     }
   },
   "compare": {
     "eyebrow": "Comparaison",
-    "titleBefore": "Lumifin vs",
+    "titleBefore": "Lumi vs",
     "titleHighlight": "les autres",
     "subtitle": "Revolut et Wise sont d'excellents produits — mais ils n'ont pas été conçus pour payer dans un stand de street food thaïlandais ou un warung balinais. Voici comment les options se comparent vraiment pour voyager en Asie du Sud-Est.",
     "disclaimer": "* Les frais Revolut varient selon le forfait (Standard, Plus, Premium, Metal). Le change gratuit a des plafonds mensuels sur les forfaits Standard. Tarifs en mars 2026.",
     "lastUpdated": "Dernière mise à jour : mars 2026. Informations basées sur les tarifs publics. Vérifiez les tarifs actuels sur le site de chaque fournisseur.",
     "headers": {
       "feature": "Caractéristique",
-      "lumifin": "Lumifin",
+      "lumifin": "Lumi",
       "revolut": "Revolut",
       "wise": "Wise",
       "bank": "Banque trad."
@@ -929,9 +935,9 @@
     },
     "bottomLineTitle": "En résumé",
     "bottomLineP1": "Revolut et Wise sont excellents pour les pays avec une large acceptation de la carte — Europe, États-Unis, Australie. Mais en Thaïlande, au Vietnam et en Indonésie, la majorité du commerce quotidien se passe dans des endroits sans TPE. Vendeurs de street food, chauffeurs de tuk-tuk, marchés locaux, petits cafés — c'est là que vous voulez vraiment dépenser, et aucun n'accepte votre carte Revolut.",
-    "bottomLineP2": "Lumifin est conçu spécifiquement pour ce besoin. Au lieu d'essayer de forcer une carte dans une économie cashless, QR-first, nous vous connectons directement aux rails de paiement locaux — PromptPay, VietQR, QRIS — utilisés par des millions de locaux chaque jour. Vous pouvez payer là où ils paient, à des taux comparables aux meilleures fintechs, sans porter de cash ni espérer un TPE.",
+    "bottomLineP2": "Lumi est conçu spécifiquement pour ce besoin. Au lieu d'essayer de forcer une carte dans une économie cashless, QR-first, nous vous connectons directement aux rails de paiement locaux — PromptPay, VietQR, QRIS — utilisés par des millions de locaux chaque jour. Vous pouvez payer là où ils paient, à des taux comparables aux meilleures fintechs, sans porter de cash ni espérer un TPE.",
     "ctaTitle": "Prêt à essayer la façon plus intelligente de payer en Asie du Sud-Est ?",
-    "ctaSubtitle": "Rejoignez la liste d'attente Lumifin et soyez parmi les premiers à voyager sans friction de paiement.",
+    "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans friction de paiement.",
     "ctaButton": "Rejoindre la liste d'attente"
   },
   "notFound": {
@@ -945,16 +951,16 @@
   },
   "authors": {
     "gaurav": {
-      "role": "COO, Lumifin",
-      "bio": "Gaurav apporte une vaste expérience en finance et opérations internationales. Il a co-fondé Lumifin pour résoudre les défis de paiement transfrontalier qu'il a vécus en voyageant à travers l'Asie du Sud-Est."
+      "role": "COO, Lumi",
+      "bio": "Gaurav apporte une vaste expérience en finance et opérations internationales. Il a co-fondé Lumi pour résoudre les défis de paiement transfrontalier qu'il a vécus en voyageant à travers l'Asie du Sud-Est."
     },
     "tanvi": {
-      "role": "Product Analyst, Lumifin",
-      "bio": "Tanvi se concentre sur la recherche utilisateur et la stratégie produit chez Lumifin. Elle écrit sur les défis réels de paiement que rencontrent les voyageurs européens en Asie du Sud-Est."
+      "role": "Product Analyst, Lumi",
+      "bio": "Tanvi se concentre sur la recherche utilisateur et la stratégie produit chez Lumi. Elle écrit sur les défis réels de paiement que rencontrent les voyageurs européens en Asie du Sud-Est."
     },
     "pierre": {
-      "role": "CEO, Lumifin",
-      "bio": "Pierre est diplômé de l'École Polytechnique avec une expertise approfondie en fintech et marchés émergents. Il a fondé Lumifin pour combler le fossé entre les voyageurs européens et les systèmes de paiement locaux en Asie."
+      "role": "CEO, Lumi",
+      "bio": "Pierre est diplômé de l'École Polytechnique avec une expertise approfondie en fintech et marchés émergents. Il a fondé Lumi pour combler le fossé entre les voyageurs européens et les systèmes de paiement locaux en Asie."
     }
   }
 }
