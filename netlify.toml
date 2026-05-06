@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npx puppeteer browsers && npm run build"
+  command = "npm install && npx puppeteer browsers install chrome && npm run build"
   publish = "dist"
 
 # No SPA-fallback redirect on purpose. The build prerenders every known route
