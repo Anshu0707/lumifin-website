@@ -394,19 +394,19 @@
     },
     "eyebrow": "Mentions légales",
     "title": "Mentions légales",
-    "effectiveDate": "Dernière mise à jour : [À COMPLÉTER : date]",
+    "effectiveDate": "Dernière mise à jour : 7 mai 2026",
     "intro": "Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), il est précisé aux utilisateurs du site lumifin.io l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.",
     "editor": {
       "title": "1. Éditeur du site",
       "intro": "Le site lumifin.io est édité par :",
       "name": "Raison sociale : LumiFin SAS",
-      "form": "Forme juridique : [À COMPLÉTER : forme juridique exacte, ex. « Société par Actions Simplifiée »]",
+      "form": "Forme juridique : Société par Actions Simplifiée (SAS)",
       "capital": "Capital social : [À COMPLÉTER : montant en euros]",
       "address": "Siège social : 50 rue Anatole France, 92290 Châtenay-Malabry, France",
-      "siren": "SIREN : [À COMPLÉTER : numéro SIREN à 9 chiffres]",
-      "rcs": "RCS : [À COMPLÉTER : ville d'immatriculation et numéro RCS]",
-      "vat": "TVA intracommunautaire : [À COMPLÉTER si applicable, ex. « FR00000000000 »]",
-      "director": "Directeur de la publication : [À COMPLÉTER : nom et prénom du représentant légal]",
+      "siren": "SIREN : 994 382 281",
+      "rcs": "RCS : Nanterre 994 382 281",
+      "vat": "TVA intracommunautaire : FR28 994 382 281",
+      "director": "Directeur de la publication : Pierre Lahbabi",
       "email": "E-mail de contact : info@lumifin.io"
     },
     "hosting": {
@@ -426,7 +426,7 @@
     },
     "cookies": {
       "title": "5. Cookies",
-      "body": "Le site lumifin.io utilise des cookies strictement nécessaires à son bon fonctionnement. [À COMPLÉTER si des cookies analytiques ou publicitaires sont déployés : description des cookies, finalités, durée de conservation, et mention du bandeau de consentement conforme à la recommandation CNIL.]"
+      "body": "Le site lumifin.io utilise deux catégories de cookies. (1) Des cookies strictement nécessaires au bon fonctionnement du site, notamment pour mémoriser votre préférence de langue ; ces cookies ne nécessitent pas votre consentement. (2) Des cookies analytiques fournis par Google Analytics 4, destinés à mesurer l'audience et améliorer le contenu du site ; ces cookies ne sont déposés qu'après votre consentement explicite via le bandeau dédié, conformément aux recommandations de la CNIL. Vous pouvez retirer votre consentement à tout moment en effaçant les données du site dans les paramètres de votre navigateur."
     },
     "links": {
       "title": "6. Liens hypertextes",
@@ -452,7 +452,7 @@
     },
     "eyebrow": "Mentions légales",
     "title": "Conditions Générales d'Utilisation",
-    "effectiveDate": "Dernière mise à jour : [À COMPLÉTER : date]",
+    "effectiveDate": "Dernière mise à jour : 7 mai 2026",
     "intro": "Les présentes Conditions Générales d'Utilisation (« CGU ») définissent les règles d'utilisation du site lumifin.io édité par LumiFin SAS (ci-après « Lumi », « nous », « notre », « nos »). En accédant au site, vous acceptez sans réserve l'intégralité des présentes CGU.",
     "section1": {
       "title": "1. Objet",

@@ -394,19 +394,19 @@
     },
     "eyebrow": "Legal",
     "title": "Legal Notice",
-    "effectiveDate": "Last updated: [TO COMPLETE: date]",
+    "effectiveDate": "Last updated: 7 May 2026",
     "intro": "In accordance with French Law no. 2004-575 of 21 June 2004 on confidence in the digital economy (LCEN), this page identifies the parties involved in the publication and operation of the lumifin.io website.",
     "editor": {
       "title": "1. Site Publisher",
       "intro": "The lumifin.io website is published by:",
       "name": "Company name: LumiFin SAS",
-      "form": "Legal form: [TO COMPLETE: e.g. \"Société par Actions Simplifiée (SAS)\"]",
+      "form": "Legal form: Société par Actions Simplifiée (SAS)",
       "capital": "Share capital: [TO COMPLETE: amount in euros]",
       "address": "Registered office: 50 rue Anatole France, 92290 Châtenay-Malabry, France",
-      "siren": "SIREN: [TO COMPLETE: 9-digit SIREN number]",
-      "rcs": "Trade register (RCS): [TO COMPLETE: city and registration number]",
-      "vat": "Intra-community VAT: [TO COMPLETE if applicable, e.g. \"FR00000000000\"]",
-      "director": "Publication director: [TO COMPLETE: name of legal representative]",
+      "siren": "SIREN: 994 382 281",
+      "rcs": "Trade register (RCS): Nanterre 994 382 281",
+      "vat": "Intra-community VAT: FR28 994 382 281",
+      "director": "Publication director: Pierre Lahbabi",
       "email": "Contact email: info@lumifin.io"
     },
     "hosting": {
@@ -426,7 +426,7 @@
     },
     "cookies": {
       "title": "5. Cookies",
-      "body": "The lumifin.io website uses cookies that are strictly necessary for its operation. [TO COMPLETE if analytics or advertising cookies are deployed: description of cookies, purposes, retention periods, and reference to the consent banner in line with French CNIL guidance.]"
+      "body": "The lumifin.io website uses two categories of cookies. (1) Strictly necessary cookies, used for example to remember your language preference; these do not require your consent. (2) Analytics cookies provided by Google Analytics 4, used to measure traffic and improve the site's content; these are only set after you explicitly consent via the dedicated banner, in line with French CNIL guidance. You can withdraw your consent at any time by clearing the site's data in your browser settings."
     },
     "links": {
       "title": "6. Hyperlinks",
@@ -452,7 +452,7 @@
     },
     "eyebrow": "Legal",
     "title": "Terms of Use",
-    "effectiveDate": "Last updated: [TO COMPLETE: date]",
+    "effectiveDate": "Last updated: 7 May 2026",
     "intro": "These Terms of Use (\"Terms\") govern your use of the lumifin.io website published by LumiFin SAS (hereinafter \"Lumi\", \"we\", \"our\", \"us\"). By accessing the website, you accept these Terms in full.",
     "section1": {
       "title": "1. Purpose",
