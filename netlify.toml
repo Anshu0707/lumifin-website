@@ -5,3 +5,39 @@
 # No SPA-fallback redirect on purpose. The build prerenders every known route
 # to dist/<route>/index.html, and Netlify auto-serves dist/404.html with
 # HTTP 404 for any unmatched URL. See public/_redirects for the full rationale.
+
+# Cache-Control headers.
+# Vite asset filenames are content-hashed (e.g. index-AbC123.js), so they can
+# be cached aggressively — the URL changes whenever the content changes.
+# HTML files are NOT hashed (the entry point), so we cache them briefly via
+# the CDN (5 min) while still letting users see fresh content quickly.
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate, s-maxage=300"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate, s-maxage=300"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/llms.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
