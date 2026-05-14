@@ -8,6 +8,11 @@ interface SEOProps {
   ogType?: string;
   noindex?: boolean;
   structuredData?: object | object[];
+  /** Absolute or root-relative URL of the LCP-critical image for this page.
+   *  Adds <link rel="preload" as="image"> so the browser can fetch it in
+   *  parallel with JS. Use sparingly — only for genuine above-the-fold
+   *  images that you want to drive LCP. */
+  preloadImage?: string;
 }
 
 const BASE_URL = 'https://lumifin.io';
@@ -21,6 +26,7 @@ export default function SEO({
   ogType = 'website',
   noindex = false,
   structuredData,
+  preloadImage,
 }: SEOProps) {
   const fullTitle = title.includes('Lumifin') ? title : `${title} | Lumifin`;
   const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
@@ -38,6 +44,7 @@ export default function SEO({
       <meta name="description" content={description} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+      {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchPriority="high" />}
 
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
@@ -52,14 +59,13 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
-      {/* Hreflang — same URL structure for both languages */}
-      {canonicalUrl && (
-        <>
-          <link rel="alternate" hrefLang="en" href={canonicalUrl} />
-          <link rel="alternate" hrefLang="fr" href={canonicalUrl} />
-          <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />
-        </>
-      )}
+      {/* Hreflang — same URL structure for both languages.
+          NOTE: react-helmet-async does not process Fragments (<>...</>) inside
+          <Helmet>. The three <link> tags must be flat children, otherwise
+          Helmet silently drops them. */}
+      {canonicalUrl && <link rel="alternate" hrefLang="en" href={canonicalUrl} />}
+      {canonicalUrl && <link rel="alternate" hrefLang="fr" href={canonicalUrl} />}
+      {canonicalUrl && <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />}
 
       {/* Structured Data */}
       {schemaArray.map((schema, i) => (

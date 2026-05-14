@@ -88,6 +88,7 @@ export default function LandingPage() {
         <img
           src="/assets/screens/Add Funds Cropped.webp"
           alt={t("journey.steps.1.alt")}
+          loading="lazy"
           className="w-full h-full object-cover scale-[0.90]"
         />
       ),
@@ -809,6 +810,7 @@ export default function LandingPage() {
         <img
           src="/assets/screens/QR Scan 1.2.webp"
           alt={t("journey.steps.3.alt")}
+          loading="lazy"
           className="w-full h-full object-cover scale-[0.92]"
         />
       ),
@@ -822,6 +824,7 @@ export default function LandingPage() {
         <img
           src="/assets/screens/QR Scan 1.5 1.webp"
           alt={t("journey.steps.4.alt")}
+          loading="lazy"
           className="w-full h-full object-contain scale-[1.14]"
         />
       ),
@@ -835,6 +838,7 @@ export default function LandingPage() {
         description={t('landing.seo.description')}
         canonical="/"
         structuredData={[organizationSchema, websiteSchema, softwareApplicationSchema]}
+        preloadImage="/assets/hero/landing-hero.webp"
       />
       <Header />
 
@@ -844,8 +848,9 @@ export default function LandingPage() {
           <img
             alt={t("hero.imgAlt")}
             className="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCHioVLgm-I7vY0esq7II6hPpcDBRhm3BgftQY8ZDTH0bNMOmPksNlMOW1VIG-Elwtq3JPQ2erK2e8EeeBlAMo3EJeich0bUPqbuwTETMGThcbIHXxHTvNyovfPgEjX6ACRcQ1cWtHdX5ubIkiC3tkCDckJXtHkl497BZndFKqaiy9nP5Jpn8smXuDu7PdAbDekl4_CILESdMdpI_ofUhYE4eJpP5GhHDcUFIEHktIcfCnqrf8uKEEaOiDIuTruLraa4Rl_KuLb7jF"
-            referrerPolicy="no-referrer"
+            src="/assets/hero/landing-hero.webp"
+            loading="eager"
+            fetchPriority="high"
           />
           <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]"></div>
         </div>
@@ -948,13 +953,14 @@ export default function LandingPage() {
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   src={country.img}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
                     {country.network}
                   </p>
-                  <h4 className="text-2xl font-black">{country.name}</h4>
+                  <h3 className="text-2xl font-black">{country.name}</h3>
                 </div>
               </>
             );
@@ -1005,6 +1011,7 @@ export default function LandingPage() {
                 className="w-full h-full object-cover"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaEq9eYXoQVkKhvfkYgm6Ohg9imOHFSt8qf64AZgeD92i45IkJCAaJSEsez0E1Zv2rOonRYwYGEIwVuaV3jfN4eh5wkTUmFtl3DXHiogmhaZ1hqCiRkAGfBG5Ev4mcd2FxUAXsTYWLHn8CwpSvhpQXAe-nXWZJiNppcoJ7F5CBr4vckEb_5rpq9_7WBXymDXJm5WKsL06GvUJGIAF5P2jJ0yh8LQqdMKeezFZjnlm9SF5w2-GZWPqVZyMKXhT5GKn3sqvbGTs-AzM"
                 referrerPolicy="no-referrer"
+                loading="lazy"
               />
             </div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary/10 rounded-full blur-[80px] group-hover:bg-secondary/20 transition-all"></div>
@@ -1025,9 +1032,9 @@ export default function LandingPage() {
                   <Wallet className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     {t("mission.features.phoneWallet.title")}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 font-medium">
                     {t("mission.features.phoneWallet.desc")}
                   </p>
@@ -1038,9 +1045,9 @@ export default function LandingPage() {
                   <ShieldCheck className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     {t("mission.features.instantTransparent.title")}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 font-medium">
                     {t("mission.features.instantTransparent.desc")}
                   </p>
@@ -1051,9 +1058,9 @@ export default function LandingPage() {
                   <Globe className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     {t("mission.features.payEverywhere.title")}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 font-medium">
                     {t("mission.features.payEverywhere.desc")}
                   </p>
@@ -1064,9 +1071,9 @@ export default function LandingPage() {
                   <Calendar className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-slate-900">
+                  <h3 className="text-xl font-bold text-slate-900">
                     {t("mission.features.travelNowPayLater.title")}
-                  </h4>
+                  </h3>
                   <p className="text-slate-500 font-medium">
                     {t("mission.features.travelNowPayLater.desc")}
                   </p>
@@ -1430,12 +1437,13 @@ export default function LandingPage() {
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   src={service.img}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 p-12 w-full space-y-5">
-                  <h4 className="text-3xl font-black tracking-tight">
+                  <h3 className="text-3xl font-black tracking-tight">
                     {service.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-400 leading-relaxed text-sm font-medium">
                     {service.desc}
                   </p>
