@@ -56,7 +56,7 @@ export default function FAQPage() {
                 className="group bg-slate-50 rounded-[2rem] overflow-hidden transition-all duration-300 hover:bg-slate-100"
               >
                 <summary className="flex justify-between items-center p-8 cursor-pointer list-none">
-                  <h4 className="text-xl font-bold text-slate-900">{faq.question}</h4>
+                  <h2 className="text-xl font-bold text-slate-900">{faq.question}</h2>
                   <ChevronDown className="w-6 h-6 text-slate-400 transition-transform duration-300 group-open:rotate-180" />
                 </summary>
                 <div className="px-8 pb-8 text-slate-500 font-medium leading-relaxed">

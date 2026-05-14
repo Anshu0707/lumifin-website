@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-black mb-8">{t('footer.company')}</h4>
+          <h3 className="text-lg font-black mb-8">{t('footer.company')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to="/team" className="hover:text-primary transition-colors">{t('footer.aboutUs')}</Link></li>
             <li><Link to="/careers" className="hover:text-primary transition-colors">{t('footer.careers')}</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-black mb-8">{t('footer.support')}</h4>
+          <h3 className="text-lg font-black mb-8">{t('footer.support')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to="/faq" className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
             <li><Link to="/security" className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-black mb-8">{t('footer.contact')}</h4>
+          <h3 className="text-lg font-black mb-8">{t('footer.contact')}</h3>
           <ul className="space-y-6 text-slate-400 font-medium text-sm">
             <li>
               <p className="text-white font-bold uppercase text-[10px] tracking-widest mb-1">{t('footer.email')}</p>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-lg font-black mb-8">{t('footer.connect')}</h4>
+          <h3 className="text-lg font-black mb-8">{t('footer.connect')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><a href="https://www.instagram.com/lumifin.io/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.instagram')}</a></li>
             <li><a href="https://www.linkedin.com/company/lumifin1/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.linkedin')}</a></li>
