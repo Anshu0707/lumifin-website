@@ -738,38 +738,6 @@
     "reachOut": "Aucun poste ne vous correspond ? Contactez-nous quand même — nous serions ravis d'échanger avec vous.",
     "applyNow": "Postuler",
     "jobs": {
-      "internship": {
-        "title": "Stage — Associé(e) du Fondateur",
-        "tagline": "Rejoignez l'équipe fondatrice et contribuez à façonner l'avenir des paiements transfrontaliers dès le premier jour.",
-        "type": "Stage",
-        "location": "Télétravail — France",
-        "sections": {
-          "aboutLumi": "À propos de Lumi",
-          "aboutLumiContent": "Lumi est une fintech en phase de démarrage qui vise à réinventer les paiements transfrontaliers entre l'Europe et l'Asie. Fondée par un diplômé de l'École Polytechnique avec une vaste expérience en finance, technologie et opérations internationales, l'entreprise construit un service qui rend les transferts internationaux aussi simples et transparents qu'un paiement local. Notre approche combine des rails de paiement blockchain, des stablecoins réglementés, et une forte attention à l'expérience utilisateur et à la conformité réglementaire.",
-          "theRole": "Le poste",
-          "theRoleContent": "Nous opérons à l'intersection de l'infrastructure financière, des opérations internationales et du design de produits numériques. Rejoindre Lumi, c'est entrer dans un environnement dynamique où les décisions sont prises rapidement, les problèmes sont abordés de front, et chaque membre de l'équipe a un impact réel. En tant qu'Associé(e) du Fondateur, vous travaillerez directement avec le fondateur sur la stratégie, les opérations, le produit et la croissance.",
-          "whatYoullDo": "Ce que vous ferez",
-          "whatYoullDoItems": [
-            "Mener des études de marché et des analyses concurrentielles pour identifier les opportunités dans les paiements transfrontaliers",
-            "Soutenir le développement et l'exécution de stratégies de mise sur le marché en Europe et en Asie du Sud-Est",
-            "Contribuer à la construction de partenariats avec des commerçants locaux, des fournisseurs de paiement et des canaux de distribution",
-            "Contribuer au développement produit en recueillant les retours utilisateurs et en les traduisant en insights actionnables",
-            "Assister dans les relations investisseurs, les pitch decks et la préparation des levées de fonds",
-            "Prendre en charge des projets opérationnels clés — de la recherche réglementaire aux workflows d'onboarding"
-          ],
-          "whatWereLookingFor": "Ce que nous recherchons",
-          "whatWereLookingForItems": [
-            "Actuellement inscrit(e) ou récemment diplômé(e) d'une université de premier plan (commerce, ingénierie ou domaine connexe)",
-            "Solides compétences analytiques et en résolution de problèmes avec un biais pour l'action",
-            "Intérêt sincère pour la fintech, les paiements ou les marchés émergents",
-            "À l'aise dans un environnement rapide et ambigu avec peu de structure",
-            "Excellentes compétences en communication en anglais (le français est un plus)",
-            "Mentalité d'auto-entrepreneur — vous n'attendez pas qu'on vous dise quoi faire"
-          ],
-          "whyJoinUs": "Pourquoi nous rejoindre",
-          "whyJoinUsContent": "Ce n'est pas un stage classique où vous observez quelqu'un ou gérez des tâches administratives. Vous serez intégré(e) à l'équipe fondatrice, travaillant sur des problèmes qui façonnent directement la trajectoire de l'entreprise. Vous acquerrez une expérience directe dans la construction d'une fintech de zéro — du produit et de la stratégie à la levée de fonds et aux opérations. Si vous cherchez de vraies responsabilités et la chance d'avoir un impact tangible tôt dans votre carrière, c'est ici."
-        }
-      },
       "gtm": {
         "title": "Expert Go-to-Market (GTM)",
         "tagline": "Dirigez notre stratégie de lancement et pilotez l'acquisition d'utilisateurs en Europe et en Asie du Sud-Est.",

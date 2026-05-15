@@ -738,38 +738,6 @@
     "reachOut": "Don't see a role that fits? Reach out anyway — we'd love to hear from you.",
     "applyNow": "Apply Now",
     "jobs": {
-      "internship": {
-        "title": "Internship — Founder's Associate",
-        "tagline": "Join the founding team and help shape the future of cross-border payments from day one.",
-        "type": "Internship",
-        "location": "Remote — France",
-        "sections": {
-          "aboutLumifin": "About Lumifin",
-          "aboutLumifinContent": "Lumifin is an early-stage fintech aiming to reinvent cross-border payments between Europe and Asia. Founded by an École Polytechnique graduate with extensive experience in finance, technology, and international operations, the company is building a service that makes international transfers as simple and transparent as a local payment. Our approach combines blockchain payment rails, regulated stablecoins, and a strong focus on user experience and regulatory compliance.",
-          "theRole": "The Role",
-          "theRoleContent": "We operate at the intersection of financial infrastructure, international operations, and digital product design. Joining Lumifin means entering a fast-moving environment where decisions are made quickly, problems are tackled head-on, and every team member has real impact. As a Founder's Associate, you'll work directly with the founder across strategy, operations, product, and growth.",
-          "whatYoullDo": "What You'll Do",
-          "whatYoullDoItems": [
-            "Conduct market research and competitive analysis to identify opportunities in cross-border payments",
-            "Support the development and execution of go-to-market strategies across Europe and Southeast Asia",
-            "Help build partnerships with local merchants, payment providers, and distribution channels",
-            "Contribute to product development by gathering user feedback and translating it into actionable insights",
-            "Assist with investor relations, pitch decks, and fundraising preparation",
-            "Take ownership of key operational projects — from regulatory research to onboarding workflows"
-          ],
-          "whatWereLookingFor": "What We're Looking For",
-          "whatWereLookingForItems": [
-            "Currently enrolled in or recently graduated from a top-tier university (business, engineering, or related field)",
-            "Strong analytical and problem-solving skills with a bias for action",
-            "Genuine interest in fintech, payments, or emerging markets",
-            "Comfortable working in a fast-paced, ambiguous environment with minimal structure",
-            "Excellent communication skills in English (French is a plus)",
-            "Self-starter mentality — you don't wait to be told what to do"
-          ],
-          "whyJoinUs": "Why Join Us",
-          "whyJoinUsContent": "This isn't a typical internship where you shadow someone or handle admin tasks. You'll be embedded in the founding team, working on problems that directly shape the company's trajectory. You'll gain first-hand experience in building a fintech from scratch — from product and strategy to fundraising and operations. If you're looking for real responsibility and the chance to make a tangible impact early in your career, this is it."
-        }
-      },
       "gtm": {
         "title": "Go-to-Market (GTM) Expert",
         "tagline": "Lead our launch strategy and drive user acquisition across Europe and Southeast Asia.",

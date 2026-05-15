@@ -6,18 +6,11 @@ import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
 import { MapPin, Briefcase, X, Wifi } from 'lucide-react';
 
-const JOB_KEYS = ['internship', 'gtm'] as const;
+const JOB_KEYS = ['gtm'] as const;
 
 type SectionDef = { headingKey: string; contentKey?: string; listKey?: string };
 
 const JOB_SECTIONS: Record<string, SectionDef[]> = {
-  internship: [
-    { headingKey: 'aboutLumifin', contentKey: 'aboutLumifinContent' },
-    { headingKey: 'theRole', contentKey: 'theRoleContent' },
-    { headingKey: 'whatYoullDo', listKey: 'whatYoullDoItems' },
-    { headingKey: 'whatWereLookingFor', listKey: 'whatWereLookingForItems' },
-    { headingKey: 'whyJoinUs', contentKey: 'whyJoinUsContent' },
-  ],
   gtm: [
     { headingKey: 'aboutProduct', contentKey: 'aboutProductContent' },
     { headingKey: 'targetSegments', listKey: 'targetSegmentsItems' },
@@ -72,7 +65,7 @@ export default function CareersPage() {
           </div>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 max-w-2xl mx-auto">
           {JOB_KEYS.map((key, index) => (
             <motion.div
               key={key}
