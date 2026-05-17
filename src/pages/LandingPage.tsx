@@ -1549,7 +1549,7 @@ export default function LandingPage() {
                 <X className="w-6 h-6" />
               </button>
               <iframe
-                src="https://www.youtube.com/embed/gHqVe2BwsWM?autoplay=1"
+                src="https://www.youtube.com/embed/05qmIJWLN1Q?autoplay=1&rel=0"
                 title={t("hero.videoTitle")}
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
