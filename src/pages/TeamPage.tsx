@@ -64,6 +64,13 @@ const team = [
     img: "/assets/team/ANSHUMAN.webp",
     objectPosition: "center 30%",
     linkedin: "https://www.linkedin.com/in/anshuman-naithani/"
+  },
+  {
+    name: "Thiofanty",
+    roleKey: "foundersAssociate",
+    img: "/assets/team/THIOFANTY.webp",
+    objectPosition: "center 25%",
+    linkedin: "https://fr.linkedin.com/in/thiofanty"
   }
 ] as const;
 
