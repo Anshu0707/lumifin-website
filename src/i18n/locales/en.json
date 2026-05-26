@@ -626,8 +626,8 @@
       "answer": "Lumi is a digital wallet that lets you pay at local merchants across Southeast Asia using QR codes. You can pay in your own currency while Lumi handles the conversion instantly at checkout."
     },
     "q2": {
-      "question": "Where can I use Lumi?",
-      "answer": "Lumi is accepted at millions of merchants across Southeast Asia, including Thailand, Vietnam, and Indonesia, wherever supported QR payment networks are available."
+      "question": "Which countries can I pay in with Lumi?",
+      "answer": "You can pay at millions of merchants across Thailand, Vietnam, and Indonesia — anywhere a supported QR payment network (PromptPay, VietQR, or QRIS) is accepted. More Southeast Asian countries are coming soon."
     },
     "q3": {
       "question": "How do I pay with Lumi?",
@@ -690,8 +690,8 @@
       "answer": "No, Lumi is not a bank. Lumi is a brand of Lumifin SAS, a technology provider. All payment services and fund movements are carried out by fully regulated partners in Europe and Asia, who are licensed and supervised by financial authorities."
     },
     "q18": {
-      "question": "Where is Lumi available?",
-      "answer": "Lumi is currently available to residents of the EU and EEA who hold a SEPA-zone bank account in their own name. That covers the following 30 countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden."
+      "question": "Who can sign up for Lumi?",
+      "answer": "Lumi is currently open to residents of the EU and EEA who hold a SEPA-zone bank account in their own name. That covers 30 countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden."
     }
   },
   "blogPosts": {

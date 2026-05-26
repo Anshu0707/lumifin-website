@@ -626,8 +626,8 @@
       "answer": "Lumi est une application de paiement pour les voyageurs en Asie du Sud-Est. Scannez un QR code chez n'importe quel commerçant local, payez en euros depuis votre portefeuille Lumi — la conversion se fait instantanément au meilleur taux."
     },
     "q2": {
-      "question": "Où puis-je utiliser Lumi ?",
-      "answer": "Lumi est accepté chez des millions de commerçants en Asie du Sud-Est, notamment en Thaïlande, au Vietnam et en Indonésie, partout où les réseaux de paiement par QR code pris en charge sont disponibles."
+      "question": "Dans quels pays puis-je payer avec Lumi ?",
+      "answer": "Vous pouvez payer chez des millions de commerçants en Thaïlande, au Vietnam et en Indonésie — partout où un réseau de paiement QR pris en charge (PromptPay, VietQR ou QRIS) est accepté. D'autres pays d'Asie du Sud-Est arrivent bientôt."
     },
     "q3": {
       "question": "Comment payer avec Lumi ?",
@@ -690,8 +690,8 @@
       "answer": "Non, Lumi n'est pas une banque. Lumi est une marque de LumiFin SAS, un fournisseur de technologie. Tous les services de paiement et mouvements de fonds sont assurés par des partenaires pleinement régulés en Europe et en Asie, agréés et supervisés par les autorités financières."
     },
     "q18": {
-      "question": "Où Lumi est-il disponible ?",
-      "answer": "Lumi est actuellement disponible pour les résidents de l'UE et de l'EEE titulaires d'un compte bancaire SEPA à leur nom. Cela couvre les 30 pays suivants : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie et Suède."
+      "question": "Qui peut s'inscrire sur Lumi ?",
+      "answer": "Lumi est actuellement ouvert aux résidents de l'UE et de l'EEE titulaires d'un compte bancaire SEPA à leur nom. Cela couvre 30 pays : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie et Suède."
     }
   },
   "blogPosts": {
