@@ -339,54 +339,101 @@
   "privacy": {
     "seo": {
       "title": "Politique de confidentialité",
-      "description": "Comment Lumi collecte, utilise et protège vos données personnelles. Pratiques conformes au RGPD pour notre service de paiement."
+      "description": "Comment LumiFin collecte, utilise et protège vos données personnelles. Pratiques conformes au RGPD pour notre service de paiement."
     },
     "eyebrow": "Mentions légales",
     "title": "Politique de confidentialité",
-    "effectiveDate": "Date d'entrée en vigueur : janvier 2026",
-    "intro": "Lumi (« nous », « notre », « nos ») s'engage à protéger votre vie privée. La présente politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles lorsque vous visitez notre site <1>www.lumifin.io</1> ou utilisez nos services.",
+    "effectiveDate": "Date d'entrée en vigueur : 16 mai 2026  |  Dernière mise à jour : 16 mai 2026",
+    "address": "LumiFin SAS — 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+    "website": "https://lumifin.io",
     "section1": {
-      "title": "1. Informations que nous collectons",
-      "body": "Nous pouvons collecter des informations personnelles telles que votre nom, votre adresse e-mail, votre numéro de téléphone et toute information que vous fournissez lors de votre inscription ou de vos échanges avec nous. Nous collectons également automatiquement des informations techniques, notamment l'adresse IP, le type de navigateur, les informations relatives à l'appareil, le système d'exploitation et les données d'utilisation lorsque vous interagissez avec notre plateforme."
+      "title": "1. Responsable du traitement",
+      "body1": "LumiFin SAS (« LumiFin », « nous ») est le responsable du traitement des données décrites dans la présente politique de confidentialité. Adresse : 50 rue Anatole France, 92290 Châtenay-Malabry, France. E-mail : privacy@lumifin.io.",
+      "body2": "Notre partenaire de paiement, Trans-Fi Inc. (« Transfi »), agit en tant que responsable de traitement indépendant pour les données personnelles qu'il traite afin de fournir les services de paiement (garde, change, règlement, conformité). La politique de confidentialité de Transfi est disponible à l'adresse <1>https://www.transfi.com/privacy-policy</1>."
     },
     "section2": {
-      "title": "2. Comment nous utilisons vos informations",
-      "intro": "Nous utilisons vos informations pour :",
-      "item1": "Fournir, exploiter et améliorer nos services",
-      "item2": "Communiquer avec vous au sujet des mises à jour et du support",
-      "item3": "Traiter les transactions et vérifier les identités",
-      "item4": "Garantir la sécurité et prévenir la fraude",
-      "item5": "Respecter les obligations légales et réglementaires"
+      "title": "2. Données que nous collectons",
+      "sub1": {
+        "title": "2.1 Données que vous nous fournissez",
+        "item1": "Création de compte : nom complet, adresse e-mail, numéro de téléphone, date de naissance, nationalité, adresse de résidence.",
+        "item2": "Vérification d'identité (KYC) : pièce d'identité officielle (passeport, carte nationale d'identité ou permis de conduire), selfie ou contrôle de vivacité.",
+        "item3": "Informations financières : IBAN de votre compte bancaire SEPA."
+      },
+      "sub2": {
+        "title": "2.2 Données générées lors de l'utilisation",
+        "item1": "Données de transaction : montants, dates, devises, identifiants de commerçants, taux de change, historique du solde du portefeuille.",
+        "item2": "Données techniques : modèle d'appareil, version du système d'exploitation, version de l'application, adresse IP, identifiants d'appareil, jetons de notifications push.",
+        "item3": "Données d'utilisation : écrans consultés, fonctionnalités utilisées, durée des sessions (collectées via Firebase Analytics)."
+      },
+      "sub3": {
+        "title": "2.3 Données provenant de tiers",
+        "body": "Résultats de vérification d'identité de notre prestataire KYC ; données de confirmation de paiement provenant de Transfi ; informations relatives au compte issues de l'Open Banking via notre prestataire d'initiation de paiement (limitées à la vérification de l'IBAN)."
+      }
     },
     "section3": {
-      "title": "3. Partage des données",
-      "body": "Nous ne vendons ni ne louons vos informations personnelles. Nous pouvons partager vos données avec des prestataires tiers de confiance, tels que nos partenaires de paiement, nos fournisseurs d'analyse et nos prestataires d'infrastructure, uniquement dans le but d'exploiter nos services et dans le cadre d'accords stricts de confidentialité."
+      "title": "3. Finalités et bases légales",
+      "intro": "Nous traitons vos données personnelles aux finalités et sur les bases légales suivantes au titre de l'article 6 du RGPD :",
+      "item1": "Exécution du contrat (art. 6, §1, b) : création et gestion de votre compte ; traitement des transactions ; affichage du solde et de l'historique ; communications relatives à votre compte et à vos transactions ; service client.",
+      "item2": "Obligations légales (art. 6, §1, c) : vérification d'identité et conformité KYC/LCB-FT (Code monétaire et financier, art. L561-12) ; réponse aux demandes légitimes des autorités ; conservation des registres requis par la loi.",
+      "item3": "Intérêts légitimes (art. 6, §1, f) : prévention de la fraude et sécurisation de l'application ; amélioration de nos services et de l'expérience utilisateur ; analyses et rapports de plantage (via Firebase Analytics et Firebase Crashlytics) ; mise en œuvre de nos conditions générales d'utilisation.",
+      "item4": "Consentement (art. 6, §1, a) : communications marketing (consentement révocable à tout moment) ; communications de co-marketing optionnelles de la part de LumiFin et Transfi (opt-in uniquement)."
     },
     "section4": {
-      "title": "4. Sécurité des données",
-      "body": "Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées afin de protéger vos informations personnelles contre tout accès, modification ou utilisation abusive non autorisés."
+      "title": "4. Partage des données",
+      "intro": "Nous ne partageons vos données personnelles que lorsque cela est nécessaire, et avec des garanties appropriées :",
+      "item1": "Partenaire de paiement (Transfi) : nous transmettons vos données d'identité, financières et de transaction à Transfi pour qu'il fournisse les services de paiement. Transfi traite ces données en tant que responsable de traitement indépendant, selon sa propre politique de confidentialité et ses propres bases légales.",
+      "item2": "Prestataires de services : nous faisons appel à des sous-traitants tiers pour la vérification d'identité, l'analyse (Firebase), les rapports de plantage (Firebase Crashlytics), l'hébergement cloud, l'initiation de paiement Open Banking et les outils de support client. Ces sous-traitants agissent sur nos instructions dans le cadre d'accords de traitement de données (DPA) conformes au RGPD.",
+      "item3": "Obligations légales : nous pouvons divulguer des données aux autorités lorsque la loi, la réglementation ou une décision de justice l'exige.",
+      "outro": "Nous ne vendons pas vos données personnelles. Nous n'utilisons pas vos données pour des décisions automatisées ou du profilage produisant des effets juridiques."
     },
     "section5": {
-      "title": "5. Droits des utilisateurs",
-      "body": "Vous disposez du droit d'accéder à vos informations personnelles, de les rectifier ou d'en demander la suppression. Vous pouvez également retirer votre consentement, le cas échéant, en nous contactant."
+      "title": "5. Transferts internationaux",
+      "body": "Certains de nos prestataires ainsi que Transfi opèrent en dehors de l'UE/EEE. Lorsque des données personnelles sont transférées à l'international, nous assurons un niveau de protection adéquat au moyen : de décisions d'adéquation de l'UE (le cas échéant) ; de clauses contractuelles types (CCT) approuvées par la Commission européenne ; du cadre UE-États-Unis pour la protection des données (Data Privacy Framework, pour les sous-traitants américains certifiés DPF).",
+      "outro": "Vous pouvez demander une copie des garanties applicables à ces transferts en écrivant à privacy@lumifin.io."
     },
     "section6": {
-      "title": "6. Conservation des données",
-      "body": "Nous conservons vos informations personnelles uniquement pendant la durée nécessaire à la réalisation des finalités décrites dans la présente politique, ou selon les exigences légales applicables."
+      "title": "6. Durées de conservation",
+      "intro": "Nous ne conservons vos données que pendant la durée nécessaire aux finalités décrites :",
+      "item1": "Données de compte : conservées tant que votre compte est actif, puis 30 jours supplémentaires après sa clôture pour la gestion des litiges.",
+      "item2": "Documents d'identité (KYC) : 5 ans à compter de la fin de la relation, conformément à la législation française LCB-FT (art. L561-12 du Code monétaire et financier).",
+      "item3": "Registres de transactions : 5 à 10 ans selon les obligations légales applicables (fiscalité, LCB-FT, comptabilité).",
+      "item4": "Journaux de sécurité : jusqu'à 24 mois à des fins de prévention de la fraude et d'investigation d'incidents.",
+      "item5": "Données analytiques : 14 mois (durée de conservation par défaut de Firebase Analytics).",
+      "item6": "Liste d'opposition marketing : conservée sans durée limite afin de respecter votre opposition.",
+      "outro": "À l'issue de la durée de conservation applicable, les données sont supprimées de manière sécurisée ou anonymisées."
     },
     "section7": {
-      "title": "7. Transferts internationaux de données",
-      "body": "Vos données peuvent être transférées et traitées dans des pays situés en dehors de votre pays de résidence, lesquels peuvent appliquer des lois de protection des données différentes."
+      "title": "7. Vos droits",
+      "intro": "Au titre du RGPD, vous disposez des droits suivants sur vos données personnelles :",
+      "rights": "Droit d'accès (art. 15) : obtenir une copie de vos données. Droit de rectification (art. 16) : corriger des données inexactes. Droit à l'effacement (art. 17) : demander la suppression (sous réserve des obligations légales de conservation). Droit à la limitation (art. 18) : limiter le traitement dans certaines circonstances. Droit à la portabilité (art. 20) : recevoir vos données dans un format lisible par machine. Droit d'opposition (art. 21) : vous opposer aux traitements fondés sur l'intérêt légitime. Droit de retrait du consentement (art. 7, §3) : retirer votre consentement à tout moment, sans effet sur les traitements antérieurs.",
+      "exercise": "Pour exercer vos droits, écrivez à privacy@lumifin.io en indiquant vos nom et prénom ainsi que le droit que vous souhaitez exercer. Nous vous répondrons dans un délai de 30 jours (prorogeable de 60 jours pour les demandes complexes, avec notification). Une vérification d'identité pourra vous être demandée avant le traitement de votre demande.",
+      "transfi": "Pour les données détenues par Transfi en tant que responsable de traitement indépendant, veuillez également contacter Transfi directement à privacy@transfi.com.",
+      "cnil": "Si vous estimez que notre réponse n'est pas satisfaisante, vous pouvez introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) à l'adresse <1>https://www.cnil.fr</1> ou de l'autorité de contrôle de votre pays."
     },
     "section8": {
-      "title": "8. Mises à jour de cette politique",
-      "body": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page avec une date d'entrée en vigueur révisée."
+      "title": "8. Sécurité",
+      "body": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données, notamment : chiffrement en transit (TLS 1.2+) et au repos ; contrôles d'accès et principe du moindre privilège ; authentification sécurisée (mPIN, biométrie) ; évaluations de sécurité régulières ; procédures de réponse aux incidents.",
+      "outro": "Aucun système n'est parfaitement sûr. En cas de violation de données présentant un risque élevé pour vos droits, nous vous en informerons, ainsi que l'autorité de contrôle compétente, conformément aux articles 33 et 34 du RGPD."
     },
     "section9": {
-      "title": "9. Nous contacter",
-      "body": "Pour toute question ou préoccupation concernant cette politique de confidentialité, veuillez nous contacter à l'adresse suivante :",
-      "email": "E-mail : info@lumifin.io"
-    }
+      "title": "9. Mineurs",
+      "body": "L'application n'est pas destinée aux personnes de moins de 18 ans. Nous ne collectons pas sciemment de données concernant des mineurs. Si nous découvrons qu'un mineur a créé un compte, nous le clôturerons et supprimerons les données dans les meilleurs délais."
+    },
+    "section10": {
+      "title": "10. Cookies et traceurs",
+      "body": "L'application Lumi n'utilise pas de cookies (il s'agit d'une application mobile). Nous utilisons les SDK Firebase Analytics et Firebase Crashlytics pour l'analyse d'usage et le suivi des plantages. Vous pouvez désactiver la collecte analytique dans les paramètres de l'application. Notre site web (lumifin.io) n'utilise que des cookies strictement nécessaires ne requérant pas de consentement."
+    },
+    "section11": {
+      "title": "11. Modifications de la présente politique",
+      "body": "Nous pouvons mettre à jour la présente politique de confidentialité de temps à autre. Toute modification substantielle vous sera notifiée via l'application ou par e-mail au moins 30 jours avant sa prise d'effet. La date « Dernière mise à jour » en tête de document indique la version en vigueur. L'utilisation continue de l'application après la date d'entrée en vigueur vaut acceptation de la politique mise à jour."
+    },
+    "section12": {
+      "title": "12. Contact",
+      "body": "Pour toute question relative à la confidentialité ou à l'exercice de vos droits :",
+      "address": "LumiFin SAS — 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+      "contact": "E-mail : privacy@lumifin.io  |  Site web : <1>https://lumifin.io</1>"
+    },
+    "end": "— Fin de la politique de confidentialité —"
   },
   "mentionsLegales": {
     "seo": {
@@ -448,53 +495,130 @@
   },
   "cgu": {
     "seo": {
-      "title": "Conditions Générales d'Utilisation",
-      "description": "Conditions Générales d'Utilisation du site lumifin.io. Règles d'accès, propriété intellectuelle, responsabilités et droit applicable."
+      "title": "Conditions Générales",
+      "description": "Conditions Générales de l'application Lumi : éligibilité, services, frais, partenaire de paiement, responsabilité et droit applicable."
     },
     "eyebrow": "Mentions légales",
-    "title": "Conditions Générales d'Utilisation",
-    "effectiveDate": "Dernière mise à jour : 7 mai 2026",
-    "intro": "Les présentes Conditions Générales d'Utilisation (« CGU ») définissent les règles d'utilisation du site lumifin.io édité par LumiFin SAS (ci-après « Lumi », « nous », « notre », « nos »). En accédant au site, vous acceptez sans réserve l'intégralité des présentes CGU.",
+    "title": "Conditions Générales",
+    "effectiveDate": "Date d'entrée en vigueur : 16 mai 2026  |  Dernière mise à jour : 16 mai 2026",
+    "address": "LumiFin SAS — 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+    "website": "https://lumifin.io",
     "section1": {
-      "title": "1. Objet",
-      "body": "Les présentes CGU ont pour objet de définir les conditions d'accès et d'utilisation du site lumifin.io (ci-après « le Site »). Le Site présente les services de paiement Lumi destinés aux voyageurs européens en Asie du Sud-Est et permet aux visiteurs de s'inscrire à la liste d'attente."
+      "title": "1. Introduction et acceptation",
+      "body1": "Les présentes conditions générales (« Conditions ») constituent un accord contraignant entre vous (« Utilisateur ») et LumiFin SAS, société française immatriculée au 50 rue Anatole France, 92290 Châtenay-Malabry, France (« LumiFin », « nous »).",
+      "body2": "LumiFin exploite l'application mobile Lumi (« Application »), qui permet aux voyageurs européens de payer chez des commerçants en Asie du Sud-Est en scannant des QR codes locaux.",
+      "body3": "En utilisant l'Application, vous acceptez les présentes Conditions ainsi que notre <1>Politique de confidentialité</1>. Si vous n'acceptez pas, n'utilisez pas l'Application.",
+      "sub1": {
+        "title": "1.1 Partenaire de paiement",
+        "body1": "LumiFin est un fournisseur de technologie. Nous ne détenons pas de fonds, ne traitons pas de paiements et n'effectuons pas d'opérations de change. Ces services réglementés sont fournis par notre partenaire de paiement (actuellement Trans-Fi Inc. et/ou ses sociétés affiliées) sous ses propres agréments et conditions.",
+        "body2": "En utilisant l'Application, vous concluez une relation contractuelle distincte avec le partenaire de paiement pour les services de paiement. Les conditions du partenaire de paiement sont accessibles dans l'Application et à l'adresse <1>https://www.transfi.com/terms-and-conditions</1>. En cas de divergence concernant les services de paiement, les conditions du partenaire de paiement prévalent."
+      },
+      "sub2": {
+        "title": "1.2 Modifications",
+        "body": "Nous pouvons modifier les présentes Conditions moyennant un préavis d'au moins 30 jours via l'Application ou par e-mail. Les modifications requises par la loi, la prévention de la fraude ou la sécurité peuvent prendre effet immédiatement. L'utilisation continue après la date d'entrée en vigueur vaut acceptation."
+      },
+      "sub3": {
+        "title": "1.3 Conditions des magasins d'applications",
+        "body": "Si vous téléchargez l'Application depuis l'App Store d'Apple ou Google Play, les conditions de la plateforme concernée s'appliquent également. Apple et Google ne sont pas parties aux présentes Conditions."
+      }
     },
     "section2": {
-      "title": "2. Acceptation des CGU",
-      "body": "L'utilisation du Site emporte acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas tout ou partie de ces conditions, vous êtes invité à ne pas utiliser le Site. Les CGU peuvent être modifiées à tout moment ; la version en vigueur est celle accessible en ligne à la date de votre visite."
+      "title": "2. Définitions",
+      "body": "« Application » — l'application mobile Lumi (iOS/Android). « Compte » — votre compte personnel dans l'Application. « Portefeuille » — le portefeuille numérique détenu par le partenaire de paiement pour votre compte (il ne s'agit pas d'un compte bancaire ; il ne produit pas d'intérêts). « Partenaire de paiement » — Trans-Fi Inc. et/ou ses sociétés affiliées fournissant les services de paiement. « Services de paiement » — garde des fonds, change, exécution des paiements et règlement assurés par le partenaire de paiement. « Services Lumi » — les services technologiques fournis par LumiFin (Application, interface, support). « Paiement QR » — un paiement initié en scannant le QR code d'un commerçant. « Virement SEPA » — un virement SEPA pour alimenter votre Portefeuille. « Pays Pris en Charge » — pays où les Paiements QR sont disponibles, tels que listés dans l'Application."
     },
     "section3": {
-      "title": "3. Accès au site",
-      "body": "Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. Tous les coûts liés à l'accès au Site (matériel informatique, logiciels, connexion Internet, etc.) sont à la charge exclusive de l'utilisateur. LumiFin SAS s'efforce de maintenir le Site accessible 24h/24 et 7j/7, mais peut être amenée à interrompre l'accès pour des raisons de maintenance ou de mise à jour, sans que cela puisse engager sa responsabilité."
+      "title": "3. Éligibilité et compte",
+      "body1": "Pour utiliser l'Application, vous devez : (a) être âgé d'au moins 18 ans ; (b) résider dans l'UE ou l'EEE ; (c) détenir un compte bancaire dans la zone SEPA à votre nom ; (d) ne pas faire l'objet de sanctions applicables ; et (e) utiliser un appareil compatible et à jour.",
+      "body2": "Vous devez fournir des informations exactes lors de la création de votre Compte et les tenir à jour. Vous êtes responsable de la sécurité de vos identifiants (mPIN, biométrie). Informez-nous immédiatement à support@lumifin.io en cas de soupçon d'accès non autorisé. Chaque Utilisateur ne peut détenir qu'un seul Compte."
     },
     "section4": {
-      "title": "4. Liste d'attente et inscription",
-      "body": "Le Site permet aux utilisateurs de s'inscrire à la liste d'attente Lumi en fournissant leur adresse e-mail. L'inscription est gratuite et n'emporte aucune obligation de souscription au service Lumi lors de son lancement commercial. LumiFin SAS se réserve le droit de refuser ou de suspendre l'inscription d'un utilisateur sans motif particulier."
+      "title": "4. Les Services",
+      "sub1": {
+        "title": "4.1 Présentation",
+        "body": "L'Application vous permet : (a) d'alimenter votre Portefeuille par virement SEPA ; (b) d'effectuer des Paiements QR chez des commerçants dans les Pays Pris en Charge ; (c) de consulter votre solde et votre historique de transactions ; et (d) de retirer des fonds vers votre compte bancaire."
+      },
+      "sub2": {
+        "title": "4.2 Alimentation",
+        "body": "Alimentez votre Portefeuille par virement SEPA depuis un compte bancaire à votre nom. Nous pouvons également proposer une initiation de paiement Open Banking (la transaction sous-jacente reste un virement SEPA). Des plafonds minimum et maximum s'appliquent et sont affichés dans l'Application."
+      },
+      "sub3": {
+        "title": "4.3 Paiements QR",
+        "body": "Scannez le QR code du commerçant, vérifiez le montant (en devise locale et en euros), le taux de change et les frais, puis autorisez avec votre mPIN ou par biométrie. Une fois autorisée, la transaction est en principe définitive. Il vous incombe de vérifier le montant et le commerçant avant de confirmer."
+      },
+      "sub4": {
+        "title": "4.4 Taux de change",
+        "body": "La conversion de devise est effectuée par le partenaire de paiement. Le taux est affiché avant votre confirmation et est figé au moment de l'autorisation. Les taux dépendent des conditions de marché, peuvent inclure une marge et peuvent différer des taux interbancaires."
+      },
+      "sub5": {
+        "title": "4.5 Retraits",
+        "body": "Vous pouvez retirer des fonds vers le compte bancaire ayant servi à l'alimentation (ou vers un autre compte approuvé). Le retrait est généralement effectué sous 5 jours ouvrés, des délais pouvant survenir en raison de contrôles de conformité ou des délais de traitement bancaire."
+      },
+      "sub6": {
+        "title": "4.6 Plafonds",
+        "body": "Des plafonds par transaction, journaliers et mensuels s'appliquent à l'alimentation et aux paiements. Les plafonds sont affichés dans l'Application et sont réinitialisés le 1er de chaque mois calendaire. Nous pouvons ajuster ces plafonds pour des raisons légales, de conformité ou opérationnelles."
+      },
+      "sub7": {
+        "title": "4.7 Refus de transactions",
+        "body": "LumiFin et le partenaire de paiement peuvent refuser, retarder ou inverser une transaction : (a) en cas de soupçon de fraude ou d'activité illicite ; (b) si la loi ou des sanctions l'exigent ; (c) sur ordre d'un tribunal ou d'une autorité ; ou (d) si nous ne pouvons pas vérifier votre identité ou l'origine des fonds."
+      },
+      "sub8": {
+        "title": "4.8 Erreurs et transactions non autorisées",
+        "body": "Si vous estimez qu'une transaction est erronée ou non autorisée, signalez-le rapidement à support@lumifin.io avec les éléments utiles. Nous mènerons l'enquête avec le partenaire de paiement et le réseau de paiement. L'issue dépend des circonstances, des politiques du commerçant et des conditions du partenaire de paiement."
+      }
     },
     "section5": {
-      "title": "5. Propriété intellectuelle",
-      "body": "Tous les éléments du Site (textes, images, logos, marques, vidéos, design, code source) sont protégés par les lois sur la propriété intellectuelle et appartiennent à LumiFin SAS ou à ses partenaires. Toute reproduction, distribution, modification, exploitation ou utilisation, totale ou partielle, sans autorisation écrite préalable est strictement interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle."
+      "title": "5. Partenaire de paiement et tiers",
+      "body1": "Le partenaire de paiement fournit : la garde de vos fonds, le change de devises, le règlement des paiements et les contrôles de conformité. LumiFin fournit : l'Application, l'interface utilisateur, l'affichage des transactions et le support client.",
+      "body2": "LumiFin n'est ni une banque, ni un établissement de paiement, ni un émetteur de monnaie électronique. Nous ne détenons pas vos fonds. Dans toute la mesure permise par la loi, LumiFin n'est pas responsable des actes, omissions ou de l'insolvabilité du partenaire de paiement ou des réseaux de paiement tiers. Ceci n'affecte pas vos droits légaux en tant que consommateur."
     },
     "section6": {
-      "title": "6. Données personnelles",
-      "body": "Les conditions de collecte, de traitement et de protection des données personnelles sont détaillées dans notre <1>Politique de confidentialité</1>, qui fait partie intégrante des présentes CGU. En utilisant le Site, vous reconnaissez avoir pris connaissance de cette politique."
+      "title": "6. Vérification d'identité et conformité",
+      "body1": "Une vérification d'identité (KYC) est requise avant d'utiliser les services de paiement. Nous recueillons vos informations et documents d'identité via l'Application ; le partenaire de paiement les valide dans le cadre de ses obligations réglementaires. Des mesures de vigilance renforcée (origine des fonds, contrôles PPE/sanctions) peuvent être requises à tout moment.",
+      "body2": "Vous déclarez que : (a) toutes les informations fournies sont exactes et sincères ; (b) vos fonds proviennent de sources licites ; (c) vous n'agissez pas pour le compte d'un tiers ; et (d) vous n'êtes pas visé par des sanctions. Toute information fausse constitue un manquement substantiel et peut entraîner la clôture de votre Compte et un signalement aux autorités."
     },
     "section7": {
-      "title": "7. Responsabilité",
-      "body": "LumiFin SAS s'efforce d'assurer l'exactitude des informations diffusées sur le Site, mais ne peut garantir leur exhaustivité ou leur absence d'erreurs. Le Site peut contenir des liens vers des sites tiers sur le contenu desquels LumiFin SAS n'exerce aucun contrôle et décline toute responsabilité. La responsabilité de LumiFin SAS ne saurait être engagée pour les dommages directs ou indirects résultant de l'utilisation du Site, sauf en cas de faute lourde ou intentionnelle."
+      "title": "7. Frais",
+      "body1": "LumiFin facture 2 % par Paiement QR, affichés avant votre confirmation. Aucun abonnement ni frais caché. L'alimentation et les retraits sont actuellement gratuits côté LumiFin (votre banque peut facturer des frais). Le taux de change peut inclure une marge fixée par le partenaire de paiement, distincte de nos frais de 2 %.",
+      "body2": "Nous pouvons modifier les frais moyennant un préavis d'au moins 30 jours. Si vous n'êtes pas d'accord, vous pouvez clôturer votre Compte et retirer vos fonds."
     },
     "section8": {
-      "title": "8. Modification des CGU",
-      "body": "LumiFin SAS se réserve le droit de modifier les présentes CGU à tout moment afin de les adapter aux évolutions du Site, du service ou de la réglementation applicable. Les modifications entrent en vigueur dès leur publication sur le Site. Il appartient à l'utilisateur de consulter régulièrement les CGU pour en prendre connaissance."
+      "title": "8. Activités interdites",
+      "body1": "Vous devez utiliser l'Application uniquement à des fins personnelles, non commerciales, et respecter toutes les lois applicables. Vous ne devez pas : (a) utiliser l'Application à des fins illicites ; (b) tenter un accès non autorisé ; (c) procéder à de l'ingénierie inverse de l'Application ; (d) recourir à des moyens automatisés ; (e) créer plusieurs comptes ; (f) effectuer des paiements pour le compte de tiers ; (g) exploiter des vulnérabilités ; ou (h) contourner les plafonds ou les contrôles.",
+      "body2": "Toute violation peut entraîner une suspension immédiate, la clôture du Compte et un signalement aux autorités."
     },
     "section9": {
-      "title": "9. Droit applicable et juridiction compétente",
-      "body": "Les présentes CGU sont régies par le droit français. En cas de litige, et après échec de toute tentative de résolution amiable, les tribunaux français seront seuls compétents, conformément aux règles de procédure civile applicables."
+      "title": "9. Propriété intellectuelle",
+      "body": "Tous les droits de propriété intellectuelle sur l'Application appartiennent à LumiFin ou à ses concédants. Nous vous accordons une licence limitée, non exclusive, non transférable et révocable d'utilisation de l'Application sur votre appareil personnel, uniquement pour accéder aux Services."
     },
     "section10": {
-      "title": "10. Contact",
-      "body": "Pour toute question relative aux présentes CGU, vous pouvez nous contacter par e-mail à info@lumifin.io ou par courrier postal à l'adresse du siège social indiquée dans nos mentions légales."
-    }
+      "title": "10. Limitation de responsabilité",
+      "body1": "L'Application est fournie « en l'état » sans garantie d'aucune sorte, dans toute la mesure permise par la loi. Nous ne garantissons pas une disponibilité ininterrompue ou exempte d'erreurs.",
+      "body2": "Dans toute la mesure permise par le droit français : (a) LumiFin n'est pas responsable des dommages indirects, consécutifs ou punitifs ; (b) LumiFin n'est pas responsable des préjudices causés par le partenaire de paiement, les réseaux de paiement ou les commerçants ; (c) LumiFin n'est pas responsable en cas de force majeure ; et (d) notre responsabilité globale est plafonnée aux frais que vous avez payés à LumiFin au cours des 12 mois précédant la réclamation.",
+      "body3": "Lorsque la loi impose un plafond plus élevé, le montant minimum prévu par la loi s'applique. LumiFin n'est pas partie aux transactions avec les commerçants ; les litiges avec un commerçant doivent être résolus directement avec celui-ci.",
+      "body4": "Aucune disposition des présentes Conditions n'exclut la responsabilité en cas de décès ou de blessures corporelles dus à une négligence, à une fraude ou à toute responsabilité ne pouvant être exclue selon le droit français ou européen. Vos droits légaux en tant que consommateur ne sont pas affectés."
+    },
+    "section11": {
+      "title": "11. Résiliation",
+      "body1": "Vous pouvez clôturer votre Compte à tout moment via support@lumifin.io. Nous restituerons les fonds restants dans un délai de 14 jours ouvrés, sous réserve des transactions en cours et des contrôles de conformité.",
+      "body2": "Nous pouvons suspendre ou clôturer votre Compte si : (a) vous enfreignez les présentes Conditions ; (b) la loi l'exige ; (c) nous soupçonnons une fraude ; (d) vous échouez à la vérification d'identité ; ou (e) votre Compte est inactif depuis 12 mois."
+    },
+    "section12": {
+      "title": "12. Droit applicable et litiges",
+      "body1": "Les présentes Conditions sont régies par le droit français. Les litiges seront d'abord traités à l'amiable (écrivez à support@lumifin.io). À défaut de résolution dans un délai de 30 jours, les tribunaux compétents de Paris sont seuls compétents.",
+      "body2": "Si vous êtes un consommateur résidant dans l'UE/EEE/Royaume-Uni, rien ne vous prive des protections impératives des consommateurs ni des règles de compétence de votre pays de résidence.",
+      "body3": "Réclamations : nous nous engageons à en accuser réception sous 5 jours ouvrés et à y répondre sous 30 jours. Vous pouvez également utiliser la plateforme européenne de règlement en ligne des litiges à l'adresse <1>https://ec.europa.eu/consumers/odr</1>."
+    },
+    "section13": {
+      "title": "13. Dispositions générales",
+      "body1": "Les présentes Conditions, notre Politique de confidentialité et les conditions du partenaire de paiement constituent l'intégralité de l'accord. Si une disposition est invalide, les autres restent en vigueur. Le fait de ne pas faire valoir un droit ne vaut pas renonciation. Nous pouvons céder les présentes Conditions à une société affiliée ; vous ne pouvez les céder sans notre accord. Les notifications sont envoyées via l'Application ou par e-mail. Nous pouvons proposer des promotions soumises à des conditions spécifiques ; nous pouvons les retirer en cas d'abus.",
+      "body2": "Les présentes Conditions sont rédigées en anglais. En cas de traduction, la version anglaise fait foi."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "LumiFin SAS — 50 rue Anatole France, 92290 Châtenay-Malabry, France",
+      "line": "E-mail : support@lumifin.io  |  Site web : <1>https://lumifin.io</1>"
+    },
+    "end": "— Fin des Conditions Générales —"
   },
   "faqs": {
     "q1": {
