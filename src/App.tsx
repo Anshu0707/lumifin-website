@@ -30,7 +30,6 @@ const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const MentionsLegalesPage = lazy(() => import('./pages/MentionsLegalesPage'));
 const CguPage = lazy(() => import('./pages/CguPage'));
-const CurrencyConverterPage = lazy(() => import('./pages/CurrencyConverterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export default function App() {
@@ -58,7 +57,6 @@ export default function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
         <Route path="/cgu" element={<CguPage />} />
-        <Route path="/tools/currency-converter" element={<CurrencyConverterPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
