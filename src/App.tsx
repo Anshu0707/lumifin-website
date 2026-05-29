@@ -20,6 +20,7 @@ const BlogPage = lazy(() => import('./pages/BlogPage'));
 const WhyWeBuiltLumiPage = lazy(() => import('./pages/WhyWeBuiltLumiPage'));
 const CashIsKingPage = lazy(() => import('./pages/CashIsKingPage'));
 const QrisDecodedPage = lazy(() => import('./pages/QrisDecodedPage'));
+const VietqrDecodedPage = lazy(() => import('./pages/VietqrDecodedPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -29,6 +30,7 @@ const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const MentionsLegalesPage = lazy(() => import('./pages/MentionsLegalesPage'));
 const CguPage = lazy(() => import('./pages/CguPage'));
+const CurrencyConverterPage = lazy(() => import('./pages/CurrencyConverterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export default function App() {
@@ -46,6 +48,7 @@ export default function App() {
           <Route path="/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
           <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
           <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
+          <Route path="/blog/vietqr-decoded" element={<VietqrDecodedPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
@@ -55,6 +58,7 @@ export default function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
         <Route path="/cgu" element={<CguPage />} />
+        <Route path="/tools/currency-converter" element={<CurrencyConverterPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

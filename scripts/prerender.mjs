@@ -34,6 +34,7 @@ const routes = [
   { path: '/blog/why-we-built-lumi', out: 'blog/why-we-built-lumi.html' },
   { path: '/blog/cash-is-king', out: 'blog/cash-is-king.html' },
   { path: '/blog/qris-decoded', out: 'blog/qris-decoded.html' },
+  { path: '/blog/vietqr-decoded', out: 'blog/vietqr-decoded.html' },
   { path: '/careers', out: 'careers.html' },
   { path: '/security', out: 'security.html' },
   { path: '/travel-money', out: 'travel-money.html' },
@@ -43,6 +44,7 @@ const routes = [
   { path: '/compare', out: 'compare.html' },
   { path: '/mentions-legales', out: 'mentions-legales.html' },
   { path: '/cgu', out: 'cgu.html' },
+  { path: '/tools/currency-converter', out: 'tools/currency-converter.html' },
   // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
   // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
   { path: '/__404__', out: '404.html' },

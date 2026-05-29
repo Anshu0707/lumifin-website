@@ -26,6 +26,7 @@ Lumifin is operated by LumiFin SAS, headquartered at 50 rue Anatole France, 9229
 - [Why we built Lumi](https://lumifin.io/blog/why-we-built-lumi): Founder story
 - [Cash is king?](https://lumifin.io/blog/cash-is-king): The hidden costs of carrying cash in SE Asia
 - [QRIS decoded](https://lumifin.io/blog/qris-decoded): Indonesia's QR payment system explained for European travellers
+- [VietQR decoded](https://lumifin.io/blog/vietqr-decoded): Vietnam's QR payment systems (VietQR, MoMo, ZaloPay, VNPay) and why foreign cards fail
 - [All posts](https://lumifin.io/blog)
 
 ## Optional
