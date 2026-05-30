@@ -30,6 +30,7 @@ const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const MentionsLegalesPage = lazy(() => import('./pages/MentionsLegalesPage'));
 const CguPage = lazy(() => import('./pages/CguPage'));
+const BetaApplicationPage = lazy(() => import('./pages/BetaApplicationPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export default function App() {
@@ -57,6 +58,7 @@ export default function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
         <Route path="/cgu" element={<CguPage />} />
+        <Route path="/beta" element={<BetaApplicationPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

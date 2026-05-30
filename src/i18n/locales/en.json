@@ -1321,5 +1321,93 @@
       "role": "CEO, Lumifin",
       "bio": "Pierre is an École Polytechnique graduate with deep expertise in fintech and emerging markets. He founded Lumifin to bridge the gap between European travellers and local payment systems in Asia."
     }
+  },
+  "beta": {
+    "seo": {
+      "title": "Join the Lumi Beta — Test the app before anyone else",
+      "description": "Help us build Lumi. We're looking for European travellers heading to Vietnam to test our QR payment app, report bugs, and get early access plus a €20 credit."
+    },
+    "eyebrow": "Beta Programme · Vietnam Launch",
+    "title": "Help us build Lumi — test the app before anyone else.",
+    "intro": {
+      "what": "Lumi lets you scan local QR codes (VietQR) and pay like a local in Vietnam — no cash, no card surcharges, just a minimal FX fee. We're launching in Vietnam first.",
+      "testing": "We're looking for Europeans already in Vietnam, or travelling there in the next few months. As a beta tester, you'll use the app for real payments, report bugs, and tell us what feels off. In return: early access before public launch, a €20 in-app credit on us, and a direct line to the founders.",
+      "commitment": "We're aiming for a small group of serious testers, not freebie hunters. Expect ~15 minutes a week sharing feedback during your trip. The whole programme runs for about 6 weeks."
+    },
+    "requiredHint": "Required field",
+    "sections": {
+      "contact": "1. Contact basics",
+      "eligibility": "2. Eligibility",
+      "device": "3. Your phone",
+      "about": "4. About you",
+      "consent": "5. Consent"
+    },
+    "fields": {
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Jane Doe",
+      "email": "Email address",
+      "emailPlaceholder": "you@example.com",
+      "whatsapp": "WhatsApp / phone number",
+      "whatsappPlaceholder": "+33 6 12 34 56 78",
+      "whatsappHint": "We run beta groups on WhatsApp — this is how we'll reach you fastest.",
+      "country": "Country of residence",
+      "countryPlaceholder": "Select your country",
+      "nationality": "Nationality (optional)",
+      "nationalityPlaceholder": "e.g. French, German, Dutch",
+      "sepa": {
+        "label": "Do you have a personal bank account in the EU/EEA (SEPA)?",
+        "hint": "Lumi only works with SEPA-zone accounts at the moment.",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "vietnamStatus": {
+        "label": "When will you be in Vietnam?",
+        "live": "I live in Vietnam",
+        "now": "I'm in Vietnam right now",
+        "soon": "In the next 1–3 months",
+        "later": "Later, or no firm plans yet"
+      },
+      "phoneOs": {
+        "label": "Phone operating system"
+      },
+      "appStoreEmail": {
+        "label": "Apple ID (iCloud email)",
+        "hint": "Required to add you to the TestFlight beta build. Android users: paste your Google account email instead.",
+        "placeholder": "you@icloud.com"
+      },
+      "discovered": {
+        "label": "How did you discover us?",
+        "placeholder": "Select one",
+        "whatsappGroup": "WhatsApp group",
+        "friend": "Friend / word of mouth",
+        "expatGroup": "French expat group",
+        "googleSearch": "Google search",
+        "other": "Other"
+      },
+      "discoveredGroup": {
+        "label": "Which group or page? (optional)",
+        "placeholder": "e.g. \"Français au Vietnam\" Facebook group"
+      },
+      "usedQr": {
+        "label": "Have you used QR payment apps before (MoMo, PromptPay, Alipay, WeChat Pay)?",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "commit": {
+        "label": "Can you commit to giving feedback during your trip (~15 min/week)?",
+        "yes": "Yes",
+        "maybe": "Maybe"
+      },
+      "consentRequired": "I agree to be contacted about the Lumi beta programme, and I've read the",
+      "consentMarketing": "Also send me general Lumi product updates and the waitlist newsletter (optional)."
+    },
+    "privacyLinkLabel": "Privacy Policy",
+    "submit": "Submit my application",
+    "submitting": "Submitting…",
+    "success": {
+      "title": "Thanks — we got it.",
+      "body": "We read every application personally. If you're a fit for this beta cohort, you'll hear from us by WhatsApp or email within a few days."
+    },
+    "error": "Something went wrong submitting the form. Please try again, or email beta@lumifin.io directly."
   }
 }

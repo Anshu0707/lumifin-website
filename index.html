@@ -31,10 +31,31 @@
     </script>
   </head>
   <body>
-    <!-- Hidden form for Netlify bot detection (React SPA requirement) -->
+    <!-- Hidden forms for Netlify bot detection (React SPA requirement) -->
     <form name="waitlist" netlify netlify-honeypot="bot-field" hidden>
       <input name="bot-field" />
       <input name="email" type="email" />
+    </form>
+    <form name="beta-application" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="fullName" />
+      <input name="email" type="email" />
+      <input name="whatsapp" />
+      <input name="country" />
+      <input name="nationality" />
+      <input name="sepa" />
+      <input name="vietnamStatus" />
+      <input name="phoneOs" />
+      <input name="appStoreEmail" type="email" />
+      <input name="discovered" />
+      <input name="discoveredGroup" />
+      <input name="usedQr" />
+      <input name="commit" />
+      <input name="consentRequired" />
+      <input name="consentMarketing" />
+      <input name="utm_source" />
+      <input name="utm_medium" />
+      <input name="utm_campaign" />
     </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
