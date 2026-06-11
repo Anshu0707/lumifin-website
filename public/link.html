@@ -1,0 +1,189 @@
+<!doctype html>
+<!--
+  /link — email-CTA deep-link bridge (deep-link-email-cta-design.md §5.1).
+
+  Served by Netlify's pretty URLs at https://lumifin.io/link?intent=<X>.
+  Static file on purpose: the prerender step must never execute this page's
+  redirect JS, and email-security scanners (no JS) must see a plain 200 with
+  no server-side redirect.
+
+  Intent allowlist v1 (Sprint 0 decision 0.2): add-funds | kyc | home.
+  Per-platform destinations v1 (task 1.5 — app not in the stores yet):
+
+    intent     | app screen (via scheme) | web (desktop)     | store
+    -----------|-------------------------|-------------------|------------------
+    add-funds  | Add Funds               | lumifin.io (home) | TODO: not published
+    kyc        | KYC flow                | lumifin.io (home) | TODO: not published
+    home       | Home                    | lumifin.io (home) | TODO: not published
+
+  There is no web app yet, so desktop shows "open on your phone" instead of
+  redirecting. Until the store URLs land, mobile-without-app gets the manual
+  button + "app coming soon" hint instead of a store redirect.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Opening the Lumi app…</title>
+  <link rel="icon" href="/favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a2e;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 32px;
+      max-width: 420px;
+      margin: 24px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(26, 26, 46, 0.08);
+    }
+    .logo { width: 56px; height: 56px; margin-bottom: 16px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    p { font-size: 14px; line-height: 1.6; color: #4a5568; margin: 0 0 24px; }
+    .btn {
+      display: inline-block;
+      background: #6d28d9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 28px;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 40px;
+    }
+    .hint { font-size: 12px; color: #9ca3af; margin: 20px 0 0; }
+    .hint a { color: #6d28d9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="/logo.png" alt="Lumi" />
+    <h1 id="title">Opening the Lumi app…</h1>
+    <p id="subtitle">If nothing happens, use the button below.</p>
+    <!-- Always-visible manual fallback; href is set from the validated intent only. -->
+    <a class="btn" id="open-btn" href="#">Open the Lumi app</a>
+    <p class="hint" id="hint">
+      Don't have the app yet? <a href="https://lumifin.io/">Visit lumifin.io</a>
+    </p>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Config ─────────────────────────────────────────────────────── */
+      // Prod scheme only, all envs (Sprint 0 decision 0.3). QA (lumiqa://) /
+      // dev (lumifindev://) builds won't auto-open from this fallback —
+      // accepted; they get the safe web/store path instead.
+      var SCHEME = 'lumifin';
+      // TODO(0.4): Android package name — pending from the app team.
+      // When set, Android uses an intent:// URL (auto Play-Store fallback).
+      var ANDROID_PACKAGE = '';
+      // TODO(1.5): real store URLs once the app is published. Empty = no
+      // store redirect; the manual button + hint below remain the fallback.
+      var STORE_IOS = '';
+      var STORE_ANDROID = '';
+
+      /* ── 1. Validate intent against the allowlist (never reflect raw) ─ */
+      var ALLOWED = ['add-funds', 'kyc', 'home'];
+      var params = new URLSearchParams(window.location.search);
+      var rawIntent = params.get('intent') || '';
+      var intent = ALLOWED.indexOf(rawIntent) !== -1 ? rawIntent : 'home';
+
+      // Optional &id= passthrough (contract: <scheme>://link?intent=<X>&id=<id>).
+      // Strict charset check so nothing unsafe is ever echoed into a URL.
+      var rawId = params.get('id') || '';
+      var id = /^[A-Za-z0-9_-]{1,64}$/.test(rawId) ? rawId : '';
+
+      var query = 'intent=' + intent + (id ? '&id=' + id : '');
+      var deepLink = SCHEME + '://link?' + query;
+
+      /* ── 2. Platform detection ─────────────────────────────────────── */
+      var ua = navigator.userAgent || '';
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+        (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1); // iPadOS
+      var isAndroid = /Android/i.test(ua);
+
+      /* ── EN/FR static text ─────────────────────────────────────────── */
+      var fr = (navigator.language || '').toLowerCase().indexOf('fr') === 0;
+      var T = fr ? {
+        title: 'Ouverture de l’application Lumi…',
+        titleDesktop: 'Ouvrez ce lien sur votre téléphone',
+        subtitle: 'Si rien ne se passe, utilisez le bouton ci-dessous.',
+        subtitleDesktop: 'Ce lien ouvre l’application Lumi. Ouvrez cet e-mail sur votre téléphone et appuyez à nouveau sur le bouton.',
+        button: 'Ouvrir l’application Lumi',
+        hintHtml: 'Vous n’avez pas encore l’application ? <a href="https://lumifin.io/">Visitez lumifin.io</a>'
+      } : {
+        title: 'Opening the Lumi app…',
+        titleDesktop: 'Open this link on your phone',
+        subtitle: 'If nothing happens, use the button below.',
+        subtitleDesktop: 'This link opens the Lumi app. Open this email on your phone and tap the button again.',
+        button: 'Open the Lumi app',
+        hintHtml: 'Don’t have the app yet? <a href="https://lumifin.io/">Visit lumifin.io</a>'
+      };
+
+      var titleEl = document.getElementById('title');
+      var subtitleEl = document.getElementById('subtitle');
+      var btnEl = document.getElementById('open-btn');
+      var hintEl = document.getElementById('hint');
+
+      document.documentElement.lang = fr ? 'fr' : 'en';
+      btnEl.textContent = T.button;
+      btnEl.href = deepLink; // built from validated values only
+      hintEl.innerHTML = T.hintHtml; // static string, no user input
+
+      /* ── 3. Client-side redirect (never a server 302 — §7 scanners) ── */
+      function attemptApp(storeUrl) {
+        // Try the custom scheme; if we're still visible after ~1200 ms the
+        // app didn't open → go to the store (when we have a URL). The timer
+        // is cancelled when the page is backgrounded so a successful
+        // app-open doesn't bounce the user to the store on return.
+        var timer = setTimeout(function () {
+          if (!document.hidden && storeUrl) window.location.href = storeUrl;
+        }, 1200);
+        function cancel() {
+          if (document.hidden) clearTimeout(timer);
+        }
+        document.addEventListener('visibilitychange', cancel);
+        window.addEventListener('pagehide', function () { clearTimeout(timer); });
+        window.location.href = deepLink;
+      }
+
+      if (isIOS) {
+        titleEl.textContent = T.title;
+        subtitleEl.textContent = T.subtitle;
+        attemptApp(STORE_IOS);
+      } else if (isAndroid) {
+        titleEl.textContent = T.title;
+        subtitleEl.textContent = T.subtitle;
+        if (ANDROID_PACKAGE) {
+          // intent:// opens the app if installed, else Android itself follows
+          // S.browser_fallback_url — no timer heuristics needed.
+          var fallback = STORE_ANDROID || 'https://lumifin.io/';
+          window.location.href = 'intent://link?' + query +
+            '#Intent;scheme=' + SCHEME +
+            ';package=' + ANDROID_PACKAGE +
+            ';S.browser_fallback_url=' + encodeURIComponent(fallback) +
+            ';end';
+        } else {
+          // Package name not delivered yet (task 0.4) — plain scheme attempt.
+          attemptApp(STORE_ANDROID);
+        }
+      } else {
+        // Desktop / unknown: no web app yet → no redirect, just instructions.
+        titleEl.textContent = T.titleDesktop;
+        subtitleEl.textContent = T.subtitleDesktop;
+      }
+    })();
+  </script>
+</body>
+</html>

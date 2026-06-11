@@ -41,3 +41,19 @@
   for = "/llms.txt"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+
+# Universal/App Links association files (deep-link email CTA bridge — /link).
+# apple-app-site-association has no extension, so Netlify would serve it as
+# application/octet-stream and Apple silently ignores it; force JSON.
+# Short cache while iterating (Sprints 1–3); tighten in Sprint 4 once stable.
+[[headers]]
+  for = "/.well-known/apple-app-site-association"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "public, max-age=300"
