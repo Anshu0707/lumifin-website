@@ -877,8 +877,11 @@ export default function LandingPage() {
                 const element = document.getElementById("waitlist");
                 if (element) element.scrollIntoView({ behavior: "smooth" });
               }}
-              className="bg-white/10 backdrop-blur-md border border-white/30 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-white/20 transition-all"
+              className="relative bg-yellow-400 text-slate-900 px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-yellow-400/40 hover:bg-yellow-300 hover:shadow-yellow-300/60 hover:-translate-y-1 transition-all"
             >
+              <span className="absolute -top-3 -right-3 bg-slate-900 text-yellow-400 text-xs font-black uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg animate-pulse">
+                {t("hero.earnBadge")}
+              </span>
               {t("hero.joinWaitlist")}
             </button>
           </div>
