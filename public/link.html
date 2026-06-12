@@ -90,8 +90,11 @@
       // Prod scheme by default; emails select their env build via the
       // allowlisted &scheme= param (see below). No scheme param → prod.
       var SCHEME = 'lumifin';
-      // Android package per scheme (found in lumfin_mobile app.config.ts —
-      // note finxflow, not lumifin). Keyed by scheme so the test-only
+      // Android package per scheme (found in lumfin_mobile app.config.ts).
+      // finxflow, not lumifin, is CORRECT (confirmed 2026-06-12): the app
+      // was originally named FinxFlow and Android package names are
+      // permanent — only the product name changed to Lumi/Lumifin.
+      // Keyed by scheme so the test-only
       // &scheme= override targets the matching build's package. The
       // assetlinks.json SHA-256 (Play App Signing) is still pending — that
       // gates DIRECT app-open only; this intent:// fallback works without it.
