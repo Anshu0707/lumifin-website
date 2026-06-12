@@ -838,7 +838,7 @@ export default function LandingPage() {
         description={t('landing.seo.description')}
         canonical="/"
         structuredData={[organizationSchema, websiteSchema, softwareApplicationSchema]}
-        preloadImage="/assets/hero/landing-hero.webp"
+        preloadImage="/assets/hero/saigon-night-market-hero.webp"
       />
       <Header />
 
@@ -848,7 +848,7 @@ export default function LandingPage() {
           <img
             alt={t("hero.imgAlt")}
             className="w-full h-full object-cover"
-            src="/assets/hero/landing-hero.webp"
+            src="/assets/hero/saigon-night-market-hero.webp"
             loading="eager"
             fetchPriority="high"
           />
