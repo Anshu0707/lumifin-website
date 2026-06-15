@@ -1,0 +1,234 @@
+<!doctype html>
+<!--
+  /link — email-CTA deep-link bridge (deep-link-email-cta-design.md §5.1).
+
+  Served by Netlify's pretty URLs at https://lumifin.io/link?intent=<X>.
+  Static file on purpose: the prerender step must never execute this page's
+  redirect JS, and email-security scanners (no JS) must see a plain 200 with
+  no server-side redirect.
+
+  Intent allowlist v2 (v1 = Sprint 0 decision 0.2: add-funds | kyc | home;
+  expanded 2026-06-11 to the full reserved vocabulary from
+  email-deeplink-backend-spec.md §5 — see ALLOWED below). The bridge only
+  validates + passes intents through; which screens exist is the app's
+  concern (unimplemented intents land on home in-app). verify-email is
+  excluded on purpose (keeps its Auth0 link, never bridged).
+  Per-platform destinations (task 1.5 — app not in the stores yet):
+
+    intent       | app screen (via scheme) | web (desktop)     | store
+    -------------|-------------------------|-------------------|----------------
+    add-funds    | Add Funds               | lumifin.io (home) | TODO: not published
+    transaction  | Tx detail (&id=intentId)| lumifin.io (home) | TODO: not published
+    (others)     | per app contract        | lumifin.io (home) | TODO: not published
+    home         | Home                    | lumifin.io (home) | TODO: not published
+
+  There is no web app yet, so desktop shows "open on your phone" instead of
+  redirecting. Until the store URLs land, mobile-without-app gets the manual
+  button + "app coming soon" hint instead of a store redirect.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>Opening the Lumi app…</title>
+  <link rel="icon" href="/favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1a2e;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 32px;
+      max-width: 420px;
+      margin: 24px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(26, 26, 46, 0.08);
+    }
+    .logo { width: 56px; height: 56px; margin-bottom: 16px; }
+    h1 { font-size: 20px; margin: 0 0 12px; }
+    p { font-size: 14px; line-height: 1.6; color: #4a5568; margin: 0 0 24px; }
+    .btn {
+      display: inline-block;
+      background: #6d28d9;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 28px;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 13px 40px;
+    }
+    .hint { font-size: 12px; color: #9ca3af; margin: 20px 0 0; }
+    .hint a { color: #6d28d9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="logo" src="/logo.png" alt="Lumi" />
+    <h1 id="title">Opening the Lumi app…</h1>
+    <p id="subtitle">If nothing happens, use the button below.</p>
+    <!-- Always-visible manual fallback; href is set from the validated intent only. -->
+    <a class="btn" id="open-btn" href="#">Open the Lumi app</a>
+    <p class="hint" id="hint">
+      Don't have the app yet? <a href="https://lumifin.io/">Visit lumifin.io</a>
+    </p>
+  </div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ── Config ─────────────────────────────────────────────────────── */
+      // Prod scheme by default; emails select their env build via the
+      // allowlisted &scheme= param (see below). No scheme param → prod.
+      var SCHEME = 'lumifin';
+      // Android package per scheme (found in lumfin_mobile app.config.ts).
+      // finxflow, not lumifin, is CORRECT (confirmed 2026-06-12): the app
+      // was originally named FinxFlow and Android package names are
+      // permanent — only the product name changed to Lumi/Lumifin.
+      // Keyed by scheme so the test-only
+      // &scheme= override targets the matching build's package. The
+      // assetlinks.json SHA-256 (Play App Signing) is still pending — that
+      // gates DIRECT app-open only; this intent:// fallback works without it.
+      var ANDROID_PACKAGES = {
+        lumifin: 'com.finxflow.app',
+        lumiqa: 'com.finxflow.app.qa',
+        lumifindev: 'com.finxflow.app.dev'
+      };
+      // TODO(1.5): real store URLs once the app is published. Empty = no
+      // store redirect; the manual button + hint below remain the fallback.
+      var STORE_IOS = '';
+      var STORE_ANDROID = '';
+
+      /* ── 1. Validate intent against the allowlist (never reflect raw) ─ */
+      // v3 — the FROZEN token list from email-deeplink-contract.md §4 (the
+      // contract surface; renaming breaks emails already in inboxes). The
+      // bridge only validates + passes intents through — gates/routes are the
+      // app's concern (resolveNavigation stashes the intent through the auth
+      // chain; unimplemented screens fall back to home in-app).
+      // 'verify-email' is deliberately ABSENT (contract §5.3): it carries an
+      // Auth0 token and stays on its magic link, never this bridge.
+      // 'transaction' and 'coupon' carry &id= (txn id = intentId QR_…/OI_…).
+      var ALLOWED = [
+        // Tier A — auth-chain destinations
+        'start-kyc', 'kyc-status', 'resubmit-kyc',
+        'set-mpin', 'unlock', 'security',
+        // Tier B — feature destinations
+        'add-funds', 'transaction', 'home',
+        'coupon', 'withdraw',
+        // Tier C — web/open-only
+        'terms', 'privacy', 'open',
+        // bridge v1 token (decision 0.2), kept for compatibility
+        'kyc'
+      ];
+      var params = new URLSearchParams(window.location.search);
+      var rawIntent = params.get('intent') || '';
+      var intent = ALLOWED.indexOf(rawIntent) !== -1 ? rawIntent : 'home';
+
+      // Optional &id= passthrough (contract: <scheme>://link?intent=<X>&id=<id>).
+      // Strict charset check so nothing unsafe is ever echoed into a URL.
+      var rawId = params.get('id') || '';
+      var id = /^[A-Za-z0-9_-]{1,64}$/.test(rawId) ? rawId : '';
+
+      // &scheme= selects which env build to open (emails embed it via the
+      // per-env {{app_scheme}}: lumifin / lumiqa / lumifindev — supersedes
+      // decision 0.3's prod-only fallback). Allowlisted values only; missing
+      // or unknown values fall back to the prod scheme.
+      var KNOWN_SCHEMES = ['lumifin', 'lumiqa', 'lumifindev'];
+      var rawScheme = params.get('scheme') || '';
+      if (KNOWN_SCHEMES.indexOf(rawScheme) !== -1) {
+        SCHEME = rawScheme;
+      }
+
+      var query = 'intent=' + intent + (id ? '&id=' + id : '');
+      var deepLink = SCHEME + '://link?' + query;
+
+      /* ── 2. Platform detection ─────────────────────────────────────── */
+      var ua = navigator.userAgent || '';
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+        (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1); // iPadOS
+      var isAndroid = /Android/i.test(ua);
+
+      /* ── EN/FR static text ─────────────────────────────────────────── */
+      var fr = (navigator.language || '').toLowerCase().indexOf('fr') === 0;
+      var T = fr ? {
+        title: 'Ouverture de l’application Lumi…',
+        titleDesktop: 'Ouvrez ce lien sur votre téléphone',
+        subtitle: 'Si rien ne se passe, utilisez le bouton ci-dessous.',
+        subtitleDesktop: 'Ce lien ouvre l’application Lumi. Ouvrez cet e-mail sur votre téléphone et appuyez à nouveau sur le bouton.',
+        button: 'Ouvrir l’application Lumi',
+        hintHtml: 'Vous n’avez pas encore l’application ? <a href="https://lumifin.io/">Visitez lumifin.io</a>'
+      } : {
+        title: 'Opening the Lumi app…',
+        titleDesktop: 'Open this link on your phone',
+        subtitle: 'If nothing happens, use the button below.',
+        subtitleDesktop: 'This link opens the Lumi app. Open this email on your phone and tap the button again.',
+        button: 'Open the Lumi app',
+        hintHtml: 'Don’t have the app yet? <a href="https://lumifin.io/">Visit lumifin.io</a>'
+      };
+
+      var titleEl = document.getElementById('title');
+      var subtitleEl = document.getElementById('subtitle');
+      var btnEl = document.getElementById('open-btn');
+      var hintEl = document.getElementById('hint');
+
+      document.documentElement.lang = fr ? 'fr' : 'en';
+      btnEl.textContent = T.button;
+      btnEl.href = deepLink; // built from validated values only
+      hintEl.innerHTML = T.hintHtml; // static string, no user input
+
+      /* ── 3. Client-side redirect (never a server 302 — §7 scanners) ── */
+      function attemptApp(storeUrl) {
+        // Try the custom scheme; if we're still visible after ~1200 ms the
+        // app didn't open → go to the store (when we have a URL). The timer
+        // is cancelled when the page is backgrounded so a successful
+        // app-open doesn't bounce the user to the store on return.
+        var timer = setTimeout(function () {
+          if (!document.hidden && storeUrl) window.location.href = storeUrl;
+        }, 1200);
+        function cancel() {
+          if (document.hidden) clearTimeout(timer);
+        }
+        document.addEventListener('visibilitychange', cancel);
+        window.addEventListener('pagehide', function () { clearTimeout(timer); });
+        window.location.href = deepLink;
+      }
+
+      if (isIOS) {
+        titleEl.textContent = T.title;
+        subtitleEl.textContent = T.subtitle;
+        attemptApp(STORE_IOS);
+      } else if (isAndroid) {
+        titleEl.textContent = T.title;
+        subtitleEl.textContent = T.subtitle;
+        var androidPackage = ANDROID_PACKAGES[SCHEME] || '';
+        if (androidPackage) {
+          // intent:// opens the app if installed, else Android itself follows
+          // S.browser_fallback_url — no timer heuristics needed.
+          var fallback = STORE_ANDROID || 'https://lumifin.io/';
+          window.location.href = 'intent://link?' + query +
+            '#Intent;scheme=' + SCHEME +
+            ';package=' + androidPackage +
+            ';S.browser_fallback_url=' + encodeURIComponent(fallback) +
+            ';end';
+        } else {
+          // No package mapped for this scheme — plain scheme attempt.
+          attemptApp(STORE_ANDROID);
+        }
+      } else {
+        // Desktop / unknown: no web app yet → no redirect, just instructions.
+        titleEl.textContent = T.titleDesktop;
+        subtitleEl.textContent = T.subtitleDesktop;
+      }
+    })();
+  </script>
+</body>
+</html>

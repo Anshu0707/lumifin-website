@@ -1,12 +1,38 @@
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import {defineConfig, loadEnv} from 'vite';
+import {defineConfig, loadEnv, type Plugin} from 'vite';
+
+// Netlify serves public/link.html at the pretty URL /link, but the Vite dev
+// server's SPA fallback would hand /link to index.html (the React app) — the
+// wrong page entirely. Mirror Netlify so the bridge is testable via ngrok.
+const linkBridgePrettyUrl = (): Plugin => {
+  const rewrite = (req: {url?: string}) => {
+    if (req.url && /^\/link(\?|$)/.test(req.url)) {
+      req.url = req.url.replace(/^\/link/, '/link.html');
+    }
+  };
+  return {
+    name: 'link-bridge-pretty-url',
+    configureServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        rewrite(req);
+        next();
+      });
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        rewrite(req);
+        next();
+      });
+    },
+  };
+};
 
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [react(), tailwindcss(), linkBridgePrettyUrl()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
@@ -28,6 +54,9 @@ export default defineConfig(({mode}) => {
     },
     server: {
       host: true,
+      // Leading dot = any subdomain, so the allowlist survives every new
+      // ngrok tunnel URL (used to test the /link bridge before merge).
+      allowedHosts: ['.ngrok-free.dev', '.ngrok-free.app'],
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
       // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',

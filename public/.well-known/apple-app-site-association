@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "CX3NHAM8XH.com.lumifin.app",
+        "paths": ["/link", "/link/*"]
+      },
+      {
+        "appID": "CX3NHAM8XH.com.lumifin.app.qa",
+        "paths": ["/link", "/link/*"]
+      },
+      {
+        "appID": "CX3NHAM8XH.com.lumifin.app.dev",
+        "paths": ["/link", "/link/*"]
+      }
+    ]
+  }
+}
