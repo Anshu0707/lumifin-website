@@ -162,13 +162,21 @@
       /* ── EN/FR static text ─────────────────────────────────────────── */
       // Match the main app's language detection (src/i18n/config.ts): same
       // origin, so the user's saved choice lives in localStorage under
-      // 'lumifin_lang' ('en' | 'fr'). Order mirrors the app —
-      // saved choice → browser language → English. try/catch because
-      // localStorage can throw (private mode / blocked storage).
-      var savedLang = '';
-      try { savedLang = localStorage.getItem('lumifin_lang') || ''; } catch (e) {}
-      var langSource = savedLang || navigator.language || '';
-      var fr = langSource.toLowerCase().indexOf('fr') === 0;
+      // 'lumifin_lang' ('en' | 'fr'). Order of preference —
+      // &lang= query param → saved choice → browser language → English.
+      // The &lang= param wins outright (emails can embed the recipient's
+      // language): lang=fr → French, any other value → English. try/catch
+      // because localStorage can throw (private mode / blocked storage).
+      var queryLang = (params.get('lang') || '').toLowerCase();
+      var fr;
+      if (queryLang) {
+        fr = queryLang === 'fr';
+      } else {
+        var savedLang = '';
+        try { savedLang = localStorage.getItem('lumifin_lang') || ''; } catch (e) {}
+        var langSource = savedLang || navigator.language || '';
+        fr = langSource.toLowerCase().indexOf('fr') === 0;
+      }
       var T = fr ? {
         title: 'Ouverture de l’application Lumi…',
         titleDesktop: 'Ouvrez ce lien sur votre téléphone',
