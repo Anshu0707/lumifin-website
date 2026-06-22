@@ -21,6 +21,7 @@ const WhyWeBuiltLumiPage = lazy(() => import('./pages/WhyWeBuiltLumiPage'));
 const CashIsKingPage = lazy(() => import('./pages/CashIsKingPage'));
 const QrisDecodedPage = lazy(() => import('./pages/QrisDecodedPage'));
 const VietqrDecodedPage = lazy(() => import('./pages/VietqrDecodedPage'));
+const BestTravelCardsVietnamPage = lazy(() => import('./pages/BestTravelCardsVietnamPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />
           <Route path="/blog/qris-decoded" element={<QrisDecodedPage />} />
           <Route path="/blog/vietqr-decoded" element={<VietqrDecodedPage />} />
+          <Route path="/blog/best-travel-cards-europeans-vietnam-2026" element={<BestTravelCardsVietnamPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />

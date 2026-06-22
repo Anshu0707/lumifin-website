@@ -10,6 +10,7 @@ import { Calendar, User } from 'lucide-react';
 const categories = ["all", "travel", "purpose", "payments"] as const;
 
 const POSTS = [
+  { id: 5, key: 'bestCardsVietnam', author: 'Thiofanty', categoryKey: 'travel', href: '/blog/best-travel-cards-europeans-vietnam-2026', image: '/assets/blog/best-travel-cards-vietnam-cover.webp' },
   { id: 4, key: 'vietqr', author: 'Gaurav Bansal', categoryKey: 'payments', href: '/blog/vietqr-decoded', image: '/assets/blog/vietqr-decoded-cover.webp' },
   { id: 1, key: 'future', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/cash-is-king', image: '/assets/blog/cash-is-king-cover.webp' },
   { id: 2, key: 'bangkok', author: 'Gaurav Bansal', categoryKey: 'purpose', href: '/blog/why-we-built-lumi', image: '/assets/blog/why-we-built-lumi-cover.webp' },

@@ -369,6 +369,11 @@
         "title": "Vietnam Skipped the Card Era. Your Mastercard Didn’t Get the Memo.",
         "excerpt": "VietQR explained — and why foreigners can’t use the apps that run daily life in Vietnam.",
         "date": "May 27, 2026"
+      },
+      "bestCardsVietnam": {
+        "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
+        "excerpt": "Wise, Revolut, N26, Monzo, cash or Lumifin? The smartest 2026 setup isn't one perfect card — it's a stack. Here's what to actually bring.",
+        "date": "June 15, 2026"
       }
     }
   },
@@ -958,6 +963,111 @@
       "tip2": "Bring at least 3 million đồng in cash for the first two days.",
       "tip3": "Install Grab and Shopee before you land. Both take foreign cards.",
       "tip4": "Staying more than 30 days? Ask your hotel about MoMo top-ups in their name. Most will do it."
+    },
+    "bestTravelCardsVietnam": {
+      "seo": {
+        "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
+        "description": "Compare Wise, Revolut, N26, Monzo, cash and Lumifin for paying in Vietnam as a European traveller in 2026 — and the smartest payment setup to bring."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Travel · Vietnam",
+      "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
+      "subtitle": "Wise, Revolut, N26, Monzo and traditional bank cards can all help in Vietnam — but none of them fully solves the local QR payment problem. Here's the practical setup Europeans should bring in 2026.",
+      "author": "Thiofanty",
+      "readTime": "8 min read",
+      "dateLabel": "June 2026",
+      "imgAlt": "European traveller paying by QR code at a cafe in Vietnam with a smartphone.",
+      "shortAnswerH": "The short answer",
+      "shortAnswerP1": "If you're travelling to Vietnam from Europe in 2026, the smartest payment setup isn't one perfect card. It's a stack: one low-fee travel card, one backup bank card, some cash for edge cases, and a QR-ready option for everyday local payments.",
+      "shortAnswerP2": "Wise, Revolut, N26 and Monzo are all useful because they usually give better foreign spending experiences than old-school bank cards. But in Vietnam, the bigger problem isn't only exchange rates. It's access. Many everyday merchants are set up for local QR payments, not foreign cards.",
+      "comparisonH": "Quick comparison",
+      "tableHead": ["Option", "Best for", "Main watch-out", "Local QR access?", "Verdict"],
+      "tableRows": [
+        { "option": "Wise", "bestFor": "Low-cost FX and card spending", "watchOut": "ATM allowance and issuer-country fees vary", "qr": "Partial — depends on supported partners", "verdict": "Best all-round travel card" },
+        { "option": "Revolut", "bestFor": "App-first multi-currency spending", "watchOut": "Weekend / plan / fair-use fees can apply", "qr": "No native VietQR", "verdict": "Best for app control" },
+        { "option": "N26", "bestFor": "Eurozone users who want simple card spending", "watchOut": "ATM withdrawals in foreign currency may cost extra on free plans", "qr": "No native VietQR", "verdict": "Best for EU simplicity" },
+        { "option": "Monzo", "bestFor": "UK travellers", "watchOut": "Outside-EEA ATM allowance limits apply", "qr": "No native VietQR", "verdict": "Best UK card option" },
+        { "option": "Traditional EU bank card", "bestFor": "Backup and emergencies", "watchOut": "FX markups, ATM fees and blocks", "qr": "No native VietQR", "verdict": "Keep as backup" },
+        { "option": "Cash", "bestFor": "Street stalls, rural areas, emergencies", "watchOut": "ATM/exchange costs and carrying risk", "qr": "N/A", "verdict": "Still needed" },
+        { "option": "Lumifin", "bestFor": "Paying by local QR from a European account", "watchOut": "Vietnam beta availability", "qr": "Yes — built for this gap", "verdict": "Best QR bridge once available" }
+      ],
+      "howPayH": "How people actually pay in Vietnam",
+      "howPayP1": "Vietnam isn't a \"card-first\" travel market in the way many Europeans expect. In hotels, malls, airports, tourist restaurants and larger stores, Visa and Mastercard are usually useful. But for small cafes, street food, local shops, taxis, market vendors and casual services, you'll often see a QR code on the counter before you see a card terminal.",
+      "howPayP2": "This isn't just a vibe. Vietnam's non-cash payment growth has been fast. In the first 11 months of 2024, non-cash payment transaction volume rose 56.8% year on year, and QR code payments grew 106.7% by volume, according to State Bank of Vietnam figures reported by Vietnam News. [7]",
+      "howPayP3": "The system behind a lot of this is VietQR, a common QR standard launched through the NAPAS network and member banks. For locals, the experience is simple: open a banking app, scan the merchant QR code, confirm the amount, and the payment moves in VND. For visitors, the interface is visible everywhere, but access is less straightforward. [8]",
+      "bringH": "So, what should Europeans actually bring?",
+      "bringIntro": "Bring at least two cards and don't make cash your only plan. A good first setup looks like this:",
+      "bringList": [
+        "One low-fee travel card such as Wise, Revolut, N26 or Monzo.",
+        "One traditional bank card as a backup in case your main card is blocked.",
+        "Some VND cash for arrival, street food, rural areas and emergencies.",
+        "A QR-ready option if you want to pay like locals in daily merchant settings."
+      ],
+      "cards": [
+        {
+          "name": "Wise in Vietnam",
+          "p1": "Wise is probably the most practical \"default\" card for many Europeans because it's built around transparent currency conversion and international spending. It works well when a merchant accepts international cards, and it's useful for ATM withdrawals if you stay within your allowance.",
+          "p2": "The catch is that Wise is still a card-first solution. It helps with the exchange-rate layer, but it doesn't automatically make every local QR code in Vietnam usable. Wise says UK card users get free ATM withdrawals up to a monthly allowance of GBP 250, with a 2.69% fee on amounts above that allowance, and ATM operators may still charge their own fees. [1]",
+          "verdictBold": "Best for:",
+          "verdictRest": " everyday card spending, backup ATM access and travellers who care about transparent FX. Not best for: paying at QR-only places unless the specific merchant flow is supported by a partner integration."
+        },
+        {
+          "name": "Revolut in Vietnam",
+          "p1": "Revolut is strong for travellers who like managing currencies inside an app. It's convenient, familiar, and useful as a spending card where international cards are accepted. For many Europeans, it's also the card already sitting in Apple Pay or Google Pay before they leave.",
+          "p2": "The watch-out is that Revolut's fees depend on your country, plan, timing and limits. For example, Revolut France's Standard plan shows free ATM withdrawals up to five withdrawals or EUR 200 per rolling month, then a 2% fee with a EUR 1 minimum. Revolut Netherlands' Standard terms say weekend currency exchange can trigger a 1% fee. [2] [3]",
+          "verdictBold": "Best for:",
+          "verdictRest": " app control, multi-currency spending and travellers who already use Revolut. Not best for: assuming every conversion is free in every situation, or assuming Revolut alone unlocks local QR acceptance."
+        },
+        {
+          "name": "N26 in Vietnam",
+          "p1": "N26 is clean and simple if your base life is already in euros. Card spending abroad can be convenient, and N26 says it doesn't charge exchange markups on card payments, using the Mastercard exchange rate. That makes it easy to understand for standard card acceptance. [4]",
+          "p2": "Cash withdrawals are the part to check. N26 says Standard, Business and Smart accounts pay a 1.7% fee on foreign-currency ATM withdrawals, while that fee is waived on Go and Metal plans. Again, local ATM operators may still add their own charges. [5]",
+          "verdictBold": "Best for:",
+          "verdictRest": " euro-based travellers who want simple card spending. Not best for: QR-first local payments, because N26 is still primarily a card account in this context."
+        },
+        {
+          "name": "Monzo in Vietnam",
+          "p1": "Monzo is most relevant for UK travellers. It's not an EU bank, but many Europeans and UK-based travellers compare it with Wise and Revolut before a Southeast Asia trip. Monzo says card spending abroad is fee-free and uses Mastercard's exchange rate.",
+          "p2": "For cash outside the EEA, its free withdrawal allowance depends on account type, with a 3% fee after the allowance. [6]",
+          "verdictBold": "Best for:",
+          "verdictRest": " UK travellers who want simple card payments and good app notifications. Not best for: heavy cash use outside the allowance, or unlocking local VietQR by itself."
+        }
+      ],
+      "tradH": "Traditional European bank cards",
+      "tradP1": "Your bank card from home is worth bringing, but it shouldn't be your main Vietnam payment strategy unless you've checked the fees. Traditional bank cards can work in larger merchants, but many charge foreign transaction fees, use less attractive exchange rates, or add ATM charges. They can also trigger fraud blocks when you suddenly start tapping in Vietnam.",
+      "tradP2": "Best for backup; not for daily spending if your bank adds FX and ATM costs. Before you go, check three things: the foreign transaction fee, the ATM withdrawal fee, and whether dynamic currency conversion is blocked or warned about in-app.",
+      "cashH": "Cash and ATMs",
+      "cashP1": "Cash is still useful in Vietnam. You'll want VND for small vendors, tips, rural areas, old-school shops and moments when your phone battery or data connection gives up. The mistake is relying on cash for everything and treating ATM fees or airport exchange as invisible.",
+      "cashP2": "Use ATMs when you need them, but withdraw intentionally. Frequent small withdrawals can be expensive because you may pay your card provider's fee, the ATM operator's fee, and a conversion spread. When a terminal or ATM asks whether to charge you in euros or VND, choosing VND is usually the cleaner option because it avoids dynamic currency conversion markups.",
+      "missingH": "The missing piece: local QR payments",
+      "missingP1": "Here's where the usual \"best travel card\" advice breaks down. The best card for Vietnam may still fail at the exact moment you want convenience: a QR code at a cafe, a local food counter, a small shop or a service provider who doesn't want to deal with card rails.",
+      "missingP2": "Some tourist-facing QR options are emerging. For example, Da Nang's tourism portal describes a VNPAY flow for international visitors that uses an international phone number, passport details and a linked Visa, Mastercard or JCB card. That's useful directionally, but the broader lesson is simpler: Vietnam is moving toward QR, and travellers need payment tools that meet the local flow instead of forcing every purchase back onto cards and cash. [9]",
+      "lumifinH": "Where Lumifin fits",
+      "lumifinP1": "Lumifin isn't trying to replace your travel card. It's designed to fill the QR gap: helping Europeans pay like locals in Vietnam using local QR payments, without needing a Vietnamese bank account. For beta, the simplest stack is still: keep your travel card, carry some cash, and use Lumifin when local QR is the better way to pay.",
+      "first24H": "Best payment setup for your first 24 hours in Vietnam",
+      "first24List": [
+        { "bold": "Before landing:", "rest": " add Wise / Revolut / N26 / Monzo to your phone wallet if you use one, and bring a physical card too." },
+        { "bold": "At the airport:", "rest": " avoid changing your whole budget at the first exchange counter. Get enough cash for the first day only." },
+        { "bold": "On day one:", "rest": " test one card payment in a larger merchant, withdraw a small amount of VND if needed, and keep notes on the fees shown in-app." },
+        { "bold": "For daily spend:", "rest": " expect QR codes in local places. If you can't use them yet, keep cash as a fallback." },
+        { "bold": "For bigger purchases:", "rest": " pay in VND, not euros, if a terminal offers a choice." }
+      ],
+      "verdictH": "Final verdict",
+      "verdictP1": "If you only want the best European travel card for Vietnam, choose Wise or Revolut as your main card, N26 if you want a euro-native bank card, and Monzo if you're UK-based. But if you want the best payment setup, think bigger than cards.",
+      "verdictP2": "Vietnam is increasingly QR-first in everyday life. Cards are useful, cash is still necessary, and QR access is becoming the difference between paying like a visitor and paying like someone who actually lives there.",
+      "verdictP3": "The smart 2026 setup: one strong travel card, one backup card, a small amount of VND cash, and a QR-ready payment option for everyday local merchants.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "[1]", "label": "Wise card fees: spending and ATM withdrawals", "url": "https://wise.com/gb/pricing/card-fees" },
+        { "n": "[2]", "label": "Revolut France Standard fees: ATM withdrawals", "url": "https://www.revolut.com/en-FR/legal/standard-fees/" },
+        { "n": "[3]", "label": "Revolut Netherlands Standard fees: currency exchange and weekend fees", "url": "https://www.revolut.com/en-NL/legal/standard-fees/" },
+        { "n": "[4]", "label": "N26: using your debit card abroad", "url": "https://n26.com/en-eu/using-debit-card-abroad" },
+        { "n": "[5]", "label": "N26 Support: foreign currency ATM withdrawal fees", "url": "https://support.n26.com/en-eu/payments-transfers-and-withdrawals/withdrawals/why-was-i-charged-an-atm-fee" },
+        { "n": "[6]", "label": "Monzo Help: understanding fees abroad", "url": "https://monzo.com/help/travelling/understanding-fees" },
+        { "n": "[7]", "label": "Vietnam News: QR code payment transactions surge in 2024", "url": "https://vietnamnews.vn/economy/1690354/qr-code-payment-transactions-surge-in-2024.html" },
+        { "n": "[8]", "label": "VietnamPlus: Napas launches VietQR trademark", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" },
+        { "n": "[9]", "label": "Da Nang Tourism: How to use the VNPAY App for international visitors", "url": "https://danangfantasticity.com/en/how-to-use-the-vnpay-app-for-international-visitors" }
+      ]
     }
   },
   "careers": {
@@ -1321,6 +1431,10 @@
     "pierre": {
       "role": "CEO, Lumifin",
       "bio": "Pierre is an École Polytechnique graduate with deep expertise in fintech and emerging markets. He founded Lumifin to bridge the gap between European travellers and local payment systems in Asia."
+    },
+    "thiofanty": {
+      "role": "Founder's Associate, Lumifin",
+      "bio": "Thiofanty works across product and growth at Lumifin, with a focus on how European travellers actually pay on the ground in Southeast Asia. She writes practical guides to help visitors avoid hidden fees and pay like locals."
     }
   },
   "beta": {

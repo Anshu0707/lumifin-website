@@ -28,6 +28,12 @@ const authors: Record<string, AuthorMeta> = {
     image: '/assets/team/PIERRE.webp',
     linkedin: 'https://www.linkedin.com/in/pierre-lahbabi/',
   },
+  'Thiofanty': {
+    name: 'Thiofanty',
+    i18nKey: 'thiofanty',
+    image: '/assets/team/THIOFANTY.webp',
+    linkedin: 'https://fr.linkedin.com/in/thiofanty',
+  },
 };
 
 export default function AuthorBio({ authorName }: { authorName: string }) {

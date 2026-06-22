@@ -369,6 +369,11 @@
         "title": "Le Vietnam a sauté l'ère de la carte bancaire. Votre Mastercard n'a pas reçu le mémo.",
         "excerpt": "VietQR expliqué — et pourquoi les étrangers ne peuvent pas utiliser les applis qui font tourner la vie quotidienne au Vietnam.",
         "date": "27 mai 2026"
+      },
+      "bestCardsVietnam": {
+        "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
+        "excerpt": "Wise, Revolut, N26, Monzo, espèces ou Lumifin ? La configuration la plus maligne en 2026 n'est pas une carte parfaite — c'est une combinaison. Voici quoi emporter.",
+        "date": "15 juin 2026"
       }
     }
   },
@@ -958,6 +963,111 @@
       "tip2": "Amenez au moins 3 millions de đồng en cash pour les deux premiers jours.",
       "tip3": "Installez Grab et Shopee avant d'atterrir. Les deux acceptent les cartes étrangères.",
       "tip4": "Vous restez plus de 30 jours ? Demandez à votre hôtel de faire des recharges MoMo à son nom. La plupart le feront."
+    },
+    "bestTravelCardsVietnam": {
+      "seo": {
+        "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
+        "description": "Comparez Wise, Revolut, N26, Monzo, les espèces et Lumifin pour payer au Vietnam en tant que voyageur européen en 2026 — et la configuration de paiement la plus maligne à emporter."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Voyage · Vietnam",
+      "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
+      "subtitle": "Wise, Revolut, N26, Monzo et les cartes bancaires classiques peuvent toutes aider au Vietnam — mais aucune ne résout vraiment le problème du paiement par QR local. Voici la configuration pratique que les Européens devraient emporter en 2026.",
+      "author": "Thiofanty",
+      "readTime": "8 min de lecture",
+      "dateLabel": "Juin 2026",
+      "imgAlt": "Voyageuse européenne payant par QR code dans un café au Vietnam avec un smartphone.",
+      "shortAnswerH": "La réponse en bref",
+      "shortAnswerP1": "Si vous voyagez de l'Europe vers le Vietnam en 2026, la configuration de paiement la plus maligne n'est pas une carte parfaite. C'est une combinaison : une carte de voyage à faibles frais, une carte bancaire de secours, un peu d'espèces pour les cas particuliers, et une option prête pour le QR pour les paiements locaux du quotidien.",
+      "shortAnswerP2": "Wise, Revolut, N26 et Monzo sont toutes utiles car elles offrent généralement une meilleure expérience de dépense à l'étranger que les cartes bancaires traditionnelles. Mais au Vietnam, le vrai problème n'est pas seulement le taux de change. C'est l'accès. De nombreux commerçants du quotidien sont équipés pour les paiements par QR locaux, pas pour les cartes étrangères.",
+      "comparisonH": "Comparatif rapide",
+      "tableHead": ["Option", "Idéal pour", "Point de vigilance", "Accès au QR local ?", "Verdict"],
+      "tableRows": [
+        { "option": "Wise", "bestFor": "Change et dépenses par carte à faible coût", "watchOut": "Plafond DAB et frais variables selon le pays d'émission", "qr": "Partiel — selon les partenaires pris en charge", "verdict": "Meilleure carte de voyage polyvalente" },
+        { "option": "Revolut", "bestFor": "Dépenses multidevises pilotées par l'appli", "watchOut": "Frais de week-end / forfait / usage abusif possibles", "qr": "Pas de VietQR natif", "verdict": "Idéale pour le contrôle via l'appli" },
+        { "option": "N26", "bestFor": "Utilisateurs de la zone euro qui veulent payer simplement", "watchOut": "Les retraits DAB en devise peuvent coûter plus cher sur les forfaits gratuits", "qr": "Pas de VietQR natif", "verdict": "Idéale pour la simplicité en zone euro" },
+        { "option": "Monzo", "bestFor": "Voyageurs britanniques", "watchOut": "Plafonds de retrait DAB hors EEE", "qr": "Pas de VietQR natif", "verdict": "Meilleure option pour le Royaume-Uni" },
+        { "option": "Carte bancaire classique (UE)", "bestFor": "Secours et urgences", "watchOut": "Marges de change, frais DAB et blocages", "qr": "Pas de VietQR natif", "verdict": "À garder en secours" },
+        { "option": "Espèces", "bestFor": "Étals de rue, zones rurales, urgences", "watchOut": "Frais de DAB/change et risque lié au transport", "qr": "Sans objet", "verdict": "Toujours nécessaires" },
+        { "option": "Lumifin", "bestFor": "Payer par QR local depuis un compte européen", "watchOut": "Disponibilité en bêta au Vietnam", "qr": "Oui — conçu pour ce manque", "verdict": "Le meilleur pont QR une fois disponible" }
+      ],
+      "howPayH": "Comment on paie vraiment au Vietnam",
+      "howPayP1": "Le Vietnam n'est pas un marché « tout carte » comme beaucoup d'Européens l'imaginent. Dans les hôtels, les centres commerciaux, les aéroports, les restaurants touristiques et les grandes enseignes, Visa et Mastercard sont généralement utiles. Mais pour les petits cafés, la street food, les boutiques locales, les taxis, les marchands de marché et les services informels, vous verrez souvent un QR code sur le comptoir avant un terminal de carte.",
+      "howPayP2": "Ce n'est pas qu'une impression. La croissance des paiements sans espèces au Vietnam a été rapide. Sur les 11 premiers mois de 2024, le volume des transactions sans espèces a augmenté de 56,8 % sur un an, et les paiements par QR code ont bondi de 106,7 % en volume, selon les chiffres de la Banque d'État du Vietnam rapportés par Vietnam News. [7]",
+      "howPayP3": "Le système derrière une grande partie de cela est VietQR, une norme QR commune lancée via le réseau NAPAS et les banques membres. Pour les locaux, l'expérience est simple : ouvrir une appli bancaire, scanner le QR code du commerçant, confirmer le montant, et le paiement se fait en VND. Pour les visiteurs, l'interface est partout visible, mais l'accès est moins simple. [8]",
+      "bringH": "Alors, que devraient vraiment emporter les Européens ?",
+      "bringIntro": "Emportez au moins deux cartes et ne faites pas des espèces votre seul plan. Une bonne première configuration ressemble à ceci :",
+      "bringList": [
+        "Une carte de voyage à faibles frais comme Wise, Revolut, N26 ou Monzo.",
+        "Une carte bancaire classique en secours, au cas où votre carte principale serait bloquée.",
+        "Quelques espèces en VND pour l'arrivée, la street food, les zones rurales et les urgences.",
+        "Une option prête pour le QR si vous voulez payer comme les locaux au quotidien."
+      ],
+      "cards": [
+        {
+          "name": "Wise au Vietnam",
+          "p1": "Wise est sans doute la carte « par défaut » la plus pratique pour beaucoup d'Européens, car elle est conçue autour d'une conversion de devises transparente et des dépenses internationales. Elle fonctionne bien quand un commerçant accepte les cartes internationales, et elle est utile pour les retraits au DAB si vous restez dans votre plafond.",
+          "p2": "Le hic, c'est que Wise reste une solution centrée sur la carte. Elle aide sur la couche du taux de change, mais elle ne rend pas automatiquement utilisable chaque QR code local au Vietnam. Wise indique que les utilisateurs de carte au Royaume-Uni bénéficient de retraits DAB gratuits jusqu'à un plafond mensuel de 250 GBP, avec des frais de 2,69 % au-delà, et les opérateurs de DAB peuvent encore appliquer leurs propres frais. [1]",
+          "verdictBold": "Idéal pour :",
+          "verdictRest": " les dépenses quotidiennes par carte, l'accès DAB de secours et les voyageurs attachés à un change transparent. Moins adapté : payer dans les lieux qui n'acceptent que le QR, sauf si le parcours du commerçant est pris en charge par une intégration partenaire."
+        },
+        {
+          "name": "Revolut au Vietnam",
+          "p1": "Revolut est solide pour les voyageurs qui aiment gérer leurs devises dans une appli. C'est pratique, familier et utile comme carte de dépense là où les cartes internationales sont acceptées. Pour beaucoup d'Européens, c'est aussi la carte déjà présente dans Apple Pay ou Google Pay avant le départ.",
+          "p2": "Le point de vigilance : les frais de Revolut dépendent de votre pays, de votre forfait, du moment et des plafonds. Par exemple, le forfait Standard de Revolut France affiche des retraits DAB gratuits jusqu'à cinq retraits ou 200 EUR par mois glissant, puis 2 % avec un minimum de 1 EUR. Les conditions Standard de Revolut Pays-Bas indiquent que le change le week-end peut entraîner des frais de 1 %. [2] [3]",
+          "verdictBold": "Idéal pour :",
+          "verdictRest": " le contrôle via l'appli, les dépenses multidevises et les voyageurs qui utilisent déjà Revolut. Moins adapté : supposer que chaque conversion est gratuite en toutes circonstances, ou penser que Revolut seul débloque l'acceptation du QR local."
+        },
+        {
+          "name": "N26 au Vietnam",
+          "p1": "N26 est simple et limpide si votre vie de base est déjà en euros. Les dépenses par carte à l'étranger peuvent être pratiques, et N26 indique ne pas appliquer de marge de change sur les paiements par carte, en utilisant le taux de change Mastercard. C'est facile à comprendre pour l'acceptation carte standard. [4]",
+          "p2": "Les retraits d'espèces sont le point à vérifier. N26 indique que les comptes Standard, Business et Smart paient des frais de 1,7 % sur les retraits DAB en devise, frais supprimés sur les forfaits Go et Metal. Là encore, les opérateurs de DAB locaux peuvent ajouter leurs propres frais. [5]",
+          "verdictBold": "Idéal pour :",
+          "verdictRest": " les voyageurs en euros qui veulent des dépenses par carte simples. Moins adapté : les paiements locaux « QR d'abord », car N26 reste avant tout un compte carte dans ce contexte."
+        },
+        {
+          "name": "Monzo au Vietnam",
+          "p1": "Monzo concerne surtout les voyageurs britanniques. Ce n'est pas une banque de l'UE, mais beaucoup d'Européens et de voyageurs basés au Royaume-Uni la comparent à Wise et Revolut avant un voyage en Asie du Sud-Est. Monzo indique que les dépenses par carte à l'étranger sont sans frais et utilisent le taux de change Mastercard.",
+          "p2": "Pour les espèces hors EEE, le plafond de retrait gratuit dépend du type de compte, avec des frais de 3 % au-delà. [6]",
+          "verdictBold": "Idéal pour :",
+          "verdictRest": " les voyageurs britanniques qui veulent des paiements par carte simples et de bonnes notifications. Moins adapté : un usage intensif des espèces au-delà du plafond, ou débloquer le VietQR local à lui seul."
+        }
+      ],
+      "tradH": "Cartes bancaires européennes classiques",
+      "tradP1": "Votre carte bancaire habituelle vaut la peine d'être emportée, mais elle ne devrait pas être votre stratégie de paiement principale au Vietnam sans avoir vérifié les frais. Les cartes classiques peuvent fonctionner chez les grands commerçants, mais beaucoup facturent des frais de transaction à l'étranger, appliquent des taux de change moins avantageux ou ajoutent des frais de DAB. Elles peuvent aussi déclencher des blocages anti-fraude quand vous vous mettez soudain à payer au Vietnam.",
+      "tradP2": "À garder en secours ; pas pour les dépenses quotidiennes si votre banque ajoute des frais de change et de DAB. Avant de partir, vérifiez trois choses : les frais de transaction à l'étranger, les frais de retrait DAB, et si la conversion dynamique de devise (DCC) est bloquée ou signalée dans l'appli.",
+      "cashH": "Espèces et distributeurs",
+      "cashP1": "Les espèces restent utiles au Vietnam. Vous aurez besoin de VND pour les petits vendeurs, les pourboires, les zones rurales, les boutiques à l'ancienne et les moments où votre batterie ou votre connexion lâche. L'erreur est de tout miser sur les espèces et de considérer les frais de DAB ou le change à l'aéroport comme invisibles.",
+      "cashP2": "Utilisez les DAB quand il le faut, mais retirez de façon réfléchie. Les petits retraits fréquents peuvent coûter cher, car vous pouvez payer les frais de votre carte, ceux de l'opérateur du DAB et une marge de conversion. Quand un terminal ou un DAB vous demande si vous voulez payer en euros ou en VND, choisir le VND est généralement plus propre, car cela évite les marges de la conversion dynamique de devise.",
+      "missingH": "La pièce manquante : les paiements par QR locaux",
+      "missingP1": "C'est ici que le conseil habituel sur « la meilleure carte de voyage » s'effondre. La meilleure carte pour le Vietnam peut quand même échouer au moment précis où vous voulez de la simplicité : un QR code dans un café, un comptoir de street food, une petite boutique ou un prestataire qui ne veut pas s'embêter avec les rails de la carte.",
+      "missingP2": "Quelques options QR à destination des touristes émergent. Par exemple, le portail touristique de Da Nang décrit un parcours VNPAY pour les visiteurs internationaux qui utilise un numéro de téléphone international, les données du passeport et une carte Visa, Mastercard ou JCB liée. C'est utile comme direction, mais la leçon plus large est simple : le Vietnam évolue vers le QR, et les voyageurs ont besoin d'outils de paiement qui s'adaptent au parcours local plutôt que de ramener chaque achat vers la carte et les espèces. [9]",
+      "lumifinH": "Là où Lumifin intervient",
+      "lumifinP1": "Lumifin ne cherche pas à remplacer votre carte de voyage. Il est conçu pour combler le manque du QR : aider les Européens à payer comme les locaux au Vietnam via les paiements par QR locaux, sans avoir besoin d'un compte bancaire vietnamien. Pour la bêta, la combinaison la plus simple reste : gardez votre carte de voyage, ayez un peu d'espèces, et utilisez Lumifin quand le QR local est la meilleure façon de payer.",
+      "first24H": "La meilleure configuration de paiement pour vos premières 24 heures au Vietnam",
+      "first24List": [
+        { "bold": "Avant l'atterrissage :", "rest": " ajoutez Wise / Revolut / N26 / Monzo à votre portefeuille mobile si vous en utilisez un, et emportez aussi une carte physique." },
+        { "bold": "À l'aéroport :", "rest": " évitez de changer tout votre budget au premier bureau de change. Prenez juste assez d'espèces pour la première journée." },
+        { "bold": "Le premier jour :", "rest": " testez un paiement par carte chez un grand commerçant, retirez un petit montant en VND si besoin, et notez les frais affichés dans l'appli." },
+        { "bold": "Pour les dépenses quotidiennes :", "rest": " attendez-vous à des QR codes dans les lieux locaux. Si vous ne pouvez pas encore les utiliser, gardez les espèces en secours." },
+        { "bold": "Pour les gros achats :", "rest": " payez en VND, pas en euros, si un terminal vous laisse le choix." }
+      ],
+      "verdictH": "Verdict final",
+      "verdictP1": "Si vous voulez seulement la meilleure carte de voyage européenne pour le Vietnam, choisissez Wise ou Revolut comme carte principale, N26 si vous voulez une carte bancaire native en euros, et Monzo si vous êtes basé au Royaume-Uni. Mais si vous voulez la meilleure configuration de paiement, voyez plus large que les cartes.",
+      "verdictP2": "Le Vietnam devient de plus en plus « QR d'abord » dans la vie quotidienne. Les cartes sont utiles, les espèces restent nécessaires, et l'accès au QR fait de plus en plus la différence entre payer comme un visiteur et payer comme quelqu'un qui vit vraiment là-bas.",
+      "verdictP3": "La configuration maligne pour 2026 : une bonne carte de voyage, une carte de secours, un peu d'espèces en VND, et une option de paiement prête pour le QR pour les commerçants locaux du quotidien.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "[1]", "label": "Frais de la carte Wise : dépenses et retraits DAB", "url": "https://wise.com/gb/pricing/card-fees" },
+        { "n": "[2]", "label": "Frais Standard Revolut France : retraits DAB", "url": "https://www.revolut.com/en-FR/legal/standard-fees/" },
+        { "n": "[3]", "label": "Frais Standard Revolut Pays-Bas : change et frais de week-end", "url": "https://www.revolut.com/en-NL/legal/standard-fees/" },
+        { "n": "[4]", "label": "N26 : utiliser votre carte de débit à l'étranger", "url": "https://n26.com/en-eu/using-debit-card-abroad" },
+        { "n": "[5]", "label": "Assistance N26 : frais de retrait DAB en devise", "url": "https://support.n26.com/en-eu/payments-transfers-and-withdrawals/withdrawals/why-was-i-charged-an-atm-fee" },
+        { "n": "[6]", "label": "Aide Monzo : comprendre les frais à l'étranger", "url": "https://monzo.com/help/travelling/understanding-fees" },
+        { "n": "[7]", "label": "Vietnam News : envolée des paiements par QR code en 2024", "url": "https://vietnamnews.vn/economy/1690354/qr-code-payment-transactions-surge-in-2024.html" },
+        { "n": "[8]", "label": "VietnamPlus : Napas lance la marque VietQR", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" },
+        { "n": "[9]", "label": "Tourisme de Da Nang : comment utiliser l'appli VNPAY pour les visiteurs internationaux", "url": "https://danangfantasticity.com/en/how-to-use-the-vnpay-app-for-international-visitors" }
+      ]
     }
   },
   "careers": {
@@ -1321,6 +1431,10 @@
     "pierre": {
       "role": "CEO, Lumi",
       "bio": "Pierre est diplômé de l'École Polytechnique avec une expertise approfondie en fintech et marchés émergents. Il a fondé Lumi pour combler le fossé entre les voyageurs européens et les systèmes de paiement locaux en Asie."
+    },
+    "thiofanty": {
+      "role": "Associée du fondateur, Lumi",
+      "bio": "Thiofanty travaille sur le produit et la croissance chez Lumi, en se concentrant sur la façon dont les voyageurs européens paient réellement sur le terrain en Asie du Sud-Est. Elle rédige des guides pratiques pour aider les visiteurs à éviter les frais cachés et à payer comme les locaux."
     }
   },
   "beta": {

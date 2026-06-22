@@ -35,6 +35,7 @@ const routes = [
   { path: '/blog/cash-is-king', out: 'blog/cash-is-king.html' },
   { path: '/blog/qris-decoded', out: 'blog/qris-decoded.html' },
   { path: '/blog/vietqr-decoded', out: 'blog/vietqr-decoded.html' },
+  { path: '/blog/best-travel-cards-europeans-vietnam-2026', out: 'blog/best-travel-cards-europeans-vietnam-2026.html' },
   { path: '/beta', out: 'beta.html' },
   { path: '/careers', out: 'careers.html' },
   { path: '/security', out: 'security.html' },
