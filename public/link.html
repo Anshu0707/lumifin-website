@@ -53,7 +53,7 @@
       text-align: center;
       box-shadow: 0 2px 12px rgba(26, 26, 46, 0.08);
     }
-    .logo { width: 56px; height: 56px; margin-bottom: 16px; }
+    .logo { width: 56px; height: 56px; border-radius: 12px; margin-bottom: 16px; }
     h1 { font-size: 20px; margin: 0 0 12px; }
     p { font-size: 14px; line-height: 1.6; color: #4a5568; margin: 0 0 24px; }
     .btn {
@@ -72,7 +72,9 @@
 </head>
 <body>
   <div class="card">
-    <img class="logo" src="/logo.png" alt="Lumi" />
+    <!-- Square brand icon, not the wide /logo.png wordmark (renders fine at
+         56×56). -->
+    <img class="logo" src="/favicon.png" alt="Lumi" />
     <h1 id="title">Opening the Lumi app…</h1>
     <p id="subtitle">If nothing happens, use the button below.</p>
     <!-- Always-visible manual fallback; href is set from the validated intent only. -->
@@ -158,13 +160,30 @@
       var isAndroid = /Android/i.test(ua);
 
       /* ── EN/FR static text ─────────────────────────────────────────── */
-      var fr = (navigator.language || '').toLowerCase().indexOf('fr') === 0;
+      // Match the main app's language detection (src/i18n/config.ts): same
+      // origin, so the user's saved choice lives in localStorage under
+      // 'lumifin_lang' ('en' | 'fr'). Order of preference —
+      // &lang= query param → saved choice → browser language → English.
+      // The &lang= param wins outright (emails can embed the recipient's
+      // language): lang=fr → French, any other value → English. try/catch
+      // because localStorage can throw (private mode / blocked storage).
+      var queryLang = (params.get('lang') || '').toLowerCase();
+      var fr;
+      if (queryLang) {
+        fr = queryLang === 'fr';
+      } else {
+        var savedLang = '';
+        try { savedLang = localStorage.getItem('lumifin_lang') || ''; } catch (e) {}
+        var langSource = savedLang || navigator.language || '';
+        fr = langSource.toLowerCase().indexOf('fr') === 0;
+      }
       var T = fr ? {
         title: 'Ouverture de l’application Lumi…',
         titleDesktop: 'Ouvrez ce lien sur votre téléphone',
         subtitle: 'Si rien ne se passe, utilisez le bouton ci-dessous.',
         subtitleDesktop: 'Ce lien ouvre l’application Lumi. Ouvrez cet e-mail sur votre téléphone et appuyez à nouveau sur le bouton.',
         button: 'Ouvrir l’application Lumi',
+        buttonDesktop: 'Aller sur lumifin.io',
         hintHtml: 'Vous n’avez pas encore l’application ? <a href="https://lumifin.io/">Visitez lumifin.io</a>'
       } : {
         title: 'Opening the Lumi app…',
@@ -172,6 +191,7 @@
         subtitle: 'If nothing happens, use the button below.',
         subtitleDesktop: 'This link opens the Lumi app. Open this email on your phone and tap the button again.',
         button: 'Open the Lumi app',
+        buttonDesktop: 'Go to lumifin.io',
         hintHtml: 'Don’t have the app yet? <a href="https://lumifin.io/">Visit lumifin.io</a>'
       };
 
@@ -224,9 +244,15 @@
           attemptApp(STORE_ANDROID);
         }
       } else {
-        // Desktop / unknown: no web app yet → no redirect, just instructions.
+        // Desktop / unknown: the lumifin:// deep link is dead here (no app, no
+        // web app yet), so don't show an inert "Open the Lumi app" button —
+        // repoint it to the website instead. The hint then duplicates it, so
+        // hide it.
         titleEl.textContent = T.titleDesktop;
         subtitleEl.textContent = T.subtitleDesktop;
+        btnEl.textContent = T.buttonDesktop;
+        btnEl.href = 'https://lumifin.io/';
+        hintEl.style.display = 'none';
       }
     })();
   </script>
