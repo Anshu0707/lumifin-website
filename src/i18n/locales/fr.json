@@ -374,6 +374,11 @@
         "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
         "excerpt": "Wise, Revolut, N26, Monzo, espèces ou Lumifin ? La configuration la plus maligne en 2026 n'est pas une carte parfaite — c'est une combinaison. Voici quoi emporter.",
         "date": "15 juin 2026"
+      },
+      "digitalNomadVisas": {
+        "title": "Visas nomades numériques en Thaïlande, au Vietnam et à Bali : le comparatif 2026",
+        "excerpt": "La Thaïlande, le Vietnam et Bali attirent tous les travailleurs à distance — mais leurs parcours de visa sont très différents. Le comparatif pratique 2026 pour les Européens qui choisissent une base en Asie du Sud-Est.",
+        "date": "29 juin 2026"
       }
     }
   },
@@ -1067,6 +1072,121 @@
         { "n": "[7]", "label": "Vietnam News : envolée des paiements par QR code en 2024", "url": "https://vietnamnews.vn/economy/1690354/qr-code-payment-transactions-surge-in-2024.html" },
         { "n": "[8]", "label": "VietnamPlus : Napas lance la marque VietQR", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" },
         { "n": "[9]", "label": "Tourisme de Da Nang : comment utiliser l'appli VNPAY pour les visiteurs internationaux", "url": "https://danangfantasticity.com/en/how-to-use-the-vnpay-app-for-international-visitors" }
+      ]
+    },
+    "digitalNomadVisas": {
+      "seo": {
+        "title": "Visas nomades numériques : Thaïlande, Vietnam et Bali (comparatif 2026)",
+        "description": "La Thaïlande, le Vietnam et Bali attirent tous les travailleurs à distance, mais leurs parcours de visa sont très différents. Voici le comparatif pratique 2026 pour les Européens qui choisissent une base en Asie du Sud-Est."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Voyage · Asie du Sud-Est",
+      "title": "Visas nomades numériques en Thaïlande, au Vietnam et à Bali : le comparatif 2026",
+      "subtitle": "La Thaïlande, le Vietnam et Bali attirent tous les travailleurs à distance — mais leurs parcours de visa sont très différents. Voici le comparatif pratique 2026 pour les Européens qui choisissent une base en Asie du Sud-Est.",
+      "author": "Pierre Lahbabi",
+      "readTime": "9 min de lecture",
+      "dateLabel": "Juin 2026",
+      "imgAlt": "Un travailleur à distance comparant les options de visa pour la Thaïlande, le Vietnam et Bali avec un passeport, un ordinateur portable et un café sur une table de café.",
+      "introP1": "Vous hésitez entre Chiang Mai, Da Nang et Canggu. Les cafés ont l'air bien. Le loyer semble possible. Le Wi-Fi a l'air correct. Puis vous ouvrez les conditions de visa.",
+      "introP2": "C'est généralement là que le rêve devient plus concret.",
+      "introP3": "Pour les travailleurs à distance européens, la Thaïlande, le Vietnam et Bali figurent parmi les options les plus courantes en Asie du Sud-Est. Ils peuvent tous servir de base, mais n'offrent pas le même niveau de clarté côté visa. La Thaïlande propose un parcours de travail à distance plus clair. Le Vietnam est flexible pour les séjours courts, mais n'a pas pour l'instant de visa nomade numérique dédié. Bali, via l'Indonésie, dispose d'un visa pour travailleurs à distance, mais les démarches sont plus exigeantes.",
+      "introP4": "Ce guide compare les options 2026 en termes simples, pour que vous compreniez à quoi chaque destination est vraiment adaptée avant de réserver le vol. Les règles de visa changent souvent : considérez ceci comme un guide de décision, pas un conseil juridique. Vérifiez toujours les sources officielles d'immigration avant de faire une demande.",
+      "shortAnswerH": "La réponse en bref",
+      "shortAnswerList": [
+        "Choisissez la Thaïlande si vous voulez le parcours long séjour le plus clair pour le travail à distance.",
+        "Choisissez le Vietnam si vous voulez une base flexible et abordable pour un à trois mois.",
+        "Choisissez Bali, en Indonésie, si vous voulez le style de vie et la communauté, et que vous avez les documents pour un parcours formel de travailleur à distance."
+      ],
+      "shortAnswerP": "La meilleure destination n'est pas seulement celle avec le visa le plus simple. C'est celle où votre visa, votre rythme de travail, votre budget, vos paiements, votre connexion et votre vie quotidienne s'accordent tous.",
+      "comparisonH": "Comparatif rapide : Thaïlande vs Vietnam vs Bali",
+      "compHead": ["Destination", "Parcours principal 2026", "Idéal pour", "Point de vigilance"],
+      "compRows": [
+        { "dest": "Thaïlande", "route": "Destination Thailand Visa (DTV)", "bestFor": "Travailleurs à distance qui veulent un long séjour plus clair", "watchOut": "Preuves financières, documents de travail à distance et exigences propres à chaque consulat" },
+        { "dest": "Vietnam", "route": "E-visa ou exemption de visa, selon le passeport", "bestFor": "Séjours courts à moyens flexibles, généralement un à trois mois", "watchOut": "Pas encore de visa nomade numérique dédié" },
+        { "dest": "Bali, Indonésie", "route": "Visa travailleur à distance E33G / parcours ITAS", "bestFor": "Nomades avec un emploi stable à l'étranger et une intention de vie à Bali", "watchOut": "Preuves de revenus plus élevées et justificatifs d'emploi" }
+      ],
+      "comparisonP": "La différence pratique est simple : la Thaïlande est la plus pensée pour les nomades numériques, le Vietnam est le plus facile à tester pour un séjour court, et Bali est la marque lifestyle la plus forte avec un parcours plus formel basé en Indonésie.",
+      "thailandH": "Thaïlande : l'option long séjour la plus claire",
+      "thailandP1": "La Thaïlande est actuellement l'option la plus solide si vous voulez de la clarté côté visa en tant que travailleur à distance.",
+      "thailandP2": "Le Destination Thailand Visa, généralement appelé DTV, est conçu pour les personnes qui entrent en Thaïlande en partie comme touristes et en partie pour travailler à distance. Le consulat officiel de Thaïlande à Francfort décrit le parcours DTV « Workation » pour les nomades numériques, travailleurs à distance et freelances. Il autorise les entrées multiples, avec un séjour maximum de 180 jours par entrée, et une validité de 5 ans. [1]",
+      "thailandP3": "La même page officielle indique une exigence de preuve financière d'au moins 500 000 THB, soit environ 13 000 EUR aux taux de change récents, ainsi qu'une preuve d'emploi, un certificat de travail ou un portfolio professionnel attestant du statut de travailleur à distance ou freelance. Les frais de visa indiqués via ce consulat sont de 350 EUR. [1]",
+      "thailandP4": "Cela ne veut pas dire que chaque demande est automatique. Les exigences peuvent varier selon l'ambassade ou le consulat, et les agents d'immigration peuvent demander des documents supplémentaires. Mais comparée à beaucoup d'options en Asie du Sud-Est, la Thaïlande offre aux travailleurs à distance un cadre plus clair.",
+      "thailandFitH": "À qui la Thaïlande convient le mieux",
+      "thailandFit": [
+        "Vous voulez rester plus longtemps qu'une simple vacance.",
+        "Vous pouvez prouver un travail à distance, un travail en freelance ou un emploi à l'étranger.",
+        "Vous aimez l'idée de circuler entre Bangkok, Chiang Mai, Phuket, Koh Samui ou Koh Phangan.",
+        "Vous voulez une scène nomade mature avec espaces de coworking, cafés, salles de sport, événements et voyages intérieurs faciles."
+      ],
+      "thailandClose": "La Thaïlande n'est pas toujours l'option la moins administrative, mais c'est le parcours le plus propre si vous voulez planifier au-delà d'un court séjour touristique.",
+      "vietnamH": "Vietnam : flexible et abordable, mais pas un visa nomade numérique",
+      "vietnamP1": "Le Vietnam est souvent le pays le plus facile dont tomber amoureux pour quelques mois.",
+      "vietnamP2": "Da Nang offre plage, cafés, espaces de coworking et un rythme plus lent. Hô Chi Minh-Ville offre énergie, gastronomie, vie nocturne et densité de startups. Hanoï offre histoire, culture et un rythme plus nordique. Pour beaucoup d'Européens, le Vietnam paraît pratique car la vie quotidienne peut être abordable, animée et facile à apprécier rapidement.",
+      "vietnamP3": "Mais du point de vue du visa, le Vietnam n'est pas comme la Thaïlande. Le Vietnam n'a pas pour l'instant de visa nomade numérique dédié. Beaucoup de travailleurs à distance s'appuient sur le système d'e-visa ou les règles d'exemption de visa, selon le passeport.",
+      "vietnamP4": "Le portail officiel d'e-visa du Vietnam indique que l'e-visa est valable pour un maximum de 90 jours et peut être à entrée unique ou multiple. Les frais officiels d'e-visa sont indiqués à 25 USD pour une entrée unique et 50 USD pour les entrées multiples, soit environ 22 EUR et 43 EUR aux taux récents. Pour un séjour d'un à trois mois, cela peut suffire. Pour une base à long terme, cela demande plus de planification. [2]",
+      "vietnamFitH": "À qui le Vietnam convient le mieux",
+      "vietnamFit": [
+        "Vous voulez tester l'Asie du Sud-Est sans vous engager dans un long parcours de visa.",
+        "Vous restez de quelques semaines à trois mois.",
+        "Vous tenez à la gastronomie, aux cafés, au coût de la vie et à l'énergie urbaine.",
+        "Vous êtes à l'aise pour vérifier soigneusement les règles de visa avant chaque séjour."
+      ],
+      "vietnamClose": "Le Vietnam n'est pas l'option la plus solide pour la clarté d'un visa nomade numérique formel. Il est fort parce qu'il est facile à essayer, facile à aimer et facile pour construire une routine quotidienne sur un séjour plus court.",
+      "baliH": "Bali, Indonésie : le style de vie d'abord, les papiers ensuite",
+      "baliP1": "On dit « visa nomade numérique de Bali », mais techniquement Bali ne délivre pas de visas. Bali fait partie de l'Indonésie. Le parcours pertinent est donc l'immigration indonésienne, en particulier le visa travailleur à distance E33G, parfois décrit comme un parcours ITAS travailleur à distance.",
+      "baliP2": "La page officielle d'immigration indonésienne pour l'E33G indique que le visa vous permet de séjourner en Indonésie pour exercer des fonctions pour une entreprise située hors d'Indonésie. Elle mentionne un séjour d'un an, aucune obligation de parrain et une demande via le système eVisa. Le détail officiel des frais totalise 7 000 000 IDR pour un séjour d'un an, soit environ 370 EUR aux taux récents. [3]",
+      "baliP3": "Les exigences particulières sont plus contraignantes que l'e-visa du Vietnam. La page officielle indique des preuves bancaires attestant d'un salaire ou de revenus d'au moins 60 000 USD par an, ainsi qu'un contrat de travail avec une entreprise établie hors d'Indonésie. [3]",
+      "baliP4": "Cela rend Bali attrayant, mais pas anodin. C'est idéal pour les travailleurs à distance qui ont déjà un emploi stable à l'étranger, une trace claire de revenus et la patience de préparer les documents.",
+      "baliFitH": "À qui Bali convient le mieux",
+      "baliFit": [
+        "Vous voulez le style de vie de Bali : Canggu, Pererenan, Ubud, Uluwatu, surf, bien-être et communauté.",
+        "Vous avez des revenus stables à l'étranger et des justificatifs d'emploi.",
+        "Vous restez plus longtemps et voulez un parcours plus formel qu'un séjour touristique.",
+        "Vous êtes à l'aise avec un coût de la vie plus élevé dans les zones les plus populaires."
+      ],
+      "baliClose": "Bali peut être beau, social et productif. Mais le parcours de visa n'est pas qu'une ambiance. Il faut des documents en règle.",
+      "rhythmH": "Choisissez selon votre rythme de travail, pas seulement le visa",
+      "rhythmP1": "Un visa est le ticket d'entrée. Il ne décide pas si votre mois fonctionne vraiment.",
+      "rhythmP2": "Si vous avez des appels clients tous les jours, vous tiendrez peut-être plus aux fuseaux horaires, à la stabilité de la connexion et à l'aménagement de l'appartement qu'à l'accès à la plage. Si vous êtes en freelance entre deux projets, vous voudrez peut-être un coût de la vie plus bas et une mobilité flexible. Si vous construisez une entreprise, vous voudrez peut-être un réseau de fondateurs ou d'opérateurs plus solide.",
+      "rhythmStabilityH": "Si vous voulez de la stabilité",
+      "rhythmStabilityP": "La Thaïlande est le premier choix le plus solide. Le DTV vous offre un parcours de travail à distance plus structuré, et des villes comme Bangkok et Chiang Mai facilitent l'installation de routines.",
+      "rhythmFlexH": "Si vous voulez de la flexibilité",
+      "rhythmFlexP": "Le Vietnam est un bon premier test. Vous pouvez passer un à trois mois à Da Nang, Hô Chi Minh-Ville ou Hanoï, apprendre comment vous y travaillez, et décider plus tard si vous voulez quelque chose de plus long terme.",
+      "rhythmLifestyleH": "Si vous voulez le style de vie et la communauté",
+      "rhythmLifestyleP": "Bali est difficile à ignorer. La communauté est mature, le style de vie est fort, et la culture du travail à distance est visible partout. Assurez-vous simplement que le parcours de visa correspond à votre situation d'emploi et de revenus.",
+      "dailyH": "Comparatif du quotidien pour les travailleurs à distance",
+      "dailyHead": ["Critère", "Thaïlande", "Vietnam", "Bali, Indonésie"],
+      "dailyRows": [
+        { "factor": "Clarté du visa", "thailand": "La plus solide des trois pour le travail à distance", "vietnam": "Flexible pour les séjours courts, mais pas de visa nomade dédié", "bali": "Parcours formel de travailleur à distance, mais plus exigeant" },
+        { "factor": "Meilleures bases", "thailand": "Bangkok, Chiang Mai, Phuket, Koh Samui", "vietnam": "Da Nang, Hô Chi Minh-Ville, Hanoï, Hoi An", "bali": "Canggu, Pererenan, Ubud, Uluwatu" },
+        { "factor": "Ressenti du coût", "thailand": "Moyen, varie beaucoup selon la ville", "vietnam": "Souvent plus bas, surtout hors des zones expat de HCMV/Hanoï", "bali": "Peut être élevé dans les zones populaires" },
+        { "factor": "Communauté", "thailand": "Scène nomade mature", "vietnam": "Scène nomade en croissance", "bali": "Scène créateurs et nomades très mature" },
+        { "factor": "Durée de séjour idéale", "thailand": "Séjours plus longs avec planification", "vietnam": "Un à trois mois pour tester", "bali": "Séjour plus long si les documents conviennent" }
+      ],
+      "hiddenH": "La friction cachée après le visa",
+      "hiddenP1": "Le visa vous fait entrer dans le pays. Il ne résout pas la vie quotidienne.",
+      "hiddenP2": "Une fois arrivé, les frictions plus petites commencent à compter : comment payer le loyer, si votre carte fonctionne chez les petits commerçants, combien d'espèces vous transportez, si les applis locales acceptent votre carte étrangère, où passer vos appels vidéo, et ce qui se passe quand tout le monde paie via un système local auquel vous n'avez pas accès.",
+      "hiddenP3": "C'est pourquoi la meilleure base pour nomade numérique n'est pas seulement celle avec le meilleur visa. C'est celle où les petits systèmes autour de votre vie sont les plus faciles à comprendre.",
+      "nextH": "Que faire ensuite avant de choisir votre base",
+      "nextList": [
+        "Consultez la page de visa officielle du pays que vous envisagez. Ne vous fiez pas seulement à de vieux articles de blog ou à des commentaires sur les réseaux sociaux.",
+        "Vérifiez si le visa est pour le tourisme, le travail à distance ou une résidence formelle. Ce ne sont pas la même chose.",
+        "Vérifiez la documentation tôt : validité du passeport, relevés bancaires, justificatifs de revenus, lettre d'emploi, itinéraire, assurance et calendrier de demande.",
+        "Décidez de votre vraie durée de séjour. Une « workation » d'un mois et une base d'un an ne suivent pas la même logique de visa.",
+        "Budgétez les deux premières semaines, pas seulement le loyer mensuel. Cautions, cartes SIM, transports, essais de coworking, frais de DAB et coûts d'installation s'additionnent.",
+        "Actualisez les taux de change avant de publier ou de réserver. Les frais de visa et les exigences de revenus peuvent paraître très différents en EUR selon le moment."
+      ],
+      "finalH": "Recommandation finale",
+      "finalP1": "Pour 2026, la Thaïlande est le choix le plus clair si votre priorité est un parcours nomade numérique dédié.",
+      "finalP2": "Le Vietnam est l'option la plus solide si vous voulez une base flexible, abordable et peu engageante pour un séjour plus court.",
+      "finalP3": "Bali, en Indonésie, est le meilleur choix si vous voulez le style de vie et la communauté, et que vous avez les revenus et les justificatifs d'emploi pour le parcours travailleur à distance.",
+      "finalP4": "La vraie question n'est pas « Quel visa est le meilleur ? ». C'est « Quel pays correspond à ma façon de travailler, dépenser, me déplacer et vivre ? ».",
+      "finalP5": "Commencez par là. Puis choisissez le visa.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "[1]", "label": "Consulat général de Thaïlande, Francfort — Destination Thailand Visa (DTV) Workation : validité 5 ans à entrées multiples, 180 jours par entrée, frais de 350 EUR, preuve financière d'au moins 500 000 THB, documents de travail à distance ou portfolio." },
+        { "n": "[2]", "label": "Département de l'immigration du Vietnam — portail national d'e-visa : e-visa valable 90 jours maximum, entrée unique ou multiple ; frais de 25 USD (unique) / 50 USD (multiple)." },
+        { "n": "[3]", "label": "Direction générale de l'immigration, République d'Indonésie — visa travailleur à distance E33G (evisa.imigrasi.go.id) : séjour d'un an, sans parrain, frais totalisant 7 000 000 IDR, revenus d'au moins 60 000 USD/an, contrat de travail avec une entreprise hors d'Indonésie." }
       ]
     }
   },

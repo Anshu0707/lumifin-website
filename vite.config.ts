@@ -55,10 +55,19 @@ export default defineConfig(({mode}) => {
     server: {
       host: true,
       // Leading dot = any subdomain, so the allowlist survives every new
-      // ngrok tunnel URL (used to test the /link bridge before merge).
-      allowedHosts: ['.ngrok-free.dev', '.ngrok-free.app'],
+      // ngrok/tunnel URL (used to test the /link bridge before merge). Vite
+      // blocks unknown Host headers by default for security; this opens the
+      // common tunnel subdomains (ngrok, cloudflared, localtunnel).
+      allowedHosts: [
+        '.ngrok-free.dev',
+        '.ngrok-free.app',
+        '.ngrok.app',
+        '.ngrok.io',
+        '.loca.lt',
+        '.trycloudflare.com',
+      ],
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modifyâfile watching is disabled to prevent flickering during agent edits.
+      // Do not modify — file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };

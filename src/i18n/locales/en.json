@@ -374,6 +374,11 @@
         "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
         "excerpt": "Wise, Revolut, N26, Monzo, cash or Lumifin? The smartest 2026 setup isn't one perfect card — it's a stack. Here's what to actually bring.",
         "date": "June 15, 2026"
+      },
+      "digitalNomadVisas": {
+        "title": "Digital Nomad Visas in Thailand, Vietnam, and Bali: The 2026 Comparison",
+        "excerpt": "Thailand, Vietnam, and Bali all draw remote workers — but their visa routes are very different. The practical 2026 comparison for Europeans choosing a Southeast Asia base.",
+        "date": "June 29, 2026"
       }
     }
   },
@@ -1067,6 +1072,121 @@
         { "n": "[7]", "label": "Vietnam News: QR code payment transactions surge in 2024", "url": "https://vietnamnews.vn/economy/1690354/qr-code-payment-transactions-surge-in-2024.html" },
         { "n": "[8]", "label": "VietnamPlus: Napas launches VietQR trademark", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" },
         { "n": "[9]", "label": "Da Nang Tourism: How to use the VNPAY App for international visitors", "url": "https://danangfantasticity.com/en/how-to-use-the-vnpay-app-for-international-visitors" }
+      ]
+    },
+    "digitalNomadVisas": {
+      "seo": {
+        "title": "Digital Nomad Visas in Thailand, Vietnam, and Bali: 2026 Comparison",
+        "description": "Thailand, Vietnam, and Bali all attract remote workers, but their visa routes are very different. Here is the practical 2026 comparison for Europeans choosing a Southeast Asia base."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Travel · Southeast Asia",
+      "title": "Digital Nomad Visas in Thailand, Vietnam, and Bali: The 2026 Comparison",
+      "subtitle": "Thailand, Vietnam, and Bali all attract remote workers — but their visa routes are very different. Here's the practical 2026 comparison for Europeans choosing a Southeast Asia base.",
+      "author": "Pierre Lahbabi",
+      "readTime": "9 min read",
+      "dateLabel": "June 2026",
+      "imgAlt": "A remote worker comparing Thailand, Vietnam, and Bali visa options with a passport, laptop, and coffee on a cafe table.",
+      "introP1": "You're choosing between Chiang Mai, Da Nang, and Canggu. The cafes look good. The rent feels possible. The Wi-Fi seems fine. Then you open the visa requirements.",
+      "introP2": "That's usually where the dream gets more practical.",
+      "introP3": "For European remote workers, Thailand, Vietnam, and Bali are three of the most common Southeast Asia options. They can all work as a base, but they don't offer the same level of visa clarity. Thailand has a clearer remote-work route. Vietnam is flexible for shorter stays, but doesn't currently have a dedicated digital nomad visa. Bali, through Indonesia, has a remote worker visa route, but the paperwork is more serious.",
+      "introP4": "This guide compares the 2026 options in plain English, so you can understand what each destination is actually good for before you book the flight. Visa rules change often, so treat this as a decision guide, not legal advice. Always check official immigration sources before applying.",
+      "shortAnswerH": "The short answer",
+      "shortAnswerList": [
+        "Choose Thailand if you want the clearest long-stay route for remote work.",
+        "Choose Vietnam if you want a flexible, affordable base for one to three months.",
+        "Choose Bali, Indonesia, if you want lifestyle and community, and you have the documentation for a formal remote worker route."
+      ],
+      "shortAnswerP": "The best destination isn't only the one with the easiest visa. It's the one where your visa, work rhythm, budget, payments, internet, and daily life all fit together.",
+      "comparisonH": "Quick comparison: Thailand vs Vietnam vs Bali",
+      "compHead": ["Destination", "Main 2026 route", "Best for", "Main watch-out"],
+      "compRows": [
+        { "dest": "Thailand", "route": "Destination Thailand Visa (DTV)", "bestFor": "Remote workers who want a clearer long-stay setup", "watchOut": "Financial proof, remote-work documents, and embassy-specific requirements" },
+        { "dest": "Vietnam", "route": "E-visa or visa exemption, depending on passport", "bestFor": "Flexible short to medium stays, usually one to three months", "watchOut": "No dedicated digital nomad visa yet" },
+        { "dest": "Bali, Indonesia", "route": "E33G Remote Worker Visa / Remote Worker ITAS route", "bestFor": "Nomads with stable overseas employment and Bali lifestyle intent", "watchOut": "Higher income proof and employment documentation" }
+      ],
+      "comparisonP": "The practical difference is simple: Thailand is the most purpose-built for digital nomads, Vietnam is the easiest to test for a shorter stay, and Bali is the strongest lifestyle brand with a more formal Indonesia-based route.",
+      "thailandH": "Thailand: the clearest long-stay option",
+      "thailandP1": "Thailand is currently the strongest option if you want visa clarity as a remote worker.",
+      "thailandP2": "The Destination Thailand Visa, usually called the DTV, is designed for people entering Thailand partly as tourists and partly to work remotely. The official Thai Consulate in Frankfurt describes the DTV Workation route for digital nomads, remote workers, and freelancers. It allows multiple entries, with a maximum stay of 180 days per entry, and has 5-year validity. [1]",
+      "thailandP3": "The same official page lists a financial evidence requirement of at least 500,000 THB, about EUR 13,000 at recent exchange rates, plus proof of employment, an employment certificate, or a professional portfolio showing remote worker or freelance status. The listed visa fee through that consulate is EUR 350. [1]",
+      "thailandP4": "This doesn't mean every application is automatic. Requirements can vary by embassy or consulate, and immigration officers can request additional documents. But compared with many Southeast Asia options, Thailand gives remote workers a clearer framework.",
+      "thailandFitH": "Who Thailand fits best",
+      "thailandFit": [
+        "You want to stay longer than a normal holiday.",
+        "You can prove remote work, freelance work, or overseas employment.",
+        "You like the idea of moving between Bangkok, Chiang Mai, Phuket, Koh Samui, or Koh Phangan.",
+        "You want a mature nomad scene with coworking spaces, cafes, gyms, events, and easy domestic travel."
+      ],
+      "thailandClose": "Thailand isn't always the lowest-admin choice, but it's the cleanest route if you want to plan beyond a short tourist stay.",
+      "vietnamH": "Vietnam: flexible and affordable, but not a digital nomad visa",
+      "vietnamP1": "Vietnam is often the easiest country to fall in love with for a few months.",
+      "vietnamP2": "Da Nang gives you beach, cafes, coworking spaces, and a slower rhythm. Ho Chi Minh City gives you energy, food, nightlife, and startup density. Hanoi gives you history, culture, and a more northern pace. For many Europeans, Vietnam feels practical because daily life can be affordable, lively, and easy to enjoy quickly.",
+      "vietnamP3": "But from a visa perspective, Vietnam isn't the same as Thailand. Vietnam doesn't currently have a dedicated digital nomad visa. Many remote workers rely on the e-visa system or visa exemption rules, depending on passport.",
+      "vietnamP4": "Vietnam's official e-visa portal states that the e-visa is valid for a maximum of 90 days and can be single or multiple entry. The official e-visa fee is listed as USD 25 for single entry and USD 50 for multiple entry, about EUR 22 and EUR 43 at recent exchange rates. For a one to three-month stay, that can be enough. For a long-term base, it requires more planning. [2]",
+      "vietnamFitH": "Who Vietnam fits best",
+      "vietnamFit": [
+        "You want to test Southeast Asia without committing to a long visa route.",
+        "You're staying for a few weeks to three months.",
+        "You care about food, cafes, cost of living, and city energy.",
+        "You're comfortable checking visa rules carefully before each stay."
+      ],
+      "vietnamClose": "Vietnam isn't the strongest option for formal digital nomad visa clarity. It's strong because it's easy to try, easy to like, and easy to build a daily routine around for a shorter stay.",
+      "baliH": "Bali, Indonesia: lifestyle first, paperwork second",
+      "baliP1": "People say \"Bali digital nomad visa,\" but technically Bali doesn't issue visas. Bali is part of Indonesia. So the relevant route is Indonesian immigration, especially the E33G Remote Worker Visa, sometimes described as a remote worker ITAS route.",
+      "baliP2": "Indonesia's official immigration page for E33G says the visa allows you to stay in Indonesia to carry out duties from a company outside Indonesia. It lists a 1-year stay, no sponsor requirement, and application through the eVisa system. The official fee breakdown totals 7,000,000 IDR for a 1-year stay, about EUR 370 at recent exchange rates. [3]",
+      "baliP3": "The special requirements are more demanding than Vietnam's e-visa. The official page lists bank evidence showing salary or income of at least USD 60,000 per year, plus an employment agreement with a company established outside Indonesia. [3]",
+      "baliP4": "That makes Bali attractive, but not casual. It's best for remote workers who already have stable overseas employment, a clear income trail, and the patience to prepare documentation.",
+      "baliFitH": "Who Bali fits best",
+      "baliFit": [
+        "You want the Bali lifestyle: Canggu, Pererenan, Ubud, Uluwatu, surf, wellness, and community.",
+        "You have stable overseas income and employment documentation.",
+        "You're staying longer and want a more formal route than a tourist stay.",
+        "You're comfortable with higher living costs in the most popular areas."
+      ],
+      "baliClose": "Bali can be beautiful, social, and productive. But the visa route isn't just a vibe. It needs proper documents.",
+      "rhythmH": "Choose based on your work rhythm, not only the visa",
+      "rhythmP1": "A visa is the entry ticket. It doesn't decide whether your month actually works.",
+      "rhythmP2": "If you have client calls every day, you may care more about time zones, internet stability, and apartment setup than beach access. If you're freelancing between projects, you may want cheaper living costs and flexible movement. If you're building a company, you may want a stronger founder or operator network.",
+      "rhythmStabilityH": "If you want stability",
+      "rhythmStabilityP": "Thailand is the strongest first look. The DTV gives you a more structured remote-work path, and cities like Bangkok and Chiang Mai make it easier to build routines.",
+      "rhythmFlexH": "If you want flexibility",
+      "rhythmFlexP": "Vietnam is a good first test. You can spend one to three months in Da Nang, Ho Chi Minh City, or Hanoi, learn how you work there, and decide later whether you want something longer-term.",
+      "rhythmLifestyleH": "If you want lifestyle and community",
+      "rhythmLifestyleP": "Bali is hard to ignore. The community is mature, the lifestyle is strong, and the remote-work culture is visible everywhere. Just make sure the visa route matches your employment and income situation.",
+      "dailyH": "Daily-life comparison for remote workers",
+      "dailyHead": ["Factor", "Thailand", "Vietnam", "Bali, Indonesia"],
+      "dailyRows": [
+        { "factor": "Visa clarity", "thailand": "Strongest of the three for remote work", "vietnam": "Flexible for shorter stays, but no dedicated nomad visa", "bali": "Formal remote worker route, but more demanding" },
+        { "factor": "Best bases", "thailand": "Bangkok, Chiang Mai, Phuket, Koh Samui", "vietnam": "Da Nang, Ho Chi Minh City, Hanoi, Hoi An", "bali": "Canggu, Pererenan, Ubud, Uluwatu" },
+        { "factor": "Cost feel", "thailand": "Medium, varies widely by city", "vietnam": "Often lower, especially outside HCMC/Hanoi expat zones", "bali": "Can be high in popular areas" },
+        { "factor": "Community", "thailand": "Mature nomad scene", "vietnam": "Growing nomad scene", "bali": "Very mature creator and nomad scene" },
+        { "factor": "Best stay length", "thailand": "Longer stays with planning", "vietnam": "One to three months to test", "bali": "Longer stay if documents fit" }
+      ],
+      "hiddenH": "The hidden friction after the visa",
+      "hiddenP1": "The visa gets you into the country. It doesn't solve daily life.",
+      "hiddenP2": "After you arrive, the smaller frictions start to matter: how you pay rent, whether your card works at small merchants, how much cash you carry, whether local apps accept your foreign card, where you take video calls, and what happens when everyone else pays through a local system you can't access.",
+      "hiddenP3": "This is why the best digital nomad base isn't only the one with the best visa. It's the one where the small systems around your life are easiest to understand.",
+      "nextH": "What to do next before choosing your base",
+      "nextList": [
+        "Check the official visa page for the country you're considering. Don't rely only on old blog posts or social media comments.",
+        "Confirm whether the visa is for tourism, remote work, or formal residence. Those aren't the same thing.",
+        "Check the documentation early: passport validity, bank statements, income proof, employment letter, itinerary, insurance, and application timing.",
+        "Decide your real stay length. A one-month workation and a one-year base need different visa logic.",
+        "Budget for the first two weeks, not only monthly rent. Deposits, SIM cards, transport, coworking trials, ATM fees, and setup costs add up.",
+        "Refresh exchange rates before publishing or booking. Visa fees and income requirements can look very different in EUR depending on timing."
+      ],
+      "finalH": "Final recommendation",
+      "finalP1": "For 2026, Thailand is the clearest choice if your priority is a purpose-built digital nomad route.",
+      "finalP2": "Vietnam is the strongest option if you want a flexible, affordable, lower-commitment base for a shorter stay.",
+      "finalP3": "Bali, Indonesia, is the best fit if you want lifestyle and community, and you have the income and employment documents for the remote worker route.",
+      "finalP4": "The smarter question isn't \"Which visa is best?\" It's \"Which country matches the way I actually work, spend, move, and live?\"",
+      "finalP5": "Start there. Then choose the visa.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "[1]", "label": "Royal Thai Consulate-General, Frankfurt — Destination Thailand Visa (DTV) Workation: 5-year multiple-entry validity, 180 days per entry, EUR 350 fee, financial evidence of at least 500,000 THB, remote-work or portfolio documentation." },
+        { "n": "[2]", "label": "Vietnam Immigration Department — National Electronic Visa (e-visa) portal: e-visa valid for a maximum of 90 days, single or multiple entry; fee USD 25 (single) / USD 50 (multiple)." },
+        { "n": "[3]", "label": "Directorate General of Immigration, Republic of Indonesia — E33G Remote Worker Visa (evisa.imigrasi.go.id): 1-year stay, no sponsor required, fee totalling IDR 7,000,000, income of at least USD 60,000/year, employment agreement with a company outside Indonesia." }
       ]
     }
   },
