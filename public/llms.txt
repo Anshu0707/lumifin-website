@@ -28,6 +28,7 @@ Lumifin is operated by LumiFin SAS, headquartered at 50 rue Anatole France, 9229
 - [QRIS decoded](https://lumifin.io/blog/qris-decoded): Indonesia's QR payment system explained for European travellers
 - [VietQR decoded](https://lumifin.io/blog/vietqr-decoded): Vietnam's QR payment systems (VietQR, MoMo, ZaloPay, VNPay) and why foreign cards fail
 - [Best travel cards for Europeans in Vietnam (2026)](https://lumifin.io/blog/best-travel-cards-europeans-vietnam-2026): Wise, Revolut, N26, Monzo, cash and Lumifin compared — the smartest 2026 payment setup
+- [Digital nomad visas in Thailand, Vietnam, and Bali (2026)](https://lumifin.io/blog/digital-nomad-visas-thailand-vietnam-bali-2026): DTV vs e-visa vs E33G — the practical 2026 comparison for Europeans choosing a Southeast Asia base
 - [All posts](https://lumifin.io/blog)
 
 ## Optional
