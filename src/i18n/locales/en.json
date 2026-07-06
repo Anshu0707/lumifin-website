@@ -347,6 +347,7 @@
       "travel": "Travel",
       "company": "Company",
       "purpose": "Purpose",
+      "stories": "Stories",
       "payments": "Payments"
     },
     "posts": {
@@ -379,6 +380,11 @@
         "title": "Digital Nomad Visas in Thailand, Vietnam, and Bali: The 2026 Comparison",
         "excerpt": "Thailand, Vietnam, and Bali all draw remote workers — but their visa routes are very different. The practical 2026 comparison for Europeans choosing a Southeast Asia base.",
         "date": "June 29, 2026"
+      },
+      "hanoiFounderNote": {
+        "title": "I Came to Hanoi to Test Our Product. I Left More Convicted Than Ever.",
+        "excerpt": "After months of building Lumifin behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to test the product firsthand — and found the strongest lessons outside the roadmap.",
+        "date": "July 6, 2026"
       }
     }
   },
@@ -1187,6 +1193,60 @@
         { "n": "[1]", "label": "Royal Thai Consulate-General, Frankfurt — Destination Thailand Visa (DTV) Workation: 5-year multiple-entry validity, 180 days per entry, EUR 350 fee, financial evidence of at least 500,000 THB, remote-work or portfolio documentation." },
         { "n": "[2]", "label": "Vietnam Immigration Department — National Electronic Visa (e-visa) portal: e-visa valid for a maximum of 90 days, single or multiple entry; fee USD 25 (single) / USD 50 (multiple)." },
         { "n": "[3]", "label": "Directorate General of Immigration, Republic of Indonesia — E33G Remote Worker Visa (evisa.imigrasi.go.id): 1-year stay, no sponsor required, fee totalling IDR 7,000,000, income of at least USD 60,000/year, employment agreement with a company outside Indonesia." }
+      ]
+    },
+    "hanoiFounderNote": {
+      "seo": {
+        "title": "Testing Lumifin in Hanoi — A Founder Note by Gaurav Bansal",
+        "description": "Lumifin co-founder Gaurav Bansal shares what testing the product firsthand in Hanoi taught him about real users, payment friction, and founder conviction."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Stories · Founder note",
+      "title": "I Came to Hanoi to Test Our Product. I Left More Convicted Than Ever.",
+      "subtitle": "After months of building Lumifin behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to experience the product firsthand — and found the strongest lessons outside the roadmap.",
+      "author": "Gaurav Bansal",
+      "readTime": "4 min read",
+      "dateLabel": "July 2026",
+      "imgAlt": "Lumifin co-founder Gaurav Bansal with travellers he met at a cafe in Hanoi, Vietnam.",
+      "paragraphs": [
+        "I've always had a special connection with Hanoi.",
+        "I first visited the city almost a decade ago, and ever since then I've loved the energy here — the movement, the pace, the coffee culture, and the feeling that everything somehow works despite the chaos.",
+        "This trip, however, felt different.",
+        "I wasn't arriving as a tourist. I came here with a different purpose: to test something our team had spent months building.",
+        "At Lumifin, we've been working on a payment experience designed to make spending abroad feel simple for travellers. For the end user, the product should feel seamless.",
+        "But as builders, we know simplicity is rarely simple.",
+        "Behind that experience sits months of product development, regulatory work, payment partnerships, compliance requirements, and countless iterations that users will hopefully never have to think about.",
+        "So before flying to Hanoi, I made myself one small challenge.",
+        "I would spend the trip without carrying cash.",
+        "No ATM withdrawals. No backup wallet. I wanted to experience the city exactly the way locals increasingly do today: through QR payments.",
+        "The experiment started immediately.",
+        "When I arrived at my hotel, I was given two payment options: pay in cash, or use my international card with an additional 5% fee attached.",
+        "I paid with QR instead.",
+        "No additional charge.",
+        "It sounds like a small moment, but standing there — using something we'd spent months building — felt different.",
+        "There's a quiet satisfaction in watching an idea move from internal planning to something that works in the real world.",
+        "As I moved around Hanoi over the following days, one thing became impossible to ignore.",
+        "QR payments are deeply embedded in everyday life here. Vietnam has clearly embraced digital payments at scale.",
+        "But for many travellers, access remains the challenge.",
+        "One afternoon I noticed a long ATM queue filled almost entirely with foreign visitors waiting to withdraw cash.",
+        "It genuinely surprised me.",
+        "In a country moving so quickly toward digital payments, travellers were still being pushed back into old payment habits simply because better alternatives were unavailable.",
+        "One moment especially stayed with me.",
+        "I watched a family at a cafe struggle because their card payment repeatedly failed. Eventually one family member had to leave, find an ATM, withdraw cash, and come back while everyone else waited.",
+        "It was a simple situation, but a strong reminder that payment friction still quietly shapes the travel experience far more than people realise.",
+        "The most memorable part of the trip happened unexpectedly.",
+        "I met three travellers from Spain sitting at another cafe nearby, and I casually started telling them about what we'd been building.",
+        "I expected a quick exchange and maybe a few polite questions.",
+        "Instead, one of them, Cuesto, immediately connected with the problem.",
+        "The conversation continued for almost two hours. We discussed travel experiences, payment frustrations, and the everyday challenges visitors face when navigating countries where local payment systems increasingly dominate.",
+        "What stood out to me wasn't just the conversation itself. It was watching someone outside our team immediately understand why this product should exist.",
+        "He downloaded the app. Completed the setup in just a few minutes. And became our first customer.",
+        "That moment made me quietly proud.",
+        "This trip reinforced something I believe every founder should experience early.",
+        "Product ideas are important. Strategy discussions are necessary. But there's no substitute for stepping directly into the market you're building for.",
+        "Talking to real users teaches you more than weeks of internal conversations. It gives clarity. It builds conviction. And sometimes, it reminds you why you started building in the first place.",
+        "I left Hanoi feeling more certain than ever. We're solving a very real problem.",
+        "And sometimes the best validation doesn't come from a pitch deck or roadmap. It comes from simply watching someone use what you built for the very first time."
       ]
     }
   },

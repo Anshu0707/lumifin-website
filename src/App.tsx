@@ -23,6 +23,7 @@ const QrisDecodedPage = lazy(() => import('./pages/QrisDecodedPage'));
 const VietqrDecodedPage = lazy(() => import('./pages/VietqrDecodedPage'));
 const BestTravelCardsVietnamPage = lazy(() => import('./pages/BestTravelCardsVietnamPage'));
 const DigitalNomadVisasPage = lazy(() => import('./pages/DigitalNomadVisasPage'));
+const HanoiFounderNotePage = lazy(() => import('./pages/HanoiFounderNotePage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/blog/vietqr-decoded" element={<VietqrDecodedPage />} />
           <Route path="/blog/best-travel-cards-europeans-vietnam-2026" element={<BestTravelCardsVietnamPage />} />
           <Route path="/blog/digital-nomad-visas-thailand-vietnam-bali-2026" element={<DigitalNomadVisasPage />} />
+          <Route path="/blog/founder-note-testing-lumifin-in-hanoi" element={<HanoiFounderNotePage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />

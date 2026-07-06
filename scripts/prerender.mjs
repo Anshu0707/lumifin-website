@@ -37,6 +37,7 @@ const routes = [
   { path: '/blog/vietqr-decoded', out: 'blog/vietqr-decoded.html' },
   { path: '/blog/best-travel-cards-europeans-vietnam-2026', out: 'blog/best-travel-cards-europeans-vietnam-2026.html' },
   { path: '/blog/digital-nomad-visas-thailand-vietnam-bali-2026', out: 'blog/digital-nomad-visas-thailand-vietnam-bali-2026.html' },
+  { path: '/blog/founder-note-testing-lumifin-in-hanoi', out: 'blog/founder-note-testing-lumifin-in-hanoi.html' },
   { path: '/beta', out: 'beta.html' },
   { path: '/careers', out: 'careers.html' },
   { path: '/security', out: 'security.html' },

@@ -347,6 +347,7 @@
       "travel": "Voyage",
       "company": "Entreprise",
       "purpose": "Notre Mission",
+      "stories": "Récits",
       "payments": "Paiements"
     },
     "posts": {
@@ -379,6 +380,11 @@
         "title": "Visas nomades numériques en Thaïlande, au Vietnam et à Bali : le comparatif 2026",
         "excerpt": "La Thaïlande, le Vietnam et Bali attirent tous les travailleurs à distance — mais leurs parcours de visa sont très différents. Le comparatif pratique 2026 pour les Européens qui choisissent une base en Asie du Sud-Est.",
         "date": "29 juin 2026"
+      },
+      "hanoiFounderNote": {
+        "title": "Je suis venu à Hanoï tester notre produit. Je suis reparti plus convaincu que jamais.",
+        "excerpt": "Après des mois à construire Lumifin en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour tester le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
+        "date": "6 juillet 2026"
       }
     }
   },
@@ -1187,6 +1193,60 @@
         { "n": "[1]", "label": "Consulat général de Thaïlande, Francfort — Destination Thailand Visa (DTV) Workation : validité 5 ans à entrées multiples, 180 jours par entrée, frais de 350 EUR, preuve financière d'au moins 500 000 THB, documents de travail à distance ou portfolio." },
         { "n": "[2]", "label": "Département de l'immigration du Vietnam — portail national d'e-visa : e-visa valable 90 jours maximum, entrée unique ou multiple ; frais de 25 USD (unique) / 50 USD (multiple)." },
         { "n": "[3]", "label": "Direction générale de l'immigration, République d'Indonésie — visa travailleur à distance E33G (evisa.imigrasi.go.id) : séjour d'un an, sans parrain, frais totalisant 7 000 000 IDR, revenus d'au moins 60 000 USD/an, contrat de travail avec une entreprise hors d'Indonésie." }
+      ]
+    },
+    "hanoiFounderNote": {
+      "seo": {
+        "title": "Tester Lumifin à Hanoï — une note du fondateur, par Gaurav Bansal",
+        "description": "Le cofondateur de Lumifin, Gaurav Bansal, partage ce que tester le produit sur le terrain à Hanoï lui a appris sur les vrais utilisateurs, la friction de paiement et la conviction du fondateur."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Récits · Note du fondateur",
+      "title": "Je suis venu à Hanoï tester notre produit. Je suis reparti plus convaincu que jamais.",
+      "subtitle": "Après des mois à construire Lumifin en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour vivre le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
+      "author": "Gaurav Bansal",
+      "readTime": "4 min de lecture",
+      "dateLabel": "Juillet 2026",
+      "imgAlt": "Le cofondateur de Lumifin, Gaurav Bansal, avec des voyageurs rencontrés dans un café à Hanoï, au Vietnam.",
+      "paragraphs": [
+        "J'ai toujours eu un lien particulier avec Hanoï.",
+        "J'ai découvert la ville il y a presque dix ans, et depuis, j'adore l'énergie qui s'en dégage — le mouvement, le rythme, la culture du café, et cette impression que tout finit par fonctionner malgré le chaos.",
+        "Ce voyage, pourtant, était différent.",
+        "Je n'arrivais pas en touriste. Je venais avec un autre objectif : tester quelque chose que notre équipe avait passé des mois à construire.",
+        "Chez Lumifin, nous travaillons sur une expérience de paiement conçue pour rendre les dépenses à l'étranger simples pour les voyageurs. Pour l'utilisateur final, le produit doit paraître fluide.",
+        "Mais en tant que bâtisseurs, nous savons que la simplicité est rarement simple.",
+        "Derrière cette expérience se cachent des mois de développement produit, de travail réglementaire, de partenariats de paiement, d'exigences de conformité et d'innombrables itérations auxquelles les utilisateurs n'auront, on l'espère, jamais à penser.",
+        "Alors, avant de m'envoler pour Hanoï, je me suis lancé un petit défi.",
+        "Je passerais tout le voyage sans emporter d'espèces.",
+        "Aucun retrait au distributeur. Aucun portefeuille de secours. Je voulais vivre la ville exactement comme les locaux le font de plus en plus aujourd'hui : par paiements QR.",
+        "L'expérience a commencé immédiatement.",
+        "À mon arrivée à l'hôtel, on m'a proposé deux options de paiement : payer en espèces, ou utiliser ma carte internationale avec 5 % de frais supplémentaires.",
+        "J'ai payé par QR à la place.",
+        "Aucun frais supplémentaire.",
+        "Cela peut sembler un détail, mais me tenir là — à utiliser quelque chose que nous avions passé des mois à construire — était différent.",
+        "Il y a une satisfaction discrète à voir une idée passer de la planification interne à quelque chose qui fonctionne dans le monde réel.",
+        "Au fil des jours suivants, en me déplaçant dans Hanoï, une chose est devenue impossible à ignorer.",
+        "Les paiements QR sont profondément ancrés dans la vie quotidienne ici. Le Vietnam a clairement adopté les paiements numériques à grande échelle.",
+        "Mais pour beaucoup de voyageurs, l'accès reste le problème.",
+        "Un après-midi, j'ai remarqué une longue file devant un distributeur, remplie presque entièrement de visiteurs étrangers attendant de retirer des espèces.",
+        "Cela m'a sincèrement surpris.",
+        "Dans un pays qui avance si vite vers le paiement numérique, les voyageurs étaient encore renvoyés vers de vieilles habitudes de paiement, simplement parce qu'il n'existait pas de meilleure alternative.",
+        "Un moment m'a particulièrement marqué.",
+        "J'ai vu une famille dans un café en difficulté parce que leur paiement par carte échouait sans cesse. Finalement, l'un des membres a dû partir, trouver un distributeur, retirer des espèces et revenir pendant que les autres attendaient.",
+        "C'était une situation banale, mais un rappel fort que la friction de paiement façonne encore discrètement l'expérience de voyage, bien plus que les gens ne le réalisent.",
+        "Le moment le plus mémorable du voyage est arrivé de façon inattendue.",
+        "J'ai rencontré trois voyageurs espagnols assis dans un autre café à côté, et je me suis mis à leur parler de ce que nous construisions.",
+        "Je m'attendais à un bref échange et peut-être quelques questions polies.",
+        "Au lieu de cela, l'un d'eux, Cuesto, a immédiatement compris le problème.",
+        "La conversation a duré près de deux heures. Nous avons parlé d'expériences de voyage, de frustrations liées aux paiements, et des difficultés quotidiennes que rencontrent les visiteurs dans des pays où les systèmes de paiement locaux dominent de plus en plus.",
+        "Ce qui m'a marqué, ce n'était pas seulement la conversation elle-même. C'était de voir quelqu'un d'extérieur à notre équipe comprendre immédiatement pourquoi ce produit devait exister.",
+        "Il a téléchargé l'application. Terminé la configuration en quelques minutes. Et il est devenu notre premier client.",
+        "Ce moment m'a rendu discrètement fier.",
+        "Ce voyage a renforcé quelque chose que je pense que chaque fondateur devrait vivre tôt.",
+        "Les idées de produit sont importantes. Les discussions de stratégie sont nécessaires. Mais rien ne remplace le fait d'aller directement sur le marché pour lequel on construit.",
+        "Parler à de vrais utilisateurs apprend plus que des semaines de discussions internes. Cela donne de la clarté. Cela renforce la conviction. Et parfois, cela rappelle pourquoi on a commencé à construire.",
+        "J'ai quitté Hanoï plus certain que jamais. Nous résolvons un problème bien réel.",
+        "Et parfois, la meilleure validation ne vient pas d'un pitch deck ou d'une feuille de route. Elle vient simplement de regarder quelqu'un utiliser ce que vous avez construit, pour la toute première fois."
       ]
     }
   },
