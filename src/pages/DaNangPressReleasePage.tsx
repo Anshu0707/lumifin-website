@@ -93,8 +93,8 @@ export default function DaNangPressReleasePage() {
                 src="/assets/blog/da-nang-press-cover.webp"
                 alt={t(`${BASE}.imgAlt`)}
                 loading="lazy"
-                width={1200}
-                height={1600}
+                width={1600}
+                height={1066}
                 className="w-full h-auto object-cover"
               />
             </div>
