@@ -7,9 +7,10 @@ import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
 import { Calendar, User } from 'lucide-react';
 
-const categories = ["all", "travel", "stories", "purpose", "payments"] as const;
+const categories = ["all", "travel", "stories", "press", "purpose", "payments"] as const;
 
 const POSTS = [
+  { id: 8, key: 'daNangPressRelease', author: 'Lumifin', categoryKey: 'press', href: '/blog/why-we-chose-da-nang', image: '/assets/blog/da-nang-press-cover.webp' },
   { id: 7, key: 'hanoiFounderNote', author: 'Gaurav Bansal', categoryKey: 'stories', href: '/blog/founder-note-testing-lumifin-in-hanoi', image: '/assets/blog/founder-note-hanoi-cover.webp' },
   { id: 6, key: 'digitalNomadVisas', author: 'Pierre Lahbabi', categoryKey: 'travel', href: '/blog/digital-nomad-visas-thailand-vietnam-bali-2026', image: '/assets/blog/digital-nomad-visas-cover.webp' },
   { id: 5, key: 'bestCardsVietnam', author: 'Thiofanty', categoryKey: 'travel', href: '/blog/best-travel-cards-europeans-vietnam-2026', image: '/assets/blog/best-travel-cards-vietnam-cover.webp' },

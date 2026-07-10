@@ -348,6 +348,7 @@
       "company": "Company",
       "purpose": "Purpose",
       "stories": "Stories",
+      "press": "Press",
       "payments": "Payments"
     },
     "posts": {
@@ -385,6 +386,11 @@
         "title": "I Came to Hanoi to Test Our Product. I Left More Convicted Than Ever.",
         "excerpt": "After months of building Lumifin behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to test the product firsthand — and found the strongest lessons outside the roadmap.",
         "date": "July 6, 2026"
+      },
+      "daNangPressRelease": {
+        "title": "Why We Chose Da Nang",
+        "excerpt": "Lumifin has picked Da Nang as the launch community for its euro-wallet rollout across Southeast Asia. Here's why — and how remote workers can help shape it.",
+        "date": "July 10, 2026"
       }
     }
   },
@@ -1248,6 +1254,49 @@
         "I left Hanoi feeling more certain than ever. We're solving a very real problem.",
         "And sometimes the best validation doesn't come from a pitch deck or roadmap. It comes from simply watching someone use what you built for the very first time."
       ]
+    },
+    "daNangPressRelease": {
+      "seo": {
+        "title": "Why We Chose Da Nang — Lumifin's Southeast Asia Launch",
+        "description": "Lumifin, a French fintech building a euro wallet for European travellers in Southeast Asia, has chosen Da Nang as its launch community — and is inviting remote workers to shape the product."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Press · Company news",
+      "title": "Why We Chose Da Nang",
+      "subtitle": "We're building a euro wallet for European travelers across Southeast Asia — and we've picked Da Nang as the place to launch it. Here's why, and how you can help shape what we build.",
+      "source": "Lumifin",
+      "readTime": "4 min read",
+      "dateLabel": "10 July 2026",
+      "imgAlt": "A Lumifin representative in front of an official building in Da Nang, Vietnam.",
+      "dateline": "Da Nang, Vietnam — 10 July 2026.",
+      "leadP": "Lumifin, a French fintech building a euro wallet for European travelers across Southeast Asia, has chosen Da Nang as the launch community for its regional rollout. We unveiled the move at a Founding Ambassadors workshop in the city on 10 July, inviting Da Nang's international remote workers to become our first ambassadors and beta testers.",
+      "leadP2": "The timing isn't an accident. Our announcement lands as Da Nang hosts its Business, Finance and Technology Week (7–12 July 2026), a citywide gathering of policymakers, investors and fintech leaders headlined by the inaugural Vietnam Finance Forum on 9 and 10 July. The week is a reminder of how quickly Da Nang is becoming Vietnam's emerging center for innovation and international finance.",
+      "problemH": "The problem every visitor runs into",
+      "problemP1": "If you've spent any time in Vietnam, you already know the friction. Locals pay for almost everything — a café, a bowl of phở, a taxi — by scanning a VietQR code straight from their banking app. Foreigners can't: those QR codes require a Vietnamese bank account.",
+      "problemP2": "Lumifin closes that gap. You top up a wallet in euros and pay any local QR code exactly as a resident would — one scan, in seconds, with no local bank account and no scramble for cash. Built by our engineering team in India, the app is live in beta and already used daily by the Lumifin team across Vietnam.",
+      "whyH": "Why Da Nang, specifically",
+      "whyP1": "The pull of Da Nang runs deeper than the calendar. In January 2026, Vietnam inaugurated the Da Nang International Financial Center, designating the city as the country's innovation-focused financial hub, with an explicit mandate around digital payments, fintech and a regulatory sandbox for new financial models.",
+      "whyP2": "At the same time, Da Nang has become one of Southeast Asia's most popular bases for digital nomads and international remote workers — drawn by its beaches, low cost of living, fast connectivity and an unusually active scene of meetups and coworking spaces. For us, the combination is rare: a city whose public ambition and whose everyday residents both point toward precisely the kind of product we're building.",
+      "whyP3": "That direction is set at the highest level of policy. Vietnam's Resolution 57-NQ/TW, adopted by the Politburo in December 2024, places science, technology, innovation and digital transformation — including the build-out of a cashless, digital economy — at the center of national development. By bringing international visitors into Vietnam's own QR-payment ecosystem, Lumifin contributes to that agenda, connecting the country's digital-transformation drive with one of its most important sectors: tourism.",
+      "quote1": "We didn't choose Da Nang by accident. It's the rare place where the people we build for — international remote workers who live between currencies — and the ambition of the city are all pulling in the same direction. Vietnam has just made Da Nang its home for digital-payments innovation, and that's exactly where a wallet like ours belongs.",
+      "quote1By": "Pierre Lahbabi, co-founder and CEO of Lumifin",
+      "ambassadorsH": "Build it with us: the Founding Ambassadors program",
+      "ambassadorsP1": "Through our Founding Ambassadors program, we're inviting Da Nang's remote-work community to shape the product ahead of its wider launch. At the 10 July workshop — held from 2:00 to 4:00 p.m. at The Workshop on Chế Lan Viên in the Ngũ Hành Sơn district — participants set up the wallet, made real payments on the spot and gave direct feedback to the founding team, with free wallet credit to spend during the session. Their input will guide the app's usability and feature roadmap.",
+      "ambassadorsP2": "Beyond the workshop itself, we're enlisting European remote workers and social-media creators as ambassadors in a broader campaign that spotlights Da Nang's dynamism as a center of innovation — and the wallet's rollout with local partners such as hotels, restaurants and everyday merchants across the city.",
+      "quote2": "Paying a street-food stall or a neighborhood café should feel the same for a visitor as it does for a local: one scan, and it's done. That everyday moment is what we're perfecting here, alongside the people who will use it most.",
+      "quote2By": "Pierre Lahbabi",
+      "nextH": "What's next",
+      "nextP1": "Lumifin plans to bring the same local-QR experience to its other priority markets in the region — Thailand (PromptPay) and Indonesia (QRIS) — as it scales from beta toward a full launch.",
+      "quote3": "Cross-border payments in Southeast Asia is a large, underserved market, and Lumifin is tackling it from the right end — the everyday friction every traveler feels. Basing the launch in Da Nang, just as the city steps up as a hub for digital-payments innovation, is a sharp and deliberate move, and exactly the kind of team and timing worth getting behind.",
+      "quote3By": "Robert Brice Cerival, Senior Advisor to Lumifin in Vietnam",
+      "aboutH": "About Lumifin",
+      "aboutP": "Lumifin is a French fintech building a euro wallet that lets European travelers pay by local QR code across Southeast Asia (VietQR in Vietnam, PromptPay in Thailand and QRIS in Indonesia) as easily as residents do. Founded near Paris and currently in beta, Lumifin was co-founded by CEO Pierre Lahbabi, a graduate of France's École Polytechnique and Mines Paris, and a payments specialist with a career spanning banking and technology consulting. Co-founder and COO Gaurav Bansal brings more than fifteen years in fintech product and technology consulting, with roles at Sopra Steria, Capgemini and fintech lender Biz2Credit, and holds a master's in finance from India's National Institute of Securities Markets. Learn more at lumifin.io.",
+      "contactH": "Media contact",
+      "contacts": [
+        { "name": "Thiofanty", "detail": "thiofanty@lumifin.io · +33 7 44 87 31 56 · lumifin.io" },
+        { "name": "Tanvi Nag", "detail": "tanvi@lumifin.io · +91 6239014820" }
+      ],
+      "contactNote": "Pierre Lahbabi is available for interviews in Da Nang."
     }
   },
   "careers": {

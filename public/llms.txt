@@ -30,6 +30,7 @@ Lumifin is operated by LumiFin SAS, headquartered at 50 rue Anatole France, 9229
 - [Best travel cards for Europeans in Vietnam (2026)](https://lumifin.io/blog/best-travel-cards-europeans-vietnam-2026): Wise, Revolut, N26, Monzo, cash and Lumifin compared — the smartest 2026 payment setup
 - [Digital nomad visas in Thailand, Vietnam, and Bali (2026)](https://lumifin.io/blog/digital-nomad-visas-thailand-vietnam-bali-2026): DTV vs e-visa vs E33G — the practical 2026 comparison for Europeans choosing a Southeast Asia base
 - [I came to Hanoi to test our product](https://lumifin.io/blog/founder-note-testing-lumifin-in-hanoi): Founder note by Gaurav Bansal on testing Lumifin firsthand in Hanoi — real users, payment friction, and conviction
+- [Why we chose Da Nang](https://lumifin.io/blog/why-we-chose-da-nang): Press release — Lumifin picks Da Nang as its Southeast Asia launch community and opens a Founding Ambassadors program
 - [All posts](https://lumifin.io/blog)
 
 ## Optional

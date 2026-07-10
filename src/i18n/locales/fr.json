@@ -348,6 +348,7 @@
       "company": "Entreprise",
       "purpose": "Notre Mission",
       "stories": "Récits",
+      "press": "Presse",
       "payments": "Paiements"
     },
     "posts": {
@@ -385,6 +386,11 @@
         "title": "Je suis venu à Hanoï tester notre produit. Je suis reparti plus convaincu que jamais.",
         "excerpt": "Après des mois à construire Lumifin en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour tester le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
         "date": "6 juillet 2026"
+      },
+      "daNangPressRelease": {
+        "title": "Pourquoi nous avons choisi Da Nang",
+        "excerpt": "Lumifin a choisi Da Nang comme communauté de lancement pour le déploiement de son portefeuille en euros en Asie du Sud-Est. Voici pourquoi — et comment les travailleurs à distance peuvent contribuer.",
+        "date": "10 juillet 2026"
       }
     }
   },
@@ -1248,6 +1254,49 @@
         "J'ai quitté Hanoï plus certain que jamais. Nous résolvons un problème bien réel.",
         "Et parfois, la meilleure validation ne vient pas d'un pitch deck ou d'une feuille de route. Elle vient simplement de regarder quelqu'un utiliser ce que vous avez construit, pour la toute première fois."
       ]
+    },
+    "daNangPressRelease": {
+      "seo": {
+        "title": "Pourquoi nous avons choisi Da Nang — le lancement de Lumifin en Asie du Sud-Est",
+        "description": "Lumifin, une fintech française qui construit un portefeuille en euros pour les voyageurs européens en Asie du Sud-Est, a choisi Da Nang comme communauté de lancement — et invite les travailleurs à distance à façonner le produit."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Presse · Actualité de l'entreprise",
+      "title": "Pourquoi nous avons choisi Da Nang",
+      "subtitle": "Nous construisons un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est — et nous avons choisi Da Nang comme lieu de lancement. Voici pourquoi, et comment vous pouvez contribuer à façonner ce que nous construisons.",
+      "source": "Lumifin",
+      "readTime": "4 min de lecture",
+      "dateLabel": "10 juillet 2026",
+      "imgAlt": "Un représentant de Lumifin devant un bâtiment officiel à Da Nang, au Vietnam.",
+      "dateline": "Da Nang, Vietnam — 10 juillet 2026.",
+      "leadP": "Lumifin, une fintech française qui construit un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est, a choisi Da Nang comme communauté de lancement pour son déploiement régional. Nous avons dévoilé cette décision lors d'un atelier « Founding Ambassadors » dans la ville le 10 juillet, invitant les travailleurs à distance internationaux de Da Nang à devenir nos premiers ambassadeurs et bêta-testeurs.",
+      "leadP2": "Le calendrier n'est pas un hasard. Notre annonce intervient alors que Da Nang accueille sa Semaine des affaires, de la finance et de la technologie (7–12 juillet 2026), un rassemblement à l'échelle de la ville réunissant décideurs, investisseurs et leaders de la fintech, avec pour point d'orgue le premier Vietnam Finance Forum les 9 et 10 juillet. Cette semaine rappelle à quel point Da Nang devient rapidement le centre émergent du Vietnam pour l'innovation et la finance internationale.",
+      "problemH": "Le problème que rencontre chaque visiteur",
+      "problemP1": "Si vous avez passé un peu de temps au Vietnam, vous connaissez déjà la friction. Les locaux paient presque tout — un café, un bol de phở, un taxi — en scannant un code VietQR directement depuis leur appli bancaire. Les étrangers ne le peuvent pas : ces codes QR nécessitent un compte bancaire vietnamien.",
+      "problemP2": "Lumifin comble ce manque. Vous rechargez un portefeuille en euros et payez n'importe quel code QR local exactement comme un résident — un scan, en quelques secondes, sans compte bancaire local et sans course aux espèces. Développée par notre équipe d'ingénierie en Inde, l'application est en bêta et déjà utilisée quotidiennement par l'équipe Lumifin partout au Vietnam.",
+      "whyH": "Pourquoi Da Nang, précisément",
+      "whyP1": "L'attrait de Da Nang va plus loin que le calendrier. En janvier 2026, le Vietnam a inauguré le Da Nang International Financial Center, désignant la ville comme le pôle financier du pays axé sur l'innovation, avec un mandat explicite autour des paiements numériques, de la fintech et d'un bac à sable réglementaire pour de nouveaux modèles financiers.",
+      "whyP2": "Dans le même temps, Da Nang est devenue l'une des bases les plus prisées d'Asie du Sud-Est pour les nomades numériques et les travailleurs à distance internationaux — séduits par ses plages, son faible coût de la vie, sa connectivité rapide et une scène étonnamment active de rencontres et d'espaces de coworking. Pour nous, la combinaison est rare : une ville dont l'ambition publique et les résidents du quotidien pointent tous deux précisément vers le type de produit que nous construisons.",
+      "whyP3": "Cette direction est fixée au plus haut niveau politique. La Résolution 57-NQ/TW du Vietnam, adoptée par le Politburo en décembre 2024, place la science, la technologie, l'innovation et la transformation numérique — y compris la construction d'une économie numérique sans espèces — au cœur du développement national. En intégrant les visiteurs internationaux dans l'écosystème de paiement par QR du Vietnam, Lumifin contribue à cet agenda, reliant l'élan de transformation numérique du pays à l'un de ses secteurs les plus importants : le tourisme.",
+      "quote1": "Nous n'avons pas choisi Da Nang par hasard. C'est l'endroit rare où les personnes pour qui nous construisons — des travailleurs à distance internationaux qui vivent entre les devises — et l'ambition de la ville tirent toutes dans la même direction. Le Vietnam vient de faire de Da Nang son foyer pour l'innovation des paiements numériques, et c'est exactement là qu'un portefeuille comme le nôtre a sa place.",
+      "quote1By": "Pierre Lahbabi, cofondateur et CEO de Lumifin",
+      "ambassadorsH": "Construisez-le avec nous : le programme Founding Ambassadors",
+      "ambassadorsP1": "À travers notre programme Founding Ambassadors, nous invitons la communauté des travailleurs à distance de Da Nang à façonner le produit avant son lancement plus large. Lors de l'atelier du 10 juillet — de 14 h à 16 h à The Workshop, sur Chế Lan Viên, dans le district de Ngũ Hành Sơn — les participants ont configuré le portefeuille, effectué de vrais paiements sur place et donné un retour direct à l'équipe fondatrice, avec du crédit gratuit à dépenser pendant la session. Leurs retours guideront l'ergonomie et la feuille de route des fonctionnalités de l'application.",
+      "ambassadorsP2": "Au-delà de l'atelier lui-même, nous recrutons des travailleurs à distance européens et des créateurs de contenu comme ambassadeurs dans une campagne plus large qui met en lumière le dynamisme de Da Nang en tant que centre d'innovation — et le déploiement du portefeuille avec des partenaires locaux tels que des hôtels, des restaurants et des commerçants du quotidien dans toute la ville.",
+      "quote2": "Payer un stand de street-food ou un café de quartier devrait être identique pour un visiteur et pour un local : un scan, et c'est fait. C'est ce moment du quotidien que nous perfectionnons ici, aux côtés de ceux qui l'utiliseront le plus.",
+      "quote2By": "Pierre Lahbabi",
+      "nextH": "La suite",
+      "nextP1": "Lumifin prévoit d'apporter la même expérience de QR local à ses autres marchés prioritaires de la région — la Thaïlande (PromptPay) et l'Indonésie (QRIS) — à mesure qu'elle passe de la bêta vers un lancement complet.",
+      "quote3": "Les paiements transfrontaliers en Asie du Sud-Est constituent un marché vaste et mal desservi, et Lumifin l'aborde par le bon bout — la friction quotidienne que ressent chaque voyageur. Baser le lancement à Da Nang, au moment où la ville s'affirme comme un pôle d'innovation des paiements numériques, est un choix fin et délibéré, et exactement le genre d'équipe et de timing à soutenir.",
+      "quote3By": "Robert Brice Cerival, conseiller principal de Lumifin au Vietnam",
+      "aboutH": "À propos de Lumifin",
+      "aboutP": "Lumifin est une fintech française qui construit un portefeuille en euros permettant aux voyageurs européens de payer par code QR local à travers l'Asie du Sud-Est (VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie) aussi facilement que les résidents. Fondée près de Paris et actuellement en bêta, Lumifin a été cofondée par le CEO Pierre Lahbabi, diplômé de l'École Polytechnique et de Mines Paris, spécialiste des paiements avec une carrière couvrant la banque et le conseil en technologie. Le cofondateur et COO Gaurav Bansal apporte plus de quinze ans d'expérience dans le produit fintech et le conseil en technologie, avec des postes chez Sopra Steria, Capgemini et le prêteur fintech Biz2Credit, et détient un master en finance du National Institute of Securities Markets en Inde. En savoir plus sur lumifin.io.",
+      "contactH": "Contact presse",
+      "contacts": [
+        { "name": "Thiofanty", "detail": "thiofanty@lumifin.io · +33 7 44 87 31 56 · lumifin.io" },
+        { "name": "Tanvi Nag", "detail": "tanvi@lumifin.io · +91 6239014820" }
+      ],
+      "contactNote": "Pierre Lahbabi est disponible pour des interviews à Da Nang."
     }
   },
   "careers": {
