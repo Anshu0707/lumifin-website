@@ -69,6 +69,8 @@ export default function Footer() {
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><a href="https://www.instagram.com/lumifin.io/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.instagram')}</a></li>
             <li><a href="https://www.linkedin.com/company/lumifin1/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.linkedin')}</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61590998865526" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.facebook')}</a></li>
+            <li><a href="https://x.com/getlumifin" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.x')}</a></li>
           </ul>
         </div>
       </div>

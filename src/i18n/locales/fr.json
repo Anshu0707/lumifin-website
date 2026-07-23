@@ -86,6 +86,8 @@
     "vietnam": "Payer au Vietnam",
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
+    "facebook": "Facebook",
+    "x": "X",
     "copyright": "© 2026 LumiFin SAS. Tous droits réservés.",
     "brandNote": "Lumi est une marque de LumiFin SAS, fournisseur de technologie."
   },
@@ -97,13 +99,13 @@
   },
   "waitlist": {
     "eyebrow": "Offre exclusive",
-    "titleBefore": "Inscrivez-vous et recevez",
-    "amount": "20 €",
-    "titleAfter": "de crédit offert.",
-    "subtitle": "Rejoignez Lumi en avant-première et commencez votre prochain voyage avec 20 € offerts.",
-    "success": "Merci de rejoindre notre liste d'attente !",
+    "titleBefore": "Payez comme un local. Rejoignez la bêta et gagnez",
+    "amount": "10 €",
+    "titleAfter": "",
+    "subtitle": "Rejoignez la bêta Lumi dès aujourd'hui et commencez votre prochain voyage avec 10 € offerts.",
+    "success": "Merci de rejoindre la bêta Lumi !",
     "emailPlaceholder": "Saisissez votre adresse e-mail",
-    "submit": "Rejoindre la liste",
+    "submit": "Rejoindre la bêta",
     "submitting": "Envoi en cours...",
     "error": "Une erreur est survenue. Veuillez réessayer.",
     "botFieldLabel": "Ne remplissez pas ce champ :"
@@ -121,8 +123,8 @@
     "titleLine2": "Local",
     "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
-    "joinWaitlist": "Rejoindre la liste d'attente",
-    "earnBadge": "Gagnez 20 €",
+    "joinWaitlist": "Rejoindre la bêta",
+    "earnBadge": "Gagnez 10 €",
     "videoTitle": "Vidéo de démo Lumi",
     "closeVideo": "Fermer la vidéo"
   },
@@ -1415,7 +1417,7 @@
   "travelMoney": {
     "common": {
       "lastUpdated": "Dernière mise à jour : mars 2026",
-      "joinWaitlist": "Rejoindre la liste d'attente",
+      "joinWaitlist": "Rejoindre la bêta",
       "readGuide": "Lire le guide",
       "backToDestinations": "Toutes les destinations",
       "backToHome": "Accueil",
@@ -1514,7 +1516,7 @@
         "q5": { "q": "Comment Lumi fonctionne en Thaïlande ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez votre portefeuille depuis votre compte bancaire européen. Puis scannez n'importe quel QR PromptPay pour payer instantanément en bahts — à des taux bien meilleurs que les cartes ou bureaux de change." }
       },
       "ctaTitle": "Prêt à payer comme un local en Thaïlande ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans frais."
     },
     "vietnam": {
       "title": "Payer au Vietnam en tant que voyageur européen",
@@ -1556,8 +1558,8 @@
         "q4": { "q": "Pourquoi les montants en dong sont-ils si déroutants ?", "a": "Parce que 1 EUR ≈ 27 000 VND. Les transactions quotidiennes sont en millions de dongs — un repas peut coûter 85 000 VND, un hôtel 1 500 000 VND. Il faut s'habituer pour éviter les erreurs coûteuses. Lumi vous montre l'équivalent en euros en temps réel." },
         "q5": { "q": "Comment Lumi fonctionne au Vietnam ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR VietQR pour payer instantanément en dongs — à des taux proches de l'interbancaire. Pas de comptage de billets, pas de chasse au DAB, pas de confusion sur les coupures." }
       },
-      "ctaTitle": "Prêt à payer comme un local au Vietnam ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
+      "ctaTitle": "Payez comme un local au Vietnam, dès aujourd'hui.",
+      "ctaSubtitle": "Lumi est disponible au Vietnam (bêta). Rejoignez la bêta et payez comme un local dès maintenant."
     },
     "indonesia": {
       "title": "Payer en Indonésie en tant que voyageur européen",
@@ -1600,7 +1602,7 @@
         "q5": { "q": "Comment Lumi fonctionne en Indonésie ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR QRIS pour payer instantanément en roupies — à des taux proches de l'interbancaire. Marche dans n'importe lequel des 56+ millions de commerçants QRIS de l'archipel." }
       },
       "ctaTitle": "Prêt à payer comme un local en Indonésie ?",
-      "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans frais."
     }
   },
   "compare": {
@@ -1665,8 +1667,8 @@
     "bottomLineP1": "Revolut et Wise sont excellents pour les pays avec une large acceptation de la carte — Europe, États-Unis, Australie. Mais en Thaïlande, au Vietnam et en Indonésie, la majorité du commerce quotidien se passe dans des endroits sans TPE. Vendeurs de street food, chauffeurs de tuk-tuk, marchés locaux, petits cafés — c'est là que vous voulez vraiment dépenser, et aucun n'accepte votre carte Revolut.",
     "bottomLineP2": "Lumi est conçu spécifiquement pour ce besoin. Au lieu d'essayer de forcer une carte dans une économie cashless, QR-first, nous vous connectons directement aux rails de paiement locaux — PromptPay, VietQR, QRIS — utilisés par des millions de locaux chaque jour. Vous pouvez payer là où ils paient, à des taux comparables aux meilleures fintechs, sans porter de cash ni espérer un TPE.",
     "ctaTitle": "Prêt à essayer la façon plus intelligente de payer en Asie du Sud-Est ?",
-    "ctaSubtitle": "Rejoignez la liste d'attente Lumi et soyez parmi les premiers à voyager sans friction de paiement.",
-    "ctaButton": "Rejoindre la liste d'attente"
+    "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans friction de paiement.",
+    "ctaButton": "Rejoindre la bêta"
   },
   "notFound": {
     "title": "Page introuvable",
@@ -1698,13 +1700,13 @@
   "beta": {
     "seo": {
       "title": "Rejoignez la Beta Lumi — Testez l'appli avant tout le monde",
-      "description": "Aidez-nous à construire Lumi. Nous cherchons des Européens déjà au Vietnam, ou en partance dans les prochains mois, pour tester notre appli de paiement QR — accès anticipé plus 20 € de crédit."
+      "description": "Aidez-nous à construire Lumi. Nous cherchons des Européens déjà au Vietnam, ou en partance dans les prochains mois, pour tester notre appli de paiement QR — accès anticipé plus 10 € de crédit."
     },
     "eyebrow": "Programme Beta · Lancement au Vietnam",
     "title": "Aidez-nous à construire Lumi — testez l'appli avant tout le monde.",
     "intro": {
       "what": "Lumi vous permet de scanner les QR codes locaux (VietQR) et de payer comme un local au Vietnam — sans cash, sans surcharges de carte, juste des frais de change minimes. Nous lançons d'abord au Vietnam.",
-      "testing": "Nous cherchons des Européens déjà au Vietnam, ou qui y voyagent dans les prochains mois. En tant que beta testeur, vous utiliserez l'appli pour de vrais paiements, remonterez les bugs, et nous direz ce qui cloche. En échange : un accès anticipé avant le lancement public, 20 € de crédit dans l'appli, et une ligne directe avec les fondateurs.",
+      "testing": "Nous cherchons des Européens déjà au Vietnam, ou qui y voyagent dans les prochains mois. En tant que beta testeur, vous utiliserez l'appli pour de vrais paiements, remonterez les bugs, et nous direz ce qui cloche. En échange : un accès anticipé avant le lancement public, 10 € de crédit dans l'appli, et une ligne directe avec les fondateurs.",
       "commitment": "Nous visons un petit groupe de testeurs sérieux, pas des chasseurs de cadeaux. Comptez ~15 minutes par semaine pour partager vos retours pendant votre voyage. Le programme dure environ 6 semaines."
     },
     "requiredHint": "Champ requis",
@@ -1772,7 +1774,7 @@
         "maybe": "Peut-être"
       },
       "consentRequired": "J'accepte d'être contacté(e) au sujet du programme beta Lumi, et j'ai lu la",
-      "consentMarketing": "Envoyez-moi aussi les actualités produit Lumi et la newsletter de la waitlist (facultatif)."
+      "consentMarketing": "Envoyez-moi aussi les actualités produit Lumi et la newsletter de la bêta (facultatif)."
     },
     "privacyLinkLabel": "Politique de confidentialité",
     "submit": "Envoyer ma candidature",

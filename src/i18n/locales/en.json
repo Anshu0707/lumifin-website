@@ -86,6 +86,8 @@
     "vietnam": "Pay in Vietnam",
     "instagram": "Instagram",
     "linkedin": "LinkedIn",
+    "facebook": "Facebook",
+    "x": "X",
     "copyright": "© 2026 LumiFin SAS. All rights reserved.",
     "brandNote": "Lumi is a brand of Lumifin SAS, a technology provider."
   },
@@ -97,13 +99,13 @@
   },
   "waitlist": {
     "eyebrow": "Exclusive Offer",
-    "titleBefore": "Join the waitlist for",
-    "amount": "€ 20",
-    "titleAfter": "travel credit.",
-    "subtitle": "Be the first to experience Lumi and get a head start on your next adventure.",
-    "success": "Thank you for joining the waitlist!",
+    "titleBefore": "Pay like a local. Join the beta and earn",
+    "amount": "€10",
+    "titleAfter": "",
+    "subtitle": "Join the Lumi beta today and start your next trip with €10 on us.",
+    "success": "Thank you for joining the Lumi beta!",
     "emailPlaceholder": "Enter your email address",
-    "submit": "Join Waitlist",
+    "submit": "Join the beta",
     "submitting": "Submitting...",
     "error": "Something went wrong. Please try again.",
     "botFieldLabel": "Don't fill this out:"
@@ -121,8 +123,8 @@
     "titleLine2": "Local",
     "subtitle": "The QR-payment app for European travellers exploring South East Asia.",
     "viewDemo": "View Demo",
-    "joinWaitlist": "Join the Waitlist",
-    "earnBadge": "Earn €20",
+    "joinWaitlist": "Join the beta",
+    "earnBadge": "Earn €10",
     "videoTitle": "Lumi Demo Video",
     "closeVideo": "Close video"
   },
@@ -1415,7 +1417,7 @@
   "travelMoney": {
     "common": {
       "lastUpdated": "Last updated: March 2026",
-      "joinWaitlist": "Join the Waitlist",
+      "joinWaitlist": "Join the beta",
       "readGuide": "Read guide",
       "backToDestinations": "All Destinations",
       "backToHome": "Home",
@@ -1514,7 +1516,7 @@
         "q5": { "q": "How does Lumifin work in Thailand?", "a": "Download the app, verify your identity, and top up your wallet from your European bank account. Then scan any PromptPay QR code at Thai merchants to pay instantly in baht — at rates significantly better than cards or cash exchanges." }
       },
       "ctaTitle": "Ready to pay like a local in Thailand?",
-      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+      "ctaSubtitle": "Join the Lumi beta and be among the first to travel fee-free."
     },
     "vietnam": {
       "title": "Paying in Vietnam as a European Traveller",
@@ -1556,8 +1558,8 @@
         "q4": { "q": "Why are Vietnamese dong amounts so confusing?", "a": "Because 1 EUR ≈ 27,000 VND. Daily transactions are in the millions of dong — a meal might cost 85,000 VND, a hotel 1,500,000 VND. It takes practice to avoid costly mistakes. Lumifin shows you the euro equivalent in real-time." },
         "q5": { "q": "How does Lumifin work in Vietnam?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any VietQR code to pay instantly in dong — at near-interbank rates. No cash counting, no ATM hunting, no denomination confusion." }
       },
-      "ctaTitle": "Ready to pay like a local in Vietnam?",
-      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+      "ctaTitle": "Pay like a local in Vietnam, starting today.",
+      "ctaSubtitle": "Lumi is live in Vietnam (beta). Join the beta and start paying like a local right away."
     },
     "indonesia": {
       "title": "Paying in Indonesia as a European Traveller",
@@ -1600,7 +1602,7 @@
         "q5": { "q": "How does Lumifin work in Indonesia?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any QRIS code to pay instantly in rupiah — at near-interbank rates. Works at any of the 56+ million QRIS merchants across the archipelago." }
       },
       "ctaTitle": "Ready to pay like a local in Indonesia?",
-      "ctaSubtitle": "Join the Lumifin waitlist and be the first to travel fee-free."
+      "ctaSubtitle": "Join the Lumi beta and be among the first to travel fee-free."
     }
   },
   "compare": {
@@ -1665,8 +1667,8 @@
     "bottomLineP1": "Revolut and Wise are excellent for countries with widespread card acceptance — Europe, the US, Australia. But in Thailand, Vietnam, and Indonesia, the majority of daily commerce happens at places that don't have card terminals. Street food vendors, tuk-tuk drivers, local markets, small cafes — these are the places you actually want to spend money, and none of them accept your Revolut card.",
     "bottomLineP2": "Lumifin is purpose-built for this gap. Instead of trying to force a card into a cashless, QR-first economy, we connect you directly to the local payment rails — PromptPay, VietQR, QRIS — that millions of locals use every day. That means you can pay anywhere they can, at rates comparable to the best fintechs, without carrying cash or hoping for a card terminal.",
     "ctaTitle": "Ready to try the smarter way to pay in Southeast Asia?",
-    "ctaSubtitle": "Join the Lumifin waitlist and be among the first to travel without payment friction.",
-    "ctaButton": "Join the Waitlist"
+    "ctaSubtitle": "Join the Lumi beta and be among the first to travel without payment friction.",
+    "ctaButton": "Join the beta"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -1698,13 +1700,13 @@
   "beta": {
     "seo": {
       "title": "Join the Lumi Beta — Test the app before anyone else",
-      "description": "Help us build Lumi. We're looking for Europeans already in Vietnam, or travelling there in the next few months, to test our QR payment app — early access plus a €20 credit."
+      "description": "Help us build Lumi. We're looking for Europeans already in Vietnam, or travelling there in the next few months, to test our QR payment app — early access plus a €10 credit."
     },
     "eyebrow": "Beta Programme · Vietnam Launch",
     "title": "Help us build Lumi — test the app before anyone else.",
     "intro": {
       "what": "Lumi lets you scan local QR codes (VietQR) and pay like a local in Vietnam — no cash, no card surcharges, just a minimal FX fee. We're launching in Vietnam first.",
-      "testing": "We're looking for Europeans already in Vietnam, or travelling there in the next few months. As a beta tester, you'll use the app for real payments, report bugs, and tell us what feels off. In return: early access before public launch, a €20 in-app credit on us, and a direct line to the founders.",
+      "testing": "We're looking for Europeans already in Vietnam, or travelling there in the next few months. As a beta tester, you'll use the app for real payments, report bugs, and tell us what feels off. In return: early access before public launch, a €10 in-app credit on us, and a direct line to the founders.",
       "commitment": "We're aiming for a small group of serious testers, not freebie hunters. Expect ~15 minutes a week sharing feedback during your trip. The whole programme runs for about 6 weeks."
     },
     "requiredHint": "Required field",
@@ -1772,7 +1774,7 @@
         "maybe": "Maybe"
       },
       "consentRequired": "I agree to be contacted about the Lumi beta programme, and I've read the",
-      "consentMarketing": "Also send me general Lumi product updates and the waitlist newsletter (optional)."
+      "consentMarketing": "Also send me general Lumi product updates and the beta newsletter (optional)."
     },
     "privacyLinkLabel": "Privacy Policy",
     "submit": "Submit my application",
