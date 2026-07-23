@@ -66,6 +66,7 @@
     "support": "Support",
     "faq": "FAQ",
     "privacyPolicy": "Privacy Policy",
+    "deleteAccount": "Delete Account",
     "mentionsLegales": "Legal Notice",
     "cgu": "Terms of Use",
     "currencyConverter": "Currency Converter",
@@ -492,6 +493,34 @@
       "contact": "Email: privacy@lumifin.io  |  Website: <1>https://lumifin.io</1>"
     },
     "end": "— End of Privacy Policy —"
+  },
+  "deleteAccount": {
+    "seo": {
+      "title": "Delete your Lumi account",
+      "description": "How to request deletion of your Lumi account and personal data, what is deleted, and what records we are legally required to retain."
+    },
+    "eyebrow": "Account",
+    "title": "Delete your Lumi account",
+    "intro": "<1>Lumi</1> is operated by <1>Lumifin</1> (Android package <2>com.lumifin.app</2>). This page explains how to request deletion of your account and associated data.",
+    "howto": {
+      "title": "How to request account deletion",
+      "intro": "You can request deletion in either of these ways:",
+      "item1": "<1>In the app:</1> open <1>Profile → Delete Account</1> and follow the prompts.",
+      "item2": "<1>By email:</1> email <2>support@lumifin.io</2> from your <1>registered email address</1> with the subject <3>\"Account deletion request\"</3>.",
+      "outro": "We verify your identity, then process the deletion. Please <1>withdraw any remaining wallet balance before requesting deletion.</1>"
+    },
+    "deleted": {
+      "title": "What data is deleted",
+      "body": "On deletion we <1>permanently remove</1> your profile, wallet/balance history, and personal data. This is irreversible and the data cannot be recovered."
+    },
+    "retained": {
+      "title": "What data is retained, and for how long",
+      "body": "As a regulated financial service, we are legally required to retain certain transaction and identity-verification (KYC) records to comply with financial, anti-money-laundering (AML) and tax regulations. These records are kept for <1>5 years</1> after account closure, after which they are deleted. All other personal data is deleted as described above."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Questions about deletion or your data: <1>support@lumifin.io</1>. See also our <2>Privacy Policy</2>."
+    }
   },
   "mentionsLegales": {
     "seo": {

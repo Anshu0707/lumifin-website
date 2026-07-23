@@ -66,6 +66,7 @@
     "support": "Support",
     "faq": "FAQ",
     "privacyPolicy": "Politique de confidentialité",
+    "deleteAccount": "Supprimer le compte",
     "mentionsLegales": "Mentions légales",
     "cgu": "CGU",
     "currencyConverter": "Convertisseur de devises",
@@ -492,6 +493,34 @@
       "contact": "E-mail : privacy@lumifin.io  |  Site web : <1>https://lumifin.io</1>"
     },
     "end": "— Fin de la politique de confidentialité —"
+  },
+  "deleteAccount": {
+    "seo": {
+      "title": "Supprimer votre compte Lumi",
+      "description": "Comment demander la suppression de votre compte Lumi et de vos données personnelles, ce qui est supprimé et les données que nous sommes légalement tenus de conserver."
+    },
+    "eyebrow": "Compte",
+    "title": "Supprimer votre compte Lumi",
+    "intro": "<1>Lumi</1> est exploité par <1>Lumifin</1> (package Android <2>com.lumifin.app</2>). Cette page explique comment demander la suppression de votre compte et des données associées.",
+    "howto": {
+      "title": "Comment demander la suppression du compte",
+      "intro": "Vous pouvez demander la suppression de l'une des deux façons suivantes :",
+      "item1": "<1>Dans l'application :</1> ouvrez <1>Profil → Supprimer le compte</1> et suivez les instructions.",
+      "item2": "<1>Par e-mail :</1> écrivez à <2>support@lumifin.io</2> depuis votre <1>adresse e-mail enregistrée</1> avec pour objet <3>« Demande de suppression de compte »</3>.",
+      "outro": "Nous vérifions votre identité, puis nous traitons la suppression. Veuillez <1>retirer tout solde restant de votre portefeuille avant de demander la suppression.</1>"
+    },
+    "deleted": {
+      "title": "Quelles données sont supprimées",
+      "body": "Lors de la suppression, nous <1>effaçons définitivement</1> votre profil, l'historique de votre portefeuille/solde et vos données personnelles. Cette opération est irréversible et les données ne peuvent pas être récupérées."
+    },
+    "retained": {
+      "title": "Quelles données sont conservées, et pendant combien de temps",
+      "body": "En tant que service financier réglementé, nous sommes légalement tenus de conserver certains enregistrements de transactions et de vérification d'identité (KYC) afin de respecter les réglementations financières, de lutte contre le blanchiment d'argent (LCB-FT) et fiscales. Ces enregistrements sont conservés pendant <1>5 ans</1> après la fermeture du compte, après quoi ils sont supprimés. Toutes les autres données personnelles sont supprimées comme décrit ci-dessus."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Questions sur la suppression ou vos données : <1>support@lumifin.io</1>. Consultez également notre <2>Politique de confidentialité</2>."
+    }
   },
   "mentionsLegales": {
     "seo": {

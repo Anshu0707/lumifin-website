@@ -30,8 +30,10 @@ export default function Footer() {
           <h3 className="text-lg font-black mb-8">{t('footer.support')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to="/faq" className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
+            <li><Link to="/tools/currency-converter" className="hover:text-primary transition-colors">{t('footer.currencyConverter')}</Link></li>
             <li><Link to="/security" className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
             <li><Link to="/privacy" className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
+            <li><Link to="/account-deletion" className="hover:text-primary transition-colors">{t('footer.deleteAccount')}</Link></li>
             <li><Link to="/mentions-legales" className="hover:text-primary transition-colors">{t('footer.mentionsLegales')}</Link></li>
             <li><Link to="/cgu" className="hover:text-primary transition-colors">{t('footer.cgu')}</Link></li>
           </ul>

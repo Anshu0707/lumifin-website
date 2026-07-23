@@ -16,6 +16,7 @@ import LandingPage from './pages/LandingPage';
 const FAQPage = lazy(() => import('./pages/FAQPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
+const DeleteAccountPage = lazy(() => import('./pages/DeleteAccountPage'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const WhyWeBuiltLumiPage = lazy(() => import('./pages/WhyWeBuiltLumiPage'));
 const CashIsKingPage = lazy(() => import('./pages/CashIsKingPage'));
@@ -48,6 +49,8 @@ export default function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/account-deletion" element={<DeleteAccountPage />} />
+          <Route path="/delete-account" element={<DeleteAccountPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
           <Route path="/blog/cash-is-king" element={<CashIsKingPage />} />

@@ -30,6 +30,7 @@ const routes = [
   { path: '/faq', out: 'faq.html' },
   { path: '/team', out: 'team.html' },
   { path: '/privacy', out: 'privacy.html' },
+  { path: '/account-deletion', out: 'account-deletion.html' },
   { path: '/blog', out: 'blog.html' },
   { path: '/blog/why-we-built-lumi', out: 'blog/why-we-built-lumi.html' },
   { path: '/blog/cash-is-king', out: 'blog/cash-is-king.html' },
