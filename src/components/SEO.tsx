@@ -30,7 +30,10 @@ export default function SEO({
 }: SEOProps) {
   const fullTitle = title.includes('Lumifin') ? title : `${title} | Lumifin`;
   const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
-  const image = ogImage || DEFAULT_OG_IMAGE;
+  // Always emit an absolute og:image URL. Blog pages pass a root-relative path
+  // (e.g. "/assets/blog/…"); social and crawler previews require absolute URLs.
+  const rawImage = ogImage || DEFAULT_OG_IMAGE;
+  const image = rawImage.startsWith('http') ? rawImage : `${BASE_URL}${rawImage}`;
 
   const schemaArray = Array.isArray(structuredData)
     ? structuredData
@@ -95,8 +98,10 @@ export const organizationSchema = {
     addressCountry: 'FR',
   },
   sameAs: [
-    'https://www.linkedin.com/company/lumifin',
-    'https://www.instagram.com/lumifin.io',
+    'https://www.linkedin.com/company/lumifin1/',
+    'https://www.instagram.com/lumifin.io/',
+    'https://www.facebook.com/profile.php?id=61590998865526',
+    'https://x.com/getlumifin',
   ],
 };
 
@@ -115,7 +120,7 @@ export const softwareApplicationSchema = {
   applicationSubCategory: 'Mobile Payment',
   operatingSystem: 'iOS, Android',
   description:
-    'Mobile payment app for European travellers in Southeast Asia. Pay at any local merchant by scanning their QR code (PromptPay, VietQR, QRIS) directly from a EUR account, with zero hidden fees and no FX markup.',
+    'Mobile payment app for European travellers in Southeast Asia. Pay at any local merchant by scanning their QR code (PromptPay, VietQR, QRIS) directly from a EUR account. A single 2% flat fee, with no FX markup and no other charges. Live in beta in Vietnam, with Thailand and Indonesia coming soon.',
   url: BASE_URL,
   publisher: {
     '@type': 'Organization',
@@ -126,8 +131,8 @@ export const softwareApplicationSchema = {
     '@type': 'Offer',
     price: '0',
     priceCurrency: 'EUR',
-    availability: 'https://schema.org/PreOrder',
-    description: 'Free to join the waitlist',
+    availability: 'https://schema.org/LimitedAvailability',
+    description: 'Free to download. Transactions carry a single 2% flat fee, with no FX markup and no other charges. Currently in beta in Vietnam.',
   },
   inLanguage: ['fr', 'en'],
 };

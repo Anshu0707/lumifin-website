@@ -40,7 +40,10 @@ export default function SecurityPage() {
               {t('security.eyebrow')}
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 leading-[0.9]">
-              {t('security.titleBefore')} <span className="text-primary italic">{t('security.titleHighlight')}</span>.
+              <span className="sr-only">{t('security.h1Keyword')}</span>
+              <span aria-hidden="true">
+                {t('security.titleBefore')} <span className="text-primary italic">{t('security.titleHighlight')}</span>.
+              </span>
             </h1>
             <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
               {t('security.subtitle')}

@@ -121,6 +121,7 @@
     "badge": "Le paiement voyage, réinventé",
     "titleLine1": "Payez comme un",
     "titleLine2": "Local",
+    "h1Keyword": "Payez par QR code en Asie du Sud-Est, sans compte local",
     "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
     "joinWaitlist": "Rejoindre la bêta",
@@ -1403,6 +1404,7 @@
       "description": "Chiffrement de niveau bancaire, authentification à deux facteurs, conformité RGPD, infrastructure régulée. Comment Lumi sécurise vos paiements et vos données."
     },
     "eyebrow": "Confiance et sécurité",
+    "h1Keyword": "Comment Lumi protège votre argent et vos données : chiffrement, 2FA et partenaires régulés",
     "titleBefore": "Votre argent est en",
     "titleHighlight": "sécurité",
     "subtitle": "Nous utilisons une sécurité de niveau bancaire pour protéger chaque transaction et chaque octet de vos données personnelles.",
@@ -1424,11 +1426,11 @@
     "regulatoryBody": "LumiFin SAS est immatriculée en France et opère en conformité avec les réglementations financières européennes applicables. Notre traitement des paiements est assuré par des partenaires financiers agréés et réglementés. Nous nous engageons à maintenir les normes les plus élevées en matière de lutte contre le blanchiment d'argent (LCB) et de connaissance du client (KYC).",
     "reportTitle": "Signaler un problème de sécurité",
     "reportBody": "Si vous découvrez une vulnérabilité de sécurité potentielle, veuillez la signaler de manière responsable à",
-    "lastUpdated": "Dernière mise à jour : mars 2026"
+    "lastUpdated": "Dernière mise à jour : juillet 2026"
   },
   "travelMoney": {
     "common": {
-      "lastUpdated": "Dernière mise à jour : mars 2026",
+      "lastUpdated": "Dernière mise à jour : juillet 2026",
       "joinWaitlist": "Rejoindre la bêta",
       "readGuide": "Lire le guide",
       "backToDestinations": "Toutes les destinations",

@@ -859,8 +859,11 @@ export default function LandingPage() {
             {t("hero.badge")}
           </span>
           <h1 className="text-7xl md:text-[110px] font-black text-white text-editorial leading-[0.85] mb-10 tracking-tighter">
-            {t("hero.titleLine1")} <br />
-            <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
+            <span className="sr-only">{t("hero.h1Keyword")}</span>
+            <span aria-hidden="true">
+              {t("hero.titleLine1")} <br />
+              <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
             {t("hero.subtitle")}

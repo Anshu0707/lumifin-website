@@ -1,16 +1,16 @@
-# Lumifin
+# Lumi
 
-> Lumifin is a French fintech that lets European travellers pay like a local in Southeast Asia by scanning local QR codes (PromptPay in Thailand, VietQR in Vietnam, QRIS in Indonesia) directly from a EUR account, with zero hidden fees and no FX markup.
+> Lumi is a French fintech app that lets European travellers pay like a local in Southeast Asia by scanning local QR codes (PromptPay in Thailand, VietQR in Vietnam, QRIS in Indonesia) directly from a EUR account. Pricing is a single 2% flat fee, with no FX markup and no other charges.
 
-Lumifin is operated by LumiFin SAS, headquartered at 50 rue Anatole France, 92290 Châtenay-Malabry, France. The product is currently waitlist-only and aimed at Europeans travelling to Thailand, Vietnam, and Indonesia.
+Lumi is the product; the company behind it is Lumifin (legal entity LumiFin SAS), headquartered at 50 rue Anatole France, 92290 Châtenay-Malabry, France. Lumi is currently live in beta in Vietnam (access by direct link, not yet a public app-store listing), with Thailand and Indonesia coming soon. It is aimed at EU/EEA residents with a personal Euro (SEPA) bank account.
 
 ## Key pages
 
-- [Home](https://lumifin.io/): Product overview, hero, waitlist signup
+- [Home](https://lumifin.io/): Product overview, hero, beta signup
 - [FAQ](https://lumifin.io/faq): How QR payments work, fees, supported countries, security, account onboarding
-- [Team](https://lumifin.io/team): Founders and team behind Lumifin
+- [Team](https://lumifin.io/team): Founders and team behind Lumi
 - [Security](https://lumifin.io/security): Bank-grade encryption, GDPR compliance, two-factor authentication
-- [Compare](https://lumifin.io/compare): How Lumifin differs from Revolut, Wise, and traditional bank cards
+- [Compare](https://lumifin.io/compare): How Lumi differs from Revolut, Wise, and traditional bank cards
 - [Careers](https://lumifin.io/careers): Open roles
 - [Privacy](https://lumifin.io/privacy): GDPR-compliant privacy policy
 

@@ -121,6 +121,7 @@
     "badge": "Redefining SOUTH EAST Asia Travel",
     "titleLine1": "Pay Like a",
     "titleLine2": "Local",
+    "h1Keyword": "Pay by QR code across Southeast Asia, no local account needed",
     "subtitle": "The QR-payment app for European travellers exploring South East Asia.",
     "viewDemo": "View Demo",
     "joinWaitlist": "Join the beta",
@@ -1403,6 +1404,7 @@
       "description": "Bank-grade encryption, two-factor authentication, GDPR compliance, and regulated infrastructure. Learn how Lumi keeps your payments and personal data safe."
     },
     "eyebrow": "Trust & Security",
+    "h1Keyword": "How Lumi keeps your money and data safe: encryption, 2FA and regulated partners",
     "titleBefore": "Your money is",
     "titleHighlight": "safe",
     "subtitle": "We use bank-grade security to protect every transaction and every byte of your personal data.",
@@ -1424,11 +1426,11 @@
     "regulatoryBody": "Lumifin SAS is registered in France and operates in compliance with applicable European financial regulations. Our payment processing is handled through licensed and regulated financial partners. We are committed to maintaining the highest standards of anti-money laundering (AML) and know-your-customer (KYC) procedures.",
     "reportTitle": "Report a Security Issue",
     "reportBody": "If you discover a potential security vulnerability, please report it responsibly to",
-    "lastUpdated": "Last updated: March 2026"
+    "lastUpdated": "Last updated: July 2026"
   },
   "travelMoney": {
     "common": {
-      "lastUpdated": "Last updated: March 2026",
+      "lastUpdated": "Last updated: July 2026",
       "joinWaitlist": "Join the beta",
       "readGuide": "Read guide",
       "backToDestinations": "All Destinations",
