@@ -885,6 +885,10 @@ export default function LandingPage() {
               {t("hero.joinWaitlist")}
             </button>
           </div>
+          <div className="mt-8 flex items-center justify-center gap-2 text-white/70">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 text-white font-black text-sm">€</span>
+            <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+          </div>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
           <ChevronDown className="text-white w-8 h-8" />

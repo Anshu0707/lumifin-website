@@ -51,9 +51,30 @@ const featureSections: { categoryKey: string; rows: Row[] }[] = [
 ];
 
 function CellValue({ value, t }: { value: CellVal; t: (k: string) => string }) {
-  if (value === true) return <Check className="w-5 h-5 text-green-500 mx-auto" />;
-  if (value === false) return <XIcon className="w-5 h-5 text-slate-300 mx-auto" />;
-  if (value === 'partial') return <Minus className="w-5 h-5 text-amber-400 mx-auto" />;
+  if (value === true) {
+    return (
+      <span className="inline-flex items-center justify-center gap-1.5 text-green-600 font-semibold text-sm">
+        <Check className="w-4 h-4" aria-hidden="true" />
+        {t('compare.yes')}
+      </span>
+    );
+  }
+  if (value === false) {
+    return (
+      <span className="inline-flex items-center justify-center gap-1.5 text-slate-400 font-semibold text-sm">
+        <XIcon className="w-4 h-4" aria-hidden="true" />
+        {t('compare.no')}
+      </span>
+    );
+  }
+  if (value === 'partial') {
+    return (
+      <span className="inline-flex items-center justify-center gap-1.5 text-amber-500 font-semibold text-sm">
+        <Minus className="w-4 h-4" aria-hidden="true" />
+        {t('compare.partial')}
+      </span>
+    );
+  }
   return <span className="text-sm font-medium text-slate-700">{t(`compare.values.${value}`)}</span>;
 }
 

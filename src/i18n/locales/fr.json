@@ -102,7 +102,7 @@
     "titleBefore": "Payez comme un local. Rejoignez la bêta et gagnez",
     "amount": "10 €",
     "titleAfter": "",
-    "subtitle": "Rejoignez la bêta Lumi dès aujourd'hui et commencez votre prochain voyage avec 10 € offerts.",
+    "subtitle": "Rejoignez la bêta Lumi dès aujourd'hui et commencez votre prochain voyage avec 10 € offerts.*",
     "success": "Merci de rejoindre la bêta Lumi !",
     "emailPlaceholder": "Saisissez votre adresse e-mail",
     "submit": "Rejoindre la bêta",
@@ -124,15 +124,17 @@
     "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
     "joinWaitlist": "Rejoindre la bêta",
-    "earnBadge": "Gagnez 10 €",
+    "earnBadge": "Gagnez 10 €*",
+    "sepaBadge": "Pour les résidents disposant d'un compte bancaire personnel en euros (SEPA).",
+    "creditTerms": "*Conditions générales applicables. Le crédit de 10 € est soumis à conditions d'éligibilité et à la vérification du compte.",
     "videoTitle": "Vidéo de démo Lumi",
     "closeVideo": "Fermer la vidéo"
   },
   "coverage": {
     "eyebrow": "Réseau régional",
     "title": "6 pays. Une seule app.",
-    "descPrefix": "De la street food de Bangkok aux boutiques du Vietnam, Lumi garantit que vos paiements aboutissent toujours.",
-    "comingSoon": "BIENTÔT DISPONIBLE DANS",
+    "descPrefix": "Disponible au Vietnam dès maintenant (bêta), avec la Thaïlande et l'Indonésie qui arrivent bientôt — et la Malaisie, le Cambodge et les Philippines à venir.",
+    "comingSoon": "NOTRE FEUILLE DE ROUTE RÉGIONALE",
     "liveBadge": "Disponible (bêta)",
     "comingSoonBadge": "Bientôt disponible",
     "countries": {
@@ -782,7 +784,15 @@
     },
     "q18": {
       "question": "Qui peut s'inscrire sur Lumi ?",
-      "answer": "Lumi est actuellement ouvert aux résidents de l'UE et de l'EEE titulaires d'un compte bancaire SEPA à leur nom. Cela couvre 30 pays : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie et Suède."
+      "answer": "Lumi est actuellement ouvert aux résidents de l'UE et de l'EEE titulaires d'un compte bancaire SEPA à leur nom. Cela couvre 30 pays : Allemagne, Autriche, Belgique, Bulgarie, Chypre, Croatie, Danemark, Espagne, Estonie, Finlande, France, Grèce, Hongrie, Irlande, Islande, Italie, Lettonie, Liechtenstein, Lituanie, Luxembourg, Malte, Norvège, Pays-Bas, Pologne, Portugal, République tchèque, Roumanie, Slovaquie, Slovénie et Suède. Le Royaume-Uni et la Suisse ne figurent pas sur cette liste et ne sont pas encore pris en charge, même s'ils sont géographiquement proches de l'Europe."
+    },
+    "q19": {
+      "question": "Puis-je recharger avec une carte de crédit ou de débit ?",
+      "answer": "Pas encore. Pour le moment, Lumi fonctionne par virement SEPA ou open banking depuis un compte bancaire européen. Les recharges par carte de crédit et de débit arrivent bientôt."
+    },
+    "q20": {
+      "question": "Les touristes peuvent-ils utiliser Wise pour scanner les QR codes PromptPay en Thaïlande ?",
+      "answer": "Depuis mai 2026, l'entité thaïlandaise de Wise propose le paiement par scan PromptPay — mais uniquement pour les clients résidant en Thaïlande, et non pour les voyageurs de l'UE utilisant leur compte d'origine. Pour un visiteur européen en voyage, cela ne fonctionne donc pas. Lumi est conçu spécifiquement pour les voyageurs résidents de l'UE : rechargez depuis votre compte bancaire européen et scannez PromptPay, VietQR ou QRIS où que vous alliez."
     }
   },
   "blogPosts": {
@@ -1496,7 +1506,7 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (quand accepté)" },
         "atm": { "method": "Retrait DAB", "fee": "5,50 €+ par retrait", "rate": "Interbancaire + marge", "speed": "5–10 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2 % de frais fixes", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
       "howTitle": "Comment Lumi fonctionne en Thaïlande",
       "steps": {
@@ -1544,7 +1554,7 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (rare acceptation)" },
         "atm": { "method": "Retrait DAB", "fee": "0,80–2 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–8 % d'écart", "rate": "Variable selon lieu", "speed": "15–30 min" },
-        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2 % de frais fixes", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
       "howTitle": "Comment Lumi fonctionne au Vietnam",
       "steps": {
@@ -1587,7 +1597,7 @@
         "card": { "method": "Carte de débit européenne", "fee": "1,5–3 %", "rate": "Marge de la banque", "speed": "Instantané (acceptation limitée)" },
         "atm": { "method": "Retrait DAB", "fee": "1,70–2,80 € + frais banque", "rate": "Interbancaire + marge", "speed": "10–20 min (trouver DAB)" },
         "cash": { "method": "Bureau de change", "fee": "3–10 % d'écart", "rate": "Très variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumi", "fee": "À partir de 0,5 %", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2 % de frais fixes", "rate": "Proche interbancaire", "speed": "Instantané (scan QR)" }
       },
       "howTitle": "Comment Lumi fonctionne en Indonésie",
       "steps": {
@@ -1613,7 +1623,7 @@
     "titleHighlight": "les autres",
     "subtitle": "Revolut et Wise sont d'excellents produits — mais ils n'ont pas été conçus pour payer dans un stand de street food thaïlandais ou un warung balinais. Voici comment les options se comparent vraiment pour voyager en Asie du Sud-Est.",
     "disclaimer": "* Les frais Revolut varient selon le forfait (Standard, Plus, Premium, Metal). Le change gratuit a des plafonds mensuels sur les forfaits Standard. Tarifs en mars 2026.",
-    "lastUpdated": "Dernière mise à jour : mars 2026. Informations basées sur les tarifs publics. Vérifiez les tarifs actuels sur le site de chaque fournisseur.",
+    "lastUpdated": "Dernière mise à jour : juillet 2026. Informations basées sur les tarifs publics. Vérifiez les tarifs actuels sur le site de chaque fournisseur.",
     "headers": {
       "feature": "Caractéristique",
       "lumifin": "Lumi",
@@ -1626,6 +1636,9 @@
       "coverage": "Couverture Asie du Sud-Est",
       "ux": "Expérience utilisateur"
     },
+    "yes": "Oui",
+    "no": "Non",
+    "partial": "Partiel",
     "rows": {
       "transactionFee": "Frais de transaction",
       "exchangeRate": "Taux de change",
@@ -1702,7 +1715,7 @@
   "beta": {
     "seo": {
       "title": "Rejoignez la Beta Lumi — Testez l'appli avant tout le monde",
-      "description": "Aidez-nous à construire Lumi. Nous cherchons des Européens déjà au Vietnam, ou en partance dans les prochains mois, pour tester notre appli de paiement QR — accès anticipé plus 10 € de crédit."
+      "description": "Aidez-nous à construire Lumi. Nous cherchons des Européens déjà au Vietnam, ou en partance dans les prochains mois, pour tester notre appli de paiement QR — accès anticipé plus 10 € de crédit.*"
     },
     "eyebrow": "Programme Beta · Lancement au Vietnam",
     "title": "Aidez-nous à construire Lumi — testez l'appli avant tout le monde.",

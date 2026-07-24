@@ -102,7 +102,7 @@
     "titleBefore": "Pay like a local. Join the beta and earn",
     "amount": "€10",
     "titleAfter": "",
-    "subtitle": "Join the Lumi beta today and start your next trip with €10 on us.",
+    "subtitle": "Join the Lumi beta today and start your next trip with €10 on us.*",
     "success": "Thank you for joining the Lumi beta!",
     "emailPlaceholder": "Enter your email address",
     "submit": "Join the beta",
@@ -124,15 +124,17 @@
     "subtitle": "The QR-payment app for European travellers exploring South East Asia.",
     "viewDemo": "View Demo",
     "joinWaitlist": "Join the beta",
-    "earnBadge": "Earn €10",
+    "earnBadge": "Earn €10*",
+    "sepaBadge": "For residents with a personal Euro (SEPA) bank account.",
+    "creditTerms": "*Terms & conditions apply. €10 credit is subject to eligibility and account verification.",
     "videoTitle": "Lumi Demo Video",
     "closeVideo": "Close video"
   },
   "coverage": {
     "eyebrow": "Regional Network",
     "title": "6 Countries. One App.",
-    "descPrefix": "From the street food of Bangkok to the boutiques of Vietnam, LumiFin ensures your payments never fail.",
-    "comingSoon": "COMING SOON IN",
+    "descPrefix": "Live in Vietnam now (beta), with Thailand and Indonesia coming soon — and Malaysia, Cambodia and the Philippines on the way.",
+    "comingSoon": "OUR REGIONAL ROADMAP",
     "liveBadge": "Live (beta)",
     "comingSoonBadge": "Coming soon",
     "countries": {
@@ -738,11 +740,11 @@
     },
     "q7": {
       "question": "How do I add money to my Lumi wallet?",
-      "answer": "You can add funds through supported payment methods directly within the app. Credit tranfers and direct connections with European bank accounts are supported. The process is simple and most deposits are completed instantly."
+      "answer": "You can add funds through supported payment methods directly within the app. Credit transfers and direct connections with European bank accounts are supported. The process is simple and most deposits are completed instantly."
     },
     "q8": {
       "question": "How long do payments take?",
-      "answer": "Payments are processed in seconds once confirmed, provided you have an active internet connection. You and the merchant receive the payment confirmation in realt time."
+      "answer": "Payments are processed in seconds once confirmed, provided you have an active internet connection. You and the merchant receive the payment confirmation in real time."
     },
     "q9": {
       "question": "Is Lumi secure?",
@@ -782,7 +784,15 @@
     },
     "q18": {
       "question": "Who can sign up for Lumi?",
-      "answer": "Lumi is currently open to residents of the EU and EEA who hold a SEPA-zone bank account in their own name. That covers 30 countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain and Sweden."
+      "answer": "Lumi is currently open to EU and EEA residents with a SEPA bank account in their own name. That covers 30 countries: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, and Sweden. The UK and Switzerland are not on this list and aren't supported yet, even though they're geographically close to Europe."
+    },
+    "q19": {
+      "question": "Can I top up with a credit or debit card?",
+      "answer": "Not yet. Right now, Lumi works with SEPA transfer or open banking from a European bank account. Credit and debit card top-ups are coming soon."
+    },
+    "q20": {
+      "question": "Can tourists use Wise to scan PromptPay QR codes in Thailand?",
+      "answer": "As of May 2026, Wise's Thai entity offers PromptPay scan-and-pay — but only for customers resident in Thailand, not for EU travellers using their home account. So for a European visitor on a trip, this doesn't help. Lumi is built specifically for EU-resident travellers: top up from your European bank account and scan PromptPay, VietQR or QRIS wherever you go."
     }
   },
   "blogPosts": {
@@ -1496,7 +1506,7 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (where accepted)" },
         "atm": { "method": "ATM withdrawal", "fee": "€5.50+ per withdrawal", "rate": "Interbank + markup", "speed": "5–10 min (find ATM)" },
         "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies wildly", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
       "howTitle": "How Lumifin works in Thailand",
       "steps": {
@@ -1544,7 +1554,7 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (rare acceptance)" },
         "atm": { "method": "ATM withdrawal", "fee": "€0.80–€2 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
         "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies by location", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
       "howTitle": "How Lumifin works in Vietnam",
       "steps": {
@@ -1587,7 +1597,7 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (limited acceptance)" },
         "atm": { "method": "ATM withdrawal", "fee": "€1.70–€2.80 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
         "cash": { "method": "Money changer", "fee": "3–10% spread", "rate": "Highly variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "From 0.5%", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
       "howTitle": "How Lumifin works in Indonesia",
       "steps": {
@@ -1613,7 +1623,7 @@
     "titleHighlight": "the rest",
     "subtitle": "Revolut and Wise are great products — but they weren't built for paying at a Thai street food stall or a Balinese warung. Here's how the options actually compare for Southeast Asia travel.",
     "disclaimer": "* Revolut fees vary by plan (Standard, Plus, Premium, Metal). Free FX has monthly limits on Standard plans. Rates as of March 2026.",
-    "lastUpdated": "Last updated: March 2026. Information based on publicly available pricing. Verify current rates on each provider's website.",
+    "lastUpdated": "Last updated: July 2026. Information based on publicly available pricing. Verify current rates on each provider's website.",
     "headers": {
       "feature": "Feature",
       "lumifin": "Lumifin",
@@ -1626,6 +1636,9 @@
       "coverage": "Southeast Asia Coverage",
       "ux": "User Experience"
     },
+    "yes": "Yes",
+    "no": "No",
+    "partial": "Partial",
     "rows": {
       "transactionFee": "Transaction fee",
       "exchangeRate": "Exchange rate",
@@ -1702,7 +1715,7 @@
   "beta": {
     "seo": {
       "title": "Join the Lumi Beta — Test the app before anyone else",
-      "description": "Help us build Lumi. We're looking for Europeans already in Vietnam, or travelling there in the next few months, to test our QR payment app — early access plus a €10 credit."
+      "description": "Help us build Lumi. We're looking for Europeans already in Vietnam, or travelling there in the next few months, to test our QR payment app — early access plus a €10 credit.*"
     },
     "eyebrow": "Beta Programme · Vietnam Launch",
     "title": "Help us build Lumi — test the app before anyone else.",

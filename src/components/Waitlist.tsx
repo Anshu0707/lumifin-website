@@ -60,6 +60,10 @@ export default function Waitlist() {
           <p className="text-xl text-slate-500 font-medium leading-relaxed">
             {t("waitlist.subtitle")}
           </p>
+          <div className="flex items-center justify-center gap-2 text-slate-500">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">€</span>
+            <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+          </div>
 
           {status === "success" ? (
             <p className="text-primary font-bold text-xl mt-12">
@@ -103,6 +107,9 @@ export default function Waitlist() {
               )}
             </form>
           )}
+          <p className="text-xs text-slate-400 font-medium max-w-2xl mx-auto pt-2">
+            {t("hero.creditTerms")}
+          </p>
         </motion.div>
       </div>
     </section>

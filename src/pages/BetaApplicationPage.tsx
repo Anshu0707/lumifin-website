@@ -180,6 +180,9 @@ export default function BetaApplicationPage() {
                 <p className="text-base text-slate-500 font-medium leading-relaxed italic">
                   {t('beta.intro.commitment')}
                 </p>
+                <p className="text-xs text-slate-400 font-medium leading-relaxed">
+                  {t('hero.creditTerms')}
+                </p>
               </motion.div>
 
               <motion.form
