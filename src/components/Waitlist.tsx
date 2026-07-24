@@ -1,11 +1,24 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+import { Apple, Play } from "lucide-react";
+
+// App download links (shown after a successful signup).
+const IOS_TESTFLIGHT_URL = "https://testflight.apple.com/join/vbVZTdTn";
+const ANDROID_PLAY_URL = "https://play.google.com/store/apps/details?id=com.lumifin.app";
 
 export default function Waitlist() {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const { t } = useTranslation();
+
+  // On localhost there is no Netlify form handler, so the POST can't succeed.
+  // Let local previews still reach the download screen; the live site stays strict.
+  const isLocalhost =
+    typeof window !== "undefined" &&
+    /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -17,18 +30,19 @@ export default function Waitlist() {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams({
           "form-name": "waitlist",
+          name,
+          phone,
           email,
         }).toString(),
       });
 
-      if (response.ok) {
+      if (response.ok || isLocalhost) {
         setStatus("success");
-        setEmail("");
       } else {
         setStatus("error");
       }
     } catch {
-      setStatus("error");
+      setStatus(isLocalhost ? "success" : "error");
     }
   };
 
@@ -66,9 +80,45 @@ export default function Waitlist() {
           </div>
 
           {status === "success" ? (
-            <p className="text-primary font-bold text-xl mt-12">
-              {t("waitlist.success")}
-            </p>
+            <div className="mt-12 space-y-8">
+              <div className="space-y-3">
+                <h3 className="text-3xl font-black text-slate-900">{t("waitlist.downloadTitle")}</h3>
+                <p className="text-lg text-slate-500 font-medium max-w-xl mx-auto">
+                  {t("waitlist.downloadSubtitle")}
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+                <a
+                  href={IOS_TESTFLIGHT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-8 py-5 rounded-2xl font-black text-lg shadow-xl hover:-translate-y-1 transition-all"
+                >
+                  <Apple className="w-6 h-6" aria-hidden="true" />
+                  {t("waitlist.downloadIos")}
+                </a>
+                <a
+                  href={ANDROID_PLAY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-3 hero-gradient text-white px-8 py-5 rounded-2xl font-black text-lg shadow-xl shadow-primary/30 hover:-translate-y-1 transition-all"
+                >
+                  <Play className="w-6 h-6" aria-hidden="true" />
+                  {t("waitlist.downloadAndroid")}
+                </a>
+              </div>
+              <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto bg-white/60 border border-slate-200 rounded-2xl px-6 py-4">
+                {t("waitlist.redemptionNote")}
+              </p>
+              <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto">
+                <Trans
+                  i18nKey="waitlist.reachOut"
+                  components={{
+                    1: <a href="mailto:info@lumifin.io" className="text-primary font-bold hover:underline" />,
+                  }}
+                />
+              </p>
+            </div>
           ) : (
             <form
               name="waitlist"
@@ -76,7 +126,7 @@ export default function Waitlist() {
               data-netlify="true"
               netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto mt-12"
+              className="flex flex-col gap-4 max-w-xl mx-auto mt-12"
             >
               <input type="hidden" name="form-name" value="waitlist" />
               <p className="hidden">
@@ -85,13 +135,31 @@ export default function Waitlist() {
                 </label>
               </p>
               <input
+                type="text"
+                name="name"
+                placeholder={t("waitlist.namePlaceholder")}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+              />
+              <input
+                type="tel"
+                name="phone"
+                placeholder={t("waitlist.phonePlaceholder")}
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
+                required
+                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+              />
+              <input
                 type="email"
                 name="email"
                 placeholder={t("waitlist.emailPlaceholder")}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
               />
               <button
                 type="submit"
@@ -101,15 +169,17 @@ export default function Waitlist() {
                 {status === "submitting" ? t("waitlist.submitting") : t("waitlist.submit")}
               </button>
               {status === "error" && (
-                <p className="text-red-500 font-medium text-sm mt-2 sm:mt-0 sm:self-center">
+                <p className="text-red-500 font-medium text-sm">
                   {t("waitlist.error")}
                 </p>
               )}
             </form>
           )}
-          <p className="text-xs text-slate-400 font-medium max-w-2xl mx-auto pt-2">
-            {t("hero.creditTerms")}
-          </p>
+          {status !== "success" && (
+            <p className="text-xs text-slate-400 font-medium max-w-2xl mx-auto pt-2">
+              {t("hero.creditTerms")}
+            </p>
+          )}
         </motion.div>
       </div>
     </section>

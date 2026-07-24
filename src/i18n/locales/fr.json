@@ -104,11 +104,19 @@
     "titleAfter": "",
     "subtitle": "Rejoignez la bêta Lumi dès aujourd'hui et commencez votre prochain voyage avec 10 € offerts.*",
     "success": "Merci de rejoindre la bêta Lumi !",
+    "namePlaceholder": "Votre nom",
+    "phonePlaceholder": "Votre numéro de téléphone",
     "emailPlaceholder": "Saisissez votre adresse e-mail",
     "submit": "Rejoindre la bêta",
     "submitting": "Envoi en cours...",
     "error": "Une erreur est survenue. Veuillez réessayer.",
-    "botFieldLabel": "Ne remplissez pas ce champ :"
+    "botFieldLabel": "Ne remplissez pas ce champ :",
+    "downloadTitle": "C'est fait ! Téléchargez Lumi",
+    "downloadSubtitle": "Merci de rejoindre la bêta. Téléchargez l'application ci-dessous et commencez à payer comme un local.",
+    "downloadIos": "Télécharger pour iPhone (TestFlight)",
+    "downloadAndroid": "Télécharger pour Android",
+    "redemptionNote": "Une fois votre compte créé et votre vérification KYC terminée, vous recevrez un code promo par e-mail. Rendez-vous dans la section Profil de l'application pour l'utiliser.",
+    "reachOut": "N'hésitez pas non plus à nous écrire à <1>info@lumifin.io</1> — nous serons ravis de vous aider."
   },
   "landing": {
     "seo": {
