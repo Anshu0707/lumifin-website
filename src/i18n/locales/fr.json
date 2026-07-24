@@ -521,7 +521,7 @@
     },
     "retained": {
       "title": "Quelles données sont conservées, et pendant combien de temps",
-      "body": "En tant que service financier réglementé, nous sommes légalement tenus de conserver certains enregistrements de transactions et de vérification d'identité (KYC) afin de respecter les réglementations financières, de lutte contre le blanchiment d'argent (LCB-FT) et fiscales. Ces enregistrements sont conservés pendant <1>5 ans</1> après la fermeture du compte, après quoi ils sont supprimés. Toutes les autres données personnelles sont supprimées comme décrit ci-dessus."
+      "body": "En tant que service financier réglementé, nous sommes légalement tenus de conserver certains enregistrements de transactions et de vérification d'identité (KYC) afin de respecter les réglementations financières, de lutte contre le blanchiment d'argent (LCB-FT) et fiscales. Ces enregistrements sont conservés pendant <1>la durée minimale requise par la loi applicable</1>, après quoi ils sont supprimés. Toutes les autres données personnelles sont supprimées comme décrit ci-dessus."
     },
     "contact": {
       "title": "Contact",

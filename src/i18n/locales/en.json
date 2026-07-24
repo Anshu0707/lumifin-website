@@ -521,7 +521,7 @@
     },
     "retained": {
       "title": "What data is retained, and for how long",
-      "body": "As a regulated financial service, we are legally required to retain certain transaction and identity-verification (KYC) records to comply with financial, anti-money-laundering (AML) and tax regulations. These records are kept for <1>5 years</1> after account closure, after which they are deleted. All other personal data is deleted as described above."
+      "body": "As a regulated financial service, we are legally required to retain certain transaction and identity-verification (KYC) records to comply with financial, anti-money-laundering (AML) and tax regulations. These records are kept for <1>the minimum period required by applicable law</1>, after which they are deleted. All other personal data is deleted as described above."
     },
     "contact": {
       "title": "Contact",
