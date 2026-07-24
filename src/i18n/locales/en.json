@@ -112,8 +112,8 @@
   },
   "landing": {
     "seo": {
-      "title": "Lumifin — Pay Like a Local in Southeast Asia",
-      "description": "Travel to Thailand, Vietnam and Indonesia without cash or card fees. Scan local QR codes and pay instantly with Lumifin. Zero hidden fees."
+      "title": "Lumi — Pay Like a Local in Southeast Asia",
+      "description": "Travel to Thailand, Vietnam and Indonesia without cash or card fees. Scan local QR codes and pay instantly with Lumi. Zero hidden fees."
     }
   },
   "hero": {
@@ -246,12 +246,12 @@
     "faqTitle": "Pricing Questions",
     "faqs": {
       "q1": {
-        "question": "Are there any hidden fees with Lumifin?",
+        "question": "Are there any hidden fees with Lumi?",
         "answer": "No. You pay a transparent 2% fee on each transaction — that's it. No subscription fees, no withdrawal charges, no currency conversion markups. The rate you see is the rate you get."
       },
       "q2": {
-        "question": "How does Lumifin's rate compare to my bank?",
-        "answer": "European banks typically charge 1.5–3% in foreign transaction fees plus a currency markup of 2–5%. With airport exchanges, the spread can reach 8–10%. Lumifin uses near-interbank rates with a single 2% fee, saving you up to €120 per €1,000 spent compared to the worst alternatives."
+        "question": "How does Lumi's rate compare to my bank?",
+        "answer": "European banks typically charge 1.5–3% in foreign transaction fees plus a currency markup of 2–5%. With airport exchanges, the spread can reach 8–10%. Lumi uses near-interbank rates with a single 2% fee, saving you up to €120 per €1,000 spent compared to the worst alternatives."
       },
       "q3": {
         "question": "Is there a minimum or maximum amount I can pay?",
@@ -301,8 +301,8 @@
   },
   "team": {
     "seo": {
-      "title": "About Us — Meet the Team Behind Lumifin",
-      "description": "Meet the team building Lumifin: bankers, engineers, and travellers dedicated to making cross-border payments simple for Europeans in Southeast Asia."
+      "title": "About Us — Meet the Team Behind Lumi",
+      "description": "Meet the team building Lumi: bankers, engineers, and travellers dedicated to making cross-border payments simple for Europeans in Southeast Asia."
     },
     "eyebrow": "The Minds Behind Lumi",
     "titleBefore": "Meet the",
@@ -327,7 +327,7 @@
   "faqPage": {
     "seo": {
       "title": "FAQ — Frequently Asked Questions",
-      "description": "Everything you need to know about Lumifin: how QR payments work, fees, supported countries, security, and getting started."
+      "description": "Everything you need to know about Lumi: how QR payments work, fees, supported countries, security, and getting started."
     },
     "backHome": "Back to Home",
     "eyebrow": "Support & Information",
@@ -381,7 +381,7 @@
       },
       "bestCardsVietnam": {
         "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
-        "excerpt": "Wise, Revolut, N26, Monzo, cash or Lumifin? The smartest 2026 setup isn't one perfect card — it's a stack. Here's what to actually bring.",
+        "excerpt": "Wise, Revolut, N26, Monzo, cash or Lumi? The smartest 2026 setup isn't one perfect card — it's a stack. Here's what to actually bring.",
         "date": "June 15, 2026"
       },
       "digitalNomadVisas": {
@@ -391,12 +391,12 @@
       },
       "hanoiFounderNote": {
         "title": "I Came to Hanoi to Test Our Product. I Left More Convicted Than Ever.",
-        "excerpt": "After months of building Lumifin behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to test the product firsthand — and found the strongest lessons outside the roadmap.",
+        "excerpt": "After months of building Lumi behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to test the product firsthand — and found the strongest lessons outside the roadmap.",
         "date": "July 6, 2026"
       },
       "daNangPressRelease": {
         "title": "Why We Chose Da Nang",
-        "excerpt": "Lumifin has picked Da Nang as the launch community for its euro-wallet rollout across Southeast Asia. Here's why — and how remote workers can help shape it.",
+        "excerpt": "Lumi has picked Da Nang as the launch community for its euro-wallet rollout across Southeast Asia. Here's why — and how remote workers can help shape it.",
         "date": "July 10, 2026"
       }
     }
@@ -404,7 +404,7 @@
   "privacy": {
     "seo": {
       "title": "Privacy Policy",
-      "description": "How LumiFin collects, uses, and protects your personal data. GDPR-compliant privacy practices for our payment service."
+      "description": "How Lumi collects, uses, and protects your personal data. GDPR-compliant privacy practices for our payment service."
     },
     "eyebrow": "Legal",
     "title": "Privacy Policy",
@@ -413,7 +413,7 @@
     "website": "https://lumifin.io",
     "section1": {
       "title": "1. Data Controller",
-      "body1": "LumiFin SAS (\"LumiFin\", \"we\", \"us\") is the data controller for processing described in this Privacy Policy. Address: 50 rue Anatole France, 92290 Châtenay-Malabry, France. Email: privacy@lumifin.io.",
+      "body1": "LumiFin SAS (\"Lumi\", \"we\", \"us\") is the data controller for processing described in this Privacy Policy. Address: 50 rue Anatole France, 92290 Châtenay-Malabry, France. Email: privacy@lumifin.io.",
       "body2": "Our Payment Partner, Trans-Fi Inc. (\"Transfi\"), is an independent data controller for personal data it processes to provide Payment Services (custody, FX, settlement, compliance). Transfi's privacy policy is available at <1>https://www.transfi.com/privacy-policy</1>."
     },
     "section2": {
@@ -441,7 +441,7 @@
       "item1": "Contract performance (Art. 6(1)(b)): creating and managing your Account; processing transactions; displaying balance and history; communicating about your Account and transactions; providing customer support.",
       "item2": "Legal obligations (Art. 6(1)(c)): identity verification and KYC/AML compliance (French Monetary and Financial Code, Art. L561-12); responding to lawful requests from authorities; maintaining records as required by law.",
       "item3": "Legitimate interests (Art. 6(1)(f)): preventing fraud and securing the App; improving our services and user experience; analytics and crash reporting (via Firebase Analytics and Firebase Crashlytics); enforcing our Terms and Conditions.",
-      "item4": "Consent (Art. 6(1)(a)): marketing communications (you can withdraw consent at any time); optional co-marketing communications from LumiFin and Transfi (opt-in only)."
+      "item4": "Consent (Art. 6(1)(a)): marketing communications (you can withdraw consent at any time); optional co-marketing communications from Lumi and Transfi (opt-in only)."
     },
     "section4": {
       "title": "4. Data Sharing",
@@ -507,7 +507,7 @@
     },
     "eyebrow": "Account",
     "title": "Delete your Lumi account",
-    "intro": "<1>Lumi</1> is operated by <1>Lumifin</1> (Android package <2>com.lumifin.app</2>). This page explains how to request deletion of your account and associated data.",
+    "intro": "<1>Lumi</1> is operated by <1>Lumi</1> (Android package <2>com.lumifin.app</2>). This page explains how to request deletion of your account and associated data.",
     "howto": {
       "title": "How to request account deletion",
       "intro": "You can request deletion in either of these ways:",
@@ -598,12 +598,12 @@
     "website": "https://lumifin.io",
     "section1": {
       "title": "1. Introduction and Acceptance",
-      "body1": "These Terms and Conditions (\"Terms\") form a binding agreement between you (\"End User\") and LumiFin SAS, a French company registered at 50 rue Anatole France, 92290 Châtenay-Malabry, France (\"LumiFin\", \"we\", \"us\").",
-      "body2": "LumiFin operates the Lumi mobile application (\"App\"), which enables European travelers to pay at merchants in Southeast Asia by scanning local QR codes.",
+      "body1": "These Terms and Conditions (\"Terms\") form a binding agreement between you (\"End User\") and LumiFin SAS, a French company registered at 50 rue Anatole France, 92290 Châtenay-Malabry, France (\"Lumi\", \"we\", \"us\").",
+      "body2": "Lumi operates the Lumi mobile application (\"App\"), which enables European travelers to pay at merchants in Southeast Asia by scanning local QR codes.",
       "body3": "By using the App, you agree to these Terms and our <1>Privacy Policy</1>. If you do not agree, do not use the App.",
       "sub1": {
         "title": "1.1 Payment Partner",
-        "body1": "LumiFin is a technology provider. We do not hold funds, process payments, or perform currency exchange. These regulated services are provided by our Payment Partner (currently Trans-Fi Inc. and/or its affiliates) under their own authorizations and terms.",
+        "body1": "Lumi is a technology provider. We do not hold funds, process payments, or perform currency exchange. These regulated services are provided by our Payment Partner (currently Trans-Fi Inc. and/or its affiliates) under their own authorizations and terms.",
         "body2": "By using the App, you enter into a separate contractual relationship with the Payment Partner for Payment Services. The Payment Partner Terms are available in the App and at <1>https://www.transfi.com/terms-and-conditions</1>. In case of conflict regarding Payment Services, the Payment Partner Terms prevail."
       },
       "sub2": {
@@ -617,7 +617,7 @@
     },
     "section2": {
       "title": "2. Definitions",
-      "body": "\"App\" — the Lumi mobile application (iOS/Android). \"Account\" — your personal account in the App. \"Wallet\" — the digital wallet held by the Payment Partner on your behalf (not a bank account; does not accrue interest). \"Payment Partner\" — Trans-Fi Inc. and/or its affiliates providing Payment Services. \"Payment Services\" — custody, FX conversion, payment execution, and settlement provided by the Payment Partner. \"Lumi Services\" — the technology services provided by LumiFin (App, interface, support). \"QR Payment\" — a payment initiated by scanning a merchant's QR code. \"SEPA Transfer\" — a SEPA credit transfer to fund your Wallet. \"Supported Countries\" — countries where QR Payments are available, as listed in the App."
+      "body": "\"App\" — the Lumi mobile application (iOS/Android). \"Account\" — your personal account in the App. \"Wallet\" — the digital wallet held by the Payment Partner on your behalf (not a bank account; does not accrue interest). \"Payment Partner\" — Trans-Fi Inc. and/or its affiliates providing Payment Services. \"Payment Services\" — custody, FX conversion, payment execution, and settlement provided by the Payment Partner. \"Lumi Services\" — the technology services provided by Lumi (App, interface, support). \"QR Payment\" — a payment initiated by scanning a merchant's QR code. \"SEPA Transfer\" — a SEPA credit transfer to fund your Wallet. \"Supported Countries\" — countries where QR Payments are available, as listed in the App."
     },
     "section3": {
       "title": "3. Eligibility and Account",
@@ -661,8 +661,8 @@
     },
     "section5": {
       "title": "5. Payment Partner and Third Parties",
-      "body1": "The Payment Partner provides: custody of your funds, currency exchange, payment settlement, and compliance checks. LumiFin provides: the App, user interface, transaction display, and customer support.",
-      "body2": "LumiFin is not a bank, payment institution, or electronic money issuer. We do not hold your funds. To the maximum extent permitted by law, LumiFin is not liable for acts, omissions, or insolvency of the Payment Partner or third-party payment networks. This does not affect your statutory consumer rights."
+      "body1": "The Payment Partner provides: custody of your funds, currency exchange, payment settlement, and compliance checks. Lumi provides: the App, user interface, transaction display, and customer support.",
+      "body2": "Lumi is not a bank, payment institution, or electronic money issuer. We do not hold your funds. To the maximum extent permitted by law, Lumi is not liable for acts, omissions, or insolvency of the Payment Partner or third-party payment networks. This does not affect your statutory consumer rights."
     },
     "section6": {
       "title": "6. Identity Verification and Compliance",
@@ -671,7 +671,7 @@
     },
     "section7": {
       "title": "7. Fees",
-      "body1": "LumiFin charges 2% per QR Payment, displayed before you confirm. No subscription or hidden fees. Funding and withdrawals are currently free from LumiFin (your bank may charge). The exchange rate may include a spread set by the Payment Partner, separate from our 2% fee.",
+      "body1": "Lumi charges 2% per QR Payment, displayed before you confirm. No subscription or hidden fees. Funding and withdrawals are currently free from Lumi (your bank may charge). The exchange rate may include a spread set by the Payment Partner, separate from our 2% fee.",
       "body2": "We may change fees with at least 30 days' notice. If you disagree, you may close your Account and withdraw your funds."
     },
     "section8": {
@@ -681,13 +681,13 @@
     },
     "section9": {
       "title": "9. Intellectual Property",
-      "body": "All intellectual property in the App belongs to LumiFin or its licensors. We grant you a limited, non-exclusive, non-transferable, revocable license to use the App on your personal device solely to access the Services."
+      "body": "All intellectual property in the App belongs to Lumi or its licensors. We grant you a limited, non-exclusive, non-transferable, revocable license to use the App on your personal device solely to access the Services."
     },
     "section10": {
       "title": "10. Limitation of Liability",
       "body1": "The App is provided \"as is\" without warranties of any kind, to the maximum extent permitted by law. We do not guarantee uninterrupted or error-free availability.",
-      "body2": "To the maximum extent permitted by French law: (a) LumiFin is not liable for indirect, consequential, or punitive damages; (b) LumiFin is not liable for losses caused by the Payment Partner, payment networks, or merchants; (c) LumiFin is not liable for force majeure; and (d) our aggregate liability is capped at fees you paid to LumiFin in the 12 months preceding the claim.",
-      "body3": "Where mandatory law requires a higher cap, the minimum permitted amount applies. LumiFin is not a party to merchant transactions; disputes with merchants must be resolved directly with the merchant.",
+      "body2": "To the maximum extent permitted by French law: (a) Lumi is not liable for indirect, consequential, or punitive damages; (b) Lumi is not liable for losses caused by the Payment Partner, payment networks, or merchants; (c) Lumi is not liable for force majeure; and (d) our aggregate liability is capped at fees you paid to Lumi in the 12 months preceding the claim.",
+      "body3": "Where mandatory law requires a higher cap, the minimum permitted amount applies. Lumi is not a party to merchant transactions; disputes with merchants must be resolved directly with the merchant.",
       "body4": "Nothing in these Terms excludes liability for death or personal injury from negligence, fraud, or any non-excludable liability under French or EU law. Your statutory consumer rights are not affected."
     },
     "section11": {
@@ -855,7 +855,7 @@
       "category": "QR Payments 101",
       "title": "QRIS Decoded: Indonesia's Standardized QR Payment System and What It Means for European Travelers",
       "subtitle": "With over 56 million merchants and 6 billion transactions, QRIS is how Indonesia pays. And as a European visitor, you're currently locked out of it.",
-      "author": "Lumifin",
+      "author": "Lumi",
       "readTime": "7 min read",
       "dateLabel": "March 2026",
       "imgAlt": "QRIS QR Payment System in Indonesia",
@@ -893,19 +893,19 @@
       "h5": "Cross-border QRIS: progress, but not for Europe (yet)",
       "p9": "Bank Indonesia has been actively expanding QRIS internationally — but primarily within Asia. Through the ASEAN cross-border payment linkage initiative, QRIS now connects with Thailand's PromptPay, Malaysia's DuitNow, Singapore's PayNow, and several other regional systems. In August 2025, QRIS launched in Japan, and South Korea is joining in April 2026.",
       "p10": "This means a Thai tourist in Bali can scan a QRIS code and pay with their Thai banking app. A Singaporean can do the same. But a French, German, or Dutch traveler? No pathway exists — yet.",
-      "blockquote1": "This is precisely the gap that solutions like Lumifin are designed to bridge.",
+      "blockquote1": "This is precisely the gap that solutions like Lumi are designed to bridge.",
       "p11": "Giving European travelers access to local QR payment infrastructure without needing a local bank account or e-wallet.",
       "h6": "What this means for your next trip to Indonesia",
       "p12": "If you're planning to visit Indonesia — whether for a two-week holiday in Bali, a month of remote work in Canggu, or a business trip to Jakarta — understanding QRIS is essential. It's not a payment \"option\" in Indonesia; it's increasingly the default. Many smaller merchants, transport services, and even market vendors now prefer or exclusively accept QRIS over cash.",
       "p13": "The good news: the infrastructure is mature, secure, and regulated by Bank Indonesia. The technology works flawlessly. The only missing piece is access for international visitors from outside Asia.",
-      "blockquote2": "And that's exactly what we're working on at Lumifin. Stay tuned.",
+      "blockquote2": "And that's exactly what we're working on at Lumi. Stay tuned.",
       "ctaTitle": "Want to be the first to pay with QR codes in Indonesia as a European?",
-      "ctaBody": "Join the Lumifin early access list at"
+      "ctaBody": "Join the Lumi early access list at"
     },
     "whyWeBuiltLumi": {
       "seo": {
         "title": "Why We Built Lumi — A Founder's Story",
-        "description": "The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumifin."
+        "description": "The two moments that changed everything: a cab ride in Kuala Lumpur and an artist in Northern Thailand. The real story behind Lumi."
       },
       "backToBlog": "Back to Blog",
       "category": "Founder's Note",
@@ -1016,7 +1016,7 @@
       "p20": "The wall is starting to crack. In early 2026, the SBV confirmed the next step in the ASEAN cross-border QR link. Vietnamese travellers can already scan Thai PromptPay codes with their bank apps. Thai visitors scanning Vietnamese QRs went live in pilot cities late last year. A Singapore–Vietnam link with PayNow is being built. Cambodia is reportedly next.",
       "p21": "What this doesn’t fix is the foreigner problem from the other direction — a French traveller scanning a VietQR with a French bank app. That’s the harder one. It needs interbank settlement with non-ASEAN systems, and European and American banks don’t have a commercial reason to bother yet. SBV officials have said they’re “open to” wider foreign access. They haven’t put a date on it.",
       "p22": "The honest forecast: by the end of 2026, anyone with a Thai, Singaporean, Malaysian, Indonesian, or Cambodian bank app will be able to pay at a Vietnamese street stall. Everyone else still queues at the ATM. If you’re reading this from London, New York, or Berlin, plan accordingly.",
-      "h8": "The Lumifin take",
+      "h8": "The Lumi take",
       "lumiTip": "This is the kind of fragmentation we’re working to smooth out. A single layer over local rails, so travellers and remote teams can pay in Vietnam without the KYC headache.",
       "p23": "If you move money in and out of Vietnam often, we have a quieter path than handing your friend a stack of cash. Before your next trip:",
       "tip1": "Tell your card company you’re travelling so they don’t block you.",
@@ -1027,7 +1027,7 @@
     "bestTravelCardsVietnam": {
       "seo": {
         "title": "Best Travel Cards for Europeans in Vietnam (2026 Comparison)",
-        "description": "Compare Wise, Revolut, N26, Monzo, cash and Lumifin for paying in Vietnam as a European traveller in 2026 — and the smartest payment setup to bring."
+        "description": "Compare Wise, Revolut, N26, Monzo, cash and Lumi for paying in Vietnam as a European traveller in 2026 — and the smartest payment setup to bring."
       },
       "backToBlog": "Back to Blog",
       "category": "Travel · Vietnam",
@@ -1049,7 +1049,7 @@
         { "option": "Monzo", "bestFor": "UK travellers", "watchOut": "Outside-EEA ATM allowance limits apply", "qr": "No native VietQR", "verdict": "Best UK card option" },
         { "option": "Traditional EU bank card", "bestFor": "Backup and emergencies", "watchOut": "FX markups, ATM fees and blocks", "qr": "No native VietQR", "verdict": "Keep as backup" },
         { "option": "Cash", "bestFor": "Street stalls, rural areas, emergencies", "watchOut": "ATM/exchange costs and carrying risk", "qr": "N/A", "verdict": "Still needed" },
-        { "option": "Lumifin", "bestFor": "Paying by local QR from a European account", "watchOut": "Vietnam beta availability", "qr": "Yes — built for this gap", "verdict": "Best QR bridge once available" }
+        { "option": "Lumi", "bestFor": "Paying by local QR from a European account", "watchOut": "Vietnam beta availability", "qr": "Yes — built for this gap", "verdict": "Best QR bridge once available" }
       ],
       "howPayH": "How people actually pay in Vietnam",
       "howPayP1": "Vietnam isn't a \"card-first\" travel market in the way many Europeans expect. In hotels, malls, airports, tourist restaurants and larger stores, Visa and Mastercard are usually useful. But for small cafes, street food, local shops, taxis, market vendors and casual services, you'll often see a QR code on the counter before you see a card terminal.",
@@ -1102,8 +1102,8 @@
       "missingH": "The missing piece: local QR payments",
       "missingP1": "Here's where the usual \"best travel card\" advice breaks down. The best card for Vietnam may still fail at the exact moment you want convenience: a QR code at a cafe, a local food counter, a small shop or a service provider who doesn't want to deal with card rails.",
       "missingP2": "Some tourist-facing QR options are emerging. For example, Da Nang's tourism portal describes a VNPAY flow for international visitors that uses an international phone number, passport details and a linked Visa, Mastercard or JCB card. That's useful directionally, but the broader lesson is simpler: Vietnam is moving toward QR, and travellers need payment tools that meet the local flow instead of forcing every purchase back onto cards and cash. [9]",
-      "lumifinH": "Where Lumifin fits",
-      "lumifinP1": "Lumifin isn't trying to replace your travel card. It's designed to fill the QR gap: helping Europeans pay like locals in Vietnam using local QR payments, without needing a Vietnamese bank account. For beta, the simplest stack is still: keep your travel card, carry some cash, and use Lumifin when local QR is the better way to pay.",
+      "lumifinH": "Where Lumi fits",
+      "lumifinP1": "Lumi isn't trying to replace your travel card. It's designed to fill the QR gap: helping Europeans pay like locals in Vietnam using local QR payments, without needing a Vietnamese bank account. For beta, the simplest stack is still: keep your travel card, carry some cash, and use Lumi when local QR is the better way to pay.",
       "first24H": "Best payment setup for your first 24 hours in Vietnam",
       "first24List": [
         { "bold": "Before landing:", "rest": " add Wise / Revolut / N26 / Monzo to your phone wallet if you use one, and bring a physical card too." },
@@ -1246,23 +1246,23 @@
     },
     "hanoiFounderNote": {
       "seo": {
-        "title": "Testing Lumifin in Hanoi — A Founder Note by Gaurav Bansal",
-        "description": "Lumifin co-founder Gaurav Bansal shares what testing the product firsthand in Hanoi taught him about real users, payment friction, and founder conviction."
+        "title": "Testing Lumi in Hanoi — A Founder Note by Gaurav Bansal",
+        "description": "Lumi co-founder Gaurav Bansal shares what testing the product firsthand in Hanoi taught him about real users, payment friction, and founder conviction."
       },
       "backToBlog": "Back to Blog",
       "category": "Stories · Founder note",
       "title": "I Came to Hanoi to Test Our Product. I Left More Convicted Than Ever.",
-      "subtitle": "After months of building Lumifin behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to experience the product firsthand — and found the strongest lessons outside the roadmap.",
+      "subtitle": "After months of building Lumi behind the scenes, co-founder Gaurav Bansal travelled to Hanoi to experience the product firsthand — and found the strongest lessons outside the roadmap.",
       "author": "Gaurav Bansal",
       "readTime": "4 min read",
       "dateLabel": "July 2026",
-      "imgAlt": "Lumifin co-founder Gaurav Bansal with travellers he met at a cafe in Hanoi, Vietnam.",
+      "imgAlt": "Lumi co-founder Gaurav Bansal with travellers he met at a cafe in Hanoi, Vietnam.",
       "paragraphs": [
         "I've always had a special connection with Hanoi.",
         "I first visited the city almost a decade ago, and ever since then I've loved the energy here — the movement, the pace, the coffee culture, and the feeling that everything somehow works despite the chaos.",
         "This trip, however, felt different.",
         "I wasn't arriving as a tourist. I came here with a different purpose: to test something our team had spent months building.",
-        "At Lumifin, we've been working on a payment experience designed to make spending abroad feel simple for travellers. For the end user, the product should feel seamless.",
+        "At Lumi, we've been working on a payment experience designed to make spending abroad feel simple for travellers. For the end user, the product should feel seamless.",
         "But as builders, we know simplicity is rarely simple.",
         "Behind that experience sits months of product development, regulatory work, payment partnerships, compliance requirements, and countless iterations that users will hopefully never have to think about.",
         "So before flying to Hanoi, I made myself one small challenge.",
@@ -1300,40 +1300,40 @@
     },
     "daNangPressRelease": {
       "seo": {
-        "title": "Why We Chose Da Nang — Lumifin's Southeast Asia Launch",
-        "description": "Lumifin, a French fintech building a euro wallet for European travellers in Southeast Asia, has chosen Da Nang as its launch community — and is inviting remote workers to shape the product."
+        "title": "Why We Chose Da Nang — Lumi's Southeast Asia Launch",
+        "description": "Lumi, a French fintech building a euro wallet for European travellers in Southeast Asia, has chosen Da Nang as its launch community — and is inviting remote workers to shape the product."
       },
       "backToBlog": "Back to Blog",
       "category": "Press · Company news",
       "title": "Why We Chose Da Nang",
       "subtitle": "We're building a euro wallet for European travelers across Southeast Asia — and we've picked Da Nang as the place to launch it. Here's why, and how you can help shape what we build.",
-      "source": "Lumifin",
+      "source": "Lumi",
       "readTime": "4 min read",
       "dateLabel": "10 July 2026",
       "imgAlt": "The Dragon Bridge lit up at dusk over the Han River in Da Nang, Vietnam.",
       "dateline": "Da Nang, Vietnam — 10 July 2026.",
-      "leadP": "Lumifin, a French fintech building a euro wallet for European travelers across Southeast Asia, has chosen Da Nang as the launch community for its regional rollout. We unveiled the move at a Founding Ambassadors workshop in the city on 10 July, inviting Da Nang's international remote workers to become our first ambassadors and beta testers.",
+      "leadP": "Lumi, a French fintech building a euro wallet for European travelers across Southeast Asia, has chosen Da Nang as the launch community for its regional rollout. We unveiled the move at a Founding Ambassadors workshop in the city on 10 July, inviting Da Nang's international remote workers to become our first ambassadors and beta testers.",
       "leadP2": "The timing isn't an accident. Our announcement lands as Da Nang hosts its Business, Finance and Technology Week (7–12 July 2026), a citywide gathering of policymakers, investors and fintech leaders headlined by the inaugural Vietnam Finance Forum on 9 and 10 July. The week is a reminder of how quickly Da Nang is becoming Vietnam's emerging center for innovation and international finance.",
       "problemH": "The problem every visitor runs into",
       "problemP1": "If you've spent any time in Vietnam, you already know the friction. Locals pay for almost everything — a café, a bowl of phở, a taxi — by scanning a VietQR code straight from their banking app. Foreigners can't: those QR codes require a Vietnamese bank account.",
-      "problemP2": "Lumifin closes that gap. You top up a wallet in euros and pay any local QR code exactly as a resident would — one scan, in seconds, with no local bank account and no scramble for cash. Built by our engineering team in India, the app is live in beta and already used daily by the Lumifin team across Vietnam.",
+      "problemP2": "Lumi closes that gap. You top up a wallet in euros and pay any local QR code exactly as a resident would — one scan, in seconds, with no local bank account and no scramble for cash. Built by our engineering team in India, the app is live in beta and already used daily by the Lumi team across Vietnam.",
       "whyH": "Why Da Nang, specifically",
       "whyP1": "The pull of Da Nang runs deeper than the calendar. In January 2026, Vietnam inaugurated the Da Nang International Financial Center, designating the city as the country's innovation-focused financial hub, with an explicit mandate around digital payments, fintech and a regulatory sandbox for new financial models.",
       "whyP2": "At the same time, Da Nang has become one of Southeast Asia's most popular bases for digital nomads and international remote workers — drawn by its beaches, low cost of living, fast connectivity and an unusually active scene of meetups and coworking spaces. For us, the combination is rare: a city whose public ambition and whose everyday residents both point toward precisely the kind of product we're building.",
-      "whyP3": "That direction is set at the highest level of policy. Vietnam's Resolution 57-NQ/TW, adopted by the Politburo in December 2024, places science, technology, innovation and digital transformation — including the build-out of a cashless, digital economy — at the center of national development. By bringing international visitors into Vietnam's own QR-payment ecosystem, Lumifin contributes to that agenda, connecting the country's digital-transformation drive with one of its most important sectors: tourism.",
+      "whyP3": "That direction is set at the highest level of policy. Vietnam's Resolution 57-NQ/TW, adopted by the Politburo in December 2024, places science, technology, innovation and digital transformation — including the build-out of a cashless, digital economy — at the center of national development. By bringing international visitors into Vietnam's own QR-payment ecosystem, Lumi contributes to that agenda, connecting the country's digital-transformation drive with one of its most important sectors: tourism.",
       "quote1": "We didn't choose Da Nang by accident. It's the rare place where the people we build for — international remote workers who live between currencies — and the ambition of the city are all pulling in the same direction. Vietnam has just made Da Nang its home for digital-payments innovation, and that's exactly where a wallet like ours belongs.",
-      "quote1By": "Pierre Lahbabi, co-founder and CEO of Lumifin",
+      "quote1By": "Pierre Lahbabi, co-founder and CEO of Lumi",
       "ambassadorsH": "Build it with us: the Founding Ambassadors program",
       "ambassadorsP1": "Through our Founding Ambassadors program, we're inviting Da Nang's remote-work community to shape the product ahead of its wider launch. At the 10 July workshop — held from 2:00 to 4:00 p.m. at The Workshop on Chế Lan Viên in the Ngũ Hành Sơn district — participants set up the wallet, made real payments on the spot and gave direct feedback to the founding team, with free wallet credit to spend during the session. Their input will guide the app's usability and feature roadmap.",
       "ambassadorsP2": "Beyond the workshop itself, we're enlisting European remote workers and social-media creators as ambassadors in a broader campaign that spotlights Da Nang's dynamism as a center of innovation — and the wallet's rollout with local partners such as hotels, restaurants and everyday merchants across the city.",
       "quote2": "Paying a street-food stall or a neighborhood café should feel the same for a visitor as it does for a local: one scan, and it's done. That everyday moment is what we're perfecting here, alongside the people who will use it most.",
       "quote2By": "Pierre Lahbabi",
       "nextH": "What's next",
-      "nextP1": "Lumifin plans to bring the same local-QR experience to its other priority markets in the region — Thailand (PromptPay) and Indonesia (QRIS) — as it scales from beta toward a full launch.",
-      "quote3": "Cross-border payments in Southeast Asia is a large, underserved market, and Lumifin is tackling it from the right end — the everyday friction every traveler feels. Basing the launch in Da Nang, just as the city steps up as a hub for digital-payments innovation, is a sharp and deliberate move, and exactly the kind of team and timing worth getting behind.",
-      "quote3By": "Robert Brice Cerival, Senior Advisor to Lumifin in Vietnam",
-      "aboutH": "About Lumifin",
-      "aboutP": "Lumifin is a French fintech building a euro wallet that lets European travelers pay by local QR code across Southeast Asia (VietQR in Vietnam, PromptPay in Thailand and QRIS in Indonesia) as easily as residents do. Founded near Paris and currently in beta, Lumifin was co-founded by CEO Pierre Lahbabi, a graduate of France's École Polytechnique and Mines Paris, and a payments specialist with a career spanning banking and technology consulting. Co-founder and COO Gaurav Bansal brings more than fifteen years in fintech product and technology consulting, with roles at Sopra Steria, Capgemini and fintech lender Biz2Credit, and holds a master's in finance from India's National Institute of Securities Markets. Learn more at lumifin.io.",
+      "nextP1": "Lumi plans to bring the same local-QR experience to its other priority markets in the region — Thailand (PromptPay) and Indonesia (QRIS) — as it scales from beta toward a full launch.",
+      "quote3": "Cross-border payments in Southeast Asia is a large, underserved market, and Lumi is tackling it from the right end — the everyday friction every traveler feels. Basing the launch in Da Nang, just as the city steps up as a hub for digital-payments innovation, is a sharp and deliberate move, and exactly the kind of team and timing worth getting behind.",
+      "quote3By": "Robert Brice Cerival, Senior Advisor to Lumi in Vietnam",
+      "aboutH": "About Lumi",
+      "aboutP": "Lumi is a French fintech building a euro wallet that lets European travelers pay by local QR code across Southeast Asia (VietQR in Vietnam, PromptPay in Thailand and QRIS in Indonesia) as easily as residents do. Founded near Paris and currently in beta, Lumi was co-founded by CEO Pierre Lahbabi, a graduate of France's École Polytechnique and Mines Paris, and a payments specialist with a career spanning banking and technology consulting. Co-founder and COO Gaurav Bansal brings more than fifteen years in fintech product and technology consulting, with roles at Sopra Steria, Capgemini and fintech lender Biz2Credit, and holds a master's in finance from India's National Institute of Securities Markets. Learn more at lumifin.io.",
       "contactH": "Media contact",
       "contacts": [
         { "name": "Thiofanty", "detail": "thiofanty@lumifin.io · +33 7 44 87 31 56 · lumifin.io" },
@@ -1344,8 +1344,8 @@
   },
   "careers": {
     "seo": {
-      "title": "Work With Us — Careers at Lumifin",
-      "description": "Join Lumifin: an early-stage fintech reinventing cross-border payments between Europe and Asia. Remote roles based in France."
+      "title": "Work With Us — Careers at Lumi",
+      "description": "Join Lumi: an early-stage fintech reinventing cross-border payments between Europe and Asia. Remote roles based in France."
     },
     "eyebrow": "Careers",
     "title": "Work With",
@@ -1364,7 +1364,7 @@
         "location": "Remote — France",
         "sections": {
           "aboutProduct": "About the Product",
-          "aboutProductContent": "Our solution is a payment service designed for European travelers in Southeast Asia. It allows them to make payments at lower costs using the local QR-code payment systems that are widely adopted across the region. With Lumifin, travelers can pay like locals, using only their mobile phone — no cash, no cards — at any merchant, and at a significantly lower cost than existing alternatives.",
+          "aboutProductContent": "Our solution is a payment service designed for European travelers in Southeast Asia. It allows them to make payments at lower costs using the local QR-code payment systems that are widely adopted across the region. With Lumi, travelers can pay like locals, using only their mobile phone — no cash, no cards — at any merchant, and at a significantly lower cost than existing alternatives.",
           "targetSegments": "Target Segments",
           "targetSegmentsItems": [
             "Students",
@@ -1399,8 +1399,8 @@
   },
   "security": {
     "seo": {
-      "title": "Security — How Lumifin Protects Your Money and Data",
-      "description": "Bank-grade encryption, two-factor authentication, GDPR compliance, and regulated infrastructure. Learn how Lumifin keeps your payments and personal data safe."
+      "title": "Security — How Lumi Protects Your Money and Data",
+      "description": "Bank-grade encryption, two-factor authentication, GDPR compliance, and regulated infrastructure. Learn how Lumi keeps your payments and personal data safe."
     },
     "eyebrow": "Trust & Security",
     "titleBefore": "Your money is",
@@ -1416,10 +1416,10 @@
       "infrastructure": "Secure Infrastructure",
       "infrastructureDesc": "Our systems run on enterprise-grade cloud infrastructure with DDoS protection, automated threat detection, and 24/7 monitoring.",
       "compliance": "Regulatory Compliance",
-      "complianceDesc": "Lumifin operates within the European regulatory framework. We work with licensed financial partners to ensure full compliance with payment services regulations."
+      "complianceDesc": "Lumi operates within the European regulatory framework. We work with licensed financial partners to ensure full compliance with payment services regulations."
     },
     "dataProtectionTitle": "Data Protection",
-    "dataProtectionBody": "As a French company, Lumifin is fully subject to the General Data Protection Regulation (GDPR) and the oversight of the CNIL. We apply the principle of data minimization: we only collect information that is strictly necessary to provide our service. You can request access to, correction of, or deletion of your personal data at any time.",
+    "dataProtectionBody": "As a French company, Lumi is fully subject to the General Data Protection Regulation (GDPR) and the oversight of the CNIL. We apply the principle of data minimization: we only collect information that is strictly necessary to provide our service. You can request access to, correction of, or deletion of your personal data at any time.",
     "regulatoryTitle": "Regulatory Framework",
     "regulatoryBody": "Lumifin SAS is registered in France and operates in compliance with applicable European financial regulations. Our payment processing is handled through licensed and regulated financial partners. We are committed to maintaining the highest standards of anti-money laundering (AML) and know-your-customer (KYC) procedures.",
     "reportTitle": "Report a Security Issue",
@@ -1441,7 +1441,7 @@
       "titleBefore": "Pay like a",
       "titleHighlight": "local",
       "titleAfter": "in Southeast Asia.",
-      "subtitle": "European travellers lose €50–150 per trip on ATM fees, bad exchange rates, and cash risks. Lumifin connects you to local QR payment systems — so you pay in local currency at near-interbank rates, instantly.",
+      "subtitle": "European travellers lose €50–150 per trip on ATM fees, bad exchange rates, and cash risks. Lumi connects you to local QR payment systems — so you pay in local currency at near-interbank rates, instantly.",
       "problem": {
         "cashTitle": "Cash is expensive",
         "cashDesc": "Airport exchanges charge 8–10% spreads. ATMs add flat fees + your bank's markup. You lose money every time you access your own money.",
@@ -1450,18 +1450,18 @@
         "riskTitle": "Cash carries real risk",
         "riskDesc": "No fraud protection, no chargeback, no dispute. If it's stolen or lost, it's gone. Carrying large amounts in tourist areas is a liability."
       },
-      "howTitle": "How Lumifin works",
+      "howTitle": "How Lumi works",
       "howSubtitle": "Three steps. No cash. No card machines. No hidden fees.",
       "steps": {
         "topUpTitle": "Top up",
-        "topUpDesc": "Add euros from your European bank account to your Lumifin wallet. Takes seconds.",
+        "topUpDesc": "Add euros from your European bank account to your Lumi wallet. Takes seconds.",
         "scanTitle": "Scan",
         "scanDesc": "Scan any local QR code — PromptPay in Thailand, VietQR in Vietnam, QRIS in Indonesia.",
         "payTitle": "Pay",
         "payDesc": "Payment settles instantly in local currency at near-interbank rates. You see the euro amount in real-time."
       },
       "chooseDestination": "Choose your destination",
-      "compareTitle": "How does Lumifin compare?",
+      "compareTitle": "How does Lumi compare?",
       "compareSubtitle": "See how we stack up against Revolut, Wise, and traditional banks for Southeast Asia travel.",
       "compareCta": "View Comparison",
       "labels": {
@@ -1506,11 +1506,11 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (where accepted)" },
         "atm": { "method": "ATM withdrawal", "fee": "€5.50+ per withdrawal", "rate": "Interbank + markup", "speed": "5–10 min (find ATM)" },
         "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies wildly", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
-      "howTitle": "How Lumifin works in Thailand",
+      "howTitle": "How Lumi works in Thailand",
       "steps": {
-        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "topUp": "Add euros from your European bank account to your Lumi wallet.",
         "scan": "Scan any PromptPay QR code at Thai merchants — from street food to supermarkets.",
         "pay": "Payment goes through instantly in Thai baht at near-interbank rates. Done."
       },
@@ -1522,10 +1522,10 @@
       "faqTitle": "Frequently asked questions",
       "faqs": {
         "q1": { "q": "Can I use my European bank card in Thailand?", "a": "Yes, but expect 1.5–3% foreign transaction fees plus unfavorable exchange rates. Card acceptance is limited outside hotels and tourist areas. Most local vendors, street food stalls, and transport use QR payments or cash." },
-        "q2": { "q": "What is PromptPay?", "a": "PromptPay is Thailand's national QR payment system, used by over 70 million people. It enables instant transfers between bank accounts and is accepted at millions of merchants — from 7-Eleven to street vendors. Lumifin lets European travelers access PromptPay directly." },
+        "q2": { "q": "What is PromptPay?", "a": "PromptPay is Thailand's national QR payment system, used by over 70 million people. It enables instant transfers between bank accounts and is accepted at millions of merchants — from 7-Eleven to street vendors. Lumi lets European travelers access PromptPay directly." },
         "q3": { "q": "How much do ATM withdrawals cost in Thailand?", "a": "Thai ATMs charge a flat fee of 220 THB (~€5.50) per withdrawal, plus your European bank typically adds 1.5–3% on top. With withdrawal limits of 20,000–30,000 THB, costs add up quickly over a multi-week trip." },
-        "q4": { "q": "Is it better to exchange euros to baht in France or Thailand?", "a": "Neither is ideal. Airport exchanges in both countries offer poor rates. Bangkok exchanges like SuperRich are better but inconvenient. Lumifin gives you near-interbank rates directly through your phone — no physical exchange needed." },
-        "q5": { "q": "How does Lumifin work in Thailand?", "a": "Download the app, verify your identity, and top up your wallet from your European bank account. Then scan any PromptPay QR code at Thai merchants to pay instantly in baht — at rates significantly better than cards or cash exchanges." }
+        "q4": { "q": "Is it better to exchange euros to baht in France or Thailand?", "a": "Neither is ideal. Airport exchanges in both countries offer poor rates. Bangkok exchanges like SuperRich are better but inconvenient. Lumi gives you near-interbank rates directly through your phone — no physical exchange needed." },
+        "q5": { "q": "How does Lumi work in Thailand?", "a": "Download the app, verify your identity, and top up your wallet from your European bank account. Then scan any PromptPay QR code at Thai merchants to pay instantly in baht — at rates significantly better than cards or cash exchanges." }
       },
       "ctaTitle": "Ready to pay like a local in Thailand?",
       "ctaSubtitle": "Join the Lumi beta and be among the first to travel fee-free."
@@ -1554,11 +1554,11 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (rare acceptance)" },
         "atm": { "method": "ATM withdrawal", "fee": "€0.80–€2 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
         "cash": { "method": "Cash exchange", "fee": "3–8% spread", "rate": "Varies by location", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
-      "howTitle": "How Lumifin works in Vietnam",
+      "howTitle": "How Lumi works in Vietnam",
       "steps": {
-        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "topUp": "Add euros from your European bank account to your Lumi wallet.",
         "scan": "Scan any VietQR code at Vietnamese merchants — cafes, shops, markets, everywhere.",
         "pay": "Payment settles instantly in Vietnamese dong. You see the euro amount in real-time."
       },
@@ -1567,8 +1567,8 @@
         "q1": { "q": "Can I use my European bank card in Vietnam?", "a": "Only at upscale hotels, international restaurants, and some shopping centres. The vast majority of Vietnamese commerce — from pho stalls to motorbike taxis — is cash or QR only. Expect 1.5–3% foreign transaction fees where cards are accepted." },
         "q2": { "q": "What is VietQR?", "a": "VietQR is Vietnam's national QR code payment standard, connecting over 40 banks and e-wallets. It enables instant transfers by scanning a single QR code. Adoption has exploded since 2023, with millions of merchants now accepting it — including street vendors and small shops." },
         "q3": { "q": "How much do ATM withdrawals cost in Vietnam?", "a": "Vietnamese ATMs charge 22,000–55,000 VND (~€0.80–€2) per withdrawal, with limits of 2,000,000–5,000,000 VND per transaction. Your European bank adds 1.5–3% on top. You may need 2–3 withdrawals per day for basic expenses." },
-        "q4": { "q": "Why are Vietnamese dong amounts so confusing?", "a": "Because 1 EUR ≈ 27,000 VND. Daily transactions are in the millions of dong — a meal might cost 85,000 VND, a hotel 1,500,000 VND. It takes practice to avoid costly mistakes. Lumifin shows you the euro equivalent in real-time." },
-        "q5": { "q": "How does Lumifin work in Vietnam?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any VietQR code to pay instantly in dong — at near-interbank rates. No cash counting, no ATM hunting, no denomination confusion." }
+        "q4": { "q": "Why are Vietnamese dong amounts so confusing?", "a": "Because 1 EUR ≈ 27,000 VND. Daily transactions are in the millions of dong — a meal might cost 85,000 VND, a hotel 1,500,000 VND. It takes practice to avoid costly mistakes. Lumi shows you the euro equivalent in real-time." },
+        "q5": { "q": "How does Lumi work in Vietnam?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any VietQR code to pay instantly in dong — at near-interbank rates. No cash counting, no ATM hunting, no denomination confusion." }
       },
       "ctaTitle": "Pay like a local in Vietnam, starting today.",
       "ctaSubtitle": "Lumi is live in Vietnam (beta). Join the beta and start paying like a local right away."
@@ -1597,11 +1597,11 @@
         "card": { "method": "European debit card", "fee": "1.5–3%", "rate": "Bank markup", "speed": "Instant (limited acceptance)" },
         "atm": { "method": "ATM withdrawal", "fee": "€1.70–€2.80 + bank fee", "rate": "Interbank + markup", "speed": "10–20 min (find ATM)" },
         "cash": { "method": "Money changer", "fee": "3–10% spread", "rate": "Highly variable", "speed": "15–30 min" },
-        "lumi": { "method": "Lumifin", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
+        "lumi": { "method": "Lumi", "fee": "2% flat fee", "rate": "Near interbank", "speed": "Instant (scan QR)" }
       },
-      "howTitle": "How Lumifin works in Indonesia",
+      "howTitle": "How Lumi works in Indonesia",
       "steps": {
-        "topUp": "Add euros from your European bank account to your Lumifin wallet.",
+        "topUp": "Add euros from your European bank account to your Lumi wallet.",
         "scan": "Scan any QRIS code — warungs, cafes, shops, grab drivers, everywhere across the archipelago.",
         "pay": "Payment settles instantly in Indonesian rupiah. You see the euro equivalent in real-time."
       },
@@ -1610,8 +1610,8 @@
         "q1": { "q": "Can I use my European bank card in Indonesia?", "a": "Only at hotels, upscale restaurants, and malls in major cities. The vast majority of Indonesian commerce — warungs, ojeks, local shops, markets — runs on QRIS (QR payments) or cash. Expect 1.5–3% foreign transaction fees where cards are accepted." },
         "q2": { "q": "What is QRIS?", "a": "QRIS (Quick Response Code Indonesian Standard) is Indonesia's national unified QR payment system, launched by Bank Indonesia in 2019. It connects all major e-wallets (GoPay, OVO, Dana, ShopeePay) and banks under one standard. Over 56 million merchants accept it — from Jakarta malls to roadside warungs in Yogyakarta." },
         "q3": { "q": "How much do ATM withdrawals cost in Indonesia?", "a": "Indonesian ATMs charge 30,000–50,000 IDR (~€1.70–€2.80) per withdrawal. Limits are typically 1,250,000–2,500,000 IDR per transaction (~€70–€140). Your European bank adds 1.5–3% on top. Multiple withdrawals per week add up fast." },
-        "q4": { "q": "Why can't Europeans use QRIS directly?", "a": "QRIS requires either a local Indonesian bank account (needs a KITAS residence permit) or a local e-wallet like GoPay/OVO (needs an Indonesian phone number and ID). European tourists can't access either. Lumifin bridges this gap." },
-        "q5": { "q": "How does Lumifin work in Indonesia?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any QRIS code to pay instantly in rupiah — at near-interbank rates. Works at any of the 56+ million QRIS merchants across the archipelago." }
+        "q4": { "q": "Why can't Europeans use QRIS directly?", "a": "QRIS requires either a local Indonesian bank account (needs a KITAS residence permit) or a local e-wallet like GoPay/OVO (needs an Indonesian phone number and ID). European tourists can't access either. Lumi bridges this gap." },
+        "q5": { "q": "How does Lumi work in Indonesia?", "a": "Download the app, verify your identity, and top up from your European bank. Scan any QRIS code to pay instantly in rupiah — at near-interbank rates. Works at any of the 56+ million QRIS merchants across the archipelago." }
       },
       "ctaTitle": "Ready to pay like a local in Indonesia?",
       "ctaSubtitle": "Join the Lumi beta and be among the first to travel fee-free."
@@ -1619,14 +1619,14 @@
   },
   "compare": {
     "eyebrow": "Comparison",
-    "titleBefore": "Lumifin vs",
+    "titleBefore": "Lumi vs",
     "titleHighlight": "the rest",
     "subtitle": "Revolut and Wise are great products — but they weren't built for paying at a Thai street food stall or a Balinese warung. Here's how the options actually compare for Southeast Asia travel.",
     "disclaimer": "* Revolut fees vary by plan (Standard, Plus, Premium, Metal). Free FX has monthly limits on Standard plans. Rates as of March 2026.",
     "lastUpdated": "Last updated: July 2026. Information based on publicly available pricing. Verify current rates on each provider's website.",
     "headers": {
       "feature": "Feature",
-      "lumifin": "Lumifin",
+      "Lumi": "Lumi",
       "revolut": "Revolut",
       "wise": "Wise",
       "bank": "Trad. Bank"
@@ -1680,14 +1680,14 @@
     },
     "bottomLineTitle": "The bottom line",
     "bottomLineP1": "Revolut and Wise are excellent for countries with widespread card acceptance — Europe, the US, Australia. But in Thailand, Vietnam, and Indonesia, the majority of daily commerce happens at places that don't have card terminals. Street food vendors, tuk-tuk drivers, local markets, small cafes — these are the places you actually want to spend money, and none of them accept your Revolut card.",
-    "bottomLineP2": "Lumifin is purpose-built for this gap. Instead of trying to force a card into a cashless, QR-first economy, we connect you directly to the local payment rails — PromptPay, VietQR, QRIS — that millions of locals use every day. That means you can pay anywhere they can, at rates comparable to the best fintechs, without carrying cash or hoping for a card terminal.",
+    "bottomLineP2": "Lumi is purpose-built for this gap. Instead of trying to force a card into a cashless, QR-first economy, we connect you directly to the local payment rails — PromptPay, VietQR, QRIS — that millions of locals use every day. That means you can pay anywhere they can, at rates comparable to the best fintechs, without carrying cash or hoping for a card terminal.",
     "ctaTitle": "Ready to try the smarter way to pay in Southeast Asia?",
     "ctaSubtitle": "Join the Lumi beta and be among the first to travel without payment friction.",
     "ctaButton": "Join the beta"
   },
   "notFound": {
     "title": "Page Not Found",
-    "description": "The page you're looking for doesn't exist. Head back to Lumifin's homepage or explore our travel payment guides.",
+    "description": "The page you're looking for doesn't exist. Head back to Lumi's homepage or explore our travel payment guides.",
     "heading": "This page got lost in transit",
     "subheading": "Just like cash at a Bangkok exchange booth, this page seems to have disappeared. Let's get you back on track.",
     "home": "Home",
@@ -1696,20 +1696,20 @@
   },
   "authors": {
     "gaurav": {
-      "role": "COO, Lumifin",
-      "bio": "Gaurav brings extensive experience in finance and international operations. He co-founded Lumifin to solve the cross-border payment challenges he experienced firsthand while travelling across Southeast Asia."
+      "role": "COO, Lumi",
+      "bio": "Gaurav brings extensive experience in finance and international operations. He co-founded Lumi to solve the cross-border payment challenges he experienced firsthand while travelling across Southeast Asia."
     },
     "tanvi": {
-      "role": "Product Analyst, Lumifin",
-      "bio": "Tanvi focuses on user research and product strategy at Lumifin. She writes about the real-world payment challenges European travellers face in Southeast Asia."
+      "role": "Product Analyst, Lumi",
+      "bio": "Tanvi focuses on user research and product strategy at Lumi. She writes about the real-world payment challenges European travellers face in Southeast Asia."
     },
     "pierre": {
-      "role": "CEO, Lumifin",
-      "bio": "Pierre is an École Polytechnique graduate with deep expertise in fintech and emerging markets. He founded Lumifin to bridge the gap between European travellers and local payment systems in Asia."
+      "role": "CEO, Lumi",
+      "bio": "Pierre is an École Polytechnique graduate with deep expertise in fintech and emerging markets. He founded Lumi to bridge the gap between European travellers and local payment systems in Asia."
     },
     "thiofanty": {
-      "role": "Founder's Associate, Lumifin",
-      "bio": "Thiofanty works across product and growth at Lumifin, with a focus on how European travellers actually pay on the ground in Southeast Asia. She writes practical guides to help visitors avoid hidden fees and pay like locals."
+      "role": "Founder's Associate, Lumi",
+      "bio": "Thiofanty works across product and growth at Lumi, with a focus on how European travellers actually pay on the ground in Southeast Asia. She writes practical guides to help visitors avoid hidden fees and pay like locals."
     }
   },
   "beta": {

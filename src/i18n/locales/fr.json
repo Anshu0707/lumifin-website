@@ -112,7 +112,7 @@
   },
   "landing": {
     "seo": {
-      "title": "Lumifin — Payez comme un local en Asie du Sud-Est",
+      "title": "Lumi — Payez comme un local en Asie du Sud-Est",
       "description": "Voyagez en Thaïlande, au Vietnam et en Indonésie sans frais d'espèces ni de carte. Scannez les QR codes locaux et payez instantanément avec Lumi. Zéro frais cachés."
     }
   },
@@ -381,7 +381,7 @@
       },
       "bestCardsVietnam": {
         "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
-        "excerpt": "Wise, Revolut, N26, Monzo, espèces ou Lumifin ? La configuration la plus maligne en 2026 n'est pas une carte parfaite — c'est une combinaison. Voici quoi emporter.",
+        "excerpt": "Wise, Revolut, N26, Monzo, espèces ou Lumi ? La configuration la plus maligne en 2026 n'est pas une carte parfaite — c'est une combinaison. Voici quoi emporter.",
         "date": "15 juin 2026"
       },
       "digitalNomadVisas": {
@@ -391,12 +391,12 @@
       },
       "hanoiFounderNote": {
         "title": "Je suis venu à Hanoï tester notre produit. Je suis reparti plus convaincu que jamais.",
-        "excerpt": "Après des mois à construire Lumifin en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour tester le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
+        "excerpt": "Après des mois à construire Lumi en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour tester le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
         "date": "6 juillet 2026"
       },
       "daNangPressRelease": {
         "title": "Pourquoi nous avons choisi Da Nang",
-        "excerpt": "Lumifin a choisi Da Nang comme communauté de lancement pour le déploiement de son portefeuille en euros en Asie du Sud-Est. Voici pourquoi — et comment les travailleurs à distance peuvent contribuer.",
+        "excerpt": "Lumi a choisi Da Nang comme communauté de lancement pour le déploiement de son portefeuille en euros en Asie du Sud-Est. Voici pourquoi — et comment les travailleurs à distance peuvent contribuer.",
         "date": "10 juillet 2026"
       }
     }
@@ -404,7 +404,7 @@
   "privacy": {
     "seo": {
       "title": "Politique de confidentialité",
-      "description": "Comment LumiFin collecte, utilise et protège vos données personnelles. Pratiques conformes au RGPD pour notre service de paiement."
+      "description": "Comment Lumi collecte, utilise et protège vos données personnelles. Pratiques conformes au RGPD pour notre service de paiement."
     },
     "eyebrow": "Mentions légales",
     "title": "Politique de confidentialité",
@@ -413,7 +413,7 @@
     "website": "https://lumifin.io",
     "section1": {
       "title": "1. Responsable du traitement",
-      "body1": "LumiFin SAS (« LumiFin », « nous ») est le responsable du traitement des données décrites dans la présente politique de confidentialité. Adresse : 50 rue Anatole France, 92290 Châtenay-Malabry, France. E-mail : privacy@lumifin.io.",
+      "body1": "LumiFin SAS (« Lumi », « nous ») est le responsable du traitement des données décrites dans la présente politique de confidentialité. Adresse : 50 rue Anatole France, 92290 Châtenay-Malabry, France. E-mail : privacy@lumifin.io.",
       "body2": "Notre partenaire de paiement, Trans-Fi Inc. (« Transfi »), agit en tant que responsable de traitement indépendant pour les données personnelles qu'il traite afin de fournir les services de paiement (garde, change, règlement, conformité). La politique de confidentialité de Transfi est disponible à l'adresse <1>https://www.transfi.com/privacy-policy</1>."
     },
     "section2": {
@@ -441,7 +441,7 @@
       "item1": "Exécution du contrat (art. 6, §1, b) : création et gestion de votre compte ; traitement des transactions ; affichage du solde et de l'historique ; communications relatives à votre compte et à vos transactions ; service client.",
       "item2": "Obligations légales (art. 6, §1, c) : vérification d'identité et conformité KYC/LCB-FT (Code monétaire et financier, art. L561-12) ; réponse aux demandes légitimes des autorités ; conservation des registres requis par la loi.",
       "item3": "Intérêts légitimes (art. 6, §1, f) : prévention de la fraude et sécurisation de l'application ; amélioration de nos services et de l'expérience utilisateur ; analyses et rapports de plantage (via Firebase Analytics et Firebase Crashlytics) ; mise en œuvre de nos conditions générales d'utilisation.",
-      "item4": "Consentement (art. 6, §1, a) : communications marketing (consentement révocable à tout moment) ; communications de co-marketing optionnelles de la part de LumiFin et Transfi (opt-in uniquement)."
+      "item4": "Consentement (art. 6, §1, a) : communications marketing (consentement révocable à tout moment) ; communications de co-marketing optionnelles de la part de Lumi et Transfi (opt-in uniquement)."
     },
     "section4": {
       "title": "4. Partage des données",
@@ -507,7 +507,7 @@
     },
     "eyebrow": "Compte",
     "title": "Supprimer votre compte Lumi",
-    "intro": "<1>Lumi</1> est exploité par <1>Lumifin</1> (package Android <2>com.lumifin.app</2>). Cette page explique comment demander la suppression de votre compte et des données associées.",
+    "intro": "<1>Lumi</1> est exploité par <1>Lumi</1> (package Android <2>com.lumifin.app</2>). Cette page explique comment demander la suppression de votre compte et des données associées.",
     "howto": {
       "title": "Comment demander la suppression du compte",
       "intro": "Vous pouvez demander la suppression de l'une des deux façons suivantes :",
@@ -598,12 +598,12 @@
     "website": "https://lumifin.io",
     "section1": {
       "title": "1. Introduction et acceptation",
-      "body1": "Les présentes conditions générales (« Conditions ») constituent un accord contraignant entre vous (« Utilisateur ») et LumiFin SAS, société française immatriculée au 50 rue Anatole France, 92290 Châtenay-Malabry, France (« LumiFin », « nous »).",
-      "body2": "LumiFin exploite l'application mobile Lumi (« Application »), qui permet aux voyageurs européens de payer chez des commerçants en Asie du Sud-Est en scannant des QR codes locaux.",
+      "body1": "Les présentes conditions générales (« Conditions ») constituent un accord contraignant entre vous (« Utilisateur ») et LumiFin SAS, société française immatriculée au 50 rue Anatole France, 92290 Châtenay-Malabry, France (« Lumi », « nous »).",
+      "body2": "Lumi exploite l'application mobile Lumi (« Application »), qui permet aux voyageurs européens de payer chez des commerçants en Asie du Sud-Est en scannant des QR codes locaux.",
       "body3": "En utilisant l'Application, vous acceptez les présentes Conditions ainsi que notre <1>Politique de confidentialité</1>. Si vous n'acceptez pas, n'utilisez pas l'Application.",
       "sub1": {
         "title": "1.1 Partenaire de paiement",
-        "body1": "LumiFin est un fournisseur de technologie. Nous ne détenons pas de fonds, ne traitons pas de paiements et n'effectuons pas d'opérations de change. Ces services réglementés sont fournis par notre partenaire de paiement (actuellement Trans-Fi Inc. et/ou ses sociétés affiliées) sous ses propres agréments et conditions.",
+        "body1": "Lumi est un fournisseur de technologie. Nous ne détenons pas de fonds, ne traitons pas de paiements et n'effectuons pas d'opérations de change. Ces services réglementés sont fournis par notre partenaire de paiement (actuellement Trans-Fi Inc. et/ou ses sociétés affiliées) sous ses propres agréments et conditions.",
         "body2": "En utilisant l'Application, vous concluez une relation contractuelle distincte avec le partenaire de paiement pour les services de paiement. Les conditions du partenaire de paiement sont accessibles dans l'Application et à l'adresse <1>https://www.transfi.com/terms-and-conditions</1>. En cas de divergence concernant les services de paiement, les conditions du partenaire de paiement prévalent."
       },
       "sub2": {
@@ -617,7 +617,7 @@
     },
     "section2": {
       "title": "2. Définitions",
-      "body": "« Application » — l'application mobile Lumi (iOS/Android). « Compte » — votre compte personnel dans l'Application. « Portefeuille » — le portefeuille numérique détenu par le partenaire de paiement pour votre compte (il ne s'agit pas d'un compte bancaire ; il ne produit pas d'intérêts). « Partenaire de paiement » — Trans-Fi Inc. et/ou ses sociétés affiliées fournissant les services de paiement. « Services de paiement » — garde des fonds, change, exécution des paiements et règlement assurés par le partenaire de paiement. « Services Lumi » — les services technologiques fournis par LumiFin (Application, interface, support). « Paiement QR » — un paiement initié en scannant le QR code d'un commerçant. « Virement SEPA » — un virement SEPA pour alimenter votre Portefeuille. « Pays Pris en Charge » — pays où les Paiements QR sont disponibles, tels que listés dans l'Application."
+      "body": "« Application » — l'application mobile Lumi (iOS/Android). « Compte » — votre compte personnel dans l'Application. « Portefeuille » — le portefeuille numérique détenu par le partenaire de paiement pour votre compte (il ne s'agit pas d'un compte bancaire ; il ne produit pas d'intérêts). « Partenaire de paiement » — Trans-Fi Inc. et/ou ses sociétés affiliées fournissant les services de paiement. « Services de paiement » — garde des fonds, change, exécution des paiements et règlement assurés par le partenaire de paiement. « Services Lumi » — les services technologiques fournis par Lumi (Application, interface, support). « Paiement QR » — un paiement initié en scannant le QR code d'un commerçant. « Virement SEPA » — un virement SEPA pour alimenter votre Portefeuille. « Pays Pris en Charge » — pays où les Paiements QR sont disponibles, tels que listés dans l'Application."
     },
     "section3": {
       "title": "3. Éligibilité et compte",
@@ -652,7 +652,7 @@
       },
       "sub7": {
         "title": "4.7 Refus de transactions",
-        "body": "LumiFin et le partenaire de paiement peuvent refuser, retarder ou inverser une transaction : (a) en cas de soupçon de fraude ou d'activité illicite ; (b) si la loi ou des sanctions l'exigent ; (c) sur ordre d'un tribunal ou d'une autorité ; ou (d) si nous ne pouvons pas vérifier votre identité ou l'origine des fonds."
+        "body": "Lumi et le partenaire de paiement peuvent refuser, retarder ou inverser une transaction : (a) en cas de soupçon de fraude ou d'activité illicite ; (b) si la loi ou des sanctions l'exigent ; (c) sur ordre d'un tribunal ou d'une autorité ; ou (d) si nous ne pouvons pas vérifier votre identité ou l'origine des fonds."
       },
       "sub8": {
         "title": "4.8 Erreurs et transactions non autorisées",
@@ -661,8 +661,8 @@
     },
     "section5": {
       "title": "5. Partenaire de paiement et tiers",
-      "body1": "Le partenaire de paiement fournit : la garde de vos fonds, le change de devises, le règlement des paiements et les contrôles de conformité. LumiFin fournit : l'Application, l'interface utilisateur, l'affichage des transactions et le support client.",
-      "body2": "LumiFin n'est ni une banque, ni un établissement de paiement, ni un émetteur de monnaie électronique. Nous ne détenons pas vos fonds. Dans toute la mesure permise par la loi, LumiFin n'est pas responsable des actes, omissions ou de l'insolvabilité du partenaire de paiement ou des réseaux de paiement tiers. Ceci n'affecte pas vos droits légaux en tant que consommateur."
+      "body1": "Le partenaire de paiement fournit : la garde de vos fonds, le change de devises, le règlement des paiements et les contrôles de conformité. Lumi fournit : l'Application, l'interface utilisateur, l'affichage des transactions et le support client.",
+      "body2": "Lumi n'est ni une banque, ni un établissement de paiement, ni un émetteur de monnaie électronique. Nous ne détenons pas vos fonds. Dans toute la mesure permise par la loi, Lumi n'est pas responsable des actes, omissions ou de l'insolvabilité du partenaire de paiement ou des réseaux de paiement tiers. Ceci n'affecte pas vos droits légaux en tant que consommateur."
     },
     "section6": {
       "title": "6. Vérification d'identité et conformité",
@@ -671,7 +671,7 @@
     },
     "section7": {
       "title": "7. Frais",
-      "body1": "LumiFin facture 2 % par Paiement QR, affichés avant votre confirmation. Aucun abonnement ni frais caché. L'alimentation et les retraits sont actuellement gratuits côté LumiFin (votre banque peut facturer des frais). Le taux de change peut inclure une marge fixée par le partenaire de paiement, distincte de nos frais de 2 %.",
+      "body1": "Lumi facture 2 % par Paiement QR, affichés avant votre confirmation. Aucun abonnement ni frais caché. L'alimentation et les retraits sont actuellement gratuits côté Lumi (votre banque peut facturer des frais). Le taux de change peut inclure une marge fixée par le partenaire de paiement, distincte de nos frais de 2 %.",
       "body2": "Nous pouvons modifier les frais moyennant un préavis d'au moins 30 jours. Si vous n'êtes pas d'accord, vous pouvez clôturer votre Compte et retirer vos fonds."
     },
     "section8": {
@@ -681,13 +681,13 @@
     },
     "section9": {
       "title": "9. Propriété intellectuelle",
-      "body": "Tous les droits de propriété intellectuelle sur l'Application appartiennent à LumiFin ou à ses concédants. Nous vous accordons une licence limitée, non exclusive, non transférable et révocable d'utilisation de l'Application sur votre appareil personnel, uniquement pour accéder aux Services."
+      "body": "Tous les droits de propriété intellectuelle sur l'Application appartiennent à Lumi ou à ses concédants. Nous vous accordons une licence limitée, non exclusive, non transférable et révocable d'utilisation de l'Application sur votre appareil personnel, uniquement pour accéder aux Services."
     },
     "section10": {
       "title": "10. Limitation de responsabilité",
       "body1": "L'Application est fournie « en l'état » sans garantie d'aucune sorte, dans toute la mesure permise par la loi. Nous ne garantissons pas une disponibilité ininterrompue ou exempte d'erreurs.",
-      "body2": "Dans toute la mesure permise par le droit français : (a) LumiFin n'est pas responsable des dommages indirects, consécutifs ou punitifs ; (b) LumiFin n'est pas responsable des préjudices causés par le partenaire de paiement, les réseaux de paiement ou les commerçants ; (c) LumiFin n'est pas responsable en cas de force majeure ; et (d) notre responsabilité globale est plafonnée aux frais que vous avez payés à LumiFin au cours des 12 mois précédant la réclamation.",
-      "body3": "Lorsque la loi impose un plafond plus élevé, le montant minimum prévu par la loi s'applique. LumiFin n'est pas partie aux transactions avec les commerçants ; les litiges avec un commerçant doivent être résolus directement avec celui-ci.",
+      "body2": "Dans toute la mesure permise par le droit français : (a) Lumi n'est pas responsable des dommages indirects, consécutifs ou punitifs ; (b) Lumi n'est pas responsable des préjudices causés par le partenaire de paiement, les réseaux de paiement ou les commerçants ; (c) Lumi n'est pas responsable en cas de force majeure ; et (d) notre responsabilité globale est plafonnée aux frais que vous avez payés à Lumi au cours des 12 mois précédant la réclamation.",
+      "body3": "Lorsque la loi impose un plafond plus élevé, le montant minimum prévu par la loi s'applique. Lumi n'est pas partie aux transactions avec les commerçants ; les litiges avec un commerçant doivent être résolus directement avec celui-ci.",
       "body4": "Aucune disposition des présentes Conditions n'exclut la responsabilité en cas de décès ou de blessures corporelles dus à une négligence, à une fraude ou à toute responsabilité ne pouvant être exclue selon le droit français ou européen. Vos droits légaux en tant que consommateur ne sont pas affectés."
     },
     "section11": {
@@ -1016,7 +1016,7 @@
       "p20": "Le mur commence à se fissurer. Début 2026, la SBV a confirmé l'étape suivante du lien QR transfrontalier ASEAN. Les voyageurs vietnamiens peuvent déjà scanner les codes PromptPay thaïlandais avec leur appli bancaire. Les visiteurs thaïlandais qui scannent des QR vietnamiens, c'est entré en vigueur dans des villes pilotes fin de l'année dernière. Un lien Singapour–Vietnam avec PayNow est en construction. Le Cambodge serait le prochain.",
       "p21": "Ce que ça ne règle pas, c'est le problème étranger dans l'autre sens — un voyageur français qui scanne un VietQR avec son appli bancaire française. C'est le plus dur. Il faut un règlement interbancaire avec des systèmes hors ASEAN, et les banques européennes et américaines n'ont pas encore de raison commerciale de s'en occuper. Les responsables de la SBV ont dit qu'ils étaient « ouverts » à un accès étranger plus large. Ils n'ont pas mis de date.",
       "p22": "La prévision honnête : d'ici fin 2026, n'importe qui avec une appli bancaire thaïlandaise, singapourienne, malaisienne, indonésienne ou cambodgienne pourra payer dans un stand de rue vietnamien. Tous les autres feront toujours la queue au DAB. Si vous lisez ça depuis Londres, New York ou Berlin, prévoyez en conséquence.",
-      "h8": "Le point de vue Lumifin",
+      "h8": "Le point de vue Lumi",
       "lumiTip": "C'est précisément ce genre de fragmentation que nous travaillons à aplanir. Une couche unique au-dessus des rails locaux, pour que les voyageurs et les équipes à distance puissent payer au Vietnam sans le casse-tête KYC.",
       "p23": "Si vous faites circuler de l'argent vers et depuis le Vietnam régulièrement, nous avons un chemin plus discret que de tendre un paquet de billets à un ami. Avant votre prochain voyage :",
       "tip1": "Prévenez votre émetteur de carte que vous voyagez pour qu'il ne vous bloque pas.",
@@ -1027,7 +1027,7 @@
     "bestTravelCardsVietnam": {
       "seo": {
         "title": "Meilleures cartes de voyage pour les Européens au Vietnam (comparatif 2026)",
-        "description": "Comparez Wise, Revolut, N26, Monzo, les espèces et Lumifin pour payer au Vietnam en tant que voyageur européen en 2026 — et la configuration de paiement la plus maligne à emporter."
+        "description": "Comparez Wise, Revolut, N26, Monzo, les espèces et Lumi pour payer au Vietnam en tant que voyageur européen en 2026 — et la configuration de paiement la plus maligne à emporter."
       },
       "backToBlog": "Retour au blog",
       "category": "Voyage · Vietnam",
@@ -1049,7 +1049,7 @@
         { "option": "Monzo", "bestFor": "Voyageurs britanniques", "watchOut": "Plafonds de retrait DAB hors EEE", "qr": "Pas de VietQR natif", "verdict": "Meilleure option pour le Royaume-Uni" },
         { "option": "Carte bancaire classique (UE)", "bestFor": "Secours et urgences", "watchOut": "Marges de change, frais DAB et blocages", "qr": "Pas de VietQR natif", "verdict": "À garder en secours" },
         { "option": "Espèces", "bestFor": "Étals de rue, zones rurales, urgences", "watchOut": "Frais de DAB/change et risque lié au transport", "qr": "Sans objet", "verdict": "Toujours nécessaires" },
-        { "option": "Lumifin", "bestFor": "Payer par QR local depuis un compte européen", "watchOut": "Disponibilité en bêta au Vietnam", "qr": "Oui — conçu pour ce manque", "verdict": "Le meilleur pont QR une fois disponible" }
+        { "option": "Lumi", "bestFor": "Payer par QR local depuis un compte européen", "watchOut": "Disponibilité en bêta au Vietnam", "qr": "Oui — conçu pour ce manque", "verdict": "Le meilleur pont QR une fois disponible" }
       ],
       "howPayH": "Comment on paie vraiment au Vietnam",
       "howPayP1": "Le Vietnam n'est pas un marché « tout carte » comme beaucoup d'Européens l'imaginent. Dans les hôtels, les centres commerciaux, les aéroports, les restaurants touristiques et les grandes enseignes, Visa et Mastercard sont généralement utiles. Mais pour les petits cafés, la street food, les boutiques locales, les taxis, les marchands de marché et les services informels, vous verrez souvent un QR code sur le comptoir avant un terminal de carte.",
@@ -1102,8 +1102,8 @@
       "missingH": "La pièce manquante : les paiements par QR locaux",
       "missingP1": "C'est ici que le conseil habituel sur « la meilleure carte de voyage » s'effondre. La meilleure carte pour le Vietnam peut quand même échouer au moment précis où vous voulez de la simplicité : un QR code dans un café, un comptoir de street food, une petite boutique ou un prestataire qui ne veut pas s'embêter avec les rails de la carte.",
       "missingP2": "Quelques options QR à destination des touristes émergent. Par exemple, le portail touristique de Da Nang décrit un parcours VNPAY pour les visiteurs internationaux qui utilise un numéro de téléphone international, les données du passeport et une carte Visa, Mastercard ou JCB liée. C'est utile comme direction, mais la leçon plus large est simple : le Vietnam évolue vers le QR, et les voyageurs ont besoin d'outils de paiement qui s'adaptent au parcours local plutôt que de ramener chaque achat vers la carte et les espèces. [9]",
-      "lumifinH": "Là où Lumifin intervient",
-      "lumifinP1": "Lumifin ne cherche pas à remplacer votre carte de voyage. Il est conçu pour combler le manque du QR : aider les Européens à payer comme les locaux au Vietnam via les paiements par QR locaux, sans avoir besoin d'un compte bancaire vietnamien. Pour la bêta, la combinaison la plus simple reste : gardez votre carte de voyage, ayez un peu d'espèces, et utilisez Lumifin quand le QR local est la meilleure façon de payer.",
+      "lumifinH": "Là où Lumi intervient",
+      "lumifinP1": "Lumi ne cherche pas à remplacer votre carte de voyage. Il est conçu pour combler le manque du QR : aider les Européens à payer comme les locaux au Vietnam via les paiements par QR locaux, sans avoir besoin d'un compte bancaire vietnamien. Pour la bêta, la combinaison la plus simple reste : gardez votre carte de voyage, ayez un peu d'espèces, et utilisez Lumi quand le QR local est la meilleure façon de payer.",
       "first24H": "La meilleure configuration de paiement pour vos premières 24 heures au Vietnam",
       "first24List": [
         { "bold": "Avant l'atterrissage :", "rest": " ajoutez Wise / Revolut / N26 / Monzo à votre portefeuille mobile si vous en utilisez un, et emportez aussi une carte physique." },
@@ -1246,23 +1246,23 @@
     },
     "hanoiFounderNote": {
       "seo": {
-        "title": "Tester Lumifin à Hanoï — une note du fondateur, par Gaurav Bansal",
-        "description": "Le cofondateur de Lumifin, Gaurav Bansal, partage ce que tester le produit sur le terrain à Hanoï lui a appris sur les vrais utilisateurs, la friction de paiement et la conviction du fondateur."
+        "title": "Tester Lumi à Hanoï — une note du fondateur, par Gaurav Bansal",
+        "description": "Le cofondateur de Lumi, Gaurav Bansal, partage ce que tester le produit sur le terrain à Hanoï lui a appris sur les vrais utilisateurs, la friction de paiement et la conviction du fondateur."
       },
       "backToBlog": "Retour au blog",
       "category": "Récits · Note du fondateur",
       "title": "Je suis venu à Hanoï tester notre produit. Je suis reparti plus convaincu que jamais.",
-      "subtitle": "Après des mois à construire Lumifin en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour vivre le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
+      "subtitle": "Après des mois à construire Lumi en coulisses, le cofondateur Gaurav Bansal s'est rendu à Hanoï pour vivre le produit sur le terrain — et a trouvé ses plus fortes leçons hors de la feuille de route.",
       "author": "Gaurav Bansal",
       "readTime": "4 min de lecture",
       "dateLabel": "Juillet 2026",
-      "imgAlt": "Le cofondateur de Lumifin, Gaurav Bansal, avec des voyageurs rencontrés dans un café à Hanoï, au Vietnam.",
+      "imgAlt": "Le cofondateur de Lumi, Gaurav Bansal, avec des voyageurs rencontrés dans un café à Hanoï, au Vietnam.",
       "paragraphs": [
         "J'ai toujours eu un lien particulier avec Hanoï.",
         "J'ai découvert la ville il y a presque dix ans, et depuis, j'adore l'énergie qui s'en dégage — le mouvement, le rythme, la culture du café, et cette impression que tout finit par fonctionner malgré le chaos.",
         "Ce voyage, pourtant, était différent.",
         "Je n'arrivais pas en touriste. Je venais avec un autre objectif : tester quelque chose que notre équipe avait passé des mois à construire.",
-        "Chez Lumifin, nous travaillons sur une expérience de paiement conçue pour rendre les dépenses à l'étranger simples pour les voyageurs. Pour l'utilisateur final, le produit doit paraître fluide.",
+        "Chez Lumi, nous travaillons sur une expérience de paiement conçue pour rendre les dépenses à l'étranger simples pour les voyageurs. Pour l'utilisateur final, le produit doit paraître fluide.",
         "Mais en tant que bâtisseurs, nous savons que la simplicité est rarement simple.",
         "Derrière cette expérience se cachent des mois de développement produit, de travail réglementaire, de partenariats de paiement, d'exigences de conformité et d'innombrables itérations auxquelles les utilisateurs n'auront, on l'espère, jamais à penser.",
         "Alors, avant de m'envoler pour Hanoï, je me suis lancé un petit défi.",
@@ -1300,40 +1300,40 @@
     },
     "daNangPressRelease": {
       "seo": {
-        "title": "Pourquoi nous avons choisi Da Nang — le lancement de Lumifin en Asie du Sud-Est",
-        "description": "Lumifin, une fintech française qui construit un portefeuille en euros pour les voyageurs européens en Asie du Sud-Est, a choisi Da Nang comme communauté de lancement — et invite les travailleurs à distance à façonner le produit."
+        "title": "Pourquoi nous avons choisi Da Nang — le lancement de Lumi en Asie du Sud-Est",
+        "description": "Lumi, une fintech française qui construit un portefeuille en euros pour les voyageurs européens en Asie du Sud-Est, a choisi Da Nang comme communauté de lancement — et invite les travailleurs à distance à façonner le produit."
       },
       "backToBlog": "Retour au blog",
       "category": "Presse · Actualité de l'entreprise",
       "title": "Pourquoi nous avons choisi Da Nang",
       "subtitle": "Nous construisons un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est — et nous avons choisi Da Nang comme lieu de lancement. Voici pourquoi, et comment vous pouvez contribuer à façonner ce que nous construisons.",
-      "source": "Lumifin",
+      "source": "Lumi",
       "readTime": "4 min de lecture",
       "dateLabel": "10 juillet 2026",
       "imgAlt": "Le pont du Dragon illuminé au crépuscule au-dessus de la rivière Han à Da Nang, au Vietnam.",
       "dateline": "Da Nang, Vietnam — 10 juillet 2026.",
-      "leadP": "Lumifin, une fintech française qui construit un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est, a choisi Da Nang comme communauté de lancement pour son déploiement régional. Nous avons dévoilé cette décision lors d'un atelier « Founding Ambassadors » dans la ville le 10 juillet, invitant les travailleurs à distance internationaux de Da Nang à devenir nos premiers ambassadeurs et bêta-testeurs.",
+      "leadP": "Lumi, une fintech française qui construit un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est, a choisi Da Nang comme communauté de lancement pour son déploiement régional. Nous avons dévoilé cette décision lors d'un atelier « Founding Ambassadors » dans la ville le 10 juillet, invitant les travailleurs à distance internationaux de Da Nang à devenir nos premiers ambassadeurs et bêta-testeurs.",
       "leadP2": "Le calendrier n'est pas un hasard. Notre annonce intervient alors que Da Nang accueille sa Semaine des affaires, de la finance et de la technologie (7–12 juillet 2026), un rassemblement à l'échelle de la ville réunissant décideurs, investisseurs et leaders de la fintech, avec pour point d'orgue le premier Vietnam Finance Forum les 9 et 10 juillet. Cette semaine rappelle à quel point Da Nang devient rapidement le centre émergent du Vietnam pour l'innovation et la finance internationale.",
       "problemH": "Le problème que rencontre chaque visiteur",
       "problemP1": "Si vous avez passé un peu de temps au Vietnam, vous connaissez déjà la friction. Les locaux paient presque tout — un café, un bol de phở, un taxi — en scannant un code VietQR directement depuis leur appli bancaire. Les étrangers ne le peuvent pas : ces codes QR nécessitent un compte bancaire vietnamien.",
-      "problemP2": "Lumifin comble ce manque. Vous rechargez un portefeuille en euros et payez n'importe quel code QR local exactement comme un résident — un scan, en quelques secondes, sans compte bancaire local et sans course aux espèces. Développée par notre équipe d'ingénierie en Inde, l'application est en bêta et déjà utilisée quotidiennement par l'équipe Lumifin partout au Vietnam.",
+      "problemP2": "Lumi comble ce manque. Vous rechargez un portefeuille en euros et payez n'importe quel code QR local exactement comme un résident — un scan, en quelques secondes, sans compte bancaire local et sans course aux espèces. Développée par notre équipe d'ingénierie en Inde, l'application est en bêta et déjà utilisée quotidiennement par l'équipe Lumi partout au Vietnam.",
       "whyH": "Pourquoi Da Nang, précisément",
       "whyP1": "L'attrait de Da Nang va plus loin que le calendrier. En janvier 2026, le Vietnam a inauguré le Da Nang International Financial Center, désignant la ville comme le pôle financier du pays axé sur l'innovation, avec un mandat explicite autour des paiements numériques, de la fintech et d'un bac à sable réglementaire pour de nouveaux modèles financiers.",
       "whyP2": "Dans le même temps, Da Nang est devenue l'une des bases les plus prisées d'Asie du Sud-Est pour les nomades numériques et les travailleurs à distance internationaux — séduits par ses plages, son faible coût de la vie, sa connectivité rapide et une scène étonnamment active de rencontres et d'espaces de coworking. Pour nous, la combinaison est rare : une ville dont l'ambition publique et les résidents du quotidien pointent tous deux précisément vers le type de produit que nous construisons.",
-      "whyP3": "Cette direction est fixée au plus haut niveau politique. La Résolution 57-NQ/TW du Vietnam, adoptée par le Politburo en décembre 2024, place la science, la technologie, l'innovation et la transformation numérique — y compris la construction d'une économie numérique sans espèces — au cœur du développement national. En intégrant les visiteurs internationaux dans l'écosystème de paiement par QR du Vietnam, Lumifin contribue à cet agenda, reliant l'élan de transformation numérique du pays à l'un de ses secteurs les plus importants : le tourisme.",
+      "whyP3": "Cette direction est fixée au plus haut niveau politique. La Résolution 57-NQ/TW du Vietnam, adoptée par le Politburo en décembre 2024, place la science, la technologie, l'innovation et la transformation numérique — y compris la construction d'une économie numérique sans espèces — au cœur du développement national. En intégrant les visiteurs internationaux dans l'écosystème de paiement par QR du Vietnam, Lumi contribue à cet agenda, reliant l'élan de transformation numérique du pays à l'un de ses secteurs les plus importants : le tourisme.",
       "quote1": "Nous n'avons pas choisi Da Nang par hasard. C'est l'endroit rare où les personnes pour qui nous construisons — des travailleurs à distance internationaux qui vivent entre les devises — et l'ambition de la ville tirent toutes dans la même direction. Le Vietnam vient de faire de Da Nang son foyer pour l'innovation des paiements numériques, et c'est exactement là qu'un portefeuille comme le nôtre a sa place.",
-      "quote1By": "Pierre Lahbabi, cofondateur et CEO de Lumifin",
+      "quote1By": "Pierre Lahbabi, cofondateur et CEO de Lumi",
       "ambassadorsH": "Construisez-le avec nous : le programme Founding Ambassadors",
       "ambassadorsP1": "À travers notre programme Founding Ambassadors, nous invitons la communauté des travailleurs à distance de Da Nang à façonner le produit avant son lancement plus large. Lors de l'atelier du 10 juillet — de 14 h à 16 h à The Workshop, sur Chế Lan Viên, dans le district de Ngũ Hành Sơn — les participants ont configuré le portefeuille, effectué de vrais paiements sur place et donné un retour direct à l'équipe fondatrice, avec du crédit gratuit à dépenser pendant la session. Leurs retours guideront l'ergonomie et la feuille de route des fonctionnalités de l'application.",
       "ambassadorsP2": "Au-delà de l'atelier lui-même, nous recrutons des travailleurs à distance européens et des créateurs de contenu comme ambassadeurs dans une campagne plus large qui met en lumière le dynamisme de Da Nang en tant que centre d'innovation — et le déploiement du portefeuille avec des partenaires locaux tels que des hôtels, des restaurants et des commerçants du quotidien dans toute la ville.",
       "quote2": "Payer un stand de street-food ou un café de quartier devrait être identique pour un visiteur et pour un local : un scan, et c'est fait. C'est ce moment du quotidien que nous perfectionnons ici, aux côtés de ceux qui l'utiliseront le plus.",
       "quote2By": "Pierre Lahbabi",
       "nextH": "La suite",
-      "nextP1": "Lumifin prévoit d'apporter la même expérience de QR local à ses autres marchés prioritaires de la région — la Thaïlande (PromptPay) et l'Indonésie (QRIS) — à mesure qu'elle passe de la bêta vers un lancement complet.",
-      "quote3": "Les paiements transfrontaliers en Asie du Sud-Est constituent un marché vaste et mal desservi, et Lumifin l'aborde par le bon bout — la friction quotidienne que ressent chaque voyageur. Baser le lancement à Da Nang, au moment où la ville s'affirme comme un pôle d'innovation des paiements numériques, est un choix fin et délibéré, et exactement le genre d'équipe et de timing à soutenir.",
-      "quote3By": "Robert Brice Cerival, conseiller principal de Lumifin au Vietnam",
-      "aboutH": "À propos de Lumifin",
-      "aboutP": "Lumifin est une fintech française qui construit un portefeuille en euros permettant aux voyageurs européens de payer par code QR local à travers l'Asie du Sud-Est (VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie) aussi facilement que les résidents. Fondée près de Paris et actuellement en bêta, Lumifin a été cofondée par le CEO Pierre Lahbabi, diplômé de l'École Polytechnique et de Mines Paris, spécialiste des paiements avec une carrière couvrant la banque et le conseil en technologie. Le cofondateur et COO Gaurav Bansal apporte plus de quinze ans d'expérience dans le produit fintech et le conseil en technologie, avec des postes chez Sopra Steria, Capgemini et le prêteur fintech Biz2Credit, et détient un master en finance du National Institute of Securities Markets en Inde. En savoir plus sur lumifin.io.",
+      "nextP1": "Lumi prévoit d'apporter la même expérience de QR local à ses autres marchés prioritaires de la région — la Thaïlande (PromptPay) et l'Indonésie (QRIS) — à mesure qu'elle passe de la bêta vers un lancement complet.",
+      "quote3": "Les paiements transfrontaliers en Asie du Sud-Est constituent un marché vaste et mal desservi, et Lumi l'aborde par le bon bout — la friction quotidienne que ressent chaque voyageur. Baser le lancement à Da Nang, au moment où la ville s'affirme comme un pôle d'innovation des paiements numériques, est un choix fin et délibéré, et exactement le genre d'équipe et de timing à soutenir.",
+      "quote3By": "Robert Brice Cerival, conseiller principal de Lumi au Vietnam",
+      "aboutH": "À propos de Lumi",
+      "aboutP": "Lumi est une fintech française qui construit un portefeuille en euros permettant aux voyageurs européens de payer par code QR local à travers l'Asie du Sud-Est (VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie) aussi facilement que les résidents. Fondée près de Paris et actuellement en bêta, Lumi a été cofondée par le CEO Pierre Lahbabi, diplômé de l'École Polytechnique et de Mines Paris, spécialiste des paiements avec une carrière couvrant la banque et le conseil en technologie. Le cofondateur et COO Gaurav Bansal apporte plus de quinze ans d'expérience dans le produit fintech et le conseil en technologie, avec des postes chez Sopra Steria, Capgemini et le prêteur fintech Biz2Credit, et détient un master en finance du National Institute of Securities Markets en Inde. En savoir plus sur lumifin.io.",
       "contactH": "Contact presse",
       "contacts": [
         { "name": "Thiofanty", "detail": "thiofanty@lumifin.io · +33 7 44 87 31 56 · lumifin.io" },
@@ -1626,7 +1626,7 @@
     "lastUpdated": "Dernière mise à jour : juillet 2026. Informations basées sur les tarifs publics. Vérifiez les tarifs actuels sur le site de chaque fournisseur.",
     "headers": {
       "feature": "Caractéristique",
-      "lumifin": "Lumi",
+      "Lumi": "Lumi",
       "revolut": "Revolut",
       "wise": "Wise",
       "bank": "Banque trad."
