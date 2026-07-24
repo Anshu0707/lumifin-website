@@ -913,17 +913,18 @@ export default function LandingPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
           {[
             {
-              name: t("coverage.countries.thailand"),
-              network: "PromptPay",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCADyKo_l8AkIwVsjIh0QFbFynTbtTTQGXE_82jvwwmf7HI1rUAxvo2gjS0XLGEIakqz70jBMljXEYZZjTXZlt84HPQ6D9AjeF5h_jUQy52xRGIGB9AkSF8ckqeuv-NfY-9ts9W3lkU7joA2dpRs8hvPBOkPBnYtEOjDDyx-6AUbFaR_veWBqMbqzbeudVq76Del8xfFq3l1i3tJ2T6-jP35gq3rNgKepTuY6pcLZduGmJRHe8GlyZfbuSW5Kj-5NIBGjeSKpwgnT0_",
-              href: "/travel-money/thailand",
-            },
-            {
               name: t("coverage.countries.vietnam"),
               network: "VietQR",
               img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBp0TIju-96DY_xjqr3kNDc5nGwTSRs9Mk8SclesK06t4vH_Lu079tXN9wiD1CbHNWlsNeoyk5L9MGlkDrLN-dWuvEowE1nKzjiC0ML44Y1J51xQkXHb0XV7iS7WdrdJZdBSTH3V2xcHTNcYsqJlIPdrwaKp3qGYPLSelTdNh7NujqzLVcgHkFzeWJ1EwPzoTu1oh7FqtTavzuZhuFlv1kgJrby7zvU6l_d6UuHgJOt2nvDtFn0xoClUXwdpAwV_yj05egAaQoqeuvZ",
-              offset: true,
               href: "/travel-money/vietnam",
+              live: true,
+            },
+            {
+              name: t("coverage.countries.thailand"),
+              network: "PromptPay",
+              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCADyKo_l8AkIwVsjIh0QFbFynTbtTTQGXE_82jvwwmf7HI1rUAxvo2gjS0XLGEIakqz70jBMljXEYZZjTXZlt84HPQ6D9AjeF5h_jUQy52xRGIGB9AkSF8ckqeuv-NfY-9ts9W3lkU7joA2dpRs8hvPBOkPBnYtEOjDDyx-6AUbFaR_veWBqMbqzbeudVq76Del8xfFq3l1i3tJ2T6-jP35gq3rNgKepTuY6pcLZduGmJRHe8GlyZfbuSW5Kj-5NIBGjeSKpwgnT0_",
+              offset: true,
+              href: "/travel-money/thailand",
             },
             {
               name: t("coverage.countries.indonesia"),
@@ -949,16 +950,32 @@ export default function LandingPage() {
               offset: true,
             },
           ].map((country, i) => {
+            const isLive = country.live === true;
             const cardInner = (
               <>
                 <img
                   alt={country.name}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
+                    isLive ? "" : "grayscale group-hover:grayscale-0"
+                  }`}
                   src={country.img}
                   referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                {/* Status badge: Live (beta) for Vietnam, Coming soon for the rest */}
+                <div className="absolute top-5 left-5">
+                  {isLive ? (
+                    <span className="inline-flex items-center gap-1.5 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
+                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                      {t("coverage.liveBadge")}
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center bg-white/85 text-slate-600 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full">
+                      {t("coverage.comingSoonBadge")}
+                    </span>
+                  )}
+                </div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
                   <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
                     {country.network}
@@ -967,7 +984,9 @@ export default function LandingPage() {
                 </div>
               </>
             );
-            const cardClass = `group relative overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${country.offset ? "lg:mt-12" : ""}`;
+            const cardClass = `group relative overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${
+              country.offset ? "lg:mt-12" : ""
+            } ${isLive ? "ring-4 ring-primary ring-offset-4 ring-offset-white" : "opacity-80 hover:opacity-100"}`;
             return country.href ? (
               <Link key={i} to={country.href} className={cardClass} aria-label={country.name}>
                 {cardInner}

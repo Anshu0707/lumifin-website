@@ -133,6 +133,8 @@
     "title": "6 pays. Une seule app.",
     "descPrefix": "De la street food de Bangkok aux boutiques du Vietnam, Lumi garantit que vos paiements aboutissent toujours.",
     "comingSoon": "BIENTÔT DISPONIBLE DANS",
+    "liveBadge": "Disponible (bêta)",
+    "comingSoonBadge": "Bientôt disponible",
     "countries": {
       "thailand": "Thaïlande",
       "indonesia": "Indonésie",

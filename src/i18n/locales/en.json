@@ -133,6 +133,8 @@
     "title": "6 Countries. One App.",
     "descPrefix": "From the street food of Bangkok to the boutiques of Vietnam, LumiFin ensures your payments never fail.",
     "comingSoon": "COMING SOON IN",
+    "liveBadge": "Live (beta)",
+    "comingSoonBadge": "Coming soon",
     "countries": {
       "thailand": "Thailand",
       "indonesia": "Indonesia",
