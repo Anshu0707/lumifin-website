@@ -1387,6 +1387,7 @@ export default function LandingPage() {
               { src: "/assets/demo/demo-payment-2.mp4", poster: "/assets/demo/demo-poster-2.webp", key: "video2" },
               { src: "/assets/demo/demo-payment-3.mp4", poster: "/assets/demo/demo-poster-3.webp", key: "video3" },
               { src: "/assets/demo/demo-payment-4.mp4", poster: "/assets/demo/demo-poster-4.webp", key: "video4" },
+              { src: "/assets/demo/demo-payment-5.mp4", poster: "/assets/demo/demo-poster-5.webp", key: "video5" },
             ].map((v) => (
               <figure key={v.key} className="relative overflow-hidden rounded-[2rem] shadow-xl bg-slate-900">
                 <AutoplayVideo
