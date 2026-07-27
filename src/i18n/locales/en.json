@@ -304,22 +304,17 @@
   },
   "stories": {
     "eyebrow": "Verified Experiences",
-    "title": "Nomad Stories",
+    "title": "Beta Tester Stories",
     "items": {
-      "sarah": {
-        "name": "Sarah Jenkins",
-        "role": "Digital Strategist",
-        "text": "At my last stay in Vietnam, I got stuck in a taxi with no cash and no payment option. If only I could have Lumi to pay via QR."
+      "maryem": {
+        "name": "Maryem",
+        "role": "Lumi beta tester",
+        "text": "I've been using Lumi regularly and it's honestly been a great experience. It has completely changed the way I pay in Vietnam. I used to carry bundles of cash everywhere, even for small purchases. Now I simply pay by QR code, and every payment has worked perfectly with every merchant I've visited."
       },
-      "marcus": {
-        "name": "Marcus Thorne",
-        "role": "PAYMENT EXPERT",
-        "text": "Lumi could seriously disrupt traditional credit cards. The fees are lower and the experience is smoother. This is the future of travel payments"
-      },
-      "elena": {
-        "name": "Elena Rossi",
-        "role": "Solo Traveler",
-        "text": "I am staying each year a few weeks in Thailand but without a bank account, I cannot pay via Promptpay. Lumi is solving this problem."
+      "brice": {
+        "name": "Brice",
+        "role": "Lumi beta tester",
+        "text": "One of my biggest travel fears was losing my passport and wallet. Since I started using Lumi, I leave my wallet at home and only carry my phone. It gives me so much more peace of mind!"
       }
     }
   },

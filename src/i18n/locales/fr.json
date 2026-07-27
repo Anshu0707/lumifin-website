@@ -304,22 +304,17 @@
   },
   "stories": {
     "eyebrow": "Expériences vérifiées",
-    "title": "Témoignages",
+    "title": "Témoignages de bêta-testeurs",
     "items": {
-      "sarah": {
-        "name": "Sarah J.",
-        "role": "Consultante digitale",
-        "text": "Au Vietnam, j'ai passé mon temps à chercher des distributeurs et à négocier en liquide. Une appli comme Lumi m'aurait changé la vie là-bas."
+      "maryem": {
+        "name": "Maryem",
+        "role": "Bêta-testeuse Lumi",
+        "text": "J'utilise Lumi régulièrement et c'est honnêtement une super expérience. Ça a complètement changé ma façon de payer au Vietnam. Avant, je transportais des liasses de liquide partout, même pour de petits achats. Maintenant, je paie simplement par QR code, et chaque paiement a parfaitement fonctionné chez tous les commerçants que j'ai visités."
       },
-      "marcus": {
-        "name": "Marcus Thorne",
-        "role": "EXPERT EN PAIEMENTS",
-        "text": "Lumi pourrait vraiment bouleverser les cartes de crédit traditionnelles. Les frais sont plus bas et l'expérience est plus fluide. C'est l'avenir des paiements pour les voyageurs."
-      },
-      "elena": {
-        "name": "Elena R.",
-        "role": "Voyageuse régulière",
-        "text": "Chaque année en Thaïlande, je vois les locaux payer en deux secondes avec PromptPay. Avec Lumi, je pourrai enfin faire pareil sans ouvrir un compte sur place."
+      "brice": {
+        "name": "Brice",
+        "role": "Bêta-testeur Lumi",
+        "text": "L'une de mes plus grandes peurs en voyage était de perdre mon passeport et mon portefeuille. Depuis que j'utilise Lumi, je laisse mon portefeuille à la maison et je ne prends que mon téléphone. Ça me rassure énormément !"
       }
     }
   },

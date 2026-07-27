@@ -10,7 +10,6 @@ import {
   BadgeCheck,
   CheckCircle2,
   Menu,
-  User,
   PiggyBank,
   Star,
   QrCode,
@@ -1603,22 +1602,19 @@ export default function LandingPage() {
               {t("stories.title")}
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
             {[
               {
-                name: t("stories.items.sarah.name"),
-                role: t("stories.items.sarah.role"),
-                text: t("stories.items.sarah.text"),
+                name: t("stories.items.maryem.name"),
+                role: t("stories.items.maryem.role"),
+                text: t("stories.items.maryem.text"),
+                photo: "/assets/testimonial-maryem.webp",
               },
               {
-                name: t("stories.items.marcus.name"),
-                role: t("stories.items.marcus.role"),
-                text: t("stories.items.marcus.text"),
-              },
-              {
-                name: t("stories.items.elena.name"),
-                role: t("stories.items.elena.role"),
-                text: t("stories.items.elena.text"),
+                name: t("stories.items.brice.name"),
+                role: t("stories.items.brice.role"),
+                text: t("stories.items.brice.text"),
+                photo: null,
               },
             ].map((story, i) => (
               <div
@@ -1636,12 +1632,18 @@ export default function LandingPage() {
                   </p>
                 </div>
                 <div className="flex items-center gap-5">
-                  <div className="w-14 h-14 rounded-full bg-slate-200 overflow-hidden flex items-center justify-center">
-                    <User
-                      aria-label={story.name}
-                      className="w-8 h-8 text-slate-400"
+                  {story.photo ? (
+                    <img
+                      src={story.photo}
+                      alt={story.name}
+                      loading="lazy"
+                      className="w-14 h-14 rounded-full object-cover"
                     />
-                  </div>
+                  ) : (
+                    <div className="w-14 h-14 rounded-full bg-primary/10 text-primary flex items-center justify-center font-black text-xl">
+                      {story.name.charAt(0)}
+                    </div>
+                  )}
                   <div>
                     <p className="font-black text-slate-900">{story.name}</p>
                     <p className="text-[10px] text-slate-400 font-black uppercase tracking-widest">
