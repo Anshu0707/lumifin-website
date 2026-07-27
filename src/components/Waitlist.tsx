@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
-import { Apple, Play } from "lucide-react";
+import { Apple, Play, Clock } from "lucide-react";
+import { SEPA_COUNTRIES } from "../constants/sepaCountries";
 
 // App download links (shown after a successful signup).
 const IOS_TESTFLIGHT_URL = "https://testflight.apple.com/join/vbVZTdTn";
@@ -9,6 +10,7 @@ const ANDROID_PLAY_URL = "https://play.google.com/store/apps/details?id=com.lumi
 
 export default function Waitlist() {
   const [name, setName] = useState("");
+  const [dialCode, setDialCode] = useState("+33");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
@@ -31,7 +33,7 @@ export default function Waitlist() {
         body: new URLSearchParams({
           "form-name": "waitlist",
           name,
-          phone,
+          phone: `${dialCode} ${phone}`.trim(),
           email,
         }).toString(),
       });
@@ -74,6 +76,10 @@ export default function Waitlist() {
           <p className="text-xl text-slate-500 font-medium leading-relaxed">
             {t("waitlist.subtitle")}
           </p>
+          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-700 text-sm font-bold px-4 py-2 rounded-full">
+            <Clock className="w-4 h-4" aria-hidden="true" />
+            {t("waitlist.urgencyNote")}
+          </div>
           <div className="flex items-center justify-center gap-2 text-slate-500">
             <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">€</span>
             <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
@@ -143,15 +149,29 @@ export default function Waitlist() {
                 required
                 className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
               />
-              <input
-                type="tel"
-                name="phone"
-                placeholder={t("waitlist.phonePlaceholder")}
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                required
-                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
-              />
+              <div className="flex gap-3">
+                <select
+                  aria-label={t("waitlist.countryCodeLabel")}
+                  value={dialCode}
+                  onChange={(e) => setDialCode(e.target.value)}
+                  className="w-32 shrink-0 px-4 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+                >
+                  {SEPA_COUNTRIES.map((c) => (
+                    <option key={c.code} value={c.dial}>
+                      {c.code} {c.dial}
+                    </option>
+                  ))}
+                </select>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder={t("waitlist.phonePlaceholder")}
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  required
+                  className="flex-1 min-w-0 px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+                />
+              </div>
               <input
                 type="email"
                 name="email"
