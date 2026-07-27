@@ -17,12 +17,13 @@ import {
   X,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
 import SEO, { organizationSchema, websiteSchema, softwareApplicationSchema } from "../components/SEO";
+import { localizedPath } from "../utils/localizedPath";
 
 /**
  * A muted, looping demo video that auto-plays only while it is on screen and
@@ -70,6 +71,7 @@ function AutoplayVideo({ src, poster, caption }: { src: string; poster: string; 
 
 export default function LandingPage() {
   const { t } = useTranslation();
+  const location = useLocation();
   const [activeStep, setActiveStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
   const journeyRef = useRef<HTMLDivElement>(null);
@@ -1040,7 +1042,7 @@ export default function LandingPage() {
               country.offset ? "lg:mt-12" : ""
             } ${isLive ? "ring-4 ring-primary ring-offset-4 ring-offset-white" : "opacity-80 hover:opacity-100"}`;
             return country.href ? (
-              <Link key={i} to={country.href} className={cardClass} aria-label={country.name}>
+              <Link key={i} to={localizedPath(country.href, location.pathname)} className={cardClass} aria-label={country.name}>
                 {cardInner}
               </Link>
             ) : (

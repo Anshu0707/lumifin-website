@@ -1,8 +1,12 @@
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 
 interface SEOProps {
   title: string;
   description: string;
+  /** Root-relative French URL for this page, e.g. "/faq" or "/". Always pass
+   *  the FRENCH path here, even on the English render — SEO derives the
+   *  English URL by prefixing "/en" and picks the right canonical itself. */
   canonical?: string;
   ogImage?: string;
   ogType?: string;
@@ -18,6 +22,12 @@ interface SEOProps {
 const BASE_URL = 'https://lumifin.io';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/assets/preview/og-wa.jpg`;
 
+/** Prefix a French root-relative path with /en, handling the "/" home case. */
+function toEnglishPath(frPath: string): string {
+  if (frPath === '/') return '/en';
+  return `/en${frPath}`;
+}
+
 export default function SEO({
   title,
   description,
@@ -28,8 +38,18 @@ export default function SEO({
   structuredData,
   preloadImage,
 }: SEOProps) {
+  const { i18n } = useTranslation();
+  const isEnglish = (i18n.resolvedLanguage || i18n.language || '').startsWith('en');
+
   const fullTitle = title.includes('Lumifin') ? title : `${title} | Lumifin`;
-  const canonicalUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
+
+  // French (root) and English (/en) absolute URLs for this page, when a
+  // canonical path was provided. The FRENCH one is what pages always pass in.
+  const frUrl = canonical ? `${BASE_URL}${canonical}` : undefined;
+  const enUrl = canonical ? `${BASE_URL}${toEnglishPath(canonical)}` : undefined;
+  // The canonical for THIS render is whichever language is actually active.
+  const canonicalUrl = canonical ? (isEnglish ? enUrl : frUrl) : undefined;
+
   // Always emit an absolute og:image URL. Blog pages pass a root-relative path
   // (e.g. "/assets/blog/…"); social and crawler previews require absolute URLs.
   const rawImage = ogImage || DEFAULT_OG_IMAGE;
@@ -62,13 +82,14 @@ export default function SEO({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
-      {/* Hreflang — same URL structure for both languages.
-          NOTE: react-helmet-async does not process Fragments (<>...</>) inside
-          <Helmet>. The three <link> tags must be flat children, otherwise
-          Helmet silently drops them. */}
-      {canonicalUrl && <link rel="alternate" hrefLang="en" href={canonicalUrl} />}
-      {canonicalUrl && <link rel="alternate" hrefLang="fr" href={canonicalUrl} />}
-      {canonicalUrl && <link rel="alternate" hrefLang="x-default" href={canonicalUrl} />}
+      {/* Hreflang — fr points at the root French URL, en at the /en URL,
+          x-default also at /en (English is the sensible default for a
+          pan-European audience). NOTE: react-helmet-async does not process
+          Fragments (<>...</>) inside <Helmet>. These <link> tags must stay
+          flat children, otherwise Helmet silently drops them. */}
+      {frUrl && <link rel="alternate" hrefLang="fr" href={frUrl} />}
+      {enUrl && <link rel="alternate" hrefLang="en" href={enUrl} />}
+      {enUrl && <link rel="alternate" hrefLang="x-default" href={enUrl} />}
 
       {/* Structured Data */}
       {schemaArray.map((schema, i) => (

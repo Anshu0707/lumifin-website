@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const location = useLocation();
+  const isEnglish = location.pathname === '/en' || location.pathname.startsWith('/en/');
+  // Prefix internal links with /en while browsing the English site; leave
+  // third-party/mailto links and routes with no English version untouched.
+  const withLang = (path: string) => (isEnglish ? `/en${path === '/' ? '' : path}` : path);
   return (
     <footer className="bg-slate-900 text-white py-20 px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-16">
@@ -20,22 +25,22 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-black mb-8">{t('footer.company')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
-            <li><Link to="/team" className="hover:text-primary transition-colors">{t('footer.aboutUs')}</Link></li>
-            <li><Link to="/careers" className="hover:text-primary transition-colors">{t('footer.careers')}</Link></li>
-            <li><Link to="/blog" className="hover:text-primary transition-colors">{t('footer.blog')}</Link></li>
+            <li><Link to={withLang('/team')} className="hover:text-primary transition-colors">{t('footer.aboutUs')}</Link></li>
+            <li><Link to={withLang('/careers')} className="hover:text-primary transition-colors">{t('footer.careers')}</Link></li>
+            <li><Link to={withLang('/blog')} className="hover:text-primary transition-colors">{t('footer.blog')}</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="text-lg font-black mb-8">{t('footer.support')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
-            <li><Link to="/faq" className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
+            <li><Link to={withLang('/faq')} className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
             <li><Link to="/tools/currency-converter" className="hover:text-primary transition-colors">{t('footer.currencyConverter')}</Link></li>
-            <li><Link to="/security" className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
-            <li><Link to="/privacy" className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
-            <li><Link to="/account-deletion" className="hover:text-primary transition-colors">{t('footer.deleteAccount')}</Link></li>
-            <li><Link to="/mentions-legales" className="hover:text-primary transition-colors">{t('footer.mentionsLegales')}</Link></li>
-            <li><Link to="/cgu" className="hover:text-primary transition-colors">{t('footer.cgu')}</Link></li>
+            <li><Link to={withLang('/security')} className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
+            <li><Link to={withLang('/privacy')} className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
+            <li><Link to={withLang('/account-deletion')} className="hover:text-primary transition-colors">{t('footer.deleteAccount')}</Link></li>
+            <li><Link to={withLang('/mentions-legales')} className="hover:text-primary transition-colors">{t('footer.mentionsLegales')}</Link></li>
+            <li><Link to={withLang('/cgu')} className="hover:text-primary transition-colors">{t('footer.cgu')}</Link></li>
           </ul>
         </div>
 

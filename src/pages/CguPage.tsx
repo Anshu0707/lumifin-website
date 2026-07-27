@@ -1,13 +1,15 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Trans, useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
+import { localizedPath } from '../utils/localizedPath';
 
 export default function CguPage() {
   const { t } = useTranslation();
+  const location = useLocation();
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -57,7 +59,7 @@ export default function CguPage() {
               <p>
                 <Trans
                   i18nKey="cgu.section1.body3"
-                  components={{ 1: <Link to="/privacy" className="text-primary hover:underline" /> }}
+                  components={{ 1: <Link to={localizedPath('/privacy', location.pathname)} className="text-primary hover:underline" /> }}
                 />
               </p>
 

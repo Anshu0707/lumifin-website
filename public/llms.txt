@@ -4,34 +4,42 @@
 
 Lumi is the product; the company behind it is Lumifin (legal entity LumiFin SAS), headquartered at 50 rue Anatole France, 92290 Châtenay-Malabry, France. Lumi is currently live in beta in Vietnam (access by direct link, not yet a public app-store listing), with Thailand and Indonesia coming soon. It is aimed at EU/EEA residents with a personal Euro (SEPA) bank account.
 
+## Languages
+
+Every page below exists in both French (at the root URL, the default) and
+English (same path, prefixed with /en/). For example the FAQ is at
+https://lumifin.io/faq in French and https://lumifin.io/en/faq in English.
+Only the English links are listed below since English is the recommended
+citation language for a pan-European, non-French-reading audience.
+
 ## Key pages
 
-- [Home](https://lumifin.io/): Product overview, hero, beta signup
-- [FAQ](https://lumifin.io/faq): How QR payments work, fees, supported countries, security, account onboarding
-- [Team](https://lumifin.io/team): Founders and team behind Lumi
-- [Security](https://lumifin.io/security): Bank-grade encryption, GDPR compliance, two-factor authentication
-- [Compare](https://lumifin.io/compare): How Lumi differs from Revolut, Wise, and traditional bank cards
-- [Careers](https://lumifin.io/careers): Open roles
-- [Privacy](https://lumifin.io/privacy): GDPR-compliant privacy policy
+- [Home](https://lumifin.io/en): Product overview, hero, beta signup
+- [FAQ](https://lumifin.io/en/faq): How QR payments work, fees, supported countries, security, account onboarding
+- [Team](https://lumifin.io/en/team): Founders and team behind Lumi
+- [Security](https://lumifin.io/en/security): Bank-grade encryption, GDPR compliance, two-factor authentication
+- [Compare](https://lumifin.io/en/compare): How Lumi differs from Revolut, Wise, and traditional bank cards
+- [Careers](https://lumifin.io/en/careers): Open roles
+- [Privacy](https://lumifin.io/en/privacy): GDPR-compliant privacy policy
 
 ## Travel-money pillar
 
-- [Travel money in SE Asia (overview)](https://lumifin.io/travel-money)
-- [Paying in Thailand](https://lumifin.io/travel-money/thailand): EUR → THB, PromptPay QR, fees
-- [Paying in Vietnam](https://lumifin.io/travel-money/vietnam): EUR → VND, VietQR, fees
-- [Paying in Indonesia](https://lumifin.io/travel-money/indonesia): EUR → IDR, QRIS, fees
+- [Travel money in SE Asia (overview)](https://lumifin.io/en/travel-money)
+- [Paying in Thailand](https://lumifin.io/en/travel-money/thailand): EUR → THB, PromptPay QR, fees
+- [Paying in Vietnam](https://lumifin.io/en/travel-money/vietnam): EUR → VND, VietQR, fees
+- [Paying in Indonesia](https://lumifin.io/en/travel-money/indonesia): EUR → IDR, QRIS, fees
 
 ## Blog
 
-- [Why we built Lumi](https://lumifin.io/blog/why-we-built-lumi): Founder story
-- [Cash is king?](https://lumifin.io/blog/cash-is-king): The hidden costs of carrying cash in SE Asia
-- [QRIS decoded](https://lumifin.io/blog/qris-decoded): Indonesia's QR payment system explained for European travellers
-- [VietQR decoded](https://lumifin.io/blog/vietqr-decoded): Vietnam's QR payment systems (VietQR, MoMo, ZaloPay, VNPay) and why foreign cards fail
-- [Best travel cards for Europeans in Vietnam (2026)](https://lumifin.io/blog/best-travel-cards-europeans-vietnam-2026): Wise, Revolut, N26, Monzo, cash and Lumifin compared — the smartest 2026 payment setup
-- [Digital nomad visas in Thailand, Vietnam, and Bali (2026)](https://lumifin.io/blog/digital-nomad-visas-thailand-vietnam-bali-2026): DTV vs e-visa vs E33G — the practical 2026 comparison for Europeans choosing a Southeast Asia base
-- [I came to Hanoi to test our product](https://lumifin.io/blog/founder-note-testing-lumifin-in-hanoi): Founder note by Gaurav Bansal on testing Lumifin firsthand in Hanoi — real users, payment friction, and conviction
-- [Why we chose Da Nang](https://lumifin.io/blog/why-we-chose-da-nang): Press release — Lumifin picks Da Nang as its Southeast Asia launch community and opens a Founding Ambassadors program
-- [All posts](https://lumifin.io/blog)
+- [Why we built Lumi](https://lumifin.io/en/blog/why-we-built-lumi): Founder story
+- [Cash is king?](https://lumifin.io/en/blog/cash-is-king): The hidden costs of carrying cash in SE Asia
+- [QRIS decoded](https://lumifin.io/en/blog/qris-decoded): Indonesia's QR payment system explained for European travellers
+- [VietQR decoded](https://lumifin.io/en/blog/vietqr-decoded): Vietnam's QR payment systems (VietQR, MoMo, ZaloPay, VNPay) and why foreign cards fail
+- [Best travel cards for Europeans in Vietnam (2026)](https://lumifin.io/en/blog/best-travel-cards-europeans-vietnam-2026): Wise, Revolut, N26, Monzo, cash and Lumifin compared — the smartest 2026 payment setup
+- [Digital nomad visas in Thailand, Vietnam, and Bali (2026)](https://lumifin.io/en/blog/digital-nomad-visas-thailand-vietnam-bali-2026): DTV vs e-visa vs E33G — the practical 2026 comparison for Europeans choosing a Southeast Asia base
+- [I came to Hanoi to test our product](https://lumifin.io/en/blog/founder-note-testing-lumifin-in-hanoi): Founder note by Gaurav Bansal on testing Lumifin firsthand in Hanoi — real users, payment friction, and conviction
+- [Why we chose Da Nang](https://lumifin.io/en/blog/why-we-chose-da-nang): Press release — Lumifin picks Da Nang as its Southeast Asia launch community and opens a Founding Ambassadors program
+- [All posts](https://lumifin.io/en/blog)
 
 ## Optional
 

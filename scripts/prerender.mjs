@@ -6,7 +6,11 @@
  * content, titles, or canonicals. This script:
  *   1. Serves the freshly-built dist/ from a local port.
  *   2. Visits every route in a headless browser, letting React + Helmet render fully.
- *   3. Writes the rendered HTML back to dist/<route>/index.html.
+ *   3. Writes the rendered HTML back to dist/<route>.html.
+ *
+ * French pages live at the root (dist/faq.html → /faq) and English pages live
+ * under /en (dist/en/faq.html → /en/faq) — same components, different URL,
+ * language chosen by the URL's /en prefix (see src/i18n/config.ts).
  *
  * Netlify's static hosting then serves the prerendered file directly for each route.
  */
@@ -51,6 +55,35 @@ const routes = [
   { path: '/mentions-legales', out: 'mentions-legales.html' },
   { path: '/cgu', out: 'cgu.html' },
   { path: '/tools/currency-converter', out: 'tools/currency-converter.html' },
+
+  // English URLs — same components as above, rendered in English because the
+  // /en/ path segment drives language selection (src/i18n/config.ts "path"
+  // detector runs before the French locale forced below, so it wins).
+  { path: '/en', out: 'en/index.html' },
+  { path: '/en/faq', out: 'en/faq.html' },
+  { path: '/en/team', out: 'en/team.html' },
+  { path: '/en/privacy', out: 'en/privacy.html' },
+  { path: '/en/account-deletion', out: 'en/account-deletion.html' },
+  { path: '/en/blog', out: 'en/blog.html' },
+  { path: '/en/blog/why-we-built-lumi', out: 'en/blog/why-we-built-lumi.html' },
+  { path: '/en/blog/cash-is-king', out: 'en/blog/cash-is-king.html' },
+  { path: '/en/blog/qris-decoded', out: 'en/blog/qris-decoded.html' },
+  { path: '/en/blog/vietqr-decoded', out: 'en/blog/vietqr-decoded.html' },
+  { path: '/en/blog/best-travel-cards-europeans-vietnam-2026', out: 'en/blog/best-travel-cards-europeans-vietnam-2026.html' },
+  { path: '/en/blog/digital-nomad-visas-thailand-vietnam-bali-2026', out: 'en/blog/digital-nomad-visas-thailand-vietnam-bali-2026.html' },
+  { path: '/en/blog/founder-note-testing-lumifin-in-hanoi', out: 'en/blog/founder-note-testing-lumifin-in-hanoi.html' },
+  { path: '/en/blog/why-we-chose-da-nang', out: 'en/blog/why-we-chose-da-nang.html' },
+  { path: '/en/beta', out: 'en/beta.html' },
+  { path: '/en/careers', out: 'en/careers.html' },
+  { path: '/en/security', out: 'en/security.html' },
+  { path: '/en/travel-money', out: 'en/travel-money.html' },
+  { path: '/en/travel-money/thailand', out: 'en/travel-money/thailand.html' },
+  { path: '/en/travel-money/vietnam', out: 'en/travel-money/vietnam.html' },
+  { path: '/en/travel-money/indonesia', out: 'en/travel-money/indonesia.html' },
+  { path: '/en/compare', out: 'en/compare.html' },
+  { path: '/en/mentions-legales', out: 'en/mentions-legales.html' },
+  { path: '/en/cgu', out: 'en/cgu.html' },
+
   // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
   // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
   { path: '/__404__', out: '404.html' },
@@ -200,9 +233,12 @@ async function main() {
       const url = `${baseUrl}${route.path}`;
       const page = await browser.newPage();
 
-      // Force French locale so i18next-browser-languagedetector picks "fr".
-      // Detection order in src/i18n/config.ts: localStorage → navigator → htmlTag.
-      // Setting localStorage before page load short-circuits to French immediately.
+      // Seed a French localStorage preference for every route. This only
+      // matters for non-/en/ routes: detection order in src/i18n/config.ts is
+      // "path" → localStorage → navigator → htmlTag, so /en/* routes are
+      // still rendered in English (the path segment wins first) even though
+      // we set this. For root routes with no /en prefix, this short-circuits
+      // to French immediately, same as before /en/ routes existed.
       await page.setExtraHTTPHeaders({ 'Accept-Language': 'fr-FR,fr;q=0.9' });
       await page.evaluateOnNewDocument(() => {
         try {

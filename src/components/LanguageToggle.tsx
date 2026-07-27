@@ -1,25 +1,33 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+
+/** Map the current pathname to its French (root) and English (/en) equivalents. */
+function toAlternateLanguagePath(pathname: string): { fr: string; en: string; isEnglish: boolean } {
+  if (pathname === "/en" || pathname.startsWith("/en/")) {
+    const frPath = pathname === "/en" ? "/" : pathname.slice("/en".length);
+    return { fr: frPath, en: pathname, isEnglish: true };
+  }
+  const enPath = pathname === "/" ? "/en" : `/en${pathname}`;
+  return { fr: pathname, en: enPath, isEnglish: false };
+}
 
 export default function LanguageToggle({
   className = "",
 }: {
   className?: string;
 }) {
-  const { i18n, t } = useTranslation();
-  const current = (i18n.resolvedLanguage || i18n.language || "en").split("-")[0];
-  const isFr = current === "fr";
-
-  const toggle = () => {
-    void i18n.changeLanguage(isFr ? "en" : "fr");
-  };
+  const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const { fr, en, isEnglish } = toAlternateLanguagePath(location.pathname);
+  const targetPath = isEnglish ? fr : en;
 
   return (
-    <button
-      type="button"
-      onClick={toggle}
+    <Link
+      to={targetPath + location.search + location.hash}
+      onClick={() => void i18n.changeLanguage(isEnglish ? "fr" : "en")}
       className={`group relative flex items-center gap-2 rounded-full border border-slate-300 px-3 py-1.5 text-xs font-bold uppercase tracking-widest transition-all hover:border-primary hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary cursor-pointer ${className}`}
-      aria-label={isFr ? t("common.switchToEnglish") : t("common.switchToFrench")}
+      aria-label={isEnglish ? t("common.switchToFrench") : t("common.switchToEnglish")}
     >
       {/* Globe / translate icon */}
       <svg
@@ -38,7 +46,7 @@ export default function LanguageToggle({
         <path d="M2 12h20" />
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z" />
       </svg>
-      <span className="text-primary">{isFr ? "FR" : "EN"}</span>
-    </button>
+      <span className="text-primary">{isEnglish ? "FR" : "EN"}</span>
+    </Link>
   );
 }

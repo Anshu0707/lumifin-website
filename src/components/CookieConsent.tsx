@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { localizedPath } from '../utils/localizedPath';
 
 declare global {
   interface Window {
@@ -27,6 +28,7 @@ const STORAGE_KEY = 'lumifin_cookie_consent';
  */
 export default function CookieConsent() {
   const { t } = useTranslation();
+  const location = useLocation();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -65,7 +67,7 @@ export default function CookieConsent() {
     >
       <p className="text-slate-600 font-medium text-sm leading-relaxed">
         {t('cookieConsent.body')}{' '}
-        <Link to="/privacy" className="text-primary underline hover:no-underline">
+        <Link to={localizedPath('/privacy', location.pathname)} className="text-primary underline hover:no-underline">
           {t('cookieConsent.learnMore')}
         </Link>
       </p>

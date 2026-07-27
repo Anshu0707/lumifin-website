@@ -5,7 +5,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
 import { Linkedin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { localizedPath } from '../utils/localizedPath';
 
 const team = [
   {
@@ -76,6 +77,7 @@ const team = [
 
 export default function TeamPage() {
   const { t } = useTranslation();
+  const location = useLocation();
   return (
     <div className="min-h-screen bg-white">
       <SEO
@@ -149,7 +151,7 @@ export default function TeamPage() {
             <a href="mailto:careers@lumifin.io" className="inline-block hero-gradient text-white px-12 py-6 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all">
               {t('team.apply')}
             </a>
-            <Link to="/careers" className="inline-block text-slate-400 hover:text-white font-bold text-sm tracking-widest uppercase transition-colors">
+            <Link to={localizedPath('/careers', location.pathname)} className="inline-block text-slate-400 hover:text-white font-bold text-sm tracking-widest uppercase transition-colors">
               {t('team.seeOpenPositions')} &rarr;
             </Link>
           </div>

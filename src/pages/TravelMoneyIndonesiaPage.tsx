@@ -1,10 +1,11 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema, faqSchema } from '../components/SEO';
+import { localizedPath } from '../utils/localizedPath';
 import { ArrowRight, CreditCard, QrCode, ShieldCheck } from 'lucide-react';
 
 const COUNTRY = 'indonesia';
@@ -16,6 +17,7 @@ const STEP_KEYS = ['topUp', 'scan', 'pay'] as const;
 
 export default function TravelMoneyIndonesiaPage() {
   const { t } = useTranslation();
+  const location = useLocation();
   const ns = `travelMoney.${COUNTRY}`;
 
   const faqs = FAQ_KEYS.map((k) => ({
@@ -40,7 +42,7 @@ export default function TravelMoneyIndonesiaPage() {
       <main className="pt-40 pb-32 px-6 md:px-8">
         <article className="max-w-4xl mx-auto">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <Link to="/travel-money" className="inline-flex items-center gap-2 text-slate-500 hover:text-primary font-bold text-sm uppercase tracking-widest mb-16 pb-8 border-b border-slate-200 transition-colors">
+            <Link to={localizedPath('/travel-money', location.pathname)} className="inline-flex items-center gap-2 text-slate-500 hover:text-primary font-bold text-sm uppercase tracking-widest mb-16 pb-8 border-b border-slate-200 transition-colors">
               &larr; {t('travelMoney.common.backToDestinations')}
             </Link>
 
@@ -139,7 +141,7 @@ export default function TravelMoneyIndonesiaPage() {
             <div className="p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-100 text-center space-y-4">
               <h2 className="text-2xl font-black text-slate-900">{t(`${ns}.ctaTitle`)}</h2>
               <p className="text-slate-500 font-medium">{t(`${ns}.ctaSubtitle`)}</p>
-              <Link to="/#waitlist" className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
+              <Link to={localizedPath('/#waitlist', location.pathname)} className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
                 {t('travelMoney.common.joinWaitlist')} <ArrowRight className="w-4 h-4 inline ml-2" />
               </Link>
             </div>

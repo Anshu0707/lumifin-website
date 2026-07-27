@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
 import { ArrowRight, ArrowLeft, Banknote, QrCode, ShieldCheck, TrendingDown } from 'lucide-react';
+import { localizedPath } from '../utils/localizedPath';
 
 const corridorKeys = [
   { key: 'thailand', currency: 'THB (Baht)', qrSystem: 'PromptPay', atmFee: '€5.50+', href: '/travel-money/thailand' },
@@ -15,6 +16,7 @@ const corridorKeys = [
 
 export default function TravelMoneyPage() {
   const { t } = useTranslation();
+  const location = useLocation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -85,7 +87,7 @@ export default function TravelMoneyPage() {
             <h2 className="text-3xl md:text-4xl font-black tracking-tighter text-slate-900 text-center mb-12">{t('travelMoney.pillar.chooseDestination')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {corridorKeys.map((corridor) => (
-                <Link key={corridor.key} to={corridor.href} className="group p-8 rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 block">
+                <Link key={corridor.key} to={localizedPath(corridor.href, location.pathname)} className="group p-8 rounded-3xl border border-slate-200 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 block">
                   <h3 className="text-2xl font-black text-slate-900 group-hover:text-primary transition-colors mb-4">{t(`travelMoney.${corridor.key}.titleHighlight`)}</h3>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
@@ -125,7 +127,7 @@ export default function TravelMoneyPage() {
             <div className="p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-100 text-center space-y-4">
               <h2 className="text-2xl font-black text-slate-900">{t('travelMoney.pillar.compareTitle')}</h2>
               <p className="text-slate-500 font-medium">{t('travelMoney.pillar.compareSubtitle')}</p>
-              <Link to="/compare" className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
+              <Link to={localizedPath('/compare', location.pathname)} className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
                 {t('travelMoney.pillar.compareCta')} <ArrowRight className="w-4 h-4 inline ml-2" />
               </Link>
             </div>

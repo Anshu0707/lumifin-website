@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
 import CookieConsent from './components/CookieConsent';
+import LanguageFromUrl from './components/LanguageFromUrl';
 
 // Eager-load the landing page (critical path)
 import LandingPage from './pages/LandingPage';
@@ -43,6 +44,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <ScrollProgress />
+      <LanguageFromUrl />
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -70,6 +72,36 @@ export default function App() {
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
         <Route path="/cgu" element={<CguPage />} />
         <Route path="/beta" element={<BetaApplicationPage />} />
+
+          {/* English URLs — same components, rendered in English because the
+              /en/ path segment drives language selection (see src/i18n/config.ts).
+              French stays at the root paths above, unchanged. */}
+          <Route path="/en" element={<LandingPage />} />
+          <Route path="/en/faq" element={<FAQPage />} />
+          <Route path="/en/team" element={<TeamPage />} />
+          <Route path="/en/privacy" element={<PrivacyPage />} />
+          <Route path="/en/account-deletion" element={<DeleteAccountPage />} />
+          <Route path="/en/delete-account" element={<DeleteAccountPage />} />
+          <Route path="/en/blog" element={<BlogPage />} />
+          <Route path="/en/blog/why-we-built-lumi" element={<WhyWeBuiltLumiPage />} />
+          <Route path="/en/blog/cash-is-king" element={<CashIsKingPage />} />
+          <Route path="/en/blog/qris-decoded" element={<QrisDecodedPage />} />
+          <Route path="/en/blog/vietqr-decoded" element={<VietqrDecodedPage />} />
+          <Route path="/en/blog/best-travel-cards-europeans-vietnam-2026" element={<BestTravelCardsVietnamPage />} />
+          <Route path="/en/blog/digital-nomad-visas-thailand-vietnam-bali-2026" element={<DigitalNomadVisasPage />} />
+          <Route path="/en/blog/founder-note-testing-lumifin-in-hanoi" element={<HanoiFounderNotePage />} />
+          <Route path="/en/blog/why-we-chose-da-nang" element={<DaNangPressReleasePage />} />
+          <Route path="/en/careers" element={<CareersPage />} />
+          <Route path="/en/security" element={<SecurityPage />} />
+          <Route path="/en/travel-money/thailand" element={<TravelMoneyThailandPage />} />
+          <Route path="/en/travel-money/vietnam" element={<TravelMoneyVietnamPage />} />
+          <Route path="/en/travel-money/indonesia" element={<TravelMoneyIndonesiaPage />} />
+          <Route path="/en/travel-money" element={<TravelMoneyPage />} />
+          <Route path="/en/compare" element={<ComparePage />} />
+          <Route path="/en/mentions-legales" element={<MentionsLegalesPage />} />
+          <Route path="/en/cgu" element={<CguPage />} />
+          <Route path="/en/beta" element={<BetaApplicationPage />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>

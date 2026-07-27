@@ -2,14 +2,16 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { getFaqs } from '../constants/faqs';
 import { ChevronDown, ArrowLeft } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'motion/react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema, faqSchema } from '../components/SEO';
+import { localizedPath } from '../utils/localizedPath';
 
 export default function FAQPage() {
   const { t } = useTranslation();
+  const location = useLocation();
   const faqs = getFaqs(t);
   const faqItems = faqs.map((f: { question: string; answer: string }) => ({ question: f.question, answer: f.answer }));
   return (
@@ -32,7 +34,7 @@ export default function FAQPage() {
           transition={{ duration: 0.8 }}
           className="space-y-12"
         >
-          <Link to="/" className="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase hover:gap-4 transition-all">
+          <Link to={localizedPath('/', location.pathname)} className="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase hover:gap-4 transition-all">
             <ArrowLeft className="w-4 h-4" /> {t('faqPage.backHome')}
           </Link>
 

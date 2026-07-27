@@ -36,7 +36,12 @@ i18n
       escapeValue: false, // React already escapes
     },
     detection: {
-      order: ["localStorage", "navigator", "htmlTag"],
+      // "path" first: /en/... always forces English, regardless of any saved
+      // preference, so crawlers and direct links get the language the URL
+      // promises. Everything else (root URLs like /faq) keeps the original
+      // localStorage -> navigator -> htmlTag behaviour, unchanged.
+      order: ["path", "localStorage", "navigator", "htmlTag"],
+      lookupFromPathIndex: 0,
       caches: ["localStorage"],
       lookupLocalStorage: LANG_STORAGE_KEY,
     },

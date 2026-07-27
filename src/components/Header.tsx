@@ -7,11 +7,16 @@ import LanguageToggle from "./LanguageToggle";
 
 export default function Header() {
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  const isEnglish = location.pathname === "/en" || location.pathname.startsWith("/en/");
+  const isHome = location.pathname === "/" || location.pathname === "/en";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
   const moreRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
+
+  // Prefix internal nav links with /en while browsing the English site, so
+  // navigation stays on the same language instead of dropping back to French.
+  const withLang = (path: string) => (isEnglish ? `/en${path === "/" ? "" : path}` : path);
 
   const scrollToSection = (id: string) => {
     setMobileOpen(false);
@@ -22,7 +27,7 @@ export default function Header() {
         element.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      window.location.href = `/#${id}`;
+      window.location.href = `${withLang("/")}#${id}`;
     }
   };
 
@@ -58,7 +63,7 @@ export default function Header() {
         {t("header.pricing")}
       </button>
       <Link
-        to="/team"
+        to={withLang("/team")}
         onClick={() => setMobileOpen(false)}
         className="hover:text-primary transition-colors normal-case"
       >
@@ -70,21 +75,21 @@ export default function Header() {
   const secondaryNav = (
     <>
       <Link
-        to="/faq"
+        to={withLang("/faq")}
         onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
         className="hover:text-primary transition-colors"
       >
         {t("header.faq")}
       </Link>
       <Link
-        to="/blog"
+        to={withLang("/blog")}
         onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
         className="hover:text-primary transition-colors normal-case"
       >
         {t("header.blogs")}
       </Link>
       <Link
-        to="/careers"
+        to={withLang("/careers")}
         onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
         className="hover:text-primary transition-colors normal-case"
       >
@@ -96,7 +101,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100 transition-all duration-300">
       <nav className="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
-        <Link to="/" className="flex items-center">
+        <Link to={withLang("/")} className="flex items-center">
           <Logo className="w-40 max-h-16" />
         </Link>
         <div className="hidden lg:flex items-center gap-10 text-[12px] font-bold tracking-widest uppercase text-slate-500">

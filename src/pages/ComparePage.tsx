@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO, { breadcrumbSchema } from '../components/SEO';
 import { Check, X as XIcon, Minus, ArrowRight } from 'lucide-react';
+import { localizedPath } from '../utils/localizedPath';
 
 type CellVal = string | boolean | 'partial';
 
@@ -80,6 +81,7 @@ function CellValue({ value, t }: { value: CellVal; t: (k: string) => string }) {
 
 export default function ComparePage() {
   const { t } = useTranslation();
+  const location = useLocation();
 
   return (
     <div className="min-h-screen bg-white">
@@ -153,7 +155,7 @@ export default function ComparePage() {
             <div className="p-8 md:p-12 rounded-3xl bg-slate-50 border border-slate-100 text-center space-y-4">
               <h2 className="text-2xl font-black text-slate-900">{t('compare.ctaTitle')}</h2>
               <p className="text-slate-500 font-medium">{t('compare.ctaSubtitle')}</p>
-              <Link to="/#waitlist" className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
+              <Link to={localizedPath('/#waitlist', location.pathname)} className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all">
                 {t('compare.ctaButton')} <ArrowRight className="w-4 h-4 inline ml-2" />
               </Link>
             </div>
