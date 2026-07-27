@@ -214,6 +214,20 @@
       }
     }
   },
+  "demoGallery": {
+    "eyebrow": "Real payments, real places",
+    "title": "See it in action",
+    "subtitle": "Real beta testers using Lumi to scan and pay at everyday spots across Vietnam — no cash, no cards, no local bank account.",
+    "items": {
+      "boat": "Scanning a VietQR code to pay on the water — Hội An",
+      "cafe1": "Beta testers meeting up in Đà Nẵng",
+      "video1": "Opening Lumi out on the water — Hội An",
+      "video2": "Scanning a street vendor's VietQR code to pay",
+      "video3": "Settling a restaurant bill (430,000₫) by QR",
+      "video4": "Paying with Lumi on the basket boats — Hội An"
+    },
+    "videoUnsupported": "Your browser does not support this video."
+  },
   "fees": {
     "eyebrow": "Fee Transparency",
     "title": "No Secrets, Just Savings.",

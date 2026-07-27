@@ -25,6 +25,50 @@ import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
 import SEO, { organizationSchema, websiteSchema, softwareApplicationSchema } from "../components/SEO";
 
+/**
+ * A muted, looping demo video that auto-plays only while it is on screen and
+ * pauses when scrolled away — keeps the page light with several videos.
+ * Browsers only allow autoplay when muted; a tap unmutes for sound.
+ */
+function AutoplayVideo({ src, poster, caption }: { src: string; poster: string; caption: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.play().catch(() => {
+            /* autoplay may be blocked; the controls still allow manual play */
+          });
+        } else {
+          el.pause();
+        }
+      },
+      { threshold: 0.5 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={ref}
+      className="w-full h-full object-cover aspect-[3/4]"
+      controls
+      muted
+      loop
+      playsInline
+      preload="metadata"
+      poster={poster}
+    >
+      <source src={src} type="video/mp4" />
+      {caption}
+    </video>
+  );
+}
+
 export default function LandingPage() {
   const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
@@ -1304,6 +1348,70 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Gallery Section — real photos & videos of beta testers paying */}
+      <section id="demo" className="py-32 bg-slate-50 reveal">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center mb-16 space-y-4">
+            <span className="text-primary font-bold text-xs tracking-widest uppercase">
+              {t("demoGallery.eyebrow")}
+            </span>
+            <h2 className="text-6xl font-black tracking-tighter text-slate-900">
+              {t("demoGallery.title")}
+            </h2>
+            <p className="text-slate-500 max-w-2xl mx-auto text-lg font-medium">
+              {t("demoGallery.subtitle")}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Hero: real VietQR payment on the boat */}
+            <figure className="relative overflow-hidden rounded-[2rem] shadow-xl md:row-span-2 group">
+              <img
+                src="/assets/demo/demo-qr-payment-boat.webp"
+                alt={t("demoGallery.items.boat")}
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm font-medium p-6 pt-16">
+                {t("demoGallery.items.boat")}
+              </figcaption>
+            </figure>
+
+            {/* Payment videos — muted, looping, auto-play when scrolled into view */}
+            {[
+              { src: "/assets/demo/demo-payment-1.mp4", poster: "/assets/demo/demo-poster-1.webp", key: "video1" },
+              { src: "/assets/demo/demo-payment-2.mp4", poster: "/assets/demo/demo-poster-2.webp", key: "video2" },
+              { src: "/assets/demo/demo-payment-3.mp4", poster: "/assets/demo/demo-poster-3.webp", key: "video3" },
+              { src: "/assets/demo/demo-payment-4.mp4", poster: "/assets/demo/demo-poster-4.webp", key: "video4" },
+            ].map((v) => (
+              <figure key={v.key} className="relative overflow-hidden rounded-[2rem] shadow-xl bg-slate-900">
+                <AutoplayVideo
+                  src={v.src}
+                  poster={v.poster}
+                  caption={t("demoGallery.videoUnsupported")}
+                />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm font-medium p-6 pt-16 pointer-events-none">
+                  {t(`demoGallery.items.${v.key}`)}
+                </figcaption>
+              </figure>
+            ))}
+
+            {/* Community photos */}
+            <figure className="relative overflow-hidden rounded-[2rem] shadow-xl group">
+              <img
+                src="/assets/demo/demo-beta-testers-cafe-1.webp"
+                alt={t("demoGallery.items.cafe1")}
+                loading="lazy"
+                className="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 group-hover:scale-105"
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent text-white text-sm font-medium p-6 pt-16">
+                {t("demoGallery.items.cafe1")}
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
