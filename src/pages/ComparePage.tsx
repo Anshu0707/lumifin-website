@@ -87,6 +87,7 @@ export default function ComparePage() {
         title={t('compare.titleBefore') + ' ' + t('compare.titleHighlight') + ' — Lumifin'}
         description={t('compare.subtitle')}
         canonical="/compare"
+        ogImage="/assets/preview/og-compare.jpg"
         structuredData={breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Compare', url: '/compare' }])}
       />
       <Header />

@@ -880,6 +880,7 @@ export default function LandingPage() {
         title={t('landing.seo.title')}
         description={t('landing.seo.description')}
         canonical="/"
+        ogImage="/assets/preview/og-image.jpg"
         structuredData={[organizationSchema, websiteSchema, softwareApplicationSchema]}
         preloadImage="/assets/hero/landing-hero.webp"
       />
@@ -965,38 +966,38 @@ export default function LandingPage() {
             {
               name: t("coverage.countries.vietnam"),
               network: "VietQR",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuBp0TIju-96DY_xjqr3kNDc5nGwTSRs9Mk8SclesK06t4vH_Lu079tXN9wiD1CbHNWlsNeoyk5L9MGlkDrLN-dWuvEowE1nKzjiC0ML44Y1J51xQkXHb0XV7iS7WdrdJZdBSTH3V2xcHTNcYsqJlIPdrwaKp3qGYPLSelTdNh7NujqzLVcgHkFzeWJ1EwPzoTu1oh7FqtTavzuZhuFlv1kgJrby7zvU6l_d6UuHgJOt2nvDtFn0xoClUXwdpAwV_yj05egAaQoqeuvZ",
+              img: "/assets/regions/vietnam.webp",
               href: "/travel-money/vietnam",
               live: true,
             },
             {
               name: t("coverage.countries.thailand"),
               network: "PromptPay",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCADyKo_l8AkIwVsjIh0QFbFynTbtTTQGXE_82jvwwmf7HI1rUAxvo2gjS0XLGEIakqz70jBMljXEYZZjTXZlt84HPQ6D9AjeF5h_jUQy52xRGIGB9AkSF8ckqeuv-NfY-9ts9W3lkU7joA2dpRs8hvPBOkPBnYtEOjDDyx-6AUbFaR_veWBqMbqzbeudVq76Del8xfFq3l1i3tJ2T6-jP35gq3rNgKepTuY6pcLZduGmJRHe8GlyZfbuSW5Kj-5NIBGjeSKpwgnT0_",
+              img: "/assets/regions/thailand.webp",
               offset: true,
               href: "/travel-money/thailand",
             },
             {
               name: t("coverage.countries.indonesia"),
               network: "QRIS",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8ThdfhEs4iFj6rS3rzGySJ2URSwRMt3kO_tDRErE7zSdoyBDatO8rg2yOzvEiEP_gjJbcZRRlk2QG6ln1GeqpkflS7k_81SrSEZo-du91aBcAdGAkCVNfwIZB5bZxYZHH0yxPNjDIPwOSqJjp9nsAu0tJGFWBoKsz6Uw5dzWaaG9kTjTSxp1u9PlM9UFL01VfcdgQfivJxl5YOVKy9Tx_VSO7xkhFEoyqr9BU1VdGEtqCxkwTPvP5LVKgolUIjEcuP1r3ketchI2o",
+              img: "/assets/regions/indonesia.webp",
               href: "/travel-money/indonesia",
             },
             {
               name: t("coverage.countries.malaysia"),
               network: "DuitNow",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC76seS9t7V8_AffElBUw7eS5o31U4F_9k_lzMjW-9F6z5mOy7Tl0sRKVCaO5RuRbGhENvxlrYjm41fjzGg0DHal8XTb3juGGNS4VDa2Yn5ehwN4AL8TXy2orc5H-d5yl1TlSk22Yf9Y-OxFr6kbG66cT_LjvSKmI_npSzN-ZpLuoeDUlS7qisoGy54sonVpkb83k7f7M5YOIzF8czWSXsZOmy3Isb1LTtnE3oGsj2PzIfUX1RkDz-RpzXz9hLiVsivExIGeJYY09c4",
+              img: "/assets/regions/malaysia.webp",
               offset: true,
             },
             {
               name: t("coverage.countries.cambodia"),
               network: "KHQR",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_uKLa5un5fdEDTmXrAVPEI4NQHt510tdOM43-EF_ECZpvGA3EjHxhP1YPciKIgYl40D07XHoNvyY2iaa-SRTl4AFUFSnxl7pFdljro6P7p7NGS5KZ0Js4XCzAvj6IPC843k7vMjp76zXsolf0HroYN3VQyRYLVRERa7wGrJf0c_fIdLOGQ2nvlQUDljC-M-MTV_adHX7qlgA9OH9DDrFmwXZnhkzZJTohejfqDJsC_Cxm1SHGNPrZ6U4NzdUJL956A0l8i-ArwdY",
+              img: "/assets/regions/cambodia.webp",
             },
             {
               name: t("coverage.countries.philippines"),
               network: "InstaPay",
-              img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD_z_9AB6QwWo7um_GLFpnHmMo_ULSMKz6wB3M84GannKibvEEhFU-1ekomBHwAlhlVHhOU4iMvjYEpySS9gPfMU3q4CdDFabgtMyYB2984o0MbX_IVoxw9Nv_PFN9v1a03-eqhbvdgWCI9hR2ZN8CotqemumhqZhDglCM8tqYBBziwFfuBiOHj4hcwtv7xRDMjsBFeNz4sY4y_CLThPYeCHJzOncBWA-aMZSzDnCUwOT-BcHN1aSi50QpkUEQw0a-BuJ5xlvN6278",
+              img: "/assets/regions/philippines.webp",
               offset: true,
             },
           ].map((country, i) => {
@@ -1004,12 +1005,13 @@ export default function LandingPage() {
             const cardInner = (
               <>
                 <img
-                  alt={country.name}
+                  alt={`Paying like a local in ${country.name} with ${country.network} QR payments`}
+                  width={512}
+                  height={512}
                   className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
                     isLive ? "" : "grayscale group-hover:grayscale-0"
                   }`}
                   src={country.img}
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
@@ -1080,9 +1082,10 @@ export default function LandingPage() {
             <div className="aspect-square rounded-[4rem] overflow-hidden shadow-2xl relative z-10">
               <img
                 alt={t("mission.imgAlt")}
+                width={512}
+                height={512}
                 className="w-full h-full object-cover"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaEq9eYXoQVkKhvfkYgm6Ohg9imOHFSt8qf64AZgeD92i45IkJCAaJSEsez0E1Zv2rOonRYwYGEIwVuaV3jfN4eh5wkTUmFtl3DXHiogmhaZ1hqCiRkAGfBG5Ev4mcd2FxUAXsTYWLHn8CwpSvhpQXAe-nXWZJiNppcoJ7F5CBr4vckEb_5rpq9_7WBXymDXJm5WKsL06GvUJGIAF5P2jJ0yh8LQqdMKeezFZjnlm9SF5w2-GZWPqVZyMKXhT5GKn3sqvbGTs-AzM"
-                referrerPolicy="no-referrer"
+                src="/assets/regions/night-market.webp"
                 loading="lazy"
               />
             </div>
@@ -1552,7 +1555,7 @@ export default function LandingPage() {
               {
                 title: t("services.items.esim.title"),
                 desc: t("services.items.esim.desc"),
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDwzVHvzHYttICyFrNdszimbmzYe9sz8oUTdBs1ivHWlBmFgFLUfc8mXN_E6zjshSRZM5dA4Stb7-1y66wjDtPmysz6odGUfQZApggzTBeRD8TDR9y3YaaJR7HLmEvQQbUjynapyQF-geu7K6btTr7D0XLcsRUve4eBnUnRiAOfCxP3UDh-LBHiB-7ayQlMcz5IngOo1dZqo0-ydKJ3p40S3g_xIF7LOc8RVc_ebukJ8oESet-7sI30_hoSYDMFovUvE8W_0bcUloU",
+                img: "/assets/regions/traveller-phone.webp",
               },
               {
                 title: t("services.items.tours.title"),
@@ -1573,7 +1576,6 @@ export default function LandingPage() {
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   src={service.img}
-                  referrerPolicy="no-referrer"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent"></div>

@@ -29,6 +29,7 @@ export default function TravelMoneyThailandPage() {
         title={t(`${ns}.title`) + ' — Lumifin'}
         description={t(`${ns}.subtitle`)}
         canonical="/travel-money/thailand"
+        ogImage="/assets/preview/og-thailand.jpg"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Travel Money', url: '/travel-money' }, { name: 'Thailand', url: '/travel-money/thailand' }]),
           faqSchema(faqs),

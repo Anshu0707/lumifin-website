@@ -29,6 +29,7 @@ export default function TravelMoneyIndonesiaPage() {
         title={t(`${ns}.title`) + ' — Lumifin'}
         description={t(`${ns}.subtitle`)}
         canonical="/travel-money/indonesia"
+        ogImage="/assets/preview/og-indonesia.jpg"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Travel Money', url: '/travel-money' }, { name: 'Indonesia', url: '/travel-money/indonesia' }]),
           faqSchema(faqs),

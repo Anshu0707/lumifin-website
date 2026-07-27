@@ -29,6 +29,7 @@ export default function TravelMoneyVietnamPage() {
         title={t(`${ns}.title`) + ' — Lumifin'}
         description={t(`${ns}.subtitle`)}
         canonical="/travel-money/vietnam"
+        ogImage="/assets/preview/og-vietnam.jpg"
         structuredData={[
           breadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'Travel Money', url: '/travel-money' }, { name: 'Vietnam', url: '/travel-money/vietnam' }]),
           faqSchema(faqs),
