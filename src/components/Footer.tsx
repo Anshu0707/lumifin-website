@@ -2,6 +2,10 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
+import WhatsAppIcon from './WhatsAppIcon';
+
+// wa.me click-to-chat link for the Lumi business WhatsApp number (+33 1 62 29 01 61).
+const WHATSAPP_URL = 'https://wa.me/33162290161';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -51,6 +55,18 @@ export default function Footer() {
               <p className="text-white font-bold uppercase text-[10px] tracking-widest mb-1">{t('footer.email')}</p>
               <a href="mailto:info@lumifin.io" className="hover:text-primary transition-colors">info@lumifin.io</a>
             </li>
+            <li>
+              <p className="text-white font-bold uppercase text-[10px] tracking-widest mb-1">{t('footer.whatsapp')}</p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 hover:text-primary transition-colors"
+              >
+                <WhatsAppIcon className="w-4 h-4 shrink-0" />
+                {t('footer.whatsappNumber')}
+              </a>
+            </li>
             <li className="space-y-1">
               <p className="text-white font-bold uppercase text-[10px] tracking-widest mb-1">{t('footer.franceOffice')}</p>
               <p className="leading-relaxed">
@@ -72,6 +88,7 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-black mb-8">{t('footer.connect')}</h3>
           <ul className="space-y-4 text-slate-400 font-medium">
+            <li><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.whatsapp')}</a></li>
             <li><a href="https://www.instagram.com/lumifin.io/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.instagram')}</a></li>
             <li><a href="https://www.linkedin.com/company/lumifin1/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.linkedin')}</a></li>
             <li><a href="https://www.facebook.com/profile.php?id=61590998865526" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">{t('footer.facebook')}</a></li>

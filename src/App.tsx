@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
 import CookieConsent from './components/CookieConsent';
 import LanguageFromUrl from './components/LanguageFromUrl';
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
 
 // Eager-load the landing page (critical path)
 import LandingPage from './pages/LandingPage';
@@ -105,6 +106,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+      <WhatsAppFloatingButton />
       <CookieConsent />
     </Router>
   );
