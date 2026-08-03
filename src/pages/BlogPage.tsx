@@ -10,6 +10,7 @@ import { Calendar, User } from 'lucide-react';
 const categories = ["all", "travel", "stories", "press", "purpose", "payments"] as const;
 
 const POSTS = [
+  { id: 9, key: 'crossBorderQrAccess', author: 'Gaurav Bansal', categoryKey: 'payments', href: '/blog/cross-border-qr-payments-access', image: '/assets/blog/cross-border-qr-access-cover.webp' },
   { id: 8, key: 'daNangPressRelease', author: 'Lumifin', categoryKey: 'press', href: '/blog/why-we-chose-da-nang', image: '/assets/blog/da-nang-press-cover.webp' },
   { id: 7, key: 'hanoiFounderNote', author: 'Gaurav Bansal', categoryKey: 'stories', href: '/blog/founder-note-testing-lumifin-in-hanoi', image: '/assets/blog/founder-note-hanoi-cover.webp' },
   { id: 6, key: 'digitalNomadVisas', author: 'Pierre Lahbabi', categoryKey: 'travel', href: '/blog/digital-nomad-visas-thailand-vietnam-bali-2026', image: '/assets/blog/digital-nomad-visas-cover.webp' },

@@ -421,6 +421,11 @@
         "title": "Why We Chose Da Nang",
         "excerpt": "Lumi has picked Da Nang as the launch community for its euro-wallet rollout across Southeast Asia. Here's why — and how remote workers can help shape it.",
         "date": "July 10, 2026"
+      },
+      "crossBorderQrAccess": {
+        "title": "Cross-Border QR Payments Are Growing. The Next Challenge Is Who Can Access Them",
+        "excerpt": "Southeast Asia's QR networks are becoming more connected. But for European travellers, the ability to pay still often depends on having the right local or regional bank account.",
+        "date": "August 3, 2026"
       }
     }
   },
@@ -1363,6 +1368,134 @@
         { "name": "Tanvi Nag", "detail": "tanvi@lumifin.io · +91 6239014820" }
       ],
       "contactNote": "Pierre Lahbabi is available for interviews in Da Nang."
+    },
+    "crossBorderQrAccess": {
+      "seo": {
+        "title": "Cross-Border QR Payments Are Growing — But Who Can Access Them?",
+        "description": "Southeast Asia recorded 36.2 million cross-border QR transactions in 2025. Yet European travellers still often cannot pay by local QR code. Why access, not adoption, is the real challenge."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Payments · Southeast Asia",
+      "title": "Cross-Border QR Payments Are Growing. The Next Challenge Is Who Can Access Them",
+      "subtitle": "Southeast Asia's QR networks are becoming more connected. But for European travellers, the ability to pay still often depends on having the right local or regional bank account.",
+      "author": "Gaurav Bansal",
+      "readTime": "8 min read",
+      "dateLabel": "3 August 2026",
+      "imgAlt": "A European traveller scanning a VietQR code at the counter of an independent café in Vietnam, with the merchant visible in the background.",
+      "imgCaption": "Local QR payments are becoming more connected across Southeast Asia, but access still depends on the user's bank and payment provider.",
+      "introP1": "At a café in Ho Chi Minh City, paying can take seconds. A customer opens a banking app, scans the merchant's VietQR code and confirms the amount. No card terminal changes hands. No cash needs to be counted.",
+      "introP2": "For a local customer, the experience feels almost invisible.",
+      "introP3": "For a European traveller standing beside them, that same QR code may be unusable.",
+      "introP4": "This is the tension at the centre of Southeast Asia's payment transformation. The region has built fast, familiar and increasingly connected QR-payment networks. Cross-border usage is growing quickly. Yet access still depends heavily on where someone banks, which app they use and whether their financial institution participates in a particular payment linkage.",
+      "introP5": "The next challenge is no longer simply making QR payments work across borders. It is making them accessible to more of the people crossing those borders.",
+      "behaviourH": "Cross-border QR payments are becoming real behaviour",
+      "behaviourP1": "In April 2026, ASEAN finance ministers and central bank governors reported that the region had established 29 QR and person-to-person instant-payment linkages within ASEAN and with external partners by the end of 2025.",
+      "behaviourP2": "Usage is no longer limited to small technical pilots. During 2025, cross-border QR payments reached:",
+      "usageHead": ["Measure", "2025 result"],
+      "usageRows": [
+        { "measure": "Cross-border QR transactions", "result": "36.2 million" },
+        { "measure": "Total value", "result": "US$716.4 million" },
+        { "measure": "QR and P2P payment linkages", "result": "29" }
+      ],
+      "behaviourP3": "These figures show clear momentum. Travellers, households and businesses are beginning to use regional payment connections in everyday situations, not only in controlled demonstrations.",
+      "behaviourP4": "The direction makes sense. Domestic QR schemes already have strong local acceptance. VietQR in Vietnam, PromptPay in Thailand and QRIS in Indonesia allow consumers to pay everyone from established retailers to small independent merchants. Connecting these networks across borders can extend an experience people already understand instead of asking merchants to adopt another payment method.",
+      "behaviourP5": "That is a powerful starting point.",
+      "howH": "How regional QR payment links work",
+      "howP1": "A cross-border QR linkage allows a customer from one participating country to scan a merchant QR code in another participating country using a supported banking or payment app.",
+      "howP2": "Behind the simple scan, several things need to happen:",
+      "howList": [
+        "The customer's app reads the merchant's local QR code.",
+        "The payment request moves between participating payment systems or providers.",
+        "The amount is converted between currencies.",
+        "Compliance, fraud and transaction checks take place.",
+        "The merchant receives funds through the local payment network."
+      ],
+      "howP3": "The customer sees one transaction. Underneath it sits a coordinated network of banks, payment operators, foreign-exchange providers and regulatory frameworks.",
+      "howP4": "This model can work very well for customers whose banks are already connected. A traveller from Thailand may be able to scan a supported QR code in a neighbouring market with their Thai banking app, for example.",
+      "howP5": "But connectivity between countries does not automatically create universal access.",
+      "gapH": "The European traveller gap",
+      "gapP1": "Imagine arriving in Vietnam with a French bank account, a euro balance and a widely used European finance app.",
+      "gapP2": "You may have sufficient funds. Your identity may already have been verified by a regulated European institution. Your phone may be capable of scanning the code. Yet your banking app still cannot initiate a payment through VietQR.",
+      "gapP3": "Why? Because the issue is not the QR image itself. The issue is access to the payment network behind it.",
+      "gapP4": "Most cross-border QR arrangements connect selected domestic or regional institutions. They do not automatically connect every foreign bank account or wallet. This leaves many European travellers relying on a familiar set of alternatives:",
+      "optionsHead": ["Option", "Where it works", "Typical friction"],
+      "optionsRows": [
+        { "option": "Cash", "works": "Widely accepted", "friction": "ATM fees, carrying cash and repeated withdrawals" },
+        { "option": "International card", "works": "Hotels, chains and larger merchants", "friction": "Foreign-exchange costs, possible surcharges and limited acceptance among smaller merchants" },
+        { "option": "Local bank account", "works": "Local QR networks", "friction": "Often unavailable or impractical for short-term visitors" },
+        { "option": "Regional QR-enabled banking app", "works": "Participating cross-border networks", "friction": "Usually requires an account with a supported institution" }
+      ],
+      "gapP5": "None of these options is universally bad. Cards remain useful, and cash is still essential in many situations. The problem appears when a traveller has money but cannot use the payment method sitting directly in front of them.",
+      "gapP6": "That is an access problem, not an adoption problem.",
+      "localH": "Local networks are already winning at checkout",
+      "localP1": "Much of the global payments conversation focuses on creating new ways to pay. Southeast Asia offers a different lesson: the most effective customer interface may already exist.",
+      "localP2": "Merchants understand the QR code on their counter. Customers understand the scanning motion. Domestic payment networks already handle local acceptance and settlement. Replacing that system would create unnecessary work for both sides.",
+      "localP3": "The more useful question is:",
+      "localQuestion": "How can a traveller fund a payment from abroad while allowing the merchant to receive money through the local network they already use?",
+      "localP4": "Answering that question requires connections between different forms of money, institutions and regulatory environments. It also requires a customer experience that hides most of that complexity.",
+      "stablecoinH": "Where stablecoins may fit, and where they do not",
+      "stablecoinP1": "Stablecoins are often presented as an instant solution to cross-border payments. The current evidence calls for a more measured view.",
+      "stablecoinP2": "In July 2026, the Financial Stability Board noted that stablecoins represented, by some estimates, less than 0.2% of total cross-border payment volume in 2025. Their role remains small compared with the wider market.",
+      "stablecoinP3": "The FSB also pointed toward a potentially more realistic near-term use: stablecoins as components in hybrid models, integrated with bank money, foreign exchange and established settlement systems.",
+      "stablecoinP4": "This distinction matters.",
+      "stablecoinP5": "For a traveller, the goal is not necessarily to buy, hold or manage a digital asset. The goal is to fund a payment in a familiar currency and pay a merchant through the appropriate local network.",
+      "stablecoinP6": "Stablecoins may help providers move value between parts of that journey more efficiently. But they are only one part of the infrastructure. They do not remove the need for:",
+      "stablecoinNeeds": [
+        "regulated payment and banking partners;",
+        "reliable reserves and redemption;",
+        "customer identity verification;",
+        "anti-money-laundering and sanctions controls;",
+        "transaction monitoring and fraud prevention;",
+        "compliant foreign-exchange conversion;",
+        "alignment with local payment rules."
+      ],
+      "stablecoinP7": "The most useful stablecoin payment may therefore be one the customer never has to see.",
+      "guardrailH": "The guardrails are part of the product",
+      "guardrailP1": "Payment infrastructure is not valuable only because it moves quickly. It must also move money safely, predictably and within the rules of each market.",
+      "guardrailP2": "ASEAN's own 2026 statement highlights the need to manage fraud risks, align oversight practices and improve resilience as payment connectivity expands. This is particularly important as scams increasingly move across platforms and borders.",
+      "guardrailP3": "For providers connecting European funding sources with Southeast Asian payment networks, compliance cannot be added after the customer experience is designed. It shapes the experience from the beginning.",
+      "guardrailP4": "That includes deciding:",
+      "guardrailList": [
+        "who is eligible to use the service;",
+        "how identity is verified;",
+        "which transactions require further review;",
+        "how customer funds are protected;",
+        "which regulated partners handle each part of the flow;",
+        "what information customers receive about fees and exchange rates;",
+        "how failed or disputed payments are resolved."
+      ],
+      "guardrailP5": "Guardrails can feel invisible when they work properly. But they are what turn technical connectivity into dependable payment infrastructure.",
+      "nextPhaseH": "What this means for the next phase of QR payments",
+      "nextPhaseP1": "The growth of cross-border QR transactions proves that regional interoperability can translate into real usage. The next phase will require the industry to widen access without weakening trust.",
+      "nextPhaseP2": "For European travellers, that could mean being able to:",
+      "nextPhaseList": [
+        "fund from a familiar European account;",
+        "complete verification once in a secure flow;",
+        "scan the local QR code already accepted by the merchant;",
+        "see the amount and exchange rate clearly;",
+        "pay without opening a local bank account;",
+        "leave the underlying settlement process to regulated providers."
+      ],
+      "nextPhaseP3": "This is the experience Lumifin is building, beginning in Vietnam. Users fund in euros and pay local merchants through VietQR, while the cross-border infrastructure and compliance processes remain behind the scenes.",
+      "nextPhaseP4": "The aim is not to replace the payment system that already works locally. It is to build a safe bridge into it.",
+      "beforeTripH": "Before your next trip to Southeast Asia",
+      "beforeTripP1": "QR-payment access still varies by country, bank and provider. Before travelling:",
+      "beforeTripList": [
+        "check whether your banking or payment app supports QR payments in your destination;",
+        "carry a backup card and a modest amount of cash;",
+        "review foreign transaction and ATM fees;",
+        "never scan a QR code that appears altered or placed over another code;",
+        "confirm the merchant name and payment amount before approving;",
+        "download payment or travel apps only from official sources;",
+        "complete any required identity checks before you need to make a payment."
+      ],
+      "beforeTripP2": "Southeast Asia's payment networks are becoming more connected with each year. The opportunity now is to ensure that the people arriving from outside those networks can participate safely too.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "ASEAN, Joint Statement of the Thirteenth ASEAN Finance Ministers' and Central Bank Governors' Meeting, 10 April 2026." },
+        { "n": "2.", "label": "Financial Stability Board, Cross-border payments: towards the next chapter, 8 July 2026." },
+        { "n": "3.", "label": "Bank for International Settlements, The future of the international monetary system: navigating a new era, 23 February 2026." }
+      ]
     }
   },
   "careers": {

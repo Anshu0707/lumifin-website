@@ -28,6 +28,7 @@ const BestTravelCardsVietnamPage = lazy(() => import('./pages/BestTravelCardsVie
 const DigitalNomadVisasPage = lazy(() => import('./pages/DigitalNomadVisasPage'));
 const HanoiFounderNotePage = lazy(() => import('./pages/HanoiFounderNotePage'));
 const DaNangPressReleasePage = lazy(() => import('./pages/DaNangPressReleasePage'));
+const CrossBorderQrAccessPage = lazy(() => import('./pages/CrossBorderQrAccessPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -63,6 +64,7 @@ export default function App() {
           <Route path="/blog/digital-nomad-visas-thailand-vietnam-bali-2026" element={<DigitalNomadVisasPage />} />
           <Route path="/blog/founder-note-testing-lumifin-in-hanoi" element={<HanoiFounderNotePage />} />
           <Route path="/blog/why-we-chose-da-nang" element={<DaNangPressReleasePage />} />
+          <Route path="/blog/cross-border-qr-payments-access" element={<CrossBorderQrAccessPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
@@ -92,6 +94,7 @@ export default function App() {
           <Route path="/en/blog/digital-nomad-visas-thailand-vietnam-bali-2026" element={<DigitalNomadVisasPage />} />
           <Route path="/en/blog/founder-note-testing-lumifin-in-hanoi" element={<HanoiFounderNotePage />} />
           <Route path="/en/blog/why-we-chose-da-nang" element={<DaNangPressReleasePage />} />
+          <Route path="/en/blog/cross-border-qr-payments-access" element={<CrossBorderQrAccessPage />} />
           <Route path="/en/careers" element={<CareersPage />} />
           <Route path="/en/security" element={<SecurityPage />} />
           <Route path="/en/travel-money/thailand" element={<TravelMoneyThailandPage />} />

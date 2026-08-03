@@ -421,6 +421,11 @@
         "title": "Pourquoi nous avons choisi Da Nang",
         "excerpt": "Lumi a choisi Da Nang comme communauté de lancement pour le déploiement de son portefeuille en euros en Asie du Sud-Est. Voici pourquoi — et comment les travailleurs à distance peuvent contribuer.",
         "date": "10 juillet 2026"
+      },
+      "crossBorderQrAccess": {
+        "title": "Les paiements QR transfrontaliers progressent. Le prochain défi : qui peut y accéder",
+        "excerpt": "Les réseaux QR d'Asie du Sud-Est sont de plus en plus interconnectés. Mais pour les voyageurs européens, pouvoir payer dépend encore souvent d'un compte bancaire local ou régional.",
+        "date": "3 août 2026"
       }
     }
   },
@@ -1363,6 +1368,134 @@
         { "name": "Tanvi Nag", "detail": "tanvi@lumifin.io · +91 6239014820" }
       ],
       "contactNote": "Pierre Lahbabi est disponible pour des interviews à Da Nang."
+    },
+    "crossBorderQrAccess": {
+      "seo": {
+        "title": "Paiements QR transfrontaliers : la vraie question est l'accès",
+        "description": "L'Asie du Sud-Est a enregistré 36,2 millions de transactions QR transfrontalières en 2025. Pourtant, les voyageurs européens ne peuvent souvent toujours pas payer par QR local. Pourquoi le défi porte sur l'accès, pas sur l'adoption."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Paiements · Asie du Sud-Est",
+      "title": "Les paiements QR transfrontaliers progressent. Le prochain défi : qui peut y accéder",
+      "subtitle": "Les réseaux QR d'Asie du Sud-Est sont de plus en plus interconnectés. Mais pour les voyageurs européens, pouvoir payer dépend encore souvent d'un compte bancaire local ou régional.",
+      "author": "Gaurav Bansal",
+      "readTime": "8 min de lecture",
+      "dateLabel": "3 août 2026",
+      "imgAlt": "Une voyageuse européenne scanne un code VietQR au comptoir d'un café indépendant au Vietnam, le commerçant visible en arrière-plan.",
+      "imgCaption": "Les paiements QR locaux sont de plus en plus interconnectés en Asie du Sud-Est, mais l'accès dépend encore de la banque et du prestataire de paiement de l'utilisateur.",
+      "introP1": "Dans un café de Hô Chi Minh-Ville, payer prend quelques secondes. Le client ouvre son application bancaire, scanne le code VietQR du commerçant et confirme le montant. Aucun terminal de carte ne change de mains. Aucune espèce à compter.",
+      "introP2": "Pour un client local, l'expérience est presque invisible.",
+      "introP3": "Pour le voyageur européen qui se tient à côté de lui, ce même code QR peut être inutilisable.",
+      "introP4": "C'est là toute la tension au cœur de la transformation des paiements en Asie du Sud-Est. La région a bâti des réseaux de paiement par QR rapides, familiers et de plus en plus interconnectés. L'usage transfrontalier progresse vite. Pourtant, l'accès dépend encore largement de l'endroit où l'on est bancarisé, de l'application que l'on utilise et de la participation ou non de son établissement financier à tel ou tel accord de paiement.",
+      "introP5": "Le prochain défi n'est plus simplement de faire fonctionner les paiements QR au-delà des frontières. Il s'agit de les rendre accessibles à davantage de personnes qui franchissent ces frontières.",
+      "behaviourH": "Les paiements QR transfrontaliers deviennent un usage réel",
+      "behaviourP1": "En avril 2026, les ministres des Finances et gouverneurs de banques centrales de l'ASEAN ont indiqué que la région avait établi 29 accords d'interconnexion de paiements instantanés QR et de particulier à particulier, au sein de l'ASEAN et avec des partenaires extérieurs, à fin 2025.",
+      "behaviourP2": "L'usage ne se limite plus à de petits pilotes techniques. En 2025, les paiements QR transfrontaliers ont atteint :",
+      "usageHead": ["Indicateur", "Résultat 2025"],
+      "usageRows": [
+        { "measure": "Transactions QR transfrontalières", "result": "36,2 millions" },
+        { "measure": "Valeur totale", "result": "716,4 millions de dollars US" },
+        { "measure": "Accords d'interconnexion QR et P2P", "result": "29" }
+      ],
+      "behaviourP3": "Ces chiffres témoignent d'une dynamique nette. Voyageurs, ménages et entreprises commencent à utiliser les connexions de paiement régionales dans des situations quotidiennes, et plus seulement lors de démonstrations encadrées.",
+      "behaviourP4": "La logique se tient. Les systèmes QR nationaux bénéficient déjà d'une forte acceptation locale. VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie permettent aux consommateurs de payer aussi bien les enseignes établies que les petits commerçants indépendants. Interconnecter ces réseaux au-delà des frontières permet d'étendre une expérience que les gens maîtrisent déjà, plutôt que de demander aux commerçants d'adopter un moyen de paiement supplémentaire.",
+      "behaviourP5": "C'est un point de départ puissant.",
+      "howH": "Comment fonctionnent les interconnexions QR régionales",
+      "howP1": "Une interconnexion QR transfrontalière permet à un client d'un pays participant de scanner le code QR d'un commerçant dans un autre pays participant, à l'aide d'une application bancaire ou de paiement prise en charge.",
+      "howP2": "Derrière ce simple scan, plusieurs étapes s'enchaînent :",
+      "howList": [
+        "L'application du client lit le code QR local du commerçant.",
+        "La demande de paiement circule entre les systèmes ou prestataires de paiement participants.",
+        "Le montant est converti entre les devises.",
+        "Les contrôles de conformité, de fraude et de transaction s'effectuent.",
+        "Le commerçant reçoit les fonds via le réseau de paiement local."
+      ],
+      "howP3": "Le client, lui, ne voit qu'une seule transaction. En dessous se trouve un réseau coordonné de banques, d'opérateurs de paiement, de prestataires de change et de cadres réglementaires.",
+      "howP4": "Ce modèle peut très bien fonctionner pour les clients dont la banque est déjà connectée. Un voyageur venu de Thaïlande pourra par exemple scanner un code QR pris en charge dans un pays voisin avec son application bancaire thaïlandaise.",
+      "howP5": "Mais la connectivité entre pays ne crée pas automatiquement un accès universel.",
+      "gapH": "L'angle mort du voyageur européen",
+      "gapP1": "Imaginez arriver au Vietnam avec un compte bancaire français, un solde en euros et une application financière européenne largement utilisée.",
+      "gapP2": "Vous avez peut-être les fonds nécessaires. Votre identité a peut-être déjà été vérifiée par un établissement européen régulé. Votre téléphone est sans doute capable de scanner le code. Et pourtant, votre application bancaire ne peut pas initier de paiement via VietQR.",
+      "gapP3": "Pourquoi ? Parce que le problème n'est pas l'image du QR en elle-même. Le problème, c'est l'accès au réseau de paiement qui se trouve derrière.",
+      "gapP4": "La plupart des dispositifs QR transfrontaliers relient des établissements nationaux ou régionaux sélectionnés. Ils ne connectent pas automatiquement tous les comptes bancaires ou portefeuilles étrangers. Beaucoup de voyageurs européens se rabattent donc sur un éventail d'alternatives bien connues :",
+      "optionsHead": ["Option", "Où ça marche", "Friction habituelle"],
+      "optionsRows": [
+        { "option": "Espèces", "works": "Largement acceptées", "friction": "Frais de distributeur, transport d'espèces et retraits répétés" },
+        { "option": "Carte internationale", "works": "Hôtels, chaînes et commerces de taille importante", "friction": "Coûts de change, éventuelles surcharges et acceptation limitée chez les petits commerçants" },
+        { "option": "Compte bancaire local", "works": "Réseaux QR locaux", "friction": "Souvent inaccessible ou peu réaliste pour un séjour court" },
+        { "option": "Appli bancaire régionale compatible QR", "works": "Réseaux transfrontaliers participants", "friction": "Exige généralement un compte dans un établissement pris en charge" }
+      ],
+      "gapP5": "Aucune de ces options n'est mauvaise en soi. Les cartes restent utiles, et les espèces demeurent indispensables dans bien des situations. Le problème apparaît quand un voyageur a de l'argent mais ne peut pas utiliser le moyen de paiement qui se trouve juste devant lui.",
+      "gapP6": "C'est un problème d'accès, pas un problème d'adoption.",
+      "localH": "Les réseaux locaux ont déjà gagné la bataille de l'encaissement",
+      "localP1": "Une grande partie du débat mondial sur les paiements porte sur la création de nouveaux moyens de payer. L'Asie du Sud-Est offre une autre leçon : l'interface client la plus efficace existe peut-être déjà.",
+      "localP2": "Les commerçants comprennent le code QR posé sur leur comptoir. Les clients comprennent le geste du scan. Les réseaux de paiement nationaux gèrent déjà l'acceptation et le règlement au niveau local. Remplacer ce système créerait un travail inutile des deux côtés.",
+      "localP3": "La question la plus utile est la suivante :",
+      "localQuestion": "Comment un voyageur peut-il alimenter un paiement depuis l'étranger tout en permettant au commerçant d'être payé via le réseau local qu'il utilise déjà ?",
+      "localP4": "Y répondre suppose des connexions entre différentes formes de monnaie, différents établissements et différents environnements réglementaires. Cela suppose aussi une expérience client qui masque l'essentiel de cette complexité.",
+      "stablecoinH": "Où les stablecoins peuvent s'inscrire — et où ils ne le peuvent pas",
+      "stablecoinP1": "Les stablecoins sont souvent présentés comme une solution immédiate aux paiements transfrontaliers. Les données actuelles invitent à plus de mesure.",
+      "stablecoinP2": "En juillet 2026, le Conseil de stabilité financière (FSB) relevait que les stablecoins représentaient, selon certaines estimations, moins de 0,2 % du volume total des paiements transfrontaliers en 2025. Leur rôle reste modeste au regard du marché dans son ensemble.",
+      "stablecoinP3": "Le FSB pointait également un usage sans doute plus réaliste à court terme : les stablecoins comme composants de modèles hybrides, intégrés à la monnaie bancaire, au change et aux systèmes de règlement établis.",
+      "stablecoinP4": "Cette distinction est importante.",
+      "stablecoinP5": "Pour un voyageur, l'objectif n'est pas nécessairement d'acheter, de détenir ou de gérer un actif numérique. L'objectif est d'alimenter un paiement dans une devise familière et de payer un commerçant via le réseau local approprié.",
+      "stablecoinP6": "Les stablecoins peuvent aider les prestataires à faire circuler la valeur plus efficacement entre certaines étapes de ce parcours. Mais ils ne constituent qu'une partie de l'infrastructure. Ils ne suppriment pas le besoin de :",
+      "stablecoinNeeds": [
+        "partenaires bancaires et de paiement régulés ;",
+        "réserves et mécanismes de remboursement fiables ;",
+        "vérification de l'identité des clients ;",
+        "dispositifs de lutte contre le blanchiment et de contrôle des sanctions ;",
+        "surveillance des transactions et prévention de la fraude ;",
+        "conversion de change conforme ;",
+        "alignement sur les règles de paiement locales."
+      ],
+      "stablecoinP7": "Le paiement en stablecoin le plus utile est donc peut-être celui que le client n'a jamais besoin de voir.",
+      "guardrailH": "Les garde-fous font partie du produit",
+      "guardrailP1": "Une infrastructure de paiement n'a pas de valeur uniquement parce qu'elle est rapide. Elle doit aussi déplacer l'argent de façon sûre, prévisible et conforme aux règles de chaque marché.",
+      "guardrailP2": "La déclaration 2026 de l'ASEAN souligne elle-même la nécessité de maîtriser les risques de fraude, d'harmoniser les pratiques de supervision et de renforcer la résilience à mesure que la connectivité des paiements s'étend. C'est d'autant plus important que les escroqueries circulent de plus en plus entre plateformes et entre pays.",
+      "guardrailP3": "Pour les prestataires qui relient des sources de financement européennes aux réseaux de paiement d'Asie du Sud-Est, la conformité ne peut pas s'ajouter une fois l'expérience client conçue. Elle façonne cette expérience dès le départ.",
+      "guardrailP4": "Cela suppose de décider :",
+      "guardrailList": [
+        "qui est éligible au service ;",
+        "comment l'identité est vérifiée ;",
+        "quelles transactions nécessitent un examen approfondi ;",
+        "comment les fonds des clients sont protégés ;",
+        "quels partenaires régulés prennent en charge chaque étape du flux ;",
+        "quelles informations les clients reçoivent sur les frais et les taux de change ;",
+        "comment sont traités les paiements échoués ou contestés."
+      ],
+      "guardrailP5": "Les garde-fous paraissent invisibles quand ils fonctionnent bien. Mais ce sont eux qui transforment une connectivité technique en infrastructure de paiement fiable.",
+      "nextPhaseH": "Ce que cela signifie pour la prochaine phase des paiements QR",
+      "nextPhaseP1": "La croissance des transactions QR transfrontalières prouve que l'interopérabilité régionale peut se traduire en usage réel. La phase suivante exigera du secteur qu'il élargisse l'accès sans affaiblir la confiance.",
+      "nextPhaseP2": "Pour les voyageurs européens, cela pourrait signifier pouvoir :",
+      "nextPhaseList": [
+        "alimenter son compte depuis un établissement européen familier ;",
+        "réaliser la vérification une seule fois, dans un parcours sécurisé ;",
+        "scanner le code QR local déjà accepté par le commerçant ;",
+        "voir clairement le montant et le taux de change ;",
+        "payer sans ouvrir de compte bancaire local ;",
+        "laisser le processus de règlement sous-jacent à des prestataires régulés."
+      ],
+      "nextPhaseP3": "C'est l'expérience que Lumifin construit, en commençant par le Vietnam. Les utilisateurs alimentent leur compte en euros et paient les commerçants locaux via VietQR, tandis que l'infrastructure transfrontalière et les processus de conformité restent en coulisses.",
+      "nextPhaseP4": "L'objectif n'est pas de remplacer le système de paiement qui fonctionne déjà localement. Il est de construire un pont sûr vers celui-ci.",
+      "beforeTripH": "Avant votre prochain voyage en Asie du Sud-Est",
+      "beforeTripP1": "L'accès aux paiements QR varie encore selon le pays, la banque et le prestataire. Avant de partir :",
+      "beforeTripList": [
+        "vérifiez si votre application bancaire ou de paiement prend en charge les paiements QR dans votre destination ;",
+        "emportez une carte de secours et un peu d'espèces ;",
+        "passez en revue les frais de transaction à l'étranger et de retrait ;",
+        "ne scannez jamais un code QR qui semble altéré ou collé par-dessus un autre code ;",
+        "confirmez le nom du commerçant et le montant avant de valider ;",
+        "téléchargez les applications de paiement ou de voyage uniquement depuis les sources officielles ;",
+        "effectuez les vérifications d'identité requises avant d'avoir besoin de payer."
+      ],
+      "beforeTripP2": "Les réseaux de paiement d'Asie du Sud-Est sont un peu plus interconnectés chaque année. L'enjeu est désormais de faire en sorte que les personnes qui arrivent de l'extérieur de ces réseaux puissent, elles aussi, y participer en toute sécurité.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "ASEAN, Déclaration commune de la treizième réunion des ministres des Finances et des gouverneurs de banques centrales de l'ASEAN, 10 avril 2026." },
+        { "n": "2.", "label": "Conseil de stabilité financière, Cross-border payments: towards the next chapter, 8 juillet 2026." },
+        { "n": "3.", "label": "Banque des règlements internationaux, The future of the international monetary system: navigating a new era, 23 février 2026." }
+      ]
     }
   },
   "careers": {
