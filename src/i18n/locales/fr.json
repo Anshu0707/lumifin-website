@@ -342,7 +342,7 @@
       "cto": "Directeur technique",
       "technicalLead": "Responsable technique",
       "productManager": "Chef de produit",
-      "productAnalyst": "Analyste produit",
+      "productManagementAssociate": "Associée en gestion de produit",
       "softwareEngineer": "Ingénieur logiciel",
       "foundersAssociate": "Associée du fondateur"
     }
@@ -1857,7 +1857,7 @@
       "bio": "Gaurav apporte une vaste expérience en finance et opérations internationales. Il a co-fondé Lumi pour résoudre les défis de paiement transfrontalier qu'il a vécus en voyageant à travers l'Asie du Sud-Est."
     },
     "tanvi": {
-      "role": "Product Analyst, Lumi",
+      "role": "Associée en gestion de produit, Lumi",
       "bio": "Tanvi se concentre sur la recherche utilisateur et la stratégie produit chez Lumi. Elle écrit sur les défis réels de paiement que rencontrent les voyageurs européens en Asie du Sud-Est."
     },
     "pierre": {
