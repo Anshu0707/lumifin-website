@@ -112,7 +112,7 @@ export default function CrossBorderQrAccessPage() {
             description: "Southeast Asia's QR networks are becoming more connected. But for European travellers, the ability to pay still often depends on having the right local or regional bank account.",
             url: '/blog/cross-border-qr-payments-access',
             image: '/assets/blog/cross-border-qr-access-cover.webp',
-            author: 'Gaurav Bansal',
+            author: 'Tanvi Nag',
             datePublished: '2026-08-03',
           }),
         ]}
@@ -270,7 +270,7 @@ export default function CrossBorderQrAccessPage() {
             </div>
           </motion.div>
 
-          <AuthorBio authorName="Gaurav Bansal" />
+          <AuthorBio authorName="Tanvi Nag" />
         </article>
       </main>
 
