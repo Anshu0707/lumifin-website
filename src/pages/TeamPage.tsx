@@ -71,7 +71,7 @@ const team = [
     roleKey: "softwareEngineer",
     img: "/assets/team/PRINCE.webp",
     objectPosition: "center 20%",
-    linkedin: ""
+    linkedin: "https://www.linkedin.com/in/prince-yadavvvv/"
   },
   {
     name: "Thiofanty",
