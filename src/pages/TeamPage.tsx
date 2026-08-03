@@ -67,6 +67,13 @@ const team = [
     linkedin: "https://www.linkedin.com/in/anshuman-naithani/"
   },
   {
+    name: "Prince Yadav",
+    roleKey: "softwareEngineer",
+    img: "/assets/team/PRINCE.webp",
+    objectPosition: "center 20%",
+    linkedin: ""
+  },
+  {
     name: "Thiofanty",
     roleKey: "foundersAssociate",
     img: "/assets/team/THIOFANTY.webp",
@@ -124,11 +131,13 @@ export default function TeamPage() {
                   className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${('scale' in member && member.scale) || ''}`}
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                </div>
+                {member.linkedin && (
+                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                  </div>
+                )}
               </div>
               <h3 className="text-2xl font-black text-slate-900 mb-1">{member.name}</h3>
               <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4">{t(`team.roles.${member.roleKey}`)}</p>
