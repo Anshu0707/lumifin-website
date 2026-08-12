@@ -62,6 +62,12 @@ export default function Header() {
       >
         {t("header.pricing")}
       </button>
+      <button
+        onClick={() => scrollToSection("demo")}
+        className="hover:text-primary transition-colors cursor-pointer"
+      >
+        {t("header.gallery")}
+      </button>
       <Link
         to={withLang("/team")}
         onClick={() => setMobileOpen(false)}
