@@ -435,6 +435,25 @@
       }
     }
   },
+  "unsubscribe": {
+    "seo": {
+      "title": "Unsubscribe",
+      "description": "Unsubscribe from Lumifin emails."
+    },
+    "title": "Unsubscribe from our emails",
+    "subtitle": "Confirm your address below and we'll remove you from our mailing list. No hard feelings.",
+    "emailLabel": "Your email address",
+    "emailPlaceholder": "you@example.com",
+    "reasonLabel": "Reason for unsubscribing (optional)",
+    "reasonPlaceholder": "Anything we could have done better? (optional)",
+    "submit": "Unsubscribe me",
+    "note": "We handle unsubscribe requests manually, so please allow a few days for the change to take effect.",
+    "botFieldLabel": "Don't fill this out if you're human:",
+    "error": "Something went wrong. Please email <1>info@lumifin.io</1> and we'll remove you manually.",
+    "doneTitle": "You're unsubscribed",
+    "doneBody": "We've received your request and you'll be removed from our mailing list. You may receive an email already in transit, but nothing after that.",
+    "doneContact": "Changed your mind, or need anything else? Write to us at <1>info@lumifin.io</1>."
+  },
   "privacy": {
     "seo": {
       "title": "Privacy Policy",

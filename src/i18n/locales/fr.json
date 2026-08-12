@@ -435,6 +435,25 @@
       }
     }
   },
+  "unsubscribe": {
+    "seo": {
+      "title": "Se désabonner",
+      "description": "Se désabonner des e-mails de Lumifin."
+    },
+    "title": "Se désabonner de nos e-mails",
+    "subtitle": "Confirmez votre adresse ci-dessous et nous vous retirerons de notre liste de diffusion. Sans rancune.",
+    "emailLabel": "Votre adresse e-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "reasonLabel": "Motif du désabonnement (facultatif)",
+    "reasonPlaceholder": "Quelque chose que nous aurions pu mieux faire ? (facultatif)",
+    "submit": "Me désabonner",
+    "note": "Les demandes de désabonnement sont traitées manuellement : merci de compter quelques jours avant la prise en compte.",
+    "botFieldLabel": "Ne remplissez pas ce champ si vous êtes humain :",
+    "error": "Une erreur est survenue. Écrivez-nous à <1>info@lumifin.io</1> et nous vous retirerons manuellement.",
+    "doneTitle": "Vous êtes désabonné",
+    "doneBody": "Nous avons bien reçu votre demande et vous serez retiré de notre liste de diffusion. Un e-mail déjà en cours d'envoi peut encore vous parvenir, mais rien après cela.",
+    "doneContact": "Vous avez changé d'avis ou besoin d'autre chose ? Écrivez-nous à <1>info@lumifin.io</1>."
+  },
   "privacy": {
     "seo": {
       "title": "Politique de confidentialité",

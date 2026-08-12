@@ -62,6 +62,11 @@
       <input name="utm_medium" />
       <input name="utm_campaign" />
     </form>
+    <form name="unsubscribe" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="email" type="email" />
+      <input name="reason" />
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
