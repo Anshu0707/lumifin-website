@@ -426,6 +426,11 @@
         "title": "Les paiements QR transfrontaliers progressent. Le prochain défi : qui peut y accéder",
         "excerpt": "Les réseaux QR d'Asie du Sud-Est sont de plus en plus interconnectés. Mais pour les voyageurs européens, pouvoir payer dépend encore souvent d'un compte bancaire local ou régional.",
         "date": "3 août 2026"
+      },
+      "gettingAroundVietnam": {
+        "title": "Scooter, Grab ou métro ? Se déplacer à Hanoï, Hô Chi Minh-Ville et Da Nang",
+        "excerpt": "La meilleure façon de circuler au Vietnam change selon la ville. Comparatif des transports, des coûts, des paiements et de la sécurité à scooter à Hanoï, Hô Chi Minh-Ville et Da Nang.",
+        "date": "12 août 2026"
       }
     }
   },
@@ -1495,6 +1500,99 @@
         { "n": "1.", "label": "ASEAN, Déclaration commune de la treizième réunion des ministres des Finances et des gouverneurs de banques centrales de l'ASEAN, 10 avril 2026." },
         { "n": "2.", "label": "Conseil de stabilité financière, Cross-border payments: towards the next chapter, 8 juillet 2026." },
         { "n": "3.", "label": "Banque des règlements internationaux, The future of the international monetary system: navigating a new era, 23 février 2026." }
+      ]
+    },
+    "gettingAroundVietnam": {
+      "seo": {
+        "title": "Scooter, Grab ou métro ? Se déplacer au Vietnam",
+        "description": "Comparatif des scooters, de Grab, des taxis, des bus et du métro à Hanoï, Hô Chi Minh-Ville et Da Nang, avec des conseils pratiques sur la sécurité, le permis et les paiements."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Voyage · Vietnam",
+      "title": "Scooter, Grab ou métro ? Se déplacer à Hanoï, Hô Chi Minh-Ville et Da Nang",
+      "subtitle": "Les scooters sont partout au Vietnam. Cela ne veut pas dire que vos vacances doivent servir de première leçon de conduite. Voici comment choisir le moyen de transport le plus sûr et le plus malin dans chaque ville.",
+      "author": "Pierre Lahbabi",
+      "readTime": "9 min de lecture",
+      "dateLabel": "Mis à jour en août 2026",
+      "imgAlt": "Un voyageur européen sur le trottoir au Vietnam, consultant une application de transport tandis que les scooters défilent dans la rue.",
+      "kerbH": "La question du scooter commence sur le trottoir",
+      "kerbP1": "Sortez dans la rue à Hanoï, à Hô Chi Minh-Ville ou à Da Nang : la première chose qui frappe, c'est le mouvement. Les scooters contournent les bus, se rassemblent devant les cafés et comblent le moindre espace au feu rouge. Depuis le trottoir, en conduire un semble la façon la plus naturelle de se fondre dans la ville.",
+      "kerbP2": "Il est pourtant facile de confondre familiarité et simplicité. Les conducteurs vietnamiens ont grandi en déchiffrant des schémas de circulation qui peuvent paraître imprévisibles à un visiteur. Selon l'Organisation mondiale de la santé, les deux-roues motorisés représentent plus de 90 % des véhicules au Vietnam et sont impliqués dans plus de 60 % des accidents de la route.",
+      "shortAnswerH": "La réponse en bref",
+      "shortAnswerP": "Si vous ne savez pas déjà conduire avec assurance, le Vietnam n'est pas l'endroit pour apprendre. Si vous êtes expérimenté, correctement titulaire du permis requis et assuré, le scooter peut avoir du sens à certains endroits — le plus vraisemblablement à Da Nang, le moins vraisemblablement dans le centre de Hanoï ou de Hô Chi Minh-Ville.",
+      "optionsH": "Vos principales options de transport",
+      "optionsHead": ["Option", "Idéal pour", "Point de vigilance", "Mode de paiement", "Coût courant*"],
+      "optionsRows": [
+        { "option": "GrabBike", "bestFor": "Trajets rapides en solo", "watchFor": "Taille du casque ; exposition au trafic", "payment": "Dans l'appli ou en espèces", "cost": "Souvent 15 000–60 000 VND" },
+        { "option": "GrabCar / taxi", "bestFor": "Confort porte-à-porte", "watchFor": "Tarifs en heure de pointe ; embouteillages", "payment": "Dans l'appli, carte si acceptée, ou espèces", "cost": "Souvent 40 000–180 000 VND" },
+        { "option": "Bus", "bestFor": "Longs trajets économiques", "watchFor": "Plus lent ; changements d'itinéraire", "payment": "Généralement espèces ou billetterie locale", "cost": "Souvent 7 000–15 000 VND" },
+        { "option": "Métro", "bestFor": "Axes urbains prévisibles", "watchFor": "Couverture du réseau limitée", "payment": "Règles de billet/carte variables selon la ligne", "cost": "Généralement 6 000–40 000 VND" },
+        { "option": "Scooter de location", "bestFor": "Conducteurs expérimentés ; excursions flexibles", "watchFor": "Permis, assurance, météo, stationnement", "payment": "Espèces/carte/virement selon le loueur", "cost": "Souvent 120 000–250 000 VND/jour" }
+      ],
+      "optionsNote": "*Fourchettes indicatives à titre de planification uniquement. Les prix des applications varient selon la distance, la demande, la météo et l'heure ; vérifiez le tarif en direct avant de réserver.",
+      "hanoiH": "Hanoï : privilégiez les quartiers, pas la cylindrée",
+      "hanoiP1": "Hanoï récompense l'exploration lente. Le Vieux Quartier est dense, les traversées demandent de l'attention et bien des trajets courts se font plus facilement à pied qu'il n'y paraît. Pour les distances plus longues, GrabBike est efficace si vous êtes à l'aise en tant que passager ; GrabCar ou un taxi réputé est plus serein avec des bagages, sous la pluie ou à plusieurs.",
+      "hanoiP2": "Les lignes de métro de la ville peuvent être utiles quand votre trajet correspond à leur tracé, tandis que les bus offrent une couverture plus large à faible coût. Ni l'un ni l'autre ne remplace tous les déplacements : la plupart des visiteurs combineront marche, VTC et transports en commun.",
+      "hanoiVerdict": "Verdict pour la ville : n'apprenez pas à conduire ici. Même des visiteurs expérimentés constatent que le stationnement, la navigation et la vigilance dans le trafic annulent le prétendu gain de temps d'un scooter de location.",
+      "hcmcH": "Hô Chi Minh-Ville : le VTC l'emporte sur la flexibilité",
+      "hcmcP1": "Hô Chi Minh-Ville est vaste, rapide et étalée sur de nombreux districts. GrabBike est souvent le moyen le plus rapide de traverser le trafic pour une personne voyageant léger. GrabCar est plus confortable sous une forte pluie, avec des bagages ou après la tombée de la nuit. La première ligne de métro de la ville offre une alternative utile le long de son axe, mais elle ne dessert pas encore tous les quartiers que vous êtes susceptible de visiter.",
+      "hcmcP2": "Un scooter de location peut sembler efficace sur une carte. Dans les faits, les changements de file, les bus, les livreurs, les carrefours inconnus et les averses tropicales soudaines créent une courbe d'apprentissage abrupte. L'économie réalisée vaut rarement le risque pour un débutant.",
+      "hcmcVerdict": "Verdict pour la ville : utilisez GrabBike, GrabCar, les taxis et le métro. La conduite en autonomie doit rester réservée aux conducteurs sûrs d'eux, légalement titulaires du permis et correctement assurés — pas aux débutants.",
+      "daNangH": "Da Nang : l'argument le plus solide pour les conducteurs expérimentés",
+      "daNangP1": "Da Nang est plus aérée, moins dense et plus simple à parcourir que Hanoï ou Hô Chi Minh-Ville. Les plages et les sites sont répartis le long de larges avenues, ce qui rend le scooter réellement utile pour certains voyageurs. Cela reste de la circulation, pas un terrain d'entraînement.",
+      "daNangP2": "Si vous conduisez déjà avec assurance, disposez des documents de permis appropriés, vérifiez que votre assurance couvre le véhicule et l'itinéraire, et louez un scooter en bon état avec un casque adapté, Da Nang est la plus raisonnable des trois villes pour conduire soi-même. Grab reste très pratique quand vous voulez éviter toute cette paperasse — ou quand la pluie arrive.",
+      "daNangVerdict": "Verdict pour la ville : la meilleure des trois pour les conducteurs expérimentés. Les débutants devraient malgré tout choisir Grab ou une voiture avec chauffeur.",
+      "rentalH": "Avant de louer un scooter : les vérifications que l'on saute",
+      "rentalP1": "Qu'un loueur vous remette les clés ne prouve pas que vous êtes légalement autorisé ni assuré pour conduire. Les règles peuvent dépendre de votre catégorie de permis, de votre nationalité, de votre permis international et de la cylindrée. Les contrats d'assurance peuvent exclure la conduite sans les documents exacts exigés localement.",
+      "rentalChecks": [
+        "Consultez les dernières exigences vietnamiennes et les conseils aux voyageurs de votre pays avant le départ.",
+        "Vérifiez que votre catégorie de permis couvre la cylindrée du scooter et que tout permis de conduire international requis est valable au Vietnam.",
+        "Demandez par écrit à votre assureur si la conduite d'une moto ou d'un scooter est couverte, y compris les soins médicaux, la responsabilité civile et le rapatriement.",
+        "Photographiez le scooter avant de partir ; testez les freins, les feux, les clignotants, les pneus et le klaxon.",
+        "Portez un casque à votre taille. Ne conduisez pas après avoir bu, sous une forte pluie ou en état de fatigue.",
+        "Ne laissez jamais votre passeport en garantie informelle si un dépôt plus sûr est possible."
+      ],
+      "rentalDisclaimer": "Il s'agit d'informations générales de voyage, et non de conseils juridiques ou en assurance. Les exigences évoluent : vérifiez-les auprès des autorités officielles et de votre assureur avant de conduire.",
+      "trippedH": "Là où les voyageurs européens se font piéger",
+      "trippedCardH": "L'application accepte votre carte — jusqu'à ce qu'elle la refuse",
+      "trippedCardP": "Les applications de VTC peuvent accepter une carte internationale lors de l'inscription, puis la refuser plus tard en raison de contrôles de l'émetteur, d'une authentification ou de vérifications antifraude. Gardez un second moyen de paiement et quelques espèces en petites coupures.",
+      "trippedCashH": "Le chauffeur demande des espèces",
+      "trippedCashP": "Certaines réservations sont configurées en course réglée en espèces, et les taxis indépendants ou les bus peuvent ne pas accepter les cartes étrangères. Vérifiez le mode de paiement sélectionné avant de confirmer, plutôt que de le découvrir au bord du trottoir.",
+      "trippedCheapH": "La course la moins chère n'est pas toujours la plus simple",
+      "trippedCheapP": "Un tarif bas peut masquer des frictions pratiques : trouver le point de rendez-vous, transporter des bagages sur une moto, attendre sous l'orage ou expliquer sa destination. Choisissez en fonction du trajet que vous faites réellement, et pas seulement du plus petit chiffre à l'écran.",
+      "setupH": "La configuration la plus maligne pour chaque ville",
+      "setupList": [
+        "Hanoï : marchez à l'intérieur des quartiers ; utilisez GrabBike si vous êtes à l'aise comme passager, GrabCar ou les taxis pour le confort, et le métro ou les bus quand l'itinéraire s'y prête.",
+        "Hô Chi Minh-Ville : utilisez GrabBike pour les trajets rapides en solo, GrabCar sous la pluie ou avec des bagages, et le métro le long de son axe en service.",
+        "Da Nang : utilisez Grab par défaut. N'envisagez un scooter de location que si vous êtes déjà expérimenté, correctement titulaire du permis et assuré."
+      ],
+      "appsH": "Applications à installer avant l'arrivée",
+      "appsList": [
+        "Grab — VTC et estimation des tarifs.",
+        "Google Maps — marche, voiture et planification de certains transports en commun.",
+        "Une application de traduction avec le vietnamien téléchargé hors ligne.",
+        "L'application de votre banque — pour valider l'authentification et suivre vos opérations.",
+        "Lumifin — pour les voyageurs éligibles qui souhaitent alimenter leur compte en euros et payer via les rails QR locaux, là où c'est pris en charge."
+      ],
+      "checklistH": "Vos 24 premières heures : la check-list transport",
+      "checklist": [
+        "Installez et vérifiez votre compte de VTC avant d'avoir besoin d'un transfert depuis l'aéroport.",
+        "Ajoutez un moyen de paiement principal et un moyen de secours.",
+        "Emportez de petites coupures pour les courses en espèces et les bus.",
+        "Vérifiez la plaque du véhicule et le chauffeur dans l'application avant de monter.",
+        "Portez le casque fourni pour les trajets à moto et demandez-en un autre s'il n'est pas à votre taille.",
+        "Vérifiez la pluie et la qualité de l'air avant d'opter pour un trajet à l'air libre.",
+        "Enregistrez l'adresse de votre hébergement en vietnamien.",
+        "Si vous envisagez une location, marquez une pause et vérifiez d'abord permis et assurance."
+      ],
+      "bottomH": "En résumé",
+      "bottomP1": "Le Vietnam n'exige pas que chaque visiteur devienne conducteur de scooter. Hanoï se comprend souvent mieux quartier par quartier. Hô Chi Minh-Ville récompense un mélange de VTC et de métro. Da Nang offre l'argument le plus clair en faveur du scooter — mais uniquement pour ceux qui savent déjà conduire et disposent des papiers et de l'assurance correspondants.",
+      "bottomP2": "L'objectif n'est pas de se déplacer exactement comme un habitant dès le premier jour. C'est de choisir l'option qui vous permet de découvrir la ville sans faire du trajet lui-même le plus grand risque du voyage.",
+      "sourcesH": "Sources et notes de vérification",
+      "sources": [
+        { "n": "1.", "label": "Organisation mondiale de la santé, « WHO convenes global motorcycle safety experts in Viet Nam », 25 novembre 2024 : who.int/news/item/25-11-2024-who-convenes-global-motorcycle-safety-experts-in-viet-nam" },
+        { "n": "2.", "label": "France Diplomatie, conseils aux voyageurs — Vietnam (consulté en août 2026) : diplomatie.gouv.fr/fr/information-par-pays/vietnam/" },
+        { "n": "3.", "label": "Vietnam Tourism, informations officielles sur la destination : vietnam.travel" }
       ]
     }
   },
