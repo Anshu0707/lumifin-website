@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-// wa.me click-to-chat link for the Lumi business WhatsApp number (+33 1 62 29 01 61).
-const WHATSAPP_URL = "https://wa.me/33162290161";
+// wa.me click-to-chat link for the Lumi business WhatsApp number (+33 6 19 78 42 22).
+const WHATSAPP_URL = "https://wa.me/33619784222";
 
 /**
  * Persistent floating WhatsApp button, always visible on every page.
