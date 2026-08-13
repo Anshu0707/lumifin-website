@@ -432,6 +432,11 @@
         "title": "Scooter, Grab or Metro? Getting Around Hanoi, Ho Chi Minh City and Da Nang",
         "excerpt": "The smartest way around Vietnam changes by city. Compare transport, costs, payments and scooter safety in Hanoi, Ho Chi Minh City and Da Nang.",
         "date": "August 12, 2026"
+      },
+      "vietnameseEWallets": {
+        "title": "MoMo, ZaloPay, VNPay: The Vietnamese E-Wallet Landscape Decoded",
+        "excerpt": "Three names run most of Vietnam's QR payments — but they were built around a Vietnamese ID. Here's what each one is, and what actually works for a European visitor.",
+        "date": "August 13, 2026"
       }
     }
   },
@@ -1614,6 +1619,76 @@
         { "n": "2.", "label": "France Diplomatie, Vietnam travel advice (accessed August 2026): diplomatie.gouv.fr/fr/information-par-pays/vietnam/" },
         { "n": "3.", "label": "Vietnam Tourism, official destination guidance: vietnam.travel" }
       ]
+    },
+    "vietnameseEWallets": {
+      "seo": {
+        "title": "MoMo, ZaloPay, VNPay: Vietnam's E-Wallets Decoded",
+        "description": "MoMo, ZaloPay and VNPay run most of Vietnam's QR payments, but they were built around a Vietnamese ID. What each one is, and what actually works for a European visitor."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Payments · Vietnam",
+      "title": "MoMo, ZaloPay, VNPay: The Vietnamese E-Wallet Landscape Decoded",
+      "subtitle": "Three names sit behind most of Vietnam's QR payments. They are not interchangeable — and the differences matter more for a visitor than for the locals who use them daily.",
+      "author": "Gaurav Bansal",
+      "readTime": "8 min read",
+      "dateLabel": "13 August 2026",
+      "imgAlt": "A printed QR sticker propped against a coffee cart near Ben Thanh Market, with a customer's phone mid-scan.",
+      "introP1": "You order a cà phê sữa đá at a cart near Ben Thanh Market. It's 30,000 VND (about €1). You reach for coins, and the vendor slides a laminated square across the counter — a QR code (Quick Response code, the pixelated black-and-white pattern you scan with a phone). She's not expecting your cash. She's expecting you to scan.",
+      "introP2": "For a first-time European visitor, that small square is where Vietnam stops feeling familiar. At home you tap a card. Here, a barefoot noodle stall, a Grab driver, and a rooftop bar in District 1 all want the same thing: a scan. And the three names behind most of those scans are MoMo, ZaloPay, and VNPay.",
+      "introP3": "They are not interchangeable, and the differences matter more for you — a visitor — than for the locals who use them daily. Here's what each one actually is, and which parts of this system you can realistically plug into on a two-week trip.",
+      "whyThreeH": "Why there are three names, not one",
+      "whyThreeP1": "Vietnam went cashless fast. In 2025, the State Bank of Vietnam (SBV — the country's central bank) reported that the total value of cashless payments reached nearly 28 times the country's GDP, with QR code transactions surging by more than 100% in volume in a single year. There are now over 232 million individual payment accounts in a country of around 100 million people. Meanwhile ATM transactions are shrinking, and POS (point-of-sale) terminals grew almost 20% in a year.",
+      "whyThreeP2": "That growth didn't produce one winner. It produced a layered system: consumer wallets you download, a messaging app that quietly became a wallet, and the payment \"rails\" running underneath both. MoMo, ZaloPay, and VNPay sit in different layers, which is exactly why locals happily use all three and rarely think about it.",
+      "momoH": "MoMo: the super app everyone means",
+      "momoP1": "When a Vietnamese friend says \"just MoMo me,\" they mean the wallet roughly two-thirds of e-wallet users in the country have on their phone — around 30 million people, by industry surveys. MoMo is the closest thing Vietnam has to a super app: one place to pay a merchant, split a dinner bill, top up mobile data, buy cinema tickets, pay an electricity bill, and send money to a friend.",
+      "momoP2": "For a local, MoMo is the default for peer-to-peer (P2P — person-to-person) transfers and everyday spending. You'll see its pink logo on stickers at street stalls from Hanoi's Old Quarter to Da Nang's beachfront cafés. If Vietnam had one wallet you'd want in your pocket, this is the one people would name.",
+      "momoP3": "The catch, which we'll come back to, is that MoMo was built around the Vietnamese national ID. That makes it powerful for residents and awkward for tourists.",
+      "zaloH": "ZaloPay: the wallet hiding inside your chat app",
+      "zaloP1": "ZaloPay is the payment arm of Zalo — Vietnam's dominant messaging app, the WhatsApp of the country. Almost everyone here already has Zalo open all day, so ZaloPay rides along inside an app people never close.",
+      "zaloP2": "That gives it a different feel from MoMo. Sending money can happen right inside a chat, the way you'd send a message. ZaloPay has also pushed harder on breadth of payment methods — bank transfers, international cards, Apple Pay — and on higher-end financial products like savings features. Industry data puts it a clear second among wallets by usage.",
+      "zaloP3": "For visitors, ZaloPay has one quietly useful trait: of the big wallets, it's the one most often reported to accept passport-based sign-up rather than demanding a national ID. \"Most often\" is not \"reliably\" — but if you're going to try a local wallet, this is a sensible first attempt.",
+      "vnpayH": "VNPay: the rails you'll use without downloading anything",
+      "vnpayP1": "VNPay is the one most travellers use without ever installing it. Rather than a consumer wallet you scroll through, it's largely payment infrastructure — the VNPAY-QR network that banks plug their own apps into, with more than 350,000 acceptance points nationwide. When a local opens their Vietcombank or Techcombank app to scan a merchant's code, there's a good chance VNPay's rails are running underneath. There's also a standalone VNPAY app aimed at travellers, which we'll come back to.",
+      "vnpayP2": "But VNPay is really one player riding something bigger — the shared standard that lets all these apps read the very same code, and that standard is the part actually worth understanding.",
+      "vietqrH": "VietQR: the standard that quietly makes all of this work",
+      "vietqrP1": "VietQR is Vietnam's national QR standard, run by NAPAS — the National Payment Corporation of Vietnam, the central switch that clears transfers between the country's banks in real time, around the clock, in under ten seconds. Think of NAPAS as the roundabout every bank's traffic passes through, and VietQR as the single road sign everyone agrees to read.",
+      "vietqrP2": "Before VietQR, a merchant might tape up a MoMo code, a ZaloPay code and a separate bank code side by side, and you had to match the app to the sticker. Since the standard launched in 2021 — built by NAPAS with Agribank, BIDV, VietinBank and Vietcombank, and aligned to both the SBV's rules and the global EMVCo QR spec (the same base standard behind QR payments worldwide) — that mess is gone. One printed square now accepts a scan from almost any participating Vietnamese bank app or wallet, and the money settles bank-account to bank-account behind the scenes. It caught on fast: VietQR transactions were still growing more than 100% a year into 2024, and roughly six in ten Vietnamese now reach for a QR code routinely.",
+      "vietqrP3": "The word that matters is interoperable. Because VietQR is an open, shared standard rather than one company's private network, the code on the counter doesn't care which app reads it — it only cares that the app speaks VietQR. NAPAS has even begun extending that reach across borders, letting visitors from Thailand, Cambodia, Laos and China pay through their home apps. That one design choice — open, not walled — is what makes the next part possible.",
+      "compareH": "The three, side by side",
+      "compareHead": ["", "MoMo", "ZaloPay", "VNPay"],
+      "compareRows": [
+        { "aspect": "What it is", "momo": "Standalone super app", "zalopay": "Wallet inside the Zalo chat app", "vnpay": "Payment rails + bank-app QR network" },
+        { "aspect": "Locals use it for", "momo": "Daily spending, bills, P2P transfers", "zalopay": "In-chat payments, cards, savings", "vnpay": "QR acceptance via their bank's app" },
+        { "aspect": "Rough standing", "momo": "~2 in 3 e-wallet users", "zalopay": "Clear second", "vnpay": "350,000+ merchant points" },
+        { "aspect": "Tourist-friendly?", "momo": "Hardest to register", "zalopay": "Most likely to accept a passport", "vnpay": "Standalone traveller app exists" },
+        { "aspect": "You'll meet it as", "momo": "A pink QR sticker", "zalopay": "\"Send me on Zalo\"", "vnpay": "The code your bank app scans" }
+      ],
+      "compareNote": "Sources: Decision Lab / The Connected Consumer usage surveys; SBV; company disclosures. Usage figures reflect share of wallet users, who often use more than one app, so they don't sum to 100%.",
+      "frictionH": "The part nobody tells European visitors",
+      "frictionP1": "Here's the friction. Since 2025, Vietnam has tightened identity rules on e-wallets, and biometric and ID verification is now standard for wallet users. That was designed to cut fraud — and it works well for residents with a Vietnamese national ID and a local bank account. For a European here for twelve days, it's a wall.",
+      "frictionP2": "In practice, three things trip people up. First, most wallet sign-ups expect a Vietnamese phone number, which means buying a local SIM (easy and cheap — a tourist SIM runs roughly 100,000–200,000 VND, about €3.50–€6.50 — at any airport kiosk). Second, the smoothest setup still runs through a local bank account, which generally requires a temporary residence card or a longer-stay visa you won't have on a tourist entry. Third, verification acceptance is inconsistent: a passport works on one app version and not the next.",
+      "frictionP3": "One habit worth adopting from locals, regardless of which app you use: after you scan a code, check the recipient name that pops up before you confirm. Fake QR stickers pasted over real ones are the most common scam, and that one glance defeats most of them.",
+      "worksH": "What actually works if you're here for two weeks",
+      "worksP1": "Don't fight the resident system. Reach for the parts built for someone in your position — a visitor, not a resident.",
+      "worksP2": "The friction all traces back to one thing: MoMo, ZaloPay and VNPay were built around a Vietnamese ID and a Vietnamese bank account. VietQR wasn't. Because the standard is open, it will accept a scan from any app that speaks it — and that's the doorway a European wallet can walk through. It's the gap Lumifin is closing: you top it up in euros from your European account, and it pays those same VietQR codes directly — the very network behind that coffee-cart sticker — so there's no local SIM, no local bank account and no biometric hoop to clear. The euro-to-dong rate shows before you confirm, and it charges one flat fee (2%) rather than the layered card surcharges and airport-counter markups that quietly cost more. It's in beta in Vietnam right now, which is worth knowing before you lean on it as your only method.",
+      "worksP3": "Whatever wallet you carry, keep two companions. Grab — the ride-and-food app you'll use anyway — has its own built-in wallet (Moca) and takes international cards, so rides and a lot of food are covered on their own. And keep a modest cash buffer: a bánh mì is around 25,000 VND (€0.85), a bowl of phở about 60,000 VND (€2), and the smallest carts still take notes gratefully when a scan won't go through. (If you'd rather ride the local rails directly, the VNPAY traveller app also lets you register with a passport and an international card.)",
+      "worksP4": "That combination — a euro-funded wallet that speaks VietQR, Grab, and a little cash — covers a District 1 rooftop, a beach café at An Bang near Hoi An, and the Ben Thanh coffee cart where this started.",
+      "calloutEyebrow": "From Lumifin",
+      "calloutBody": "Made for this exact trip: Lumifin pays Vietnam's VietQR codes straight from a euro balance — interbank rate shown up front, one flat fee, no local SIM or bank account.",
+      "calloutCta": "Try the Vietnam beta",
+      "nextH": "What to do next",
+      "nextP1": "Before you fly: set up a euro-funded wallet that works on Vietnam's QR rails — Lumifin's Vietnam beta is built for exactly this — and download Grab. On arrival, top up, run one small test payment at a convenience store, and keep about 500,000 VND (roughly €17) in cash for the stalls that still prefer it. Do that in your first hour on the ground, and the QR square on the counter stops being a wall — it just becomes how you pay.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "2025 cashless payment value nearly 28 times GDP — Vietnam+ (State Bank of Vietnam data)", "url": "https://en.vietnamplus.vn/2025-cashless-payment-value-nearly-28-times-gdp-post337178.vnp" },
+        { "n": "2.", "label": "E-wallet players look to take hold of market gaps — Vietnam Investment Review", "url": "https://vir.com.vn/e-wallet-players-look-to-take-hold-of-market-gaps-113427.html" },
+        { "n": "3.", "label": "MoMo dominates Vietnam's e-wallet market — Vietnam Investment Review", "url": "https://vir.com.vn/momo-dominates-vietnams-e-wallet-market-with-68-per-cent-share-102059.html" },
+        { "n": "4.", "label": "VietQR for Foreigners: The Complete Guide — Wise", "url": "https://wise.com/sg/blog/vietqr-for-foreigners-guide" },
+        { "n": "5.", "label": "Vietnamese payment apps: MoMo, ZaloPay, VNPay compared — Vietnam Knowledge", "url": "https://vietnamkb.com/practical/vietnamese-banking-apps-momo-zalopay-vnpay" },
+        { "n": "6.", "label": "UnionPay/NAPAS cross-border QR pilot, China–Vietnam — Vietnam Investment Review", "url": "https://vir.com.vn/cross-border-qr-payments-launched-for-chinese-tourists-142045.html" },
+        { "n": "7.", "label": "Napas launches VietQR — Vietnam+", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" }
+      ],
+      "sourcesNote": "EUR conversions at approximately €1 ≈ 30,000 VND (mid-2026); refresh on republish per editorial policy."
     }
   },
   "careers": {
