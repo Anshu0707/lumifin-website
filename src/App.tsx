@@ -31,6 +31,7 @@ const DaNangPressReleasePage = lazy(() => import('./pages/DaNangPressReleasePage
 const CrossBorderQrAccessPage = lazy(() => import('./pages/CrossBorderQrAccessPage'));
 const GettingAroundVietnamPage = lazy(() => import('./pages/GettingAroundVietnamPage'));
 const VietnameseEWalletsPage = lazy(() => import('./pages/VietnameseEWalletsPage'));
+const CardDeclinedVietnamPage = lazy(() => import('./pages/CardDeclinedVietnamPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -70,6 +71,7 @@ export default function App() {
           <Route path="/blog/cross-border-qr-payments-access" element={<CrossBorderQrAccessPage />} />
           <Route path="/blog/scooter-grab-metro-getting-around-vietnam" element={<GettingAroundVietnamPage />} />
           <Route path="/blog/vietnamese-e-wallets-decoded" element={<VietnameseEWalletsPage />} />
+          <Route path="/blog/why-cards-get-declined-vietnam" element={<CardDeclinedVietnamPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
@@ -103,6 +105,7 @@ export default function App() {
           <Route path="/en/blog/cross-border-qr-payments-access" element={<CrossBorderQrAccessPage />} />
           <Route path="/en/blog/scooter-grab-metro-getting-around-vietnam" element={<GettingAroundVietnamPage />} />
           <Route path="/en/blog/vietnamese-e-wallets-decoded" element={<VietnameseEWalletsPage />} />
+          <Route path="/en/blog/why-cards-get-declined-vietnam" element={<CardDeclinedVietnamPage />} />
           <Route path="/en/careers" element={<CareersPage />} />
           <Route path="/en/security" element={<SecurityPage />} />
           <Route path="/en/travel-money/thailand" element={<TravelMoneyThailandPage />} />

@@ -437,6 +437,11 @@
         "title": "MoMo, ZaloPay, VNPay : le paysage des portefeuilles électroniques vietnamiens décrypté",
         "excerpt": "Trois noms concentrent l'essentiel des paiements QR au Vietnam — mais ils ont été conçus autour d'une carte d'identité vietnamienne. Voici ce qu'est chacun, et ce qui fonctionne vraiment pour un visiteur européen.",
         "date": "13 août 2026"
+      },
+      "cardDeclinedVietnam": {
+        "title": "Pourquoi votre carte Visa ou Mastercard est refusée chez les vendeurs de rue vietnamiens",
+        "excerpt": "Cinq défaillances différentes se cachent derrière un seul mot à l'écran. Voici ce que chacune signifie vraiment, et celles que vous pouvez corriger avant de décoller.",
+        "date": "31 août 2026"
       }
     }
   },
@@ -1689,6 +1694,87 @@
         { "n": "7.", "label": "Napas lance VietQR — Vietnam+", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" }
       ],
       "sourcesNote": "Conversions en euros sur la base d'environ 1 € ≈ 30 000 VND (mi-2026) ; à actualiser lors d'une republication, conformément à la politique éditoriale."
+    },
+    "cardDeclinedVietnam": {
+      "seo": {
+        "title": "Pourquoi votre carte est refusée chez les vendeurs de rue vietnamiens",
+        "description": "Cinq défaillances différentes se cachent derrière un seul mot à l'écran. Ce que chaque refus signifie vraiment au Vietnam, et celles que vous pouvez corriger avant de décoller."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Paiements · Vietnam",
+      "title": "Pourquoi votre carte Visa ou Mastercard est refusée chez les vendeurs de rue vietnamiens",
+      "subtitle": "Cinq défaillances différentes se cachent derrière un seul mot à l'écran. Voici ce que chacune signifie vraiment, et celles que vous pouvez corriger avant de décoller.",
+      "author": "Gaurav Bansal",
+      "readTime": "8 min de lecture",
+      "dateLabel": "31 août 2026",
+      "imgAlt": "Un code VietQR plastifié scotché au comptoir d'une échoppe de rue dans le Vieux Quartier de Hanoï, la nuit.",
+      "ratesNote": "Taux utilisés dans cet article : 1 EUR = 30 500 VND et 1 EUR = 38,1 THB, taux interbancaire au 25 août 2026.",
+      "stallH": "L'échoppe de Hàng Bạc",
+      "stallP1": "Il est 20 h 40 sur Hàng Bạc, dans le Vieux Quartier de Hanoï. Le bún chả coûte 60 000 đồng, environ 1,97 €. Vous tendez une carte Visa, parce qu'elle a fonctionné à Lisbonne, à Athènes et à la station de taxis de l'aéroport trois heures plus tôt.",
+      "stallP2": "La femme au gril sourit, secoue la tête une fois et tapote un carré de papier plastifié scotché au comptoir. Il n'y a pas de terminal. Il n'y en a jamais eu. Derrière vous, un homme en veste de livreur scanne ce carré, attend un bip venu du haut-parleur d'un téléphone, et repart avec son plat.",
+      "stallP3": "Déplacez maintenant la scène dans un café de Nguyễn Huệ à Hô Chi Minh-Ville, où il y a bien un terminal. Vous approchez la carte. L'écran réfléchit onze secondes et affiche REFUSÉE. L'employé hausse les épaules, désolé, et fait pivoter le présentoir QR vers vous.",
+      "stallP4": "Deux échecs, un seul mot, des causes totalement différentes. Dans les paiements, « refusée » fait un travail énorme. Séparons les cinq choses que ce mot peut vouloir dire, car quatre d'entre elles n'ont rien à voir avec un manque d'argent.",
+      "oneH": "Défaillance n° 1 : personne ne s'est jamais inscrit au système dans lequel vit votre carte",
+      "oneP1": "C'est la plus fréquente, et ce n'est pas vraiment un refus. C'est une absence.",
+      "oneP2": "Pour accepter une Visa ou une Mastercard, un commerçant a besoin d'un compte marchand. Cela suppose une entreprise enregistrée, une relation bancaire, un contrat avec un acquéreur, un terminal qui coûte de l'argent chaque mois, et un règlement qui arrive un ou deux jours plus tard. Une femme qui tient un gril sur un trottoir n'a rien de tout cela, et n'en veut pas.",
+      "oneP3": "Pour accepter VietQR, il lui faut une feuille A4 imprimée. L'argent arrive sur son compte bancaire personnel en deux secondes environ. Coût pour elle : quasiment nul.",
+      "oneP4": "Cet écart explique presque tout. Un café vietnamien qui accepte les cartes paie environ 3 %, une fois additionnés les coûts de l'émetteur, du réseau, de l'acquéreur et du change. Le même café qui accepte VietQR paie souvent moins de 0,3 %, parfois zéro, parce que NAPAS maintient le rail bon marché et que les banques offrent le QR aux commerçants pour les conquérir. Sur un bol de nouilles à 60 000 đồng, l'écart est minime. Sur un mois de dîners, c'est un loyer. Mais les frais ne sont même pas le facteur décisif ici. C'est la paperasse.",
+      "oneP5": "L'ampleur de l'alternative mérite qu'on s'y arrête. Il y a quinze ans, le Vietnam fonctionnait à l'argent liquide, avec environ 99 % du commerce de détail en billets. La Banque d'État du Vietnam a fait état d'une croissance des paiements sans espèces de plus de 50 % en nombre de transactions en 2024, les paiements QR faisant plus que doubler à eux seuls. NAPAS a lancé VietQR en 2021 comme format de code partagé que toutes les applications bancaires vietnamiennes savent lire — c'est pourquoi un client Vietcombank peut payer un commerçant Techcombank en pointant son téléphone vers une feuille de papier.",
+      "oneP6": "Votre carte n'a pas été rejetée. Elle s'est présentée à une fête qui avait changé de lieu.",
+      "twoH": "Défaillance n° 2 : votre propre banque a tranché, et elle a parié non",
+      "twoP1": "Celle-ci surprend, parce que l'argent est bel et bien sur le compte.",
+      "twoP2": "Lorsqu'une carte émise dans l'Espace économique européen est utilisée chez un commerçant acquis en dehors de cet espace, le paiement relève de ce que le secteur appelle le « one leg out ». L'authentification forte du client prévue par la DSP2 engage votre banque, mais elle n'engage pas l'acquéreur vietnamien de l'autre côté. L'Autorité bancaire européenne l'a traité directement dans sa Q&R sur le périmètre des règles d'authentification forte : lorsque l'acquéreur se situe hors de l'EEE et ne peut pas prendre en charge l'authentification, c'est à l'émetteur de décider seul s'il bloque le paiement ou s'il assume la perte en cas de fraude.",
+      "twoP3": "Relisez cette phrase, car elle contient toute l'histoire. On demande à votre banque d'approuver une transaction modeste et inhabituelle, dans un pays où vous n'avez jamais dépensé, chez un commerçant qu'elle n'a jamais vu, sans aucune étape d'authentification à sa disposition — et elle supporte la perte si elle se trompe.",
+      "twoP4": "Alors elle refuse. Puis, une fois que quelques-uns de vos paiements sont passés à Hanoï, le modèle de risque se détend et la même carte fonctionne très bien. C'est pourquoi la première tentative du premier jour échoue et la quatrième du deuxième jour passe sans problème — et pourquoi rien de ce que vous avez fait entre-temps n'a réellement compté.",
+      "twoP5": "Corrigeable, en grande partie. Activez une notification de voyage dans l'application de votre banque avant de partir. Vérifiez si votre carte comporte une option de blocage géographique activée par défaut, car plusieurs néobanques européennes la livrent ainsi. Et emportez une seconde carte émise par une banque différente, et non une seconde carte de la même banque : deux cartes du même émetteur partagent le même moteur de risque et vous refuseront de concert.",
+      "threeH": "Défaillance n° 3 : le terminal va bien, c'est la connexion qui ne va pas",
+      "threeP1": "Là où des terminaux existent, dans les marchés et les aires de restauration, beaucoup fonctionnent sur les données mobiles ou un partage de connexion, et non sur une ligne fixe. Au marché Bến Thành un samedi après-midi, plusieurs centaines de personnes se disputent la même antenne.",
+      "threeP2": "Lorsque la demande d'autorisation expire en chemin vers l'acquéreur, le terminal n'a rien d'utile à afficher : il imprime donc un refus générique. Le code le plus répandu au monde, la réponse 05 de la norme ISO 8583, se traduit par « Do Not Honour », l'équivalent d'un haussement d'épaules dans les paiements. Cela signifie que l'émetteur a dit non, ou que quelque chose dans la chaîne a dit non à sa place, et personne ne vous dira lequel.",
+      "threeP3": "Lecture pratique : si le terminal a tourné longtemps avant d'échouer, c'est une histoire de réseau, pas d'argent. Demandez à réessayer une fois. Si cela échoue encore, arrêtez. Des tentatives répétées sur la même carte dans la même minute ressemblent exactement à un test de carte pour un modèle antifraude, et vous risquez de faire bloquer votre carte pour votre peine.",
+      "fourH": "Défaillance n° 4 : la machine dit oui, et c'est pire",
+      "fourP1": "Parfois, le terminal vous propose une faveur. « Payer en EUR ? », demande-t-il, avec un chiffre bien rond à l'écran.",
+      "fourP2": "C'est la conversion dynamique de devise (DCC), par laquelle le prestataire de paiement du commerçant convertit le montant à son propre taux au lieu de laisser votre réseau de carte s'en charger. La marge se situe généralement entre 3 et 8 %, et elle va au prestataire et au commerçant, pas à vous. Un dîner à 1 200 000 đồng dans le District 1 vaut 39,34 € au taux réel. Acceptez l'écran en euros avec une marge de 8 % et vous aurez payé environ 42,50 € pour le même repas.",
+      "fourP3": "Choisissez toujours la devise locale. Le đồng au Vietnam, le baht en Thaïlande. Si l'employé a déjà sélectionné l'euro pour vous, demandez l'annulation de la transaction et sa réexécution. En paiement de proximité, vous avez le droit de choisir, et la plupart des terminaux de Hanoï et de Hô Chi Minh-Ville affichent les deux options si vous prenez deux secondes pour regarder.",
+      "fiveH": "Défaillance n° 5 : ce code QR n'est pas un rail de carte, et il ne peut pas le devenir",
+      "fiveP1": "Voici la partie que les voyageurs trouvent vraiment contre-intuitive. Le commerçant qui ne peut pas prendre votre Visa fait tourner un système de paiement plus rapide, moins cher et plus fiable que celui de votre carte. Simplement, vous ne pouvez pas y accéder.",
+      "fiveP2": "VietQR n'est pas un réseau de cartes habillé en QR. C'est un rail domestique de virement bancaire instantané. Scanner un code demande à votre banque de pousser l'argent de votre compte vers celui du commerçant, directement, sans acquéreur, sans interchange et sans délai de règlement. Une carte Visa n'a aucun moyen d'émettre cette instruction, car Visa n'est pas une banque vietnamienne.",
+      "fiveP3": "Pour accéder à ce rail en tant que particulier, il faut trois choses, toutes délivrées au Vietnam : une carte d'identité nationale à puce, un numéro de mobile vietnamien enregistré à cette identité, et un compte bancaire vietnamien. Un tampon de visa touristique ne vous en donne aucun. Ce mur est délibéré. C'est ainsi que les règles de lutte contre le blanchiment sont appliquées au niveau du compte, et c'est en grande partie pourquoi les taux de fraude sur les portefeuilles vietnamiens restent faibles par rapport aux voisins de la région.",
+      "fiveP4": "Les interconnexions qui existent sont régionales, pas mondiales. Les voyageurs vietnamiens peuvent déjà scanner des codes PromptPay thaïlandais avec leur application bancaire, et les visiteurs thaïlandais peuvent scanner VietQR ici. Des liens avec PayNow à Singapour et KHQR au Cambodge sont en cours, et le projet Nexus, l'initiative pilotée par la BRI pour relier les systèmes en temps réel de la région, devrait entrer en service courant 2026.",
+      "fiveP5": "Remarquez qui ne figure sur aucune de ces listes. Une carte émise à Paris, Madrid ou Berlin se situe en dehors de chacun de ces corridors.",
+      "diagnosisH": "Le diagnostic en cinq secondes",
+      "diagnosisHead": ["Ce que vous voyez", "Ce qui s'est réellement passé", "Que faire sur le moment"],
+      "diagnosisRows": [
+        { "seen": "Un signe de tête négatif et un doigt pointé vers une feuille QR", "cause": "Pas de compte marchand, pas de terminal, il n'y en a jamais eu", "action": "Payez par QR ou en espèces. Ne négociez pas" },
+        { "seen": "« Do Not Honour » après une réponse rapide", "cause": "Le moteur de risque de votre émetteur a refusé un paiement « one leg out »", "action": "Essayez une carte d'une autre banque, puis activez une notification de voyage" },
+        { "seen": "Longue attente, puis un refus générique", "cause": "L'autorisation a expiré sur les données mobiles", "action": "Un seul nouvel essai. En cas d'échec, changez de moyen de paiement" },
+        { "seen": "« Payer en EUR ? » et cela fonctionne", "cause": "DCC, avec une marge de 3 à 8 % ajoutée", "action": "Faites annuler et relancer en đồng" },
+        { "seen": "« Provision insuffisante » sur une carte approvisionnée", "cause": "Plafond quotidien de dépenses à l'étranger ou blocage d'autorisation", "action": "Vérifiez les plafonds dans l'appli, relevez-les, réessayez" }
+      ],
+      "gapH": "L'écart que nous avons créé Lumi pour combler",
+      "gapP1": "Tout ce qui précède décrit un fait structurel : le Vietnam a bâti un excellent système de paiement et en a fermé la porte aux visiteurs — non par hostilité, mais parce que les règles d'identité sont le prix d'une fraude faible.",
+      "gapP2": "Lumi est notre réponse. C'est un portefeuille en euros pour les résidents de l'UE et de l'EEE, alimenté par virement SEPA depuis votre propre compte bancaire, qui paie directement les codes QR vietnamiens. Vous scannez la même feuille VietQR plastifiée que la personne devant vous dans la file, vous confirmez par code PIN ou reconnaissance faciale, et le commerçant reçoit des đồng sur son compte en quelques secondes. Pas de carte d'identité vietnamienne, pas de compte bancaire local, pas de MoMo emprunté à un ami. Un frais unique et forfaitaire de 2 %, avec le taux de change affiché avant confirmation, et des paiements à partir de 1 € — de sorte qu'un café glacé à 25 000 đồng devient une dépense parfaitement normale.",
+      "gapP3": "Lumi est actuellement en bêta au Vietnam, la Thaïlande et l'Indonésie suivront. Nos bêta-testeurs à Đà Nẵng et Hội An paient depuis des mois leurs balades en bateau, leurs additions de café et leurs achats au marché avec l'application.",
+      "gapP4": "Rien de tout cela ne rend les cartes inutiles. Gardez-en une pour les hôtels, les vols et Grab, qui acceptent les cartes étrangères sans difficulté. Gardez un peu d'espèces pour la dernière échoppe de la rue qui les préfère encore. L'objectif n'est pas de remplacer votre portefeuille. C'est de supprimer la friction quotidienne, là où votre carte et le rail du commerçant n'ont aucun moyen de se rencontrer.",
+      "ctaBody": "Payez comme la personne devant vous. Rejoignez la bêta Lumi et recevez 10 € de crédit pour votre premier voyage.",
+      "ctaButton": "Rejoindre la bêta Lumi",
+      "nextH": "Que faire maintenant",
+      "nextP1": "Avant de décoller, cinq minutes de préparation vous épargnent une semaine de friction :",
+      "nextList": [
+        "Activez une notification de voyage dans l'application de votre banque, et cherchez une option « bloquer les paiements à l'étranger » qui peut être active par défaut.",
+        "Emportez deux cartes émises par deux banques différentes. Deux cartes du même émetteur échouent ensemble.",
+        "Notez votre plafond quotidien de transactions à l'étranger et relevez-le s'il est inférieur à 500 €.",
+        "Retirez 3 millions de đồng, environ 98 €, à l'arrivée, en petites coupures. Les billets de 20 000 et 50 000 đồng sont ceux sur lesquels les vendeurs de rue peuvent réellement rendre la monnaie.",
+        "Configurez votre portefeuille Lumi avant le départ, pour que votre virement SEPA soit arrivé quand vous atterrissez."
+      ],
+      "nextClose": "Et quand un vendeur désigne ce carré plastifié au lieu de prendre votre carte, il ne vous éconduit pas. Il vous montre le système que tout le monde autour de vous utilise déjà.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "Banque d'État du Vietnam, statistiques de croissance des paiements sans espèces", "url": "https://sbv.gov.vn" },
+        { "n": "2.", "label": "NAPAS et VietQR, contexte sur l'interopérabilité — Vietnam+", "url": "https://en.vietnamplus.vn/napas-launches-vietqr-trademark-qr-code-quick-money-transfer-service-post203137.vnp" },
+        { "n": "3.", "label": "Autorité bancaire européenne, Q&R 2018_4233, périmètre de l'authentification forte pour les paiements par carte « one leg out »", "url": "https://eba.europa.eu/single-rule-book-qa/qna/view/publicId/2018_4233" },
+        { "n": "4.", "label": "Interconnexions QR transfrontalières de l'ASEAN et état du projet Nexus — Tazapay", "url": "https://tazapay.com/blog/local-payment-methods-in-thailand-how-promptpay-works-in-an-international-payment-gateway" },
+        { "n": "5.", "label": "Banque de Thaïlande, présentation de PromptPay", "url": "https://bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html" }
+      ]
     }
   },
   "careers": {
