@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AuthorBio from '../components/AuthorBio';
 import SEO, { breadcrumbSchema, articleSchema } from '../components/SEO';
+import { localizedPath } from '../utils/localizedPath';
 import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
 
 const BASE = 'blogPosts.vietnameseEWallets';
@@ -54,6 +55,7 @@ function ResponsiveTable({ head, rows }: { head: string[]; rows: string[][] }) {
 
 export default function VietnameseEWalletsPage() {
   const { t } = useTranslation();
+  const location = useLocation();
 
   const compareHead = t(`${BASE}.compareHead`, { returnObjects: true }) as unknown as string[];
   const compareRows = (t(`${BASE}.compareRows`, { returnObjects: true }) as unknown as CompareRow[])
@@ -200,7 +202,7 @@ export default function VietnameseEWalletsPage() {
               </p>
               <p className="text-slate-700">{t(`${BASE}.calloutBody`)}</p>
               <Link
-                to="/beta"
+                to={localizedPath('/#waitlist', location.pathname)}
                 className="inline-block hero-gradient text-white px-8 py-4 rounded-2xl font-black shadow-xl shadow-primary/20 hover:shadow-primary/30 transition-all text-base"
               >
                 {t(`${BASE}.calloutCta`)}

@@ -41,7 +41,6 @@ const TravelMoneyPage = lazy(() => import('./pages/TravelMoneyPage'));
 const ComparePage = lazy(() => import('./pages/ComparePage'));
 const MentionsLegalesPage = lazy(() => import('./pages/MentionsLegalesPage'));
 const CguPage = lazy(() => import('./pages/CguPage'));
-const BetaApplicationPage = lazy(() => import('./pages/BetaApplicationPage'));
 const UnsubscribePage = lazy(() => import('./pages/UnsubscribePage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
@@ -81,7 +80,6 @@ export default function App() {
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
         <Route path="/cgu" element={<CguPage />} />
-        <Route path="/beta" element={<BetaApplicationPage />} />
         <Route path="/unsubscribe" element={<UnsubscribePage />} />
 
           {/* English URLs — same components, rendered in English because the
@@ -115,7 +113,6 @@ export default function App() {
           <Route path="/en/compare" element={<ComparePage />} />
           <Route path="/en/mentions-legales" element={<MentionsLegalesPage />} />
           <Route path="/en/cgu" element={<CguPage />} />
-          <Route path="/en/beta" element={<BetaApplicationPage />} />
           <Route path="/en/unsubscribe" element={<UnsubscribePage />} />
 
           <Route path="*" element={<NotFoundPage />} />

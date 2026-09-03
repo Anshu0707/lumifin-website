@@ -116,11 +116,9 @@
     "submitting": "Envoi en cours...",
     "error": "Une erreur est survenue. Veuillez réessayer.",
     "botFieldLabel": "Ne remplissez pas ce champ :",
-    "downloadTitle": "C'est fait ! Téléchargez Lumi",
-    "downloadSubtitle": "Merci de rejoindre la bêta. Téléchargez l'application ci-dessous et commencez à payer comme un local.",
-    "downloadIos": "Télécharger pour iPhone (TestFlight)",
-    "downloadAndroid": "Télécharger pour Android",
-    "redemptionNote": "Une fois votre compte créé et votre vérification KYC terminée, vous recevrez un code promo par e-mail. Rendez-vous dans la section Profil de l'application pour l'utiliser.",
+    "successTitle": "Vous êtes sur la liste d'attente",
+    "successSubtitle": "Merci pour votre inscription. Nous vous écrirons dès que les accès s'ouvriront.",
+    "successNote": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Surveillez votre boîte mail — nous vous communiquerons les prochaines étapes avant votre départ.",
     "reachOut": "N'hésitez pas non plus à nous écrire à <1>info@lumifin.io</1> — nous serons ravis de vous aider."
   },
   "landing": {

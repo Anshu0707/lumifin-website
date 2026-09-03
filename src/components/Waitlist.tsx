@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
-import { Apple, Play, Clock } from "lucide-react";
+import { Check, Clock } from "lucide-react";
 import { SEPA_COUNTRIES } from "../constants/sepaCountries";
-
-// App download links (shown after a successful signup).
-const IOS_TESTFLIGHT_URL = "https://testflight.apple.com/join/vbVZTdTn";
-const ANDROID_PLAY_URL = "https://play.google.com/store/apps/details?id=com.lumifin.app";
 
 export default function Waitlist() {
   const [name, setName] = useState("");
@@ -87,34 +83,17 @@ export default function Waitlist() {
 
           {status === "success" ? (
             <div className="mt-12 space-y-8">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+                <Check className="w-10 h-10 text-primary" aria-hidden="true" />
+              </div>
               <div className="space-y-3">
-                <h3 className="text-3xl font-black text-slate-900">{t("waitlist.downloadTitle")}</h3>
+                <h3 className="text-3xl font-black text-slate-900">{t("waitlist.successTitle")}</h3>
                 <p className="text-lg text-slate-500 font-medium max-w-xl mx-auto">
-                  {t("waitlist.downloadSubtitle")}
+                  {t("waitlist.successSubtitle")}
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
-                <a
-                  href={IOS_TESTFLIGHT_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-8 py-5 rounded-2xl font-black text-lg shadow-xl hover:-translate-y-1 transition-all"
-                >
-                  <Apple className="w-6 h-6" aria-hidden="true" />
-                  {t("waitlist.downloadIos")}
-                </a>
-                <a
-                  href={ANDROID_PLAY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex items-center justify-center gap-3 hero-gradient text-white px-8 py-5 rounded-2xl font-black text-lg shadow-xl shadow-primary/30 hover:-translate-y-1 transition-all"
-                >
-                  <Play className="w-6 h-6" aria-hidden="true" />
-                  {t("waitlist.downloadAndroid")}
-                </a>
-              </div>
               <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto bg-white/60 border border-slate-200 rounded-2xl px-6 py-4">
-                {t("waitlist.redemptionNote")}
+                {t("waitlist.successNote")}
               </p>
               <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto">
                 <Trans
