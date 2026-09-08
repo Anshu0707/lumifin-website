@@ -10,6 +10,7 @@ import { Calendar, User } from 'lucide-react';
 const categories = ["all", "travel", "stories", "press", "purpose", "payments"] as const;
 
 const POSTS = [
+  { id: 13, key: 'vietnamesePhrases', author: 'Tanvi Nag', categoryKey: 'travel', href: '/blog/vietnamese-phrases-before-you-land', image: '/assets/blog/vietnamese-phrases-cover.webp' },
   { id: 12, key: 'cardDeclinedVietnam', author: 'Gaurav Bansal', categoryKey: 'payments', href: '/blog/why-cards-get-declined-vietnam', image: '/assets/blog/card-declined-vietnam-cover.webp' },
   { id: 11, key: 'vietnameseEWallets', author: 'Gaurav Bansal', categoryKey: 'payments', href: '/blog/vietnamese-e-wallets-decoded', image: '/assets/blog/vietnamese-e-wallets-cover.webp' },
   { id: 10, key: 'gettingAroundVietnam', author: 'Pierre Lahbabi', categoryKey: 'travel', href: '/blog/scooter-grab-metro-getting-around-vietnam', image: '/assets/blog/getting-around-vietnam-cover.webp' },

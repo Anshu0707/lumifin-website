@@ -440,6 +440,11 @@
         "title": "Pourquoi votre carte Visa ou Mastercard est refusée chez les vendeurs de rue vietnamiens",
         "excerpt": "Cinq défaillances différentes se cachent derrière un seul mot à l'écran. Voici ce que chacune signifie vraiment, et celles que vous pouvez corriger avant de décoller.",
         "date": "31 août 2026"
+      },
+      "vietnamesePhrases": {
+        "title": "20 expressions vietnamiennes à connaître avant d'atterrir",
+        "excerpt": "Vous ne deviendrez pas bilingue en onze heures d'avion. Mais vous pouvez apprendre les vingt choses qui décideront si votre première semaine ressemble à un parcours du combattant ou à des vacances.",
+        "date": "8 septembre 2026"
       }
     }
   },
@@ -1773,6 +1778,88 @@
         { "n": "4.", "label": "Interconnexions QR transfrontalières de l'ASEAN et état du projet Nexus — Tazapay", "url": "https://tazapay.com/blog/local-payment-methods-in-thailand-how-promptpay-works-in-an-international-payment-gateway" },
         { "n": "5.", "label": "Banque de Thaïlande, présentation de PromptPay", "url": "https://bot.or.th/en/financial-innovation/digital-finance/digital-payment/promptpay.html" }
       ]
+    },
+    "vietnamesePhrases": {
+      "seo": {
+        "title": "20 expressions vietnamiennes à connaître avant d'atterrir",
+        "description": "Vingt expressions vietnamiennes pour les voyageurs européens — pronoms, argent, commandes et déplacements, avec les vrais prix 2026 en đồng et en euros."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Voyage · Vietnam",
+      "title": "20 expressions vietnamiennes à connaître avant d'atterrir",
+      "subtitle": "Vous ne deviendrez pas bilingue en onze heures d'avion. Mais vous pouvez apprendre les vingt choses qui décideront si votre première semaine au Vietnam ressemble à un parcours du combattant ou à des vacances.",
+      "author": "Tanvi Nag",
+      "readTime": "7 min de lecture",
+      "dateLabel": "8 septembre 2026",
+      "imgAlt": "Un chariot de cuisine de rue à Hội An au crépuscule, avec une ardoise de menu en vietnamien et un panneau VietQR « scan to pay » sur le comptoir.",
+      "introP1": "La femme du chariot à bánh mì sur Nguyễn Chí Thanh m'a dit un prix et je n'ai rien entendu. Pas un mot que je reconnaissais, pas même une forme à deviner. Elle a répété, plus lentement, avec gentillesse. Toujours rien. Alors j'ai fait ce que tout le monde fait : j'ai tendu une poignée de billets et je l'ai laissée prendre ce qu'il fallait.",
+      "introP2": "Elle a pris le montant exact. Presque tout le monde le fera. Mais je suis restée là une seconde, avec l'impression d'être un bagage égaré dans la file — et cette sensation vaut bien vingt minutes de préparation pour l'éviter.",
+      "introP3": "Voici la version honnête de ce que ces vingt minutes devraient couvrir. Pas du « vietnamien de voyage utile » au sens d'un guide de conversation que vous n'ouvrirez jamais. Vingt expressions, dans l'ordre où vous en aurez réellement besoin, plus le seul point de grammaire qui compte plus que toutes les autres réunies.",
+      "pronounH": "Commencez par le mot d'avant les mots",
+      "pronounP1": "Le vietnamien n'a pas de mot neutre pour « vous ». Aucun. Impossible de contourner le problème, car le pronom se glisse dans presque toutes les phrases que vous vous apprêtez à apprendre — y compris « merci ».",
+      "pronounP2": "Vous choisissez le mot selon l'âge apparent de la personne par rapport au vôtre. Les quatre qui couvrent presque tout :",
+      "pronouns": [
+        { "term": "anh", "gloss": "un homme de votre âge ou un peu plus âgé" },
+        { "term": "chị", "gloss": "une femme de votre âge ou un peu plus âgée" },
+        { "term": "em", "gloss": "toute personne nettement plus jeune que vous" },
+        { "term": "cô / chú", "gloss": "une femme / un homme de la génération de vos parents" }
+      ],
+      "pronounP3": "Vous vous tromperez. Tout le monde se trompe, y compris les Vietnamiens face à quelqu'un dont l'âge est difficile à lire. Personne n'y voit d'offense. Ce que les gens remarquent, c'est l'effort — et la différence entre la réaction d'une vendeuse de marché à « cảm ơn » et à « cảm ơn chị » n'a rien de subtile. Quand vous ne pouvez vraiment pas deviner, anh ou chị est la valeur sûre : viser légèrement plus âgé passe pour respectueux, l'inverse non.",
+      "firstHourH": "Les six de votre première heure",
+      "firstHourList": [
+        { "n": "1.", "term": "Xin chào", "gloss": "Bonjour", "note": "Formel, et un peu guindé entre amis — mais parfait pour un inconnu, une boutique, une réception d'hôtel. Dites-le en entrant et vous avez déjà changé la température de l'échange." },
+        { "n": "2.", "term": "Cảm ơn (anh / chị)", "gloss": "Merci", "note": "L'expression au meilleur rendement de toute la liste. Ajoutez le pronom." },
+        { "n": "3.", "term": "Dạ", "gloss": "Oui / un acquiescement poli", "note": "À peine un mot, et vous l'entendrez cent fois par jour. Il adoucit tout ce qu'il précède. « Dạ, cảm ơn chị » est plus chaleureux que « cảm ơn » seul, pour une syllabe de plus." },
+        { "n": "4.", "term": "Không", "gloss": "Non", "note": "C'est aussi le chiffre zéro, et aussi le mot qui transforme une phrase en question. Il travaille beaucoup." },
+        { "n": "5.", "term": "Tôi không hiểu", "gloss": "Je ne comprends pas", "note": "Mieux que le sourire gêné, parce que cela invite l'autre à changer de stratégie : montrer du doigt, écrire le chiffre, vous tendre l'écran." },
+        { "n": "6.", "term": "Xin lỗi", "gloss": "Pardon / excusez-moi", "note": "Pour vous faufiler, pour interrompre, pour avoir marché sur un pied sur un trottoir bondé du Vieux Quartier. Ce qui arrivera." }
+      ],
+      "moneyH": "Celles qui concernent l'argent",
+      "moneyP1": "C'est ici qu'un guide de conversation cesse en général d'être utile, parce que les mots ne sont que la moitié du problème. L'autre moitié, c'est que les nombres vietnamiens s'abrègent à l'oral d'une façon qu'aucun manuel ne mentionne.",
+      "moneyList": [
+        { "n": "7.", "term": "Bao nhiêu tiền?", "gloss": "Combien ça coûte ?", "note": "Apprenez celle-ci correctement. Elle ouvre toute transaction sans prix affiché." },
+        { "n": "8.", "term": "Đắt quá", "gloss": "C'est trop cher", "note": "Dit avec le sourire, c'est une ouverture, pas une accusation. Dit platement, cela met fin à la conversation. Ici, c'est le ton qui fait le travail, pas le vocabulaire." },
+        { "n": "9.", "term": "Bớt chút được không?", "gloss": "Vous pouvez baisser un peu ?", "note": "Pour les marchés et les stands de souvenirs. Pas pour les restaurants, les cafés ni nulle part où il y a une carte — marchander un bol de phở à 50 000 ₫ (environ 1,65 €) passe pour impoli, pas pour économe." },
+        { "n": "10.", "term": "Tính tiền", "gloss": "L'addition, s'il vous plaît", "note": "Vous verrez aussi des gens mimer un gribouillis en l'air. Les deux fonctionnent." },
+        { "n": "11.", "term": "Chuyển khoản được không?", "gloss": "Je peux payer par virement ?", "note": "Littéralement « puis-je faire un virement bancaire » — mais en pratique, c'est ainsi que l'on demande à payer par code QR, et c'est ce que vous direz en repérant un carré QR plastifié scotché au comptoir. De plus en plus souvent, la réponse est oui, même dans une échoppe de nouilles sur le trottoir." },
+        { "n": "12.", "term": "Không có tiền lẻ", "gloss": "Je n'ai pas de monnaie", "note": "Vous l'entendrez surtout dire à votre intention, quand vous tendrez un billet de 500 000 ₫ pour un café à 25 000 ₫. Cassez les gros billets dans les supermarchés et les chaînes de cafés, puis dépensez les petits dans la rue." }
+      ],
+      "moneyNote": "Il vaut la peine de comprendre pourquoi la réponse au numéro onze est parfois non. Ces carrés fonctionnent sur VietQR, le réseau national vietnamien de virements, et les applications qui les scannent sont conçues autour d'un compte bancaire vietnamien. Un visiteur peut donc poser la question parfaitement et n'avoir aucun moyen d'aller au bout. Combler cet écart pour les voyageurs européens, c'est précisément ce sur quoi nous travaillons chez Lumifin — mais l'expression mérite sa place de toute façon, car la réponse vous indique aussi quand sortir les espèces.",
+      "numbersH": "Deux réflexes de nombres qui vous feront économiser pour de vrai",
+      "numbersLead1": "« k » veut dire mille, et il est souvent purement et simplement omis.",
+      "numbersP1": "Un prix écrit 50k vaut 50 000 ₫. À l'oral, « năm mươi » — cinquante — signifie généralement cinquante mille, parce que rien ne coûte cinquante đồng. Une fois admis que tout se compte en milliers, les nombres deviennent bien plus faciles à retenir.",
+      "numbersLead2": "Les billets de 20 000 ₫ et de 500 000 ₫ sont tous deux bleus.",
+      "numbersP2": "C'est l'erreur la plus coûteuse qui guette un nouvel arrivant, et elle porte sur un facteur vingt-cinq. Le billet de 500 000 ₫ est légèrement plus grand et d'un bleu-vert plus profond ; celui de 20 000 ₫ est plus pâle. Photographiez-les côte à côte dès le premier jour et gardez l'image. Les billets vietnamiens sont en polymère : ils se ressemblent tous au toucher dans un portefeuille sombre.",
+      "numbersP3": "Pour situer les prix réels : un bánh mì au chariot tourne autour de 25 000 ₫ (environ 0,85 €), un bol de phở entre 50 000 et 70 000 ₫ (1,65–2,30 €), un cà phê sữa đá environ 25 000 ₫, et un verre de bia hơi à Hanoï reste proche de 10 000 ₫ (environ 0,35 €). Une course Grab à travers Da Nang coûte généralement 40 000 à 60 000 ₫.",
+      "foodH": "Commander sans montrer du doigt le bol du voisin",
+      "foodList": [
+        { "n": "13.", "term": "Cho tôi…", "gloss": "Je voudrais… / donnez-moi…", "note": "Associez-la à n'importe quoi : « cho tôi cà phê sữa đá ». C'est la construction à tout faire des repas au Vietnam." },
+        { "n": "14.", "term": "Cái này", "gloss": "Celui-ci", "note": "« Cho tôi cái này » et un doigt pointé sur la carte vous feront manger dans n'importe quel restaurant du pays." },
+        { "n": "15.", "term": "Không cay", "gloss": "Pas épicé", "note": "La cuisine vietnamienne est généralement plus douce que la thaïlandaise, mais le piment arrive souvent à côté, et le bol de ớt sur la table n'est pas une décoration." },
+        { "n": "16.", "term": "Ngon quá", "gloss": "C'est délicieux", "note": "Dites-le à la personne qui a cuisiné. Observez ce qui se passe." },
+        { "n": "17.", "term": "Nhà vệ sinh ở đâu?", "gloss": "Où sont les toilettes ?", "note": "La phrase la plus utile par rapport à sa longueur, dans n'importe quelle langue." }
+      ],
+      "aroundH": "Se déplacer",
+      "aroundList": [
+        { "n": "18.", "term": "Ở đây", "gloss": "Ici / arrêtez-vous ici", "note": "Pour un taxi ou une moto Grab quand le repère est tombé à peu près au bon endroit. Montrez du doigt en le disant." },
+        { "n": "19.", "term": "Rẽ trái / rẽ phải", "gloss": "Tournez à gauche / à droite", "note": "Rarement nécessaire avec Grab, parfois indispensable avec un taxi de rue dans une ruelle que la carte ignore." },
+        { "n": "20.", "term": "Bạn nói tiếng Anh không?", "gloss": "Parlez-vous anglais ?", "note": "Mieux vaut demander que présumer, dans un sens comme dans l'autre. À Da Nang et dans le centre de Hô Chi Minh-Ville, la réponse est souvent oui. Dans un quartier résidentiel de Hanoï à 7 h du matin, souvent non." }
+      ],
+      "tonesH": "Un mot sur les tons, et on passe à autre chose",
+      "tonesP1": "Le vietnamien est une langue tonale : six tons dans le standard du Nord, cinq dans la plupart des parlers du Sud, où deux d'entre eux ont fusionné. La même syllabe avec une courbe mélodique différente est un mot différent — pas une version mal prononcée du même mot, un mot réellement différent.",
+      "tonesP2": "C'est pourquoi votre « cảm ơn » soigneusement répété récolte parfois un regard vide. Vous ne l'avez pas mal dit. Vous avez peut-être dit autre chose.",
+      "tonesP3": "La réponse pratique n'est pas de maîtriser les tons avant de décoller. C'est d'accepter qu'environ une tentative sur quatre ne passera pas, et d'avoir une solution de repli : montrer du doigt, afficher le chiffre sur votre téléphone, ou tendre l'écran. Personne au Vietnam n'attend d'un visiteur européen qu'il maîtrise les tons. C'est la tentative qui compte, et c'est le repli qui conclut la transaction.",
+      "beforeH": "Avant de décoller",
+      "beforeP1": "Trois choses, dont aucune ne prend plus de temps qu'un café :",
+      "beforeList": [
+        "Faites une capture d'écran de cette liste et enregistrez-la dans vos favoris, pour qu'elle fonctionne sans réseau à l'aéroport.",
+        "Téléchargez le pack de langue vietnamienne dans Google Traduction pour un usage hors ligne — le mode caméra sur une carte de restaurant est vraiment efficace.",
+        "Apprenez la règle des pronoms dans l'avion. C'est le seul élément de cette liste à rendement composé, et cela prend dix minutes."
+      ],
+      "beforeClose": "Puis atterrissez, avancez vers le premier chariot venu et dites xin chào. Le reste se met en place plus vite que vous ne le croyez.",
+      "calloutEyebrow": "De la part de Lumifin",
+      "calloutBody": "Le numéro onze est l'expression à laquelle nous pensons le plus. Lumifin permet aux voyageurs européens de payer les codes QR du Vietnam depuis un solde en euros — sans compte bancaire vietnamien, pour que « chuyển khoản được không ? » puisse enfin déboucher sur un paiement.",
+      "calloutCta": "Rejoindre la liste d'attente"
     }
   },
   "careers": {
