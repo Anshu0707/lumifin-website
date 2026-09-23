@@ -1985,7 +1985,7 @@
       "category": "Payments · Cross-sea",
       "title": "ASEAN QR Cross-Border Payments: What the Linkages Mean for Travellers",
       "subtitle": "Nine Southeast Asian countries have started wiring their payment systems together. The volumes are still small, but the direction is clear. Here is what ASEAN QR cross-border payment actually means when you are standing at a food stall.",
-      "author": "Tanvi Nag",
+      "author": "Pierre Lahbabi",
       "readTime": "8 min read",
       "dateLabel": "23 September 2026",
       "imgAlt": "A QR payment sticker on a Bangkok night-market food stall, with small payment-system icons along its bottom edge and a phone ready to scan.",
@@ -2068,7 +2068,7 @@
         { "n": "7.", "label": "Nexus Global Payments incorporation and ECB proof-of-concept involvement", "url": "https://redcompasslabs.com/insights/instant-payments-without-borders-project-nexus" }
       ],
       "sourcesNote": "Per-transaction average (~US$20) and daily volume (~70,000/day) are Lumifin calculations from the AMRO and Bank Negara Malaysia figures above.",
-      "reviewNote": "Tanvi Nag covers travel and cross-region payments for the Lumi blog. Payments accuracy review by Gaurav Bansal."
+      "reviewNote": "Pierre Lahbabi is co-founder and CEO of Lumi and writes on cross-region payments for the Lumi blog. Payments accuracy review by Gaurav Bansal."
     }
   },
   "careers": {

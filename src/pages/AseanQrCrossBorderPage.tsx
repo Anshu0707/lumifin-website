@@ -81,7 +81,7 @@ export default function AseanQrCrossBorderPage() {
             description: "ASEAN QR cross-border payment links now cover nine countries. What they do, what they don't, and where a European traveller actually stands in 2026.",
             url: '/blog/asean-qr-cross-border-payment',
             image: '/assets/blog/asean-qr-cross-border-cover.webp',
-            author: 'Tanvi Nag',
+            author: 'Pierre Lahbabi',
             datePublished: '2026-09-23',
           }),
         ]}
@@ -275,7 +275,7 @@ export default function AseanQrCrossBorderPage() {
             <p className="text-base text-slate-500 font-normal italic">{t(`${BASE}.reviewNote`)}</p>
           </motion.div>
 
-          <AuthorBio authorName="Tanvi Nag" />
+          <AuthorBio authorName="Pierre Lahbabi" />
         </article>
       </main>
 
