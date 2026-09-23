@@ -450,6 +450,11 @@
         "title": "Ce que 1 000 000 ₫ achètent vraiment à Da Nang",
         "excerpt": "Environ 33 €. Une chambre d'hôtel, trois repas, un scooter, une plage et une bière — avec de la monnaie. Voici le ticket de caisse, et tout ce qui aurait pu le faire exploser.",
         "date": "15 septembre 2026"
+      },
+      "aseanQrCrossBorder": {
+        "title": "Paiements QR transfrontaliers de l'ASEAN : ce que les interconnexions changent pour les voyageurs",
+        "excerpt": "Neuf pays d'Asie du Sud-Est ont commencé à relier leurs systèmes de paiement. Ce qu'ils permettent, ce qu'ils ne permettent pas, et où se situe réellement un voyageur européen en 2026.",
+        "date": "23 septembre 2026"
       }
     }
   },
@@ -1970,6 +1975,100 @@
       "calloutEyebrow": "De la part de Lumifin",
       "calloutBody": "Une journée comme celle-ci repose sur de petits paiements fréquents — et la plupart passent désormais par des codes QR. Lumifin permet aux voyageurs européens de payer les codes VietQR du Vietnam depuis un solde en euros, pour ne pas financer la journée en frais de distributeur.",
       "calloutCta": "Rejoindre la liste d'attente"
+    },
+    "aseanQrCrossBorder": {
+      "seo": {
+        "title": "Paiements QR transfrontaliers de l'ASEAN : ce qu'ils changent pour les voyageurs",
+        "description": "Les paiements QR transfrontaliers de l'ASEAN couvrent désormais neuf pays. Ce qu'ils permettent, ce qu'ils ne permettent pas, et où se situe un voyageur européen en 2026."
+      },
+      "backToBlog": "Retour au blog",
+      "category": "Paiements · Transmaritime",
+      "title": "Paiements QR transfrontaliers de l'ASEAN : ce que les interconnexions changent pour les voyageurs",
+      "subtitle": "Neuf pays d'Asie du Sud-Est ont commencé à relier leurs systèmes de paiement. Les volumes restent faibles, mais la direction est claire. Voici ce que signifie concrètement le paiement QR transfrontalier de l'ASEAN quand vous êtes devant une échoppe de rue.",
+      "author": "Tanvi Nag",
+      "readTime": "8 min de lecture",
+      "dateLabel": "23 septembre 2026",
+      "imgAlt": "Un autocollant de paiement QR sur une échoppe de rue d'un marché nocturne de Bangkok, avec de petites icônes de systèmes de paiement le long du bord inférieur et un téléphone prêt à scanner.",
+      "ratesNote": "Taux utilisés dans cet article : 1 EUR = 38,5 THB, 30 500 VND et 20 580 IDR, taux interbancaire au 1er septembre 2026.",
+      "stickerH": "Un autocollant, quatre pays",
+      "stickerP1": "Au marché Talad Rot Fai Ratchada de Bangkok, la plupart des échoppes ont désormais un autocollant QR scotché près de la caisse. Regardez le bord inférieur de l'un d'eux. Sous le logo thaïlandais PromptPay figure souvent une rangée de petites marques : DuitNow pour la Malaisie, PayNow pour Singapour, QRIS pour l'Indonésie.",
+      "stickerP2": "Cet autocollant n'est pas quatre systèmes de paiement. C'est un seul code que quatre pays se sont mis d'accord pour lire.",
+      "stickerP3": "Observez la file quelques minutes et vous le verrez fonctionner. Un couple singapourien paie son riz gluant à la mangue, 80 bahts soit environ 2,08 €, directement depuis son application DBS. Une famille de Jakarta derrière eux scanne le même carré avec GoPay et les roupies quittent leur compte. Personne n'a changé d'argent. Personne n'a touché un terminal de carte.",
+      "stickerP4": "Puis vient votre tour, avec une carte de débit française, et tout s'arrête.",
+      "stickerP5": "Cet écart mérite d'être bien compris, car il n'est ni accidentel ni près de disparaître cette année. Voici ce qui a réellement été construit et, tout aussi important, à quel point c'est encore un début.",
+      "whatH": "Ce que recouvre vraiment le paiement QR transfrontalier de l'ASEAN",
+      "whatP1": "Le nom générique est Regional Payment Connectivity (RPC). Tout a commencé par un protocole d'accord signé en novembre 2022 par les banques centrales d'Indonésie, de Malaisie, des Philippines, de Singapour et de Thaïlande, et le dispositif s'est élargi depuis.",
+      "whatP2": "Les chiffres sont réels, mais modestes, et il faut l'assumer. Selon les données citées par l'ASEAN+3 Macroeconomic Research Office, la région comptait 29 interconnexions de paiement transfrontalier fin décembre 2025, portant 36,2 millions de transactions pour environ 716,4 millions de dollars US. Cela représente à peu près 20 dollars par transaction : un café, une assiette de nouilles, une course de taxi. Le gouverneur de Bank Negara Malaysia a évalué le volume QR transfrontalier de l'ASEAN à 12,9 millions de transactions au premier semestre 2025, soit environ 70 000 par jour pour toute la région.",
+      "whatP3": "Rapportée aux systèmes QR domestiques que ces liens relient — lesquels concentrent aujourd'hui une large part des paiements quotidiens sur leurs marchés d'origine —, la couche transfrontalière reste un pont étroit. Elle pèse à peine face aux dépenses par carte des touristes.",
+      "whatP4": "Les taux de croissance appellent la même prudence. L'analyse 2026 du FMI sur les paiements numériques de l'ASEAN relève que les transactions QR transfrontalières ont progressé de plus de 300 % en Thaïlande en 2024, et de plus de 550 % en Malaisie. Des pourcentages aussi élevés signifient généralement que la base de départ était minuscule. Ils en disent moins sur l'ampleur atteinte que sur la vitesse d'adoption dès que l'outil existe.",
+      "whatP5": "C'est là le signal à retenir. Personne n'a mené de campagne grand public pour ces interconnexions. Les voyageurs qui payaient déjà par QR chez eux ont simplement continué à l'étranger dès que cela a été possible. La demande pour des paiements circulant entre systèmes locaux, plutôt que les contournant via un réseau de cartes, est manifeste. C'est l'infrastructure qui reste à rattraper.",
+      "twoThingsH": "Deux choses différentes sous un même nom",
+      "twoThingsP1": "C'est ici que la plupart des explications s'embrouillent, et la distinction compte si vous voulez lire correctement l'actualité.",
+      "twoThingsP2": "Le FMI distingue deux types d'interconnexions, qui ne font pas le même travail.",
+      "linkages": [
+        { "name": "Connectivité des paiements QR", "body": "Vous permet de payer un commerçant dans un autre pays en scannant son code avec l'application bancaire de votre pays. Un visiteur thaïlandais à Hanoï qui scanne une feuille VietQR chez un vendeur de bún chả utilise cela. C'est un rail de détail, conçu pour les touristes et les petits achats." },
+        { "name": "Connectivité des transferts de fonds", "body": "Vous permet d'envoyer de l'argent à une personne dans un autre pays à l'aide d'un identifiant simple, généralement un numéro de mobile ou une pièce d'identité nationale. PayNow vers DuitNow entre Singapour et la Malaisie en est l'exemple connu. C'est un rail de transfert de fonds, conçu avant tout pour les travailleurs migrants qui envoient leur salaire au pays." }
+      ],
+      "twoThingsP3": "Les deux sont souvent annoncés ensemble et traités comme une seule chose. Ils ne le sont pas. Un pays peut être relié pour les paiements aux commerçants et pas pour les transferts, ou l'inverse. Quand vous lisez que deux pays ont « relié leurs systèmes de paiement », la bonne question est : lequel des deux ont-ils relié ?",
+      "connectedH": "Qui est relié aujourd'hui",
+      "connectedP1": "Les systèmes QR déjà interconnectés dans le cadre du RPC comprennent le KHQR cambodgien, le QRIS indonésien, le Lao QR de la RDP lao, le DuitNow malaisien, le QR Ph philippin, le PayNow singapourien, le PromptPay thaïlandais et le VietQR vietnamien. Le réseau s'est aussi étendu au-delà de l'ASEAN : le Japon, la Corée du Sud et la Chine y figurent désormais en partie.",
+      "connectedP2": "L'Indonésie est le cas le plus simple à suivre, car Bank Indonesia publie clairement son déploiement.",
+      "partnerHead": ["Partenaire QRIS transfrontalier", "En service depuis"],
+      "partnerRows": [
+        { "partner": "Thaïlande", "live": "Août 2022" },
+        { "partner": "Malaisie", "live": "Mai 2023" },
+        { "partner": "Singapour", "live": "Novembre 2023" },
+        { "partner": "Japon", "live": "Août 2025" },
+        { "partner": "Corée du Sud", "live": "Avril 2026" },
+        { "partner": "Chine", "live": "Avril 2026" }
+      ],
+      "connectedP3": "Le lien avec la Chine montre à quelle vitesse l'usage apparaît dès qu'un corridor s'ouvre, même si les totaux restent modestes. Lors de l'essai en bac à sable mené avec la Banque populaire de Chine à partir d'août 2025, Bank Indonesia a enregistré 1,64 million de transactions entrantes pour environ 556 milliards de roupies, soit à peu près 32,1 millions de dollars US, avant même le lancement officiel du service.",
+      "connectedP4": "Bank Indonesia a indiqué viser des partenariats avec huit pays pour le QRIS transfrontalier. L'Inde et l'Arabie saoudite sont en discussion. Le Vietnam, pour l'instant, n'est pas partenaire du QRIS.",
+      "whyH": "Pourquoi les banques centrales ont construit cela",
+      "whyP1": "Le motif compte, car il explique l'exclusion mieux que tout le reste.",
+      "whyP2": "Les réseaux de cartes sont commerciaux. Visa et Mastercard veulent chaque porteur de carte sur chaque marché, parce que chacun représente un revenu. Ces rails QR sont l'inverse. Ce sont des infrastructures publiques bâties par des banques centrales, et le mandat d'une banque centrale s'arrête à ses propres résidents et à sa propre économie.",
+      "whyP3": "Deux objectifs guident ce travail. Le premier est le coût : un virement instantané domestique se règle en quelques secondes pour une fraction de ce qu'une transaction par carte coûte au commerçant, et maintenir ces frais bas relève d'un choix politique, pas d'un résultat de marché. Le second est la devise. Bank Indonesia inscrit explicitement le QRIS transfrontalier dans son cadre de Local Currency Transaction, une volonté de régler le commerce et le tourisme régionaux en roupies, bahts et ringgits plutôt que de faire transiter la valeur par le dollar américain. Bank Indonesia comme la Banque de Thaïlande présentent cela comme une question de résilience macroéconomique, pas de confort pour le consommateur.",
+      "whyP4": "La Thaïlande a bougé la première, avec son premier lien QR transfrontalier dès 2018, quatre ans avant le protocole RPC.",
+      "whyP5": "Lu ainsi, le tableau devient plus cohérent. Personne ne s'est réuni pour décider d'exclure les Européens. Ces systèmes ont été conçus pour servir les résidents, réduire les coûts de règlement et diminuer la dépendance au dollar — un touriste français devant une échoppe n'a jamais fait partie du cahier des charges. Cela indique aussi ce qui devrait changer : non pas une politique touristique, mais un lien commercial entre le système de paiement instantané de l'euro et les leurs.",
+      "wallH": "Le mur, c'est votre compte bancaire, pas votre passeport",
+      "wallP1": "Voici le point sur lequel butent presque tous les voyageurs qui lisent ces annonces en espérant qu'elles les concernent.",
+      "wallP2": "Ces interconnexions ne relient pas des pays. Elles relient des systèmes de paiement instantané domestiques. Pour en utiliser une, il faut un compte à l'intérieur de l'un des systèmes connectés, ce qui signifie en pratique un compte bancaire ou un portefeuille électronique agréé dans un pays participant, ouvert avec les documents d'identité de ce pays.",
+      "wallP3": "La Singapourienne devant l'échoppe de riz gluant à la mangue n'est pas servie parce qu'elle est singapourienne. Elle est servie parce que DBS est raccordée à PayNow, et que PayNow dispose d'un lien actif avec PromptPay. Sa nationalité est accessoire. C'est son compte qui compte.",
+      "wallP4": "Un voyageur européen détient un compte en euros sur SEPA, un système rapide et peu coûteux qui se trouve n'être relié à rien de tout cela. Ainsi, le même code de rue que lisent une application malaisienne, indonésienne, cambodgienne et désormais coréenne ne peut pas lire la vôtre. Non parce que quelqu'un aurait délibérément exclu l'Europe, mais parce que personne n'a encore construit le lien.",
+      "changesH": "Ce que cela change pour vous, même si vous ne pouvez pas l'utiliser",
+      "changesP1": "Vous êtes hors du système, mais vous n'y échappez pas pour autant — et c'est là l'aspect pratique.",
+      "changesP2": "À mesure que l'acceptation du QR s'approfondit, la gestion des espèces s'amenuise. À Bangkok, à Hô Chi Minh-Ville et de plus en plus à Canggu et Seminyak, les commerçants gardent moins de monnaie qu'avant, parce que la plupart de leurs clients n'en ont plus besoin. Tendre un billet de 1 000 bahts (environ 26 €) pour un achat à 60 bahts est plus gênant en 2026 que ce ne l'était en 2022.",
+      "changesP3": "L'acceptation des cartes ne s'étend pas non plus pour combler le vide. Chaque année où le rail QR devient moins cher et plus universel pour les commerçants, l'intérêt de louer un terminal de carte s'affaiblit. La tendance s'éloigne de votre carte, elle ne s'en rapproche pas.",
+      "changesP4": "Et plus le commerçant est petit et local, plus tout cela est vrai. Les hôtels, les compagnies aériennes et Grab continueront d'accepter votre Visa sans difficulté. Un warung de nasi campur à Bali qui facture 45 000 roupies (environ 2,19 €) ne le fera très probablement pas, et n'a aucune raison de s'y mettre.",
+      "nexusH": "Le projet Nexus, et le détail que les Européens devraient surveiller",
+      "nexusP1": "L'approche bilatérale a un plafond évident : relier neuf pays deux à deux suppose de construire un grand nombre de liens séparés. Le projet Nexus, piloté par le BIS Innovation Hub, est la réponse. Chaque système de paiement instantané se connecte une seule fois à un hub partagé et atteint tous les autres participants, au lieu de négocier chaque corridor individuellement.",
+      "nexusP2": "Nexus Global Payments a été constituée à Singapour en mars 2025, sous forme d'organisation à but non lucratif chargée d'exploiter le dispositif. Les participants fondateurs sont l'Inde, la Malaisie, les Philippines, Singapour et la Thaïlande, Bank Indonesia y siégeant comme observateur spécial. La mise en service était initialement annoncée pour 2026 ; la presse spécialisée évoque aujourd'hui 2027, soit un décalage habituel pour ce type d'infrastructure.",
+      "nexusP3": "Le détail à retenir : entre 2021 et 2024, la BRI a mené des travaux de preuve de concept Nexus avec la Banque centrale européenne aux côtés des banques centrales de l'ASEAN, et un premier prototype a relié les systèmes de test de l'Eurosystème, de la Malaisie et de Singapour. La question technique de savoir si les paiements instantanés en euros pourraient rejoindre un tel réseau a donc déjà une réponse. C'est possible.",
+      "nexusP4": "Ce qui n'a pas eu lieu, c'est la décision commerciale ou politique de le faire, ni la publication d'un calendrier. Considérez l'accès européen comme plausible à terme et absent pour vos trois prochains voyages.",
+      "nexusP5": "Il est utile de lire tout cela comme un premier chapitre plutôt que comme un système achevé. Ce qui existe aujourd'hui, ce sont quelques ponts bilatéraux transportant de faibles montants. Ce qu'ils démontrent importe davantage que ce qu'ils transportent : les systèmes de paiement locaux ont gagné chez eux, les voyageurs veulent continuer à les utiliser à l'étranger, et la pièce manquante est la connectivité entre eux. Le système de paiement instantané européen est lui aussi l'un de ces systèmes locaux.",
+      "calloutEyebrow": "En attendant",
+      "calloutBody": "Lumi est un portefeuille en euros qui paie dès aujourd'hui les codes QR vietnamiens, la Thaïlande et l'Indonésie suivront — pour que vous puissiez scanner le même autocollant que tout le monde dans la file.",
+      "calloutCta": "Rejoindre la bêta",
+      "nextH": "Que faire maintenant",
+      "nextP1": "Si vous voyagez dans les 90 prochains jours, trois conclusions s'imposent :",
+      "nextItems": [
+        { "name": "N'attendez pas que l'acceptation des cartes s'améliore à mesure que vous descendez en gamme.", "body": "Ce ne sera pas le cas. Choisissez votre moyen de paiement selon la taille du commerçant, pas selon la ville." },
+        { "name": "Emportez de petites coupures, pas des grosses.", "body": "En Thaïlande, cassez vos billets de 1 000 bahts dès que possible dans un 7-Eleven. Au Vietnam, demandez des billets de 20 000 et 50 000 dongs. En Indonésie, de 20 000 et 50 000 roupies." },
+        { "name": "Ignorez les annonces de nouvelles interconnexions de l'ASEAN sauf si un système européen y est nommé.", "body": "La plupart de ces annonces sont réellement importantes et n'ont rien à voir avec vous." }
+      ],
+      "related": "Nous avons expliqué séparément le fonctionnement des deux systèmes que vous croiserez le plus souvent : <1>VietQR décrypté</1> pour le Vietnam et <2>QRIS décrypté</2> pour l'Indonésie.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "AMRO, état d'avancement de la connectivité des paiements transfrontaliers ASEAN+3 et nombre d'interconnexions", "url": "https://amro-asia.org/asean3-has-made-strong-progress-on-cross-border-payment-connectivity-but-more-work-lies-ahead" },
+        { "n": "2.", "label": "AMRO, Regional Payment Connectivity et systèmes QR connectés", "url": "https://amro-asia.org/enhancing-regional-payment-connectivity-across-asean3-economies" },
+        { "n": "3.", "label": "FMI, « ASEAN's Digital Payment Revolution », Staff Country Reports 2026/042", "url": "https://elibrary.imf.org/view/journals/002/2026/042/article-A002-en.xml" },
+        { "n": "4.", "label": "Le gouverneur de Bank Negara Malaysia sur le volume QR transfrontalier de l'ASEAN au S1 2025", "url": "https://malaymail.com/news/money/2025/11/19/asean-cross-border-qr-payments-hit-129-million-transactions-in-first-half-of-2025-says-bnm-governor/198925" },
+        { "n": "5.", "label": "Bank Indonesia, lancement du QRIS transfrontalier avec la Chine et calendrier des partenaires", "url": "https://en.antaranews.com/news/414208" },
+        { "n": "6.", "label": "BRI, schéma directeur du projet Nexus et participants de la phase quatre", "url": "https://bis.org/press/p240701.htm" },
+        { "n": "7.", "label": "Constitution de Nexus Global Payments et implication de la BCE dans la preuve de concept", "url": "https://redcompasslabs.com/insights/instant-payments-without-borders-project-nexus" }
+      ],
+      "sourcesNote": "La moyenne par transaction (~20 USD) et le volume quotidien (~70 000/jour) sont des calculs Lumifin à partir des chiffres AMRO et Bank Negara Malaysia ci-dessus.",
+      "reviewNote": "Tanvi Nag couvre le voyage et les paiements interrégionaux pour le blog Lumi. Relecture de l'exactitude des données de paiement par Gaurav Bansal."
     }
   },
   "careers": {

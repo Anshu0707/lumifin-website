@@ -450,6 +450,11 @@
         "title": "What 1,000,000₫ Actually Buys You in Da Nang",
         "excerpt": "About €33. A hotel room, three meals, a scooter, a beach, and a beer — with change. Here is the receipt, and everything that would have blown it.",
         "date": "September 15, 2026"
+      },
+      "aseanQrCrossBorder": {
+        "title": "ASEAN QR Cross-Border Payments: What the Linkages Mean for Travellers",
+        "excerpt": "Nine Southeast Asian countries have started wiring their payment systems together. What they do, what they don't, and where a European traveller actually stands in 2026.",
+        "date": "September 23, 2026"
       }
     }
   },
@@ -1970,6 +1975,100 @@
       "calloutEyebrow": "From Lumifin",
       "calloutBody": "A day like this runs on small, frequent payments — and most of them are QR codes now. Lumifin lets European travellers pay Vietnam's VietQR codes from a euro balance, so you are not funding the day through ATM fees.",
       "calloutCta": "Join the waitlist"
+    },
+    "aseanQrCrossBorder": {
+      "seo": {
+        "title": "ASEAN QR Cross-Border Payments: What the Linkages Mean for Travellers",
+        "description": "ASEAN QR cross-border payment links now cover nine countries. What they do, what they don't, and where a European traveller actually stands in 2026."
+      },
+      "backToBlog": "Back to Blog",
+      "category": "Payments · Cross-sea",
+      "title": "ASEAN QR Cross-Border Payments: What the Linkages Mean for Travellers",
+      "subtitle": "Nine Southeast Asian countries have started wiring their payment systems together. The volumes are still small, but the direction is clear. Here is what ASEAN QR cross-border payment actually means when you are standing at a food stall.",
+      "author": "Tanvi Nag",
+      "readTime": "8 min read",
+      "dateLabel": "23 September 2026",
+      "imgAlt": "A QR payment sticker on a Bangkok night-market food stall, with small payment-system icons along its bottom edge and a phone ready to scan.",
+      "ratesNote": "Rates in this piece: 1 EUR = 38.5 THB, 30,500 VND and 20,580 IDR, mid-market on 1 September 2026.",
+      "stickerH": "One sticker, four countries",
+      "stickerP1": "At Talad Rot Fai Ratchada in Bangkok, most stalls now have a QR sticker taped somewhere near the till. Look at the bottom edge of one. Under the Thai PromptPay logo there is often a row of smaller marks: DuitNow from Malaysia, PayNow from Singapore, QRIS from Indonesia.",
+      "stickerP2": "That sticker is not four payment systems. It is one code that four countries have agreed to read.",
+      "stickerP3": "Watch the queue for a few minutes and you will see it work. A Singaporean couple pays for mango sticky rice, 80 baht or about €2.08, straight from their DBS app. A Jakarta family behind them scans the same square with GoPay and the rupiah leaves their account. Nobody changed money. Nobody touched a card terminal.",
+      "stickerP4": "Then it is your turn, with a French debit card, and the whole thing stops.",
+      "stickerP5": "That gap is worth understanding properly, because it is not an accident and it is not going away this year. Here is what has actually been built, and just as importantly, how early it still is.",
+      "whatH": "What ASEAN QR cross-border payment actually refers to",
+      "whatP1": "The umbrella name is Regional Payment Connectivity, or RPC. It started as a memorandum signed in November 2022 by the central banks of Indonesia, Malaysia, the Philippines, Singapore and Thailand, and it has grown outward since.",
+      "whatP2": "The numbers are real, but they are small, and it is worth being honest about that. According to figures cited by the ASEAN+3 Macroeconomic Research Office, the region had 29 cross-border payment linkages as of December 2025, carrying 36.2 million transactions worth about US$716.4 million. That works out to roughly US$20 per transaction: a coffee, a plate of noodles, a short taxi ride. Bank Negara Malaysia's governor put ASEAN cross-border QR volume at 12.9 million transactions in the first half of 2025, or around 70,000 a day across the entire region.",
+      "whatP3": "Set against the domestic QR systems these links connect, which now carry a large share of everyday payments in their home markets, the cross-border layer is a thin bridge. It barely registers next to card spending by tourists.",
+      "whatP4": "The growth figures need the same caution. The IMF's 2026 analysis of ASEAN digital payments found cross-border QR transactions in Thailand grew more than 300 percent in 2024, and in Malaysia more than 550 percent. Percentages that large usually mean the starting base was tiny. They say less about how big this has become than about how quickly people use it once it exists.",
+      "whatP5": "That is the signal worth paying attention to. Nobody ran a consumer campaign for these links. Travellers who already paid by QR at home simply kept doing it abroad as soon as they could. Demand for payments that move between local schemes, rather than routing around them through a card network, is plainly there. The infrastructure is what is still catching up.",
+      "twoThingsH": "Two different things share one name",
+      "twoThingsP1": "This is where most explanations get muddled, and the distinction matters if you want to read the news accurately.",
+      "twoThingsP2": "The IMF splits the linkages into two types, and they do different jobs.",
+      "linkages": [
+        { "name": "QR payment connectivity", "body": "Lets you pay a merchant in another country by scanning their code with your home banking app. A Thai visitor in Hanoi scanning a VietQR sheet at a bún chả stall is using this. It is a retail rail, built for tourists and small purchases." },
+        { "name": "Fund transfer connectivity", "body": "Lets you send money to a person in another country using a simple identifier, usually a mobile number or a national ID. PayNow to DuitNow between Singapore and Malaysia is the well-known example. This is a remittance rail, built largely for migrant workers sending wages home." }
+      ],
+      "twoThingsP3": "The two often get announced together and reported as one thing. They are not. A country can be linked for merchant payments and not for transfers, or the reverse. When you read that two countries have \"linked their payment systems\", the useful question is which of the two they linked.",
+      "connectedH": "Who is connected right now",
+      "connectedP1": "The QR systems already interconnected under RPC include Cambodia's KHQR, Indonesia's QRIS, Lao PDR's Lao QR, Malaysia's DuitNow, the Philippines' QR Ph, Singapore's PayNow, Thailand's PromptPay and Vietnam's VietQR. The network has also reached outside ASEAN: Japan, South Korea and China now sit inside parts of it.",
+      "connectedP2": "Indonesia is the clearest case to track, because Bank Indonesia publishes its rollout plainly.",
+      "partnerHead": ["QRIS cross-border partner", "Live since"],
+      "partnerRows": [
+        { "partner": "Thailand", "live": "August 2022" },
+        { "partner": "Malaysia", "live": "May 2023" },
+        { "partner": "Singapore", "live": "November 2023" },
+        { "partner": "Japan", "live": "August 2025" },
+        { "partner": "South Korea", "live": "April 2026" },
+        { "partner": "China", "live": "April 2026" }
+      ],
+      "connectedP3": "The China link shows how quickly usage appears once a corridor opens, even while the totals stay modest. During the sandbox trial with the People's Bank of China that ran from August 2025, Bank Indonesia recorded 1.64 million inbound transactions worth around Rp 556 billion, roughly US$32.1 million, before the service even formally launched.",
+      "connectedP4": "Bank Indonesia has said it is targeting partnerships with eight countries for cross-border QRIS. India and Saudi Arabia are in discussion. Vietnam, for now, is not a QRIS partner.",
+      "whyH": "Why central banks built this in the first place",
+      "whyP1": "The motive matters, because it explains the exclusion better than anything else.",
+      "whyP2": "Card networks are commercial. Visa and Mastercard want every cardholder in every market, because each one is revenue. These QR rails are the opposite. They are public infrastructure built by central banks, and a central bank's mandate stops at its own residents and its own economy.",
+      "whyP3": "Two goals drive the work. The first is cost: a domestic instant transfer settles in seconds for a fraction of what a card transaction costs a merchant, and keeping that fee low is a policy choice, not a market outcome. The second is currency. Bank Indonesia places QRIS cross-border explicitly inside its Local Currency Transaction framework, a push to settle regional trade and tourism in rupiah, baht and ringgit instead of routing value through the US dollar. Both Bank Indonesia and the Bank of Thailand have framed this as macroeconomic resilience, not consumer convenience.",
+      "whyP4": "Thailand moved earliest, with its first cross-border QR link in 2018, four years before the RPC memorandum.",
+      "whyP5": "Read that way the picture makes more sense. Nobody sat in a meeting and decided to keep Europeans out. These systems were built to serve residents, cut settlement costs and reduce dollar dependency, and a French tourist at a food stall was never the design brief. It also tells you what would have to change: not a tourist policy, but a commercial link between the euro's instant payment system and theirs.",
+      "wallH": "The wall is your bank account, not your passport",
+      "wallP1": "Here is the part that trips up almost every traveller who reads about this and expects it to help them.",
+      "wallP2": "These linkages do not connect countries. They connect domestic instant payment systems. To use one, you need an account inside one of the connected systems, which in practice means a bank account or licensed e-wallet in a participating country, opened with that country's identity documents.",
+      "wallP3": "The Singaporean at the mango sticky rice stall is not being served because she is Singaporean. She is being served because DBS sits on PayNow, and PayNow has a live link to PromptPay. Her nationality is incidental. Her account is the thing.",
+      "wallP4": "A European traveller holds a euro account on SEPA, which is a fast and cheap system that happens to be connected to none of this. So the same street code that reads a Malaysian, an Indonesian, a Cambodian and now a Korean app cannot read yours. Not because anyone excluded Europe deliberately, but because nobody has built the link yet.",
+      "changesH": "What it changes for you even though you cannot use it",
+      "changesP1": "You are outside the system, but you are not unaffected by it, and this is the practical part.",
+      "changesP2": "As QR acceptance deepens, cash handling thins out. In Bangkok, Ho Chi Minh City and increasingly Canggu and Seminyak, vendors carry less change than they used to, because most of their customers no longer need any. Handing over a 1,000 baht note (about €26) for a 60 baht purchase is a bigger imposition in 2026 than it was in 2022.",
+      "changesP3": "Card acceptance is not expanding to fill the gap either. Every year the QR rail gets cheaper and more universal for merchants, the case for renting a card terminal gets weaker. The trend line runs away from your card, not toward it.",
+      "changesP4": "And the smaller and more local the vendor, the more true all of this becomes. Hotels, airlines and Grab will keep taking your Visa without complaint. A nasi campur warung in Bali charging 45,000 rupiah (about €2.19) almost certainly will not, and has no reason to start.",
+      "nexusH": "Project Nexus, and the one detail Europeans should watch",
+      "nexusP1": "The bilateral approach has an obvious ceiling: connecting nine countries pairwise means building a lot of separate links. Project Nexus, run out of the BIS Innovation Hub, is the fix. Each instant payment system connects once to a shared hub and reaches every other participant, instead of negotiating each corridor individually.",
+      "nexusP2": "Nexus Global Payments was incorporated in Singapore in March 2025 as a not-for-profit to run the scheme. The founding participants are India, Malaysia, the Philippines, Singapore and Thailand, with Bank Indonesia as a special observer. Go-live was originally briefed for 2026; current industry reporting points to 2027, which is a normal amount of slippage for infrastructure of this kind.",
+      "nexusP3": "The detail worth noting: between 2021 and 2024, the BIS ran Nexus proof-of-concept work with the European Central Bank alongside the ASEAN central banks, and an early prototype connected the test systems of the Eurosystem, Malaysia and Singapore. So the technical question of whether euro instant payments could join a network like this has already been answered. It can.",
+      "nexusP4": "What has not happened is a commercial or political decision to do it, or any published timeline. Treat European access as plausible eventually and absent for your next three trips.",
+      "nexusP5": "It helps to read all of this as an early chapter rather than a finished system. What exists today is a handful of bilateral bridges carrying small amounts of money. What it proves is more important than what it carries: local payment schemes won at home, travellers want to keep using them abroad, and the missing piece is connectivity between them. Europe's instant payment system is one of those local schemes too.",
+      "calloutEyebrow": "In the meantime",
+      "calloutBody": "Lumi is a euro wallet that pays Vietnamese QR codes directly today, with Thailand and Indonesia next, so you can scan the same sticker everyone else in the queue is scanning.",
+      "calloutCta": "Join the beta",
+      "nextH": "What to do next",
+      "nextP1": "If you are travelling in the next 90 days, three things follow from all of the above:",
+      "nextItems": [
+        { "name": "Stop expecting card acceptance to improve as you go smaller.", "body": "It will not. Plan payment method by vendor size, not by city." },
+        { "name": "Carry small notes, not large ones.", "body": "In Thailand break your 1,000 baht notes at a 7-Eleven early. In Vietnam ask for 20,000 and 50,000 dong notes. In Indonesia, 20,000 and 50,000 rupiah." },
+        { "name": "Ignore headlines announcing new ASEAN linkages unless a European system is named in them.", "body": "Most of these announcements are genuinely important and have nothing to do with you." }
+      ],
+      "related": "We have written separately about how the two systems you will meet most often actually work: <1>VietQR decoded</1> for Vietnam and <2>QRIS decoded</2> for Indonesia.",
+      "sourcesH": "Sources",
+      "sources": [
+        { "n": "1.", "label": "AMRO, ASEAN+3 cross-border payment connectivity progress and linkage counts", "url": "https://amro-asia.org/asean3-has-made-strong-progress-on-cross-border-payment-connectivity-but-more-work-lies-ahead" },
+        { "n": "2.", "label": "AMRO, Regional Payment Connectivity and connected QR systems", "url": "https://amro-asia.org/enhancing-regional-payment-connectivity-across-asean3-economies" },
+        { "n": "3.", "label": "IMF, \"ASEAN's Digital Payment Revolution\", Staff Country Reports 2026/042", "url": "https://elibrary.imf.org/view/journals/002/2026/042/article-A002-en.xml" },
+        { "n": "4.", "label": "Bank Negara Malaysia governor on H1 2025 ASEAN cross-border QR volume", "url": "https://malaymail.com/news/money/2025/11/19/asean-cross-border-qr-payments-hit-129-million-transactions-in-first-half-of-2025-says-bnm-governor/198925" },
+        { "n": "5.", "label": "Bank Indonesia, QRIS cross-border launch with China and partner timeline", "url": "https://en.antaranews.com/news/414208" },
+        { "n": "6.", "label": "BIS, Project Nexus blueprint and phase four participants", "url": "https://bis.org/press/p240701.htm" },
+        { "n": "7.", "label": "Nexus Global Payments incorporation and ECB proof-of-concept involvement", "url": "https://redcompasslabs.com/insights/instant-payments-without-borders-project-nexus" }
+      ],
+      "sourcesNote": "Per-transaction average (~US$20) and daily volume (~70,000/day) are Lumifin calculations from the AMRO and Bank Negara Malaysia figures above.",
+      "reviewNote": "Tanvi Nag covers travel and cross-region payments for the Lumi blog. Payments accuracy review by Gaurav Bansal."
     }
   },
   "careers": {

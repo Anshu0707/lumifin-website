@@ -34,6 +34,7 @@ const VietnameseEWalletsPage = lazy(() => import('./pages/VietnameseEWalletsPage
 const CardDeclinedVietnamPage = lazy(() => import('./pages/CardDeclinedVietnamPage'));
 const VietnamesePhrasesPage = lazy(() => import('./pages/VietnamesePhrasesPage'));
 const OneMillionDongDaNangPage = lazy(() => import('./pages/OneMillionDongDaNangPage'));
+const AseanQrCrossBorderPage = lazy(() => import('./pages/AseanQrCrossBorderPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
@@ -75,6 +76,7 @@ export default function App() {
           <Route path="/blog/why-cards-get-declined-vietnam" element={<CardDeclinedVietnamPage />} />
           <Route path="/blog/vietnamese-phrases-before-you-land" element={<VietnamesePhrasesPage />} />
           <Route path="/blog/one-million-dong-da-nang" element={<OneMillionDongDaNangPage />} />
+          <Route path="/blog/asean-qr-cross-border-payment" element={<AseanQrCrossBorderPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
@@ -110,6 +112,7 @@ export default function App() {
           <Route path="/en/blog/why-cards-get-declined-vietnam" element={<CardDeclinedVietnamPage />} />
           <Route path="/en/blog/vietnamese-phrases-before-you-land" element={<VietnamesePhrasesPage />} />
           <Route path="/en/blog/one-million-dong-da-nang" element={<OneMillionDongDaNangPage />} />
+          <Route path="/en/blog/asean-qr-cross-border-payment" element={<AseanQrCrossBorderPage />} />
           <Route path="/en/careers" element={<CareersPage />} />
           <Route path="/en/security" element={<SecurityPage />} />
           <Route path="/en/travel-money/thailand" element={<TravelMoneyThailandPage />} />
