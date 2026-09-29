@@ -869,6 +869,10 @@
     "q20": {
       "question": "Can tourists use Wise to scan PromptPay QR codes in Thailand?",
       "answer": "As of May 2026, Wise's Thai entity offers PromptPay scan-and-pay — but only for customers resident in Thailand, not for EU travellers using their home account. So for a European visitor on a trip, this doesn't help. Lumi is built specifically for EU-resident travellers: top up from your European bank account and scan PromptPay, VietQR or QRIS wherever you go."
+    },
+    "q21": {
+      "question": "Is there a minimum amount when I add money?",
+      "answer": "Yes. The minimum top-up is €25. There is no maximum beyond the limits set during verification, and you can top up as often as you like. If you are not sure how much to load, €25 covers a comfortable day in Vietnam — a room, meals, transport and a paid sight — so it is a sensible starting point for a short trip."
     }
   },
   "blogPosts": {

@@ -869,6 +869,10 @@
     "q20": {
       "question": "Les touristes peuvent-ils utiliser Wise pour scanner les QR codes PromptPay en Thaïlande ?",
       "answer": "Depuis mai 2026, l'entité thaïlandaise de Wise propose le paiement par scan PromptPay — mais uniquement pour les clients résidant en Thaïlande, et non pour les voyageurs de l'UE utilisant leur compte d'origine. Pour un visiteur européen en voyage, cela ne fonctionne donc pas. Lumi est conçu spécifiquement pour les voyageurs résidents de l'UE : rechargez depuis votre compte bancaire européen et scannez PromptPay, VietQR ou QRIS où que vous alliez."
+    },
+    "q21": {
+      "question": "Y a-t-il un montant minimum pour recharger ?",
+      "answer": "Oui. Le rechargement minimum est de 25 €. Il n'y a pas de maximum au-delà des plafonds fixés lors de la vérification, et vous pouvez recharger aussi souvent que vous le souhaitez. Si vous hésitez sur le montant à charger, 25 € couvrent une journée confortable au Vietnam — chambre, repas, transport et une visite payante — c'est donc un bon point de départ pour un court séjour."
     }
   },
   "blogPosts": {
