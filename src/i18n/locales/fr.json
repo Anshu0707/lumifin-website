@@ -209,7 +209,8 @@
       },
       "2": {
         "title": "Scannez le QR code",
-        "desc": "Lumi prend en charge tous les principaux standards de paiement par QR code en Asie du Sud-Est. Il suffit de pointer et de scanner dans n'importe quel stand de rue ou centre commercial."
+        "desc": "Lumi prend en charge tous les principaux standards de paiement par QR code en Asie du Sud-Est. Il suffit de pointer et de scanner dans n'importe quel stand de rue ou centre commercial.",
+        "alt": "Scanner le QR code"
       },
       "3": {
         "title": "Vérifiez le montant",

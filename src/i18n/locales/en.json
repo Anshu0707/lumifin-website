@@ -209,7 +209,8 @@
       },
       "2": {
         "title": "Scan QR Code",
-        "desc": "Lumi supports all major local QR payment standards across South East Asia. Just point and scan at any street stall or mall."
+        "desc": "Lumi supports all major local QR payment standards across South East Asia. Just point and scan at any street stall or mall.",
+        "alt": "Scan QR Code"
       },
       "3": {
         "title": "Verify Amount",
