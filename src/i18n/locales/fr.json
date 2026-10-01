@@ -66,6 +66,7 @@
     "blog": "Blog",
     "support": "Support",
     "faq": "FAQ",
+    "eligibility": "Éligibilité",
     "privacyPolicy": "Politique de confidentialité",
     "deleteAccount": "Supprimer le compte",
     "mentionsLegales": "Mentions légales",
@@ -138,14 +139,15 @@
     "joinWaitlist": "Rejoindre la bêta",
     "earnBadge": "Gagnez 10 €*",
     "sepaBadge": "Pour les résidents disposant d'un compte bancaire personnel en euros (SEPA).",
+    "checkEligibility": "Vérifiez votre éligibilité",
     "creditTerms": "*Conditions générales applicables. Le crédit de 10 € est soumis à conditions d'éligibilité et à la vérification du compte.",
     "videoTitle": "Vidéo de démo Lumi",
     "closeVideo": "Fermer la vidéo"
   },
   "coverage": {
     "eyebrow": "Réseau régional",
-    "title": "6 pays. Une seule app.",
-    "descPrefix": "Disponible au Vietnam dès maintenant (bêta), avec la Thaïlande et l'Indonésie qui arrivent bientôt — et la Malaisie, le Cambodge et les Philippines à venir.",
+    "title": "10 pays. Une seule app.",
+    "descPrefix": "Disponible au Vietnam dès maintenant (bêta), avec la Thaïlande et l'Indonésie qui arrivent bientôt — et la Malaisie, le Cambodge, les Philippines, le Laos, la Corée du Sud, Taïwan et la Mongolie à venir.",
     "comingSoon": "NOTRE FEUILLE DE ROUTE RÉGIONALE",
     "liveBadge": "Disponible (bêta)",
     "comingSoonBadge": "Bientôt disponible",
@@ -155,7 +157,11 @@
       "vietnam": "Vietnam",
       "malaysia": "Malaisie",
       "cambodia": "Cambodge",
-      "philippines": "Philippines"
+      "philippines": "Philippines",
+      "laos": "Laos",
+      "southKorea": "Corée du Sud",
+      "taiwan": "Taïwan",
+      "mongolia": "Mongolie"
     }
   },
   "mission": {
@@ -476,6 +482,79 @@
     "doneTitle": "Vous êtes désabonné",
     "doneBody": "Nous avons bien reçu votre demande et vous serez retiré de notre liste de diffusion. Un e-mail déjà en cours d'envoi peut encore vous parvenir, mais rien après cela.",
     "doneContact": "Vous avez changé d'avis ou besoin d'autre chose ? Écrivez-nous à <1>info@lumifin.io</1>."
+  },
+  "eligibility": {
+    "seo": {
+      "title": "Qui peut utiliser Lumi — éligibilité et pays pris en charge",
+      "description": "Lumi est ouvert aux résidents de l'UE et de l'EEE disposant d'un compte bancaire européen (SEPA) à leur nom. Découvrez les 30 pays pris en charge et toutes les conditions d'éligibilité."
+    },
+    "backHome": "Retour à l'accueil",
+    "eyebrow": "Éligibilité",
+    "title": "Qui peut utiliser Lumi",
+    "subtitle": "Lumi est conçu pour les voyageurs européens qui paient en Asie du Sud-Est. Cela implique une condition incontournable, et une liste précise de pays actuellement pris en charge.",
+    "bankH": "Un compte bancaire européen est obligatoire",
+    "bankBody": "Vous devez détenir un compte bancaire à votre nom dans la zone SEPA. Ce n'est pas facultatif et il n'existe aucun contournement. Lumi s'alimente par virement SEPA depuis votre propre compte : sans lui, vous ne pouvez pas recharger votre portefeuille, et l'application ne peut pas être utilisée.",
+    "bankNote": "Le compte doit être à votre nom. Nous ne pouvons pas accepter de virement depuis le compte d'une autre personne, y compris un conjoint ou un membre de la famille, car le compte de financement doit correspondre à votre identité vérifiée.",
+    "requirementsH": "Les conditions complètes",
+    "requirements": ["Vous avez au moins 18 ans.", "Vous détenez un compte bancaire de la zone SEPA à votre nom.", "Vous pouvez réaliser la vérification d'identité, exigée par la réglementation financière.", "Vous disposez d'un appareil iOS ou Android compatible et à jour."],
+    "countriesH": "Les {{count}} pays pris en charge",
+    "countriesIntro": "Si vous résidez dans l'un de ces pays et y détenez un compte bancaire à votre nom, vous êtes éligible à l'inscription.",
+    "notEligibleH": "Qui n'est pas encore éligible",
+    "notEligibleIntro": "Certains pays sont géographiquement proches de l'Europe mais se situent en dehors des dispositifs SEPA avec lesquels nous travaillons actuellement. Si vous vous y trouvez, Lumi ne fonctionnera pas pour vous aujourd'hui.",
+    "notEligible": ["Le Royaume-Uni — non pris en charge, malgré sa proximité avec l'UE.", "La Suisse — non prise en charge pour le moment.", "Tout pays hors UE et EEE, y compris pour les résidents d'Asie du Sud-Est eux-mêmes.", "Toute personne sans compte bancaire à son nom dans un pays pris en charge."],
+    "whereH": "Où vous pouvez payer",
+    "whereBody": "L'éligibilité dépend du pays où vous êtes bancarisé, pas de celui où vous voyagez. Une fois votre compte ouvert, voici où Lumi fonctionne aujourd'hui et où il se déploiera.",
+    "status": {
+      "live": "En bêta",
+      "next": "Prochainement",
+      "soon": "Bientôt"
+    },
+    "destinations": [
+      { "name": "Vietnam", "scheme": "VietQR", "status": "live" },
+      { "name": "Thaïlande", "scheme": "PromptPay", "status": "next" },
+      { "name": "Indonésie", "scheme": "QRIS", "status": "next" },
+      { "name": "Laos", "scheme": "Lao QR", "status": "soon" },
+      { "name": "Corée du Sud", "status": "soon" },
+      { "name": "Taïwan", "status": "soon" },
+      { "name": "Mongolie", "status": "soon" }
+    ],
+    "whereNote": "Les marchés à venir n'ont pas encore de date de lancement confirmée. Nous annoncerons chacun d'eux à son ouverture.",
+    "ctaH": "Éligible ? Rejoignez la liste d'attente",
+    "ctaBody": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Inscrivez-vous et nous vous écrirons dès que les accès s'ouvriront.",
+    "ctaButton": "Rejoindre la liste d'attente",
+    "legalNote": "Ces conditions sont résumées à partir de nos <1>Conditions Générales d'Utilisation</1>. Pour plus de détails sur l'inscription, la vérification et le rechargement, consultez la <2>FAQ</2>.",
+    "countryNames": {
+      "AT": "Autriche",
+      "BE": "Belgique",
+      "BG": "Bulgarie",
+      "HR": "Croatie",
+      "CY": "Chypre",
+      "CZ": "Tchéquie",
+      "DK": "Danemark",
+      "EE": "Estonie",
+      "FI": "Finlande",
+      "FR": "France",
+      "DE": "Allemagne",
+      "GR": "Grèce",
+      "HU": "Hongrie",
+      "IS": "Islande",
+      "IE": "Irlande",
+      "IT": "Italie",
+      "LV": "Lettonie",
+      "LI": "Liechtenstein",
+      "LT": "Lituanie",
+      "LU": "Luxembourg",
+      "MT": "Malte",
+      "NL": "Pays-Bas",
+      "NO": "Norvège",
+      "PL": "Pologne",
+      "PT": "Portugal",
+      "RO": "Roumanie",
+      "SK": "Slovaquie",
+      "SI": "Slovénie",
+      "ES": "Espagne",
+      "SE": "Suède"
+    }
   },
   "privacy": {
     "seo": {

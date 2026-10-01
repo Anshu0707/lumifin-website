@@ -66,6 +66,7 @@
     "blog": "Blog",
     "support": "Support",
     "faq": "FAQ",
+    "eligibility": "Eligibility",
     "privacyPolicy": "Privacy Policy",
     "deleteAccount": "Delete Account",
     "mentionsLegales": "Legal Notice",
@@ -138,14 +139,15 @@
     "joinWaitlist": "Join the beta",
     "earnBadge": "Earn €10*",
     "sepaBadge": "For residents with a personal Euro (SEPA) bank account.",
+    "checkEligibility": "Check if you're eligible",
     "creditTerms": "*Terms & conditions apply. €10 credit is subject to eligibility and account verification.",
     "videoTitle": "Lumi Demo Video",
     "closeVideo": "Close video"
   },
   "coverage": {
     "eyebrow": "Regional Network",
-    "title": "6 Countries. One App.",
-    "descPrefix": "Live in Vietnam now (beta), with Thailand and Indonesia coming soon — and Malaysia, Cambodia and the Philippines on the way.",
+    "title": "10 Countries. One App.",
+    "descPrefix": "Live in Vietnam now (beta), with Thailand and Indonesia coming soon — and Malaysia, Cambodia, the Philippines, Laos, South Korea, Taiwan and Mongolia on the way.",
     "comingSoon": "OUR REGIONAL ROADMAP",
     "liveBadge": "Live (beta)",
     "comingSoonBadge": "Coming soon",
@@ -155,7 +157,11 @@
       "vietnam": "Vietnam",
       "malaysia": "Malaysia",
       "cambodia": "Cambodia",
-      "philippines": "Philippines"
+      "philippines": "Philippines",
+      "laos": "Laos",
+      "southKorea": "South Korea",
+      "taiwan": "Taiwan",
+      "mongolia": "Mongolia"
     }
   },
   "mission": {
@@ -476,6 +482,79 @@
     "doneTitle": "You're unsubscribed",
     "doneBody": "We've received your request and you'll be removed from our mailing list. You may receive an email already in transit, but nothing after that.",
     "doneContact": "Changed your mind, or need anything else? Write to us at <1>info@lumifin.io</1>."
+  },
+  "eligibility": {
+    "seo": {
+      "title": "Who Can Use Lumi — Eligibility and Supported Countries",
+      "description": "Lumi is open to EU and EEA residents with a European (SEPA) bank account in their own name. See the 30 supported countries and the full eligibility requirements."
+    },
+    "backHome": "Back to Home",
+    "eyebrow": "Eligibility",
+    "title": "Who can use Lumi",
+    "subtitle": "Lumi is built for European travellers paying in Southeast Asia. That means there is one requirement you cannot work around, and a clear list of countries we currently support.",
+    "bankH": "A European bank account is required",
+    "bankBody": "You must hold a bank account in your own name in the SEPA zone. This is not optional and there is no workaround. Lumi is funded by SEPA transfer from your own account — without one, you cannot top up your wallet, and the app cannot be used.",
+    "bankNote": "The account must be in your name. We cannot accept transfers from an account belonging to someone else, including a partner or family member, because the funding account has to match your verified identity.",
+    "requirementsH": "The full requirements",
+    "requirements": ["You are at least 18 years old.", "You hold a SEPA-zone bank account in your own name.", "You can complete identity verification, which is required by financial regulation.", "You have a compatible, up-to-date iOS or Android device."],
+    "countriesH": "The {{count}} countries we support",
+    "countriesIntro": "If you reside in one of these countries and hold a bank account there in your own name, you are eligible to sign up.",
+    "notEligibleH": "Who is not eligible yet",
+    "notEligibleIntro": "Some countries are geographically close to Europe but sit outside the SEPA arrangements we currently work with. If you are in one of these, Lumi will not work for you today.",
+    "notEligible": ["The United Kingdom — not supported, despite its proximity to the EU.", "Switzerland — not supported at this time.", "Any country outside the EU and EEA, including residents of Southeast Asia itself.", "Anyone without a bank account in their own name in a supported country."],
+    "whereH": "Where you can pay",
+    "whereBody": "Eligibility is about where you bank, not where you travel. Once your account is open, here is where Lumi works today and where it is heading.",
+    "status": {
+      "live": "Live in beta",
+      "next": "Coming next",
+      "soon": "Coming soon"
+    },
+    "destinations": [
+      { "name": "Vietnam", "scheme": "VietQR", "status": "live" },
+      { "name": "Thailand", "scheme": "PromptPay", "status": "next" },
+      { "name": "Indonesia", "scheme": "QRIS", "status": "next" },
+      { "name": "Laos", "scheme": "Lao QR", "status": "soon" },
+      { "name": "South Korea", "status": "soon" },
+      { "name": "Taiwan", "status": "soon" },
+      { "name": "Mongolia", "status": "soon" }
+    ],
+    "whereNote": "Coming-soon markets have no confirmed launch date yet. We will announce each one as it goes live.",
+    "ctaH": "Eligible? Join the waitlist",
+    "ctaBody": "We are opening access gradually, starting in Vietnam. Sign up and we will email you as soon as access opens.",
+    "ctaButton": "Join the waitlist",
+    "legalNote": "These requirements are summarised from our <1>Terms of Use</1>. For more detail on signing up, verification and funding, see the <2>FAQ</2>.",
+    "countryNames": {
+      "AT": "Austria",
+      "BE": "Belgium",
+      "BG": "Bulgaria",
+      "HR": "Croatia",
+      "CY": "Cyprus",
+      "CZ": "Czechia",
+      "DK": "Denmark",
+      "EE": "Estonia",
+      "FI": "Finland",
+      "FR": "France",
+      "DE": "Germany",
+      "GR": "Greece",
+      "HU": "Hungary",
+      "IS": "Iceland",
+      "IE": "Ireland",
+      "IT": "Italy",
+      "LV": "Latvia",
+      "LI": "Liechtenstein",
+      "LT": "Lithuania",
+      "LU": "Luxembourg",
+      "MT": "Malta",
+      "NL": "Netherlands",
+      "NO": "Norway",
+      "PL": "Poland",
+      "PT": "Portugal",
+      "RO": "Romania",
+      "SK": "Slovakia",
+      "SI": "Slovenia",
+      "ES": "Spain",
+      "SE": "Sweden"
+    }
   },
   "privacy": {
     "seo": {

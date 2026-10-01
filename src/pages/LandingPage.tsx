@@ -15,6 +15,7 @@ import {
   QrCode,
   Check,
   X,
+  ArrowRight,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
@@ -934,9 +935,18 @@ export default function LandingPage() {
               {t("hero.joinWaitlist")}
             </button>
           </div>
-          <div className="mt-8 flex items-center justify-center gap-2 text-white/70">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 text-white font-black text-sm">€</span>
-            <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+          <div className="mt-8 flex flex-col items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-2 text-white/70">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/15 text-white font-black text-sm">€</span>
+              <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+            </div>
+            <Link
+              to={localizedPath("/eligibility", location.pathname)}
+              className="inline-flex items-center gap-1.5 text-sm font-bold text-white/80 hover:text-white underline underline-offset-4 decoration-white/30 hover:decoration-white transition-all"
+            >
+              {t("hero.checkEligibility")}
+              <ArrowRight className="w-4 h-4" aria-hidden="true" />
+            </Link>
           </div>
         </div>
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
@@ -963,8 +973,12 @@ export default function LandingPage() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-          {[
+        {/* One continuous moving line of every market. Three copies make the loop
+            seamless; the duplicates are hidden from assistive tech and keyboard focus. */}
+        <div className="marquee-pause overflow-hidden -mx-8 px-8 py-6">
+          <div className="flex w-max gap-6 animate-scroll-slow">
+          {[0, 1, 2].map((copy) =>
+          [
             {
               name: t("coverage.countries.vietnam"),
               network: "VietQR",
@@ -1002,20 +1016,44 @@ export default function LandingPage() {
               img: "/assets/regions/philippines.webp",
               offset: true,
             },
+            // Earlier-stage markets: pictured, but no payment network confirmed yet.
+            {
+              name: t("coverage.countries.laos"),
+              network: "Lao QR",
+              img: "/assets/regions/laos.webp",
+            },
+            {
+              name: t("coverage.countries.mongolia"),
+              img: "/assets/regions/mongolia.webp",
+              offset: true,
+            },
+            {
+              name: t("coverage.countries.southKorea"),
+              img: "/assets/regions/south-korea.webp",
+            },
+            {
+              name: t("coverage.countries.taiwan"),
+              img: "/assets/regions/taiwan.webp",
+              offset: true,
+            },
           ].map((country, i) => {
             const isLive = country.live === true;
             const cardInner = (
               <>
-                <img
-                  alt={`Paying like a local in ${country.name} with ${country.network} QR payments`}
-                  width={512}
-                  height={512}
-                  className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
-                    isLive ? "" : "grayscale group-hover:grayscale-0"
-                  }`}
-                  src={country.img}
-                  loading="lazy"
-                />
+                {country.img ? (
+                  <img
+                    alt={`Paying like a local in ${country.name} with ${country.network} QR payments`}
+                    width={512}
+                    height={512}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
+                      isLive ? "" : "grayscale group-hover:grayscale-0"
+                    }`}
+                    src={country.img}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="absolute inset-0 hero-gradient" aria-hidden="true"></div>
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 {/* Status badge: Live (beta) for Vietnam, Coming soon for the rest */}
                 <div className="absolute top-5 left-5">
@@ -1031,26 +1069,38 @@ export default function LandingPage() {
                   )}
                 </div>
                 <div className="absolute bottom-6 left-6 right-6 text-white">
-                  <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
-                    {country.network}
-                  </p>
+                  {country.network && (
+                    <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
+                      {country.network}
+                    </p>
+                  )}
                   <h3 className="text-2xl font-black">{country.name}</h3>
                 </div>
               </>
             );
-            const cardClass = `group relative overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${
+            const cardClass = `group relative shrink-0 w-[260px] overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${
               country.offset ? "lg:mt-12" : ""
             } ${isLive ? "ring-4 ring-primary ring-offset-4 ring-offset-white" : "opacity-80 hover:opacity-100"}`;
+            const isDupe = copy > 0;
             return country.href ? (
-              <Link key={i} to={localizedPath(country.href, location.pathname)} className={cardClass} aria-label={country.name}>
+              <Link
+                key={`${copy}-${i}`}
+                to={localizedPath(country.href, location.pathname)}
+                className={cardClass}
+                aria-label={country.name}
+                aria-hidden={isDupe || undefined}
+                tabIndex={isDupe ? -1 : undefined}
+              >
                 {cardInner}
               </Link>
             ) : (
-              <div key={i} className={cardClass}>
+              <div key={`${copy}-${i}`} className={cardClass} aria-hidden={isDupe || undefined}>
                 {cardInner}
               </div>
             );
-          })}
+          })
+          )}
+          </div>
         </div>
       </section>
 
@@ -1693,7 +1743,7 @@ export default function LandingPage() {
                 <X className="w-6 h-6" />
               </button>
               <iframe
-                src="https://www.youtube.com/embed/05qmIJWLN1Q?autoplay=1&rel=0"
+                src="https://www.youtube.com/embed/pg-m5k3cbeY?autoplay=1&rel=0"
                 title={t("hero.videoTitle")}
                 className="w-full h-full border-0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

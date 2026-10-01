@@ -37,6 +37,7 @@ const OneMillionDongDaNangPage = lazy(() => import('./pages/OneMillionDongDaNang
 const AseanQrCrossBorderPage = lazy(() => import('./pages/AseanQrCrossBorderPage'));
 const CareersPage = lazy(() => import('./pages/CareersPage'));
 const SecurityPage = lazy(() => import('./pages/SecurityPage'));
+const EligibilityPage = lazy(() => import('./pages/EligibilityPage'));
 const TravelMoneyThailandPage = lazy(() => import('./pages/TravelMoneyThailandPage'));
 const TravelMoneyVietnamPage = lazy(() => import('./pages/TravelMoneyVietnamPage'));
 const TravelMoneyIndonesiaPage = lazy(() => import('./pages/TravelMoneyIndonesiaPage'));
@@ -79,6 +80,7 @@ export default function App() {
           <Route path="/blog/asean-qr-cross-border-payment" element={<AseanQrCrossBorderPage />} />
           <Route path="/careers" element={<CareersPage />} />
         <Route path="/security" element={<SecurityPage />} />
+        <Route path="/eligibility" element={<EligibilityPage />} />
         <Route path="/travel-money/thailand" element={<TravelMoneyThailandPage />} />
         <Route path="/travel-money/vietnam" element={<TravelMoneyVietnamPage />} />
         <Route path="/travel-money/indonesia" element={<TravelMoneyIndonesiaPage />} />
@@ -115,6 +117,7 @@ export default function App() {
           <Route path="/en/blog/asean-qr-cross-border-payment" element={<AseanQrCrossBorderPage />} />
           <Route path="/en/careers" element={<CareersPage />} />
           <Route path="/en/security" element={<SecurityPage />} />
+          <Route path="/en/eligibility" element={<EligibilityPage />} />
           <Route path="/en/travel-money/thailand" element={<TravelMoneyThailandPage />} />
           <Route path="/en/travel-money/vietnam" element={<TravelMoneyVietnamPage />} />
           <Route path="/en/travel-money/indonesia" element={<TravelMoneyIndonesiaPage />} />

@@ -200,4 +200,19 @@ html.dark .dot-grid {
     animation: scroll 5s linear infinite;
     will-change: transform;
   }
+
+  /* Roadmap marquee: same keyframes, slower, and pausable so the cards are readable. */
+  .animate-scroll-slow {
+    animation: scroll 40s linear infinite;
+    will-change: transform;
+  }
+  .marquee-pause:hover .animate-scroll-slow,
+  .marquee-pause:focus-within .animate-scroll-slow {
+    animation-play-state: paused;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-scroll-slow {
+      animation: none;
+    }
+  }
 }

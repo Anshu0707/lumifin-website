@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
 import { Check, Clock } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 import { SEPA_COUNTRIES } from "../constants/sepaCountries";
+import { localizedPath } from "../utils/localizedPath";
 
 export default function Waitlist() {
+  const location = useLocation();
   const [name, setName] = useState("");
   const [dialCode, setDialCode] = useState("+33");
   const [phone, setPhone] = useState("");
@@ -76,9 +79,17 @@ export default function Waitlist() {
             <Clock className="w-4 h-4" aria-hidden="true" />
             {t("waitlist.urgencyNote")}
           </div>
-          <div className="flex items-center justify-center gap-2 text-slate-500">
-            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">€</span>
-            <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+          <div className="flex flex-col items-center justify-center gap-3">
+            <div className="flex items-center justify-center gap-2 text-slate-500">
+              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">€</span>
+              <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
+            </div>
+            <Link
+              to={localizedPath("/eligibility", location.pathname)}
+              className="text-sm font-bold text-primary hover:underline underline-offset-4"
+            >
+              {t("hero.checkEligibility")}
+            </Link>
           </div>
 
           {status === "success" ? (
