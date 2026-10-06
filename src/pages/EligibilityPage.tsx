@@ -208,7 +208,7 @@ export default function EligibilityPage() {
               <Trans
                 i18nKey={`${BASE}.legalNote`}
                 components={{
-                  1: <Link to={localizedPath('/cgu', location.pathname)} className="text-primary font-bold hover:underline" />,
+                  1: <Link to={localizedPath('/terms', location.pathname)} className="text-primary font-bold hover:underline" />,
                   2: <Link to={localizedPath('/faq', location.pathname)} className="text-primary font-bold hover:underline" />,
                 }}
               />

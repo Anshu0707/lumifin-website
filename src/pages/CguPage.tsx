@@ -15,10 +15,10 @@ export default function CguPage() {
       <SEO
         title={t('cgu.seo.title')}
         description={t('cgu.seo.description')}
-        canonical="/cgu"
+        canonical="/terms"
         structuredData={breadcrumbSchema([
           { name: 'Home', url: '/' },
-          { name: 'Terms and Conditions', url: '/cgu' },
+          { name: 'Terms and Conditions', url: '/terms' },
         ])}
       />
       <Header />

@@ -8,3 +8,8 @@
 # dist/404.html for unknown routes. Netlify's file-based routing handles
 # known routes, and Netlify auto-serves 404.html with HTTP 404 status for
 # anything else.
+
+# /cgu was renamed to /terms. These are specific 301s, not a wildcard
+# fallback, so the soft-404 problem described above does not return.
+/cgu       /terms       301!
+/en/cgu    /en/terms    301!

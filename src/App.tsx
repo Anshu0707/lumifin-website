@@ -87,7 +87,7 @@ export default function App() {
         <Route path="/travel-money" element={<TravelMoneyPage />} />
         <Route path="/compare" element={<ComparePage />} />
         <Route path="/mentions-legales" element={<MentionsLegalesPage />} />
-        <Route path="/cgu" element={<CguPage />} />
+        <Route path="/terms" element={<CguPage />} />
         <Route path="/unsubscribe" element={<UnsubscribePage />} />
 
           {/* English URLs — same components, rendered in English because the
@@ -124,7 +124,7 @@ export default function App() {
           <Route path="/en/travel-money" element={<TravelMoneyPage />} />
           <Route path="/en/compare" element={<ComparePage />} />
           <Route path="/en/mentions-legales" element={<MentionsLegalesPage />} />
-          <Route path="/en/cgu" element={<CguPage />} />
+          <Route path="/en/terms" element={<CguPage />} />
           <Route path="/en/unsubscribe" element={<UnsubscribePage />} />
 
           <Route path="*" element={<NotFoundPage />} />

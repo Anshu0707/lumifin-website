@@ -133,7 +133,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/cgu</loc>
+    <loc>https://lumifin.io/terms</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -277,7 +277,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/cgu</loc>
+    <loc>https://lumifin.io/en/terms</loc>
     <lastmod>2026-05-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

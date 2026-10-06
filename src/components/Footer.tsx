@@ -45,7 +45,7 @@ export default function Footer() {
             <li><Link to={withLang('/privacy')} className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
             <li><Link to={withLang('/account-deletion')} className="hover:text-primary transition-colors">{t('footer.deleteAccount')}</Link></li>
             <li><Link to={withLang('/mentions-legales')} className="hover:text-primary transition-colors">{t('footer.mentionsLegales')}</Link></li>
-            <li><Link to={withLang('/cgu')} className="hover:text-primary transition-colors">{t('footer.cgu')}</Link></li>
+            <li><Link to={withLang('/terms')} className="hover:text-primary transition-colors">{t('footer.cgu')}</Link></li>
           </ul>
         </div>
 

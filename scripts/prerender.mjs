@@ -61,7 +61,7 @@ const routes = [
   { path: '/travel-money/indonesia', out: 'travel-money/indonesia.html' },
   { path: '/compare', out: 'compare.html' },
   { path: '/mentions-legales', out: 'mentions-legales.html' },
-  { path: '/cgu', out: 'cgu.html' },
+  { path: '/terms', out: 'terms.html' },
   { path: '/tools/currency-converter', out: 'tools/currency-converter.html' },
 
   // English URLs — same components as above, rendered in English because the
@@ -98,7 +98,7 @@ const routes = [
   { path: '/en/travel-money/indonesia', out: 'en/travel-money/indonesia.html' },
   { path: '/en/compare', out: 'en/compare.html' },
   { path: '/en/mentions-legales', out: 'en/mentions-legales.html' },
-  { path: '/en/cgu', out: 'en/cgu.html' },
+  { path: '/en/terms', out: 'en/terms.html' },
 
   // 404 page: hit any unmatched route, save as 404.html so Netlify auto-serves
   // it with HTTP 404 for unknown URLs (proper 404 instead of soft-200).
