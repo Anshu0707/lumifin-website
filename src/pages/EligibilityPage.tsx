@@ -186,6 +186,9 @@ export default function EligibilityPage() {
             <p className="mt-5 text-base text-slate-500 font-normal leading-relaxed">
               {t(`${BASE}.checkerNote`)}
             </p>
+            <p className="mt-3 text-base text-slate-500 font-normal leading-relaxed">
+              {t(`${BASE}.checkerScope`)}
+            </p>
           </motion.section>
 
           {/* Requirements */}

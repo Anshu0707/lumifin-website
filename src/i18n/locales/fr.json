@@ -500,6 +500,7 @@
     "resultYes": "{{country}} est pris en charge.",
     "resultYesBody": "Si vous y détenez un compte bancaire en euros (SEPA) à votre nom, vous pouvez ouvrir un compte Lumi.",
     "checkerNote": "Si votre pays ne figure pas dans la liste, Lumi ne peut pas encore y accepter de paiements. Nous en ajoutons régulièrement.",
+    "checkerScope": "L’application est disponible dans la plupart des pays — c’est le rechargement du portefeuille qui est limité à cette liste : ce qui compte est donc le pays de votre banque, pas votre nationalité.",
     "requirementsH": "Il vous faudra aussi",
     "requirements": ["Vous avez au moins 18 ans.", "Vous détenez un compte bancaire de la zone SEPA à votre nom.", "Vous pouvez réaliser la vérification d'identité, exigée par la réglementation financière.", "Vous disposez d'un appareil iOS ou Android compatible et à jour."],
     "ctaH": "Prêt quand vous l’êtes",
