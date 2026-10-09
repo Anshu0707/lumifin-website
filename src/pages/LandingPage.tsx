@@ -914,6 +914,8 @@ export default function LandingPage() {
                 title: t("services.items.esim.title"),
                 desc: t("services.items.esim.desc"),
                 img: "/assets/regions/traveller-phone.webp",
+                href: "/esim",
+                live: true,
               },
               {
                 title: t("services.items.tours.title"),
@@ -925,28 +927,57 @@ export default function LandingPage() {
                 desc: t("services.items.restaurants.desc"),
                 img: "/assets/places/Restaurant.webp",
               },
-            ].map((service, i) => (
-              <div
-                key={i}
-                className="group relative rounded-[4rem] overflow-hidden aspect-[4/5] shadow-2xl"
-              >
-                <img
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                  src={service.img}
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-12 w-full space-y-5">
-                  <h3 className="text-3xl font-black tracking-tight">
-                    {service.title}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-sm font-medium">
-                    {service.desc}
-                  </p>
+            ].map((service, i) => {
+              const inner = (
+                <>
+                  <img
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                    src={service.img}
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent"></div>
+                  {service.live && (
+                    <div className="absolute top-8 left-8">
+                      <span className="inline-flex items-center gap-2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
+                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                        {t("services.availableBadge")}
+                      </span>
+                    </div>
+                  )}
+                  <div className="absolute bottom-0 left-0 p-12 w-full space-y-5">
+                    <h3 className="text-3xl font-black tracking-tight">
+                      {service.title}
+                    </h3>
+                    <p className="text-slate-400 leading-relaxed text-sm font-medium">
+                      {service.desc}
+                    </p>
+                    {service.href && (
+                      <span className="inline-flex items-center gap-2 text-white font-black text-sm">
+                        {t("services.learnMore")}
+                        <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                      </span>
+                    )}
+                  </div>
+                </>
+              );
+              const cls =
+                "group relative rounded-[4rem] overflow-hidden aspect-[4/5] shadow-2xl block";
+              return service.href ? (
+                <Link
+                  key={i}
+                  to={localizedPath(service.href, location.pathname)}
+                  className={cls}
+                  aria-label={service.title}
+                >
+                  {inner}
+                </Link>
+              ) : (
+                <div key={i} className={cls}>
+                  {inner}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

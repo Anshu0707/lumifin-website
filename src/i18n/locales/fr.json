@@ -297,6 +297,8 @@
     "eyebrow": "UNE SÉLECTION POUR CHAQUE VOYAGEUR",
     "title": "Au-delà des paiements.",
     "subtitle": "Allez au-delà des paiements avec les essentiels du voyage : eSIM, expériences sélectionnées et accès aux meilleures offres locales.",
+    "availableBadge": "Disponible maintenant",
+    "learnMore": "En savoir plus",
     "items": {
       "esim": {
         "title": "eSIM",
@@ -486,44 +488,24 @@
   },
   "eligibility": {
     "seo": {
-      "title": "Qui peut utiliser Lumi — éligibilité et pays pris en charge",
-      "description": "Lumi est ouvert aux résidents de l'UE et de l'EEE disposant d'un compte bancaire européen (SEPA) à leur nom. Découvrez les 30 pays pris en charge et toutes les conditions d'éligibilité."
+      "title": "Vérifiez si vous pouvez utiliser Lumi — Éligibilité",
+      "description": "Lumi est ouvert aux résidents de 30 pays européens disposant d’un compte bancaire en euros (SEPA) à leur nom. Cherchez votre pays pour vérifier en une étape."
     },
     "backHome": "Retour à l'accueil",
-    "eyebrow": "Éligibilité",
-    "title": "Qui peut utiliser Lumi",
-    "subtitle": "Lumi est conçu pour les voyageurs européens qui paient en Asie du Sud-Est. Cela implique une condition incontournable, et une liste précise de pays actuellement pris en charge.",
-    "bankH": "Un compte bancaire européen est obligatoire",
-    "bankBody": "Vous devez détenir un compte bancaire à votre nom dans la zone SEPA. Ce n'est pas facultatif et il n'existe aucun contournement. Lumi s'alimente par virement SEPA depuis votre propre compte : sans lui, vous ne pouvez pas recharger votre portefeuille, et l'application ne peut pas être utilisée.",
-    "bankNote": "Le compte doit être à votre nom. Nous ne pouvons pas accepter de virement depuis le compte d'une autre personne, y compris un conjoint ou un membre de la famille, car le compte de financement doit correspondre à votre identité vérifiée.",
-    "requirementsH": "Les conditions complètes",
+    "title": "Pouvez-vous utiliser Lumi ?",
+    "subtitle": "Lumi s’alimente par virement SEPA : ce qui compte, c’est le pays où vous êtes bancarisé. Cherchez le vôtre ci-dessous.",
+    "checkerLabel": "Où se trouve votre compte bancaire ?",
+    "checkerPlaceholder": "Commencez à taper votre pays",
+    "checkerNoMatch": "Aucun résultat. Lumi ne prend pas encore en charge ce pays.",
+    "resultYes": "{{country}} est pris en charge.",
+    "resultYesBody": "Si vous y détenez un compte bancaire en euros (SEPA) à votre nom, vous pouvez ouvrir un compte Lumi.",
+    "checkerNote": "Si votre pays ne figure pas dans la liste, Lumi ne peut pas encore y accepter de paiements. Nous en ajoutons régulièrement.",
+    "requirementsH": "Il vous faudra aussi",
     "requirements": ["Vous avez au moins 18 ans.", "Vous détenez un compte bancaire de la zone SEPA à votre nom.", "Vous pouvez réaliser la vérification d'identité, exigée par la réglementation financière.", "Vous disposez d'un appareil iOS ou Android compatible et à jour."],
-    "countriesH": "Les {{count}} pays pris en charge",
-    "countriesIntro": "Si vous résidez dans l'un de ces pays et y détenez un compte bancaire à votre nom, vous êtes éligible à l'inscription.",
-    "notEligibleH": "Qui n'est pas encore éligible",
-    "notEligibleIntro": "Certains pays sont géographiquement proches de l'Europe mais se situent en dehors des dispositifs SEPA avec lesquels nous travaillons actuellement. Si vous vous y trouvez, Lumi ne fonctionnera pas pour vous aujourd'hui.",
-    "notEligible": ["Le Royaume-Uni — non pris en charge, malgré sa proximité avec l'UE.", "La Suisse — non prise en charge pour le moment.", "Tout pays hors UE et EEE, y compris pour les résidents d'Asie du Sud-Est eux-mêmes.", "Toute personne sans compte bancaire à son nom dans un pays pris en charge."],
-    "whereH": "Où vous pouvez payer",
-    "whereBody": "L'éligibilité dépend du pays où vous êtes bancarisé, pas de celui où vous voyagez. Une fois votre compte ouvert, voici où Lumi fonctionne aujourd'hui et où il se déploiera.",
-    "status": {
-      "live": "En bêta",
-      "next": "Prochainement",
-      "soon": "Bientôt"
-    },
-    "destinations": [
-      { "name": "Vietnam", "scheme": "VietQR", "status": "live" },
-      { "name": "Thaïlande", "scheme": "PromptPay", "status": "next" },
-      { "name": "Indonésie", "scheme": "QRIS", "status": "next" },
-      { "name": "Laos", "scheme": "Lao QR", "status": "soon" },
-      { "name": "Corée du Sud", "status": "soon" },
-      { "name": "Taïwan", "status": "soon" },
-      { "name": "Mongolie", "status": "soon" }
-    ],
-    "whereNote": "Les marchés à venir n'ont pas encore de date de lancement confirmée. Nous annoncerons chacun d'eux à son ouverture.",
-    "ctaH": "Éligible ? Rejoignez la liste d'attente",
-    "ctaBody": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Inscrivez-vous et nous vous écrirons dès que les accès s'ouvriront.",
-    "ctaButton": "Rejoindre la liste d'attente",
-    "legalNote": "Ces conditions sont résumées à partir de nos <1>Conditions Générales d'Utilisation</1>. Pour plus de détails sur l'inscription, la vérification et le rechargement, consultez la <2>FAQ</2>.",
+    "ctaH": "Prêt quand vous l’êtes",
+    "ctaBody": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Rejoignez la liste d’attente et nous vous recontacterons.",
+    "ctaButton": "Rejoindre la liste d’attente",
+    "legalNote": "Résumé de nos <1>Conditions Générales d’Utilisation</1>. Pour en savoir plus sur l’inscription, la vérification et le rechargement, consultez la <2>FAQ</2>.",
     "countryNames": {
       "AT": "Autriche",
       "BE": "Belgique",

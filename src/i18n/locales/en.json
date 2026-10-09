@@ -297,6 +297,8 @@
     "eyebrow": "CURATED FOR EVERY TRAVELER",
     "title": "Beyond Payments.",
     "subtitle": "Go beyond payments with travel essentials like eSIM, curated experiences, and access to the best local offers.",
+    "availableBadge": "Available now",
+    "learnMore": "Learn more",
     "items": {
       "esim": {
         "title": "eSIM",
@@ -486,44 +488,24 @@
   },
   "eligibility": {
     "seo": {
-      "title": "Who Can Use Lumi — Eligibility and Supported Countries",
-      "description": "Lumi is open to EU and EEA residents with a European (SEPA) bank account in their own name. See the 30 supported countries and the full eligibility requirements."
+      "title": "Check if You Can Use Lumi — Eligibility",
+      "description": "Lumi is open to residents of 30 European countries with a euro (SEPA) bank account in their own name. Search for your country to check in one step."
     },
     "backHome": "Back to Home",
-    "eyebrow": "Eligibility",
-    "title": "Who can use Lumi",
-    "subtitle": "Lumi is built for European travellers paying in Southeast Asia. That means there is one requirement you cannot work around, and a clear list of countries we currently support.",
-    "bankH": "A European bank account is required",
-    "bankBody": "You must hold a bank account in your own name in the SEPA zone. This is not optional and there is no workaround. Lumi is funded by SEPA transfer from your own account — without one, you cannot top up your wallet, and the app cannot be used.",
-    "bankNote": "The account must be in your name. We cannot accept transfers from an account belonging to someone else, including a partner or family member, because the funding account has to match your verified identity.",
-    "requirementsH": "The full requirements",
+    "title": "Can you use Lumi?",
+    "subtitle": "Lumi is funded by SEPA transfer, so what matters is where you bank. Search for your country below.",
+    "checkerLabel": "Where is your bank account?",
+    "checkerPlaceholder": "Start typing your country",
+    "checkerNoMatch": "No match. Lumi does not support that country yet.",
+    "resultYes": "{{country}} is supported.",
+    "resultYesBody": "If you hold a euro (SEPA) bank account there in your own name, you can open a Lumi account.",
+    "checkerNote": "If your country is not in the list, Lumi cannot accept payments from it yet. We are adding more over time.",
+    "requirementsH": "You will also need",
     "requirements": ["You are at least 18 years old.", "You hold a SEPA-zone bank account in your own name.", "You can complete identity verification, which is required by financial regulation.", "You have a compatible, up-to-date iOS or Android device."],
-    "countriesH": "The {{count}} countries we support",
-    "countriesIntro": "If you reside in one of these countries and hold a bank account there in your own name, you are eligible to sign up.",
-    "notEligibleH": "Who is not eligible yet",
-    "notEligibleIntro": "Some countries are geographically close to Europe but sit outside the SEPA arrangements we currently work with. If you are in one of these, Lumi will not work for you today.",
-    "notEligible": ["The United Kingdom — not supported, despite its proximity to the EU.", "Switzerland — not supported at this time.", "Any country outside the EU and EEA, including residents of Southeast Asia itself.", "Anyone without a bank account in their own name in a supported country."],
-    "whereH": "Where you can pay",
-    "whereBody": "Eligibility is about where you bank, not where you travel. Once your account is open, here is where Lumi works today and where it is heading.",
-    "status": {
-      "live": "Live in beta",
-      "next": "Coming next",
-      "soon": "Coming soon"
-    },
-    "destinations": [
-      { "name": "Vietnam", "scheme": "VietQR", "status": "live" },
-      { "name": "Thailand", "scheme": "PromptPay", "status": "next" },
-      { "name": "Indonesia", "scheme": "QRIS", "status": "next" },
-      { "name": "Laos", "scheme": "Lao QR", "status": "soon" },
-      { "name": "South Korea", "status": "soon" },
-      { "name": "Taiwan", "status": "soon" },
-      { "name": "Mongolia", "status": "soon" }
-    ],
-    "whereNote": "Coming-soon markets have no confirmed launch date yet. We will announce each one as it goes live.",
-    "ctaH": "Eligible? Join the waitlist",
-    "ctaBody": "We are opening access gradually, starting in Vietnam. Sign up and we will email you as soon as access opens.",
+    "ctaH": "Ready when you are",
+    "ctaBody": "We are opening access gradually, starting in Vietnam. Join the waitlist and we will be in touch.",
     "ctaButton": "Join the waitlist",
-    "legalNote": "These requirements are summarised from our <1>Terms of Use</1>. For more detail on signing up, verification and funding, see the <2>FAQ</2>.",
+    "legalNote": "Summarised from our <1>Terms of Use</1>. For more on signing up, verification and funding, see the <2>FAQ</2>.",
     "countryNames": {
       "AT": "Austria",
       "BE": "Belgium",
