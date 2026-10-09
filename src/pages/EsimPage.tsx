@@ -21,11 +21,19 @@ export default function EsimPage() {
   const { t } = useTranslation();
   const location = useLocation();
 
-  const highlights = t(`${BASE}.highlights`, { returnObjects: true }) as unknown as string[];
-  const steps = t(`${BASE}.steps`, { returnObjects: true }) as unknown as Step[];
-  const benefits = t(`${BASE}.benefits`, { returnObjects: true }) as unknown as Benefit[];
-  const plans = t(`${BASE}.plans`, { returnObjects: true }) as unknown as Plan[];
-  const faqs = t(`${BASE}.faqs`, { returnObjects: true }) as unknown as Faq[];
+  // t() with returnObjects hands back the key as a string if the block is
+  // missing, and calling .map on that white-screens the whole page. Degrade to
+  // an empty section instead.
+  const list = <T,>(key: string): T[] => {
+    const v = t(`${BASE}.${key}`, { returnObjects: true }) as unknown;
+    return Array.isArray(v) ? (v as T[]) : [];
+  };
+
+  const highlights = list<string>('highlights');
+  const steps = list<Step>('steps');
+  const benefits = list<Benefit>('benefits');
+  const plans = list<Plan>('plans');
+  const faqs = list<Faq>('faqs');
 
   return (
     <div className="min-h-screen bg-white">

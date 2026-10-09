@@ -297,7 +297,7 @@
     "eyebrow": "UNE SÉLECTION POUR CHAQUE VOYAGEUR",
     "title": "Au-delà des paiements.",
     "subtitle": "Allez au-delà des paiements avec les essentiels du voyage : eSIM, expériences sélectionnées et accès aux meilleures offres locales.",
-    "availableBadge": "Disponible maintenant",
+    "availableBadge": "Bientôt disponible",
     "learnMore": "En savoir plus",
     "items": {
       "esim": {
@@ -539,6 +539,69 @@
       "ES": "Espagne",
       "SE": "Suède"
     }
+  },
+  "esim": {
+    "seo": {
+      "title": "eSIM pour l'Asie du Sud-Est — connecté dès l'atterrissage",
+      "description": "Achetez une eSIM voyage dans l'application Lumi et disposez de données mobiles dès votre arrivée au Vietnam. Sans carte SIM physique, sans file d'attente, sans facture d'itinérance."
+    },
+    "backHome": "Retour à l'accueil",
+    "availableBadge": "Bientôt disponible",
+    "title": "Connecté dès l'atterrissage",
+    "subtitle": "Achetez une eSIM dans l'application Lumi, installez-la avant de partir et atterrissez avec des données mobiles qui fonctionnent. Aucune carte SIM à changer, aucune file d'attente à l'aéroport, aucune facture d'itinérance au retour.",
+    "ctaPrimary": "Commencer",
+    "ctaSecondary": "Voir comment ça marche",
+    "highlights": ["Installation en quelques minutes", "Gardez votre numéro", "Aucun frais d'itinérance"],
+    "howH": "Comment ça marche",
+    "howIntro": "Quatre étapes, et seule la première est à faire avant le départ.",
+    "stepLabel": "Étape {{n}}",
+    "steps": [
+      { "title": "Choisissez une formule dans l'application", "desc": "Ouvrez Lumi, sélectionnez votre destination et le volume de données souhaité. Vous payez depuis votre solde Lumi, en euros, avec le prix affiché avant confirmation." },
+      { "title": "Installez l'eSIM", "desc": "L'application vous guide pas à pas. L'installation prend quelques minutes et nécessite une connexion Wi-Fi : faites-la chez vous avant de partir, pas à l'aéroport." },
+      { "title": "Activez-la à l'atterrissage", "desc": "Activez la ligne Lumi dans les réglages de votre téléphone en arrivant. Les données fonctionnent immédiatement — pas de boutique, pas de file, pas de carte en plastique à égarer." },
+      { "title": "Rechargez quand vous voulez", "desc": "Bientôt à court ? Ajoutez des données depuis l'application en quelques gestes. Rien à aller chercher, aucune boutique à trouver." }
+    ],
+    "whyH": "Pourquoi une eSIM vaut mieux que les alternatives",
+    "benefits": [
+      { "title": "Aucune carte SIM à changer", "desc": "L'eSIM est intégrée à votre téléphone. Rien à récupérer, rien à perdre, et votre SIM habituelle reste exactement où elle est." },
+      { "title": "Gardez votre numéro", "desc": "Votre numéro habituel reste actif pour les appels et les SMS pendant que l'eSIM gère les données. Les codes de votre banque continuent de vous parvenir." },
+      { "title": "Pas de mauvaise surprise sur la facture", "desc": "Vous payez d'avance un volume de données défini. Une fois épuisé, la connexion s'arrête : aucune facture ne vous attend au retour." },
+      { "title": "Opérationnelle dès l'atterrissage", "desc": "Pas de boutique à chercher, pas de photocopie de passeport, pas de file à l'arrivée. Commandez un Grab avant même de sortir du terminal." },
+      { "title": "Payée depuis votre solde Lumi", "desc": "Le même solde en euros que pour vos paiements QR, avec le taux affiché d'avance. Une seule application plutôt qu'un paiement par carte à l'étranger." },
+      { "title": "Rechargement en quelques secondes", "desc": "Si vous arrivez à court en plein séjour, vous rechargez depuis l'application. Inutile de chercher un point de vente de recharges." }
+    ],
+    "plansH": "Où ça fonctionne",
+    "plansIntro": "L'eSIM suit la même feuille de route que les paiements Lumi : le Vietnam d'abord, puis le reste de l'Asie du Sud-Est.",
+    "status": {
+      "live": "En premier",
+      "next": "Ensuite",
+      "soon": "Bientôt"
+    },
+    "plans": [
+      { "country": "Vietnam", "status": "live", "price": "à partir de —" },
+      { "country": "Thaïlande", "status": "next", "price": "—" },
+      { "country": "Indonésie", "status": "next", "price": "—" },
+      { "country": "Malaisie", "status": "soon", "price": "—" },
+      { "country": "Cambodge", "status": "soon", "price": "—" },
+      { "country": "Philippines", "status": "soon", "price": "—" }
+    ],
+    "plansNote": "Les prix et les volumes de données en vigueur sont affichés dans l'application avant le paiement. Ils varient selon la destination et la taille de la formule.",
+    "faqH": "Les questions que l'on nous pose vraiment",
+    "faqs": [
+      { "q": "Qu'est-ce qu'une eSIM ?", "a": "Une carte SIM intégrée à votre téléphone, au lieu d'un morceau de plastique à insérer. Vous l'installez en scannant un code ou en touchant un lien, et votre téléphone peut en contenir plusieurs : une eSIM voyage cohabite donc avec votre SIM habituelle au lieu de la remplacer." },
+      { "q": "Mon téléphone est-il compatible eSIM ?", "a": "La plupart des téléphones sortis depuis 2019 environ le sont, dont les iPhone XS et plus récents, les Google Pixel 3 et plus récents, et les Samsung Galaxy S et Z récents. Cherchez dans les Réglages une option pour ajouter une eSIM ou un second forfait mobile. Si elle n'existe pas, votre téléphone n'est pas compatible." },
+      { "q": "Vais-je conserver mon numéro habituel ?", "a": "Oui. L'eSIM ne gère que les données, et votre SIM habituelle reste active pour les appels et les SMS. C'est important si votre banque envoie des codes de vérification par SMS." },
+      { "q": "Dois-je l'installer avant ou après le vol ?", "a": "Avant. L'installation nécessite une connexion internet — précisément ce dont vous ne disposerez pas à l'arrivée. Installez-la chez vous en Wi-Fi, puis activez simplement la ligne à l'atterrissage." },
+      { "q": "Faut-il être connecté pour l'utiliser une fois installée ?", "a": "Non. L'installation demande du Wi-Fi, mais ensuite l'eSIM se connecte seule au réseau local dès votre arrivée et son activation." },
+      { "q": "Les appels et les SMS sont-ils inclus ?", "a": "Les formules sont en données uniquement. Vous pouvez toujours appeler et écrire via internet avec WhatsApp, Zalo, FaceTime ou équivalent, et votre SIM habituelle gère les appels classiques si vous la laissez activée." },
+      { "q": "Que se passe-t-il quand mes données sont épuisées ?", "a": "La connexion s'arrête au lieu de basculer vers des frais élevés. Vous pouvez recharger depuis l'application en quelques gestes et continuer." },
+      { "q": "Puis-je l'utiliser en partage de connexion pour mon ordinateur ?", "a": "Sur la plupart des téléphones, oui — c'est une façon courante de travailler depuis un café. Vérifiez le détail de la formule dans l'application : le partage de connexion est parfois restreint par le réseau local." },
+      { "q": "Puis-je utiliser une seule eSIM dans plusieurs pays ?", "a": "Le Vietnam est la première destination au lancement. Des formules régionales couvrant plusieurs pays d'Asie du Sud-Est sont prévues : l'application indique toujours les pays couverts avant l'achat." },
+      { "q": "Puis-je être remboursé si je ne l'utilise pas ?", "a": "Écrivez-nous à info@lumifin.io avant de l'installer et nous examinerons votre situation au cas par cas. Une fois installée et activée, une eSIM n'est généralement pas remboursable, ce qui est la norme chez les fournisseurs d'eSIM." },
+      { "q": "Faut-il un compte Lumi pour en acheter une ?", "a": "Oui. L'eSIM s'achète depuis votre solde Lumi dans l'application : il vous faut donc un compte et un portefeuille approvisionné. Les conditions d'éligibilité sont les mêmes que pour les paiements : résidents de l'UE et de l'EEE disposant d'un compte bancaire SEPA." }
+    ],
+    "ctaH": "Atterrissez connecté",
+    "ctaBody": "Rejoignez la liste d'attente et nous vous écrirons dès l'ouverture des accès, eSIM comprise."
   },
   "privacy": {
     "seo": {

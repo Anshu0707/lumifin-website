@@ -297,7 +297,7 @@
     "eyebrow": "CURATED FOR EVERY TRAVELER",
     "title": "Beyond Payments.",
     "subtitle": "Go beyond payments with travel essentials like eSIM, curated experiences, and access to the best local offers.",
-    "availableBadge": "Available now",
+    "availableBadge": "Coming soon",
     "learnMore": "Learn more",
     "items": {
       "esim": {
@@ -539,6 +539,69 @@
       "ES": "Spain",
       "SE": "Sweden"
     }
+  },
+  "esim": {
+    "seo": {
+      "title": "eSIM for Southeast Asia — Data the Moment You Land",
+      "description": "Buy a travel eSIM in the Lumi app and get mobile data the moment you land in Vietnam. No physical SIM, no airport queue, no roaming bill."
+    },
+    "backHome": "Back to Home",
+    "availableBadge": "Coming soon",
+    "title": "Data the moment you land",
+    "subtitle": "Buy an eSIM in the Lumi app, install it before you fly, and land with working mobile data. No physical SIM to swap, no queue at the airport, no roaming bill when you get home.",
+    "ctaPrimary": "Get started",
+    "ctaSecondary": "See how it works",
+    "highlights": ["Installs in minutes", "Keep your own number", "No roaming charges"],
+    "howH": "How it works",
+    "howIntro": "Four steps, and only the first one needs doing before you fly.",
+    "stepLabel": "Step {{n}}",
+    "steps": [
+      { "title": "Pick a plan in the app", "desc": "Open Lumi, choose your destination and how much data you want. You pay from your Lumi balance, in euros, with the price shown before you confirm." },
+      { "title": "Install the eSIM", "desc": "The app walks you through it. Installing takes a couple of minutes and needs Wi-Fi, so do it at home before you fly rather than at the airport." },
+      { "title": "Switch it on when you land", "desc": "Turn on the Lumi line in your phone settings as you land. Data starts working straight away — no shop, no queue, no paper SIM to lose." },
+      { "title": "Top up whenever you need", "desc": "Running low? Add more data from the app in a few taps. Nothing to collect and no need to find a phone shop." }
+    ],
+    "whyH": "Why an eSIM beats the alternatives",
+    "benefits": [
+      { "title": "No physical SIM to swap", "desc": "An eSIM is built into your phone. Nothing to collect, nothing to lose, and your home SIM stays exactly where it is." },
+      { "title": "Keep your own number", "desc": "Your normal number stays active for calls and texts while the eSIM handles data. Bank codes and messages still reach you." },
+      { "title": "No surprise roaming bill", "desc": "You pay up front for a set amount of data. When it runs out, it stops — there is no bill waiting for you at home." },
+      { "title": "Working from the moment you land", "desc": "No hunting for a shop, no passport photocopies, no queue at arrivals. Order a Grab before you leave the terminal." },
+      { "title": "Paid from your Lumi balance", "desc": "The same euro balance you use for QR payments, with the rate shown up front. One app rather than another card payment abroad." },
+      { "title": "Top up in seconds", "desc": "If you run out mid-trip you add more from the app. No need to find a counter that sells top-up vouchers." }
+    ],
+    "plansH": "Where it works",
+    "plansIntro": "The eSIM follows the same roadmap as Lumi payments: Vietnam first, with the rest of Southeast Asia close behind.",
+    "status": {
+      "live": "Coming first",
+      "next": "Coming next",
+      "soon": "Coming soon"
+    },
+    "plans": [
+      { "country": "Vietnam", "status": "live", "price": "from —" },
+      { "country": "Thailand", "status": "next", "price": "—" },
+      { "country": "Indonesia", "status": "next", "price": "—" },
+      { "country": "Malaysia", "status": "soon", "price": "—" },
+      { "country": "Cambodia", "status": "soon", "price": "—" },
+      { "country": "Philippines", "status": "soon", "price": "—" }
+    ],
+    "plansNote": "Live prices and data amounts are shown in the app before you pay. Prices vary by destination and plan size.",
+    "faqH": "Questions people actually ask",
+    "faqs": [
+      { "q": "What is an eSIM?", "a": "A SIM card built into your phone rather than a piece of plastic you slot in. You install it by scanning a code or tapping a link, and your phone can hold several at once — so a travel eSIM sits alongside your normal SIM instead of replacing it." },
+      { "q": "Does my phone support eSIM?", "a": "Most phones from roughly 2019 onwards do, including iPhone XS and newer, Google Pixel 3 and newer, and recent Samsung Galaxy S and Z models. Look in Settings for an option to add an eSIM or a second mobile plan. If your phone has no such option, it does not support eSIM and a travel eSIM will not work." },
+      { "q": "Will I keep my normal phone number?", "a": "Yes. The eSIM handles data only, and your usual SIM stays active for calls and texts. That matters if your bank sends verification codes by SMS." },
+      { "q": "Should I install it before or after I fly?", "a": "Before. Installing needs an internet connection, which is exactly what you will not have at arrivals. Install at home on Wi-Fi, then simply switch the line on when you land." },
+      { "q": "Do I need to be online to use it once installed?", "a": "No. Installation needs Wi-Fi, but after that the eSIM connects to the local network by itself as soon as you arrive and switch it on." },
+      { "q": "Does it include calls and texts?", "a": "The plans are data only. You can still call and message over the internet with WhatsApp, Zalo, FaceTime or anything similar, and your home SIM handles normal calls if you leave it switched on." },
+      { "q": "What happens when my data runs out?", "a": "The connection stops rather than rolling into expensive charges. You can top up from the app in a few taps and carry on." },
+      { "q": "Can I use it as a hotspot for my laptop?", "a": "On most phones yes, and it is a common way to work from a café. Check the plan details in the app, as tethering is occasionally restricted by the local network." },
+      { "q": "Can I use one eSIM across several countries?", "a": "Vietnam is the first destination at launch. Regional plans covering several Southeast Asian countries are planned — the app always shows which countries a plan covers before you buy." },
+      { "q": "Can I get a refund if I do not use it?", "a": "Write to us at info@lumifin.io before you install it and we will look at it case by case. Once an eSIM has been installed and activated it generally cannot be refunded, which is standard across eSIM providers." },
+      { "q": "Do I need a Lumi account to buy one?", "a": "Yes. The eSIM is bought from your Lumi balance in the app, so you need an account and a topped-up wallet. Eligibility is the same as for payments: EU and EEA residents with a SEPA bank account." }
+    ],
+    "ctaH": "Land connected",
+    "ctaBody": "Join the waitlist and we will email you as soon as access opens, including the eSIM."
   },
   "privacy": {
     "seo": {
