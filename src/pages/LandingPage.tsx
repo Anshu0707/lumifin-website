@@ -913,7 +913,7 @@ export default function LandingPage() {
               {
                 title: t("services.items.esim.title"),
                 desc: t("services.items.esim.desc"),
-                img: "/assets/regions/traveller-phone.webp",
+                img: "/assets/services/esim.webp",
                 href: "/esim",
                 live: true,
               },
