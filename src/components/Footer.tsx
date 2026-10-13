@@ -40,7 +40,6 @@ export default function Footer() {
           <ul className="space-y-4 text-slate-400 font-medium">
             <li><Link to={withLang('/faq')} className="hover:text-primary transition-colors">{t('footer.faq')}</Link></li>
             <li><Link to={withLang('/eligibility')} className="hover:text-primary transition-colors">{t('footer.eligibility')}</Link></li>
-            <li><Link to="/tools/currency-converter" className="hover:text-primary transition-colors">{t('footer.currencyConverter')}</Link></li>
             <li><Link to={withLang('/security')} className="hover:text-primary transition-colors">{t('footer.security')}</Link></li>
             <li><Link to={withLang('/privacy')} className="hover:text-primary transition-colors">{t('footer.privacyPolicy')}</Link></li>
             <li><Link to={withLang('/account-deletion')} className="hover:text-primary transition-colors">{t('footer.deleteAccount')}</Link></li>

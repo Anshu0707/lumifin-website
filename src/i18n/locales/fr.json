@@ -71,7 +71,6 @@
     "deleteAccount": "Supprimer le compte",
     "mentionsLegales": "Mentions légales",
     "cgu": "CGU",
-    "currencyConverter": "Convertisseur de devises",
     "contact": "Contact",
     "email": "E-mail",
     "whatsapp": "WhatsApp",
@@ -181,10 +180,6 @@
       "payEverywhere": {
         "title": "25 millions de commerçants",
         "desc": "Du restaurant de rue au grand magasin : partout où les locaux paient par QR code, Lumi fonctionne aussi."
-      },
-      "travelNowPayLater": {
-        "title": "Partez maintenant, payez à votre rythme",
-        "desc": "Rechargez votre portefeuille Lumi et étalez le remboursement en plusieurs fois. Pas d'intérêts cachés."
       }
     }
   },
@@ -922,7 +917,7 @@
     },
     "q2": {
       "question": "Dans quels pays puis-je payer avec Lumi ?",
-      "answer": "Vous pouvez payer chez des millions de commerçants en Thaïlande, au Vietnam et en Indonésie — partout où un réseau de paiement QR pris en charge (PromptPay, VietQR ou QRIS) est accepté. D'autres pays d'Asie du Sud-Est arrivent bientôt."
+      "answer": "Lumi se lance au Vietnam, où vous pouvez payer n'importe quel code VietQR — échoppes de rue, cafés, marchés et boutiques. La Thaïlande (PromptPay) et l'Indonésie (QRIS) suivront, puis le reste de l'Asie du Sud-Est."
     },
     "q3": {
       "question": "Comment payer avec Lumi ?",
@@ -2499,6 +2494,7 @@
     "yes": "Oui",
     "no": "Non",
     "partial": "Partiel",
+    "comingSoonValue": "Bientôt",
     "rows": {
       "transactionFee": "Frais de transaction",
       "exchangeRate": "Taux de change",

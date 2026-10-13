@@ -63,7 +63,6 @@ const routes = [
   { path: '/compare', out: 'compare.html' },
   { path: '/mentions-legales', out: 'mentions-legales.html' },
   { path: '/terms', out: 'terms.html' },
-  { path: '/tools/currency-converter', out: 'tools/currency-converter.html' },
 
   // English URLs — same components as above, rendered in English because the
   // /en/ path segment drives language selection (src/i18n/config.ts "path"

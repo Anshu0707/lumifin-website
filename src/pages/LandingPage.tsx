@@ -499,19 +499,6 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-start gap-6">
-                <div className="w-14 h-14 rounded-2xl bg-indigo-50 flex items-center justify-center text-primary shrink-0">
-                  <Calendar className="w-8 h-8" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-slate-900">
-                    {t("mission.features.travelNowPayLater.title")}
-                  </h3>
-                  <p className="text-slate-500 font-medium">
-                    {t("mission.features.travelNowPayLater.desc")}
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>

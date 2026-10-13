@@ -32,9 +32,9 @@ const featureSections: { categoryKey: string; rows: Row[] }[] = [
   {
     categoryKey: 'coverage',
     rows: [
-      { rowKey: 'thailand', lumifin: true, revolut: false, wise: false, bank: false },
+      { rowKey: 'thailand', lumifin: 'comingSoonValue', revolut: false, wise: false, bank: false },
       { rowKey: 'vietnam', lumifin: true, revolut: false, wise: false, bank: false },
-      { rowKey: 'indonesia', lumifin: true, revolut: false, wise: false, bank: false },
+      { rowKey: 'indonesia', lumifin: 'comingSoonValue', revolut: false, wise: false, bank: false },
       { rowKey: 'qrPayments', lumifin: true, revolut: false, wise: false, bank: false },
       { rowKey: 'streetVendor', lumifin: true, revolut: false, wise: false, bank: false },
       { rowKey: 'cardTerminal', lumifin: false, revolut: true, wise: true, bank: true },
@@ -76,7 +76,9 @@ function CellValue({ value, t }: { value: CellVal; t: (k: string) => string }) {
       </span>
     );
   }
-  return <span className="text-sm font-medium text-slate-700">{t(`compare.values.${value}`)}</span>;
+  // "comingSoonValue" lives at compare.comingSoonValue; everything else under compare.values.
+  const key = value === 'comingSoonValue' ? 'compare.comingSoonValue' : `compare.values.${value}`;
+  return <span className="text-sm font-medium text-slate-700">{t(key)}</span>;
 }
 
 export default function ComparePage() {
