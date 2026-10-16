@@ -3,7 +3,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.finxflow.app",
+      "package_name": "com.lumifin.app",
       "sha256_cert_fingerprints": [
         "PLACEHOLDER:USE:PLAY:APP:SIGNING:KEY:SHA256:NOT:UPLOAD:KEY"
       ]
@@ -13,7 +13,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.finxflow.app.qa",
+      "package_name": "com.lumifin.app.qa",
       "sha256_cert_fingerprints": [
         "PLACEHOLDER:USE:PLAY:APP:SIGNING:KEY:SHA256:NOT:UPLOAD:KEY"
       ]
@@ -23,7 +23,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.finxflow.app.dev",
+      "package_name": "com.lumifin.app.dev",
       "sha256_cert_fingerprints": [
         "42:84:0F:C9:02:3E:8A:69:1F:75:48:4A:0A:4A:16:5B:41:07:C7:C4:E2:73:12:31:D0:29:98:7F:74:47:9C:4F"
       ]
