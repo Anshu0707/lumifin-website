@@ -93,22 +93,21 @@
       // allowlisted &scheme= param (see below). No scheme param → prod.
       var SCHEME = 'lumifin';
       // Android package per scheme (found in lumfin_mobile app.config.ts).
-      // finxflow, not lumifin, is CORRECT (confirmed 2026-06-12): the app
-      // was originally named FinxFlow and Android package names are
-      // permanent — only the product name changed to Lumi/Lumifin.
-      // Keyed by scheme so the test-only
-      // &scheme= override targets the matching build's package. The
-      // assetlinks.json SHA-256 (Play App Signing) is still pending — that
-      // gates DIRECT app-open only; this intent:// fallback works without it.
+      // Production is com.lumifin.app (confirmed 2026-10-16 in the app's
+      // build settings and in Play Console). An earlier note here claimed
+      // finxflow was correct for production; that held in June, before the
+      // package was moved to the lumifin namespace. The dev build is still
+      // com.finxflow.app.dev. Keyed by scheme so the test-only &scheme=
+      // override targets the matching build's package.
       var ANDROID_PACKAGES = {
-        lumifin: 'com.finxflow.app',
+        lumifin: 'com.lumifin.app',
         lumiqa: 'com.finxflow.app.qa',
         lumifindev: 'com.finxflow.app.dev'
       };
       // TODO(1.5): real store URLs once the app is published. Empty = no
       // store redirect; the manual button + hint below remain the fallback.
       var STORE_IOS = '';
-      var STORE_ANDROID = '';
+      var STORE_ANDROID = 'https://play.google.com/store/apps/details?id=com.lumifin.app';
 
       /* ── 1. Validate intent against the allowlist (never reflect raw) ─ */
       // v3 — the FROZEN token list from email-deeplink-contract.md §4 (the

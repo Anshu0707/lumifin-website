@@ -95,8 +95,11 @@ try {
   record('c11', 'allowlist v3 served (frozen contract tokens)',
     ['transaction', 'withdraw', 'set-mpin', 'terms'].every((t) => main.body.includes(`'${t}'`)),
     '', false);
-  record('c12', 'ANDROID_PACKAGES map filled (com.finxflow.app)',
-    main.body.includes('com.finxflow.app'));
+  // Checks the production package specifically. "com.finxflow.app" was a
+  // substring of the dev package, so the old assertion passed even after
+  // production moved to the lumifin namespace.
+  record('c12', 'ANDROID_PACKAGES map filled (com.lumifin.app)',
+    main.body.includes('com.lumifin.app'));
 
   // ── assetlinks.json ───────────────────────────────────────────────────────
   const al = await get('/.well-known/assetlinks.json');
