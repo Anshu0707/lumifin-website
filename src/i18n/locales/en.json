@@ -109,14 +109,15 @@
   "waitlist": {
     "eyebrow": "Download Lumi",
     "titleBefore": "Download the app and get",
-    "amount": "€10",
+    "amount": "€5",
     "titleAfter": "",
-    "subtitle": "Lumi is live on Google Play. Download it, top up in euros and pay any VietQR code in Vietnam — no local bank account needed.",
+    "subtitle": "Lumi is live on Google Play. Download it, finish onboarding, then send us a hi on WhatsApp and we will send you a €5 reward for your first trip.",
     "points": [
-      "Top up in euros by SEPA transfer from your own bank.",
-      "Scan the same QR codes locals use, at street stalls and cafés.",
-      "See the exchange rate before you confirm. One flat fee."
+      "Download Lumi from Google Play and create your account.",
+      "Finish onboarding, including identity verification.",
+      "Send us a hi on WhatsApp and we will send your €5 reward."
     ],
+    "whatsappCta": "Say hi on WhatsApp",
     "submitting": "Submitting...",
     "reachOut": "On iPhone? The App Store version is coming soon — write to us at <1>info@lumifin.io</1> and we will tell you the moment it lands."
   },
@@ -135,10 +136,10 @@
     "subtitle": "The QR-payment app for European travellers exploring South East Asia.",
     "viewDemo": "View Demo",
     "joinWaitlist": "Download the app",
-    "earnBadge": "Earn €10*",
+    "earnBadge": "Get €5*",
     "sepaBadge": "For residents with a personal Euro (SEPA) bank account.",
     "checkEligibility": "Check if you're eligible",
-    "creditTerms": "*Terms & conditions apply. €10 credit is subject to eligibility and account verification.",
+    "creditTerms": "*The €5 reward is subject to eligibility, completed onboarding and account verification. One reward per person. Terms and conditions apply.",
     "videoTitle": "Lumi Demo Video",
     "closeVideo": "Close video"
   },
@@ -1892,7 +1893,7 @@
       "gapP2": "Lumi is our answer to that. It is a euro wallet for EU and EEA residents, funded by SEPA transfer from your own bank account, that pays Vietnamese QR codes directly. You scan the same laminated VietQR sheet the person ahead of you in the queue just scanned, confirm with a PIN or your face, and the vendor gets đồng in their account in seconds. No Vietnamese ID, no local bank account, no borrowed MoMo from a friend. One flat 2 percent fee, with the exchange rate shown before you confirm, and payments from €1 upward so a 25,000 đồng iced coffee is a normal thing to pay for.",
       "gapP3": "Lumi is live in Vietnam right now, with Thailand and Indonesia next. Our users in Đà Nẵng and Hội An have been paying for boat rides, café bills and market food with it for months.",
       "gapP4": "None of this makes cards useless. Keep one for hotels, flights and Grab, which take foreign cards without complaint. Keep some cash for the last stall on the street that still prefers it. The point is not to replace your wallet. It is to stop the daily friction where your card and the vendor's rail have no way to meet.",
-      "ctaBody": "Pay like the person in front of you. Download Lumi and get €10 of credit toward your first trip.",
+      "ctaBody": "Pay like the person in front of you. Download Lumi, finish onboarding and say hi on WhatsApp for a €5 reward toward your first trip.",
       "ctaButton": "Download the app",
       "nextH": "What to do next",
       "nextP1": "Before you fly, five minutes of setup saves a week of friction:",

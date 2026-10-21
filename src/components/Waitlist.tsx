@@ -2,8 +2,9 @@ import React from "react";
 import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
-import { Check } from "lucide-react";
 import StoreButtons from "./StoreButtons";
+import WhatsAppIcon from "./WhatsAppIcon";
+import { WHATSAPP_URL } from "../constants/contact";
 import { localizedPath } from "../utils/localizedPath";
 
 /**
@@ -62,22 +63,37 @@ export default function Waitlist() {
             {t("hero.checkEligibility")}
           </Link>
 
-          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+          {/* How to claim the reward: three steps, the last one actionable. */}
+          <ol className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
             {Array.isArray(points) &&
               points.map((p, i) => (
                 <li
                   key={i}
                   className="flex items-start gap-3 rounded-2xl bg-white border border-slate-200 px-5 py-4"
                 >
-                  <span className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Check className="w-3 h-3 text-primary" aria-hidden="true" />
+                  <span className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-primary/10 flex items-center justify-center text-primary text-[11px] font-black">
+                    {i + 1}
                   </span>
                   <span className="text-sm font-medium text-slate-700 leading-relaxed">
                     {p}
                   </span>
                 </li>
               ))}
-          </ul>
+          </ol>
+
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-2xl font-black shadow-xl hover:-translate-y-0.5 hover:shadow-2xl transition-all"
+          >
+            <WhatsAppIcon className="w-6 h-6 shrink-0" />
+            {t("waitlist.whatsappCta")}
+          </a>
+
+          <p className="text-xs text-slate-400 font-medium max-w-xl mx-auto leading-relaxed">
+            {t("hero.creditTerms")}
+          </p>
 
           <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto">
             <Trans

@@ -3,9 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Logo from './Logo';
 import WhatsAppIcon from './WhatsAppIcon';
-
-// wa.me click-to-chat link for the Lumi business WhatsApp number (+91 8920392198).
-const WHATSAPP_URL = 'https://wa.me/918920392198';
+import { WHATSAPP_URL } from '../constants/contact';
 
 export default function Footer() {
   const { t } = useTranslation();

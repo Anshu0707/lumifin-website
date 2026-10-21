@@ -109,14 +109,15 @@
   "waitlist": {
     "eyebrow": "Télécharger Lumi",
     "titleBefore": "Téléchargez l’application et recevez",
-    "amount": "10 €",
+    "amount": "5 €",
     "titleAfter": "",
-    "subtitle": "Lumi est disponible sur Google Play. Téléchargez-la, rechargez en euros et payez n’importe quel code VietQR au Vietnam — sans compte bancaire local.",
+    "subtitle": "Lumi est disponible sur Google Play. Téléchargez-la, terminez votre inscription, puis envoyez-nous un petit bonjour sur WhatsApp : nous vous enverrons 5 € de récompense pour votre premier voyage.",
     "points": [
-      "Rechargez en euros par virement SEPA depuis votre banque.",
-      "Scannez les mêmes codes QR que les habitants, des échoppes aux cafés.",
-      "Voyez le taux de change avant de confirmer. Un frais unique."
+      "Téléchargez Lumi sur Google Play et créez votre compte.",
+      "Terminez votre inscription, vérification d’identité comprise.",
+      "Envoyez-nous un bonjour sur WhatsApp et nous vous enverrons vos 5 €."
     ],
+    "whatsappCta": "Dire bonjour sur WhatsApp",
     "submitting": "Envoi en cours...",
     "reachOut": "Sur iPhone ? La version App Store arrive bientôt — écrivez-nous à <1>info@lumifin.io</1> et nous vous préviendrons dès sa sortie."
   },
@@ -135,10 +136,10 @@
     "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
     "joinWaitlist": "Télécharger l’application",
-    "earnBadge": "Gagnez 10 €*",
+    "earnBadge": "Recevez 5 €*",
     "sepaBadge": "Pour les résidents disposant d'un compte bancaire personnel en euros (SEPA).",
     "checkEligibility": "Vérifiez votre éligibilité",
-    "creditTerms": "*Conditions générales applicables. Le crédit de 10 € est soumis à conditions d'éligibilité et à la vérification du compte.",
+    "creditTerms": "*La récompense de 5 € est soumise aux conditions d’éligibilité, à une inscription terminée et à la vérification du compte. Une récompense par personne. Conditions générales applicables.",
     "videoTitle": "Vidéo de démo Lumi",
     "closeVideo": "Fermer la vidéo"
   },
@@ -1892,7 +1893,7 @@
       "gapP2": "Lumi est notre réponse. C'est un portefeuille en euros pour les résidents de l'UE et de l'EEE, alimenté par virement SEPA depuis votre propre compte bancaire, qui paie directement les codes QR vietnamiens. Vous scannez la même feuille VietQR plastifiée que la personne devant vous dans la file, vous confirmez par code PIN ou reconnaissance faciale, et le commerçant reçoit des đồng sur son compte en quelques secondes. Pas de carte d'identité vietnamienne, pas de compte bancaire local, pas de MoMo emprunté à un ami. Un frais unique et forfaitaire de 2 %, avec le taux de change affiché avant confirmation, et des paiements à partir de 1 € — de sorte qu'un café glacé à 25 000 đồng devient une dépense parfaitement normale.",
       "gapP3": "Lumi est disponible au Vietnam, la Thaïlande et l'Indonésie suivront. Nos utilisateurs à Đà Nẵng et Hội An paient depuis des mois leurs balades en bateau, leurs additions de café et leurs achats au marché avec l'application.",
       "gapP4": "Rien de tout cela ne rend les cartes inutiles. Gardez-en une pour les hôtels, les vols et Grab, qui acceptent les cartes étrangères sans difficulté. Gardez un peu d'espèces pour la dernière échoppe de la rue qui les préfère encore. L'objectif n'est pas de remplacer votre portefeuille. C'est de supprimer la friction quotidienne, là où votre carte et le rail du commerçant n'ont aucun moyen de se rencontrer.",
-      "ctaBody": "Payez comme la personne devant vous. Téléchargez Lumi et recevez 10 € de crédit pour votre premier voyage.",
+      "ctaBody": "Payez comme la personne devant vous. Téléchargez Lumi, terminez votre inscription et dites bonjour sur WhatsApp pour recevoir 5 € pour votre premier voyage.",
       "ctaButton": "Télécharger l’application",
       "nextH": "Que faire maintenant",
       "nextP1": "Avant de décoller, cinq minutes de préparation vous épargnent une semaine de friction :",
