@@ -7,6 +7,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollProgress from './components/ScrollProgress';
+import WhatsAppFloatingButton from './components/WhatsAppFloatingButton';
 import CookieConsent from './components/CookieConsent';
 import LanguageFromUrl from './components/LanguageFromUrl';
 
@@ -132,6 +133,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
+      <WhatsAppFloatingButton />
       <CookieConsent />
     </Router>
   );
