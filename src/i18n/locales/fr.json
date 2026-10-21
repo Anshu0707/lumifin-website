@@ -1,4 +1,10 @@
 {
+  "store": {
+    "getItOn": "Disponible sur",
+    "googlePlay": "Google Play",
+    "comingSoon": "Bientôt sur",
+    "appStore": "App Store"
+  },
   "currencyConverter": {
     "seo": {
       "title": "Convertisseur euro vers devises d'Asie du Sud-Est",
@@ -101,25 +107,18 @@
     "moreFaqs": "Plus de questions"
   },
   "waitlist": {
-    "eyebrow": "Offre exclusive",
-    "titleBefore": "Payez comme un local. Rejoignez la bêta et gagnez",
+    "eyebrow": "Télécharger Lumi",
+    "titleBefore": "Téléchargez l’application et recevez",
     "amount": "10 €",
     "titleAfter": "",
-    "subtitle": "Rejoignez la bêta Lumi dès aujourd'hui et commencez votre prochain voyage avec 10 € offerts.*",
-    "urgencyNote": "Offre à durée limitée — ce crédit de bienvenue peut prendre fin à tout moment.",
-    "success": "Merci de rejoindre la bêta Lumi !",
-    "namePlaceholder": "Votre nom",
-    "countryCodeLabel": "Indicatif du pays",
-    "phonePlaceholder": "Numéro de téléphone",
-    "emailPlaceholder": "Saisissez votre adresse e-mail",
-    "submit": "Rejoindre la bêta",
+    "subtitle": "Lumi est disponible sur Google Play. Téléchargez-la, rechargez en euros et payez n’importe quel code VietQR au Vietnam — sans compte bancaire local.",
+    "points": [
+      "Rechargez en euros par virement SEPA depuis votre banque.",
+      "Scannez les mêmes codes QR que les habitants, des échoppes aux cafés.",
+      "Voyez le taux de change avant de confirmer. Un frais unique."
+    ],
     "submitting": "Envoi en cours...",
-    "error": "Une erreur est survenue. Veuillez réessayer.",
-    "botFieldLabel": "Ne remplissez pas ce champ :",
-    "successTitle": "Vous êtes sur la liste d'attente",
-    "successSubtitle": "Merci pour votre inscription. Nous vous écrirons dès que les accès s'ouvriront.",
-    "successNote": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Surveillez votre boîte mail — nous vous communiquerons les prochaines étapes avant votre départ.",
-    "reachOut": "N'hésitez pas non plus à nous écrire à <1>info@lumifin.io</1> — nous serons ravis de vous aider."
+    "reachOut": "Sur iPhone ? La version App Store arrive bientôt — écrivez-nous à <1>info@lumifin.io</1> et nous vous préviendrons dès sa sortie."
   },
   "landing": {
     "seo": {
@@ -135,7 +134,7 @@
     "h1Keyword": "Payez par QR code en Asie du Sud-Est, sans compte local",
     "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
-    "joinWaitlist": "Rejoindre la bêta",
+    "joinWaitlist": "Télécharger l’application",
     "earnBadge": "Gagnez 10 €*",
     "sepaBadge": "Pour les résidents disposant d'un compte bancaire personnel en euros (SEPA).",
     "checkEligibility": "Vérifiez votre éligibilité",
@@ -146,9 +145,9 @@
   "coverage": {
     "eyebrow": "Réseau régional",
     "title": "10 pays. Une seule app.",
-    "descPrefix": "Disponible au Vietnam dès maintenant (bêta), avec la Thaïlande et l'Indonésie qui arrivent bientôt — et la Malaisie, le Cambodge, les Philippines, le Laos, la Corée du Sud, Taïwan et la Mongolie à venir.",
+    "descPrefix": "Disponible au Vietnam dès maintenant, avec la Thaïlande et l’Indonésie qui arrivent bientôt — et la Malaisie, le Cambodge, les Philippines, le Laos, la Corée du Sud, Taïwan et la Mongolie à venir.",
     "comingSoon": "NOTRE FEUILLE DE ROUTE RÉGIONALE",
-    "liveBadge": "Disponible (bêta)",
+    "liveBadge": "Disponible",
     "comingSoonBadge": "Bientôt disponible",
     "countries": {
       "thailand": "Thaïlande",
@@ -222,10 +221,10 @@
   "demoGallery": {
     "eyebrow": "De vrais paiements, de vrais lieux",
     "title": "Lumi en situation réelle",
-    "subtitle": "De vrais bêta-testeurs utilisent Lumi pour scanner et payer au quotidien partout au Vietnam — sans espèces, sans carte, sans compte bancaire local.",
+    "subtitle": "De vraies personnes qui utilisent Lumi pour scanner et payer au quotidien partout au Vietnam — sans espèces, sans carte, sans compte bancaire local.",
     "items": {
       "boat": "Scan d'un QR code VietQR pour payer sur l'eau — Hội An",
-      "cafe1": "Rencontre de bêta-testeurs à Đà Nẵng",
+      "cafe1": "Des utilisateurs Lumi réunis à Đà Nẵng",
       "video1": "Ouverture de Lumi sur l'eau — Hội An",
       "video2": "Scan du QR code VietQR d'un vendeur de rue pour payer",
       "video3": "Règlement d'une addition (430 000 ₫) par QR code",
@@ -311,16 +310,16 @@
   },
   "stories": {
     "eyebrow": "Expériences vérifiées",
-    "title": "Témoignages de bêta-testeurs",
+    "title": "Témoignages de voyageurs",
     "items": {
       "maryem": {
         "name": "Maryem",
-        "role": "Bêta-testeuse Lumi",
+        "role": "Utilisatrice Lumi",
         "text": "J'utilise Lumi régulièrement et c'est honnêtement une super expérience. Ça a complètement changé ma façon de payer au Vietnam. Avant, je transportais des liasses de liquide partout, même pour de petits achats. Maintenant, je paie simplement par QR code, et chaque paiement a parfaitement fonctionné chez tous les commerçants que j'ai visités."
       },
       "brice": {
         "name": "Brice",
-        "role": "Bêta-testeur Lumi",
+        "role": "Utilisateur Lumi",
         "text": "L'une de mes plus grandes peurs en voyage était de perdre mon passeport et mon portefeuille. Depuis que j'utilise Lumi, je laisse mon portefeuille à la maison et je ne prends que mon téléphone. Ça me rassure énormément !"
       }
     }
@@ -499,8 +498,8 @@
     "requirementsH": "Il vous faudra aussi",
     "requirements": ["Vous avez au moins 18 ans.", "Vous détenez un compte bancaire de la zone SEPA à votre nom.", "Vous pouvez réaliser la vérification d'identité, exigée par la réglementation financière.", "Vous disposez d'un appareil iOS ou Android compatible et à jour."],
     "ctaH": "Prêt quand vous l’êtes",
-    "ctaBody": "Nous ouvrons les accès progressivement, en commençant par le Vietnam. Rejoignez la liste d’attente et nous vous recontacterons.",
-    "ctaButton": "Rejoindre la liste d’attente",
+    "ctaBody": "Lumi est disponible sur Google Play et se déploie en Asie du Sud-Est, en commençant par le Vietnam.",
+    "ctaButton": "Télécharger l’application",
     "legalNote": "Résumé de nos <1>Conditions Générales d’Utilisation</1>. Pour en savoir plus sur l’inscription, la vérification et le rechargement, consultez la <2>FAQ</2>.",
     "countryNames": {
       "AT": "Autriche",
@@ -596,7 +595,7 @@
       { "q": "Faut-il un compte Lumi pour en acheter une ?", "a": "Oui. L'eSIM s'achète depuis votre solde Lumi dans l'application : il vous faut donc un compte et un portefeuille approvisionné. Les conditions d'éligibilité sont les mêmes que pour les paiements : résidents de l'UE et de l'EEE disposant d'un compte bancaire SEPA." }
     ],
     "ctaH": "Atterrissez connecté",
-    "ctaBody": "Rejoignez la liste d'attente et nous vous écrirons dès l'ouverture des accès, eSIM comprise."
+    "ctaBody": "Téléchargez Lumi et nous vous préviendrons dès que l’eSIM sera disponible."
   },
   "privacy": {
     "seo": {
@@ -1250,7 +1249,7 @@
         { "option": "Monzo", "bestFor": "Voyageurs britanniques", "watchOut": "Plafonds de retrait DAB hors EEE", "qr": "Pas de VietQR natif", "verdict": "Meilleure option pour le Royaume-Uni" },
         { "option": "Carte bancaire classique (UE)", "bestFor": "Secours et urgences", "watchOut": "Marges de change, frais DAB et blocages", "qr": "Pas de VietQR natif", "verdict": "À garder en secours" },
         { "option": "Espèces", "bestFor": "Étals de rue, zones rurales, urgences", "watchOut": "Frais de DAB/change et risque lié au transport", "qr": "Sans objet", "verdict": "Toujours nécessaires" },
-        { "option": "Lumi", "bestFor": "Payer par QR local depuis un compte européen", "watchOut": "Disponibilité en bêta au Vietnam", "qr": "Oui — conçu pour ce manque", "verdict": "Le meilleur pont QR une fois disponible" }
+        { "option": "Lumi", "bestFor": "Payer par QR local depuis un compte européen", "watchOut": "Vietnam uniquement pour l’instant", "qr": "Oui — conçu pour ce manque", "verdict": "Le meilleur pont QR une fois disponible" }
       ],
       "howPayH": "Comment on paie vraiment au Vietnam",
       "howPayP1": "Le Vietnam n'est pas un marché « tout carte » comme beaucoup d'Européens l'imaginent. Dans les hôtels, les centres commerciaux, les aéroports, les restaurants touristiques et les grandes enseignes, Visa et Mastercard sont généralement utiles. Mais pour les petits cafés, la street food, les boutiques locales, les taxis, les marchands de marché et les services informels, vous verrez souvent un QR code sur le comptoir avant un terminal de carte.",
@@ -1304,7 +1303,7 @@
       "missingP1": "C'est ici que le conseil habituel sur « la meilleure carte de voyage » s'effondre. La meilleure carte pour le Vietnam peut quand même échouer au moment précis où vous voulez de la simplicité : un QR code dans un café, un comptoir de street food, une petite boutique ou un prestataire qui ne veut pas s'embêter avec les rails de la carte.",
       "missingP2": "Quelques options QR à destination des touristes émergent. Par exemple, le portail touristique de Da Nang décrit un parcours VNPAY pour les visiteurs internationaux qui utilise un numéro de téléphone international, les données du passeport et une carte Visa, Mastercard ou JCB liée. C'est utile comme direction, mais la leçon plus large est simple : le Vietnam évolue vers le QR, et les voyageurs ont besoin d'outils de paiement qui s'adaptent au parcours local plutôt que de ramener chaque achat vers la carte et les espèces. [9]",
       "lumifinH": "Là où Lumi intervient",
-      "lumifinP1": "Lumi ne cherche pas à remplacer votre carte de voyage. Il est conçu pour combler le manque du QR : aider les Européens à payer comme les locaux au Vietnam via les paiements par QR locaux, sans avoir besoin d'un compte bancaire vietnamien. Pour la bêta, la combinaison la plus simple reste : gardez votre carte de voyage, ayez un peu d'espèces, et utilisez Lumi quand le QR local est la meilleure façon de payer.",
+      "lumifinP1": "Lumi ne cherche pas à remplacer votre carte de voyage. Il est conçu pour combler le manque du QR : aider les Européens à payer comme les locaux au Vietnam via les paiements par QR locaux, sans avoir besoin d'un compte bancaire vietnamien. Pour l’instant, la combinaison la plus simple reste : gardez votre carte de voyage, ayez un peu d'espèces, et utilisez Lumi quand le QR local est la meilleure façon de payer.",
       "first24H": "La meilleure configuration de paiement pour vos premières 24 heures au Vietnam",
       "first24List": [
         { "bold": "Avant l'atterrissage :", "rest": " ajoutez Wise / Revolut / N26 / Monzo à votre portefeuille mobile si vous en utilisez un, et emportez aussi une carte physique." },
@@ -1513,11 +1512,11 @@
       "dateLabel": "10 juillet 2026",
       "imgAlt": "Le pont du Dragon illuminé au crépuscule au-dessus de la rivière Han à Da Nang, au Vietnam.",
       "dateline": "Da Nang, Vietnam — 10 juillet 2026.",
-      "leadP": "Lumi, une fintech française qui construit un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est, a choisi Da Nang comme communauté de lancement pour son déploiement régional. Nous avons dévoilé cette décision lors d'un atelier « Founding Ambassadors » dans la ville le 10 juillet, invitant les travailleurs à distance internationaux de Da Nang à devenir nos premiers ambassadeurs et bêta-testeurs.",
+      "leadP": "Lumi, une fintech française qui construit un portefeuille en euros pour les voyageurs européens à travers l'Asie du Sud-Est, a choisi Da Nang comme communauté de lancement pour son déploiement régional. Nous avons dévoilé cette décision lors d'un atelier « Founding Ambassadors » dans la ville le 10 juillet, invitant les travailleurs à distance internationaux de Da Nang à devenir nos premiers ambassadeurs et testeurs.",
       "leadP2": "Le calendrier n'est pas un hasard. Notre annonce intervient alors que Da Nang accueille sa Semaine des affaires, de la finance et de la technologie (7–12 juillet 2026), un rassemblement à l'échelle de la ville réunissant décideurs, investisseurs et leaders de la fintech, avec pour point d'orgue le premier Vietnam Finance Forum les 9 et 10 juillet. Cette semaine rappelle à quel point Da Nang devient rapidement le centre émergent du Vietnam pour l'innovation et la finance internationale.",
       "problemH": "Le problème que rencontre chaque visiteur",
       "problemP1": "Si vous avez passé un peu de temps au Vietnam, vous connaissez déjà la friction. Les locaux paient presque tout — un café, un bol de phở, un taxi — en scannant un code VietQR directement depuis leur appli bancaire. Les étrangers ne le peuvent pas : ces codes QR nécessitent un compte bancaire vietnamien.",
-      "problemP2": "Lumi comble ce manque. Vous rechargez un portefeuille en euros et payez n'importe quel code QR local exactement comme un résident — un scan, en quelques secondes, sans compte bancaire local et sans course aux espèces. Développée par notre équipe d'ingénierie en Inde, l'application est en bêta et déjà utilisée quotidiennement par l'équipe Lumi partout au Vietnam.",
+      "problemP2": "Lumi comble ce manque. Vous rechargez un portefeuille en euros et payez n'importe quel code QR local exactement comme un résident — un scan, en quelques secondes, sans compte bancaire local et sans course aux espèces. Développée par notre équipe d'ingénierie en Inde, l'application est disponible et déjà utilisée quotidiennement par l'équipe Lumi partout au Vietnam.",
       "whyH": "Pourquoi Da Nang, précisément",
       "whyP1": "L'attrait de Da Nang va plus loin que le calendrier. En janvier 2026, le Vietnam a inauguré le Da Nang International Financial Center, désignant la ville comme le pôle financier du pays axé sur l'innovation, avec un mandat explicite autour des paiements numériques, de la fintech et d'un bac à sable réglementaire pour de nouveaux modèles financiers.",
       "whyP2": "Dans le même temps, Da Nang est devenue l'une des bases les plus prisées d'Asie du Sud-Est pour les nomades numériques et les travailleurs à distance internationaux — séduits par ses plages, son faible coût de la vie, sa connectivité rapide et une scène étonnamment active de rencontres et d'espaces de coworking. Pour nous, la combinaison est rare : une ville dont l'ambition publique et les résidents du quotidien pointent tous deux précisément vers le type de produit que nous construisons.",
@@ -1530,11 +1529,11 @@
       "quote2": "Payer un stand de street-food ou un café de quartier devrait être identique pour un visiteur et pour un local : un scan, et c'est fait. C'est ce moment du quotidien que nous perfectionnons ici, aux côtés de ceux qui l'utiliseront le plus.",
       "quote2By": "Pierre Lahbabi",
       "nextH": "La suite",
-      "nextP1": "Lumi prévoit d'apporter la même expérience de QR local à ses autres marchés prioritaires de la région — la Thaïlande (PromptPay) et l'Indonésie (QRIS) — à mesure qu'elle passe de la bêta vers un lancement complet.",
+      "nextP1": "Lumi prévoit d'apporter la même expérience de QR local à ses autres marchés prioritaires de la région — la Thaïlande (PromptPay) et l'Indonésie (QRIS) — à mesure qu'elle s'étend vers un lancement régional complet.",
       "quote3": "Les paiements transfrontaliers en Asie du Sud-Est constituent un marché vaste et mal desservi, et Lumi l'aborde par le bon bout — la friction quotidienne que ressent chaque voyageur. Baser le lancement à Da Nang, au moment où la ville s'affirme comme un pôle d'innovation des paiements numériques, est un choix fin et délibéré, et exactement le genre d'équipe et de timing à soutenir.",
       "quote3By": "Robert Brice Cerival, conseiller principal de Lumi au Vietnam",
       "aboutH": "À propos de Lumi",
-      "aboutP": "Lumi est une fintech française qui construit un portefeuille en euros permettant aux voyageurs européens de payer par code QR local à travers l'Asie du Sud-Est (VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie) aussi facilement que les résidents. Fondée près de Paris et actuellement en bêta, Lumi a été cofondée par le CEO Pierre Lahbabi, diplômé de l'École Polytechnique et de Mines Paris, spécialiste des paiements avec une carrière couvrant la banque et le conseil en technologie. Le cofondateur et COO Gaurav Bansal apporte plus de quinze ans d'expérience dans le produit fintech et le conseil en technologie, avec des postes chez Sopra Steria, Capgemini et le prêteur fintech Biz2Credit, et détient un master en finance du National Institute of Securities Markets en Inde. En savoir plus sur lumifin.io.",
+      "aboutP": "Lumi est une fintech française qui construit un portefeuille en euros permettant aux voyageurs européens de payer par code QR local à travers l'Asie du Sud-Est (VietQR au Vietnam, PromptPay en Thaïlande et QRIS en Indonésie) aussi facilement que les résidents. Fondée près de Paris, Lumi a été cofondée par le CEO Pierre Lahbabi, diplômé de l'École Polytechnique et de Mines Paris, spécialiste des paiements avec une carrière couvrant la banque et le conseil en technologie. Le cofondateur et COO Gaurav Bansal apporte plus de quinze ans d'expérience dans le produit fintech et le conseil en technologie, avec des postes chez Sopra Steria, Capgemini et le prêteur fintech Biz2Credit, et détient un master en finance du National Institute of Securities Markets en Inde. En savoir plus sur lumifin.io.",
       "contactH": "Contact presse",
       "contacts": [
         { "name": "Thiofanty", "detail": "thiofanty@lumifin.io · +33 7 44 87 31 56 · lumifin.io" },
@@ -1813,14 +1812,14 @@
       "frictionP3": "Une habitude à emprunter aux habitants, quelle que soit l'application utilisée : après avoir scanné un code, vérifiez le nom du bénéficiaire qui s'affiche avant de confirmer. Les faux autocollants QR collés par-dessus les vrais sont l'arnaque la plus courante, et ce simple coup d'œil suffit à déjouer la plupart d'entre elles.",
       "worksH": "Ce qui fonctionne vraiment pour un séjour de deux semaines",
       "worksP1": "Ne luttez pas contre le système conçu pour les résidents. Tournez-vous vers les briques pensées pour quelqu'un dans votre situation : un visiteur, pas un résident.",
-      "worksP2": "Toute la friction remonte à une seule chose : MoMo, ZaloPay et VNPay ont été bâtis autour d'une identité et d'un compte bancaire vietnamiens. Pas VietQR. Parce que la norme est ouverte, elle acceptera un scan de n'importe quelle application qui la parle — et c'est par cette porte qu'un portefeuille européen peut entrer. C'est l'écart que Lumifin comble : vous alimentez votre compte en euros depuis votre banque européenne, et l'application paie directement ces mêmes codes VietQR — le réseau même qui se cache derrière l'autocollant du chariot à café — sans carte SIM locale, sans compte bancaire local et sans obstacle biométrique. Le taux euro-dong s'affiche avant confirmation, et Lumifin applique un frais unique et forfaitaire (2 %) plutôt que les surcharges de carte et les marges des comptoirs d'aéroport qui coûtent discrètement plus cher. L'application est actuellement en bêta au Vietnam : bon à savoir avant d'en faire votre seul moyen de paiement.",
+      "worksP2": "Toute la friction remonte à une seule chose : MoMo, ZaloPay et VNPay ont été bâtis autour d'une identité et d'un compte bancaire vietnamiens. Pas VietQR. Parce que la norme est ouverte, elle acceptera un scan de n'importe quelle application qui la parle — et c'est par cette porte qu'un portefeuille européen peut entrer. C'est l'écart que Lumifin comble : vous alimentez votre compte en euros depuis votre banque européenne, et l'application paie directement ces mêmes codes VietQR — le réseau même qui se cache derrière l'autocollant du chariot à café — sans carte SIM locale, sans compte bancaire local et sans obstacle biométrique. Le taux euro-dong s'affiche avant confirmation, et Lumifin applique un frais unique et forfaitaire (2 %) plutôt que les surcharges de carte et les marges des comptoirs d'aéroport qui coûtent discrètement plus cher. L'application est disponible au Vietnam et se déploie progressivement : bon à savoir avant d'en faire votre seul moyen de paiement.",
       "worksP3": "Quel que soit le portefeuille que vous emportez, gardez deux compagnons. Grab — l'application de course et de livraison que vous utiliserez de toute façon — dispose de son propre portefeuille intégré (Moca) et accepte les cartes internationales : les trajets et une bonne partie des repas sont donc déjà couverts. Et conservez une réserve d'espèces raisonnable : un bánh mì coûte environ 25 000 VND (0,85 €), un bol de phở près de 60 000 VND (2 €), et les plus petits chariots acceptent encore volontiers les billets quand un scan ne passe pas. (Si vous préférez emprunter directement les rails locaux, l'application voyageur VNPAY permet aussi de s'inscrire avec un passeport et une carte internationale.)",
       "worksP4": "Cette combinaison — un portefeuille alimenté en euros qui parle VietQR, Grab et un peu d'espèces — couvre aussi bien un rooftop du District 1 qu'un café de plage à An Bang près de Hoi An, ou le chariot à café de Ben Thanh par lequel tout a commencé.",
       "calloutEyebrow": "De la part de Lumifin",
       "calloutBody": "Pensé exactement pour ce voyage : Lumifin paie les codes VietQR du Vietnam directement depuis un solde en euros — taux interbancaire affiché d'emblée, un frais unique, sans carte SIM ni compte bancaire local.",
-      "calloutCta": "Essayer la bêta Vietnam",
+      "calloutCta": "Télécharger l’application",
       "nextH": "Que faire maintenant",
-      "nextP1": "Avant de décoller : configurez un portefeuille alimenté en euros qui fonctionne sur les rails QR du Vietnam — la bêta Vietnam de Lumifin est conçue exactement pour cela — et téléchargez Grab. À l'arrivée, alimentez votre compte, faites un petit paiement test dans une supérette, et gardez environ 500 000 VND (près de 17 €) en espèces pour les échoppes qui les préfèrent encore. Faites cela dans votre première heure sur place, et le carré QR posé sur le comptoir cesse d'être un mur : il devient simplement votre façon de payer.",
+      "nextP1": "Avant de décoller : configurez un portefeuille alimenté en euros qui fonctionne sur les rails QR du Vietnam — Lumifin est conçu exactement pour cela — et téléchargez Grab. À l'arrivée, alimentez votre compte, faites un petit paiement test dans une supérette, et gardez environ 500 000 VND (près de 17 €) en espèces pour les échoppes qui les préfèrent encore. Faites cela dans votre première heure sur place, et le carré QR posé sur le comptoir cesse d'être un mur : il devient simplement votre façon de payer.",
       "sourcesH": "Sources",
       "sources": [
         { "n": "1.", "label": "Valeur des paiements sans espèces en 2025, près de 28 fois le PIB — Vietnam+ (données de la Banque d'État du Vietnam)", "url": "https://en.vietnamplus.vn/2025-cashless-payment-value-nearly-28-times-gdp-post337178.vnp" },
@@ -1891,10 +1890,10 @@
       "gapH": "L'écart que nous avons créé Lumi pour combler",
       "gapP1": "Tout ce qui précède décrit un fait structurel : le Vietnam a bâti un excellent système de paiement et en a fermé la porte aux visiteurs — non par hostilité, mais parce que les règles d'identité sont le prix d'une fraude faible.",
       "gapP2": "Lumi est notre réponse. C'est un portefeuille en euros pour les résidents de l'UE et de l'EEE, alimenté par virement SEPA depuis votre propre compte bancaire, qui paie directement les codes QR vietnamiens. Vous scannez la même feuille VietQR plastifiée que la personne devant vous dans la file, vous confirmez par code PIN ou reconnaissance faciale, et le commerçant reçoit des đồng sur son compte en quelques secondes. Pas de carte d'identité vietnamienne, pas de compte bancaire local, pas de MoMo emprunté à un ami. Un frais unique et forfaitaire de 2 %, avec le taux de change affiché avant confirmation, et des paiements à partir de 1 € — de sorte qu'un café glacé à 25 000 đồng devient une dépense parfaitement normale.",
-      "gapP3": "Lumi est actuellement en bêta au Vietnam, la Thaïlande et l'Indonésie suivront. Nos bêta-testeurs à Đà Nẵng et Hội An paient depuis des mois leurs balades en bateau, leurs additions de café et leurs achats au marché avec l'application.",
+      "gapP3": "Lumi est disponible au Vietnam, la Thaïlande et l'Indonésie suivront. Nos utilisateurs à Đà Nẵng et Hội An paient depuis des mois leurs balades en bateau, leurs additions de café et leurs achats au marché avec l'application.",
       "gapP4": "Rien de tout cela ne rend les cartes inutiles. Gardez-en une pour les hôtels, les vols et Grab, qui acceptent les cartes étrangères sans difficulté. Gardez un peu d'espèces pour la dernière échoppe de la rue qui les préfère encore. L'objectif n'est pas de remplacer votre portefeuille. C'est de supprimer la friction quotidienne, là où votre carte et le rail du commerçant n'ont aucun moyen de se rencontrer.",
-      "ctaBody": "Payez comme la personne devant vous. Rejoignez la bêta Lumi et recevez 10 € de crédit pour votre premier voyage.",
-      "ctaButton": "Rejoindre la bêta Lumi",
+      "ctaBody": "Payez comme la personne devant vous. Téléchargez Lumi et recevez 10 € de crédit pour votre premier voyage.",
+      "ctaButton": "Télécharger l’application",
       "nextH": "Que faire maintenant",
       "nextP1": "Avant de décoller, cinq minutes de préparation vous épargnent une semaine de friction :",
       "nextList": [
@@ -1994,7 +1993,7 @@
       "beforeClose": "Puis atterrissez, avancez vers le premier chariot venu et dites xin chào. Le reste se met en place plus vite que vous ne le croyez.",
       "calloutEyebrow": "De la part de Lumifin",
       "calloutBody": "Le numéro onze est l'expression à laquelle nous pensons le plus. Lumifin permet aux voyageurs européens de payer les codes QR du Vietnam depuis un solde en euros — sans compte bancaire vietnamien, pour que « chuyển khoản được không ? » puisse enfin déboucher sur un paiement.",
-      "calloutCta": "Rejoindre la liste d'attente"
+      "calloutCta": "Télécharger l’application"
     },
     "oneMillionDongDaNang": {
       "seo": {
@@ -2099,7 +2098,7 @@
       "verdictP5": "Si vous voulez la version à retenir : la chambre représente environ 40 % de la journée, la nourriture environ 15 %, et tout le reste est du bruit. Réussissez la chambre et il devient presque difficile de trop dépenser à Da Nang.",
       "calloutEyebrow": "De la part de Lumifin",
       "calloutBody": "Une journée comme celle-ci repose sur de petits paiements fréquents — et la plupart passent désormais par des codes QR. Lumifin permet aux voyageurs européens de payer les codes VietQR du Vietnam depuis un solde en euros, pour ne pas financer la journée en frais de distributeur.",
-      "calloutCta": "Rejoindre la liste d'attente"
+      "calloutCta": "Télécharger l’application"
     },
     "aseanQrCrossBorder": {
       "seo": {
@@ -2173,7 +2172,7 @@
       "nexusP5": "Il est utile de lire tout cela comme un premier chapitre plutôt que comme un système achevé. Ce qui existe aujourd'hui, ce sont quelques ponts bilatéraux transportant de faibles montants. Ce qu'ils démontrent importe davantage que ce qu'ils transportent : les systèmes de paiement locaux ont gagné chez eux, les voyageurs veulent continuer à les utiliser à l'étranger, et la pièce manquante est la connectivité entre eux. Le système de paiement instantané européen est lui aussi l'un de ces systèmes locaux.",
       "calloutEyebrow": "En attendant",
       "calloutBody": "Lumi est un portefeuille en euros qui paie dès aujourd'hui les codes QR vietnamiens, la Thaïlande et l'Indonésie suivront — pour que vous puissiez scanner le même autocollant que tout le monde dans la file.",
-      "calloutCta": "Rejoindre la bêta",
+      "calloutCta": "Télécharger l’application",
       "nextH": "Que faire maintenant",
       "nextP1": "Si vous voyagez dans les 90 prochains jours, trois conclusions s'imposent :",
       "nextItems": [
@@ -2284,7 +2283,7 @@
   "travelMoney": {
     "common": {
       "lastUpdated": "Dernière mise à jour : juillet 2026",
-      "joinWaitlist": "Rejoindre la bêta",
+      "joinWaitlist": "Télécharger l’application",
       "readGuide": "Lire le guide",
       "backToDestinations": "Toutes les destinations",
       "backToHome": "Accueil",
@@ -2383,7 +2382,7 @@
         "q5": { "q": "Comment Lumi fonctionne en Thaïlande ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez votre portefeuille depuis votre compte bancaire européen. Puis scannez n'importe quel QR PromptPay pour payer instantanément en bahts — à des taux bien meilleurs que les cartes ou bureaux de change." }
       },
       "ctaTitle": "Prêt à payer comme un local en Thaïlande ?",
-      "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Téléchargez Lumi et soyez prêt pour des voyages sans frais dès l’ouverture de ce marché."
     },
     "vietnam": {
       "title": "Payer au Vietnam en tant que voyageur européen",
@@ -2426,7 +2425,7 @@
         "q5": { "q": "Comment Lumi fonctionne au Vietnam ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR VietQR pour payer instantanément en dongs — à des taux proches de l'interbancaire. Pas de comptage de billets, pas de chasse au DAB, pas de confusion sur les coupures." }
       },
       "ctaTitle": "Payez comme un local au Vietnam, dès aujourd'hui.",
-      "ctaSubtitle": "Lumi est disponible au Vietnam (bêta). Rejoignez la bêta et payez comme un local dès maintenant."
+      "ctaSubtitle": "Lumi est disponible au Vietnam. Téléchargez l’application et payez comme un local dès maintenant."
     },
     "indonesia": {
       "title": "Payer en Indonésie en tant que voyageur européen",
@@ -2469,7 +2468,7 @@
         "q5": { "q": "Comment Lumi fonctionne en Indonésie ?", "a": "Téléchargez l'app, vérifiez votre identité, et rechargez depuis votre banque européenne. Scannez n'importe quel QR QRIS pour payer instantanément en roupies — à des taux proches de l'interbancaire. Marche dans n'importe lequel des 56+ millions de commerçants QRIS de l'archipel." }
       },
       "ctaTitle": "Prêt à payer comme un local en Indonésie ?",
-      "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans frais."
+      "ctaSubtitle": "Téléchargez Lumi et soyez prêt pour des voyages sans frais dès l’ouverture de ce marché."
     }
   },
   "compare": {
@@ -2538,8 +2537,8 @@
     "bottomLineP1": "Revolut et Wise sont excellents pour les pays avec une large acceptation de la carte — Europe, États-Unis, Australie. Mais en Thaïlande, au Vietnam et en Indonésie, la majorité du commerce quotidien se passe dans des endroits sans TPE. Vendeurs de street food, chauffeurs de tuk-tuk, marchés locaux, petits cafés — c'est là que vous voulez vraiment dépenser, et aucun n'accepte votre carte Revolut.",
     "bottomLineP2": "Lumi est conçu spécifiquement pour ce besoin. Au lieu d'essayer de forcer une carte dans une économie cashless, QR-first, nous vous connectons directement aux rails de paiement locaux — PromptPay, VietQR, QRIS — utilisés par des millions de locaux chaque jour. Vous pouvez payer là où ils paient, à des taux comparables aux meilleures fintechs, sans porter de cash ni espérer un TPE.",
     "ctaTitle": "Prêt à essayer la façon plus intelligente de payer en Asie du Sud-Est ?",
-    "ctaSubtitle": "Rejoignez la bêta Lumi et soyez parmi les premiers à voyager sans friction de paiement.",
-    "ctaButton": "Rejoindre la bêta"
+    "ctaSubtitle": "Téléchargez Lumi et voyagez sans friction de paiement.",
+    "ctaButton": "Télécharger l’application"
   },
   "notFound": {
     "title": "Page introuvable",
@@ -2567,93 +2566,5 @@
       "role": "Associée du fondateur, Lumi",
       "bio": "Thiofanty travaille sur le produit et la croissance chez Lumi, en se concentrant sur la façon dont les voyageurs européens paient réellement sur le terrain en Asie du Sud-Est. Elle rédige des guides pratiques pour aider les visiteurs à éviter les frais cachés et à payer comme les locaux."
     }
-  },
-  "beta": {
-    "seo": {
-      "title": "Rejoignez la Beta Lumi — Testez l'appli avant tout le monde",
-      "description": "Aidez-nous à construire Lumi. Nous cherchons des Européens déjà au Vietnam, ou en partance dans les prochains mois, pour tester notre appli de paiement QR — accès anticipé plus 10 € de crédit.*"
-    },
-    "eyebrow": "Programme Beta · Lancement au Vietnam",
-    "title": "Aidez-nous à construire Lumi — testez l'appli avant tout le monde.",
-    "intro": {
-      "what": "Lumi vous permet de scanner les QR codes locaux (VietQR) et de payer comme un local au Vietnam — sans cash, sans surcharges de carte, juste des frais de change minimes. Nous lançons d'abord au Vietnam.",
-      "testing": "Nous cherchons des Européens déjà au Vietnam, ou qui y voyagent dans les prochains mois. En tant que beta testeur, vous utiliserez l'appli pour de vrais paiements, remonterez les bugs, et nous direz ce qui cloche. En échange : un accès anticipé avant le lancement public, 10 € de crédit dans l'appli, et une ligne directe avec les fondateurs.",
-      "commitment": "Nous visons un petit groupe de testeurs sérieux, pas des chasseurs de cadeaux. Comptez ~15 minutes par semaine pour partager vos retours pendant votre voyage. Le programme dure environ 6 semaines."
-    },
-    "requiredHint": "Champ requis",
-    "sections": {
-      "contact": "1. Coordonnées",
-      "eligibility": "2. Éligibilité",
-      "device": "3. Votre téléphone",
-      "about": "4. À propos de vous",
-      "consent": "5. Consentement"
-    },
-    "fields": {
-      "fullName": "Nom complet",
-      "fullNamePlaceholder": "Jean Dupont",
-      "email": "Adresse e-mail",
-      "emailPlaceholder": "vous@exemple.com",
-      "whatsapp": "Numéro WhatsApp / téléphone",
-      "whatsappPlaceholder": "+33 6 12 34 56 78",
-      "whatsappHint": "Nous gérons les groupes beta sur WhatsApp — c'est notre canal le plus rapide pour vous joindre.",
-      "country": "Pays de résidence",
-      "countryPlaceholder": "Sélectionnez votre pays",
-      "nationality": "Nationalité (facultatif)",
-      "nationalityPlaceholder": "ex. française, allemande, néerlandaise",
-      "sepa": {
-        "label": "Avez-vous un compte bancaire personnel dans l'UE/EEE (zone SEPA) ?",
-        "hint": "Lumi ne fonctionne actuellement qu'avec les comptes de la zone SEPA.",
-        "yes": "Oui",
-        "no": "Non"
-      },
-      "vietnamStatus": {
-        "label": "Quand serez-vous au Vietnam ?",
-        "live": "Je vis au Vietnam",
-        "now": "Je suis au Vietnam en ce moment",
-        "soon": "Dans les 1 à 3 prochains mois",
-        "later": "Plus tard, ou pas de projet ferme"
-      },
-      "phoneOs": {
-        "label": "Système d'exploitation du téléphone"
-      },
-      "appStoreEmail": {
-        "label": "Identifiant Apple (e-mail iCloud)",
-        "hint": "Nécessaire pour vous ajouter au build beta TestFlight. Utilisateurs Android : indiquez plutôt votre e-mail de compte Google.",
-        "placeholder": "vous@icloud.com"
-      },
-      "discovered": {
-        "label": "Comment nous avez-vous découverts ?",
-        "placeholder": "Sélectionnez une option",
-        "whatsappGroup": "Groupe WhatsApp",
-        "friend": "Ami / bouche à oreille",
-        "expatGroup": "Groupe d'expatriés français",
-        "googleSearch": "Recherche Google",
-        "other": "Autre"
-      },
-      "discoveredGroup": {
-        "label": "Quel groupe ou page ? (facultatif)",
-        "placeholder": "ex. groupe Facebook « Français au Vietnam »"
-      },
-      "usedQr": {
-        "label": "Avez-vous déjà utilisé des applis de paiement par QR (MoMo, PromptPay, Alipay, WeChat Pay) ?",
-        "yes": "Oui",
-        "no": "Non"
-      },
-      "commit": {
-        "label": "Pouvez-vous vous engager à donner du feedback pendant votre voyage (~15 min/semaine) ?",
-        "yes": "Oui",
-        "maybe": "Peut-être"
-      },
-      "consentRequired": "J'accepte d'être contacté(e) au sujet du programme beta Lumi, et j'ai lu la",
-      "consentMarketing": "Envoyez-moi aussi les actualités produit Lumi et la newsletter de la bêta (facultatif)."
-    },
-    "privacyLinkLabel": "Politique de confidentialité",
-    "submit": "Envoyer ma candidature",
-    "submitting": "Envoi en cours…",
-    "success": {
-      "title": "Merci — c'est bien reçu.",
-      "body": "Nous lisons chaque candidature personnellement. Si vous correspondez à cette cohorte beta, nous vous recontacterons par WhatsApp ou e-mail sous quelques jours."
-    },
-    "error": "Un problème est survenu lors de l'envoi du formulaire. Réessayez, ou envoyez un e-mail directement à beta@lumifin.io."
   }
 }

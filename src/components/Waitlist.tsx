@@ -1,60 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "motion/react";
 import { Trans, useTranslation } from "react-i18next";
-import { Check, Clock } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { SEPA_COUNTRIES } from "../constants/sepaCountries";
+import { Check } from "lucide-react";
+import StoreButtons from "./StoreButtons";
 import { localizedPath } from "../utils/localizedPath";
 
+/**
+ * Download section. Keeps id="waitlist" so the many existing /#waitlist
+ * links across the site, in published blog posts and in sent emails keep
+ * landing here.
+ */
 export default function Waitlist() {
-  const location = useLocation();
-  const [name, setName] = useState("");
-  const [dialCode, setDialCode] = useState("+33");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const { t } = useTranslation();
+  const location = useLocation();
 
-  // On localhost there is no Netlify form handler, so the POST can't succeed.
-  // Let local previews still reach the download screen; the live site stays strict.
-  const isLocalhost =
-    typeof window !== "undefined" &&
-    /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("submitting");
-
-    try {
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams({
-          "form-name": "waitlist",
-          name,
-          phone: `${dialCode} ${phone}`.trim(),
-          email,
-        }).toString(),
-      });
-
-      if (response.ok || isLocalhost) {
-        setStatus("success");
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus(isLocalhost ? "success" : "error");
-    }
-  };
+  const points = t("waitlist.points", { returnObjects: true }) as unknown as string[];
 
   return (
     <section
       id="waitlist"
-      className="py-32 bg-indigo-50/50 reveal active overflow-hidden relative"
+      className="py-32 px-8 bg-gradient-to-b from-white to-slate-50 reveal"
     >
-      <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
-      <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
-      <div className="max-w-4xl mx-auto px-8 relative z-10 text-center">
+      <div className="max-w-3xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,6 +33,7 @@ export default function Waitlist() {
           <span className="text-primary font-bold text-xs tracking-widest uppercase">
             {t("waitlist.eyebrow")}
           </span>
+
           <h2 className="text-6xl font-black tracking-tighter text-slate-900 leading-[0.9]">
             {t("waitlist.titleBefore")}{" "}
             <span className="text-primary italic tracking-normal mr-2">
@@ -72,124 +41,57 @@ export default function Waitlist() {
             </span>
             <span className="tracking-normal">{t("waitlist.titleAfter")}</span>
           </h2>
+
           <p className="text-xl text-slate-500 font-medium leading-relaxed">
             {t("waitlist.subtitle")}
           </p>
-          <div className="inline-flex items-center gap-2 bg-amber-50 border border-amber-200 text-amber-700 text-sm font-bold px-4 py-2 rounded-full">
-            <Clock className="w-4 h-4" aria-hidden="true" />
-            {t("waitlist.urgencyNote")}
-          </div>
-          <div className="flex flex-col items-center justify-center gap-3">
-            <div className="flex items-center justify-center gap-2 text-slate-500">
-              <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">€</span>
-              <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
-            </div>
-            <Link
-              to={localizedPath("/eligibility", location.pathname)}
-              className="text-sm font-bold text-primary hover:underline underline-offset-4"
-            >
-              {t("hero.checkEligibility")}
-            </Link>
+
+          <StoreButtons className="pt-2" />
+
+          <div className="flex items-center justify-center gap-2 text-slate-500">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/10 text-primary font-black text-sm">
+              €
+            </span>
+            <span className="text-sm font-medium">{t("hero.sepaBadge")}</span>
           </div>
 
-          {status === "success" ? (
-            <div className="mt-12 space-y-8">
-              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-                <Check className="w-10 h-10 text-primary" aria-hidden="true" />
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-3xl font-black text-slate-900">{t("waitlist.successTitle")}</h3>
-                <p className="text-lg text-slate-500 font-medium max-w-xl mx-auto">
-                  {t("waitlist.successSubtitle")}
-                </p>
-              </div>
-              <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto bg-white/60 border border-slate-200 rounded-2xl px-6 py-4">
-                {t("waitlist.successNote")}
-              </p>
-              <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto">
-                <Trans
-                  i18nKey="waitlist.reachOut"
-                  components={{
-                    1: <a href="mailto:info@lumifin.io" className="text-primary font-bold hover:underline" />,
-                  }}
-                />
-              </p>
-            </div>
-          ) : (
-            <form
-              name="waitlist"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
-              className="flex flex-col gap-4 max-w-xl mx-auto mt-12"
-            >
-              <input type="hidden" name="form-name" value="waitlist" />
-              <p className="hidden">
-                <label>
-                  {t("waitlist.botFieldLabel")} <input name="bot-field" />
-                </label>
-              </p>
-              <input
-                type="text"
-                name="name"
-                placeholder={t("waitlist.namePlaceholder")}
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
-              />
-              <div className="flex gap-3">
-                <select
-                  aria-label={t("waitlist.countryCodeLabel")}
-                  value={dialCode}
-                  onChange={(e) => setDialCode(e.target.value)}
-                  className="w-32 shrink-0 px-4 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
+          <Link
+            to={localizedPath("/eligibility", location.pathname)}
+            className="inline-block text-sm font-bold text-primary hover:underline underline-offset-4"
+          >
+            {t("hero.checkEligibility")}
+          </Link>
+
+          <ul className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 text-left">
+            {Array.isArray(points) &&
+              points.map((p, i) => (
+                <li
+                  key={i}
+                  className="flex items-start gap-3 rounded-2xl bg-white border border-slate-200 px-5 py-4"
                 >
-                  {SEPA_COUNTRIES.map((c) => (
-                    <option key={c.code} value={c.dial}>
-                      {c.code} {c.dial}
-                    </option>
-                  ))}
-                </select>
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder={t("waitlist.phonePlaceholder")}
-                  value={phone}
-                  onChange={(e) => setPhone(e.target.value)}
-                  required
-                  className="flex-1 min-w-0 px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
-                />
-              </div>
-              <input
-                type="email"
-                name="email"
-                placeholder={t("waitlist.emailPlaceholder")}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="w-full px-8 py-5 rounded-2xl bg-white border border-slate-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all font-medium text-lg"
-              />
-              <button
-                type="submit"
-                disabled={status === "submitting"}
-                className="hero-gradient text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all disabled:opacity-70"
-              >
-                {status === "submitting" ? t("waitlist.submitting") : t("waitlist.submit")}
-              </button>
-              {status === "error" && (
-                <p className="text-red-500 font-medium text-sm">
-                  {t("waitlist.error")}
-                </p>
-              )}
-            </form>
-          )}
-          {status !== "success" && (
-            <p className="text-xs text-slate-400 font-medium max-w-2xl mx-auto pt-2">
-              {t("hero.creditTerms")}
-            </p>
-          )}
+                  <span className="mt-0.5 w-5 h-5 shrink-0 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Check className="w-3 h-3 text-primary" aria-hidden="true" />
+                  </span>
+                  <span className="text-sm font-medium text-slate-700 leading-relaxed">
+                    {p}
+                  </span>
+                </li>
+              ))}
+          </ul>
+
+          <p className="text-sm text-slate-500 font-medium max-w-xl mx-auto">
+            <Trans
+              i18nKey="waitlist.reachOut"
+              components={{
+                1: (
+                  <a
+                    href="mailto:info@lumifin.io"
+                    className="text-primary font-bold hover:underline"
+                  />
+                ),
+              }}
+            />
+          </p>
         </motion.div>
       </div>
     </section>
