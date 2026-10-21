@@ -896,12 +896,12 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-            {[
+            {([
               {
                 title: t("services.items.esim.title"),
                 desc: t("services.items.esim.desc"),
                 img: "/assets/services/esim.webp",
-                href: "/esim",
+                // Not linked for now: the eSIM page is turned off until pricing is final.
                 live: true,
               },
               {
@@ -914,7 +914,7 @@ export default function LandingPage() {
                 desc: t("services.items.restaurants.desc"),
                 img: "/assets/places/Restaurant.webp",
               },
-            ].map((service, i) => {
+            ] as { title: string; desc: string; img: string; href?: string; live?: boolean }[]).map((service, i) => {
               const inner = (
                 <>
                   <img
