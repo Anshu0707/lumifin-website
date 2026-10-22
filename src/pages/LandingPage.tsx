@@ -25,6 +25,7 @@ import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
 import SEO, { organizationSchema, websiteSchema, softwareApplicationSchema } from "../components/SEO";
 import { localizedPath } from "../utils/localizedPath";
+import CoverageMap from "../components/CoverageMap";
 
 /**
  * A muted, looping demo video that auto-plays only while it is on screen and
@@ -279,135 +280,9 @@ export default function LandingPage() {
             </p>
           </div>
         </div>
-        {/* One continuous moving line of every market. Three copies make the loop
-            seamless; the duplicates are hidden from assistive tech and keyboard focus. */}
-        <div className="marquee-pause overflow-hidden -mx-8 px-8 py-6">
-          <div className="flex w-max gap-6 animate-scroll-slow">
-          {[0, 1, 2].map((copy) =>
-          [
-            {
-              name: t("coverage.countries.vietnam"),
-              network: "VietQR",
-              img: "/assets/regions/vietnam.webp",
-              href: "/travel-money/vietnam",
-              live: true,
-            },
-            {
-              name: t("coverage.countries.thailand"),
-              network: "PromptPay",
-              img: "/assets/regions/thailand.webp",
-              offset: true,
-              href: "/travel-money/thailand",
-            },
-            {
-              name: t("coverage.countries.indonesia"),
-              network: "QRIS",
-              img: "/assets/regions/indonesia.webp",
-              href: "/travel-money/indonesia",
-            },
-            {
-              name: t("coverage.countries.malaysia"),
-              network: "DuitNow",
-              img: "/assets/regions/malaysia.webp",
-              offset: true,
-            },
-            {
-              name: t("coverage.countries.cambodia"),
-              network: "KHQR",
-              img: "/assets/regions/cambodia.webp",
-            },
-            {
-              name: t("coverage.countries.philippines"),
-              network: "InstaPay",
-              img: "/assets/regions/philippines.webp",
-              offset: true,
-            },
-            // Earlier-stage markets: pictured, but no payment network confirmed yet.
-            {
-              name: t("coverage.countries.laos"),
-              network: "Lao QR",
-              img: "/assets/regions/laos.webp",
-            },
-            {
-              name: t("coverage.countries.mongolia"),
-              img: "/assets/regions/mongolia.webp",
-              offset: true,
-            },
-            {
-              name: t("coverage.countries.southKorea"),
-              img: "/assets/regions/south-korea.webp",
-            },
-            {
-              name: t("coverage.countries.taiwan"),
-              img: "/assets/regions/taiwan.webp",
-              offset: true,
-            },
-          ].map((country, i) => {
-            const isLive = country.live === true;
-            const cardInner = (
-              <>
-                {country.img ? (
-                  <img
-                    alt={`Paying like a local in ${country.name} with ${country.network} QR payments`}
-                    width={512}
-                    height={512}
-                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
-                      isLive ? "" : "grayscale group-hover:grayscale-0"
-                    }`}
-                    src={country.img}
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="absolute inset-0 hero-gradient" aria-hidden="true"></div>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
-                {/* Status badge: Live (beta) for Vietnam, Coming soon for the rest */}
-                <div className="absolute top-5 left-5">
-                  {isLive ? (
-                    <span className="inline-flex items-center gap-1.5 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
-                      {t("coverage.liveBadge")}
-                    </span>
-                  ) : (
-                    <span className="inline-flex items-center bg-white/85 text-slate-600 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full">
-                      {t("coverage.comingSoonBadge")}
-                    </span>
-                  )}
-                </div>
-                <div className="absolute bottom-6 left-6 right-6 text-white">
-                  {country.network && (
-                    <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
-                      {country.network}
-                    </p>
-                  )}
-                  <h3 className="text-2xl font-black">{country.name}</h3>
-                </div>
-              </>
-            );
-            const cardClass = `group relative shrink-0 w-[260px] overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${
-              country.offset ? "lg:mt-12" : ""
-            } ${isLive ? "ring-4 ring-primary ring-offset-4 ring-offset-white" : "opacity-80 hover:opacity-100"}`;
-            const isDupe = copy > 0;
-            return country.href ? (
-              <Link
-                key={`${copy}-${i}`}
-                to={localizedPath(country.href, location.pathname)}
-                className={cardClass}
-                aria-label={country.name}
-                aria-hidden={isDupe || undefined}
-                tabIndex={isDupe ? -1 : undefined}
-              >
-                {cardInner}
-              </Link>
-            ) : (
-              <div key={`${copy}-${i}`} className={cardClass} aria-hidden={isDupe || undefined}>
-                {cardInner}
-              </div>
-            );
-          })
-          )}
-          </div>
-        </div>
+        {/* The ten markets as a map rather than a moving row of photos: it shows
+            where they are relative to each other, which a carousel cannot. */}
+        <CoverageMap />
       </section>
 
       {/* Logo Marquee Section */}
