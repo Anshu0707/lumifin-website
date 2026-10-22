@@ -943,10 +943,12 @@ export default function LandingPage() {
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent"></div>
+                  {/* Quiet marker, not the filled primary pill with the
+                      pulsing dot — that is the site's "live now" language and
+                      says the opposite of what this means. */}
                   {service.live && (
                     <div className="absolute top-8 left-8">
-                      <span className="inline-flex items-center gap-2 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-full shadow-lg">
-                        <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+                      <span className="inline-flex items-center bg-white/10 backdrop-blur-sm text-white/75 border border-white/20 text-[10px] font-black uppercase tracking-widest px-3.5 py-1.5 rounded-full">
                         {t("services.availableBadge")}
                       </span>
                     </div>
