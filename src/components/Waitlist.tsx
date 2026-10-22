@@ -39,6 +39,8 @@ export default function Waitlist() {
             {t("waitlist.titleBefore")}{" "}
             <span className="text-primary italic tracking-normal mr-2">
               {t("waitlist.amount")}
+              {/* Anchors the hero.creditTerms footnote printed below. */}
+              <sup className="text-3xl align-super not-italic">*</sup>
             </span>
             <span className="tracking-normal">{t("waitlist.titleAfter")}</span>
           </h2>
