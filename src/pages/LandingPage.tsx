@@ -25,7 +25,6 @@ import FAQSection from "../components/FAQSection";
 import Waitlist from "../components/Waitlist";
 import SEO, { organizationSchema, websiteSchema, softwareApplicationSchema } from "../components/SEO";
 import { localizedPath } from "../utils/localizedPath";
-import CoverageMap from "../components/CoverageMap";
 
 /**
  * A muted, looping demo video that auto-plays only while it is on screen and
@@ -68,6 +67,113 @@ function AutoplayVideo({ src, poster, caption }: { src: string; poster: string; 
       <source src={src} type="video/mp4" />
       {caption}
     </video>
+  );
+}
+
+interface Market {
+  key: string;
+  network?: string;
+  img: string;
+  href?: string;
+  live?: boolean;
+  offset?: boolean;
+}
+
+/** The ten markets, in roadmap order. Vietnam is the only one live. */
+const MARKETS: Market[] = [
+  { key: "vietnam", network: "VietQR", img: "/assets/regions/vietnam.webp", href: "/travel-money/vietnam", live: true },
+  { key: "thailand", network: "PromptPay", img: "/assets/regions/thailand.webp", href: "/travel-money/thailand", offset: true },
+  { key: "indonesia", network: "QRIS", img: "/assets/regions/indonesia.webp", href: "/travel-money/indonesia" },
+  { key: "malaysia", network: "DuitNow", img: "/assets/regions/malaysia.webp", offset: true },
+  { key: "cambodia", network: "KHQR", img: "/assets/regions/cambodia.webp" },
+  { key: "philippines", network: "InstaPay", img: "/assets/regions/philippines.webp", offset: true },
+  // Earlier-stage markets: pictured, but no payment network confirmed yet.
+  { key: "laos", network: "Lao QR", img: "/assets/regions/laos.webp" },
+  { key: "mongolia", img: "/assets/regions/mongolia.webp", offset: true },
+  { key: "southKorea", img: "/assets/regions/south-korea.webp" },
+  { key: "taiwan", img: "/assets/regions/taiwan.webp", offset: true },
+];
+
+/**
+ * One market card. `dupe` marks the repeated copies that make the marquee
+ * loop seamlessly — they are hidden from assistive tech and keyboard focus so
+ * the same country is not announced three times.
+ */
+function CountryCard({
+  country,
+  dupe = false,
+  stagger = true,
+}: {
+  country: Market;
+  dupe?: boolean;
+  stagger?: boolean;
+}) {
+  const { t } = useTranslation();
+  const location = useLocation();
+  const isLive = country.live === true;
+  const name = t(`coverage.countries.${country.key}`);
+
+  const inner = (
+    <>
+      <img
+        alt={`Paying like a local in ${name}${country.network ? ` with ${country.network} QR payments` : ""}`}
+        width={512}
+        height={512}
+        className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
+          isLive ? "" : "grayscale group-hover:grayscale-0"
+        }`}
+        src={country.img}
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+      {/* Status badge: Live for Vietnam, Coming soon for the rest */}
+      <div className="absolute top-5 left-5">
+        {isLive ? (
+          <span className="inline-flex items-center gap-1.5 bg-primary text-white text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg">
+            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+            {t("coverage.liveBadge")}
+          </span>
+        ) : (
+          <span className="inline-flex items-center bg-white/85 text-slate-600 text-[10px] font-black uppercase tracking-widest px-3 py-1.5 rounded-full">
+            {t("coverage.comingSoonBadge")}
+          </span>
+        )}
+      </div>
+      <div className="absolute bottom-6 left-6 right-6 text-white">
+        {country.network && (
+          <p className="text-[10px] font-black uppercase tracking-widest opacity-70 mb-1">
+            {country.network}
+          </p>
+        )}
+        <h3 className="text-2xl font-black">{name}</h3>
+      </div>
+    </>
+  );
+
+  // Live keeps the brand ring; the markets still in preparation get a light
+  // green one, so the two states are told apart by colour as well as badge.
+  const cls = `group relative shrink-0 w-[260px] overflow-hidden rounded-[2.5rem] h-[400px] shadow-xl hover:shadow-2xl transition-all cursor-pointer block ${
+    stagger && country.offset ? "lg:mt-12" : ""
+  } ${
+    isLive
+      ? "ring-4 ring-primary ring-offset-4 ring-offset-white"
+      : "ring-4 ring-[#86efac] ring-offset-4 ring-offset-white opacity-80 hover:opacity-100"
+  }`;
+
+  return country.href ? (
+    <Link
+      to={localizedPath(country.href, location.pathname)}
+      className={cls}
+      aria-label={name}
+      aria-hidden={dupe || undefined}
+      tabIndex={dupe ? -1 : undefined}
+    >
+      {inner}
+    </Link>
+  ) : (
+    <div className={cls} aria-hidden={dupe || undefined}>
+      {inner}
+    </div>
   );
 }
 
@@ -280,9 +386,30 @@ export default function LandingPage() {
             </p>
           </div>
         </div>
-        {/* The ten markets as a map rather than a moving row of photos: it shows
-            where they are relative to each other, which a carousel cannot. */}
-        <CoverageMap />
+        {/* Vietnam is live, so its card sits still while the markets still in
+            preparation scroll past it. Three copies make the loop seamless;
+            the duplicates are hidden from assistive tech and keyboard focus. */}
+        <div className="flex flex-col lg:flex-row lg:items-start gap-6 py-6">
+          <div className="shrink-0 self-center lg:self-start">
+            <CountryCard country={MARKETS[0]} stagger={false} />
+          </div>
+
+          {/* Fade the leading edge: without it a card is sliced in half right
+              against Vietnam's card as it scrolls out. */}
+          <div className="marquee-pause overflow-hidden w-full lg:flex-1 -mr-8 pr-8 [mask-image:linear-gradient(to_right,transparent_0,black_64px)]">
+            <div className="flex w-max gap-6 animate-scroll-slow">
+              {[0, 1, 2].map((copy) =>
+                MARKETS.slice(1).map((country, i) => (
+                  // Keyed wrapper: without @types/react, key on a custom
+                  // component trips TS2322 under React 19.
+                  <div key={`${copy}-${i}`} className="shrink-0">
+                    <CountryCard country={country} dupe={copy > 0} />
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Logo Marquee Section */}
