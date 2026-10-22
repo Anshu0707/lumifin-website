@@ -124,7 +124,7 @@
   "landing": {
     "seo": {
       "title": "Lumi — Pay Like a Local in Southeast Asia",
-      "description": "Travel to Thailand, Vietnam and Indonesia without cash or card fees. Scan local QR codes and pay instantly with Lumi. Zero hidden fees."
+      "description": "Pay by QR code in Vietnam like a local, straight from your euro account. Thailand and Indonesia coming soon. One flat 2% fee, no hidden charges."
     }
   },
   "hero": {
@@ -133,7 +133,7 @@
     "titleLine1": "Pay Like a",
     "titleLine2": "Local",
     "h1Keyword": "Pay by QR code across Southeast Asia, no local account needed",
-    "subtitle": "The QR-payment app for European travellers exploring South East Asia.",
+    "subtitle": "The QR-payment app for European travellers: pay by QR code in Vietnam, and soon across South East Asia.",
     "viewDemo": "View Demo",
     "joinWaitlist": "Download the app",
     "earnBadge": "Get €5*",
@@ -150,6 +150,20 @@
     "comingSoon": "OUR REGIONAL ROADMAP",
     "liveBadge": "Live now",
     "comingSoonBadge": "Coming soon",
+    "imgAlt": "Paying like a local {{where}} with {{network}}",
+    "imgAltNoNetwork": "Paying like a local {{where}}",
+    "inCountry": {
+      "vietnam": "in Vietnam",
+      "thailand": "in Thailand",
+      "indonesia": "in Indonesia",
+      "malaysia": "in Malaysia",
+      "cambodia": "in Cambodia",
+      "philippines": "in the Philippines",
+      "laos": "in Laos",
+      "mongolia": "in Mongolia",
+      "southKorea": "in South Korea",
+      "taiwan": "in Taiwan"
+    },
     "countries": {
       "thailand": "Thailand",
       "indonesia": "Indonesia",
@@ -245,7 +259,8 @@
     "table": {
       "provider": "Provider",
       "feeStructure": "Fee Structure + Possible Surcharging",
-      "totalCost": "Total Cost to Customer",
+      "totalCost": "Total Cost to You",
+    "footnote": "Assumptions: €1,000 total spend in Southeast Asia. ATM withdrawal: 4 withdrawals of €250 (€7.50 + 3% each). Card payment: roughly 170 payments of €6 (€0.20 + 3% each). Dynamic currency conversion (DCC): the card fees above plus an 8% FX margin applied by the terminal. Airport exchange: a 10% spread on the rate. Lumi: one flat 2% fee at close to the interbank rate. Fees are indicative and vary by bank.",
       "lumi": "Lumi",
       "lumiFee": "2% fee",
       "lumiTotal": "€1,020",
@@ -266,7 +281,7 @@
           "total": "€1,064"
         },
         "cardFx": {
-          "name": "Card with currency conversion",
+          "name": "Card payment with dynamic currency conversion (DCC)",
           "fee": "8% on top",
           "total": "€1,144"
         }

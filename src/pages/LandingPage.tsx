@@ -112,11 +112,18 @@ function CountryCard({
   const location = useLocation();
   const isLive = country.live === true;
   const name = t(`coverage.countries.${country.key}`);
+  // French needs au/en/aux/à per country, so the prepositional phrase is a
+  // translated string rather than something built from the country name.
+  const where = t(`coverage.inCountry.${country.key}`);
 
   const inner = (
     <>
       <img
-        alt={`Paying like a local in ${name}${country.network ? ` with ${country.network} QR payments` : ""}`}
+        alt={
+          country.network
+            ? t("coverage.imgAlt", { where, network: country.network })
+            : t("coverage.imgAltNoNetwork", { where })
+        }
         width={512}
         height={512}
         className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 group-hover:scale-110 ${
@@ -319,7 +326,10 @@ export default function LandingPage() {
             {t("hero.badge")}
           </span>
           <h1 className="text-7xl md:text-[110px] font-black text-white text-editorial leading-[0.85] mb-10 tracking-tighter">
-            <span className="sr-only">{t("hero.h1Keyword")}</span>
+            {/* Trailing full stop and space: without them the keyword runs
+                straight into the visible title in the accessible name and in
+                anything reading the h1 as text. */}
+            <span className="sr-only">{t("hero.h1Keyword")}. </span>
             <span aria-hidden="true">
               {t("hero.titleLine1")} <br />
               <span className="text-primary-fixed italic">{t("hero.titleLine2")}</span>.
@@ -859,6 +869,11 @@ export default function LandingPage() {
           </table>
         </div>
 
+        {/* How each row's total is worked out. */}
+        <p className="mt-6 max-w-4xl mx-auto text-xs text-slate-400 font-normal leading-relaxed">
+          {t("fees.table.footnote")}
+        </p>
+
         {/* Pricing FAQ */}
         <div className="mt-16 space-y-6">
           <h3 className="text-2xl font-black text-slate-900 text-center">{t("fees.faqTitle")}</h3>
@@ -910,11 +925,13 @@ export default function LandingPage() {
                 title: t("services.items.tours.title"),
                 desc: t("services.items.tours.desc"),
                 img: "/assets/places/Daily Tours.webp",
+                live: true,
               },
               {
                 title: t("services.items.restaurants.title"),
                 desc: t("services.items.restaurants.desc"),
                 img: "/assets/places/Restaurant.webp",
+                live: true,
               },
             ] as { title: string; desc: string; img: string; href?: string; live?: boolean }[]).map((service, i) => {
               const inner = (

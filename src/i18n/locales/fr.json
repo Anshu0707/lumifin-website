@@ -124,16 +124,16 @@
   "landing": {
     "seo": {
       "title": "Lumi — Payez comme un local en Asie du Sud-Est",
-      "description": "Voyagez en Thaïlande, au Vietnam et en Indonésie sans frais d'espèces ni de carte. Scannez les QR codes locaux et payez instantanément avec Lumi. Zéro frais cachés."
+      "description": "Payez par QR code au Vietnam comme un local, depuis votre compte en euros. Thaïlande et Indonésie bientôt. Un frais unique de 2 %, zéro frais cachés."
     }
   },
   "hero": {
     "imgAlt": "Vue aérienne d'une côte d'Asie du Sud-Est au coucher du soleil",
-    "badge": "Le paiement voyage, réinventé",
+    "badge": "Payer en voyage, réinventé",
     "titleLine1": "Payez comme un",
-    "titleLine2": "Local",
+    "titleLine2": "local",
     "h1Keyword": "Payez par QR code en Asie du Sud-Est, sans compte local",
-    "subtitle": "Voyageurs européens : payez partout en Asie du Sud-Est grâce à votre téléphone. Simple, instantané, sans frais cachés.",
+    "subtitle": "Voyageurs européens : payez par QR code au Vietnam, et bientôt dans toute l’Asie du Sud-Est, grâce à votre téléphone. Simple, instantané, sans frais cachés.",
     "viewDemo": "Découvrir Lumi",
     "joinWaitlist": "Télécharger l’application",
     "earnBadge": "Recevez 5 €*",
@@ -150,6 +150,20 @@
     "comingSoon": "NOTRE FEUILLE DE ROUTE RÉGIONALE",
     "liveBadge": "Disponible",
     "comingSoonBadge": "Bientôt disponible",
+    "imgAlt": "Payer comme un local {{where}} avec {{network}}",
+    "imgAltNoNetwork": "Payer comme un local {{where}}",
+    "inCountry": {
+      "vietnam": "au Vietnam",
+      "thailand": "en Thaïlande",
+      "indonesia": "en Indonésie",
+      "malaysia": "en Malaisie",
+      "cambodia": "au Cambodge",
+      "philippines": "aux Philippines",
+      "laos": "au Laos",
+      "mongolia": "en Mongolie",
+      "southKorea": "en Corée du Sud",
+      "taiwan": "à Taïwan"
+    },
     "countries": {
       "thailand": "Thaïlande",
       "indonesia": "Indonésie",
@@ -166,8 +180,8 @@
   "mission": {
     "imgAlt": "Marché de nuit animé en Asie du Sud-Est",
     "eyebrow": "Notre mission",
-    "title": "Vos voyages ne devraient pas vous coûter plus cher.",
-    "body": "Un constat simple : quand vous voyagez en Asie du Sud-Est, vous payez trop cher. Taux de change défavorables, commissions bancaires, frais de retrait... Pourtant, les locaux paient en un instant avec leur téléphone — via QR code, sans frais. Lumi vous donne accès à ce même réseau.",
+    "title": "Payer à l’étranger ne devrait pas vous coûter plus cher.",
+    "body": "Un constat simple : quand vous voyagez en Asie du Sud-Est, vous payez trop de frais. Taux de change défavorables, commissions bancaires, frais de retrait... Pourtant, les locaux paient en un instant avec leur téléphone — via QR code, sans frais. Lumi vous donne accès à ce même réseau.",
     "features": {
       "phoneWallet": {
         "title": "Tout est dans votre téléphone",
@@ -245,7 +259,8 @@
     "table": {
       "provider": "Fournisseur",
       "feeStructure": "Structure des frais + surcharges éventuelles",
-      "totalCost": "Coût total pour le client",
+      "totalCost": "Coût total pour vous",
+    "footnote": "Hypothèses : dépense totale de 1 000 € en Asie du Sud-Est. Retrait DAB : 4 retraits de 250 € (7,50 € + 3 % chacun). Paiement par carte : environ 170 paiements de 6 € (0,20 € + 3 % chacun). Conversion dynamique (DCC) : frais carte ci-dessus + 8 % de marge de change appliquée par le terminal. Change à l’aéroport : écart de 10 % sur le taux. Lumi : frais unique de 2 %, taux proche de l’interbancaire. Frais indicatifs, variables selon votre banque.",
       "lumi": "Lumi",
       "lumiFee": "2 % de frais",
       "lumiTotal": "1 020 €",
@@ -266,7 +281,7 @@
           "total": "1 064 €"
         },
         "cardFx": {
-          "name": "Carte avec conversion de devise",
+          "name": "Paiement par carte avec conversion dynamique (DCC)",
           "fee": "8 % supplémentaires",
           "total": "1 144 €"
         }
