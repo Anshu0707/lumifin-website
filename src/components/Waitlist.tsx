@@ -44,7 +44,7 @@ export default function Waitlist() {
                 outside the italic span and given its own left margin: the
                 slanted euro glyph overhangs to the right and otherwise
                 collides with the upright asterisk. */}
-            <sup className="text-primary text-3xl align-super leading-none ml-2 mr-2">
+            <sup className="text-primary text-xl align-super leading-none ml-2 mr-2">
               *
             </sup>
             <span className="tracking-normal">{t("waitlist.titleAfter")}</span>
