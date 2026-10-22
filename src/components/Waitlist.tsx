@@ -37,11 +37,16 @@ export default function Waitlist() {
 
           <h2 className="text-6xl font-black tracking-tighter text-slate-900 leading-[0.9]">
             {t("waitlist.titleBefore")}{" "}
-            <span className="text-primary italic tracking-normal mr-2">
+            <span className="text-primary italic tracking-normal">
               {t("waitlist.amount")}
-              {/* Anchors the hero.creditTerms footnote printed below. */}
-              <sup className="text-3xl align-super not-italic">*</sup>
             </span>
+            {/* Anchors the hero.creditTerms footnote printed below. Kept
+                outside the italic span and given its own left margin: the
+                slanted euro glyph overhangs to the right and otherwise
+                collides with the upright asterisk. */}
+            <sup className="text-primary text-3xl align-super leading-none ml-2 mr-2">
+              *
+            </sup>
             <span className="tracking-normal">{t("waitlist.titleAfter")}</span>
           </h2>
 
