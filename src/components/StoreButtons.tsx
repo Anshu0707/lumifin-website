@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 export const PLAY_STORE_URL =
   'https://play.google.com/store/apps/details?id=com.lumifin.app';
 
+export const APP_STORE_URL = 'https://apps.apple.com/app/id6771697087';
+
 /** Apple logo. lucide-react's "Apple" is a piece of fruit, not the brand mark. */
 function AppleGlyph({ className = 'w-7 h-7' }: { className?: string }) {
   return (
@@ -26,11 +28,7 @@ function PlayGlyph({ className = 'w-7 h-7' }: { className?: string }) {
 }
 
 /**
- * The two app store buttons.
- *
- * Android links to the live Play listing. iOS is not published yet, so it
- * renders as a disabled button that says so rather than a link that goes
- * nowhere.
+ * The two app store buttons. Both listings are live.
  */
 export default function StoreButtons({
   className = '',
@@ -62,18 +60,20 @@ export default function StoreButtons({
         </span>
       </a>
 
-      <span
-        aria-disabled="true"
-        className="inline-flex items-center justify-center gap-3 bg-slate-100 text-slate-400 px-7 py-4 rounded-2xl border border-slate-200 cursor-default select-none"
+      <a
+        href={APP_STORE_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center justify-center gap-3 bg-slate-900 text-white px-7 py-4 rounded-2xl shadow-xl hover:-translate-y-0.5 hover:shadow-2xl transition-all"
       >
         <AppleGlyph className="w-7 h-7 shrink-0" />
         <span className="text-left leading-tight">
-          <span className="block text-[10px] font-bold uppercase tracking-widest text-slate-400">
-            {t('store.comingSoon')}
+          <span className="block text-[10px] font-bold uppercase tracking-widest text-white/60">
+            {t('store.downloadOn')}
           </span>
           <span className="block text-lg font-black">{t('store.appStore')}</span>
         </span>
-      </span>
+      </a>
     </div>
   );
 }

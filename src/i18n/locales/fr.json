@@ -2,7 +2,7 @@
   "store": {
     "getItOn": "Disponible sur",
     "googlePlay": "Google Play",
-    "comingSoon": "Bientôt sur",
+    "downloadOn": "Télécharger dans l’",
     "appStore": "App Store"
   },
   "currencyConverter": {
@@ -111,15 +111,15 @@
     "titleBefore": "Téléchargez l’application et recevez",
     "amount": "5 €",
     "titleAfter": "",
-    "subtitle": "Lumi est disponible sur Google Play. Téléchargez-la, terminez votre inscription, puis envoyez-nous un petit bonjour sur WhatsApp : nous vous répondrons avec un code promo de 5 € pour votre premier voyage.",
+    "subtitle": "Lumi est disponible sur l’App Store et Google Play. Téléchargez-la, terminez votre inscription, puis envoyez-nous un petit bonjour sur WhatsApp : nous vous répondrons avec un code promo de 5 € pour votre premier voyage.",
     "points": [
-      "Téléchargez Lumi sur Google Play et créez votre compte.",
+      "Téléchargez Lumi sur l’App Store ou Google Play et créez votre compte.",
       "Terminez votre inscription, vérification d’identité comprise.",
       "Envoyez-nous un bonjour sur WhatsApp et nous vous répondrons avec votre code promo de 5 €."
     ],
     "whatsappCta": "Dire bonjour sur WhatsApp",
     "submitting": "Envoi en cours...",
-    "reachOut": "Sur iPhone ? La version App Store arrive bientôt — écrivez-nous à <1>info@lumifin.io</1> et nous vous préviendrons dès sa sortie."
+    "reachOut": "Des questions avant de télécharger ? Écrivez-nous à <1>info@lumifin.io</1> et une vraie personne vous répondra."
   },
   "landing": {
     "seo": {
@@ -499,7 +499,7 @@
     "requirementsH": "Il vous faudra aussi",
     "requirements": ["Vous avez au moins 18 ans.", "Vous détenez un compte bancaire de la zone SEPA à votre nom.", "Vous pouvez réaliser la vérification d'identité, exigée par la réglementation financière.", "Vous disposez d'un appareil iOS ou Android compatible et à jour."],
     "ctaH": "Prêt quand vous l’êtes",
-    "ctaBody": "Lumi est disponible sur Google Play et se déploie en Asie du Sud-Est, en commençant par le Vietnam.",
+    "ctaBody": "Lumi est disponible sur l’App Store et Google Play, et se déploie en Asie du Sud-Est, en commençant par le Vietnam.",
     "ctaButton": "Télécharger l’application",
     "legalNote": "Résumé de nos <1>Conditions Générales d’Utilisation</1>. Pour en savoir plus sur l’inscription, la vérification et le rechargement, consultez la <2>FAQ</2>.",
     "countryNames": {

@@ -2,7 +2,7 @@
   "store": {
     "getItOn": "Get it on",
     "googlePlay": "Google Play",
-    "comingSoon": "Coming soon to",
+    "downloadOn": "Download on the",
     "appStore": "App Store"
   },
   "currencyConverter": {
@@ -111,15 +111,15 @@
     "titleBefore": "Download the app and get",
     "amount": "€5",
     "titleAfter": "",
-    "subtitle": "Lumi is live on Google Play. Download it, finish onboarding, then send us a hi on WhatsApp and we will reply with a €5 coupon code for your first trip.",
+    "subtitle": "Lumi is live on the App Store and Google Play. Download it, finish onboarding, then send us a hi on WhatsApp and we will reply with a €5 coupon code for your first trip.",
     "points": [
-      "Download Lumi from Google Play and create your account.",
+      "Download Lumi from the App Store or Google Play and create your account.",
       "Finish onboarding, including identity verification.",
       "Send us a hi on WhatsApp and we will reply with your €5 coupon code."
     ],
     "whatsappCta": "Say hi on WhatsApp",
     "submitting": "Submitting...",
-    "reachOut": "On iPhone? The App Store version is coming soon — write to us at <1>info@lumifin.io</1> and we will tell you the moment it lands."
+    "reachOut": "Questions before you download? Write to us at <1>info@lumifin.io</1> and a human will get back to you."
   },
   "landing": {
     "seo": {
@@ -499,7 +499,7 @@
     "requirementsH": "You will also need",
     "requirements": ["You are at least 18 years old.", "You hold a SEPA-zone bank account in your own name.", "You can complete identity verification, which is required by financial regulation.", "You have a compatible, up-to-date iOS or Android device."],
     "ctaH": "Ready when you are",
-    "ctaBody": "Lumi is live on Google Play and rolling out across Southeast Asia, starting in Vietnam.",
+    "ctaBody": "Lumi is live on the App Store and Google Play, and rolling out across Southeast Asia, starting in Vietnam.",
     "ctaButton": "Download the app",
     "legalNote": "Summarised from our <1>Terms of Use</1>. For more on signing up, verification and funding, see the <2>FAQ</2>.",
     "countryNames": {

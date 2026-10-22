@@ -141,7 +141,7 @@ export const softwareApplicationSchema = {
   applicationSubCategory: 'Mobile Payment',
   operatingSystem: 'iOS, Android',
   description:
-    'Mobile payment app for European travellers in Southeast Asia. Pay at any local merchant by scanning their QR code (PromptPay, VietQR, QRIS) directly from a EUR account. A single 2% flat fee, with no FX markup and no other charges. Live in beta in Vietnam, with Thailand and Indonesia coming soon.',
+    'Mobile payment app for European travellers in Southeast Asia. Pay at any local merchant by scanning their QR code (PromptPay, VietQR, QRIS) directly from a EUR account. A single 2% flat fee, with no FX markup and no other charges. Live in Vietnam, with Thailand and Indonesia coming soon.',
   url: BASE_URL,
   publisher: {
     '@type': 'Organization',
@@ -153,7 +153,7 @@ export const softwareApplicationSchema = {
     price: '0',
     priceCurrency: 'EUR',
     availability: 'https://schema.org/LimitedAvailability',
-    description: 'Free to download. Transactions carry a single 2% flat fee, with no FX markup and no other charges. Currently in beta in Vietnam.',
+    description: 'Free to download. Transactions carry a single 2% flat fee, with no FX markup and no other charges. Currently live in Vietnam.',
   },
   inLanguage: ['fr', 'en'],
 };

@@ -23,8 +23,8 @@
     home         | Home                    | lumifin.io (home) | TODO: not published
 
   There is no web app yet, so desktop shows "open on your phone" instead of
-  redirecting. Until the store URLs land, mobile-without-app gets the manual
-  button + "app coming soon" hint instead of a store redirect.
+  redirecting. Both store listings are live, so mobile-without-app is sent to
+  the App Store or Play Store.
 -->
 <html lang="en">
 <head>
@@ -104,9 +104,9 @@
         lumiqa: 'com.finxflow.app.qa',
         lumifindev: 'com.finxflow.app.dev'
       };
-      // TODO(1.5): real store URLs once the app is published. Empty = no
-      // store redirect; the manual button + hint below remain the fallback.
-      var STORE_IOS = '';
+      // Both listings are live, so a device without the app installed lands
+      // on its own store rather than on the manual-button fallback.
+      var STORE_IOS = 'https://apps.apple.com/app/id6771697087';
       var STORE_ANDROID = 'https://play.google.com/store/apps/details?id=com.lumifin.app';
 
       /* ── 1. Validate intent against the allowlist (never reflect raw) ─ */
