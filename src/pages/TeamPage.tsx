@@ -47,8 +47,8 @@ const team = [
   {
     name: "Tanvi Nag",
     roleKey: "productManagementAssociate",
-    img: "/assets/team/Tanvi-2.webp",
-    objectPosition: "center 10%",
+    img: "/assets/team/Tanvi-3.webp",
+    objectPosition: "center 20%",
     scale: "",
     linkedin: "https://www.linkedin.com/in/tanvinag28/"
   },
