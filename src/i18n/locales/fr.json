@@ -365,6 +365,54 @@
       "foundersAssociate": "Associée du fondateur"
     }
   },
+  "helpCentre": {
+    "seo": {
+      "title": "Centre d’aide",
+      "description": "Réponses aux questions sur Lumi : paiements par QR code, frais et taux, rechargement, vérification d’identité et sécurité."
+    },
+    "backHome": "Retour à l’accueil",
+    "title": "Comment pouvons-nous vous aider ?",
+    "subtitle": "Parcourez {{count}} réponses, ou cherchez directement.",
+    "searchLabel": "Rechercher dans le centre d’aide",
+    "searchPlaceholder": "Rechercher une réponse…",
+    "articleCount": "{{count}} article",
+    "articleCount_other": "{{count}} articles",
+    "resultsCount": "{{count}} résultat",
+    "resultsCount_other": "{{count}} résultats",
+    "noResults": "Aucune réponse ne correspond à « {{query}} ». Essayez un autre mot, ou écrivez-nous ci-dessous.",
+    "categories": {
+      "gettingStarted": {
+        "title": "Premiers pas",
+        "desc": "Ce qu’est Lumi, qui peut s’inscrire et ce que l’application fait pour vous."
+      },
+      "paying": {
+        "title": "Payer sur place",
+        "desc": "Scanner un QR code, les pays couverts, les délais et que faire en cas d’erreur."
+      },
+      "feesRates": {
+        "title": "Frais et taux",
+        "desc": "Le frais unique de 2 %, le taux de change appliqué et les montants minimums."
+      },
+      "moneyInOut": {
+        "title": "Recharger et retirer",
+        "desc": "Alimenter votre portefeuille, les moyens acceptés et récupérer votre argent."
+      },
+      "accountVerification": {
+        "title": "Compte et vérification",
+        "desc": "Pourquoi nous vérifions votre identité, les documents utiles et votre historique."
+      },
+      "security": {
+        "title": "Sécurité",
+        "desc": "Comment votre argent est protégé et ce que nous faisons de vos données."
+      }
+    },
+    "contact": {
+      "title": "Vous ne trouvez pas votre réponse ?",
+      "body": "Écrivez-nous : une vraie personne vous répond, en français.",
+      "whatsapp": "Nous écrire sur WhatsApp",
+      "email": "Nous envoyer un e-mail"
+    }
+  },
   "faqPage": {
     "seo": {
       "title": "FAQ — Questions fréquentes",

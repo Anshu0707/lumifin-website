@@ -365,6 +365,54 @@
       "foundersAssociate": "Founder's Associate"
     }
   },
+  "helpCentre": {
+    "seo": {
+      "title": "Help Centre",
+      "description": "Answers about Lumi: QR payments, fees and rates, topping up, identity verification and security."
+    },
+    "backHome": "Back to Home",
+    "title": "How can we help?",
+    "subtitle": "Browse {{count}} answers, or search for what you need.",
+    "searchLabel": "Search the help centre",
+    "searchPlaceholder": "Search for an answer…",
+    "articleCount": "{{count}} article",
+    "articleCount_other": "{{count}} articles",
+    "resultsCount": "{{count}} result",
+    "resultsCount_other": "{{count}} results",
+    "noResults": "Nothing matches “{{query}}”. Try another word, or write to us below.",
+    "categories": {
+      "gettingStarted": {
+        "title": "Getting started",
+        "desc": "What Lumi is, who can sign up, and what the app does for you."
+      },
+      "paying": {
+        "title": "Paying on the ground",
+        "desc": "Scanning a QR code, which countries work, how long it takes, and fixing mistakes."
+      },
+      "feesRates": {
+        "title": "Fees and rates",
+        "desc": "The single 2% fee, the exchange rate you get, and minimum amounts."
+      },
+      "moneyInOut": {
+        "title": "Money in and out",
+        "desc": "Topping up your wallet, which methods work, and getting money back out."
+      },
+      "accountVerification": {
+        "title": "Account and verification",
+        "desc": "Why we verify your identity, which documents help, and your transaction history."
+      },
+      "security": {
+        "title": "Security",
+        "desc": "How your money is protected and what we do with your data."
+      }
+    },
+    "contact": {
+      "title": "Still stuck?",
+      "body": "Write to us and a real person will get back to you.",
+      "whatsapp": "Message us on WhatsApp",
+      "email": "Email us"
+    }
+  },
   "faqPage": {
     "seo": {
       "title": "FAQ — Frequently Asked Questions",

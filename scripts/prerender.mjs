@@ -32,6 +32,7 @@ const distDir = path.resolve(__dirname, '..', 'dist');
 const routes = [
   { path: '/', out: 'index.html' },
   { path: '/faq', out: 'faq.html' },
+  { path: '/help', out: 'help.html' },
   { path: '/team', out: 'team.html' },
   { path: '/privacy', out: 'privacy.html' },
   { path: '/account-deletion', out: 'account-deletion.html' },
@@ -68,6 +69,7 @@ const routes = [
   // detector runs before the French locale forced below, so it wins).
   { path: '/en', out: 'en/index.html' },
   { path: '/en/faq', out: 'en/faq.html' },
+  { path: '/en/help', out: 'en/help.html' },
   { path: '/en/team', out: 'en/team.html' },
   { path: '/en/privacy', out: 'en/privacy.html' },
   { path: '/en/account-deletion', out: 'en/account-deletion.html' },
