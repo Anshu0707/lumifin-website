@@ -97,6 +97,47 @@ const team = [
   }
 ] as const;
 
+/** Advisors get their own section; everyone else is the team grid. */
+const staff = team.filter((m) => m.roleKey !== 'advisor');
+const advisors = team.filter((m) => m.roleKey === 'advisor');
+
+type Member = (typeof team)[number];
+
+/** One person. Identical in both grids, so it lives in one place. */
+function MemberCard({ member, index }: { member: Member; index: number }) {
+  const { t } = useTranslation();
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: index * 0.1 }}
+      className="group"
+    >
+      <div className="relative aspect-square rounded-[3rem] overflow-hidden mb-8 shadow-xl group-hover:shadow-2xl transition-all">
+        <img
+          src={member.img}
+          alt={member.name}
+          loading="lazy"
+          width={400}
+          height={400}
+          style={{ objectPosition: member.objectPosition }}
+          className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${('scale' in member && member.scale) || ''}`}
+          referrerPolicy="no-referrer"
+        />
+        {member.linkedin && (
+          <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+            <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
+        )}
+      </div>
+      <h3 className="text-2xl font-black text-slate-900 mb-1">{member.name}</h3>
+      <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4">{t(`team.roles.${member.roleKey}`)}</p>
+    </motion.div>
+  );
+}
+
 export default function TeamPage() {
   const { t } = useTranslation();
   const location = useLocation();
@@ -127,38 +168,46 @@ export default function TeamPage() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {team.map((member, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="group"
-            >
-              <div className="relative aspect-square rounded-[3rem] overflow-hidden mb-8 shadow-xl group-hover:shadow-2xl transition-all">
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  loading="lazy"
-                  width={400}
-                  height={400}
-                  style={{ objectPosition: member.objectPosition }}
-                  className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${('scale' in member && member.scale) || ''}`}
-                  referrerPolicy="no-referrer"
-                />
-                {member.linkedin && (
-                  <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-primary hover:scale-110 transition-transform">
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                  </div>
-                )}
-              </div>
-              <h3 className="text-2xl font-black text-slate-900 mb-1">{member.name}</h3>
-              <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4">{t(`team.roles.${member.roleKey}`)}</p>
-            </motion.div>
+          {staff.map((member, index) => (
+            // Keyed wrapper: key on a custom component trips TS2322 under
+            // React 19 without @types/react.
+            <div key={member.name}>
+              <MemberCard member={member} index={index} />
+            </div>
           ))}
         </div>
+
+        {advisors.length > 0 && (
+          <section id="advisors" className="mt-32 pt-20 border-t border-slate-100 scroll-mt-24">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center space-y-5 mb-16"
+            >
+              <span className="text-primary font-bold text-xs tracking-widest uppercase">
+                {t('team.advisorsEyebrow')}
+              </span>
+              <h2 className="text-5xl font-black tracking-tighter text-slate-900">
+                {t('team.advisorsTitle')}
+              </h2>
+              <p className="text-lg text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto">
+                {t('team.advisorsBody')}
+              </p>
+            </motion.div>
+
+            {/* Two people, so the grid is centred rather than left-aligned
+                against a four-column track. */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+              {advisors.map((member, index) => (
+                <div key={member.name}>
+                  <MemberCard member={member} index={index} />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <motion.section
           id="careers"
