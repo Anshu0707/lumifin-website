@@ -79,6 +79,21 @@ const team = [
     img: "/assets/team/THIOFANTY.webp",
     objectPosition: "center 25%",
     linkedin: "https://fr.linkedin.com/in/thiofanty"
+  },
+  // Advisors.
+  {
+    name: "Alexis Roque",
+    roleKey: "advisor",
+    img: "/assets/team/ALEXIS.webp",
+    objectPosition: "center 15%",
+    linkedin: "https://www.linkedin.com/in/alexis-roque/"
+  },
+  {
+    name: "Bhavesh Gupta",
+    roleKey: "advisor",
+    img: "/assets/team/BHAVESH.webp",
+    objectPosition: "center 20%",
+    linkedin: "https://www.linkedin.com/in/bhavesh-gupta-0099548/"
   }
 ] as const;
 

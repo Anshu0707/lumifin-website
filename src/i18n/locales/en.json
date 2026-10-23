@@ -362,7 +362,8 @@
       "productManager": "Product Manager",
       "productManagementAssociate": "Product Management Associate",
       "softwareEngineer": "Software Engineer",
-      "foundersAssociate": "Founder's Associate"
+      "foundersAssociate": "Founder's Associate",
+      "advisor": "Advisor"
     }
   },
   "helpCentre": {

@@ -362,7 +362,8 @@
       "productManager": "Chef de produit",
       "productManagementAssociate": "Associée en gestion de produit",
       "softwareEngineer": "Ingénieur logiciel",
-      "foundersAssociate": "Associée du fondateur"
+      "foundersAssociate": "Associée du fondateur",
+      "advisor": "Conseiller"
     }
   },
   "helpCentre": {
