@@ -20,7 +20,7 @@ export const HELP_CATEGORIES: HelpCategory[] = [
   {
     slug: "about-lumi",
     icon: "Info",
-    articleIds: ["A1", "A2", "A3", "A4", "A5", "A6", "q1", "q17"],
+    articleIds: ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "q1", "q17"],
   },
   {
     slug: "eligibility-and-sign-up",

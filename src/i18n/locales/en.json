@@ -478,9 +478,14 @@
         "aka": "How much does the app cost? / Is there a subscription?"
       },
       "A6": {
-        "q": "Is Lumi still in beta?",
-        "a": "Yes. Lumi is in beta in Vietnam, so features are still being added and you may see occasional changes. Tell us about any problem in the in-app chat and it goes straight to the team.",
-        "aka": "Is the app finished? / Why does it say beta?"
+        "q": "Is Lumi fully launched?",
+        "a": "Lumi is live in Vietnam. We are still adding features, so you may see occasional changes. Tell us about any problem in the in-app chat and it goes straight to the team.",
+        "aka": "Is the app finished? / Is Lumi still in beta? / Why does it say beta?"
+      },
+      "A7": {
+        "q": "Which phones does Lumi work on?",
+        "a": "Lumi is available on iOS and Android. You need a phone with a working camera to scan QR codes.",
+        "aka": "Is there an iPhone app? / Android? / Can I use it on a tablet?"
       },
       "E1": {
         "q": "Can I use Lumi if I live in the UK or Switzerland?",
@@ -1014,7 +1019,7 @@
       },
       "C3": {
         "q": "How do I give feedback or report a bug?",
-        "a": "We'd love to hear it. Send it in the in-app chat with a screenshot if you can. Beta feedback goes straight to the product team.",
+        "a": "We'd love to hear it. Send it in the in-app chat with a screenshot if you can. Your feedback goes straight to the product team.",
         "aka": "Suggestion / Feature request / App bug"
       },
       "C4": {
