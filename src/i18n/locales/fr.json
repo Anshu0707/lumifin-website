@@ -375,6 +375,7 @@
       "description": "Réponses aux questions sur Lumi : paiements par QR code, frais et taux, rechargement, vérification d’identité et sécurité."
     },
     "backHome": "Retour à l’accueil",
+    "backToHelp": "Tout le centre d’aide",
     "title": "Comment pouvons-nous vous aider ?",
     "subtitle": "Parcourez {{count}} réponses, ou cherchez directement.",
     "searchLabel": "Rechercher dans le centre d’aide",
@@ -385,29 +386,69 @@
     "resultsCount_other": "{{count}} résultats",
     "noResults": "Aucune réponse ne correspond à « {{query}} ». Essayez un autre mot, ou écrivez-nous ci-dessous.",
     "categories": {
-      "gettingStarted": {
-        "title": "Premiers pas",
-        "desc": "Ce qu’est Lumi, qui peut s’inscrire et ce que l’application fait pour vous."
+      "about-lumi": {
+        "title": "À propos de Lumi",
+        "desc": "Ce qu’est Lumi, qui est derrière, et ce que ça fait."
       },
-      "paying": {
-        "title": "Payer sur place",
-        "desc": "Scanner un QR code, les pays couverts, les délais et que faire en cas d’erreur."
+      "eligibility-and-sign-up": {
+        "title": "Éligibilité et inscription",
+        "desc": "Qui peut ouvrir un compte, et ce qu’il faut pour le faire."
       },
-      "feesRates": {
-        "title": "Frais et taux",
-        "desc": "Le frais unique de 2 %, le taux de change appliqué et les montants minimums."
+      "identity-verification": {
+        "title": "Vérification d’identité",
+        "desc": "Pourquoi nous vérifions votre identité, et quels documents conviennent."
       },
-      "moneyInOut": {
-        "title": "Recharger et retirer",
-        "desc": "Alimenter votre portefeuille, les moyens acceptés et récupérer votre argent."
+      "login-and-security": {
+        "title": "Connexion, mPIN et sécurité",
+        "desc": "Se connecter, le code mPIN, et protéger son compte."
       },
-      "accountVerification": {
-        "title": "Compte et vérification",
-        "desc": "Pourquoi nous vérifions votre identité, les documents utiles et votre historique."
+      "adding-money": {
+        "title": "Recharger",
+        "desc": "Alimenter votre portefeuille, et les délais."
       },
-      "security": {
-        "title": "Sécurité",
-        "desc": "Comment votre argent est protégé et ce que nous faisons de vos données."
+      "paying-by-qr": {
+        "title": "Payer par QR code",
+        "desc": "Scanner, payer, et ce qui se passe en caisse."
+      },
+      "where-lumi-works": {
+        "title": "Où Lumi fonctionne",
+        "desc": "Les pays, les réseaux QR et la suite."
+      },
+      "fees-and-rates": {
+        "title": "Frais et taux de change",
+        "desc": "Le frais de 2 % et le taux réellement appliqué."
+      },
+      "limits": {
+        "title": "Plafonds",
+        "desc": "Ce que vous pouvez détenir, recharger et dépenser."
+      },
+      "payment-problems": {
+        "title": "Paiements qui échouent",
+        "desc": "Paiements refusés, en attente ou erronés, et remboursements."
+      },
+      "withdrawals": {
+        "title": "Retraits et solde restant",
+        "desc": "Récupérer votre argent en fin de voyage."
+      },
+      "rewards-and-referrals": {
+        "title": "Récompenses et parrainage",
+        "desc": "Codes promo, cashback et invitations."
+      },
+      "esim-and-extras": {
+        "title": "eSIM et extras voyage",
+        "desc": "Forfaits data et les autres services de l’application."
+      },
+      "managing-your-account": {
+        "title": "Gérer votre compte",
+        "desc": "Vos informations, les notifications, et la clôture."
+      },
+      "safety-and-regulation": {
+        "title": "Sécurité et réglementation",
+        "desc": "Où est votre argent, vos données, et qui nous encadre."
+      },
+      "contacting-support": {
+        "title": "Contacter le support",
+        "desc": "Comment joindre une vraie personne, et quand."
       }
     },
     "contact": {

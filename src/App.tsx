@@ -17,6 +17,7 @@ import LandingPage from './pages/LandingPage';
 // Lazy-load all other pages for code splitting
 const FAQPage = lazy(() => import('./pages/FAQPage'));
 const HelpCentrePage = lazy(() => import('./pages/HelpCentrePage'));
+const HelpCategoryPage = lazy(() => import('./pages/HelpCategoryPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const DeleteAccountPage = lazy(() => import('./pages/DeleteAccountPage'));
@@ -60,6 +61,7 @@ export default function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/help" element={<HelpCentrePage />} />
+          <Route path="/help/:slug" element={<HelpCategoryPage />} />
           <Route path="/team" element={<TeamPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/account-deletion" element={<DeleteAccountPage />} />
@@ -98,6 +100,7 @@ export default function App() {
           <Route path="/en" element={<LandingPage />} />
           <Route path="/en/faq" element={<FAQPage />} />
           <Route path="/en/help" element={<HelpCentrePage />} />
+          <Route path="/en/help/:slug" element={<HelpCategoryPage />} />
           <Route path="/en/team" element={<TeamPage />} />
           <Route path="/en/privacy" element={<PrivacyPage />} />
           <Route path="/en/account-deletion" element={<DeleteAccountPage />} />

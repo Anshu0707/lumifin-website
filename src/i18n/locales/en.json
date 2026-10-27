@@ -377,6 +377,7 @@
     "backHome": "Back to Home",
     "title": "How can we help?",
     "subtitle": "Browse {{count}} answers, or search for what you need.",
+    "backToHelp": "All help topics",
     "searchLabel": "Search the help centre",
     "searchPlaceholder": "Search for an answer…",
     "articleCount": "{{count}} article",
@@ -385,29 +386,651 @@
     "resultsCount_other": "{{count}} results",
     "noResults": "Nothing matches “{{query}}”. Try another word, or write to us below.",
     "categories": {
-      "gettingStarted": {
-        "title": "Getting started",
-        "desc": "What Lumi is, who can sign up, and what the app does for you."
+      "about-lumi": {
+        "title": "About Lumi",
+        "desc": "What Lumi is, who is behind it, and what it does."
       },
-      "paying": {
-        "title": "Paying on the ground",
-        "desc": "Scanning a QR code, which countries work, how long it takes, and fixing mistakes."
+      "eligibility-and-sign-up": {
+        "title": "Eligibility and sign-up",
+        "desc": "Who can open an account, and what you need to do it."
       },
-      "feesRates": {
-        "title": "Fees and rates",
-        "desc": "The single 2% fee, the exchange rate you get, and minimum amounts."
+      "identity-verification": {
+        "title": "Identity verification",
+        "desc": "Why we check who you are, and which documents work."
       },
-      "moneyInOut": {
-        "title": "Money in and out",
-        "desc": "Topping up your wallet, which methods work, and getting money back out."
+      "login-and-security": {
+        "title": "Login, mPIN and security",
+        "desc": "Signing in, your mPIN, and keeping the account safe."
       },
-      "accountVerification": {
-        "title": "Account and verification",
-        "desc": "Why we verify your identity, which documents help, and your transaction history."
+      "adding-money": {
+        "title": "Adding money",
+        "desc": "Topping up your wallet, and how long it takes."
       },
-      "security": {
-        "title": "Security",
-        "desc": "How your money is protected and what we do with your data."
+      "paying-by-qr": {
+        "title": "Paying by QR",
+        "desc": "Scanning, paying, and what happens at the till."
+      },
+      "where-lumi-works": {
+        "title": "Where Lumi works",
+        "desc": "Countries, QR networks and what is coming next."
+      },
+      "fees-and-rates": {
+        "title": "Fees and exchange rates",
+        "desc": "The 2% fee and the rate you actually get."
+      },
+      "limits": {
+        "title": "Limits",
+        "desc": "How much you can hold, add and spend."
+      },
+      "payment-problems": {
+        "title": "Payments that go wrong",
+        "desc": "Failed, pending and mistaken payments, and refunds."
+      },
+      "withdrawals": {
+        "title": "Withdrawals and leftover balance",
+        "desc": "Getting money back out at the end of a trip."
+      },
+      "rewards-and-referrals": {
+        "title": "Rewards and referrals",
+        "desc": "Coupons, cashback and inviting friends."
+      },
+      "esim-and-extras": {
+        "title": "eSIM and travel extras",
+        "desc": "Data plans and the other things in the app."
+      },
+      "managing-your-account": {
+        "title": "Managing your account",
+        "desc": "Details, notifications, and closing the account."
+      },
+      "safety-and-regulation": {
+        "title": "Safety and regulation",
+        "desc": "Where your money sits, your data, and who oversees us."
+      },
+      "contacting-support": {
+        "title": "Contacting support",
+        "desc": "How to reach a human, and when."
+      }
+    },
+    "articles": {
+      "A1": {
+        "q": "Who is Lumi for?",
+        "a": "Lumi is for EU and EEA residents travelling in Southeast Asia: holidaymakers, backpackers, business travellers and digital nomads. You only need a euro bank account (SEPA) in your own name.",
+        "aka": "Is Lumi for tourists? / Can expats or digital nomads use it?"
+      },
+      "A2": {
+        "q": "Who is behind Lumi?",
+        "a": "Lumi is a brand of Lumifin SAS, a French technology company. Payments and fund movements are carried out by regulated, licensed payment partners in Europe and Asia.",
+        "aka": "Which company owns Lumi? / Is Lumi French?"
+      },
+      "A3": {
+        "q": "Is Lumi a crypto wallet?",
+        "a": "No crypto knowledge is needed. Lumi uses stablecoins to move funds from your home country to Vietnam. You top up your wallet in euros, and your funds are converted and settled in the local currency, which you can then use to pay merchants via QR codes.",
+        "aka": "Do I hold crypto? / Is this stablecoins? / Do I need a crypto wallet?"
+      },
+      "A4": {
+        "q": "Why use Lumi instead of cash or my card?",
+        "a": "Lumi lets you pay using QR codes at participating merchants across Vietnam, including shops, street stalls and taxis. Unlike cash or foreign bank cards, Lumi offers a convenient way to pay in local currency. A 2% fee applies, and the exchange rate is shown before you pay.",
+        "aka": "Why not just use my bank card? / Is it cheaper than an ATM?"
+      },
+      "A5": {
+        "q": "Is Lumi free to download?",
+        "a": "Yes. The app is free and there's no monthly plan. You only pay the fee shown on each payment.",
+        "aka": "How much does the app cost? / Is there a subscription?"
+      },
+      "A6": {
+        "q": "Is Lumi still in beta?",
+        "a": "Yes. Lumi is in beta in Vietnam, so features are still being added and you may see occasional changes. Tell us about any problem in the in-app chat and it goes straight to the team.",
+        "aka": "Is the app finished? / Why does it say beta?"
+      },
+      "E1": {
+        "q": "Can I use Lumi if I live in the UK or Switzerland?",
+        "a": "Not yet. The UK and Switzerland aren't supported for now. Leave your email at lumifin.io and we'll tell you when they are.",
+        "aka": "UK resident? / Swiss bank account? / GBP or CHF?"
+      },
+      "E2": {
+        "q": "Can I use Lumi if I'm from the US, Canada, India or Australia?",
+        "a": "Not yet. Lumi currently serves EU and EEA residents only.",
+        "aka": "I'm not European, can I join?"
+      },
+      "E3": {
+        "q": "I'm an EU citizen living outside Europe. Can I sign up?",
+        "a": "All you need to use Lumi is a European bank account in your own name. Your nationality or country of residence does not determine your eligibility.",
+        "aka": "I'm French but live in Vietnam / Do I need to live in Europe?"
+      },
+      "E4": {
+        "q": "Can I use a Revolut, N26 or Wise euro account?",
+        "a": "Yes, as long as it's a euro account with an IBAN in the SEPA zone and in your own name.",
+        "aka": "Do neobanks work? / Can I top up from Wise EUR?"
+      },
+      "E5": {
+        "q": "Can I use someone else's bank account?",
+        "a": "No. Money must come from a personal account in your own name, and the name must match your verified identity. Transfers from other people's or business accounts may be rejected and returned.",
+        "aka": "Can my partner top up for me? / Joint account? / Company account?"
+      },
+      "E6": {
+        "q": "How old do I need to be?",
+        "a": "You must be at least 18.",
+        "aka": "Can my teenager use Lumi? / Minimum age?"
+      },
+      "E7": {
+        "q": "How long does sign-up take?",
+        "a": "Most people finish in about 3-5 minutes. Identity checks are usually quick, but some need a manual review.",
+        "aka": "How fast can I start paying?"
+      },
+      "E8": {
+        "q": "Should I set up Lumi before I travel?",
+        "a": "The best way to prepare for your trip is to create your Lumi account and complete your first top-up before you travel. You can also purchase an eSIM directly through Lumi so you have mobile data as soon as you land in Vietnam. You can sign up while abroad too, as long as you have an internet connection.",
+        "aka": "Can I sign up once I'm in Vietnam?"
+      },
+      "E9": {
+        "q": "Can I have more than one Lumi account?",
+        "a": "No. Each person can have one account. If you've lost access to yours, contact support rather than opening a new one.",
+        "aka": "Second account / New account with another email"
+      },
+      "E10": {
+        "q": "I didn't receive my sign-up email or code. What should I do?",
+        "a": "Check your spam folder and that the email or number is correct, then tap resend after a minute. If it still doesn't arrive, contact support@lumifin.io with the email you used.",
+        "aka": "No OTP / Verification code not arriving / No SMS"
+      },
+      "V1": {
+        "q": "The app selected the wrong country for my document. What do I do?",
+        "a": "Change the country manually on the document step before taking photos. If you can't change it, close the app, reopen it and start again. Contact support if it keeps happening.",
+        "aka": "It shows India instead of France / Wrong country in verification"
+      },
+      "V2": {
+        "q": "Can I use Lumi before I'm verified?",
+        "a": "You can create your account and explore the app, but adding money, paying and using rewards need verification first.",
+        "aka": "Can I add money without verifying?"
+      },
+      "V3": {
+        "q": "Is my ID data safe?",
+        "a": "Your documents are processed by a specialist identity-verification provider, encrypted, and stored in the EU. We only use them to verify you and meet legal obligations. See our privacy policy for details.",
+        "aka": "What do you do with my passport photo? / Who sees my selfie?"
+      },
+      "V4": {
+        "q": "Do I need to verify again later?",
+        "a": "Sometimes, for example if your ID expires, your details change or a regulatory check requires it. We'll tell you in the app if we need anything.",
+        "aka": "Re-verification / Why are you asking for ID again?"
+      },
+      "S1": {
+        "q": "I forgot my password.",
+        "a": "On the login screen tap \"Forgot password\", enter your account email, and follow the link we send. Check spam if it doesn't arrive within a few minutes.",
+        "aka": "Reset password / Can't log in"
+      },
+      "S2": {
+        "q": "Why do I keep getting logged out?",
+        "a": "For security, Lumi signs you out after a period of inactivity or when it sees a new device. Make sure you're on the latest app version. If it happens every time you open the app, tell us in the in-app chat.",
+        "aka": "App asks me to log in again / Re-authenticate every time"
+      },
+      "S3": {
+        "q": "Why am I asked to verify this device?",
+        "a": "When you log in on a new phone, or after resetting security details, we send a one-time code to confirm it's really you.",
+        "aka": "Code to verify device / New phone"
+      },
+      "S4": {
+        "q": "I changed my phone. How do I move my account?",
+        "a": "Install Lumi on the new phone, log in with your email and password, and confirm the one-time code. Your balance and history move with your account. Then set your mPIN again.",
+        "aka": "New phone / Transfer Lumi to new device"
+      },
+      "S5": {
+        "q": "My phone was lost or stolen. What should I do?",
+        "a": "Contact support@lumifin.io or WhatsApp +33 6 19 78 42 22 right away so we can secure your account. Change your email password too. Your funds can't be spent without your mPIN or biometrics.",
+        "aka": "Phone stolen / Block my account"
+      },
+      "S6": {
+        "q": "I see a payment I didn't make.",
+        "a": "Contact support immediately with the date and amount. We'll secure your account and investigate. Don't share codes or your mPIN with anyone who contacts you.",
+        "aka": "Unauthorised transaction / Fraud / Someone used my account"
+      },
+      "S7": {
+        "q": "Will Lumi ever ask for my mPIN or codes?",
+        "a": "Never. Lumi staff will never ask for your mPIN, password or one-time codes. If someone does, it's a scam. Report it to support@lumifin.io.",
+        "aka": "Is this message from Lumi? / Phishing"
+      },
+      "S8": {
+        "q": "Can I use Lumi with a VPN?",
+        "a": "Lumi works without a VPN in supported countries. If you're having trouble connecting, try switching between Wi-Fi and mobile data.",
+        "aka": "VPN blocks login / App not working abroad"
+      },
+      "T1": {
+        "q": "Can I top up with a debit or credit card?",
+        "a": "Not yet. You can top up by SEPA transfer or open banking from a European bank account. Card top-ups are coming soon.",
+        "aka": "Visa / Mastercard / Card top-up"
+      },
+      "T2": {
+        "q": "Can I use Apple Pay or Google Pay?",
+        "a": "Not at the moment. You can add money to your Lumi wallet using a SEPA transfer or by selecting “Connect to my bank” in the app.",
+        "aka": "Top up with Apple Pay"
+      },
+      "T3": {
+        "q": "Can I top up with crypto or stablecoins?",
+        "a": "No. Lumi only accepts euros from a bank account in your name.",
+        "aka": "USDT / USDC / Bitcoin top-up"
+      },
+      "T4": {
+        "q": "I forgot to add the payment reference.",
+        "a": "You don't need to add a payment reference when making a SEPA transfer to Lumi. If your transfer hasn't appeared in your Lumi wallet, contact us through the in-app chat or WhatsApp with the transfer amount, date, sending IBAN and a screenshot of the transfer so we can investigate.",
+        "aka": "Wrong reference / No reference on transfer"
+      },
+      "T5": {
+        "q": "My bank declined the top-up.",
+        "a": "You need to register the IBAN displayed in the Lumi app as a new beneficiary in your mobile banking app. Some banks may require you to wait up to 1 working day before you can make the transfer. If the transfer is still declined, please contact your bank for assistance.",
+        "aka": "Open banking failed / Bank blocked the transfer"
+      },
+      "T6": {
+        "q": "Can I top up from a bank account in someone else's name?",
+        "a": "No. Top-ups must come from a personal account in your own name. Transfers from other accounts may be returned.",
+        "aka": "Friend's account / Parent's account"
+      },
+      "T7": {
+        "q": "How much should I load for my trip?",
+        "a": "We recommend checking travel guides or forums to estimate your budget for Vietnam based on your trip length and spending plans. You can start by topping up 50–75% of your estimated expenses and add more to your Lumi wallet whenever you need.",
+        "aka": "How much money do I need in Vietnam?"
+      },
+      "T8": {
+        "q": "Can I add money while I'm abroad?",
+        "a": "Yes. You can top up from anywhere with an internet connection, as long as the money comes from your euro account.",
+        "aka": "Top up from Vietnam / Top up on holiday"
+      },
+      "P1": {
+        "q": "Which QR codes can I scan?",
+        "a": "In Vietnam, Lumi supports QR payments for foreign visitors through eligible VietQR codes and QR codes from supported Vietnamese banks or wallets. Not all QR codes are compatible, as Lumi is designed for foreign users paying local merchants.",
+        "aka": "What does a supported QR look like? / Which logo should I look for?"
+      },
+      "P2": {
+        "q": "Why does the amount sometimes fill in automatically?",
+        "a": "Some QR codes include the amount (common at checkouts and on bills), so Lumi fills it in. Printed QR codes on stands usually don't, so you type the amount yourself. Always check it before confirming.",
+        "aka": "Static vs dynamic QR / Do I type the amount?"
+      },
+      "P3": {
+        "q": "Can I pay a street vendor or market stall?",
+        "a": "Yes, you can pay at street vendors, market stalls and small shops in Vietnam, provided they display a supported QR code. Personal and individual bank QR codes are also supported in Vietnam.",
+        "aka": "Small shops / Personal QR / Night market"
+      },
+      "P4": {
+        "q": "The cashier wants to scan my phone. Can I pay that way?",
+        "a": "Not yet. Lumi works by you scanning the merchant's QR code. If the shop only scans customers' codes, ask if they have a QR you can scan, or use another payment method.",
+        "aka": "Show my QR / Cashier scans me / 7-Eleven"
+      },
+      "P5": {
+        "q": "Can I pay online or in apps like Grab?",
+        "a": "Lumi is built for paying merchant QR codes in person. If a website or app shows a supported QR at checkout, you can scan it from another screen.",
+        "aka": "Pay on a website / Grab / Shopee / Booking"
+      },
+      "P6": {
+        "q": "Can I pay bills or utility QR codes?",
+        "a": "Hotel and restaurant payments can be made using supported merchant QR codes. Utility bills and other biller QR codes may not be supported. Please contact us if you're unsure whether a QR code is compatible with Lumi.",
+        "aka": "Electricity bill / Rent / Hotel bill"
+      },
+      "P7": {
+        "q": "Can I pay a taxi or motorbike driver?",
+        "a": "Yes, if the driver shows a supported QR code. Many drivers in Vietnam have a bank QR on a card or their phone.",
+        "aka": "Xe om / Taxi / Grab driver QR"
+      },
+      "P8": {
+        "q": "How do I show the merchant that I've paid?",
+        "a": "After payment you'll see a confirmation screen with the amount, merchant and time. Show it to the merchant; their app also shows the payment arrive. Every receipt stays in your transaction history.",
+        "aka": "Proof of payment / Receipt"
+      },
+      "P9": {
+        "q": "Can I split a bill or pay a friend?",
+        "a": "Lumi doesn't have friend-to-friend transfers. If your friend has a local bank business or personal QR in a supported country, you can scan and pay it like a merchant.",
+        "aka": "Send money to a friend / Pay someone back / P2P"
+      },
+      "P10": {
+        "q": "Can I receive money into Lumi?",
+        "a": "No. Lumi is for paying, not receiving. Your balance can only be topped up from your own euro bank account.",
+        "aka": "Can friends send me money? / Receive payment"
+      },
+      "P11": {
+        "q": "Can I tip with Lumi?",
+        "a": "Yes. Just include the tip in the amount you enter when you scan the QR code.",
+        "aka": "Add a tip / Service charge"
+      },
+      "P12": {
+        "q": "Can I cancel a payment after confirming it?",
+        "a": "No. QR payments go straight to the merchant's account and can't be cancelled once confirmed. Always check the amount and merchant name before you confirm.",
+        "aka": "Undo payment / Stop a payment"
+      },
+      "W1": {
+        "q": "Does Lumi work in Thailand?",
+        "a": "Not yet. Thailand is coming soon. Sign up for updates and we'll tell you when it's live.",
+        "aka": "PromptPay / Bangkok / Phuket"
+      },
+      "W2": {
+        "q": "Does Lumi work in Indonesia or Bali?",
+        "a": "Not yet. Indonesia is coming soon. Sign up for updates and we'll tell you when it's live.",
+        "aka": "QRIS / Bali / Jakarta"
+      },
+      "W3": {
+        "q": "Which other countries are planned?",
+        "a": "After Thailand and Indonesia, the roadmap includes Malaysia, Cambodia, the Philippines, Laos, South Korea, Taiwan and Mongolia. We'll announce each one when it goes live.",
+        "aka": "Malaysia? / Cambodia? / Philippines? / Japan?"
+      },
+      "W4": {
+        "q": "How do I know if a shop accepts Lumi?",
+        "a": "If the shop displays a VietQR code, or a QR from a Vietnamese bank at the till, you can usually pay with Lumi. Shops don't need to sign up to anything.",
+        "aka": "Will this shop take Lumi? / Which merchants?"
+      },
+      "W5": {
+        "q": "Can I use Lumi in Europe or at home?",
+        "a": "No. Lumi is for paying QR codes in supported Southeast Asian countries.",
+        "aka": "Pay in France / Use Lumi in my country"
+      },
+      "W6": {
+        "q": "I'm going to a country Lumi doesn't support yet. Can I still use it?",
+        "a": "Your balance stays safe in your account, but you can't pay QR codes there yet. Use a card or cash in those countries and pay with Lumi again once you're back in Vietnam.",
+        "aka": "Not supported country / Travelling to Thailand next week"
+      },
+      "W7": {
+        "q": "Can I request a new country?",
+        "a": "Yes. Tell us in the in-app chat or at support@lumifin.io. Requests help us decide where to launch next.",
+        "aka": "Please add Japan / Feature request"
+      },
+      "R1": {
+        "q": "Why is the rate different from the one on Google?",
+        "a": "Google shows the mid-market rate, which moves every few seconds and isn't available to consumers. Lumi's rate is live, close to it, and fixed once you see the confirmation screen.",
+        "aka": "Rate looks worse / Rate mismatch"
+      },
+      "R2": {
+        "q": "Is Lumi cheaper than my bank card?",
+        "a": "Usually, yes. European banks often charge 1.5–3% per foreign card payment plus a 2–5% exchange margin, and ATMs add withdrawal fees. On €1,000 of spending, Lumi costs about €20 in fees, versus €60–144 with cards, ATMs or airport exchange.",
+        "aka": "Compare with card / Is it worth it?"
+      },
+      "R3": {
+        "q": "Will my bank charge me for using Lumi abroad?",
+        "a": "SEPA transfers in euros within Europe are generally free of transfer fees. However, fees may depend on your bank and account type, so check with your bank if you're unsure.",
+        "aka": "Foreign transaction fee / Bank fees"
+      },
+      "R4": {
+        "q": "Does the merchant pay a fee?",
+        "a": "The merchant receives the full amount in local currency, just as if a local had paid.",
+        "aka": "Does the shop lose money? / Merchant charge"
+      },
+      "R5": {
+        "q": "Does the exchange rate change between scanning and paying?",
+        "a": "The rate is shown on the confirmation screen and applies when you confirm. If you leave the screen open for a long time, it may refresh to the latest rate.",
+        "aka": "Rate changed / Locked rate"
+      },
+      "R6": {
+        "q": "Should I pay in euros or local currency if a shop offers both?",
+        "a": "With Lumi you always pay in local currency and the conversion is done by Lumi, so this choice doesn't come up. On card terminals, always choose local currency; paying in euros there usually costs more.",
+        "aka": "Pay in EUR on card terminal / Dynamic currency conversion"
+      },
+      "L1": {
+        "q": "What's the smallest payment I can make?",
+        "a": "The minimum payment in Vietnam is 10,000 VND (approximately €0.33), so you can use Lumi for small purchases like a coffee or a street-food snack.",
+        "aka": "Minimum payment / Can I pay for a coffee?"
+      },
+      "L2": {
+        "q": "Is there a maximum per payment?",
+        "a": "Yes. max per payment in 3,000,000 VND",
+        "aka": "Per-transaction limit / Can I pay my hotel?"
+      },
+      "L3": {
+        "q": "Is there a daily or monthly limit?",
+        "a": "Yes. daily limit is 6,000,000 VND and monthly limit is 25,000,000 VND for payments and for top-ups daily limit is 600 EUR and monthly 3000 EUR",
+        "aka": "Daily spending cap / Monthly limit"
+      },
+      "L5": {
+        "q": "My payment was declined for exceeding a limit. What can I do?",
+        "a": "Split the amount into two payments if the merchant agrees, or wait until your daily limit resets.",
+        "aka": "Over limit / Limit reached"
+      },
+      "L6": {
+        "q": "Can I raise my limits?",
+        "a": "No. We are working on it.",
+        "aka": "Increase limit / Higher limits"
+      },
+      "F1": {
+        "q": "My payment failed. What should I do?",
+        "a": "Please check that:\n\n- You have enough money in your Lumi wallet to cover the payment, including the 2% fee.\n- You're connected to the internet.\n- You're using the latest version of the Lumi app.\n\nThen try scanning the QR code again. If the payment still fails, contact us through the in-app chat or on WhatsApp for assistance.",
+        "aka": "Payment didn't go through / Transaction failed / Error when paying"
+      },
+      "F2": {
+        "q": "My payment says pending. What does that mean?",
+        "a": "Sometimes the local bank network takes longer to confirm. The amount is held while we check. If the payment went through, it changes to completed; if it didn't, the full amount returns to your balance. If you face any problem, contact support.",
+        "aka": "Processing / Stuck payment / Not completed"
+      },
+      "F3": {
+        "q": "The money left my balance but the merchant says they didn't receive it.",
+        "a": "Don't pay again yet. Show the merchant your receipt; their bank app can take a moment to update. If they still don't see it, contact support with the receipt, merchant name and time, and we'll trace it. If the payment didn't reach them, you'll get your money back.",
+        "aka": "Merchant didn't get paid / Shop says not received"
+      },
+      "F4": {
+        "q": "My payment failed but money was taken from my balance.",
+        "a": "If a payment fails after money is held, it's returned to your balance automatically. If you don't see it back within that time, contact support.",
+        "aka": "Charged but failed / Deducted but declined"
+      },
+      "F5": {
+        "q": "I was charged twice.",
+        "a": "Contact support with both receipts or a screenshot of your history. We'll check with the payment network and refund any duplicate.",
+        "aka": "Double payment / Duplicate charge"
+      },
+      "F6": {
+        "q": "Can I get a refund for something I bought?",
+        "a": "Refunds for goods or services are between you and the merchant, as with cash. Lumi can't send money back to your wallet from a merchant. Ask them for a cash refund.",
+        "aka": "Return an item / Merchant refund / Cancel order"
+      },
+      "F7": {
+        "q": "The QR code won't scan.",
+        "a": "Clean your camera lens, turn up screen brightness if scanning from a phone, and hold steady about 15 cm away. Make sure it's a payment QR, not a menu, Wi-Fi or app-download code. Still stuck? Ask the merchant for another QR.",
+        "aka": "Scanner not working / Camera won't read QR"
+      },
+      "F8": {
+        "q": "Lumi says the QR code isn't supported.",
+        "a": "The code may be from a country or network Lumi doesn't support yet, a non-payment QR, or a format we don't accept (such as some utility or personal-wallet codes). Ask the merchant if they have a VietQR or bank QR.",
+        "aka": "Unsupported QR / Invalid QR / This QR can't be paid"
+      },
+      "F9": {
+        "q": "Why was my payment blocked?",
+        "a": "Some payments are stopped by automatic security checks to protect you. Check your balance and retry once. If it's blocked again, contact support. For security we can't share the details of these checks.",
+        "aka": "Payment blocked for security / Transaction declined for security"
+      },
+      "F10": {
+        "q": "Payments fail late at night. Why?",
+        "a": "Some local banks run maintenance late at night, which can briefly stop payments. Try again after a few minutes, or pay another way. No money is taken for a failed payment.",
+        "aka": "Payment fails after midnight / Bank maintenance"
+      },
+      "F11": {
+        "q": "I'm using an old version of the app and something's missing.",
+        "a": "Please update Lumi to the latest version available on your app store to access the latest features and improvements. If you're still experiencing issues, contact us through the in-app chat or on WhatsApp for assistance.",
+        "aka": "My app has no rewards / Feature missing / Old build"
+      },
+      "F12": {
+        "q": "What should I send support about a payment problem?",
+        "a": "Your account email, the date and time, the amount, the merchant name, and a screenshot of the receipt or error. This lets us trace it in one go.",
+        "aka": "What info do you need?"
+      },
+      "WD1": {
+        "q": "What happens to my balance after my trip?",
+        "a": "Your balance stays in your Lumi account, ready for your next trip; it doesn't expire. You can also withdraw it to your bank account whenever you like.",
+        "aka": "Leftover money / Money left after holiday"
+      },
+      "WD2": {
+        "q": "Can I withdraw to a different bank account?",
+        "a": "You can withdraw funds only to a European bank account held in your own name.",
+        "aka": "Withdraw to another IBAN"
+      },
+      "WD3": {
+        "q": "Can I withdraw cash at an ATM with Lumi?",
+        "a": "No. Lumi has no card, so it can't be used at ATMs. It's designed so you need much less cash.",
+        "aka": "ATM / Cash withdrawal / Get dong"
+      },
+      "WD4": {
+        "q": "Can I move my Lumi balance to another person?",
+        "a": "No. Your balance can only be spent by you or returned to your own bank account.",
+        "aka": "Give my balance to a friend / Transfer to someone else"
+      },
+      "RW2": {
+        "q": "I didn't receive my coupon or reward.",
+        "a": "Please check that you've met the eligibility requirements for the offer and that you're using the latest version of the Lumi app. If your coupon or reward is still missing, contact us through the in-app chat or WhatsApp for assistance.",
+        "aka": "Welcome bonus missing / Where's my reward?"
+      },
+      "RW3": {
+        "q": "Where do I find my rewards?",
+        "a": "Open the Rewards section in the app. You'll see your active coupons, rewards earned and a field to enter a code.",
+        "aka": "Rewards hub / My coupons / Perks"
+      },
+      "RW4": {
+        "q": "How do I use a promo code or coupon?",
+        "a": "In the Rewards section, tap Enter code, type it exactly as given and tap Apply. Codes only work once your identity is verified. Each code has its own conditions and expiry date.",
+        "aka": "Enter coupon / Redeem code / Promo code not working"
+      },
+      "RW5": {
+        "q": "My promo code doesn't work.",
+        "a": "Check the spelling and expiry date, and that your identity verification is complete. Some codes are one per person or only for new users. If you think it should work, send the code to support.",
+        "aka": "Invalid code / Code expired / Code already used"
+      },
+      "RW6": {
+        "q": "How does the referral programme work?",
+        "a": "Share your referral code from the app. When your friend signs up with it and meets the conditions, you both get a reward.",
+        "aka": "Invite friends / Refer a friend / Referral code"
+      },
+      "RW7": {
+        "q": "My friend signed up but I didn't get my referral reward.",
+        "a": "Rewards are paid once your friend completes all the steps, such as verification and a first top-up or payment. If they have and it's still missing, contact support with their sign-up email.",
+        "aka": "Referral not credited"
+      },
+      "RW10": {
+        "q": "Do rewards expire?",
+        "a": "Each reward shows its expiry date in the Rewards section. Use it before then; expired rewards can't be restored.",
+        "aka": "Coupon expiry / Credit expiry"
+      },
+      "RW11": {
+        "q": "Can I withdraw my reward credit?",
+        "a": "No. Reward credit can only be spent on Lumi payments.",
+        "aka": "Cash out bonus / Transfer welcome credit"
+      },
+      "RW12": {
+        "q": "I'm a venue owner or influencer. Can I partner with Lumi?",
+        "a": "Yes. Lumifriends is our programme for venues and creators in Vietnam. Contact us at info@lumifin.io to learn more.",
+        "aka": "Lumifriends / Partner programme / Affiliate"
+      },
+      "X1": {
+        "q": "Does Lumi sell eSIMs?",
+        "a": "eSIMs are coming soon. You'll be able to buy a local data plan in the app and activate it before you land, with no physical SIM.",
+        "aka": "Data plan / Mobile internet in Vietnam / SIM card"
+      },
+      "X2": {
+        "q": "Will my phone work with a Lumi eSIM?",
+        "a": "Your phone must support eSIM and be unlocked. Most recent iPhones, Pixels and Samsung Galaxy models do. Check your phone settings or ask your carrier.",
+        "aka": "eSIM compatible? / Is my phone unlocked?"
+      },
+      "X3": {
+        "q": "When should I install the eSIM?",
+        "a": "install before departure, activation on arrival.",
+        "aka": "Install before travel? / Activate on arrival"
+      },
+      "X4": {
+        "q": "Can I get a refund on an eSIM?",
+        "a": "If we fail to provide an esim to you, you will recieve the refund",
+        "aka": "eSIM not working / Cancel eSIM"
+      },
+      "X5": {
+        "q": "How do I pay for an eSIM?",
+        "a": "You can directly pay from Lumi wallet",
+        "aka": "eSIM payment"
+      },
+      "X6": {
+        "q": "What are daily tours and restaurant offers?",
+        "a": "We're adding curated tours and local restaurant offers you can book or unlock with Lumi soon.",
+        "aka": "Experiences / Deals / Member offers"
+      },
+      "M1": {
+        "q": "Can I download a statement?",
+        "a": "Yes, you can download the full statement from the transactions page.",
+        "aka": "Export transactions / PDF statement / Expense report"
+      },
+      "M2": {
+        "q": "How do I turn notifications on or off?",
+        "a": "Manage push notifications in your phone's settings for Lumi. Security alerts, such as new logins or mPIN locks, are always sent. You can unsubscribe from marketing emails using the link in any email.",
+        "aka": "Push notifications / Stop emails"
+      },
+      "M3": {
+        "q": "Why has my account been suspended or restricted?",
+        "a": "Accounts can be restricted after a security alert, a failed check, or a request for more information. Contact support@lumifin.io and we'll explain what's needed. For legal reasons we can't always share every detail.",
+        "aka": "Account frozen / Account blocked / Can't use my account"
+      },
+      "M4": {
+        "q": "How do I close or delete my account?",
+        "a": "Request deletion by contacting support.",
+        "aka": "Delete account / Cancel Lumi / Remove my data"
+      },
+      "M5": {
+        "q": "What happens to my data after I close my account?",
+        "a": "We delete what we can. Identity and transaction records must be kept for a set period under anti-money-laundering law.",
+        "aka": "Data retention / Do you keep my data?"
+      },
+      "M6": {
+        "q": "Can I reopen a closed account?",
+        "a": "Contact support and we'll help. You may need to verify your identity again.",
+        "aka": "Reactivate account"
+      },
+      "G1": {
+        "q": "Is Lumi regulated?",
+        "a": "Lumi is a brand of Lumifin SAS, a technology company. Lumifin is registered as a Money Services Business (MSB) in Canada. Payment services are provided by licensed payment partners.",
+        "aka": "Licence / Which authority supervises Lumi?"
+      },
+      "G2": {
+        "q": "Is my money protected by deposit insurance?",
+        "a": "Your funds are safeguarded by a regulated payment partner that holds an electronic money licence in Europe.",
+        "aka": "Deposit guarantee / FGDR / Is it insured?"
+      },
+      "G4": {
+        "q": "Do I need to keep a recovery phrase or private key?",
+        "a": "No. You log in with your email, password and mPIN. There's no recovery phrase to store and no crypto keys to manage.",
+        "aka": "Seed phrase / Private keys / Self-custody"
+      },
+      "G5": {
+        "q": "How does Lumi use my personal data?",
+        "a": "We use your data only to run your account, verify your identity, process payments and meet legal duties. We don't sell your data. You can read the full privacy policy at lumifin.io/en/privacy.",
+        "aka": "Privacy / GDPR / Do you sell my data?"
+      },
+      "G6": {
+        "q": "How do I get a copy of my data or ask for it to be deleted?",
+        "a": "Email support@lumifin.io with your request. Under GDPR you can access, correct or delete your data, subject to records we must keep by law.",
+        "aka": "GDPR request / Access my data"
+      },
+      "G8": {
+        "q": "What isn't Lumi allowed to be used for?",
+        "a": "You can't use Lumi for anything illegal, for gambling, to move money for other people, or from or to sanctioned countries. Accounts used this way are closed. See the terms at lumifin.io/en/terms.",
+        "aka": "Prohibited use / Restricted payments"
+      },
+      "G9": {
+        "q": "How do I spot a fake Lumi message or website?",
+        "a": "Our only website is lumifin.io and we'll never ask for your mPIN, password or one-time codes. Only download Lumi from the official app stores. Forward anything suspicious to support@lumifin.io.",
+        "aka": "Scam / Phishing / Fake app"
+      },
+      "C1": {
+        "q": "What are your support hours?",
+        "a": "Our support hours are designed to accommodate our users in Europe and Vietnam. You can contact us through the in-app chat or WhatsApp, and we'll get back to you as soon as possible during support hours.",
+        "aka": "When can I reach you? / Is support 24 / 7?"
+      },
+      "C2": {
+        "q": "How quickly will support reply?",
+        "a": "During support hours, our team aims to respond based on the priority of your request: critical issues within 60 minutes, high-priority issues within 2 hours, normal queries within 8 hours, and low-priority requests within 2 business days.\n\nResolution times may range from the same day to 3 business days, depending on the issue. Messages received outside support hours will be addressed during the next support period. Thank you for your patience and understanding!",
+        "aka": "Response time / Still waiting for a reply"
+      },
+      "C3": {
+        "q": "How do I give feedback or report a bug?",
+        "a": "We'd love to hear it. Send it in the in-app chat with a screenshot if you can. Beta feedback goes straight to the product team.",
+        "aka": "Suggestion / Feature request / App bug"
+      },
+      "C4": {
+        "q": "How do I make a complaint?",
+        "a": "Email support@lumifin.io with \"Complaint\" in the subject and the details.",
+        "aka": "Formal complaint / Unhappy with service"
+      },
+      "C5": {
+        "q": "Bot fallback: I don't understand the question",
+        "a": "Sorry, I didn't catch that. Try asking in a few words, like \"top up\", \"payment failed\" or \"fees\". Or type \"agent\" to reach our team.",
+        "aka": "(no match)"
+      },
+      "C6": {
+        "q": "Bot fallback: hand-off to a person",
+        "a": "I'll connect you with our team. To help them, please share your account email and, for a payment issue, the date, amount and a screenshot.",
+        "aka": "Agent / Human / Speak to someone"
       }
     },
     "contact": {
