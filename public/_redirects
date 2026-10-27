@@ -18,3 +18,32 @@
 # same reason as above.
 /faq       /help        301!
 /en/faq    /en/help     301!
+
+# Help centre categories were merged from sixteen into eight. These URLs
+# were live and in the sitemap, so each retired one points at its new home.
+/help/eligibility-and-sign-up             /help/opening-your-account            301!
+/en/help/eligibility-and-sign-up          /en/help/opening-your-account         301!
+/help/identity-verification               /help/opening-your-account            301!
+/en/help/identity-verification            /en/help/opening-your-account         301!
+/help/login-and-security                  /help/security-and-your-money         301!
+/en/help/login-and-security               /en/help/security-and-your-money      301!
+/help/adding-money                        /help/adding-money-and-withdrawals    301!
+/en/help/adding-money                     /en/help/adding-money-and-withdrawals 301!
+/help/where-lumi-works                    /help/paying-by-qr                    301!
+/en/help/where-lumi-works                 /en/help/paying-by-qr                 301!
+/help/fees-and-rates                      /help/fees-rates-and-limits           301!
+/en/help/fees-and-rates                   /en/help/fees-rates-and-limits        301!
+/help/limits                              /help/fees-rates-and-limits           301!
+/en/help/limits                           /en/help/fees-rates-and-limits        301!
+/help/withdrawals                         /help/adding-money-and-withdrawals    301!
+/en/help/withdrawals                      /en/help/adding-money-and-withdrawals 301!
+/help/rewards-and-referrals               /help/rewards-and-extras              301!
+/en/help/rewards-and-referrals            /en/help/rewards-and-extras           301!
+/help/esim-and-extras                     /help/rewards-and-extras              301!
+/en/help/esim-and-extras                  /en/help/rewards-and-extras           301!
+/help/managing-your-account               /help/security-and-your-money         301!
+/en/help/managing-your-account            /en/help/security-and-your-money      301!
+/help/safety-and-regulation               /help/security-and-your-money         301!
+/en/help/safety-and-regulation            /en/help/security-and-your-money      301!
+/help/contacting-support                  /help/about-lumi                      301!
+/en/help/contacting-support               /en/help/about-lumi                   301!

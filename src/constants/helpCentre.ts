@@ -20,47 +20,27 @@ export const HELP_CATEGORIES: HelpCategory[] = [
   {
     slug: "about-lumi",
     icon: "Info",
-    articleIds: ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "q1", "q17"],
+    articleIds: ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "q1", "q17", "C1", "C2", "C3", "C4", "C5", "C6"],
   },
   {
-    slug: "eligibility-and-sign-up",
+    slug: "opening-your-account",
     icon: "UserCheck",
-    articleIds: ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9", "E10", "q18"],
+    articleIds: ["E1", "E2", "E3", "E4", "E5", "E6", "E7", "E8", "E9", "E10", "q18", "V1", "V2", "V3", "V4", "q10", "q11"],
   },
   {
-    slug: "identity-verification",
-    icon: "BadgeCheck",
-    articleIds: ["V1", "V2", "V3", "V4", "q10", "q11"],
+    slug: "security-and-your-money",
+    icon: "ShieldCheck",
+    articleIds: ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "q9", "M1", "M2", "M3", "M4", "M5", "M6", "G1", "G2", "G4", "G5", "G6", "G8", "G9", "q16"],
   },
   {
-    slug: "login-and-security",
-    icon: "Lock",
-    articleIds: ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "q9"],
-  },
-  {
-    slug: "adding-money",
+    slug: "adding-money-and-withdrawals",
     icon: "Wallet",
-    articleIds: ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "q7", "q19", "q21"],
+    articleIds: ["T1", "T2", "T3", "T4", "T5", "T6", "T7", "T8", "q7", "q19", "q21", "WD1", "WD2", "WD3", "WD4", "q12", "q13"],
   },
   {
     slug: "paying-by-qr",
     icon: "QrCode",
-    articleIds: ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "q3", "q4", "q8", "q14"],
-  },
-  {
-    slug: "where-lumi-works",
-    icon: "Globe",
-    articleIds: ["W1", "W2", "W3", "W4", "W5", "W6", "W7", "q2", "q20"],
-  },
-  {
-    slug: "fees-and-rates",
-    icon: "Percent",
-    articleIds: ["R1", "R2", "R3", "R4", "R5", "R6", "q5", "q6"],
-  },
-  {
-    slug: "limits",
-    icon: "Gauge",
-    articleIds: ["L1", "L2", "L3", "L5", "L6"],
+    articleIds: ["P1", "P2", "P3", "P4", "P5", "P6", "P7", "P8", "P9", "P10", "P11", "P12", "q3", "q4", "q8", "q14", "W1", "W2", "W3", "W4", "W5", "W6", "W7", "q2", "q20"],
   },
   {
     slug: "payment-problems",
@@ -68,34 +48,14 @@ export const HELP_CATEGORIES: HelpCategory[] = [
     articleIds: ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12", "q15"],
   },
   {
-    slug: "withdrawals",
-    icon: "ArrowDownToLine",
-    articleIds: ["WD1", "WD2", "WD3", "WD4", "q12", "q13"],
+    slug: "fees-rates-and-limits",
+    icon: "Percent",
+    articleIds: ["R1", "R2", "R3", "R4", "R5", "R6", "q5", "q6", "L1", "L2", "L3", "L5", "L6"],
   },
   {
-    slug: "rewards-and-referrals",
+    slug: "rewards-and-extras",
     icon: "Gift",
-    articleIds: ["RW2", "RW3", "RW4", "RW5", "RW6", "RW7", "RW10", "RW11", "RW12"],
-  },
-  {
-    slug: "esim-and-extras",
-    icon: "Smartphone",
-    articleIds: ["X1", "X2", "X3", "X4", "X5", "X6"],
-  },
-  {
-    slug: "managing-your-account",
-    icon: "Settings",
-    articleIds: ["M1", "M2", "M3", "M4", "M5", "M6"],
-  },
-  {
-    slug: "safety-and-regulation",
-    icon: "ShieldCheck",
-    articleIds: ["G1", "G2", "G4", "G5", "G6", "G8", "G9", "q16"],
-  },
-  {
-    slug: "contacting-support",
-    icon: "MessageCircle",
-    articleIds: ["C1", "C2", "C3", "C4", "C5", "C6"],
+    articleIds: ["RW2", "RW3", "RW4", "RW5", "RW6", "RW7", "RW10", "RW11", "RW12", "X1", "X2", "X3", "X4", "X5", "X6"],
   },
 ];
 

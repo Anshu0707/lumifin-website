@@ -387,68 +387,36 @@
     "noResults": "Nothing matches “{{query}}”. Try another word, or write to us below.",
     "categories": {
       "about-lumi": {
-        "title": "About Lumi",
-        "desc": "What Lumi is, who is behind it, and what it does."
+        "title": "About Lumi and support",
+        "desc": "What Lumi is, who is behind it, and how to reach a human."
       },
-      "eligibility-and-sign-up": {
-        "title": "Eligibility and sign-up",
-        "desc": "Who can open an account, and what you need to do it."
+      "opening-your-account": {
+        "title": "Opening your account",
+        "desc": "Who can sign up, what you need, and verifying who you are."
       },
-      "identity-verification": {
-        "title": "Identity verification",
-        "desc": "Why we check who you are, and which documents work."
+      "security-and-your-money": {
+        "title": "Security and your money",
+        "desc": "Signing in, your mPIN, your data, and where your money sits."
       },
-      "login-and-security": {
-        "title": "Login, mPIN and security",
-        "desc": "Signing in, your mPIN, and keeping the account safe."
-      },
-      "adding-money": {
-        "title": "Adding money",
-        "desc": "Topping up your wallet, and how long it takes."
+      "adding-money-and-withdrawals": {
+        "title": "Adding money and withdrawals",
+        "desc": "Topping up, getting money back out, and how long both take."
       },
       "paying-by-qr": {
-        "title": "Paying by QR",
-        "desc": "Scanning, paying, and what happens at the till."
-      },
-      "where-lumi-works": {
-        "title": "Where Lumi works",
-        "desc": "Countries, QR networks and what is coming next."
-      },
-      "fees-and-rates": {
-        "title": "Fees and exchange rates",
-        "desc": "The 2% fee and the rate you actually get."
-      },
-      "limits": {
-        "title": "Limits",
-        "desc": "How much you can hold, add and spend."
+        "title": "Paying and where Lumi works",
+        "desc": "Scanning, paying, and which countries and QR networks work."
       },
       "payment-problems": {
-        "title": "Payments that go wrong",
+        "title": "When a payment goes wrong",
         "desc": "Failed, pending and mistaken payments, and refunds."
       },
-      "withdrawals": {
-        "title": "Withdrawals and leftover balance",
-        "desc": "Getting money back out at the end of a trip."
+      "fees-rates-and-limits": {
+        "title": "Fees, rates and limits",
+        "desc": "The 2% fee, the rate you get, and how much you can move."
       },
-      "rewards-and-referrals": {
-        "title": "Rewards and referrals",
-        "desc": "Coupons, cashback and inviting friends."
-      },
-      "esim-and-extras": {
-        "title": "eSIM and travel extras",
-        "desc": "Data plans and the other things in the app."
-      },
-      "managing-your-account": {
-        "title": "Managing your account",
-        "desc": "Details, notifications, and closing the account."
-      },
-      "safety-and-regulation": {
-        "title": "Safety and regulation",
-        "desc": "Where your money sits, your data, and who oversees us."
-      },
-      "contacting-support": {
-        "title": "Contacting support",
-        "desc": "How to reach a human, and when."
+      "rewards-and-extras": {
+        "title": "Rewards, eSIM and extras",
+        "desc": "Coupons, cashback, referrals, data plans and travel extras."
       }
     },
     "articles": {

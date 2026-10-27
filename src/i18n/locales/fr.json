@@ -387,68 +387,36 @@
     "noResults": "Aucune réponse ne correspond à « {{query}} ». Essayez un autre mot, ou écrivez-nous ci-dessous.",
     "categories": {
       "about-lumi": {
-        "title": "À propos de Lumi",
-        "desc": "Ce qu’est Lumi, qui est derrière, et ce que ça fait."
+        "title": "À propos de Lumi et support",
+        "desc": "Ce qu’est Lumi, qui est derrière, et comment joindre une vraie personne."
       },
-      "eligibility-and-sign-up": {
-        "title": "Éligibilité et inscription",
-        "desc": "Qui peut ouvrir un compte, et ce qu’il faut pour le faire."
+      "opening-your-account": {
+        "title": "Ouvrir votre compte",
+        "desc": "Qui peut s’inscrire, ce qu’il faut, et la vérification d’identité."
       },
-      "identity-verification": {
-        "title": "Vérification d’identité",
-        "desc": "Pourquoi nous vérifions votre identité, et quels documents conviennent."
+      "security-and-your-money": {
+        "title": "Sécurité et votre argent",
+        "desc": "Connexion, code mPIN, vos données, et où se trouve votre argent."
       },
-      "login-and-security": {
-        "title": "Connexion, mPIN et sécurité",
-        "desc": "Se connecter, le code mPIN, et protéger son compte."
-      },
-      "adding-money": {
-        "title": "Recharger",
-        "desc": "Alimenter votre portefeuille, et les délais."
+      "adding-money-and-withdrawals": {
+        "title": "Recharger et retirer",
+        "desc": "Alimenter votre portefeuille, récupérer votre argent, et les délais."
       },
       "paying-by-qr": {
-        "title": "Payer par QR code",
-        "desc": "Scanner, payer, et ce qui se passe en caisse."
-      },
-      "where-lumi-works": {
-        "title": "Où Lumi fonctionne",
-        "desc": "Les pays, les réseaux QR et la suite."
-      },
-      "fees-and-rates": {
-        "title": "Frais et taux de change",
-        "desc": "Le frais de 2 % et le taux réellement appliqué."
-      },
-      "limits": {
-        "title": "Plafonds",
-        "desc": "Ce que vous pouvez détenir, recharger et dépenser."
+        "title": "Payer et où Lumi fonctionne",
+        "desc": "Scanner, payer, et quels pays et réseaux QR sont couverts."
       },
       "payment-problems": {
-        "title": "Paiements qui échouent",
+        "title": "Quand un paiement échoue",
         "desc": "Paiements refusés, en attente ou erronés, et remboursements."
       },
-      "withdrawals": {
-        "title": "Retraits et solde restant",
-        "desc": "Récupérer votre argent en fin de voyage."
+      "fees-rates-and-limits": {
+        "title": "Frais, taux et plafonds",
+        "desc": "Le frais de 2 %, le taux appliqué, et les montants autorisés."
       },
-      "rewards-and-referrals": {
-        "title": "Récompenses et parrainage",
-        "desc": "Codes promo, cashback et invitations."
-      },
-      "esim-and-extras": {
-        "title": "eSIM et extras voyage",
-        "desc": "Forfaits data et les autres services de l’application."
-      },
-      "managing-your-account": {
-        "title": "Gérer votre compte",
-        "desc": "Vos informations, les notifications, et la clôture."
-      },
-      "safety-and-regulation": {
-        "title": "Sécurité et réglementation",
-        "desc": "Où est votre argent, vos données, et qui nous encadre."
-      },
-      "contacting-support": {
-        "title": "Contacter le support",
-        "desc": "Comment joindre une vraie personne, et quand."
+      "rewards-and-extras": {
+        "title": "Récompenses, eSIM et extras",
+        "desc": "Codes promo, cashback, parrainage, forfaits data et extras voyage."
       }
     },
     "contact": {

@@ -19,25 +19,19 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/eligibility-and-sign-up</loc>
+    <loc>https://lumifin.io/help/opening-your-account</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/identity-verification</loc>
+    <loc>https://lumifin.io/help/security-and-your-money</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/login-and-security</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/adding-money</loc>
+    <loc>https://lumifin.io/help/adding-money-and-withdrawals</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,61 +43,19 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/where-lumi-works</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/fees-and-rates</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/limits</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://lumifin.io/help/payment-problems</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/withdrawals</loc>
+    <loc>https://lumifin.io/help/fees-rates-and-limits</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/help/rewards-and-referrals</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/esim-and-extras</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/managing-your-account</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/safety-and-regulation</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/help/contacting-support</loc>
+    <loc>https://lumifin.io/help/rewards-and-extras</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -259,25 +211,19 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/eligibility-and-sign-up</loc>
+    <loc>https://lumifin.io/en/help/opening-your-account</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/identity-verification</loc>
+    <loc>https://lumifin.io/en/help/security-and-your-money</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/login-and-security</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/adding-money</loc>
+    <loc>https://lumifin.io/en/help/adding-money-and-withdrawals</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -289,61 +235,19 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/where-lumi-works</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/fees-and-rates</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/limits</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://lumifin.io/en/help/payment-problems</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/withdrawals</loc>
+    <loc>https://lumifin.io/en/help/fees-rates-and-limits</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lumifin.io/en/help/rewards-and-referrals</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/esim-and-extras</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/managing-your-account</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/safety-and-regulation</loc>
-    <lastmod>2026-10-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lumifin.io/en/help/contacting-support</loc>
+    <loc>https://lumifin.io/en/help/rewards-and-extras</loc>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
