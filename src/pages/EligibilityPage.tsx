@@ -409,7 +409,7 @@ export default function EligibilityPage() {
                 ),
                 2: (
                   <Link
-                    to={localizedPath('/faq', location.pathname)}
+                    to={localizedPath('/help', location.pathname)}
                     className="text-primary font-bold hover:underline"
                   />
                 ),

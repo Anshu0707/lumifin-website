@@ -41,7 +41,7 @@ export default function FAQSection() {
 
         <div className="mt-16 text-center">
           <Link
-            to="/faq"
+            to="/help"
             className="inline-flex items-center gap-2 bg-primary/10 text-primary px-10 py-5 rounded-2xl font-black text-xl hover:bg-primary/20 transition-all"
           >
             {t('faqSection.moreFaqs')}

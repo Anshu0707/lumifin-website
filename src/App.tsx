@@ -15,7 +15,6 @@ import LanguageFromUrl from './components/LanguageFromUrl';
 import LandingPage from './pages/LandingPage';
 
 // Lazy-load all other pages for code splitting
-const FAQPage = lazy(() => import('./pages/FAQPage'));
 const HelpCentrePage = lazy(() => import('./pages/HelpCentrePage'));
 const HelpCategoryPage = lazy(() => import('./pages/HelpCategoryPage'));
 const TeamPage = lazy(() => import('./pages/TeamPage'));
@@ -59,7 +58,6 @@ export default function App() {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/faq" element={<FAQPage />} />
           <Route path="/help" element={<HelpCentrePage />} />
           <Route path="/help/:slug" element={<HelpCategoryPage />} />
           <Route path="/team" element={<TeamPage />} />
@@ -98,7 +96,6 @@ export default function App() {
               /en/ path segment drives language selection (see src/i18n/config.ts).
               French stays at the root paths above, unchanged. */}
           <Route path="/en" element={<LandingPage />} />
-          <Route path="/en/faq" element={<FAQPage />} />
           <Route path="/en/help" element={<HelpCentrePage />} />
           <Route path="/en/help/:slug" element={<HelpCategoryPage />} />
           <Route path="/en/team" element={<TeamPage />} />

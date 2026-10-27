@@ -48,7 +48,7 @@ export default function NotFoundPage() {
               <BookOpen className="w-4 h-4" /> {t('notFound.blog')}
             </Link>
             <Link
-              to="/faq"
+              to="/help"
               className="inline-flex items-center gap-2 bg-slate-100 text-slate-700 px-8 py-4 rounded-2xl font-black hover:bg-slate-200 transition-all"
             >
               <HelpCircle className="w-4 h-4" /> {t('notFound.faq')}

@@ -13,3 +13,8 @@
 # fallback, so the soft-404 problem described above does not return.
 /cgu       /terms       301!
 /en/cgu    /en/terms    301!
+
+# /faq was replaced by the help centre. Specific 301s again, for the
+# same reason as above.
+/faq       /help        301!
+/en/faq    /en/help     301!

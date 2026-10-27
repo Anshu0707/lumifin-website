@@ -81,7 +81,7 @@ export default function Header() {
   const secondaryNav = (
     <>
       <Link
-        to={withLang("/faq")}
+        to={withLang("/help")}
         onClick={() => { setMobileOpen(false); setMoreOpen(false); }}
         className="hover:text-primary transition-colors"
       >

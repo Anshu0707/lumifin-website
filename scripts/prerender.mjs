@@ -31,7 +31,6 @@ const distDir = path.resolve(__dirname, '..', 'dist');
 // serves <route>.html directly at the no-slash URL, matching our canonicals.
 const routes = [
   { path: '/', out: 'index.html' },
-  { path: '/faq', out: 'faq.html' },
   { path: '/help', out: 'help.html' },
   { path: '/help/about-lumi', out: 'help/about-lumi.html' },
   { path: '/help/eligibility-and-sign-up', out: 'help/eligibility-and-sign-up.html' },
@@ -84,7 +83,6 @@ const routes = [
   // /en/ path segment drives language selection (src/i18n/config.ts "path"
   // detector runs before the French locale forced below, so it wins).
   { path: '/en', out: 'en/index.html' },
-  { path: '/en/faq', out: 'en/faq.html' },
   { path: '/en/help', out: 'en/help.html' },
   { path: '/en/help/about-lumi', out: 'en/help/about-lumi.html' },
   { path: '/en/help/eligibility-and-sign-up', out: 'en/help/eligibility-and-sign-up.html' },
