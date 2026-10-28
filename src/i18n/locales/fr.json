@@ -419,6 +419,593 @@
         "desc": "Codes promo, cashback, parrainage, forfaits data et extras voyage."
       }
     },
+    "articles": {
+      "A1": {
+        "q": "À qui s’adresse Lumi ?",
+        "a": "Lumi s’adresse aux résidents de l’UE et de l’EEE qui voyagent en Asie du Sud-Est : vacanciers, routards, voyageurs d’affaires et nomades numériques. Il vous suffit d’un compte bancaire en euros (SEPA) à votre nom.",
+        "aka": "Lumi est-il fait pour les touristes ? / Les expatriés ou les nomades numériques peuvent-ils l’utiliser ?"
+      },
+      "A2": {
+        "q": "Qui est derrière Lumi ?",
+        "a": "Lumi est une marque de Lumifin SAS, une société technologique française. Les paiements et les mouvements de fonds sont réalisés par des partenaires de paiement agréés et régulés en Europe et en Asie.",
+        "aka": "Quelle société détient Lumi ? / Lumi est-il français ?"
+      },
+      "A3": {
+        "q": "Lumi est-il un portefeuille crypto ?",
+        "a": "Aucune connaissance en crypto n’est nécessaire. Lumi utilise des stablecoins pour transférer les fonds de votre pays d’origine vers le Vietnam. Vous rechargez votre portefeuille en euros, et vos fonds sont convertis et réglés en devise locale, que vous utilisez ensuite pour payer les commerçants par QR code.",
+        "aka": "Est-ce que je détiens de la crypto ? / S’agit-il de stablecoins ? / Ai-je besoin d’un portefeuille crypto ?"
+      },
+      "A4": {
+        "q": "Pourquoi utiliser Lumi plutôt que des espèces ou ma carte ?",
+        "a": "Lumi vous permet de payer par QR code chez les commerçants partenaires partout au Vietnam : boutiques, étals de rue et taxis. Contrairement aux espèces ou à une carte bancaire étrangère, Lumi offre un moyen pratique de payer en devise locale. Des frais de 2 % s’appliquent, et le taux de change est affiché avant le paiement.",
+        "aka": "Pourquoi ne pas simplement utiliser ma carte bancaire ? / Est-ce moins cher qu’un distributeur ?"
+      },
+      "A5": {
+        "q": "Le téléchargement de Lumi est-il gratuit ?",
+        "a": "Oui. L’application est gratuite et il n’y a pas d’abonnement mensuel. Vous ne payez que les frais affichés sur chaque paiement.",
+        "aka": "Combien coûte l’application ? / Y a-t-il un abonnement ?"
+      },
+      "A6": {
+        "q": "Lumi est-il entièrement lancé ?",
+        "a": "Lumi est disponible au Vietnam. Nous continuons d’ajouter des fonctionnalités, vous pourrez donc constater des évolutions de temps en temps. Signalez-nous tout problème dans le chat de l’application : cela arrive directement à l’équipe.",
+        "aka": "L’application est-elle terminée ? / Lumi est-il encore en bêta ? / Pourquoi est-il indiqué bêta ?"
+      },
+      "A7": {
+        "q": "Sur quels téléphones Lumi fonctionne-t-il ?",
+        "a": "Lumi est disponible sur iOS et Android. Il vous faut un téléphone avec un appareil photo en état de marche pour scanner les QR codes.",
+        "aka": "Existe-t-il une application iPhone ? / Android ? / Puis-je l’utiliser sur une tablette ?"
+      },
+      "E1": {
+        "q": "Puis-je utiliser Lumi si je vis au Royaume-Uni ou en Suisse ?",
+        "a": "Pas encore. Le Royaume-Uni et la Suisse ne sont pas pris en charge pour le moment. Laissez votre e-mail sur lumifin.io et nous vous préviendrons dès que ce sera le cas.",
+        "aka": "Résident britannique ? / Compte bancaire suisse ? / GBP ou CHF ?"
+      },
+      "E2": {
+        "q": "Puis-je utiliser Lumi si je viens des États-Unis, du Canada, d’Inde ou d’Australie ?",
+        "a": "Pas encore. Lumi s’adresse pour l’instant uniquement aux résidents de l’UE et de l’EEE.",
+        "aka": "Je ne suis pas européen, puis-je m’inscrire ?"
+      },
+      "E3": {
+        "q": "Je suis citoyen de l’UE mais je vis hors d’Europe. Puis-je m’inscrire ?",
+        "a": "Il vous suffit d’un compte bancaire européen à votre nom pour utiliser Lumi. Votre nationalité ou votre pays de résidence ne détermine pas votre éligibilité.",
+        "aka": "Je suis français mais je vis au Vietnam / Dois-je résider en Europe ?"
+      },
+      "E4": {
+        "q": "Puis-je utiliser un compte en euros Revolut, N26 ou Wise ?",
+        "a": "Oui, à condition qu’il s’agisse d’un compte en euros avec un IBAN de la zone SEPA et à votre nom.",
+        "aka": "Les néobanques fonctionnent-elles ? / Puis-je recharger depuis Wise EUR ?"
+      },
+      "E5": {
+        "q": "Puis-je utiliser le compte bancaire de quelqu’un d’autre ?",
+        "a": "Non. L’argent doit provenir d’un compte personnel à votre nom, et ce nom doit correspondre à votre identité vérifiée. Les virements depuis le compte d’une autre personne ou depuis un compte professionnel peuvent être refusés et renvoyés.",
+        "aka": "Mon conjoint peut-il recharger pour moi ? / Compte joint ? / Compte d’entreprise ?"
+      },
+      "E6": {
+        "q": "Quel âge faut-il avoir ?",
+        "a": "Vous devez avoir au moins 18 ans.",
+        "aka": "Mon adolescent peut-il utiliser Lumi ? / Âge minimum ?"
+      },
+      "E7": {
+        "q": "Combien de temps prend l’inscription ?",
+        "a": "La plupart des personnes terminent en 3 à 5 minutes environ. Les vérifications d’identité sont généralement rapides, mais certaines nécessitent un examen manuel.",
+        "aka": "En combien de temps puis-je commencer à payer ?"
+      },
+      "E8": {
+        "q": "Dois-je configurer Lumi avant de partir ?",
+        "a": "La meilleure façon de préparer votre voyage est de créer votre compte Lumi et d’effectuer votre premier rechargement avant de partir. Vous pouvez aussi acheter une eSIM directement via Lumi afin d’avoir des données mobiles dès votre arrivée au Vietnam. Vous pouvez également vous inscrire une fois sur place, tant que vous avez une connexion internet.",
+        "aka": "Puis-je m’inscrire une fois au Vietnam ?"
+      },
+      "E9": {
+        "q": "Puis-je avoir plusieurs comptes Lumi ?",
+        "a": "Non. Chaque personne ne peut avoir qu’un seul compte. Si vous avez perdu l’accès au vôtre, contactez le support plutôt que d’en ouvrir un nouveau.",
+        "aka": "Deuxième compte / Nouveau compte avec une autre adresse e-mail"
+      },
+      "E10": {
+        "q": "Je n’ai pas reçu mon e-mail ou mon code d’inscription. Que faire ?",
+        "a": "Vérifiez vos spams ainsi que l’exactitude de l’adresse e-mail ou du numéro, puis appuyez sur « renvoyer » après une minute. Si rien n’arrive, écrivez à support@lumifin.io en indiquant l’adresse utilisée.",
+        "aka": "Pas d’OTP / Code de vérification non reçu / Pas de SMS"
+      },
+      "V1": {
+        "q": "L’application a sélectionné le mauvais pays pour mon document. Que faire ?",
+        "a": "Changez le pays manuellement à l’étape du document, avant de prendre les photos. Si vous ne pouvez pas le modifier, fermez l’application, rouvrez-la et recommencez. Contactez le support si cela se reproduit.",
+        "aka": "Il affiche l’Inde au lieu de la France / Mauvais pays dans la vérification"
+      },
+      "V2": {
+        "q": "Puis-je utiliser Lumi avant d’être vérifié ?",
+        "a": "Vous pouvez créer votre compte et découvrir l’application, mais recharger, payer et utiliser les récompenses nécessitent d’abord une vérification.",
+        "aka": "Puis-je recharger sans être vérifié ?"
+      },
+      "V3": {
+        "q": "Mes données d’identité sont-elles en sécurité ?",
+        "a": "Vos documents sont traités par un prestataire spécialisé dans la vérification d’identité, chiffrés et conservés dans l’UE. Nous ne les utilisons que pour vous vérifier et respecter nos obligations légales. Consultez notre politique de confidentialité pour en savoir plus.",
+        "aka": "Que faites-vous de la photo de mon passeport ? / Qui voit mon selfie ?"
+      },
+      "V4": {
+        "q": "Devrai-je me vérifier à nouveau plus tard ?",
+        "a": "Parfois, par exemple si votre pièce d’identité expire, si vos informations changent ou si un contrôle réglementaire l’exige. Nous vous préviendrons dans l’application si nous avons besoin de quelque chose.",
+        "aka": "Nouvelle vérification / Pourquoi me redemandez-vous une pièce d’identité ?"
+      },
+      "S1": {
+        "q": "J’ai oublié mon mot de passe.",
+        "a": "Sur l’écran de connexion, appuyez sur « Mot de passe oublié », saisissez l’adresse e-mail de votre compte et suivez le lien que nous vous envoyons. Vérifiez vos spams si rien n’arrive dans les minutes qui suivent.",
+        "aka": "Réinitialiser le mot de passe / Impossible de me connecter"
+      },
+      "S2": {
+        "q": "Pourquoi suis-je sans cesse déconnecté ?",
+        "a": "Par sécurité, Lumi vous déconnecte après une période d’inactivité ou lorsqu’un nouvel appareil est détecté. Assurez-vous d’utiliser la dernière version de l’application. Si cela se produit à chaque ouverture, signalez-le dans le chat de l’application.",
+        "aka": "L’application me redemande de me connecter / Nouvelle authentification à chaque fois"
+      },
+      "S3": {
+        "q": "Pourquoi me demande-t-on de vérifier cet appareil ?",
+        "a": "Lorsque vous vous connectez depuis un nouveau téléphone, ou après avoir réinitialisé vos informations de sécurité, nous envoyons un code à usage unique pour confirmer qu’il s’agit bien de vous.",
+        "aka": "Code pour vérifier l’appareil / Nouveau téléphone"
+      },
+      "S4": {
+        "q": "J’ai changé de téléphone. Comment transférer mon compte ?",
+        "a": "Installez Lumi sur le nouveau téléphone, connectez-vous avec votre e-mail et votre mot de passe, puis confirmez le code à usage unique. Votre solde et votre historique suivent votre compte. Définissez ensuite à nouveau votre code mPIN.",
+        "aka": "Nouveau téléphone / Transférer Lumi sur un autre appareil"
+      },
+      "S5": {
+        "q": "J’ai perdu mon téléphone ou on me l’a volé. Que faire ?",
+        "a": "Contactez immédiatement support@lumifin.io ou WhatsApp au +33 6 19 78 42 22 afin que nous puissions sécuriser votre compte. Changez également le mot de passe de votre messagerie. Vos fonds ne peuvent pas être dépensés sans votre code mPIN ou votre biométrie.",
+        "aka": "Téléphone volé / Bloquer mon compte"
+      },
+      "S6": {
+        "q": "Je vois un paiement que je n’ai pas effectué.",
+        "a": "Contactez immédiatement le support en indiquant la date et le montant. Nous sécuriserons votre compte et enquêterons. Ne communiquez jamais de codes ni votre mPIN à qui que ce soit qui vous contacte.",
+        "aka": "Transaction non autorisée / Fraude / Quelqu’un a utilisé mon compte"
+      },
+      "S7": {
+        "q": "Lumi me demandera-t-il un jour mon mPIN ou mes codes ?",
+        "a": "Jamais. Les équipes Lumi ne vous demanderont jamais votre mPIN, votre mot de passe ni vos codes à usage unique. Si quelqu’un le fait, c’est une arnaque. Signalez-le à support@lumifin.io.",
+        "aka": "Ce message vient-il de Lumi ? / Hameçonnage"
+      },
+      "S8": {
+        "q": "Puis-je utiliser Lumi avec un VPN ?",
+        "a": "Lumi fonctionne sans VPN dans les pays pris en charge. Si vous rencontrez des difficultés de connexion, essayez de basculer entre le Wi-Fi et les données mobiles.",
+        "aka": "Le VPN bloque la connexion / L’application ne fonctionne pas à l’étranger"
+      },
+      "T1": {
+        "q": "Puis-je recharger avec une carte de débit ou de crédit ?",
+        "a": "Pas encore. Vous pouvez recharger par virement SEPA ou via l’open banking depuis un compte bancaire européen. Le rechargement par carte arrive bientôt.",
+        "aka": "Visa / Mastercard / Rechargement par carte"
+      },
+      "T2": {
+        "q": "Puis-je utiliser Apple Pay ou Google Pay ?",
+        "a": "Pas pour le moment. Vous pouvez alimenter votre portefeuille Lumi par virement SEPA ou en choisissant « Connecter ma banque » dans l’application.",
+        "aka": "Recharger avec Apple Pay"
+      },
+      "T3": {
+        "q": "Puis-je recharger en crypto ou en stablecoins ?",
+        "a": "Non. Lumi n’accepte que des euros provenant d’un compte bancaire à votre nom.",
+        "aka": "Rechargement USDT / USDC / Bitcoin"
+      },
+      "T4": {
+        "q": "J’ai oublié d’indiquer la référence du paiement.",
+        "a": "Vous n’avez pas besoin d’indiquer de référence lors d’un virement SEPA vers Lumi. Si votre virement n’apparaît pas dans votre portefeuille Lumi, contactez-nous via le chat de l’application ou WhatsApp en précisant le montant, la date, l’IBAN émetteur et une capture d’écran du virement, afin que nous puissions vérifier.",
+        "aka": "Mauvaise référence / Pas de référence sur le virement"
+      },
+      "T5": {
+        "q": "Ma banque a refusé le rechargement.",
+        "a": "Vous devez enregistrer l’IBAN affiché dans l’application Lumi comme nouveau bénéficiaire dans votre application bancaire. Certaines banques imposent un délai pouvant aller jusqu’à 1 jour ouvré avant de pouvoir effectuer le virement. Si le virement est toujours refusé, contactez votre banque.",
+        "aka": "Échec de l’open banking / La banque a bloqué le virement"
+      },
+      "T6": {
+        "q": "Puis-je recharger depuis le compte bancaire de quelqu’un d’autre ?",
+        "a": "Non. Les rechargements doivent provenir d’un compte personnel à votre nom. Les virements depuis d’autres comptes peuvent être renvoyés.",
+        "aka": "Compte d’un ami / Compte d’un parent"
+      },
+      "T7": {
+        "q": "Quel montant charger pour mon voyage ?",
+        "a": "Nous vous conseillons de consulter des guides de voyage ou des forums pour estimer votre budget au Vietnam selon la durée de votre séjour et vos envies. Vous pouvez commencer par recharger 50 à 75 % de vos dépenses estimées, puis compléter votre portefeuille Lumi quand vous en avez besoin.",
+        "aka": "De combien d’argent ai-je besoin au Vietnam ?"
+      },
+      "T8": {
+        "q": "Puis-je recharger depuis l’étranger ?",
+        "a": "Oui. Vous pouvez recharger depuis n’importe où avec une connexion internet, tant que l’argent provient de votre compte en euros.",
+        "aka": "Recharger depuis le Vietnam / Recharger en vacances"
+      },
+      "P1": {
+        "q": "Quels QR codes puis-je scanner ?",
+        "a": "Au Vietnam, Lumi prend en charge les paiements par QR code pour les visiteurs étrangers via les QR codes VietQR éligibles et les QR codes des banques ou portefeuilles vietnamiens compatibles. Tous les QR codes ne sont pas compatibles : Lumi est conçu pour les utilisateurs étrangers qui paient des commerçants locaux.",
+        "aka": "À quoi ressemble un QR compatible ? / Quel logo dois-je chercher ?"
+      },
+      "P2": {
+        "q": "Pourquoi le montant se remplit-il parfois automatiquement ?",
+        "a": "Certains QR codes contiennent déjà le montant (fréquent en caisse et sur les additions) : Lumi le renseigne alors pour vous. Les QR codes imprimés sur un présentoir n’en contiennent généralement pas, vous saisissez donc le montant vous-même. Vérifiez-le toujours avant de confirmer.",
+        "aka": "QR statique ou dynamique / Dois-je saisir le montant ?"
+      },
+      "P3": {
+        "q": "Puis-je payer un vendeur de rue ou un étal de marché ?",
+        "a": "Oui, vous pouvez payer chez les vendeurs de rue, les étals de marché et les petites boutiques au Vietnam, à condition qu’ils affichent un QR code compatible. Les QR codes bancaires personnels et individuels sont également pris en charge au Vietnam.",
+        "aka": "Petites boutiques / QR personnel / Marché de nuit"
+      },
+      "P4": {
+        "q": "Le caissier veut scanner mon téléphone. Puis-je payer ainsi ?",
+        "a": "Pas encore. Avec Lumi, c’est vous qui scannez le QR code du commerçant. Si le magasin ne scanne que les codes des clients, demandez s’il dispose d’un QR code à scanner, ou utilisez un autre moyen de paiement.",
+        "aka": "Afficher mon QR / Le caissier me scanne / 7-Eleven"
+      },
+      "P5": {
+        "q": "Puis-je payer en ligne ou dans des applications comme Grab ?",
+        "a": "Lumi est conçu pour payer les QR codes des commerçants en personne. Si un site web ou une application affiche un QR code compatible au moment du paiement, vous pouvez le scanner depuis un autre écran.",
+        "aka": "Payer sur un site web / Grab / Shopee / Booking"
+      },
+      "P6": {
+        "q": "Puis-je payer des factures ou des QR codes de services publics ?",
+        "a": "Les paiements d’hôtel et de restaurant peuvent être effectués via les QR codes commerçants compatibles. Les factures de services publics et autres QR codes de facturiers peuvent ne pas être pris en charge. Contactez-nous si vous avez un doute sur la compatibilité d’un QR code avec Lumi.",
+        "aka": "Facture d’électricité / Loyer / Note d’hôtel"
+      },
+      "P7": {
+        "q": "Puis-je payer un taxi ou un chauffeur de moto ?",
+        "a": "Oui, si le chauffeur présente un QR code compatible. De nombreux chauffeurs au Vietnam disposent d’un QR code bancaire sur une carte ou sur leur téléphone.",
+        "aka": "Xe om / Taxi / QR d’un chauffeur Grab"
+      },
+      "P8": {
+        "q": "Comment montrer au commerçant que j’ai payé ?",
+        "a": "Après le paiement, un écran de confirmation affiche le montant, le commerçant et l’heure. Montrez-le au commerçant ; son application indique également la réception du paiement. Chaque reçu reste dans votre historique de transactions.",
+        "aka": "Preuve de paiement / Reçu"
+      },
+      "P9": {
+        "q": "Puis-je partager une addition ou payer un ami ?",
+        "a": "Lumi ne propose pas de virements entre particuliers. Si votre ami dispose d’un QR code bancaire professionnel ou personnel dans un pays pris en charge, vous pouvez le scanner et le payer comme un commerçant.",
+        "aka": "Envoyer de l’argent à un ami / Rembourser quelqu’un / P2P"
+      },
+      "P10": {
+        "q": "Puis-je recevoir de l’argent sur Lumi ?",
+        "a": "Non. Lumi sert à payer, pas à recevoir. Votre solde ne peut être alimenté que depuis votre propre compte bancaire en euros.",
+        "aka": "Mes amis peuvent-ils m’envoyer de l’argent ? / Recevoir un paiement"
+      },
+      "P11": {
+        "q": "Puis-je laisser un pourboire avec Lumi ?",
+        "a": "Oui. Il vous suffit d’inclure le pourboire dans le montant que vous saisissez au moment de scanner le QR code.",
+        "aka": "Ajouter un pourboire / Frais de service"
+      },
+      "P12": {
+        "q": "Puis-je annuler un paiement après l’avoir confirmé ?",
+        "a": "Non. Les paiements par QR code arrivent directement sur le compte du commerçant et ne peuvent pas être annulés une fois confirmés. Vérifiez toujours le montant et le nom du commerçant avant de confirmer.",
+        "aka": "Annuler un paiement / Arrêter un paiement"
+      },
+      "W1": {
+        "q": "Lumi fonctionne-t-il en Thaïlande ?",
+        "a": "Pas encore. La Thaïlande arrive bientôt. Inscrivez-vous pour être tenu informé et nous vous préviendrons dès l’ouverture.",
+        "aka": "PromptPay / Bangkok / Phuket"
+      },
+      "W2": {
+        "q": "Lumi fonctionne-t-il en Indonésie ou à Bali ?",
+        "a": "Pas encore. L’Indonésie arrive bientôt. Inscrivez-vous pour être tenu informé et nous vous préviendrons dès l’ouverture.",
+        "aka": "QRIS / Bali / Jakarta"
+      },
+      "W3": {
+        "q": "Quels autres pays sont prévus ?",
+        "a": "Après la Thaïlande et l’Indonésie, la feuille de route comprend la Malaisie, le Cambodge, les Philippines, le Laos, la Corée du Sud, Taïwan et la Mongolie. Nous annoncerons chaque ouverture.",
+        "aka": "Malaisie ? / Cambodge ? / Philippines ? / Japon ?"
+      },
+      "W4": {
+        "q": "Comment savoir si un commerce accepte Lumi ?",
+        "a": "Si le commerce affiche un QR code VietQR, ou un QR code d’une banque vietnamienne en caisse, vous pouvez généralement payer avec Lumi. Les commerces n’ont aucune inscription à faire.",
+        "aka": "Ce magasin accepte-t-il Lumi ? / Quels commerçants ?"
+      },
+      "W5": {
+        "q": "Puis-je utiliser Lumi en Europe ou chez moi ?",
+        "a": "Non. Lumi sert à payer des QR codes dans les pays d’Asie du Sud-Est pris en charge.",
+        "aka": "Payer en France / Utiliser Lumi dans mon pays"
+      },
+      "W6": {
+        "q": "Je pars dans un pays que Lumi ne couvre pas encore. Puis-je quand même l’utiliser ?",
+        "a": "Votre solde reste en sécurité sur votre compte, mais vous ne pouvez pas encore y payer de QR codes. Utilisez une carte ou des espèces dans ces pays, et reprenez Lumi dès votre retour au Vietnam.",
+        "aka": "Pays non pris en charge / Je pars en Thaïlande la semaine prochaine"
+      },
+      "W7": {
+        "q": "Puis-je demander l’ouverture d’un nouveau pays ?",
+        "a": "Oui. Dites-le-nous dans le chat de l’application ou à support@lumifin.io. Vos demandes nous aident à choisir les prochaines ouvertures.",
+        "aka": "Ajoutez le Japon s’il vous plaît / Demande de fonctionnalité"
+      },
+      "R1": {
+        "q": "Pourquoi le taux diffère-t-il de celui affiché sur Google ?",
+        "a": "Google affiche le taux interbancaire, qui bouge toutes les quelques secondes et n’est pas accessible aux particuliers. Le taux de Lumi est en temps réel, proche de celui-ci, et figé dès que l’écran de confirmation s’affiche.",
+        "aka": "Le taux semble moins bon / Taux qui ne correspond pas"
+      },
+      "R2": {
+        "q": "Lumi est-il moins cher que ma carte bancaire ?",
+        "a": "En général, oui. Les banques européennes facturent souvent 1,5 à 3 % par paiement par carte à l’étranger, plus une marge de change de 2 à 5 %, et les distributeurs ajoutent des frais de retrait. Sur 1 000 € de dépenses, Lumi coûte environ 20 € de frais, contre 60 à 144 € avec une carte, un distributeur ou un bureau de change d’aéroport.",
+        "aka": "Comparer avec la carte / Est-ce que ça vaut le coup ?"
+      },
+      "R3": {
+        "q": "Ma banque me facturera-t-elle l’utilisation de Lumi à l’étranger ?",
+        "a": "Les virements SEPA en euros au sein de l’Europe sont généralement sans frais de transfert. Les frais peuvent toutefois dépendre de votre banque et de votre type de compte : vérifiez auprès de votre banque en cas de doute.",
+        "aka": "Frais de transaction à l’étranger / Frais bancaires"
+      },
+      "R4": {
+        "q": "Le commerçant paie-t-il des frais ?",
+        "a": "Le commerçant reçoit la totalité du montant en devise locale, exactement comme si un habitant avait payé.",
+        "aka": "Le magasin y perd-il ? / Frais commerçant"
+      },
+      "R5": {
+        "q": "Le taux de change évolue-t-il entre le scan et le paiement ?",
+        "a": "Le taux est affiché sur l’écran de confirmation et s’applique au moment où vous confirmez. Si vous laissez cet écran ouvert longtemps, il peut se rafraîchir au taux le plus récent.",
+        "aka": "Le taux a changé / Taux bloqué"
+      },
+      "R6": {
+        "q": "Dois-je payer en euros ou en devise locale si un commerce propose les deux ?",
+        "a": "Avec Lumi, vous payez toujours en devise locale et la conversion est faite par Lumi : la question ne se pose donc pas. Sur un terminal de carte bancaire, choisissez toujours la devise locale ; payer en euros y coûte généralement plus cher.",
+        "aka": "Payer en EUR sur un terminal / Conversion dynamique de devise"
+      },
+      "L1": {
+        "q": "Quel est le plus petit paiement possible ?",
+        "a": "Le paiement minimum au Vietnam est de 10 000 VND (environ 0,33 €), vous pouvez donc utiliser Lumi pour de petits achats comme un café ou un en-cas de rue.",
+        "aka": "Paiement minimum / Puis-je payer un café ?"
+      },
+      "L2": {
+        "q": "Y a-t-il un maximum par paiement ?",
+        "a": "Oui. Le maximum est de 3 000 000 VND par paiement.",
+        "aka": "Plafond par transaction / Puis-je payer mon hôtel ?"
+      },
+      "L3": {
+        "q": "Y a-t-il un plafond quotidien ou mensuel ?",
+        "a": "Oui. Pour les paiements, le plafond est de 6 000 000 VND par jour et de 25 000 000 VND par mois. Pour les rechargements, il est de 600 € par jour et de 3 000 € par mois.",
+        "aka": "Plafond de dépenses quotidien / Limite mensuelle"
+      },
+      "L5": {
+        "q": "Mon paiement a été refusé pour dépassement de plafond. Que puis-je faire ?",
+        "a": "Divisez le montant en deux paiements si le commerçant l’accepte, ou attendez la réinitialisation de votre plafond quotidien.",
+        "aka": "Plafond dépassé / Limite atteinte"
+      },
+      "L6": {
+        "q": "Puis-je augmenter mes plafonds ?",
+        "a": "Non. Nous y travaillons.",
+        "aka": "Augmenter le plafond / Plafonds plus élevés"
+      },
+      "F1": {
+        "q": "Mon paiement a échoué. Que dois-je faire ?",
+        "a": "Vérifiez que :\n\n- votre portefeuille Lumi contient assez d’argent pour couvrir le paiement, frais de 2 % compris ;\n- vous êtes connecté à internet ;\n- vous utilisez la dernière version de l’application Lumi.\n\nScannez ensuite à nouveau le QR code. Si le paiement échoue encore, contactez-nous via le chat de l’application ou sur WhatsApp.",
+        "aka": "Le paiement n’est pas passé / Transaction échouée / Erreur au paiement"
+      },
+      "F2": {
+        "q": "Mon paiement est indiqué « en attente ». Qu’est-ce que cela signifie ?",
+        "a": "Il arrive que le réseau bancaire local mette plus de temps à confirmer. Le montant est bloqué pendant que nous vérifions. Si le paiement est bien passé, il devient « effectué » ; sinon, la totalité du montant revient sur votre solde. En cas de problème, contactez le support.",
+        "aka": "En cours de traitement / Paiement bloqué / Non finalisé"
+      },
+      "F3": {
+        "q": "L’argent a quitté mon solde mais le commerçant dit ne pas l’avoir reçu.",
+        "a": "Ne payez pas une seconde fois tout de suite. Montrez votre reçu au commerçant : son application bancaire peut mettre un moment à se mettre à jour. S’il ne voit toujours rien, contactez le support avec le reçu, le nom du commerçant et l’heure, et nous retrouverons la transaction. Si le paiement ne lui est pas parvenu, vous serez remboursé.",
+        "aka": "Le commerçant n’a pas été payé / Le magasin dit ne rien avoir reçu"
+      },
+      "F4": {
+        "q": "Mon paiement a échoué mais l’argent a été retiré de mon solde.",
+        "a": "Si un paiement échoue après que l’argent a été bloqué, il revient automatiquement sur votre solde. Si vous ne le voyez pas revenir dans ce délai, contactez le support.",
+        "aka": "Débité mais échoué / Prélevé mais refusé"
+      },
+      "F5": {
+        "q": "J’ai été débité deux fois.",
+        "a": "Contactez le support avec les deux reçus ou une capture d’écran de votre historique. Nous vérifierons auprès du réseau de paiement et rembourserons tout doublon.",
+        "aka": "Double paiement / Débit en double"
+      },
+      "F6": {
+        "q": "Puis-je être remboursé d’un achat ?",
+        "a": "Les remboursements de biens ou de services se règlent entre vous et le commerçant, comme avec des espèces. Lumi ne peut pas renvoyer d’argent d’un commerçant vers votre portefeuille. Demandez-lui un remboursement en espèces.",
+        "aka": "Retourner un article / Remboursement commerçant / Annuler une commande"
+      },
+      "F7": {
+        "q": "Le QR code ne se scanne pas.",
+        "a": "Nettoyez l’objectif de votre appareil photo, augmentez la luminosité de l’écran si vous scannez depuis un téléphone, et tenez-vous à environ 15 cm sans bouger. Assurez-vous qu’il s’agit bien d’un QR code de paiement, et non d’un menu, d’un code Wi-Fi ou d’un lien de téléchargement. Toujours bloqué ? Demandez un autre QR code au commerçant.",
+        "aka": "Le scanner ne fonctionne pas / L’appareil photo ne lit pas le QR"
+      },
+      "F8": {
+        "q": "Lumi indique que le QR code n’est pas pris en charge.",
+        "a": "Le code provient peut-être d’un pays ou d’un réseau que Lumi ne couvre pas encore, il peut ne pas être un QR code de paiement, ou être dans un format que nous n’acceptons pas (certains codes de facturier ou de portefeuille personnel, par exemple). Demandez au commerçant s’il dispose d’un QR code VietQR ou bancaire.",
+        "aka": "QR non pris en charge / QR invalide / Ce QR ne peut pas être payé"
+      },
+      "F9": {
+        "q": "Pourquoi mon paiement a-t-il été bloqué ?",
+        "a": "Certains paiements sont arrêtés par des contrôles de sécurité automatiques destinés à vous protéger. Vérifiez votre solde et réessayez une fois. Si le blocage persiste, contactez le support. Pour des raisons de sécurité, nous ne pouvons pas détailler ces contrôles.",
+        "aka": "Paiement bloqué pour raison de sécurité / Transaction refusée par sécurité"
+      },
+      "F10": {
+        "q": "Les paiements échouent tard le soir. Pourquoi ?",
+        "a": "Certaines banques locales effectuent leur maintenance tard dans la nuit, ce qui peut interrompre brièvement les paiements. Réessayez quelques minutes plus tard, ou payez autrement. Aucun montant n’est prélevé pour un paiement échoué.",
+        "aka": "Le paiement échoue après minuit / Maintenance bancaire"
+      },
+      "F11": {
+        "q": "J’utilise une ancienne version de l’application et il manque quelque chose.",
+        "a": "Mettez Lumi à jour vers la dernière version disponible sur votre magasin d’applications pour accéder aux dernières fonctionnalités et améliorations. Si le problème persiste, contactez-nous via le chat de l’application ou sur WhatsApp.",
+        "aka": "Mon application n’a pas de récompenses / Fonctionnalité manquante / Ancienne version"
+      },
+      "F12": {
+        "q": "Que dois-je envoyer au support en cas de problème de paiement ?",
+        "a": "L’adresse e-mail de votre compte, la date et l’heure, le montant, le nom du commerçant, et une capture d’écran du reçu ou de l’erreur. Cela nous permet de tout retracer en une fois.",
+        "aka": "De quelles informations avez-vous besoin ?"
+      },
+      "WD1": {
+        "q": "Que devient mon solde après mon voyage ?",
+        "a": "Votre solde reste sur votre compte Lumi, prêt pour votre prochain voyage ; il n’expire pas. Vous pouvez aussi le virer sur votre compte bancaire quand vous le souhaitez.",
+        "aka": "Argent restant / Argent qui reste après les vacances"
+      },
+      "WD2": {
+        "q": "Puis-je retirer vers un autre compte bancaire ?",
+        "a": "Vous ne pouvez retirer vos fonds que vers un compte bancaire européen détenu à votre nom.",
+        "aka": "Retirer vers un autre IBAN"
+      },
+      "WD3": {
+        "q": "Puis-je retirer des espèces à un distributeur avec Lumi ?",
+        "a": "Non. Lumi n’a pas de carte, et ne peut donc pas être utilisé aux distributeurs. L’application est conçue pour que vous ayez besoin de beaucoup moins d’espèces.",
+        "aka": "Distributeur / Retrait d’espèces / Obtenir des dongs"
+      },
+      "WD4": {
+        "q": "Puis-je transférer mon solde Lumi à une autre personne ?",
+        "a": "Non. Votre solde ne peut être dépensé que par vous, ou renvoyé vers votre propre compte bancaire.",
+        "aka": "Donner mon solde à un ami / Transférer à quelqu’un d’autre"
+      },
+      "RW2": {
+        "q": "Je n’ai pas reçu mon code promo ou ma récompense.",
+        "a": "Vérifiez que vous remplissez les conditions de l’offre et que vous utilisez la dernière version de l’application Lumi. Si votre code ou votre récompense manque toujours, contactez-nous via le chat de l’application ou sur WhatsApp.",
+        "aka": "Bonus de bienvenue manquant / Où est ma récompense ?"
+      },
+      "RW3": {
+        "q": "Où trouver mes récompenses ?",
+        "a": "Ouvrez la section Récompenses de l’application. Vous y verrez vos codes promo actifs, les récompenses obtenues et un champ pour saisir un code.",
+        "aka": "Espace récompenses / Mes codes promo / Avantages"
+      },
+      "RW4": {
+        "q": "Comment utiliser un code promo ou un coupon ?",
+        "a": "Dans la section Récompenses, appuyez sur « Saisir un code », tapez-le exactement tel qu’il vous a été communiqué, puis appuyez sur « Appliquer ». Les codes ne fonctionnent qu’une fois votre identité vérifiée. Chaque code a ses propres conditions et sa date d’expiration.",
+        "aka": "Saisir un coupon / Utiliser un code / Le code promo ne marche pas"
+      },
+      "RW5": {
+        "q": "Mon code promo ne fonctionne pas.",
+        "a": "Vérifiez l’orthographe et la date d’expiration, ainsi que l’achèvement de votre vérification d’identité. Certains codes sont limités à une utilisation par personne ou réservés aux nouveaux utilisateurs. Si vous pensez qu’il devrait fonctionner, envoyez le code au support.",
+        "aka": "Code invalide / Code expiré / Code déjà utilisé"
+      },
+      "RW6": {
+        "q": "Comment fonctionne le programme de parrainage ?",
+        "a": "Partagez votre code de parrainage depuis l’application. Lorsque votre ami s’inscrit avec ce code et remplit les conditions, vous recevez tous les deux une récompense.",
+        "aka": "Inviter des amis / Parrainer un ami / Code de parrainage"
+      },
+      "RW7": {
+        "q": "Mon ami s’est inscrit mais je n’ai pas reçu ma récompense de parrainage.",
+        "a": "Les récompenses sont versées une fois que votre ami a terminé toutes les étapes, comme la vérification et un premier rechargement ou paiement. Si c’est le cas et que la récompense manque toujours, contactez le support en indiquant l’adresse e-mail avec laquelle il s’est inscrit.",
+        "aka": "Parrainage non crédité"
+      },
+      "RW10": {
+        "q": "Les récompenses expirent-elles ?",
+        "a": "Chaque récompense affiche sa date d’expiration dans la section Récompenses. Utilisez-la avant cette date : une récompense expirée ne peut pas être rétablie.",
+        "aka": "Expiration d’un coupon / Expiration du crédit"
+      },
+      "RW11": {
+        "q": "Puis-je retirer le crédit de ma récompense ?",
+        "a": "Non. Le crédit de récompense ne peut être dépensé qu’en paiements Lumi.",
+        "aka": "Encaisser le bonus / Transférer le crédit de bienvenue"
+      },
+      "RW12": {
+        "q": "Je suis gérant d’un établissement ou créateur de contenu. Puis-je devenir partenaire de Lumi ?",
+        "a": "Oui. Lumifriends est notre programme destiné aux établissements et aux créateurs au Vietnam. Écrivez-nous à info@lumifin.io pour en savoir plus.",
+        "aka": "Lumifriends / Programme partenaire / Affiliation"
+      },
+      "X1": {
+        "q": "Lumi vend-il des eSIM ?",
+        "a": "Les eSIM arrivent bientôt. Vous pourrez acheter un forfait data local dans l’application et l’activer avant d’atterrir, sans carte SIM physique.",
+        "aka": "Forfait data / Internet mobile au Vietnam / Carte SIM"
+      },
+      "X2": {
+        "q": "Mon téléphone est-il compatible avec une eSIM Lumi ?",
+        "a": "Votre téléphone doit prendre en charge l’eSIM et être désimlocké. C’est le cas de la plupart des iPhone, Pixel et Samsung Galaxy récents. Vérifiez les réglages de votre téléphone ou demandez à votre opérateur.",
+        "aka": "Compatible eSIM ? / Mon téléphone est-il désimlocké ?"
+      },
+      "X3": {
+        "q": "Quand dois-je installer l’eSIM ?",
+        "a": "Installez-la avant le départ, et activez-la à l’arrivée.",
+        "aka": "Installer avant de partir ? / Activer à l’arrivée"
+      },
+      "X4": {
+        "q": "Puis-je être remboursé d’une eSIM ?",
+        "a": "Si nous ne parvenons pas à vous fournir une eSIM, vous serez remboursé.",
+        "aka": "L’eSIM ne fonctionne pas / Annuler une eSIM"
+      },
+      "X5": {
+        "q": "Comment payer une eSIM ?",
+        "a": "Vous pouvez payer directement depuis votre portefeuille Lumi.",
+        "aka": "Paiement de l’eSIM"
+      },
+      "X6": {
+        "q": "Que sont les excursions quotidiennes et les offres restaurants ?",
+        "a": "Nous ajouterons bientôt des excursions sélectionnées et des offres de restaurants locaux, à réserver ou à débloquer avec Lumi.",
+        "aka": "Expériences / Bons plans / Offres membres"
+      },
+      "M1": {
+        "q": "Puis-je télécharger un relevé ?",
+        "a": "Oui, vous pouvez télécharger le relevé complet depuis la page des transactions.",
+        "aka": "Exporter les transactions / Relevé PDF / Note de frais"
+      },
+      "M2": {
+        "q": "Comment activer ou désactiver les notifications ?",
+        "a": "Gérez les notifications push dans les réglages de votre téléphone, pour Lumi. Les alertes de sécurité, comme une nouvelle connexion ou un blocage du mPIN, sont toujours envoyées. Vous pouvez vous désabonner des e-mails marketing via le lien présent dans chaque e-mail.",
+        "aka": "Notifications push / Arrêter les e-mails"
+      },
+      "M3": {
+        "q": "Pourquoi mon compte a-t-il été suspendu ou restreint ?",
+        "a": "Un compte peut être restreint après une alerte de sécurité, un contrôle non concluant ou une demande d’informations complémentaires. Écrivez à support@lumifin.io et nous vous expliquerons ce qui est nécessaire. Pour des raisons légales, nous ne pouvons pas toujours tout détailler.",
+        "aka": "Compte gelé / Compte bloqué / Je ne peux plus utiliser mon compte"
+      },
+      "M4": {
+        "q": "Comment fermer ou supprimer mon compte ?",
+        "a": "Demandez la suppression en contactant le support.",
+        "aka": "Supprimer le compte / Résilier Lumi / Effacer mes données"
+      },
+      "M5": {
+        "q": "Que deviennent mes données après la fermeture de mon compte ?",
+        "a": "Nous supprimons ce que nous pouvons. Les données d’identité et les registres de transactions doivent être conservés pendant une durée déterminée, conformément à la réglementation sur la lutte contre le blanchiment.",
+        "aka": "Conservation des données / Conservez-vous mes données ?"
+      },
+      "M6": {
+        "q": "Puis-je rouvrir un compte fermé ?",
+        "a": "Contactez le support et nous vous aiderons. Vous devrez peut-être vérifier à nouveau votre identité.",
+        "aka": "Réactiver un compte"
+      },
+      "G1": {
+        "q": "Lumi est-il régulé ?",
+        "a": "Lumi est une marque de Lumifin SAS, une société technologique. Lumifin est enregistrée en tant que Money Services Business (MSB) au Canada. Les services de paiement sont fournis par des partenaires de paiement agréés.",
+        "aka": "Licence / Quelle autorité supervise Lumi ?"
+      },
+      "G2": {
+        "q": "Mon argent est-il couvert par une garantie des dépôts ?",
+        "a": "Vos fonds sont cantonnés par un partenaire de paiement régulé, titulaire d’un agrément de monnaie électronique en Europe.",
+        "aka": "Garantie des dépôts / FGDR / Est-ce assuré ?"
+      },
+      "G4": {
+        "q": "Dois-je conserver une phrase de récupération ou une clé privée ?",
+        "a": "Non. Vous vous connectez avec votre e-mail, votre mot de passe et votre mPIN. Il n’y a aucune phrase de récupération à conserver ni aucune clé crypto à gérer.",
+        "aka": "Phrase secrète / Clés privées / Auto-conservation"
+      },
+      "G5": {
+        "q": "Comment Lumi utilise-t-il mes données personnelles ?",
+        "a": "Nous utilisons vos données uniquement pour gérer votre compte, vérifier votre identité, traiter les paiements et respecter nos obligations légales. Nous ne vendons pas vos données. Vous pouvez consulter la politique de confidentialité complète sur lumifin.io/privacy.",
+        "aka": "Confidentialité / RGPD / Vendez-vous mes données ?"
+      },
+      "G6": {
+        "q": "Comment obtenir une copie de mes données ou demander leur suppression ?",
+        "a": "Écrivez à support@lumifin.io en précisant votre demande. Le RGPD vous permet d’accéder à vos données, de les corriger ou de les supprimer, sous réserve des registres que la loi nous impose de conserver.",
+        "aka": "Demande RGPD / Accéder à mes données"
+      },
+      "G8": {
+        "q": "À quoi Lumi ne peut-il pas servir ?",
+        "a": "Vous ne pouvez pas utiliser Lumi à des fins illégales, pour des jeux d’argent, pour transférer de l’argent pour le compte d’autrui, ni depuis ou vers des pays sous sanctions. Les comptes utilisés ainsi sont fermés. Consultez les conditions sur lumifin.io/terms.",
+        "aka": "Usage interdit / Paiements restreints"
+      },
+      "G9": {
+        "q": "Comment repérer un faux message ou un faux site Lumi ?",
+        "a": "Notre seul site est lumifin.io et nous ne vous demanderons jamais votre mPIN, votre mot de passe ni vos codes à usage unique. Ne téléchargez Lumi que depuis les magasins d’applications officiels. Transférez tout message suspect à support@lumifin.io.",
+        "aka": "Arnaque / Hameçonnage / Fausse application"
+      },
+      "C1": {
+        "q": "Quels sont vos horaires d’assistance ?",
+        "a": "Nos horaires d’assistance sont pensés pour nos utilisateurs en Europe et au Vietnam. Vous pouvez nous contacter via le chat de l’application ou sur WhatsApp, et nous vous répondrons dès que possible pendant ces horaires.",
+        "aka": "Quand puis-je vous joindre ? / Le support est-il disponible 24 h/24 ?"
+      },
+      "C2": {
+        "q": "En combien de temps le support répond-il ?",
+        "a": "Pendant les horaires d’assistance, notre équipe vise un délai de réponse selon la priorité de votre demande : 60 minutes pour les problèmes critiques, 2 heures pour les demandes prioritaires, 8 heures pour les questions courantes et 2 jours ouvrés pour les demandes peu urgentes.\n\nLe délai de résolution peut aller du jour même à 3 jours ouvrés selon le problème. Les messages reçus en dehors des horaires d’assistance sont traités à la période suivante. Merci de votre patience et de votre compréhension.",
+        "aka": "Délai de réponse / J’attends toujours une réponse"
+      },
+      "C3": {
+        "q": "Comment donner mon avis ou signaler un bug ?",
+        "a": "Nous serions ravis de vous lire. Envoyez-le dans le chat de l’application, avec une capture d’écran si possible. Vos retours arrivent directement à l’équipe produit.",
+        "aka": "Suggestion / Demande de fonctionnalité / Bug de l’application"
+      },
+      "C4": {
+        "q": "Comment déposer une réclamation ?",
+        "a": "Écrivez à support@lumifin.io en indiquant « Réclamation » en objet, avec les détails.",
+        "aka": "Réclamation formelle / Mécontent du service"
+      },
+      "C5": {
+        "q": "Repli du bot : je ne comprends pas la question",
+        "a": "Désolé, je n’ai pas compris. Essayez en quelques mots, par exemple « recharger », « paiement échoué » ou « frais ». Ou tapez « agent » pour joindre notre équipe.",
+        "aka": "(aucune correspondance)"
+      },
+      "C6": {
+        "q": "Repli du bot : transfert vers une personne",
+        "a": "Je vous mets en relation avec notre équipe. Pour l’aider, merci d’indiquer l’adresse e-mail de votre compte et, en cas de problème de paiement, la date, le montant et une capture d’écran.",
+        "aka": "Agent / Humain / Parler à quelqu’un"
+      }
+    },
     "contact": {
       "title": "Vous ne trouvez pas votre réponse ?",
       "body": "Écrivez-nous : une vraie personne vous répond, en français.",
@@ -1038,7 +1625,7 @@
     },
     "q11": {
       "question": "Quels documents sont nécessaires pour la vérification ?",
-      "answer": "Vous devrez fournir une pièce d'identité officielle en cours de validité, telle qu'un passeport ou une carte nationale d'identité. Dans certains cas, un selfie peut également être demandé pour la vérification."
+      "answer": "Vous devrez fournir une pièce d'identité officielle en cours de validité, telle qu'un passeport ou une carte nationale d'identité, ainsi qu'un selfie. Les deux sont obligatoires pour la vérification."
     },
     "q12": {
       "question": "Puis-je retirer de l'argent de mon portefeuille Lumi ?",
