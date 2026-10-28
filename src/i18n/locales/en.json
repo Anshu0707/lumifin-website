@@ -1,8 +1,8 @@
 {
   "store": {
-    "getItOn": "Get it on",
+    "getItOn": "Available on",
     "googlePlay": "Google Play",
-    "downloadOn": "Download on the",
+    "downloadOn": "Available on",
     "appStore": "App Store"
   },
   "currencyConverter": {
