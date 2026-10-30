@@ -1,5 +1,12 @@
 [build]
-  command = "npm install && npx puppeteer browsers install chrome && npm run build"
+  # "npm run verify" gates the deploy on the hand-written static pages in
+  # public/ (/link and /download). Both verifiers serve dist/ and drive it in
+  # headless Chrome, so they have to run AFTER the build, and they rely on the
+  # Chrome installed on the line before. Either exits non-zero on failure,
+  # which fails the build and stops the release — a broken store URL or a dead
+  # redirect no longer ships. These were run by hand until now, which is how
+  # the stale /link assertion went unnoticed.
+  command = "npm install && npx puppeteer browsers install chrome && npm run build && npm run verify"
   publish = "dist"
 
 # No SPA-fallback redirect on purpose. The build prerenders every known route
