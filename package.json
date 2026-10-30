@@ -9,7 +9,8 @@
     "build:no-prerender": "vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "verify": "node scripts/verify-link-bridge.mjs && node scripts/verify-download-page.mjs"
   },
   "dependencies": {
     "@fontsource/plus-jakarta-sans": "^5.2.8",

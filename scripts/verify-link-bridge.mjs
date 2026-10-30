@@ -36,7 +36,9 @@ app.use(express.static(distDir));
 const server = app.listen(PORT);
 const base = `http://localhost:${PORT}/link.html`;
 
-const browser = await puppeteer.launch({ headless: 'new' });
+// --no-sandbox to match scripts/prerender.mjs: this now runs as a deploy gate
+// on the CI agent, where a sandboxed Chrome fails to start.
+const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
 
 async function loadPage(url, ua) {
   const page = await browser.newPage();
@@ -65,12 +67,30 @@ console.log('— desktop UA, garbage intent —');
   const { page } = await loadPage(`${base}?intent=${encodeURIComponent(evil)}`, DESKTOP_UA);
   await new Promise((r) => setTimeout(r, 1600)); // outlive the 1200ms timer
   check('still on the bridge page (no redirect)', page.url().startsWith(base));
+  // The desktop branch (link.html) deliberately repoints #open-btn at the
+  // website, because the lumifin:// deep link is dead without the app. So the
+  // intent-fallback assertion belongs under a MOBILE UA — see the block below,
+  // which is where it now lives. Here we assert the desktop repoint itself.
   const href = await page.$eval('#open-btn', (a) => a.getAttribute('href'));
-  check("garbage intent falls back to 'home'", href === 'lumifin://link?intent=home', href);
+  check('desktop repoints the button at the website', href === 'https://lumifin.io/', href);
   const reflected = await page.content().then((html) => html.includes('onerror=alert'));
   check('raw intent param is NOT reflected into the DOM', !reflected);
   const title = await page.$eval('#title', (el) => el.textContent);
   check('desktop shows "open on your phone"', /phone|téléphone/i.test(title), title);
+  await page.close();
+}
+
+console.log('— iOS UA, garbage intent —');
+{
+  // The intent allowlist is the actual guarantee under test. It has to be
+  // asserted on a platform where link.html leaves #open-btn pointing at the
+  // deep link, i.e. not desktop.
+  const evil = '"><img src=x onerror=alert(1)>';
+  const { page } = await loadPage(`${base}?intent=${encodeURIComponent(evil)}`, IOS_UA);
+  const href = await page.$eval('#open-btn', (a) => a.getAttribute('href'));
+  check("garbage intent falls back to 'home'", href === 'lumifin://link?intent=home', href);
+  const reflected = await page.content().then((html) => html.includes('onerror=alert'));
+  check('raw intent param is NOT reflected into the DOM', !reflected);
   await page.close();
 }
 
