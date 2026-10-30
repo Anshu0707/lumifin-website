@@ -1,0 +1,388 @@
+<!doctype html>
+<!--
+  /download — referral landing page + store router.
+
+  The app's referral share message sends a single link (lumfin_mobile PR 1998,
+  ADO #742): https://lumifin.io/download. The sender has no idea what phone
+  their friend has, so this page reads the User-Agent and forwards to the right
+  store, and shows both buttons to everyone else.
+
+  Static file on purpose, same reasoning as public/link.html:
+    - scripts/prerender.mjs must never execute this page's redirect JS (it
+      renders every React route in headless Chrome under a desktop Linux UA);
+    - a referral tap should reach the store in milliseconds, not after the
+      React bundle and i18n have booted;
+    - the OpenGraph tags below are then plain static markup, so chat-app
+      crawlers get the preview card with zero JS.
+
+  Netlify's pretty URLs serve this at /download (no .html), exactly as
+  public/link.html is served at /link.
+
+  Routing table:
+
+    platform                       | destination
+    -------------------------------|---------------------------------------
+    iPhone / iPad / iPod           | App Store (id6771697087)
+    iPadOS reporting a Mac UA      | App Store (maxTouchPoints > 1 check)
+    Android                        | Play Store (com.lumifin.app)
+    desktop / unknown / crawlers   | no redirect — both buttons, real page
+
+  Store URLs are the BARE forms (no /us/ storefront prefix, no ?hl= on Play)
+  so each visitor lands in their own regional store. A French friend tapping
+  an /us/ link would otherwise be bounced through a storefront switch.
+  Kept in sync with src/components/StoreButtons.tsx.
+
+  Universal/App Links: /download must stay OUT of them, or an existing user
+  tapping a referral link would open the app instead of seeing this page.
+
+  As of 2026-10-30 that is not a live risk, because the app does not claim this
+  domain at all: there is no associatedDomains entry and no autoVerify applinks
+  intent-filter anywhere in lumfin_mobile, and MainActivity's only VIEW/
+  BROWSABLE filter is the custom scheme. That is also why /link has to open the
+  app by lumifin:// and intent:// with a 1200 ms document.hidden fallback — a
+  universal link would need none of that machinery.
+
+  If App Links or Associated Domains are ever switched on:
+    - iOS is already safe. apple-app-site-association scopes its paths to
+      /link and /link/* — keep it that way and /download stays excluded.
+    - Android needs the work. assetlinks.json cannot express this:
+      delegate_permission/common.handle_all_urls is domain-wide and the format
+      has no path syntax at all. The exclusion would have to come from a
+      path-scoped intent-filter in AndroidManifest (android:pathPrefix="/link"),
+      which does not exist today and would have to be written.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Lumi: Pay Like a Local</title>
+  <meta name="description" content="Get Lumi and pay like a local across Southeast Asia — scan any local QR code and pay straight from your euro account. Free on iOS and Android." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="canonical" href="https://lumifin.io/download" />
+  <meta name="theme-color" content="#670FC5" />
+
+  <!--
+    NO <meta http-equiv="refresh"> here, on purpose.
+
+    A meta refresh cannot read a User-Agent — it fires for every visitor. It
+    would therefore (a) send desktop visitors to one arbitrary store, and this
+    URL travels in WhatsApp and SMS where laptop opens are common, and (b) be
+    followed by link-preview crawlers, which would scrape the card below from
+    the App Store page instead of this one. A referral message whose preview
+    is blank or wrong looks like spam, and that preview is the first thing the
+    friend sees. scripts/verify-link-bridge.mjs asserts the same absence on
+    /link for the related email-scanner reason.
+
+    The no-JS fallback is instead the two real <a href> store buttons in the
+    markup, plus the <noscript> note in the body. If you ever decide that
+    sending every no-JS visitor to a single store is the lesser evil, this is
+    the one line that does it:
+
+    <noscript><meta http-equiv="refresh" content="0;url=https://apps.apple.com/app/id6771697087" /></noscript>
+  -->
+
+  <!-- OpenGraph. This link is pasted into chat apps, which render a preview
+       card from these tags. Static and in English (matching the x-default in
+       src/components/SEO.tsx) because a crawler runs no JS and so never sees
+       the localised body copy below. 1920x1080 is declared so chat apps can
+       lay the large card out without fetching the image first. -->
+  <meta property="og:site_name" content="Lumi" />
+  <meta property="og:title" content="Lumi: Pay Like a Local" />
+  <meta property="og:description" content="Scan any local QR code in Southeast Asia and pay straight from your euro account. One flat 2% fee, no FX markup. Free on iOS and Android." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lumifin.io/download" />
+  <meta property="og:image" content="https://lumifin.io/assets/preview/og-wa.jpg" />
+  <meta property="og:image:secure_url" content="https://lumifin.io/assets/preview/og-wa.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1920" />
+  <meta property="og:image:height" content="1080" />
+  <meta property="og:image:alt" content="Paying a local merchant in Southeast Asia by scanning a QR code with the Lumi app." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lumi: Pay Like a Local" />
+  <meta name="twitter:description" content="Scan any local QR code in Southeast Asia and pay straight from your euro account. One flat 2% fee, no FX markup." />
+  <meta name="twitter:image" content="https://lumifin.io/assets/preview/og-wa.jpg" />
+  <meta name="twitter:image:alt" content="Paying a local merchant in Southeast Asia by scanning a QR code with the Lumi app." />
+
+  <!-- Google Analytics 4 (Consent Mode v2 — denied by default), same property
+       as index.html. Two differences from the SPA snippet, both deliberate:
+         - no 'wait_for_update': src/components/CookieConsent.tsx is a React
+           component and is not on this static page, so no consent update is
+           ever coming and the 500ms wait would only stall the event below;
+         - under denied consent GA4 sends cookieless pings, so the redirect
+           counter works without this page setting any cookie.
+       gtag('config') also emits its own page_view, which gives a /download
+       hit count as a safety net even when the custom event is lost. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HL959CHRBM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied'
+    });
+    gtag('config', 'G-HL959CHRBM');
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      background: #f5f7fa;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1a1c1e;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px 28px 32px;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+      box-shadow: 0 2px 16px rgba(26, 28, 30, 0.08);
+    }
+    .logo { width: 64px; height: 64px; border-radius: 14px; margin-bottom: 20px; }
+    h1 { font-size: 24px; line-height: 1.25; margin: 0 0 12px; letter-spacing: -0.02em; }
+    .sub { font-size: 15px; line-height: 1.6; color: #475569; margin: 0 0 28px; }
+    .stores { display: flex; flex-direction: column; gap: 12px; }
+    .store {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #0f172a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 16px;
+      padding: 14px 24px;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .store:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(15, 23, 42, .22); }
+    .store svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .store .label { text-align: left; line-height: 1.15; }
+    .store .label .top {
+      display: block;
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: rgba(255, 255, 255, .6);
+    }
+    .store .label .name { display: block; font-size: 17px; font-weight: 800; }
+    .hint { font-size: 12.5px; line-height: 1.6; color: #94a3b8; margin: 24px 0 0; }
+    .hint a { color: #670FC5; }
+    .noscript { font-size: 13px; line-height: 1.6; color: #475569; margin: 20px 0 0; }
+    @media (min-width: 420px) {
+      .card { padding: 44px 36px 36px; }
+      h1 { font-size: 27px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .store { transition: none; }
+      .store:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <!-- Square brand icon, not the wide /logo.png wordmark. -->
+    <img class="logo" src="/favicon.png" alt="Lumi" />
+    <h1 id="title">Get Lumi</h1>
+    <p class="sub" id="subtitle">Pay like a local across Southeast Asia — scan any local QR code and pay straight from your euro account.</p>
+
+    <!--
+      Both buttons are always in the markup and always visible. They are the
+      real no-JS fallback (see the head comment), they cover the desktop case
+      that requirement 3 calls out, and they cover an iPadOS device whose Mac
+      User-Agent slips past the maxTouchPoints check below.
+
+      Same tab, no target="_blank": the visitor came here to go to the store,
+      and a referral tap opening a stray tab is worse than a plain navigation.
+    -->
+    <div class="stores">
+      <a class="store" id="btn-ios" href="https://apps.apple.com/app/id6771697087">
+        <!-- Apple logo. lucide-react's "Apple" is a piece of fruit, not the brand mark. -->
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.05 12.54c-.02-2.3 1.88-3.4 1.96-3.46-1.07-1.56-2.73-1.78-3.32-1.8-1.41-.14-2.76.83-3.48.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.79-.41 6.92 1.16 9.18.77 1.11 1.68 2.35 2.88 2.3 1.16-.05 1.6-.75 3-.75s1.79.75 3.01.72c1.24-.02 2.03-1.12 2.79-2.24.88-1.28 1.24-2.52 1.26-2.59-.03-.01-2.42-.93-2.44-3.69zM14.8 5.8c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.78-.97 2.83 1.03.08 2.07-.52 2.71-1.29z" />
+        </svg>
+        <span class="label">
+          <span class="top" id="ios-top">Available on</span>
+          <span class="name">App Store</span>
+        </span>
+      </a>
+
+      <a class="store" id="btn-android" href="https://play.google.com/store/apps/details?id=com.lumifin.app">
+        <!-- Google Play triangle. -->
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#34A853" d="M3.6 20.9c.2.2.5.3.8.3.3 0 .5-.1.8-.2l9.3-5.3-2.6-2.6-8.3 7.8z" />
+          <path fill="#EA4335" d="M3.6 3.1l8.3 7.8 2.6-2.6L5.2 3c-.3-.1-.5-.2-.8-.2-.3 0-.6.1-.8.3z" />
+          <path fill="#FBBC04" d="M20.3 10.6l-2.9-1.7-2.9 2.9 2.9 2.9 2.9-1.7c.6-.3.9-.8.9-1.2 0-.4-.3-.9-.9-1.2z" />
+          <path fill="#4285F4" d="M3.2 3.6c-.1.2-.2.4-.2.7v15.4c0 .3.1.5.2.7l8.6-8.4-8.6-8.4z" />
+        </svg>
+        <span class="label">
+          <span class="top" id="android-top">Available on</span>
+          <span class="name">Google Play</span>
+        </span>
+      </a>
+    </div>
+
+    <p class="hint" id="hint">Free to download. <a href="https://lumifin.io/">Learn more about Lumi</a></p>
+
+    <noscript>
+      <p class="noscript">Choose your store above. &middot; Choisissez votre store ci-dessus.</p>
+    </noscript>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* Hard cap on how long we wait for the GA event before navigating. Also
+         doubles as a deliberate beat of visual feedback: an instant,
+         unexplained jump to the store reads as a broken page. */
+      var REDIRECT_CAP_MS = 600;
+
+      var ua = navigator.userAgent || '';
+
+      /* -- 1. Platform detection -------------------------------------- */
+      /* iPadOS reports a Macintosh User-Agent; maxTouchPoints separates a real
+         Mac (0) from an iPad (5). Same check as public/link.html. If it ever
+         slips through, the visible buttons still cover the case. */
+      var isIOS = /iPhone|iPad|iPod/i.test(ua) ||
+        (/Macintosh/i.test(ua) && navigator.maxTouchPoints > 1);
+      var isAndroid = /Android/i.test(ua);
+
+      /* Crawlers that claim a mobile platform AND execute JS must not be
+         redirected: they would build the referral preview card, or the search
+         snippet, from the store listing instead of from this page.
+
+         Deliberately narrow, matching named crawlers only. A broad /bot/i
+         would also match real hardware — Cubot Android phones, for one — and
+         any in-app browser whose UA carries its host app's name, which on this
+         page would risk suppressing the redirect for the single most important
+         path into it: a friend tapping the link inside WhatsApp.
+
+         Crawlers that do NOT claim a mobile platform (facebookexternalhit,
+         WhatsApp/x.y, Slackbot, Twitterbot, Discordbot…) need no special case:
+         they fail both tests above and already fall through to the
+         no-redirect branch at the bottom. */
+      var isCrawler = /Googlebot|AdsBot-Google|APIs-Google|Mediapartners-Google|bingbot|BingPreview|Applebot|YandexBot|DuckDuckBot|Baiduspider|PetalBot|SemrushBot|AhrefsBot/i.test(ua);
+
+      /* -- 2. EN/FR copy ---------------------------------------------- */
+      /* Mirrors the main app's detection (src/i18n/config.ts): same origin, so
+         a saved choice lives in localStorage under 'lumifin_lang'. Order --
+         ?lang= then saved choice then browser language then English. The
+         try/catch is because localStorage throws in private mode / with
+         storage blocked. */
+      var params = new URLSearchParams(window.location.search);
+      var queryLang = (params.get('lang') || '').toLowerCase();
+      var fr;
+      if (queryLang) {
+        fr = queryLang === 'fr';
+      } else {
+        var savedLang = '';
+        try { savedLang = localStorage.getItem('lumifin_lang') || ''; } catch (e) {}
+        var langSource = savedLang || navigator.language || '';
+        fr = langSource.toLowerCase().indexOf('fr') === 0;
+      }
+
+      var T = fr ? {
+        title: 'Téléchargez Lumi',
+        subtitle: 'Payez comme un local en Asie du Sud-Est — scannez n’importe quel QR code local et payez directement depuis votre compte en euros.',
+        titleDesktop: 'Installez Lumi sur votre téléphone',
+        subtitleDesktop: 'Lumi est une application mobile. Ouvrez cette page sur votre téléphone, ou choisissez votre store ci-dessous.',
+        titleIOS: 'Ouverture de l’App Store…',
+        titleAndroid: 'Ouverture de Google Play…',
+        subtitleRedirect: 'Si rien ne se passe, utilisez le bouton ci-dessous.',
+        storeTop: 'Disponible sur',
+        hintHtml: 'Téléchargement gratuit. <a href="https://lumifin.io/">En savoir plus sur Lumi</a>'
+      } : {
+        title: 'Get Lumi',
+        subtitle: 'Pay like a local across Southeast Asia — scan any local QR code and pay straight from your euro account.',
+        titleDesktop: 'Get Lumi on your phone',
+        subtitleDesktop: 'Lumi is a mobile app. Open this page on your phone, or pick your store below.',
+        titleIOS: 'Opening the App Store…',
+        titleAndroid: 'Opening Google Play…',
+        subtitleRedirect: 'If nothing happens, use the button below.',
+        storeTop: 'Available on',
+        hintHtml: 'Free to download. <a href="https://lumifin.io/">Learn more about Lumi</a>'
+      };
+
+      var titleEl = document.getElementById('title');
+      var subtitleEl = document.getElementById('subtitle');
+      var hintEl = document.getElementById('hint');
+
+      document.documentElement.lang = fr ? 'fr' : 'en';
+      titleEl.textContent = T.title;
+      subtitleEl.textContent = T.subtitle;
+      hintEl.innerHTML = T.hintHtml; // static string, no user input
+      document.getElementById('ios-top').textContent = T.storeTop;
+      document.getElementById('android-top').textContent = T.storeTop;
+
+      /* -- 3. Count the hit ------------------------------------------- */
+      /* The only signal we get about how referrals convert: store-redirect vs
+         web-fallback. gtag.js is loaded async, so firing the event and then
+         navigating in the same tick usually loses it -- hence event_callback,
+         raced against REDIRECT_CAP_MS so a blocked or slow GA never strands
+         the visitor on this page. */
+      function track(platform, done) {
+        var fired = false;
+        function once() {
+          if (fired) return;
+          fired = true;
+          if (done) done();
+        }
+        if (done) setTimeout(once, REDIRECT_CAP_MS);
+        /* 'download_platform', not 'platform': GA4 already has a built-in
+           Platform dimension (web / iOS / Android, meaning the data stream),
+           so a custom parameter by that name reads ambiguously in reports. */
+        gtag('event', 'download_redirect', {
+          download_platform: platform,
+          transport_type: 'beacon',
+          event_callback: once,
+          event_timeout: REDIRECT_CAP_MS
+        });
+      }
+
+      /* -- 4. Route --------------------------------------------------- */
+      /* location.replace, not href: the store should replace /download in
+         history, so Back from the store returns the friend to WhatsApp rather
+         than to this page, which would immediately redirect them again. */
+      function sendTo(url, platform, newTitle) {
+        titleEl.textContent = newTitle;
+        subtitleEl.textContent = T.subtitleRedirect;
+        track(platform, function () { window.location.replace(url); });
+      }
+
+      if (isCrawler) {
+        /* Leave the page exactly as rendered -- no redirect, no event. */
+        return;
+      }
+
+      if (isIOS) {
+        sendTo(document.getElementById('btn-ios').href, 'ios', T.titleIOS);
+      } else if (isAndroid) {
+        sendTo(document.getElementById('btn-android').href, 'android', T.titleAndroid);
+      } else {
+        /* Desktop / unknown. Not an edge case: this URL travels in WhatsApp
+           and SMS, which people open on laptops constantly. Real page, both
+           buttons, no redirect -- and the event costs nothing here because we
+           are not navigating away. */
+        titleEl.textContent = T.titleDesktop;
+        subtitleEl.textContent = T.subtitleDesktop;
+        track('web_fallback', null);
+      }
+    })();
+  </script>
+</body>
+</html>
